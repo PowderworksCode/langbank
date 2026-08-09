@@ -1,0 +1,4 @@
+# Matches the fleet: entl, infact and cowbird all pin 1.97.1.
+[toolchain]
+channel = "1.97.1"
+components = ["clippy", "rustfmt"]
