@@ -1,0 +1,13 @@
+id = "pnpm"
+display-name = "pnpm"
+roles = ["package-manager"]
+implied-languages = ["javascript"]
+manifest = "package.json"
+lockfiles = ["pnpm-lock.yaml"]
+selector-files = ["pnpm-workspace.yaml"]
+gitignore-patterns = ["node_modules/"]
+manifest-selection = "lockfile"
+
+[dependency-pins]
+syntax = "exact-semver"
+advisory = false

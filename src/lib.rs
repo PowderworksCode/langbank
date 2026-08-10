@@ -15,14 +15,11 @@
 //! language is not a toolchain, and an artifact is not either.
 
 mod artifact;
-mod artifacts;
 mod convention;
 mod dependency;
 mod detection;
 mod ecosystem;
-pub(crate) mod ecosystems;
 mod facet;
-mod facets;
 mod ids;
 mod language;
 mod tool;
@@ -30,8 +27,8 @@ pub(crate) mod tools;
 mod traversal;
 mod verbosity;
 
-// The language registry is generated from `data/` at build time.
-include!(concat!(env!("OUT_DIR"), "/languages.rs"));
+// The registries are generated from `data/` at build time.
+include!(concat!(env!("OUT_DIR"), "/registries.rs"));
 
 pub use artifact::{ArtifactProfile, ArtifactRegistration, artifact_profile, artifact_profiles};
 pub use artifacts::{BINARY_ARTIFACT, NAPI_ARTIFACT, SITE_ARTIFACT, TAURI_ARTIFACT};

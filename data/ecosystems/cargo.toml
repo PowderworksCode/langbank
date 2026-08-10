@@ -1,0 +1,18 @@
+id = "cargo"
+display-name = "Cargo"
+roles = ["package-manager", "build-system"]
+implied-languages = ["rust"]
+manifest = "Cargo.toml"
+lockfiles = ["Cargo.lock"]
+gitignore-patterns = ["target/"]
+manifest-selection = "default"
+
+[dependency-pins]
+syntax = "cargo-exact-requirement"
+advisory = true
+
+# Directories this ecosystem generates. `markers` narrows an ambiguous name:
+# `target` is only generated output where a Cargo.toml is in its ancestry.
+[[traversal]]
+name = "target"
+markers = ["Cargo.toml"]

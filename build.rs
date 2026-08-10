@@ -152,14 +152,213 @@ fn conventions(table: &Value) -> String {
     out
 }
 
+fn facets(out: &mut String, path: &Path) {
+    let text = std::fs::read_to_string(path).expect("read facets.toml");
+    let facets: BTreeMap<String, Value> = toml::from_str(&text).expect("parse facets.toml");
+    out.push_str("pub(crate) mod facets {\n");
+    for (id, facet) in &facets {
+        writeln!(
+            out,
+            "    pub static {}: crate::LanguageFacet = crate::LanguageFacet {{\n\
+             \x20       id: {id:?},\n\
+             \x20       description: {:?},\n\
+             \x20   }};\n\
+             \x20   crate::registry::submit! {{ crate::LanguageFacetRegistration(&{}) }}",
+            screaming(id),
+            facet
+                .get("description")
+                .and_then(Value::as_str)
+                .unwrap_or_default(),
+            screaming(id),
+        )
+        .expect("write facet");
+    }
+    out.push_str("}\n\n");
+}
+
+fn artifacts(out: &mut String, path: &Path) {
+    let text = std::fs::read_to_string(path).expect("read artifacts.toml");
+    let artifacts: BTreeMap<String, Value> = toml::from_str(&text).expect("parse artifacts.toml");
+    out.push_str("pub(crate) mod artifacts {\n");
+    for (id, artifact) in &artifacts {
+        let name = format!("{}_ARTIFACT", screaming(id));
+        writeln!(
+            out,
+            "    pub static {name}: crate::ArtifactProfile = crate::ArtifactProfile {{\n\
+             \x20       id: {id:?},\n\
+             \x20       display_name: {:?},\n\
+             \x20       project_facets: {},\n\
+             \x20       package_dependencies: {},\n\
+             \x20       package_script_signals: {},\n\
+             \x20   }};\n\
+             \x20   crate::registry::submit! {{ crate::ArtifactRegistration(&{name}) }}",
+            artifact
+                .get("display-name")
+                .and_then(Value::as_str)
+                .unwrap_or_default(),
+            strs(artifact.get("project-facets")),
+            strs(artifact.get("package-dependencies")),
+            strs(artifact.get("package-script-signals")),
+        )
+        .expect("write artifact");
+    }
+    out.push_str("}\n\n");
+}
+
+/// `package-manager` names `EcosystemRole::PackageManager`.
+fn camel(value: &str) -> String {
+    value
+        .split('-')
+        .map(|word| {
+            let mut chars = word.chars();
+            match chars.next() {
+                Some(head) => format!("{}{}", head.to_ascii_uppercase(), chars.as_str()),
+                None => String::new(),
+            }
+        })
+        .collect()
+}
+
+fn ecosystems(out: &mut String, directory: &Path) {
+    let mut files = std::fs::read_dir(directory)
+        .expect("read data/ecosystems")
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
+        .collect::<Vec<_>>();
+    files.sort();
+
+    out.push_str("pub(crate) mod ecosystems {\n");
+    let mut exports = Vec::new();
+    for path in &files {
+        println!("cargo:rerun-if-changed={}", path.display());
+        let text = std::fs::read_to_string(path).expect("read ecosystem toml");
+        let eco: Value =
+            toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+        let id = eco.get("id").and_then(Value::as_str).expect("ecosystem id");
+        exports.push(id.to_owned());
+
+        let roles = eco
+            .get("roles")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|role| format!("crate::EcosystemRole::{}", camel(role)))
+                    .collect()
+            });
+        let languages = eco
+            .get("implied-languages")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|language| {
+                        format!("&super::super::languages::{}::PROFILE", ident(language))
+                    })
+                    .collect()
+            });
+        let manifest = eco.get("manifest").and_then(Value::as_str).map_or_else(
+            || "None".to_owned(),
+            |manifest| format!("Some({manifest:?})"),
+        );
+        let pins = eco.get("dependency-pins").map_or_else(
+            || "None".to_owned(),
+            |pins| {
+                format!(
+                    "Some(crate::DependencyPinPolicy {{ syntax: crate::DependencyPinSyntax::{}, advisory: {} }})",
+                    camel(pins.get("syntax").and_then(Value::as_str).unwrap_or("exact-semver")),
+                    pins.get("advisory").and_then(Value::as_bool).unwrap_or(false),
+                )
+            },
+        );
+
+        writeln!(
+            out,
+            "    pub mod {module} {{\n\
+             \x20       pub static PROFILE: crate::EcosystemProfile = crate::EcosystemProfile {{\n\
+             \x20           id: {id:?},\n\
+             \x20           display_name: {display:?},\n\
+             \x20           roles: &[{roles}],\n\
+             \x20           implied_languages: &[{languages}],\n\
+             \x20           manifest: {manifest},\n\
+             \x20           lockfiles: {lockfiles},\n\
+             \x20           selector_files: {selectors},\n\
+             \x20           gitignore_patterns: {gitignore},\n\
+             \x20           manifest_selection: crate::ManifestSelection::{selection},\n\
+             \x20           dependency_pins: {pins},\n\
+             \x20       }};\n\
+             \x20       crate::registry::submit! {{ crate::EcosystemRegistration(&PROFILE) }}\n\
+             {traversal}\
+             \x20   }}",
+            module = ident(id),
+            display = eco
+                .get("display-name")
+                .and_then(Value::as_str)
+                .unwrap_or(id),
+            roles = roles.join(", "),
+            languages = languages.join(", "),
+            lockfiles = strs(eco.get("lockfiles")),
+            selectors = strs(eco.get("selector-files")),
+            gitignore = strs(eco.get("gitignore-patterns")),
+            selection = camel(
+                eco.get("manifest-selection")
+                    .and_then(Value::as_str)
+                    .unwrap_or("default")
+            ),
+            traversal = traversal(&eco),
+        )
+        .expect("write ecosystem");
+    }
+    for id in &exports {
+        writeln!(
+            out,
+            "    pub use {}::PROFILE as {};",
+            ident(id),
+            screaming(id)
+        )
+        .expect("write ecosystem export");
+    }
+    out.push_str("}\n\n");
+}
+
+/// Directories an ecosystem generates, declared alongside the ecosystem that
+/// generates them so the two cannot drift apart.
+fn traversal(eco: &Value) -> String {
+    let mut out = String::new();
+    let Some(directories) = eco.get("traversal").and_then(Value::as_array) else {
+        return out;
+    };
+    for (index, directory) in directories.iter().enumerate() {
+        let _ = write!(
+            out,
+            "        static TRAVERSAL_{index}: crate::TraversalDirectory = crate::TraversalDirectory {{\n\
+             \x20           name: {:?},\n\
+             \x20           markers: {},\n\
+             \x20       }};\n\
+             \x20       crate::registry::submit! {{ crate::TraversalDirectoryRegistration(&TRAVERSAL_{index}) }}\n",
+            directory
+                .get("name")
+                .and_then(Value::as_str)
+                .unwrap_or_default(),
+            strs(directory.get("markers")),
+        );
+    }
+    out
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
 
-    let mut out = String::from(
-        "// @generated by build.rs from data/. Do not edit.\n\
-         pub(crate) mod languages {\n",
-    );
+    let mut out = String::from("// @generated by build.rs from data/. Do not edit.\n");
+    facets(&mut out, &data.join("facets.toml"));
+    artifacts(&mut out, &data.join("artifacts.toml"));
+    ecosystems(&mut out, &data.join("ecosystems"));
+
+    out.push_str("pub(crate) mod languages {\n");
     comment_tables(&mut out, &data.join("comment-syntax.toml"));
 
     let mut files = std::fs::read_dir(data.join("languages"))
@@ -185,7 +384,7 @@ fn main() {
                     array
                         .iter()
                         .filter_map(Value::as_str)
-                        .map(|facet| format!("&crate::{}", screaming(facet)))
+                        .map(|facet| format!("&super::super::facets::{}", screaming(facet)))
                         .collect()
                 });
         let supersedes = profile
@@ -256,6 +455,6 @@ fn main() {
     }
     out.push_str("}\n");
 
-    let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("languages.rs");
-    std::fs::write(&destination, out).expect("write generated languages");
+    let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("registries.rs");
+    std::fs::write(&destination, out).expect("write generated registries");
 }
