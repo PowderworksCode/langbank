@@ -9,7 +9,7 @@
 use std::collections::BTreeSet;
 use std::path::Path;
 
-use semiotics::*;
+use langbank::*;
 
 #[test]
 fn every_registry_populates() {

@@ -1,4 +1,4 @@
-# Semiotics
+# Langbank
 
 Language, ecosystem and toolchain data: what a language is, how to recognise
 it, what conventions it carries, which ecosystem publishes it, and what its
@@ -16,12 +16,36 @@ it observes a program. All three need the same vocabulary, and none of them
 should have to depend on another to get it.
 
 ```
-                    semiotics
+                    langbank
                  ↑      ↑      ↑
               entl  treebank  propbank
 ```
 
 Every arrow points in. Nothing here depends on anything else in the fleet.
+
+## On the name
+
+`treebank` · `propbank` · `langbank`. The first two are annotated corpora in the
+computational-linguistics sense — treebank derives its facts by sweeping a
+corpus of source, propbank derives its by running compilers over programs. This
+one is not derived from anything. It is hand-curated, and it is relational:
+ecosystems point at languages, tools point at languages and artifacts,
+languages point at facets and at the languages they supersede.
+
+By the field's own convention that makes it a **net**, not a bank — a WordNet
+rather than a PropBank. `-net` lost anyway, because in 2026 it reads as *neural
+network* to every engineer who will ever type it, and a name that mispatterns on
+sight costs more than a taxonomic inaccuracy a footnote can fix. Consider this
+the footnote.
+
+`lang-` is likewise approximate and less so than it looks: languages are the
+spine here and everything else hangs off them. npm is JavaScript's ecosystem,
+rustc is Rust's toolchain, a `.napi` artifact is a Node thing. Every registry
+below is reachable from a language.
+
+**Nothing here is derived from a corpus.** If you came looking for the pipeline
+that regenerates it, there isn't one, and that is the point — this is the stable
+leaf the rest of the fleet names things in.
 
 ## What is in it today
 
@@ -39,7 +63,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | traversal | registered pruning directories |
 
 ```rust
-use semiotics::{detect_language, language_profile, verbosity_ratio};
+use langbank::{detect_language, language_profile, verbosity_ratio};
 
 detect_language(Path::new("src/main.rs"), None);          // -> rust, by extension
 detect_language(Path::new("deploy"), Some(b"#!/bin/sh")); // -> shell, by shebang

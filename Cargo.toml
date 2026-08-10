@@ -1,10 +1,10 @@
 [package]
-name = "semiotics"
+name = "langbank"
 version = "0.0.0"
 edition = "2024"
 rust-version = "1.85"
 license = "MIT"
-repository = "https://github.com/PowderworksCode/semiotics"
+repository = "https://github.com/PowderworksCode/langbank"
 description = "Language, ecosystem and toolchain data: what a language is, how to recognise it, and what its tooling can be asked."
 
 [dependencies]

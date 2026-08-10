@@ -1,4 +1,4 @@
-# Working in semiotics
+# Working in langbank
 
 **This crate depends on nothing else in the fleet, and that is the invariant
 worth protecting.** entl, treebank and propbank all depend on it. If a change
