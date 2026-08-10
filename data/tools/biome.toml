@@ -1,0 +1,20 @@
+id = "biome"
+programs = ["biome"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = ["check"]
+tasks = ["lint", "format"]
+
+[[commands]]
+arguments = ["ci"]
+tasks = ["lint", "format"]
+
+[[commands]]
+arguments = ["lint"]
+tasks = ["lint"]
+
+[[commands]]
+arguments = ["format"]
+tasks = ["format"]

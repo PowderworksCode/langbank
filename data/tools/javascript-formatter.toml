@@ -1,0 +1,8 @@
+id = "javascript-formatter"
+programs = ["prettier", "dprint"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["format"]

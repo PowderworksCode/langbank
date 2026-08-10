@@ -1,0 +1,23 @@
+id = "javascript-test-runner"
+programs = ["vitest", "jest", "playwright"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["test"]
+
+[test-retry]
+arguments = ["--retries"]
+
+[[test-retry.configurations]]
+paths = ["playwright.config.ts", "playwright.config.js", "playwright.config.mts", "playwright.config.mjs", "playwright.config.cts", "playwright.config.cjs"]
+signals = [{ javascript-property = "retries" }]
+
+[[test-retry.configurations]]
+paths = ["jest.config.ts", "jest.config.js", "jest.config.mts", "jest.config.mjs", "jest.config.cts", "jest.config.cjs"]
+signals = [{ javascript-property = "retries" }, { javascript-call = "retryTimes" }]
+
+[[test-retry.configurations]]
+paths = ["vitest.config.ts", "vitest.config.js", "vitest.config.mts", "vitest.config.mjs", "vitest.config.cts", "vitest.config.cjs"]
+signals = [{ javascript-property = "retry" }]

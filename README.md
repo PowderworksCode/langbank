@@ -55,7 +55,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 |---|---|
 | languages | 29 |
 | ecosystems | 5 — cargo, npm, pnpm, yarn, bun |
-| tool profiles | codespell, vale, stylelint, and the rust/javascript/system/tauri sets |
+| tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
 | conventions | test layout, inline-test detection, typecheck defaults |
@@ -88,6 +88,7 @@ data/
   artifacts.toml            what a build produces
   languages/rust.toml       one file per language
   ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
+  tools/cargo.toml          one file per tool, with its command patterns
 ```
 
 ```toml
@@ -116,21 +117,16 @@ change.
 
 Stated as intent rather than schedule.
 
-1. **Move the last two registries out of Rust and into TOML.** Languages,
-   facets, artifacts, ecosystems and traversal are done. Tool profiles are more
-   structure than the rest — command patterns, argument matching, artifacts
-   produced — and verbosity is a pair matrix carrying a corpus revision, which
-   may want a different shape than TOML entirely.
-2. **Bootstrap detection breadth from GitHub linguist**, whose `languages.yml`
+1. **Bootstrap detection breadth from GitHub linguist**, whose `languages.yml`
    is MIT and already the de-facto standard, keeping the hand-modelled depth
    layer for the languages this fleet actually works on. Two layers, two
    evidence bars, and the difference recorded rather than blurred.
-3. **Model toolchains**, which exist nowhere today: compiler identity and
+2. **Model toolchains**, which exist nowhere today: compiler identity and
    version probes, invocation patterns for build/test/typecheck/format/lint,
    registry and popularity sources, and machine-readable diagnostic formats.
    treebank has all of this hardcoded per language in Rust, and propbank needs
    the version probes for its staleness checks.
-4. **Absorb treebank's registry data** — crates.io dumps, npm, Maven Central,
+3. **Absorb treebank's registry data** — crates.io dumps, npm, Maven Central,
    NuGet, Debian popcon, `packages.ecosyste.ms` — which is `rank`/`resolve`
    today and is plainly data.
 

@@ -349,6 +349,175 @@ fn traversal(eco: &Value) -> String {
     out
 }
 
+/// `{ exact = "--compile" }` / `{ prefix = "--compile=" }`
+fn argument_patterns(value: Option<&Value>) -> String {
+    let items = value
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .filter_map(|entry| {
+                    let table = entry.as_table()?;
+                    let (kind, argument) = table.iter().next()?;
+                    Some(format!(
+                        "crate::ArgumentPattern::{}({:?})",
+                        camel(kind),
+                        argument.as_str()?
+                    ))
+                })
+                .collect()
+        });
+    format!("&[{}]", items.join(", "))
+}
+
+fn retry_signals(value: Option<&Value>) -> String {
+    let items = value
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .filter_map(|entry| {
+                    let table = entry.as_table()?;
+                    let (kind, name) = table.iter().next()?;
+                    Some(format!(
+                        "crate::TestRetrySignal::{}({:?})",
+                        camel(kind),
+                        name.as_str()?
+                    ))
+                })
+                .collect()
+        });
+    format!("&[{}]", items.join(", "))
+}
+
+fn commands(tool: &Value) -> String {
+    let mut out = String::new();
+    let Some(commands) = tool.get("commands").and_then(Value::as_array) else {
+        return out;
+    };
+    for command in commands {
+        let tasks = command
+            .get("tasks")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|task| format!("crate::TaskKind::{}", camel(task)))
+                    .collect()
+            });
+        let artifacts = command
+            .get("artifacts")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|id| format!("&super::artifacts::{}_ARTIFACT", screaming(id)))
+                    .collect()
+            });
+        let _ = write!(
+            out,
+            "            crate::CommandPattern {{\n\
+             \x20               arguments: {},\n\
+             \x20               required_arguments: {},\n\
+             \x20               rejected_arguments: {},\n\
+             \x20               tasks: &[{}],\n\
+             \x20               artifacts: &[{}],\n\
+             \x20           }},\n",
+            strs(command.get("arguments")),
+            argument_patterns(command.get("required-arguments")),
+            argument_patterns(command.get("rejected-arguments")),
+            tasks.join(", "),
+            artifacts.join(", "),
+        );
+    }
+    out
+}
+
+fn test_retry(tool: &Value) -> String {
+    let Some(retry) = tool.get("test-retry") else {
+        return "None".to_owned();
+    };
+    let configurations = retry
+        .get("configurations")
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .map(|configuration| {
+                    format!(
+                        "crate::TestRetryConfiguration {{ paths: {}, signals: {} }}",
+                        strs(configuration.get("paths")),
+                        retry_signals(configuration.get("signals")),
+                    )
+                })
+                .collect()
+        });
+    format!(
+        "Some(crate::TestRetryProfile {{ arguments: {}, configurations: &[{}] }})",
+        strs(retry.get("arguments")),
+        configurations.join(", "),
+    )
+}
+
+fn tools(out: &mut String, directory: &Path) {
+    let mut files = std::fs::read_dir(directory)
+        .expect("read data/tools")
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
+        .collect::<Vec<_>>();
+    files.sort();
+
+    out.push_str("pub(crate) mod tools {\n");
+    for path in &files {
+        println!("cargo:rerun-if-changed={}", path.display());
+        let text = std::fs::read_to_string(path).expect("read tool toml");
+        let tool: Value =
+            toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+        let id = tool.get("id").and_then(Value::as_str).expect("tool id");
+        let languages =
+            tool.get("languages")
+                .and_then(Value::as_array)
+                .map_or_else(Vec::new, |array| {
+                    array
+                        .iter()
+                        .filter_map(Value::as_str)
+                        .map(|language| format!("&super::languages::{}::PROFILE", ident(language)))
+                        .collect()
+                });
+        writeln!(
+            out,
+            "    pub static {name}: crate::ToolProfile = crate::ToolProfile {{\n\
+             \x20       id: {id:?},\n\
+             \x20       programs: {programs},\n\
+             \x20       languages: &[{languages}],\n\
+             \x20       commands: &[\n{commands}\x20       ],\n\
+             \x20       configuration_files: {configuration},\n\
+             \x20       package_json_keys: {keys},\n\
+             \x20       ci_workload: crate::CiWorkload::{workload},\n\
+             \x20       test_retry: {retry},\n\
+             \x20   }};\n\
+             \x20   crate::registry::submit! {{ crate::ToolRegistration(&{name}) }}",
+            name = screaming(id),
+            programs = strs(tool.get("programs")),
+            languages = languages.join(", "),
+            commands = commands(&tool),
+            configuration = strs(tool.get("configuration-files")),
+            keys = strs(tool.get("package-json-keys")),
+            workload = camel(
+                tool.get("ci-workload")
+                    .and_then(Value::as_str)
+                    .unwrap_or("light")
+            ),
+            retry = test_retry(&tool),
+        )
+        .expect("write tool");
+    }
+    out.push_str("}\n\n");
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
@@ -357,6 +526,7 @@ fn main() {
     facets(&mut out, &data.join("facets.toml"));
     artifacts(&mut out, &data.join("artifacts.toml"));
     ecosystems(&mut out, &data.join("ecosystems"));
+    tools(&mut out, &data.join("tools"));
 
     out.push_str("pub(crate) mod languages {\n");
     comment_tables(&mut out, &data.join("comment-syntax.toml"));

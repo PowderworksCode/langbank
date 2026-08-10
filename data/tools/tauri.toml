@@ -1,0 +1,9 @@
+id = "tauri"
+programs = ["tauri"]
+languages = ["rust", "typescript"]
+ci-workload = "heavy"
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]
+artifacts = ["tauri", "site"]

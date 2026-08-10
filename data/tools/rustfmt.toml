@@ -1,0 +1,8 @@
+id = "rustfmt"
+programs = ["rustfmt"]
+languages = ["rust"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["format"]

@@ -1,0 +1,13 @@
+id = "astro"
+programs = ["astro"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = ["check"]
+tasks = ["typecheck"]
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]
+artifacts = ["site"]
