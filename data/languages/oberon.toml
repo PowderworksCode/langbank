@@ -1,0 +1,5 @@
+id = "oberon"
+display-name = "Oberon"
+role = "programming"
+extensions = ["ob2"]
+sources = ["linguist"]

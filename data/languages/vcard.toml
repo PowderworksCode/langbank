@@ -1,0 +1,5 @@
+id = "vcard"
+display-name = "vCard"
+role = "data"
+extensions = ["vcf"]
+sources = ["linguist"]

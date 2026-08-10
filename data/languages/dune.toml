@@ -1,0 +1,5 @@
+id = "dune"
+display-name = "Dune"
+role = "programming"
+filenames = ["dune-project"]
+sources = ["linguist"]

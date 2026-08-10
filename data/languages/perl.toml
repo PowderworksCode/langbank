@@ -1,0 +1,7 @@
+id = "perl"
+display-name = "Perl"
+role = "programming"
+extensions = ["al", "cgi", "fcgi", "perl", "ph", "pl", "plx", "pm", "psgi", "t"]
+filenames = [".latexmkrc", "Makefile.PL", "Rexfile", "ack", "cpanfile", "latexmkrc"]
+shebangs = ["cperl", "perl"]
+sources = ["linguist"]

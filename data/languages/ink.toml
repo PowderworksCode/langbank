@@ -1,0 +1,5 @@
+id = "ink"
+display-name = "Ink"
+role = "programming"
+extensions = ["ink"]
+sources = ["linguist"]

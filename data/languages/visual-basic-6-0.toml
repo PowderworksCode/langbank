@@ -1,0 +1,5 @@
+id = "visual-basic-6-0"
+display-name = "Visual Basic 6.0"
+role = "programming"
+extensions = ["bas", "cls", "ctl", "dsr", "frm"]
+sources = ["linguist"]

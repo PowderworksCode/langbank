@@ -1,0 +1,5 @@
+id = "mermaid"
+display-name = "Mermaid"
+role = "markup"
+extensions = ["mermaid", "mmd"]
+sources = ["linguist"]

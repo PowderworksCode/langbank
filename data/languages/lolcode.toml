@@ -1,0 +1,5 @@
+id = "lolcode"
+display-name = "LOLCODE"
+role = "programming"
+extensions = ["lol"]
+sources = ["linguist"]

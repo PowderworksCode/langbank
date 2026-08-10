@@ -1,0 +1,5 @@
+id = "raw-token-data"
+display-name = "Raw token data"
+role = "data"
+extensions = ["raw"]
+sources = ["linguist"]

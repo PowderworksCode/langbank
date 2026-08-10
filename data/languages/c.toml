@@ -1,6 +1,8 @@
 id = "c"
 display-name = "C"
 role = "programming"
-extensions = ["c", "h"]
+shebangs = ["tcc"]
+extensions = ["c", "cats", "h", "h.in", "idc"]
+primary-extensions = ["h"]
 facets = ["structured-code"]
 comments = "c"

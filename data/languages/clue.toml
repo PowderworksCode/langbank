@@ -1,0 +1,5 @@
+id = "clue"
+display-name = "Clue"
+role = "programming"
+extensions = ["clue"]
+sources = ["linguist"]

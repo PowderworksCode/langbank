@@ -1,0 +1,5 @@
+id = "move"
+display-name = "Move"
+role = "programming"
+extensions = ["move"]
+sources = ["linguist"]

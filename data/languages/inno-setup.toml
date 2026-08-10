@@ -1,0 +1,5 @@
+id = "inno-setup"
+display-name = "Inno Setup"
+role = "programming"
+extensions = ["isl", "iss"]
+sources = ["linguist"]

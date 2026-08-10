@@ -1,0 +1,6 @@
+id = "fancy"
+display-name = "Fancy"
+role = "programming"
+extensions = ["fancypack", "fy"]
+filenames = ["Fakefile"]
+sources = ["linguist"]

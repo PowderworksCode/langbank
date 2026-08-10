@@ -1,0 +1,5 @@
+id = "fluent"
+display-name = "Fluent"
+role = "programming"
+extensions = ["ftl"]
+sources = ["linguist"]

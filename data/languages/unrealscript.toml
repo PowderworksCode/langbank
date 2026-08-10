@@ -1,0 +1,5 @@
+id = "unrealscript"
+display-name = "UnrealScript"
+role = "programming"
+extensions = ["uc"]
+sources = ["linguist"]

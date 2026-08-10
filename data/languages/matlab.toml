@@ -1,0 +1,5 @@
+id = "matlab"
+display-name = "MATLAB"
+role = "programming"
+extensions = ["m", "matlab"]
+sources = ["linguist"]

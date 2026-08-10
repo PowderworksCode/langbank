@@ -1,0 +1,5 @@
+id = "d2"
+display-name = "D2"
+role = "markup"
+extensions = ["d2"]
+sources = ["linguist"]

@@ -1,0 +1,4 @@
+id = "julia-repl"
+display-name = "Julia REPL"
+role = "programming"
+sources = ["linguist"]

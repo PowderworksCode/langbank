@@ -1,0 +1,5 @@
+id = "alpine-abuild"
+display-name = "Alpine Abuild"
+role = "programming"
+filenames = ["APKBUILD"]
+sources = ["linguist"]

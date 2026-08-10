@@ -1,0 +1,5 @@
+id = "golo"
+display-name = "Golo"
+role = "programming"
+extensions = ["golo"]
+sources = ["linguist"]

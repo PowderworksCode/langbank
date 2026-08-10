@@ -1,0 +1,5 @@
+id = "salt"
+display-name = "Salt"
+role = "programming"
+extensions = ["sls"]
+sources = ["linguist"]

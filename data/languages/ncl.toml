@@ -1,0 +1,5 @@
+id = "ncl"
+display-name = "NCL"
+role = "programming"
+extensions = ["ncl"]
+sources = ["linguist"]

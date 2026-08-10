@@ -1,0 +1,5 @@
+id = "irc-log"
+display-name = "IRC log"
+role = "data"
+extensions = ["irclog", "weechatlog"]
+sources = ["linguist"]

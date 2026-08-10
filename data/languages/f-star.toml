@@ -1,0 +1,5 @@
+id = "f-star"
+display-name = "F*"
+role = "programming"
+extensions = ["fst", "fsti"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "textgrid"
+display-name = "TextGrid"
+role = "data"
+extensions = ["textgrid"]
+sources = ["linguist"]

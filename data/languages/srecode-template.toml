@@ -1,0 +1,5 @@
+id = "srecode-template"
+display-name = "SRecode Template"
+role = "markup"
+extensions = ["srt"]
+sources = ["linguist"]

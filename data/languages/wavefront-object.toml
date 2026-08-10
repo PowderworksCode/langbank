@@ -1,0 +1,5 @@
+id = "wavefront-object"
+display-name = "Wavefront Object"
+role = "data"
+extensions = ["obj"]
+sources = ["linguist"]

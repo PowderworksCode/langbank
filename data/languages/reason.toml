@@ -1,0 +1,5 @@
+id = "reason"
+display-name = "Reason"
+role = "programming"
+extensions = ["re", "rei"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "twig"
+display-name = "Twig"
+role = "markup"
+extensions = ["twig"]
+sources = ["linguist"]

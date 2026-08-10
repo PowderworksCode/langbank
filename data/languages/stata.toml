@@ -1,0 +1,5 @@
+id = "stata"
+display-name = "Stata"
+role = "programming"
+extensions = ["ado", "do", "doh", "ihlp", "mata", "matah", "sthlp"]
+sources = ["linguist"]

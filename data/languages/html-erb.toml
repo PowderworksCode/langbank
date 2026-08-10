@@ -1,0 +1,5 @@
+id = "html-erb"
+display-name = "HTML+ERB"
+role = "markup"
+extensions = ["erb", "erb.deface", "rhtml"]
+sources = ["linguist"]

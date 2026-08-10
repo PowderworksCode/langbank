@@ -1,0 +1,5 @@
+id = "webvtt"
+display-name = "WebVTT"
+role = "data"
+extensions = ["vtt"]
+sources = ["linguist"]

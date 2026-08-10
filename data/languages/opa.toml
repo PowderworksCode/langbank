@@ -1,0 +1,5 @@
+id = "opa"
+display-name = "Opa"
+role = "programming"
+extensions = ["opa"]
+sources = ["linguist"]

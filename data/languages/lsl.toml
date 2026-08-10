@@ -1,0 +1,6 @@
+id = "lsl"
+display-name = "LSL"
+role = "programming"
+extensions = ["lsl", "lslp"]
+shebangs = ["lsl"]
+sources = ["linguist"]

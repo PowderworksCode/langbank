@@ -1,0 +1,5 @@
+id = "objective-cpp"
+display-name = "Objective-C++"
+role = "programming"
+extensions = ["mm"]
+sources = ["linguist"]

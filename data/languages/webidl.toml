@@ -1,0 +1,5 @@
+id = "webidl"
+display-name = "WebIDL"
+role = "programming"
+extensions = ["webidl"]
+sources = ["linguist"]

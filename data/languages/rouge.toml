@@ -1,0 +1,5 @@
+id = "rouge"
+display-name = "Rouge"
+role = "programming"
+extensions = ["rg"]
+sources = ["linguist"]

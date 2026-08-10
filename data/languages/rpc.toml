@@ -1,0 +1,5 @@
+id = "rpc"
+display-name = "RPC"
+role = "programming"
+extensions = ["x"]
+sources = ["linguist"]

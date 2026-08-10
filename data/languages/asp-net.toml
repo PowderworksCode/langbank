@@ -1,0 +1,5 @@
+id = "asp-net"
+display-name = "ASP.NET"
+role = "programming"
+extensions = ["asax", "ascx", "ashx", "asmx", "aspx", "axd"]
+sources = ["linguist"]

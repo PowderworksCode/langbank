@@ -1,0 +1,5 @@
+id = "papyrus"
+display-name = "Papyrus"
+role = "programming"
+extensions = ["psc"]
+sources = ["linguist"]

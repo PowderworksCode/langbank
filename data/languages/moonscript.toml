@@ -1,0 +1,6 @@
+id = "moonscript"
+display-name = "MoonScript"
+role = "programming"
+extensions = ["moon"]
+shebangs = ["moon"]
+sources = ["linguist"]

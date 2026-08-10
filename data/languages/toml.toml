@@ -1,5 +1,6 @@
 id = "toml"
 display-name = "TOML"
 role = "data"
-extensions = ["toml"]
+filenames = ["Cargo.lock", "Cargo.toml.orig", "Gopkg.lock", "Pipfile", "mise.local.lock", "mise.lock", "pdm.lock", "poetry.lock", "uv.lock"]
+extensions = ["toml", "toml.example"]
 comments = "dockerfile"

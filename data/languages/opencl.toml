@@ -1,0 +1,5 @@
+id = "opencl"
+display-name = "OpenCL"
+role = "programming"
+extensions = ["cl", "opencl"]
+sources = ["linguist"]

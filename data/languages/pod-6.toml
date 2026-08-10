@@ -1,0 +1,6 @@
+id = "pod-6"
+display-name = "Pod 6"
+role = "documentation"
+extensions = ["pod", "pod6"]
+shebangs = ["perl6"]
+sources = ["linguist"]

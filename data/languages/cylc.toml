@@ -1,0 +1,6 @@
+id = "cylc"
+display-name = "Cylc"
+role = "data"
+extensions = ["cylc"]
+filenames = ["suite.rc"]
+sources = ["linguist"]

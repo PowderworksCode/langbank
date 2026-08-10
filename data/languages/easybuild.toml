@@ -1,0 +1,5 @@
+id = "easybuild"
+display-name = "Easybuild"
+role = "data"
+extensions = ["eb"]
+sources = ["linguist"]

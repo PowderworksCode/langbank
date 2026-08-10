@@ -1,0 +1,6 @@
+id = "supercollider"
+display-name = "SuperCollider"
+role = "programming"
+extensions = ["sc", "scd"]
+shebangs = ["sclang", "scsynth"]
+sources = ["linguist"]

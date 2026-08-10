@@ -1,0 +1,5 @@
+id = "verse"
+display-name = "Verse"
+role = "programming"
+extensions = ["verse"]
+sources = ["linguist"]

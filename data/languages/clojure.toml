@@ -1,0 +1,7 @@
+id = "clojure"
+display-name = "Clojure"
+role = "programming"
+extensions = ["bb", "boot", "cl2", "clj", "cljc", "cljs", "cljs.hl", "cljscm", "cljx", "hic"]
+filenames = ["riemann.config"]
+shebangs = ["bb"]
+sources = ["linguist"]

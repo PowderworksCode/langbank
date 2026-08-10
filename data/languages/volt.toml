@@ -1,0 +1,5 @@
+id = "volt"
+display-name = "Volt"
+role = "programming"
+extensions = ["volt"]
+sources = ["linguist"]

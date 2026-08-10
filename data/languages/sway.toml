@@ -1,0 +1,5 @@
+id = "sway"
+display-name = "Sway"
+role = "programming"
+extensions = ["sw"]
+sources = ["linguist"]

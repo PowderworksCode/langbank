@@ -1,0 +1,5 @@
+id = "nwscript"
+display-name = "NWScript"
+role = "programming"
+extensions = ["nss"]
+sources = ["linguist"]

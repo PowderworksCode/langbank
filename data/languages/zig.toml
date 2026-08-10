@@ -1,6 +1,6 @@
 id = "zig"
 display-name = "Zig"
 role = "programming"
-extensions = ["zig"]
+extensions = ["zig", "zig.zon"]
 facets = ["structured-code"]
 comments = "c"

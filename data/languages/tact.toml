@@ -1,0 +1,5 @@
+id = "tact"
+display-name = "Tact"
+role = "programming"
+extensions = ["tact"]
+sources = ["linguist"]

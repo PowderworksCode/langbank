@@ -1,0 +1,6 @@
+id = "qmake"
+display-name = "QMake"
+role = "programming"
+extensions = ["pri", "pro"]
+shebangs = ["qmake"]
+sources = ["linguist"]

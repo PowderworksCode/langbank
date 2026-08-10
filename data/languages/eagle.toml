@@ -1,0 +1,5 @@
+id = "eagle"
+display-name = "Eagle"
+role = "data"
+extensions = ["brd", "sch"]
+sources = ["linguist"]

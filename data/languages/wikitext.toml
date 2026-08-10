@@ -1,0 +1,5 @@
+id = "wikitext"
+display-name = "Wikitext"
+role = "documentation"
+extensions = ["mediawiki", "wiki", "wikitext"]
+sources = ["linguist"]

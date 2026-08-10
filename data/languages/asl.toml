@@ -1,0 +1,5 @@
+id = "asl"
+display-name = "ASL"
+role = "programming"
+extensions = ["asl", "dsl"]
+sources = ["linguist"]

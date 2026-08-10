@@ -1,0 +1,5 @@
+id = "sage"
+display-name = "Sage"
+role = "programming"
+extensions = ["sage", "sagews"]
+sources = ["linguist"]

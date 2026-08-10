@@ -1,0 +1,5 @@
+id = "git-attributes"
+display-name = "Git Attributes"
+role = "data"
+filenames = [".gitattributes"]
+sources = ["linguist"]

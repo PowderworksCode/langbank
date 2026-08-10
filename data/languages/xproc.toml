@@ -1,0 +1,5 @@
+id = "xproc"
+display-name = "XProc"
+role = "programming"
+extensions = ["xpl", "xproc"]
+sources = ["linguist"]

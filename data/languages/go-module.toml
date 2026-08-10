@@ -1,0 +1,5 @@
+id = "go-module"
+display-name = "Go Module"
+role = "data"
+filenames = ["go.mod"]
+sources = ["linguist"]

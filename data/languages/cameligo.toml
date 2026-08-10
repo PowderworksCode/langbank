@@ -1,0 +1,5 @@
+id = "cameligo"
+display-name = "CameLIGO"
+role = "programming"
+extensions = ["mligo"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "edgeql"
+display-name = "EdgeQL"
+role = "programming"
+extensions = ["edgeql", "esdl"]
+sources = ["linguist"]

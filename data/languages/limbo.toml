@@ -1,0 +1,5 @@
+id = "limbo"
+display-name = "Limbo"
+role = "programming"
+extensions = ["b", "m"]
+sources = ["linguist"]

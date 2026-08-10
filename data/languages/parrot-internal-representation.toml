@@ -1,0 +1,6 @@
+id = "parrot-internal-representation"
+display-name = "Parrot Internal Representation"
+role = "programming"
+extensions = ["pir"]
+shebangs = ["parrot"]
+sources = ["linguist"]

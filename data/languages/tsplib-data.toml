@@ -1,0 +1,5 @@
+id = "tsplib-data"
+display-name = "TSPLIB data"
+role = "data"
+extensions = ["tsp"]
+sources = ["linguist"]

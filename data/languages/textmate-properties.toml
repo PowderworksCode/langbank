@@ -1,0 +1,5 @@
+id = "textmate-properties"
+display-name = "TextMate Properties"
+role = "data"
+filenames = [".tm_properties"]
+sources = ["linguist"]

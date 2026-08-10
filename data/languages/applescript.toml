@@ -1,0 +1,6 @@
+id = "applescript"
+display-name = "AppleScript"
+role = "programming"
+extensions = ["applescript", "scpt"]
+shebangs = ["osascript"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "web-ontology-language"
+display-name = "Web Ontology Language"
+role = "data"
+extensions = ["owl"]
+sources = ["linguist"]

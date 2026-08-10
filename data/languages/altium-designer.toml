@@ -1,0 +1,5 @@
+id = "altium-designer"
+display-name = "Altium Designer"
+role = "data"
+extensions = ["outjob", "pcbdoc", "prjpcb", "schdoc"]
+sources = ["linguist"]

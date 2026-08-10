@@ -1,0 +1,5 @@
+id = "b-formal-method"
+display-name = "B (Formal Method)"
+role = "programming"
+extensions = ["mch"]
+sources = ["linguist"]

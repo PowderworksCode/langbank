@@ -1,0 +1,5 @@
+id = "cadence"
+display-name = "Cadence"
+role = "programming"
+extensions = ["cdc"]
+sources = ["linguist"]

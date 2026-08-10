@@ -1,7 +1,9 @@
 id = "typescript"
 display-name = "TypeScript"
 role = "programming"
+shebangs = ["bun", "deno", "node", "ts-node", "tsx"]
 extensions = ["ts", "tsx", "mts", "cts"]
+primary-extensions = ["ts", "tsx"]
 source-extensions = ["ts", "tsx", "mts", "cts", "js", "jsx", "mjs", "cjs"]
 facets = ["structured-code", "style-host", "component-host"]
 comments = "javascript"

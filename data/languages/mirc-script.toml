@@ -1,0 +1,5 @@
+id = "mirc-script"
+display-name = "mIRC Script"
+role = "programming"
+extensions = ["mrc"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "minizinc-data"
+display-name = "MiniZinc Data"
+role = "data"
+extensions = ["dzn"]
+sources = ["linguist"]

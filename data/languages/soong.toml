@@ -1,0 +1,5 @@
+id = "soong"
+display-name = "Soong"
+role = "data"
+filenames = ["Android.bp"]
+sources = ["linguist"]

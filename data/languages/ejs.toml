@@ -1,0 +1,5 @@
+id = "ejs"
+display-name = "EJS"
+role = "markup"
+extensions = ["ect", "ejs", "ejs.t", "jst"]
+sources = ["linguist"]

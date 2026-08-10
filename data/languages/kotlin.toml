@@ -1,6 +1,6 @@
 id = "kotlin"
 display-name = "Kotlin"
 role = "programming"
-extensions = ["kt", "kts"]
+extensions = ["kt", "ktm", "kts"]
 facets = ["structured-code"]
 comments = "c"

@@ -1,0 +1,5 @@
+id = "brainfuck"
+display-name = "Brainfuck"
+role = "programming"
+extensions = ["b", "bf"]
+sources = ["linguist"]

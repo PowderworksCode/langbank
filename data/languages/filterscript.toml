@@ -1,0 +1,5 @@
+id = "filterscript"
+display-name = "Filterscript"
+role = "programming"
+extensions = ["fs"]
+sources = ["linguist"]

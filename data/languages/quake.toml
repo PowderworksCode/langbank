@@ -1,0 +1,5 @@
+id = "quake"
+display-name = "Quake"
+role = "programming"
+filenames = ["m3makefile", "m3overrides"]
+sources = ["linguist"]

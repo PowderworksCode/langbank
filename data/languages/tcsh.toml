@@ -1,0 +1,6 @@
+id = "tcsh"
+display-name = "Tcsh"
+role = "programming"
+extensions = ["csh", "tcsh"]
+shebangs = ["csh", "tcsh"]
+sources = ["linguist"]

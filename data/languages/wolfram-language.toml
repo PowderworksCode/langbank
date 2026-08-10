@@ -1,0 +1,6 @@
+id = "wolfram-language"
+display-name = "Wolfram Language"
+role = "programming"
+extensions = ["cdf", "m", "ma", "mathematica", "mt", "nb", "nbp", "wl", "wls", "wlt"]
+shebangs = ["MathKernel", "Mathematica", "MathematicaScript", "WolframKernel", "WolframNB", "math", "wolfram", "wolframscript"]
+sources = ["linguist"]

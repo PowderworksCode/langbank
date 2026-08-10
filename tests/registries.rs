@@ -36,14 +36,18 @@ fn language_ids_are_unique() {
 }
 
 #[test]
-fn every_declared_extension_resolves() {
+fn every_declared_extension_resolves_or_is_contested() {
+    // An extension resolves unless several languages claim it and none of them
+    // claims to win it, which is a deliberate refusal rather than a gap.
     for profile in language_profiles() {
         for extension in profile.extensions {
-            assert!(
-                language_profile_for_extension(extension).is_some(),
-                "{extension} is declared by {} and resolves to nothing",
-                profile.id
-            );
+            if language_profile_for_extension(extension).is_none() {
+                assert!(
+                    languages_claiming_extension(extension).len() > 1,
+                    "{extension} is claimed only by {} and still resolves to nothing",
+                    profile.id
+                );
+            }
         }
     }
 }

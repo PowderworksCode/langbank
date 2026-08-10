@@ -1,0 +1,7 @@
+id = "erlang"
+display-name = "Erlang"
+role = "programming"
+extensions = ["app", "app.src", "erl", "es", "escript", "hrl", "xrl", "yrl"]
+filenames = ["Emakefile", "rebar.config", "rebar.config.lock", "rebar.lock"]
+shebangs = ["escript"]
+sources = ["linguist"]

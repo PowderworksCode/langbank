@@ -1,0 +1,5 @@
+id = "pickle"
+display-name = "Pickle"
+role = "data"
+extensions = ["pkl"]
+sources = ["linguist"]

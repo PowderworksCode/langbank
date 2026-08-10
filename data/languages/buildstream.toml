@@ -1,0 +1,5 @@
+id = "buildstream"
+display-name = "BuildStream"
+role = "data"
+extensions = ["bst"]
+sources = ["linguist"]

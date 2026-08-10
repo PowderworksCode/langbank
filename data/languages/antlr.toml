@@ -1,0 +1,5 @@
+id = "antlr"
+display-name = "ANTLR"
+role = "programming"
+extensions = ["g4"]
+sources = ["linguist"]

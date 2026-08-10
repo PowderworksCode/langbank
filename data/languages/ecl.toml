@@ -1,0 +1,5 @@
+id = "ecl"
+display-name = "ECL"
+role = "programming"
+extensions = ["ecl", "eclxml"]
+sources = ["linguist"]

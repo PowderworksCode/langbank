@@ -1,0 +1,5 @@
+id = "bibtex"
+display-name = "BibTeX"
+role = "markup"
+extensions = ["bib", "bibtex"]
+sources = ["linguist"]

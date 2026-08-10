@@ -1,0 +1,5 @@
+id = "kaitai-struct"
+display-name = "Kaitai Struct"
+role = "programming"
+extensions = ["ksy"]
+sources = ["linguist"]

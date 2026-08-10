@@ -1,0 +1,5 @@
+id = "smalltalk"
+display-name = "Smalltalk"
+role = "programming"
+extensions = ["cs", "st"]
+sources = ["linguist"]

@@ -1,6 +1,7 @@
 id = "c-sharp"
 display-name = "C#"
 role = "programming"
-extensions = ["cs"]
+extensions = ["cake", "cs", "cs.pp", "csx", "linq"]
+primary-extensions = ["cake", "cs"]
 facets = ["structured-code"]
 comments = "c"

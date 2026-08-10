@@ -1,0 +1,5 @@
+id = "xc"
+display-name = "XC"
+role = "programming"
+extensions = ["xc"]
+sources = ["linguist"]

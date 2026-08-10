@@ -1,0 +1,5 @@
+id = "visual-basic-net"
+display-name = "Visual Basic .NET"
+role = "programming"
+extensions = ["vb", "vbhtml"]
+sources = ["linguist"]

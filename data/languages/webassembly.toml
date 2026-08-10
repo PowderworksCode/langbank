@@ -1,0 +1,5 @@
+id = "webassembly"
+display-name = "WebAssembly"
+role = "programming"
+extensions = ["wast", "wat"]
+sources = ["linguist"]

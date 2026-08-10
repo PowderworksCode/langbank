@@ -1,0 +1,5 @@
+id = "modula-3"
+display-name = "Modula-3"
+role = "programming"
+extensions = ["i3", "ig", "m3", "mg"]
+sources = ["linguist"]

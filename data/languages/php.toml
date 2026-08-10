@@ -1,7 +1,9 @@
 id = "php"
 display-name = "PHP"
 role = "programming"
-extensions = ["php"]
+filenames = [".php", ".php_cs", ".php_cs.dist", "Phakefile"]
+extensions = ["aw", "ctp", "fcgi", "inc", "php", "php3", "php4", "php5", "phps", "phpt"]
+primary-extensions = ["php"]
 shebangs = ["php"]
 facets = ["structured-code"]
 comments = "php"

@@ -1,0 +1,5 @@
+id = "digital-command-language"
+display-name = "DIGITAL Command Language"
+role = "programming"
+extensions = ["com"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "autoit"
+display-name = "AutoIt"
+role = "programming"
+extensions = ["au3"]
+sources = ["linguist"]

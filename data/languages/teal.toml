@@ -1,0 +1,6 @@
+id = "teal"
+display-name = "Teal"
+role = "programming"
+extensions = ["tl"]
+shebangs = ["tl"]
+sources = ["linguist"]

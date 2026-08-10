@@ -1,0 +1,5 @@
+id = "jsoniq"
+display-name = "JSONiq"
+role = "programming"
+extensions = ["jq"]
+sources = ["linguist"]

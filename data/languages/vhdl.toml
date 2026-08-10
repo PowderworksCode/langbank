@@ -1,0 +1,5 @@
+id = "vhdl"
+display-name = "VHDL"
+role = "programming"
+extensions = ["vhd", "vhdl", "vhf", "vhi", "vho", "vhs", "vht", "vhw"]
+sources = ["linguist"]

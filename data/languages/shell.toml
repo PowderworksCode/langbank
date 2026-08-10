@@ -1,7 +1,9 @@
 id = "shell"
 display-name = "Shell"
 role = "programming"
-extensions = ["sh", "bash", "zsh", "fish"]
-shebangs = ["sh", "bash", "zsh", "fish"]
+filenames = [".bash_aliases", ".bash_functions", ".bash_history", ".bash_logout", ".bash_profile", ".bashrc", ".cshrc", ".envrc", ".flaskenv", ".kshrc", ".login", ".profile", ".tmux.conf", ".xinitrc", ".xsession", ".zlogin", ".zlogout", ".zprofile", ".zshenv", ".zshrc", "9fs", "PKGBUILD", "bash_aliases", "bash_logout", "bash_profile", "bashrc", "cshrc", "gradlew", "kshrc", "login", "man", "mvnw", "profile", "tmux.conf", "xinitrc", "xsession", "zlogin", "zlogout", "zprofile", "zshenv", "zshrc"]
+extensions = ["bash", "bats", "cgi", "command", "fcgi", "fish", "ksh", "pacscript", "sbatch", "sh", "sh.in", "slurm", "tmux", "tool", "trigger", "zsh", "zsh-theme"]
+primary-extensions = ["fish", "trigger"]
+shebangs = ["ash", "bash", "dash", "fish", "ksh", "mksh", "pdksh", "rc", "sh", "zsh"]
 facets = ["structured-code"]
 comments = "dockerfile"

@@ -1,0 +1,5 @@
+id = "sas"
+display-name = "SAS"
+role = "programming"
+extensions = ["sas"]
+sources = ["linguist"]

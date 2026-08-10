@@ -1,0 +1,5 @@
+id = "figlet-font"
+display-name = "FIGlet Font"
+role = "data"
+extensions = ["flf"]
+sources = ["linguist"]

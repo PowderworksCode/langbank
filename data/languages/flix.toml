@@ -1,0 +1,5 @@
+id = "flix"
+display-name = "Flix"
+role = "programming"
+extensions = ["flix"]
+sources = ["linguist"]

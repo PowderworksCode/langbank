@@ -1,0 +1,5 @@
+id = "gentoo-ebuild"
+display-name = "Gentoo Ebuild"
+role = "programming"
+extensions = ["ebuild"]
+sources = ["linguist"]

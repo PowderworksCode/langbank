@@ -1,0 +1,5 @@
+id = "microsoft-developer-studio-project"
+display-name = "Microsoft Developer Studio Project"
+role = "data"
+extensions = ["dsp"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "eiffel"
+display-name = "Eiffel"
+role = "programming"
+extensions = ["e"]
+sources = ["linguist"]

@@ -1,0 +1,10 @@
+# Upstream sources langbank is checked against. `tools/sync-linguist.py check`
+# fails if any of them knows a language or a detection token we do not.
+
+[linguist]
+repository = "github-linguist/linguist"
+revision = "cebdad77796be73580252f3f7058b5cab3a45105"
+source = "https://raw.githubusercontent.com/github-linguist/linguist/cebdad77796be73580252f3f7058b5cab3a45105/lib/linguist/languages.yml"
+sha256 = "8b544b6844954c90d69bbbd0ec51eb72052085eb78fd47a20d8aac936f6cd9f3"
+license = "MIT"
+languages = 826

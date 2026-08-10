@@ -1,0 +1,5 @@
+id = "adobe-font-metrics"
+display-name = "Adobe Font Metrics"
+role = "data"
+extensions = ["afm"]
+sources = ["linguist"]

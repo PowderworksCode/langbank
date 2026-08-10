@@ -1,0 +1,5 @@
+id = "netlinx"
+display-name = "NetLinx"
+role = "programming"
+extensions = ["axi", "axs"]
+sources = ["linguist"]

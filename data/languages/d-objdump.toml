@@ -1,0 +1,5 @@
+id = "d-objdump"
+display-name = "D-ObjDump"
+role = "data"
+extensions = ["d-objdump"]
+sources = ["linguist"]

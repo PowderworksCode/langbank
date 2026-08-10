@@ -1,0 +1,5 @@
+id = "brightscript"
+display-name = "Brightscript"
+role = "programming"
+extensions = ["brs"]
+sources = ["linguist"]

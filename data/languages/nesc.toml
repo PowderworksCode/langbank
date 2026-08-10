@@ -1,0 +1,5 @@
+id = "nesc"
+display-name = "nesC"
+role = "programming"
+extensions = ["nc"]
+sources = ["linguist"]

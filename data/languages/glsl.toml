@@ -1,0 +1,5 @@
+id = "glsl"
+display-name = "GLSL"
+role = "programming"
+extensions = ["fp", "frag", "frg", "fs", "fsh", "fshader", "geo", "geom", "glsl", "glslf", "glslv", "gs", "gshader", "rchit", "rmiss", "shader", "tesc", "tese", "vert", "vrx", "vs", "vsh", "vshader"]
+sources = ["linguist"]

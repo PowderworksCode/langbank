@@ -1,0 +1,5 @@
+id = "turtle"
+display-name = "Turtle"
+role = "data"
+extensions = ["ttl"]
+sources = ["linguist"]

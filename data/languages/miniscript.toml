@@ -1,0 +1,5 @@
+id = "miniscript"
+display-name = "MiniScript"
+role = "programming"
+extensions = ["ms"]
+sources = ["linguist"]

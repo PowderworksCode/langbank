@@ -1,0 +1,5 @@
+id = "shellcheck-config"
+display-name = "ShellCheck Config"
+role = "data"
+filenames = [".shellcheckrc"]
+sources = ["linguist"]

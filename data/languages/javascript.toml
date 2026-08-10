@@ -1,8 +1,10 @@
 id = "javascript"
 display-name = "JavaScript"
 role = "programming"
-extensions = ["js", "jsx", "mjs", "cjs"]
-shebangs = ["node", "bun", "deno"]
+filenames = ["Jakefile"]
+extensions = ["_js", "bones", "cjs", "es", "es6", "frag", "gs", "jake", "javascript", "js", "jsb", "jscad", "jsfl", "jslib", "jsm", "jspre", "jss", "jsx", "mjs", "njs", "pac", "sjs", "ssjs", "xsjs", "xsjslib"]
+primary-extensions = ["es", "frag", "gs"]
+shebangs = ["bun", "chakra", "d8", "deno", "gjs", "js", "node", "nodejs", "qjs", "rhino", "v8", "v8-shell"]
 facets = ["structured-code", "style-host", "component-host"]
 comments = "javascript"
 config-files = ["jsconfig.json"]

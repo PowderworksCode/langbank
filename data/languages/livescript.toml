@@ -1,0 +1,6 @@
+id = "livescript"
+display-name = "LiveScript"
+role = "programming"
+extensions = ["_ls", "ls"]
+filenames = ["Slakefile"]
+sources = ["linguist"]

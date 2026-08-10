@@ -1,0 +1,5 @@
+id = "gemini"
+display-name = "Gemini"
+role = "documentation"
+extensions = ["gmi"]
+sources = ["linguist"]

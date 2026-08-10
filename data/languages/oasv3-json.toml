@@ -1,0 +1,5 @@
+id = "oasv3-json"
+display-name = "OASv3-json"
+role = "data"
+extensions = ["json"]
+sources = ["linguist"]

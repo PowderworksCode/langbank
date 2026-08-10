@@ -1,0 +1,5 @@
+id = "xslt"
+display-name = "XSLT"
+role = "programming"
+extensions = ["xsl", "xslt"]
+sources = ["linguist"]

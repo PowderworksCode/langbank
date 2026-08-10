@@ -1,0 +1,6 @@
+id = "caddyfile"
+display-name = "Caddyfile"
+role = "data"
+extensions = ["caddyfile"]
+filenames = ["Caddyfile"]
+sources = ["linguist"]

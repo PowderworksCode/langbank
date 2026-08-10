@@ -1,0 +1,5 @@
+id = "aiken"
+display-name = "Aiken"
+role = "programming"
+extensions = ["ak"]
+sources = ["linguist"]

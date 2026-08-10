@@ -1,0 +1,5 @@
+id = "rascript"
+display-name = "RAScript"
+role = "programming"
+extensions = ["rascript"]
+sources = ["linguist"]

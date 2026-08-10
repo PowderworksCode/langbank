@@ -1,0 +1,5 @@
+id = "vba"
+display-name = "VBA"
+role = "programming"
+extensions = ["bas", "cls", "frm", "vba"]
+sources = ["linguist"]

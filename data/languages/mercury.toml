@@ -1,0 +1,6 @@
+id = "mercury"
+display-name = "Mercury"
+role = "programming"
+extensions = ["m", "moo"]
+shebangs = ["mmi"]
+sources = ["linguist"]

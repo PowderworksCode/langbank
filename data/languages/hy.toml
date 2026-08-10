@@ -1,0 +1,6 @@
+id = "hy"
+display-name = "Hy"
+role = "programming"
+extensions = ["hy"]
+shebangs = ["hy"]
+sources = ["linguist"]

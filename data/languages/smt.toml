@@ -1,0 +1,6 @@
+id = "smt"
+display-name = "SMT"
+role = "programming"
+extensions = ["smt", "smt2", "z3"]
+shebangs = ["boolector", "cvc4", "mathsat5", "opensmt", "smt-rat", "smtinterpol", "stp", "verit", "yices2", "z3"]
+sources = ["linguist"]

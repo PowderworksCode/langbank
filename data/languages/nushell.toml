@@ -1,0 +1,6 @@
+id = "nushell"
+display-name = "Nushell"
+role = "programming"
+extensions = ["nu"]
+shebangs = ["nu"]
+sources = ["linguist"]

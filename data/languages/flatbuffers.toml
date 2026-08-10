@@ -1,0 +1,5 @@
+id = "flatbuffers"
+display-name = "FlatBuffers"
+role = "data"
+extensions = ["fbs"]
+sources = ["linguist"]

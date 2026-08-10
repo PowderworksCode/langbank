@@ -1,0 +1,5 @@
+id = "plsql"
+display-name = "PLSQL"
+role = "programming"
+extensions = ["bdy", "ddl", "fnc", "pck", "pkb", "pks", "plb", "pls", "plsql", "prc", "spc", "sql", "tpb", "tps", "trg", "vw"]
+sources = ["linguist"]

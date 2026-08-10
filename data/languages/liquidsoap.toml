@@ -1,0 +1,5 @@
+id = "liquidsoap"
+display-name = "Liquidsoap"
+role = "programming"
+extensions = ["liq"]
+sources = ["linguist"]

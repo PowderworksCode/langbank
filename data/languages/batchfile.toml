@@ -1,0 +1,6 @@
+id = "batchfile"
+display-name = "Batchfile"
+role = "programming"
+extensions = ["bat", "cmd"]
+filenames = ["gradlew.bat", "mvnw.cmd"]
+sources = ["linguist"]

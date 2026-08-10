@@ -1,0 +1,5 @@
+id = "star"
+display-name = "STAR"
+role = "data"
+extensions = ["star"]
+sources = ["linguist"]

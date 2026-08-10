@@ -1,0 +1,5 @@
+id = "dataweave"
+display-name = "DataWeave"
+role = "programming"
+extensions = ["dwl"]
+sources = ["linguist"]

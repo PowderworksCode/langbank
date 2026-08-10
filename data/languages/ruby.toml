@@ -1,8 +1,9 @@
 id = "ruby"
 display-name = "Ruby"
 role = "programming"
-extensions = ["rb", "rake"]
-filenames = ["Gemfile", "Rakefile"]
-shebangs = ["ruby"]
+extensions = ["builder", "eye", "fcgi", "gemspec", "god", "jbuilder", "mspec", "pluginspec", "podspec", "prawn", "rabl", "rake", "rb", "rbi", "rbuild", "rbw", "rbx", "ru", "ruby", "spec", "thor", "watchr"]
+primary-extensions = ["pluginspec"]
+filenames = [".irbrc", ".pryrc", ".simplecov", "Appraisals", "Berksfile", "Brewfile", "Buildfile", "Capfile", "Dangerfile", "Deliverfile", "Fastfile", "Gemfile", "Guardfile", "Jarfile", "Mavenfile", "Podfile", "Puppetfile", "Rakefile", "Snapfile", "Steepfile", "Thorfile", "Vagrantfile", "buildfile"]
+shebangs = ["jruby", "macruby", "rake", "rbx", "ruby"]
 facets = ["structured-code"]
 comments = "dockerfile"

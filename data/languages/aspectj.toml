@@ -1,0 +1,5 @@
+id = "aspectj"
+display-name = "AspectJ"
+role = "programming"
+extensions = ["aj"]
+sources = ["linguist"]

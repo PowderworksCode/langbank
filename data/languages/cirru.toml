@@ -1,0 +1,5 @@
+id = "cirru"
+display-name = "Cirru"
+role = "programming"
+extensions = ["cirru"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "clean"
+display-name = "Clean"
+role = "programming"
+extensions = ["dcl", "icl"]
+sources = ["linguist"]

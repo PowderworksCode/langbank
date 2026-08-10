@@ -1,0 +1,5 @@
+id = "jison-lex"
+display-name = "Jison Lex"
+role = "programming"
+extensions = ["jisonlex"]
+sources = ["linguist"]

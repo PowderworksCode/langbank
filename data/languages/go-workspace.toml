@@ -1,0 +1,5 @@
+id = "go-workspace"
+display-name = "Go Workspace"
+role = "data"
+filenames = ["go.work"]
+sources = ["linguist"]

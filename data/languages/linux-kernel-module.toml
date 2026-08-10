@@ -1,0 +1,5 @@
+id = "linux-kernel-module"
+display-name = "Linux Kernel Module"
+role = "data"
+extensions = ["mod"]
+sources = ["linguist"]

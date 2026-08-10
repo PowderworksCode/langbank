@@ -1,0 +1,5 @@
+id = "icalendar"
+display-name = "iCalendar"
+role = "data"
+extensions = ["ical", "ics"]
+sources = ["linguist"]

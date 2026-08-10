@@ -1,0 +1,5 @@
+id = "smpl"
+display-name = "SmPL"
+role = "programming"
+extensions = ["cocci"]
+sources = ["linguist"]

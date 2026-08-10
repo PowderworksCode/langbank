@@ -1,0 +1,5 @@
+id = "cweb"
+display-name = "CWeb"
+role = "programming"
+extensions = ["w"]
+sources = ["linguist"]

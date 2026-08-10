@@ -1,0 +1,5 @@
+id = "faust"
+display-name = "Faust"
+role = "programming"
+extensions = ["dsp"]
+sources = ["linguist"]

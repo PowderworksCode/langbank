@@ -1,0 +1,5 @@
+id = "rascal"
+display-name = "Rascal"
+role = "programming"
+extensions = ["rsc"]
+sources = ["linguist"]

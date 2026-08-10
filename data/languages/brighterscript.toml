@@ -1,0 +1,5 @@
+id = "brighterscript"
+display-name = "BrighterScript"
+role = "programming"
+extensions = ["bs"]
+sources = ["linguist"]

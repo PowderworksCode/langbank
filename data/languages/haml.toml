@@ -1,0 +1,5 @@
+id = "haml"
+display-name = "Haml"
+role = "markup"
+extensions = ["haml", "haml.deface"]
+sources = ["linguist"]

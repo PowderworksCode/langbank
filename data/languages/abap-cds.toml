@@ -1,0 +1,5 @@
+id = "abap-cds"
+display-name = "ABAP CDS"
+role = "programming"
+extensions = ["asddls"]
+sources = ["linguist"]

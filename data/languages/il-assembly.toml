@@ -1,0 +1,5 @@
+id = "il-assembly"
+display-name = "IL Assembly"
+role = "programming"
+extensions = ["il"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "shellsession"
+display-name = "ShellSession"
+role = "programming"
+extensions = ["sh-session"]
+sources = ["linguist"]

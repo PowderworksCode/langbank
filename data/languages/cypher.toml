@@ -1,0 +1,5 @@
+id = "cypher"
+display-name = "Cypher"
+role = "programming"
+extensions = ["cyp", "cypher"]
+sources = ["linguist"]

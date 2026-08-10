@@ -1,0 +1,5 @@
+id = "objective-j"
+display-name = "Objective-J"
+role = "programming"
+extensions = ["j", "sj"]
+sources = ["linguist"]

@@ -1,0 +1,6 @@
+id = "snakemake"
+display-name = "Snakemake"
+role = "programming"
+extensions = ["smk", "snakefile"]
+filenames = ["Snakefile"]
+sources = ["linguist"]

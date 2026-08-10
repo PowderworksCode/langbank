@@ -1,0 +1,5 @@
+id = "kerboscript"
+display-name = "KerboScript"
+role = "programming"
+extensions = ["ks"]
+sources = ["linguist"]

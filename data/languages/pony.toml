@@ -1,0 +1,5 @@
+id = "pony"
+display-name = "Pony"
+role = "programming"
+extensions = ["pony"]
+sources = ["linguist"]

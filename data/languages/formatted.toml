@@ -1,0 +1,5 @@
+id = "formatted"
+display-name = "Formatted"
+role = "data"
+extensions = ["eam.fs", "for"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "urweb"
+display-name = "UrWeb"
+role = "programming"
+extensions = ["ur", "urs"]
+sources = ["linguist"]

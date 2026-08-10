@@ -1,0 +1,6 @@
+id = "puppet"
+display-name = "Puppet"
+role = "programming"
+extensions = ["pp"]
+filenames = ["Modulefile"]
+sources = ["linguist"]

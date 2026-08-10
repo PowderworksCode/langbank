@@ -1,7 +1,9 @@
 id = "python"
 display-name = "Python"
 role = "programming"
-extensions = ["py", "pyi"]
-shebangs = ["python"]
+filenames = [".gclient", "DEPS", "SConscript", "SConstruct", "wscript"]
+extensions = ["cgi", "fcgi", "gyp", "gypi", "lmi", "py", "py3", "pyde", "pyi", "pyp", "pyt", "pyw", "rpy", "spec", "tac", "wsgi", "xpy"]
+primary-extensions = ["rpy"]
+shebangs = ["py", "pypy", "pypy3", "python", "python2", "python3", "uv"]
 facets = ["structured-code"]
 comments = "python"

@@ -1,0 +1,5 @@
+id = "daslang"
+display-name = "Daslang"
+role = "programming"
+extensions = ["das"]
+sources = ["linguist"]

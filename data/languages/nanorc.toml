@@ -1,0 +1,6 @@
+id = "nanorc"
+display-name = "nanorc"
+role = "data"
+extensions = ["nanorc"]
+filenames = [".nanorc", "nanorc"]
+sources = ["linguist"]

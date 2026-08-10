@@ -1,0 +1,5 @@
+id = "raml"
+display-name = "RAML"
+role = "markup"
+extensions = ["raml"]
+sources = ["linguist"]

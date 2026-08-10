@@ -1,0 +1,5 @@
+id = "bbcode"
+display-name = "BBCode"
+role = "markup"
+extensions = ["bbcode"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "ragel"
+display-name = "Ragel"
+role = "programming"
+extensions = ["rl"]
+sources = ["linguist"]

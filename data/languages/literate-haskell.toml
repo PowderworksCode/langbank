@@ -1,0 +1,5 @@
+id = "literate-haskell"
+display-name = "Literate Haskell"
+role = "programming"
+extensions = ["lhs"]
+sources = ["linguist"]

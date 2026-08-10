@@ -1,0 +1,5 @@
+id = "bluespec-bh"
+display-name = "Bluespec BH"
+role = "programming"
+extensions = ["bs"]
+sources = ["linguist"]

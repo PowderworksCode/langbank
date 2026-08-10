@@ -1,0 +1,5 @@
+id = "protocol-buffer"
+display-name = "Protocol Buffer"
+role = "data"
+extensions = ["proto"]
+sources = ["linguist"]

@@ -53,7 +53,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 
 | registry | count |
 |---|---|
-| languages | 29 |
+| languages | 827 |
 | ecosystems | 5 — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | artifacts | binary, napi, site, tauri |
@@ -74,6 +74,53 @@ verbosity_ratio("rust", "typescript");                    // measured, corpus-ve
 Registration goes through `inventory`, so a downstream crate can add profiles
 without editing this one.
 
+## Every language, one shape
+
+Langbank carries **827 languages**, one file each. They differ in depth, not in
+kind: a thin entry is a name and a way to recognise it, a modelled one adds
+conventions, facets and comment syntax, and enriching a language means editing
+its file rather than promoting it between tiers.
+
+```toml
+# data/languages/cobol.toml — thin, for now
+id = "cobol"
+display-name = "COBOL"
+role = "programming"
+extensions = ["cbl", "ccp", "cob", "cpy"]
+sources = ["linguist"]
+```
+
+There is no curated-versus-imported flag. How well a language is modelled is
+read off its data — does it have conventions? — because every language is meant
+to be fully modelled eventually and a tier tag would outlive its usefulness.
+
+### Contested tokens
+
+Completeness brings collisions: **176 of 1,478 extensions are claimed by more
+than one language**. `.inc` belongs to twelve, `.h` to three, `.rs` to Rust,
+RenderScript and XML.
+
+A contest is settled only when exactly one claimant declares the token
+`primary-extensions`. Otherwise detection **returns nothing** — guessing without
+reading the file is a wrong answer where declining is merely an unhelpful one —
+and `languages_claiming_extension` hands a consumer the candidates so it can
+decide for itself. 28 contests are settled; 148 are left honestly open.
+
+### Staying current
+
+Upstream sources are what langbank is *checked against*, never what it defers
+to:
+
+```sh
+tools/sync-linguist.py check     # CI: fails if linguist knows something we do not
+tools/sync-linguist.py create    # writes a file for each language we lack
+```
+
+`check` compares every language and every extension, filename and interpreter.
+`create` only ever writes files that do not exist — a hand-written entry with a
+missing token is reported for a person to add, never silently rewritten. The
+same shape of tool is how any further source gets absorbed.
+
 ## The data is data
 
 Languages live in `data/` as TOML and `build.rs` generates the same `&'static`
@@ -86,7 +133,8 @@ data/
   comment-syntax.toml       tables shared by languages that comment alike
   facets.toml               reusable source surfaces
   artifacts.toml            what a build produces
-  languages/rust.toml       one file per language
+  languages/rust.toml       one file per language, all 827 of them
+  sources/linguist.toml     upstream sources, pinned by revision and digest
   ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
   tools/cargo.toml          one file per tool, with its command patterns
 ```

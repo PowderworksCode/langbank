@@ -1,0 +1,5 @@
+id = "typespec"
+display-name = "TypeSpec"
+role = "programming"
+extensions = ["tsp"]
+sources = ["linguist"]

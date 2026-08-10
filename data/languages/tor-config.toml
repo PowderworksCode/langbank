@@ -1,0 +1,5 @@
+id = "tor-config"
+display-name = "Tor Config"
+role = "data"
+filenames = ["torrc"]
+sources = ["linguist"]

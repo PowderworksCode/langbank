@@ -1,6 +1,7 @@
 id = "html"
 display-name = "HTML"
 role = "markup"
-extensions = ["html", "htm"]
+extensions = ["hta", "htm", "html", "html.hl", "inc", "xht", "xhtml"]
+primary-extensions = ["html"]
 facets = ["style-host"]
 comments = "html"

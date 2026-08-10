@@ -1,0 +1,5 @@
+id = "ispc"
+display-name = "ISPC"
+role = "programming"
+extensions = ["ispc"]
+sources = ["linguist"]

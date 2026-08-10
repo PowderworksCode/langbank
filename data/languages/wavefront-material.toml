@@ -1,0 +1,5 @@
+id = "wavefront-material"
+display-name = "Wavefront Material"
+role = "data"
+extensions = ["mtl"]
+sources = ["linguist"]

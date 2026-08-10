@@ -1,0 +1,5 @@
+id = "promela"
+display-name = "Promela"
+role = "programming"
+extensions = ["pml"]
+sources = ["linguist"]

@@ -1,0 +1,6 @@
+id = "newlisp"
+display-name = "NewLisp"
+role = "programming"
+extensions = ["lisp", "lsp", "nl"]
+shebangs = ["newlisp"]
+sources = ["linguist"]

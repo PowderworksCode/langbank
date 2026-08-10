@@ -1,4 +1,4 @@
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 use std::path::Path;
 use std::sync::LazyLock;
 
@@ -45,6 +45,11 @@ pub struct LanguageProfile {
     pub config_files: &'static [&'static str],
     pub package_dependencies: &'static [&'static str],
     pub supersedes: &'static [&'static LanguageProfile],
+    /// Tokens this language wins when several claim them. Detection declines
+    /// to answer a contested token unless exactly one claimant says this.
+    pub primary_extensions: &'static [&'static str],
+    /// Where these facts came from. Empty means hand-written here.
+    pub sources: &'static [&'static str],
 }
 
 impl LanguageProfile {
@@ -133,10 +138,14 @@ static REGISTERED: LazyLock<Vec<&'static LanguageProfile>> = LazyLock::new(|| {
                 facet.id
             );
         }
-        for extension in profile.extensions {
+        // Extensions are contested constantly and legitimately once a
+        // language registry is complete: `.inc` belongs to twelve languages and
+        // `.h` to three. What must stay unique is a *claim to win* one, since
+        // two languages both declaring `.rs` primary is somebody's mistake.
+        for extension in profile.primary_extensions {
             assert!(
                 extensions.insert(*extension),
-                "duplicate language detection extension {extension:?}"
+                "two languages both claim {extension:?} as primary"
             );
         }
         for superseded in profile.supersedes {
@@ -170,12 +179,68 @@ impl LanguageDetection {
     }
 }
 
+/// Which language a token identifies, when exactly one language does.
+///
+/// Most tokens have a single claimant and resolve outright. 176 extensions are
+/// contested — `.inc` is claimed by twelve languages and `.h` by three — and a
+/// contest is settled only when exactly one claimant declares the token
+/// primary. Otherwise detection returns nothing, because choosing without
+/// reading the file is a wrong answer rather than a missing one, and
+/// `languages_claiming_extension` hands a consumer the candidates instead.
+fn index(
+    claims: fn(&'static LanguageProfile) -> &'static [&'static str],
+    primary: fn(&'static LanguageProfile) -> &'static [&'static str],
+) -> BTreeMap<&'static str, &'static LanguageProfile> {
+    let mut claimants: BTreeMap<&str, Vec<&'static LanguageProfile>> = BTreeMap::new();
+    for profile in language_profiles() {
+        for token in claims(profile) {
+            claimants.entry(token).or_default().push(profile);
+        }
+    }
+    claimants
+        .into_iter()
+        .filter_map(|(token, profiles)| {
+            let resolved = match profiles.as_slice() {
+                [only] => Some(*only),
+                contested => {
+                    let mut preferring = contested
+                        .iter()
+                        .filter(|profile| primary(profile).contains(&token));
+                    match (preferring.next(), preferring.next()) {
+                        (Some(winner), None) => Some(*winner),
+                        _ => None,
+                    }
+                }
+            };
+            resolved.map(|profile| (token, profile))
+        })
+        .collect()
+}
+
+static BY_EXTENSION: LazyLock<BTreeMap<&'static str, &'static LanguageProfile>> =
+    LazyLock::new(|| {
+        index(
+            |profile| profile.extensions,
+            |profile| profile.primary_extensions,
+        )
+    });
+
+static BY_FILENAME: LazyLock<BTreeMap<&'static str, &'static LanguageProfile>> =
+    LazyLock::new(|| index(|profile| profile.filenames, |_| &[]));
+
 pub fn language_profile_for_extension(extension: &str) -> Option<&'static LanguageProfile> {
+    let extension = extension.to_ascii_lowercase();
+    BY_EXTENSION.get(extension.as_str()).copied()
+}
+
+/// Every language that claims this extension, contested or not.
+pub fn languages_claiming_extension(extension: &str) -> Vec<&'static LanguageProfile> {
     let extension = extension.to_ascii_lowercase();
     language_profiles()
         .iter()
         .copied()
-        .find(|profile| profile.extensions.contains(&extension.as_str()))
+        .filter(|profile| profile.extensions.contains(&extension.as_str()))
+        .collect()
 }
 
 pub fn comment_syntax(language: &str) -> Option<&'static CommentSyntax> {
@@ -188,11 +253,7 @@ pub fn comment_syntax_for_extension(extension: &str) -> Option<&'static CommentS
 
 pub fn detect_language(path: &Path, prefix: Option<&[u8]>) -> Option<LanguageDetection> {
     let filename = path.file_name()?.to_str()?;
-    if let Some(profile) = language_profiles()
-        .iter()
-        .copied()
-        .find(|profile| profile.filenames.contains(&filename))
-    {
+    if let Some(profile) = BY_FILENAME.get(filename).copied() {
         return Some(LanguageDetection {
             language: LanguageId::from(profile),
             evidence: vec![LanguageEvidence::Filename {

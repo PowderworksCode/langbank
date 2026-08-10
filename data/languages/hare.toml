@@ -1,0 +1,5 @@
+id = "hare"
+display-name = "Hare"
+role = "programming"
+extensions = ["ha"]
+sources = ["linguist"]

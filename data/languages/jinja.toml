@@ -1,0 +1,5 @@
+id = "jinja"
+display-name = "Jinja"
+role = "markup"
+extensions = ["j2", "jinja", "jinja2"]
+sources = ["linguist"]

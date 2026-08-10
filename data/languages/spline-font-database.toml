@@ -1,0 +1,5 @@
+id = "spline-font-database"
+display-name = "Spline Font Database"
+role = "data"
+extensions = ["sfd"]
+sources = ["linguist"]

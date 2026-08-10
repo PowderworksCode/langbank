@@ -1,0 +1,5 @@
+id = "procfile"
+display-name = "Procfile"
+role = "programming"
+filenames = ["Procfile"]
+sources = ["linguist"]

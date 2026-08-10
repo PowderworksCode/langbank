@@ -1,0 +1,5 @@
+id = "abnf"
+display-name = "ABNF"
+role = "data"
+extensions = ["abnf"]
+sources = ["linguist"]

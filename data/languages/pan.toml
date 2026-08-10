@@ -1,0 +1,5 @@
+id = "pan"
+display-name = "Pan"
+role = "programming"
+extensions = ["pan"]
+sources = ["linguist"]

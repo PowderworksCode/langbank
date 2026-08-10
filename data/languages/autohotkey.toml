@@ -1,0 +1,5 @@
+id = "autohotkey"
+display-name = "AutoHotkey"
+role = "programming"
+extensions = ["ah1", "ah2", "ahk", "ahkl"]
+sources = ["linguist"]

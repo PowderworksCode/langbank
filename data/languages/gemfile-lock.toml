@@ -1,0 +1,5 @@
+id = "gemfile-lock"
+display-name = "Gemfile.lock"
+role = "data"
+filenames = ["Gemfile.lock"]
+sources = ["linguist"]

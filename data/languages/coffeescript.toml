@@ -1,0 +1,7 @@
+id = "coffeescript"
+display-name = "CoffeeScript"
+role = "programming"
+extensions = ["_coffee", "cake", "cjsx", "coffee", "iced"]
+filenames = ["Cakefile"]
+shebangs = ["coffee"]
+sources = ["linguist"]

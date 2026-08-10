@@ -1,0 +1,5 @@
+id = "ren-py"
+display-name = "Ren'Py"
+role = "programming"
+extensions = ["rpy"]
+sources = ["linguist"]

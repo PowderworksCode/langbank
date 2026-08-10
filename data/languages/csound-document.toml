@@ -1,0 +1,5 @@
+id = "csound-document"
+display-name = "Csound Document"
+role = "programming"
+extensions = ["csd"]
+sources = ["linguist"]

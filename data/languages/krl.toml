@@ -1,0 +1,5 @@
+id = "krl"
+display-name = "KRL"
+role = "programming"
+extensions = ["krl"]
+sources = ["linguist"]

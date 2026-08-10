@@ -1,0 +1,6 @@
+id = "hocon"
+display-name = "HOCON"
+role = "data"
+extensions = ["hocon"]
+filenames = [".scalafix.conf", ".scalafmt.conf"]
+sources = ["linguist"]

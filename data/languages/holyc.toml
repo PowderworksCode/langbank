@@ -1,0 +1,5 @@
+id = "holyc"
+display-name = "HolyC"
+role = "programming"
+extensions = ["hc"]
+sources = ["linguist"]

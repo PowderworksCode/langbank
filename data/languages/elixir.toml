@@ -1,0 +1,7 @@
+id = "elixir"
+display-name = "Elixir"
+role = "programming"
+extensions = ["ex", "exs"]
+filenames = ["mix.lock"]
+shebangs = ["elixir"]
+sources = ["linguist"]

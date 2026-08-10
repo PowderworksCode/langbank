@@ -1,0 +1,6 @@
+id = "gnuplot"
+display-name = "Gnuplot"
+role = "programming"
+extensions = ["gnu", "gnuplot", "gp", "p", "plot", "plt"]
+shebangs = ["gnuplot"]
+sources = ["linguist"]
