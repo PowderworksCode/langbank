@@ -33,7 +33,7 @@ MIT; GitHub reports both as `NOASSERTION` and is wrong to.
 | project | licence | shape | status |
 |---|---|---|---|
 | github-linguist/linguist | MIT | language identity | **absorbed** |
-| package-url/purl-spec | MIT | ecosystem naming | next |
+| package-url/purl-spec | MIT | package registries | **absorbed** |
 | XAMPPRocky/tokei | MIT / Apache-2.0 | language identity, comment syntax | queued |
 | boyter/scc | MIT | language identity, comment syntax | queued |
 | neovim/nvim-lspconfig | Apache-2.0 | language → server, root markers | after toolchains |
@@ -51,6 +51,18 @@ reference rather than a feed. Absorbing it wholesale would mostly be re-hosting
 someone else's work, and its premise differs: brief inspects a project to answer
 "what is configured here", where langbank supplies the vocabulary that question
 is asked in.
+
+## What purl actually settled
+
+Aligning with purl was expected to be a rename and turned out to be a model
+split. A purl type names the **registry** a package identity lives in —
+`pkg:npm/lodash@4` — and langbank's "ecosystem" was conflating that with the
+**manager** that reads the manifest. Only two of five langbank ecosystems were
+purl types, because npm, pnpm, yarn and bun are four managers over one registry
+and differ in lockfile, not in what a package is called.
+
+So `data/registries/` carries the 42 purl types with their canonical hosts and
+identity rules, and an ecosystem points at one. Nothing was renamed.
 
 ## Three shapes, which is what decides the order
 
@@ -91,8 +103,8 @@ wrong. The first corroboration should measure this rather than assume it.
 ## Order
 
 ```
-0. purl-spec ids           before anything else accretes: renaming ecosystems
-                           gets more expensive with every source added
+0. purl-spec               done: 42 registries, and the registry/manager split
+                           it forced
 1. tokei + scc             comment syntax is langbank's thinnest area — 11 tables
                            for 827 languages — and this is the first corroboration
 2. independence audit      is agreement actually evidence?

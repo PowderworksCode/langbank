@@ -90,6 +90,10 @@ pub struct EcosystemProfile {
     pub gitignore_patterns: &'static [&'static str],
     pub manifest_selection: ManifestSelection,
     pub dependency_pins: Option<DependencyPinPolicy>,
+    /// The registry this manager's packages are named in. npm, pnpm, yarn and
+    /// bun all point at the same one; what differs between them is the
+    /// lockfile, not the package identity.
+    pub registry: Option<&'static crate::PackageRegistry>,
 }
 
 impl EcosystemProfile {

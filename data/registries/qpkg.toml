@@ -1,0 +1,15 @@
+id = "qpkg"
+display-name = "QNX package"
+uses-repository = true
+
+[namespace]
+requirement = "required"
+case-sensitive = false
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

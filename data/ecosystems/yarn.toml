@@ -1,4 +1,5 @@
 id = "yarn"
+registry = "npm"
 display-name = "Yarn"
 roles = ["package-manager"]
 implied-languages = ["javascript"]

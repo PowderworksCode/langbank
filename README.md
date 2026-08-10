@@ -16,6 +16,7 @@ against permissively licensed upstream projects. With thanks:
 | upstream | licence | what it contributed |
 |---|---|---|
 | [github-linguist/linguist](https://github.com/github-linguist/linguist) | MIT | language names, extensions, filenames, interpreters |
+| [package-url/purl-spec](https://github.com/package-url/purl-spec) | MIT | package registry types, canonical hosts, identity rules |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -67,7 +68,8 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | registry | count |
 |---|---|
 | languages | 827 |
-| ecosystems | 5 — cargo, npm, pnpm, yarn, bun |
+| package registries | 42, aligned with purl |
+| ecosystems | 5 package managers — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
@@ -149,7 +151,8 @@ data/
   artifacts.toml            what a build produces
   languages/rust.toml       one file per language, all 827 of them
   sources/linguist.toml     upstreams checked against, pinned by revision and digest
-  ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
+  ecosystems/cargo.toml     one file per package manager, with what it generates
+  registries/npm.toml       one file per purl type: where package identities live
   tools/cargo.toml          one file per tool, with its command patterns
 ```
 

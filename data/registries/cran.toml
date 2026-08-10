@@ -1,0 +1,16 @@
+id = "cran"
+display-name = "CRAN"
+default-repository = "https://cran.r-project.org"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

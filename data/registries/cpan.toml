@@ -1,0 +1,16 @@
+id = "cpan"
+display-name = "CPAN"
+default-repository = "https://www.cpan.org/"
+uses-repository = true
+
+[namespace]
+requirement = "optional"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

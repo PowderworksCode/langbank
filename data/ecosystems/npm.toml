@@ -1,4 +1,5 @@
 id = "npm"
+registry = "npm"
 display-name = "npm"
 roles = ["package-manager"]
 implied-languages = ["javascript"]

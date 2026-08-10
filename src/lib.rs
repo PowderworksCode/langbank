@@ -22,6 +22,7 @@ mod ecosystem;
 mod facet;
 mod ids;
 mod language;
+mod package_registry;
 mod tool;
 mod traversal;
 mod verbosity;
@@ -60,6 +61,10 @@ pub use languages::rust::PROFILE as RUST_LANGUAGE;
 pub use languages::scss::PROFILE as SCSS_LANGUAGE;
 pub use languages::shell::PROFILE as SHELL_LANGUAGE;
 pub use languages::typescript::PROFILE as TYPESCRIPT_LANGUAGE;
+pub use package_registry::{
+    IdentityComponent, PackageRegistry, PackageRegistryRegistration, Requirement,
+    package_registries, package_registry,
+};
 pub use tool::{
     ArgumentPattern, CiWorkload, CommandPattern, TaskKind, TestRetryConfiguration,
     TestRetryProfile, TestRetrySignal, ToolId, ToolProfile, ToolRegistration, classify_tool,
