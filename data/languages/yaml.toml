@@ -1,0 +1,5 @@
+id = "yaml"
+display-name = "YAML"
+role = "data"
+extensions = ["yaml", "yml"]
+comments = "dockerfile"

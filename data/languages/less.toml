@@ -1,0 +1,6 @@
+id = "less"
+display-name = "Less"
+role = "stylesheet"
+extensions = ["less"]
+facets = ["style-host"]
+comments = "less"

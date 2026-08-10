@@ -1,0 +1,6 @@
+id = "cpp"
+display-name = "C++"
+role = "programming"
+extensions = ["cc", "cpp", "cxx", "hh", "hpp", "hxx"]
+facets = ["structured-code"]
+comments = "c"

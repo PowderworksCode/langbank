@@ -1,0 +1,6 @@
+id = "dockerfile"
+display-name = "Dockerfile"
+role = "build"
+extensions = []
+filenames = ["Dockerfile", "Containerfile"]
+comments = "dockerfile"

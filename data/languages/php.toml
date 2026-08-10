@@ -1,0 +1,7 @@
+id = "php"
+display-name = "PHP"
+role = "programming"
+extensions = ["php"]
+shebangs = ["php"]
+facets = ["structured-code"]
+comments = "php"

@@ -1,0 +1,6 @@
+id = "svelte"
+display-name = "Svelte"
+role = "programming"
+extensions = ["svelte"]
+facets = ["structured-code", "style-host", "component-host"]
+comments = "svelte"

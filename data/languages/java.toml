@@ -1,0 +1,6 @@
+id = "java"
+display-name = "Java"
+role = "programming"
+extensions = ["java"]
+facets = ["structured-code"]
+comments = "c"

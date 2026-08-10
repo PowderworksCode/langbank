@@ -1,0 +1,5 @@
+id = "sql"
+display-name = "SQL"
+role = "programming"
+extensions = ["sql"]
+comments = "sql"

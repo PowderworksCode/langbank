@@ -74,13 +74,48 @@ verbosity_ratio("rust", "typescript");                    // measured, corpus-ve
 Registration goes through `inventory`, so a downstream crate can add profiles
 without editing this one.
 
+## The data is data
+
+Languages live in `data/` as TOML and `build.rs` generates the same `&'static`
+tables they used to be written as by hand. Nothing downstream pays for the
+move: the statics are identical, the registration is identical, and there is no
+runtime parsing.
+
+```
+data/
+  comment-syntax.toml     tables shared by languages that comment alike
+  languages/rust.toml     one file per language
+```
+
+```toml
+id = "typescript"
+extensions = ["ts", "tsx", "mts", "cts"]
+source-extensions = ["ts", "tsx", "mts", "cts", "js", "jsx", "mjs", "cjs"]
+facets = ["structured-code", "style-host", "component-host"]
+comments = "javascript"        # names a shared table
+supersedes = ["javascript"]    # names another language
+
+[[conventions.inline-test]]
+starts-with = ["import "]
+contains-any = ['from "vitest"', "from 'vitest'", "@jest/globals", "node:test"]
+indicator = "test framework import"
+```
+
+Inline-test detection was the one thing that made these profiles not-data: a
+function pointer per language. Both detectors that existed turned out to be the
+same shape — a line prefix, sometimes narrowed by something the same line must
+also contain — so the shape became a rule and the languages keep only their
+tables. The interpreter evaluates line-major then rule-major, first match wins,
+which is the order the hand-written detectors used, so the answers do not
+change.
+
 ## Direction
 
 Stated as intent rather than schedule.
 
-1. **Move the data out of Rust and into TOML**, generating today's statics from
-   it at build time. The data becomes reviewable, generable, validatable, and
-   exportable to consumers that are not Rust — without paying a runtime cost.
+1. **Move the remaining registries out of Rust and into TOML.** Languages are
+   done; ecosystems, tools, artifacts, facets, traversal and the 1,334 lines of
+   verbosity still live in Rust and should follow the same path.
 2. **Bootstrap detection breadth from GitHub linguist**, whose `languages.yml`
    is MIT and already the de-facto standard, keeping the hand-modelled depth
    layer for the languages this fleet actually works on. Two layers, two

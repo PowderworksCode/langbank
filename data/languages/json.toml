@@ -1,0 +1,4 @@
+id = "json"
+display-name = "JSON"
+role = "data"
+extensions = ["json", "jsonc"]

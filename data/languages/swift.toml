@@ -1,0 +1,6 @@
+id = "swift"
+display-name = "Swift"
+role = "programming"
+extensions = ["swift"]
+facets = ["structured-code"]
+comments = "c"

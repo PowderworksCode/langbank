@@ -11,5 +11,11 @@ here needs a type from one of them, the type is in the wrong place.
 - Registration goes through `inventory`, which collects at link time, so a
   library that compiles proves nothing about whether its profiles registered.
   Facts are tested from `tests/`, which links the whole crate.
+- **`data/` is the source of truth for languages.** `build.rs` generates the
+  statics; never edit the generated output, and never add a language by writing
+  Rust. Other registries are still Rust and should move the same way.
+- A build script that cannot read its data panics on purpose. An empty registry
+  that compiles is worse than a build failure, because a consumer sees a
+  language-free world and no error.
 - `cargo fmt`, `cargo clippy --all-targets` and `cargo test` are all expected to
   be clean before a commit.

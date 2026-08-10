@@ -1,0 +1,7 @@
+id = "python"
+display-name = "Python"
+role = "programming"
+extensions = ["py", "pyi"]
+shebangs = ["python"]
+facets = ["structured-code"]
+comments = "python"

@@ -1,0 +1,6 @@
+id = "make"
+display-name = "Make"
+role = "build"
+extensions = ["mk"]
+filenames = ["Makefile", "GNUmakefile"]
+comments = "dockerfile"

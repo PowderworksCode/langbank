@@ -1,0 +1,6 @@
+id = "zig"
+display-name = "Zig"
+role = "programming"
+extensions = ["zig"]
+facets = ["structured-code"]
+comments = "c"
