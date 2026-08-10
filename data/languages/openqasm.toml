@@ -1,0 +1,5 @@
+id = "openqasm"
+display-name = "OpenQASM"
+role = "programming"
+extensions = ["qasm"]
+sources = ["linguist"]

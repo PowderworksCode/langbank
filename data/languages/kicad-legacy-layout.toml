@@ -1,0 +1,5 @@
+id = "kicad-legacy-layout"
+display-name = "KiCad Legacy Layout"
+role = "data"
+extensions = ["brd"]
+sources = ["linguist"]

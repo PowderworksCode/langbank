@@ -1,0 +1,5 @@
+id = "velocity-template-language"
+display-name = "Velocity Template Language"
+role = "markup"
+extensions = ["vtl"]
+sources = ["linguist"]

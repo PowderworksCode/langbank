@@ -1,0 +1,5 @@
+id = "edn"
+display-name = "edn"
+role = "data"
+extensions = ["edn"]
+sources = ["linguist"]

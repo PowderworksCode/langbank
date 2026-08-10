@@ -14,7 +14,7 @@ fn every_language_file_produced_a_profile() {
     // asserted rather than assumed.
     assert_eq!(
         language_profiles().len(),
-        29,
+        827,
         "expected one profile per file in data/languages"
     );
 }

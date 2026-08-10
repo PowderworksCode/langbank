@@ -1,0 +1,5 @@
+id = "objectscript"
+display-name = "ObjectScript"
+role = "programming"
+extensions = ["cls"]
+sources = ["linguist"]

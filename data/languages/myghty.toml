@@ -1,0 +1,5 @@
+id = "myghty"
+display-name = "Myghty"
+role = "programming"
+extensions = ["myt"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "hcl"
+display-name = "HCL"
+role = "programming"
+extensions = ["hcl", "nomad", "tf", "tfvars", "tofu", "workflow"]
+sources = ["linguist"]

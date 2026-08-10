@@ -1,0 +1,5 @@
+id = "protocol-buffer-text-format"
+display-name = "Protocol Buffer Text Format"
+role = "data"
+extensions = ["pbt", "pbtxt", "textproto", "txtpb"]
+sources = ["linguist"]

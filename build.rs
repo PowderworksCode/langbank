@@ -31,9 +31,26 @@ fn strs(value: Option<&Value>) -> String {
     format!("&[{}]", items.join(", "))
 }
 
-/// `c-sharp` is a legal language id and not a legal module name.
+/// `c-sharp` is a legal language id and not a legal module name, and `4d`
+/// starts with a digit, which no identifier may.
 fn ident(id: &str) -> String {
-    id.replace('-', "_")
+    const KEYWORDS: &[&str] = &[
+        "as", "async", "await", "box", "break", "const", "continue", "crate", "dyn", "else",
+        "enum", "extern", "false", "final", "fn", "for", "if", "impl", "in", "let", "loop",
+        "macro", "match", "mod", "move", "mut", "override", "priv", "pub", "ref", "return", "self",
+        "static", "struct", "super", "trait", "true", "try", "type", "typeof", "unsafe", "unsized",
+        "use", "virtual", "where", "while", "yield",
+    ];
+    let name = id.replace('-', "_");
+    if name.starts_with(|c: char| c.is_ascii_digit()) {
+        format!("_{name}")
+    } else if KEYWORDS.contains(&name.as_str()) {
+        // `Move` and `Self` are both languages. A raw identifier would do for
+        // the first and is not permitted for the second, so both take a suffix.
+        format!("{name}_")
+    } else {
+        name
+    }
 }
 
 /// `structured-code` names `crate::STRUCTURED_CODE`.
@@ -594,6 +611,8 @@ fn main() {
              \x20           config_files: {config},\n\
              \x20           package_dependencies: {deps},\n\
              \x20           supersedes: &[{supersedes}],\n\
+             \x20           primary_extensions: {primary},\n\
+             \x20           sources: {sources},\n\
              \x20       }};\n\
              \x20       crate::registry::submit! {{ crate::LanguageRegistration(&PROFILE) }}\n\
              \x20   }}",
@@ -620,6 +639,8 @@ fn main() {
             config = strs(profile.get("config-files")),
             deps = strs(profile.get("package-dependencies")),
             supersedes = supersedes.join(", "),
+            primary = strs(profile.get("primary-extensions")),
+            sources = strs(profile.get("sources")),
         )
         .expect("write profile");
     }

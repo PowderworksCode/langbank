@@ -1,0 +1,5 @@
+id = "directx-3d-file"
+display-name = "DirectX 3D File"
+role = "data"
+extensions = ["x"]
+sources = ["linguist"]

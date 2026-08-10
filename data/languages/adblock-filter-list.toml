@@ -1,0 +1,5 @@
+id = "adblock-filter-list"
+display-name = "Adblock Filter List"
+role = "data"
+extensions = ["txt"]
+sources = ["linguist"]

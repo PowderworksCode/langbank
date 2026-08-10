@@ -1,0 +1,5 @@
+id = "json5"
+display-name = "JSON5"
+role = "data"
+extensions = ["json5"]
+sources = ["linguist"]

@@ -1,6 +1,8 @@
 id = "scala"
 display-name = "Scala"
 role = "programming"
-extensions = ["scala"]
+shebangs = ["scala"]
+extensions = ["kojo", "sbt", "sc", "scala"]
+primary-extensions = ["sc"]
 facets = ["structured-code"]
 comments = "c"

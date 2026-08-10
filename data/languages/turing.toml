@@ -1,0 +1,5 @@
+id = "turing"
+display-name = "Turing"
+role = "programming"
+extensions = ["t", "tu"]
+sources = ["linguist"]

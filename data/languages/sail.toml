@@ -1,0 +1,5 @@
+id = "sail"
+display-name = "Sail"
+role = "programming"
+extensions = ["sail"]
+sources = ["linguist"]

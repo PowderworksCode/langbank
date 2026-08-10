@@ -1,0 +1,5 @@
+id = "ecmarkup"
+display-name = "Ecmarkup"
+role = "markup"
+extensions = ["html"]
+sources = ["linguist"]

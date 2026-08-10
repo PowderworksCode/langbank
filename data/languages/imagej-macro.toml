@@ -1,0 +1,5 @@
+id = "imagej-macro"
+display-name = "ImageJ Macro"
+role = "programming"
+extensions = ["ijm"]
+sources = ["linguist"]

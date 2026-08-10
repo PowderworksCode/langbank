@@ -1,0 +1,5 @@
+id = "ecere-projects"
+display-name = "Ecere Projects"
+role = "data"
+extensions = ["epj"]
+sources = ["linguist"]

@@ -1,0 +1,6 @@
+id = "koka"
+display-name = "Koka"
+role = "programming"
+extensions = ["kk"]
+shebangs = ["koka"]
+sources = ["linguist"]

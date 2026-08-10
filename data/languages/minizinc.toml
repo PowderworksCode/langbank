@@ -1,0 +1,5 @@
+id = "minizinc"
+display-name = "MiniZinc"
+role = "programming"
+extensions = ["mzn"]
+sources = ["linguist"]

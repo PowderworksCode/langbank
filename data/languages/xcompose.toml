@@ -1,0 +1,5 @@
+id = "xcompose"
+display-name = "XCompose"
+role = "data"
+filenames = [".XCompose", "XCompose", "xcompose"]
+sources = ["linguist"]

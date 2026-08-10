@@ -1,0 +1,5 @@
+id = "yasnippet"
+display-name = "YASnippet"
+role = "markup"
+extensions = ["yasnippet"]
+sources = ["linguist"]

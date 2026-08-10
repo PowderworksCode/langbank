@@ -1,0 +1,5 @@
+id = "cairo"
+display-name = "Cairo"
+role = "programming"
+extensions = ["cairo"]
+sources = ["linguist"]

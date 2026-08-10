@@ -1,0 +1,5 @@
+id = "mupad"
+display-name = "mupad"
+role = "programming"
+extensions = ["mu"]
+sources = ["linguist"]

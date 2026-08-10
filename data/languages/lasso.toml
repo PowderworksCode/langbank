@@ -1,0 +1,5 @@
+id = "lasso"
+display-name = "Lasso"
+role = "programming"
+extensions = ["las", "lasso", "lasso8", "lasso9"]
+sources = ["linguist"]

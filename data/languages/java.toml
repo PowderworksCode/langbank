@@ -1,6 +1,6 @@
 id = "java"
 display-name = "Java"
 role = "programming"
-extensions = ["java"]
+extensions = ["jav", "java", "jsh"]
 facets = ["structured-code"]
 comments = "c"

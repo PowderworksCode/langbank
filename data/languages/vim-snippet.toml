@@ -1,0 +1,5 @@
+id = "vim-snippet"
+display-name = "Vim Snippet"
+role = "markup"
+extensions = ["snip", "snippet", "snippets"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "zephir"
+display-name = "Zephir"
+role = "programming"
+extensions = ["zep"]
+sources = ["linguist"]

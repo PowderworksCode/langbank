@@ -1,0 +1,6 @@
+id = "apl"
+display-name = "APL"
+role = "programming"
+extensions = ["apl", "dyalog"]
+shebangs = ["apl", "aplx", "dyalog"]
+sources = ["linguist"]

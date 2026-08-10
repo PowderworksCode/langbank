@@ -1,0 +1,5 @@
+id = "realbasic"
+display-name = "REALbasic"
+role = "programming"
+extensions = ["rbbas", "rbfrm", "rbmnu", "rbres", "rbtbar", "rbuistate"]
+sources = ["linguist"]

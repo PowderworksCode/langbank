@@ -1,0 +1,5 @@
+id = "lookml"
+display-name = "LookML"
+role = "programming"
+extensions = ["lkml", "lookml"]
+sources = ["linguist"]

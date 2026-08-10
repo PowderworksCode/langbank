@@ -1,0 +1,5 @@
+id = "avro-idl"
+display-name = "Avro IDL"
+role = "data"
+extensions = ["avdl"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "2-dimensional-array"
+display-name = "2-Dimensional Array"
+role = "data"
+extensions = ["2da"]
+sources = ["linguist"]

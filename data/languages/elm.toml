@@ -1,0 +1,5 @@
+id = "elm"
+display-name = "Elm"
+role = "programming"
+extensions = ["elm"]
+sources = ["linguist"]

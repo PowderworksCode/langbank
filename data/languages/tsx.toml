@@ -1,0 +1,5 @@
+id = "tsx"
+display-name = "TSX"
+role = "programming"
+extensions = ["tsx"]
+sources = ["linguist"]

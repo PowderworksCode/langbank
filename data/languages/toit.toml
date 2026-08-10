@@ -1,0 +1,5 @@
+id = "toit"
+display-name = "Toit"
+role = "programming"
+extensions = ["toit"]
+sources = ["linguist"]

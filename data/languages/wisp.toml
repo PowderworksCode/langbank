@@ -1,0 +1,5 @@
+id = "wisp"
+display-name = "wisp"
+role = "programming"
+extensions = ["wisp"]
+sources = ["linguist"]

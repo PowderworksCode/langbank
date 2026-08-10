@@ -1,0 +1,5 @@
+id = "tla"
+display-name = "TLA"
+role = "programming"
+extensions = ["tla"]
+sources = ["linguist"]

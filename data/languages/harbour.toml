@@ -1,0 +1,5 @@
+id = "harbour"
+display-name = "Harbour"
+role = "programming"
+extensions = ["hb"]
+sources = ["linguist"]

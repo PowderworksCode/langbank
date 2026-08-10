@@ -1,0 +1,5 @@
+id = "pug"
+display-name = "Pug"
+role = "markup"
+extensions = ["jade", "pug"]
+sources = ["linguist"]

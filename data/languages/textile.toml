@@ -1,0 +1,5 @@
+id = "textile"
+display-name = "Textile"
+role = "documentation"
+extensions = ["textile"]
+sources = ["linguist"]

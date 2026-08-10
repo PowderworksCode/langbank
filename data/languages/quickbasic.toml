@@ -1,0 +1,5 @@
+id = "quickbasic"
+display-name = "QuickBASIC"
+role = "programming"
+extensions = ["bas", "bi"]
+sources = ["linguist"]

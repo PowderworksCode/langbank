@@ -1,0 +1,5 @@
+id = "polar"
+display-name = "Polar"
+role = "programming"
+extensions = ["polar"]
+sources = ["linguist"]

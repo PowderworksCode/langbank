@@ -1,0 +1,5 @@
+id = "unified-parallel-c"
+display-name = "Unified Parallel C"
+role = "programming"
+extensions = ["upc"]
+sources = ["linguist"]

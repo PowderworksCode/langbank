@@ -1,0 +1,6 @@
+id = "jolie"
+display-name = "Jolie"
+role = "programming"
+extensions = ["iol", "ol"]
+shebangs = ["jolie"]
+sources = ["linguist"]

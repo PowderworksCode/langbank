@@ -1,0 +1,5 @@
+id = "pic"
+display-name = "Pic"
+role = "markup"
+extensions = ["chem", "pic"]
+sources = ["linguist"]

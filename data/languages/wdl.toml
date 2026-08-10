@@ -1,0 +1,5 @@
+id = "wdl"
+display-name = "WDL"
+role = "programming"
+extensions = ["wdl"]
+sources = ["linguist"]

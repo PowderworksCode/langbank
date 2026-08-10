@@ -1,0 +1,5 @@
+id = "nsis"
+display-name = "NSIS"
+role = "programming"
+extensions = ["nsh", "nsi"]
+sources = ["linguist"]

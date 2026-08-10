@@ -1,0 +1,5 @@
+id = "gleam"
+display-name = "Gleam"
+role = "programming"
+extensions = ["gleam"]
+sources = ["linguist"]

@@ -1,4 +1,6 @@
 id = "markdown"
 display-name = "Markdown"
 role = "documentation"
-extensions = ["md", "mdx", "markdown"]
+filenames = ["contents.lr"]
+extensions = ["livemd", "markdown", "md", "mdown", "mdwn", "mdx", "mkd", "mkdn", "mkdown", "ronn", "scd", "workbook"]
+primary-extensions = ["md", "mdx"]

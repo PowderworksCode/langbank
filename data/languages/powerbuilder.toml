@@ -1,0 +1,5 @@
+id = "powerbuilder"
+display-name = "PowerBuilder"
+role = "programming"
+extensions = ["pbt", "sra", "sru", "srw"]
+sources = ["linguist"]

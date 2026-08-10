@@ -1,0 +1,5 @@
+id = "ant-build-system"
+display-name = "Ant Build System"
+role = "data"
+filenames = ["ant.xml", "build.xml"]
+sources = ["linguist"]

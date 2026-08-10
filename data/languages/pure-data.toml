@@ -1,0 +1,5 @@
+id = "pure-data"
+display-name = "Pure Data"
+role = "data"
+extensions = ["pd"]
+sources = ["linguist"]

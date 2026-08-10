@@ -1,0 +1,5 @@
+id = "hxml"
+display-name = "HXML"
+role = "data"
+extensions = ["hxml"]
+sources = ["linguist"]

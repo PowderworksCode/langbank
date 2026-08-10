@@ -1,0 +1,5 @@
+id = "ags-script"
+display-name = "AGS Script"
+role = "programming"
+extensions = ["asc", "ash"]
+sources = ["linguist"]

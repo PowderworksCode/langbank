@@ -1,0 +1,6 @@
+id = "jupyter-notebook"
+display-name = "Jupyter Notebook"
+role = "markup"
+extensions = ["ipynb"]
+filenames = ["Notebook"]
+sources = ["linguist"]

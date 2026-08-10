@@ -1,0 +1,5 @@
+id = "neon"
+display-name = "NEON"
+role = "data"
+extensions = ["neon"]
+sources = ["linguist"]

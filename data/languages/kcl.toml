@@ -1,0 +1,6 @@
+id = "kcl"
+display-name = "KCL"
+role = "programming"
+extensions = ["k"]
+filenames = ["kcl.mod", "kcl.mod.lock"]
+sources = ["linguist"]

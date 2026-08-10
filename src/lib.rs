@@ -51,7 +51,7 @@ pub use ids::{ArtifactId, EcosystemId, LanguageId, ProjectFacetId};
 pub use language::{
     CommentSyntax, LanguageProfile, LanguageRegistration, LanguageRole, comment_syntax,
     comment_syntax_for_extension, detect_language, language_profile,
-    language_profile_for_extension, language_profiles,
+    language_profile_for_extension, language_profiles, languages_claiming_extension,
 };
 pub use languages::css::PROFILE as CSS_LANGUAGE;
 pub use languages::javascript::PROFILE as JAVASCRIPT_LANGUAGE;

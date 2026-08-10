@@ -1,0 +1,5 @@
+id = "opentype-feature-file"
+display-name = "OpenType Feature File"
+role = "data"
+extensions = ["fea"]
+sources = ["linguist"]

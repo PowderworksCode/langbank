@@ -1,0 +1,6 @@
+id = "selinux-policy"
+display-name = "SELinux Policy"
+role = "data"
+extensions = ["te"]
+filenames = ["file_contexts", "genfs_contexts", "initial_sids", "port_contexts", "security_classes"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "hosts-file"
+display-name = "Hosts File"
+role = "data"
+filenames = ["HOSTS", "hosts", "hosts.txt"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "tea"
+display-name = "Tea"
+role = "markup"
+extensions = ["tea"]
+sources = ["linguist"]

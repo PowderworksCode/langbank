@@ -1,0 +1,5 @@
+id = "isabelle"
+display-name = "Isabelle"
+role = "programming"
+extensions = ["thy"]
+sources = ["linguist"]

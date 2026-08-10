@@ -1,0 +1,5 @@
+id = "vyper"
+display-name = "Vyper"
+role = "programming"
+extensions = ["vy"]
+sources = ["linguist"]

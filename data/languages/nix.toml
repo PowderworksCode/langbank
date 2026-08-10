@@ -1,0 +1,5 @@
+id = "nix"
+display-name = "Nix"
+role = "programming"
+extensions = ["nix"]
+sources = ["linguist"]

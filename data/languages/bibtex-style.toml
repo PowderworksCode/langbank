@@ -1,0 +1,5 @@
+id = "bibtex-style"
+display-name = "BibTeX Style"
+role = "programming"
+extensions = ["bst"]
+sources = ["linguist"]

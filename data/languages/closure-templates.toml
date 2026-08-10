@@ -1,0 +1,5 @@
+id = "closure-templates"
+display-name = "Closure Templates"
+role = "markup"
+extensions = ["soy"]
+sources = ["linguist"]

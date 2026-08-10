@@ -1,0 +1,5 @@
+id = "solidity"
+display-name = "Solidity"
+role = "programming"
+extensions = ["sol"]
+sources = ["linguist"]

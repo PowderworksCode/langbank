@@ -1,0 +1,5 @@
+id = "tsql"
+display-name = "TSQL"
+role = "programming"
+extensions = ["sql"]
+sources = ["linguist"]

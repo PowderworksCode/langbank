@@ -1,0 +1,5 @@
+id = "java-properties"
+display-name = "Java Properties"
+role = "data"
+extensions = ["properties"]
+sources = ["linguist"]

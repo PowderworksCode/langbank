@@ -1,0 +1,5 @@
+id = "redcode"
+display-name = "Redcode"
+role = "programming"
+extensions = ["cw"]
+sources = ["linguist"]

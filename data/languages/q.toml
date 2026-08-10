@@ -1,0 +1,5 @@
+id = "q"
+display-name = "q"
+role = "programming"
+extensions = ["q"]
+sources = ["linguist"]

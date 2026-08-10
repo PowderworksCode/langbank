@@ -1,0 +1,5 @@
+id = "f-sharp"
+display-name = "F#"
+role = "programming"
+extensions = ["fs", "fsi", "fsx"]
+sources = ["linguist"]

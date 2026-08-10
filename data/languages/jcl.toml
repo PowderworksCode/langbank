@@ -1,0 +1,5 @@
+id = "jcl"
+display-name = "JCL"
+role = "programming"
+extensions = ["jcl"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "bqn"
+display-name = "BQN"
+role = "programming"
+extensions = ["bqn"]
+sources = ["linguist"]

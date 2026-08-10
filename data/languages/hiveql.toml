@@ -1,0 +1,5 @@
+id = "hiveql"
+display-name = "HiveQL"
+role = "programming"
+extensions = ["hql", "q"]
+sources = ["linguist"]

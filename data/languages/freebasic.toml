@@ -1,0 +1,5 @@
+id = "freebasic"
+display-name = "FreeBASIC"
+role = "programming"
+extensions = ["bas", "bi"]
+sources = ["linguist"]

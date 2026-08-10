@@ -1,0 +1,5 @@
+id = "hack"
+display-name = "Hack"
+role = "programming"
+extensions = ["hack", "hh", "hhi", "php"]
+sources = ["linguist"]

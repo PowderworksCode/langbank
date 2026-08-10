@@ -1,0 +1,5 @@
+id = "lark"
+display-name = "Lark"
+role = "data"
+extensions = ["lark"]
+sources = ["linguist"]

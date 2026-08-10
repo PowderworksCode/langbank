@@ -1,0 +1,5 @@
+id = "abap"
+display-name = "ABAP"
+role = "programming"
+extensions = ["abap"]
+sources = ["linguist"]

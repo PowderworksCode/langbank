@@ -1,0 +1,6 @@
+id = "dircolors"
+display-name = "dircolors"
+role = "data"
+extensions = ["dircolors"]
+filenames = [".dir_colors", ".dircolors", "DIR_COLORS", "_dir_colors", "_dircolors", "dir_colors"]
+sources = ["linguist"]

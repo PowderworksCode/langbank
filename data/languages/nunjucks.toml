@@ -1,0 +1,5 @@
+id = "nunjucks"
+display-name = "Nunjucks"
+role = "markup"
+extensions = ["njk"]
+sources = ["linguist"]

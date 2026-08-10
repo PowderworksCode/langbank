@@ -1,0 +1,5 @@
+id = "regular-expression"
+display-name = "Regular Expression"
+role = "data"
+extensions = ["regex", "regexp"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "motorola-68k-assembly"
+display-name = "Motorola 68K Assembly"
+role = "programming"
+extensions = ["asm", "i", "inc", "s", "x68"]
+sources = ["linguist"]

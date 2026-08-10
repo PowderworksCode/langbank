@@ -1,0 +1,6 @@
+id = "io"
+display-name = "Io"
+role = "programming"
+extensions = ["io"]
+shebangs = ["io"]
+sources = ["linguist"]

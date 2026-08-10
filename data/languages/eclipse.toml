@@ -1,0 +1,5 @@
+id = "eclipse"
+display-name = "ECLiPSe"
+role = "programming"
+extensions = ["ecl"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "haxe"
+display-name = "Haxe"
+role = "programming"
+extensions = ["hx", "hxsl"]
+sources = ["linguist"]

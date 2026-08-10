@@ -1,0 +1,5 @@
+id = "slint"
+display-name = "Slint"
+role = "markup"
+extensions = ["slint"]
+sources = ["linguist"]

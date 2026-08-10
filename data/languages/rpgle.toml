@@ -1,0 +1,5 @@
+id = "rpgle"
+display-name = "RPGLE"
+role = "programming"
+extensions = ["rpgle", "sqlrpgle"]
+sources = ["linguist"]

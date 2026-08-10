@@ -1,0 +1,5 @@
+id = "slash"
+display-name = "Slash"
+role = "programming"
+extensions = ["sl"]
+sources = ["linguist"]

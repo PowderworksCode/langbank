@@ -1,0 +1,5 @@
+id = "emberscript"
+display-name = "EmberScript"
+role = "programming"
+extensions = ["em", "emberscript"]
+sources = ["linguist"]

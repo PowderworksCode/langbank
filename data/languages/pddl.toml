@@ -1,0 +1,5 @@
+id = "pddl"
+display-name = "PDDL"
+role = "programming"
+extensions = ["pddl"]
+sources = ["linguist"]

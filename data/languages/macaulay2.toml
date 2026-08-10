@@ -1,0 +1,6 @@
+id = "macaulay2"
+display-name = "Macaulay2"
+role = "programming"
+extensions = ["m2"]
+shebangs = ["M2"]
+sources = ["linguist"]

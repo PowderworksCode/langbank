@@ -1,0 +1,5 @@
+id = "browserslist"
+display-name = "Browserslist"
+role = "data"
+filenames = [".browserslistrc", "browserslist"]
+sources = ["linguist"]

@@ -1,0 +1,6 @@
+id = "pike"
+display-name = "Pike"
+role = "programming"
+extensions = ["pike", "pmod"]
+shebangs = ["pike"]
+sources = ["linguist"]

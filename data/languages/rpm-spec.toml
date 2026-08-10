@@ -1,0 +1,5 @@
+id = "rpm-spec"
+display-name = "RPM Spec"
+role = "data"
+extensions = ["spec"]
+sources = ["linguist"]

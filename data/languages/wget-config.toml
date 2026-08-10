@@ -1,0 +1,5 @@
+id = "wget-config"
+display-name = "Wget Config"
+role = "data"
+filenames = [".wgetrc"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "hoon"
+display-name = "hoon"
+role = "programming"
+extensions = ["hoon"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "eq"
+display-name = "EQ"
+role = "programming"
+extensions = ["eq"]
+sources = ["linguist"]

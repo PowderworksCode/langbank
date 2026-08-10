@@ -1,0 +1,5 @@
+id = "swig"
+display-name = "SWIG"
+role = "programming"
+extensions = ["i", "swg", "swig"]
+sources = ["linguist"]

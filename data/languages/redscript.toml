@@ -1,0 +1,5 @@
+id = "redscript"
+display-name = "Redscript"
+role = "programming"
+extensions = ["reds"]
+sources = ["linguist"]

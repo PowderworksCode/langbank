@@ -1,0 +1,6 @@
+id = "dafny"
+display-name = "Dafny"
+role = "programming"
+extensions = ["dfy"]
+shebangs = ["dafny"]
+sources = ["linguist"]

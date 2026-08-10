@@ -1,0 +1,5 @@
+id = "valve-data-format"
+display-name = "Valve Data Format"
+role = "data"
+extensions = ["vdf", "vmf"]
+sources = ["linguist"]

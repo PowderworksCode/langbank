@@ -2,5 +2,6 @@ id = "scss"
 display-name = "SCSS"
 role = "stylesheet"
 extensions = ["scss", "sass"]
+primary-extensions = ["sass"]
 facets = ["style-host"]
 comments = "less"

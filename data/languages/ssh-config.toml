@@ -1,0 +1,5 @@
+id = "ssh-config"
+display-name = "SSH Config"
+role = "data"
+filenames = ["ssh-config", "ssh_config", "sshconfig", "sshconfig.snip", "sshd-config", "sshd_config"]
+sources = ["linguist"]

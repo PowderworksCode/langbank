@@ -1,0 +1,5 @@
+id = "sass"
+display-name = "Sass"
+role = "markup"
+extensions = ["sass"]
+sources = ["linguist"]

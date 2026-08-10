@@ -1,0 +1,5 @@
+id = "mdsvex"
+display-name = "mdsvex"
+role = "markup"
+extensions = ["svx"]
+sources = ["linguist"]

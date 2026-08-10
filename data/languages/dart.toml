@@ -1,0 +1,6 @@
+id = "dart"
+display-name = "Dart"
+role = "programming"
+extensions = ["dart"]
+shebangs = ["dart"]
+sources = ["linguist"]

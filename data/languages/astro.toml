@@ -1,0 +1,5 @@
+id = "astro"
+display-name = "Astro"
+role = "markup"
+extensions = ["astro"]
+sources = ["linguist"]

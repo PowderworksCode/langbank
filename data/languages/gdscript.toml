@@ -1,0 +1,5 @@
+id = "gdscript"
+display-name = "GDScript"
+role = "programming"
+extensions = ["gd"]
+sources = ["linguist"]

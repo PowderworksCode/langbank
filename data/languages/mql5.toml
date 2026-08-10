@@ -1,0 +1,5 @@
+id = "mql5"
+display-name = "MQL5"
+role = "programming"
+extensions = ["mq5", "mqh"]
+sources = ["linguist"]

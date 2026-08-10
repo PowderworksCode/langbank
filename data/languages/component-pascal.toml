@@ -1,0 +1,5 @@
+id = "component-pascal"
+display-name = "Component Pascal"
+role = "programming"
+extensions = ["cp", "cps"]
+sources = ["linguist"]

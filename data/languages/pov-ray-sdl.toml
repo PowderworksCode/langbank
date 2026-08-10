@@ -1,0 +1,5 @@
+id = "pov-ray-sdl"
+display-name = "POV-Ray SDL"
+role = "programming"
+extensions = ["inc", "pov"]
+sources = ["linguist"]

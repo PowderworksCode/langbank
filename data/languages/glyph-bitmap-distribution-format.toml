@@ -1,0 +1,5 @@
+id = "glyph-bitmap-distribution-format"
+display-name = "Glyph Bitmap Distribution Format"
+role = "data"
+extensions = ["bdf"]
+sources = ["linguist"]

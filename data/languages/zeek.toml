@@ -1,0 +1,5 @@
+id = "zeek"
+display-name = "Zeek"
+role = "programming"
+extensions = ["bro", "zeek"]
+sources = ["linguist"]

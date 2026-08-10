@@ -1,0 +1,6 @@
+id = "e"
+display-name = "E"
+role = "programming"
+extensions = ["e"]
+shebangs = ["rune"]
+sources = ["linguist"]

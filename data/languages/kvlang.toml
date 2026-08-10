@@ -1,0 +1,5 @@
+id = "kvlang"
+display-name = "kvlang"
+role = "markup"
+extensions = ["kv"]
+sources = ["linguist"]

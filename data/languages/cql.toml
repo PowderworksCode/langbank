@@ -1,0 +1,5 @@
+id = "cql"
+display-name = "CQL"
+role = "programming"
+extensions = ["cql"]
+sources = ["linguist"]

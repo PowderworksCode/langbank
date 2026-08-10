@@ -1,0 +1,5 @@
+id = "xquery"
+display-name = "XQuery"
+role = "programming"
+extensions = ["xq", "xql", "xqm", "xquery", "xqy"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "lambdapi"
+display-name = "Lambdapi"
+role = "programming"
+extensions = ["lp"]
+sources = ["linguist"]

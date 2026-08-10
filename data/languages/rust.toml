@@ -1,7 +1,9 @@
 id = "rust"
 display-name = "Rust"
 role = "programming"
-extensions = ["rs"]
+shebangs = ["rust-script"]
+extensions = ["rs", "rs.in"]
+primary-extensions = ["rs"]
 facets = ["structured-code"]
 comments = "rust"
 

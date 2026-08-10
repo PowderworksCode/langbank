@@ -1,0 +1,5 @@
+id = "proguard"
+display-name = "Proguard"
+role = "data"
+extensions = ["pro"]
+sources = ["linguist"]

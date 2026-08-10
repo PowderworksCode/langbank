@@ -1,0 +1,6 @@
+id = "racket"
+display-name = "Racket"
+role = "programming"
+extensions = ["rkt", "rktd", "rktl", "scrbl"]
+shebangs = ["racket"]
+sources = ["linguist"]

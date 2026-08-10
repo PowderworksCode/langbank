@@ -1,0 +1,5 @@
+id = "sieve"
+display-name = "Sieve"
+role = "programming"
+extensions = ["sieve"]
+sources = ["linguist"]

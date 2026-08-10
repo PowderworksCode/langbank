@@ -1,0 +1,5 @@
+id = "vento"
+display-name = "Vento"
+role = "markup"
+extensions = ["vto"]
+sources = ["linguist"]

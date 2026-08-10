@@ -1,0 +1,5 @@
+id = "portugol"
+display-name = "Portugol"
+role = "programming"
+extensions = ["por"]
+sources = ["linguist"]

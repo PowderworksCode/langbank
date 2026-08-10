@@ -1,0 +1,7 @@
+id = "gn"
+display-name = "GN"
+role = "data"
+extensions = ["gn", "gni"]
+filenames = [".gn"]
+shebangs = ["gn"]
+sources = ["linguist"]

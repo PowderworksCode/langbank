@@ -1,0 +1,6 @@
+id = "scheme"
+display-name = "Scheme"
+role = "programming"
+extensions = ["sch", "scm", "sld", "sls", "sps", "ss"]
+shebangs = ["bigloo", "chicken", "csi", "gosh", "guile", "r6rs", "scheme"]
+sources = ["linguist"]

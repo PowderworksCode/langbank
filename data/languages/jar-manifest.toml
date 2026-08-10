@@ -1,0 +1,5 @@
+id = "jar-manifest"
+display-name = "JAR Manifest"
+role = "data"
+filenames = ["MANIFEST.MF"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "talon"
+display-name = "Talon"
+role = "programming"
+extensions = ["talon"]
+sources = ["linguist"]

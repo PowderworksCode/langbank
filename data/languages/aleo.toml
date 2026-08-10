@@ -1,0 +1,5 @@
+id = "aleo"
+display-name = "Aleo"
+role = "programming"
+extensions = ["aleo"]
+sources = ["linguist"]

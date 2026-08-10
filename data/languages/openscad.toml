@@ -1,0 +1,5 @@
+id = "openscad"
+display-name = "OpenSCAD"
+role = "programming"
+extensions = ["scad"]
+sources = ["linguist"]

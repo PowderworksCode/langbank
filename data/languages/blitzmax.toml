@@ -1,0 +1,5 @@
+id = "blitzmax"
+display-name = "BlitzMax"
+role = "programming"
+extensions = ["bmx"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "cartocss"
+display-name = "CartoCSS"
+role = "programming"
+extensions = ["mss"]
+sources = ["linguist"]

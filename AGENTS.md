@@ -16,6 +16,13 @@ here needs a type from one of them, the type is in the wrong place.
   never edit the generated output, and never add an entry by writing Rust.
 - A directory an ecosystem generates is declared in that ecosystem's file, so
   the two cannot drift apart.
+- **Upstream sources are checked against, not deferred to.** Langbank owns every
+  language it carries. `tools/sync-linguist.py check` runs in CI and fails when
+  upstream knows something we do not; absorbing a new source means a tool of the
+  same shape, not a vendored copy.
+- A contested token resolves only when exactly one language declares it primary.
+  Adding a `primary-extensions` claim is a decision about what a file *is*, so
+  make it deliberately.
 - A build script that cannot read its data panics on purpose. An empty registry
   that compiles is worse than a build failure, because a consumer sees a
   language-free world and no error.

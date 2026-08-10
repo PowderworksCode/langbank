@@ -1,0 +1,5 @@
+id = "quakec"
+display-name = "QuakeC"
+role = "programming"
+extensions = ["qc"]
+sources = ["linguist"]

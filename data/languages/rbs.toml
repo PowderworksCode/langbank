@@ -1,0 +1,5 @@
+id = "rbs"
+display-name = "RBS"
+role = "data"
+extensions = ["rbs"]
+sources = ["linguist"]

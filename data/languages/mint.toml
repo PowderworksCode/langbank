@@ -1,0 +1,5 @@
+id = "mint"
+display-name = "Mint"
+role = "programming"
+extensions = ["mint"]
+sources = ["linguist"]

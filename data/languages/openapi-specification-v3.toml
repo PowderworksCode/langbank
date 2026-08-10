@@ -1,0 +1,4 @@
+id = "openapi-specification-v3"
+display-name = "OpenAPI Specification v3"
+role = "data"
+sources = ["linguist"]

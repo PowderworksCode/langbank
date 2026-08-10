@@ -1,0 +1,5 @@
+id = "cycript"
+display-name = "Cycript"
+role = "programming"
+extensions = ["cy"]
+sources = ["linguist"]

@@ -1,0 +1,6 @@
+id = "prolog"
+display-name = "Prolog"
+role = "programming"
+extensions = ["pl", "plt", "pro", "prolog", "yap"]
+shebangs = ["swipl", "yap"]
+sources = ["linguist"]

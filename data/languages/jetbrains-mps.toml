@@ -1,0 +1,5 @@
+id = "jetbrains-mps"
+display-name = "JetBrains MPS"
+role = "programming"
+extensions = ["mpl", "mps", "msd"]
+sources = ["linguist"]

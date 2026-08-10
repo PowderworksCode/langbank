@@ -1,0 +1,6 @@
+id = "linker-script"
+display-name = "Linker Script"
+role = "programming"
+extensions = ["ld", "lds", "x"]
+filenames = ["ld.script"]
+sources = ["linguist"]

@@ -1,0 +1,5 @@
+id = "darcs-patch"
+display-name = "Darcs Patch"
+role = "data"
+extensions = ["darcspatch", "dpatch"]
+sources = ["linguist"]

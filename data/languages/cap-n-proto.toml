@@ -1,0 +1,5 @@
+id = "cap-n-proto"
+display-name = "Cap'n Proto"
+role = "programming"
+extensions = ["capnp"]
+sources = ["linguist"]

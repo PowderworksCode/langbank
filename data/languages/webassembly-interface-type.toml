@@ -1,0 +1,5 @@
+id = "webassembly-interface-type"
+display-name = "WebAssembly Interface Type"
+role = "data"
+extensions = ["wit"]
+sources = ["linguist"]

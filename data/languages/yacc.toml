@@ -1,0 +1,5 @@
+id = "yacc"
+display-name = "Yacc"
+role = "programming"
+extensions = ["y", "yacc", "yy"]
+sources = ["linguist"]

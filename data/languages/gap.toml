@@ -1,0 +1,5 @@
+id = "gap"
+display-name = "GAP"
+role = "programming"
+extensions = ["g", "gap", "gd", "gi", "tst"]
+sources = ["linguist"]

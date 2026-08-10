@@ -1,0 +1,5 @@
+id = "miniyaml"
+display-name = "MiniYAML"
+role = "data"
+extensions = ["yaml", "yml"]
+sources = ["linguist"]

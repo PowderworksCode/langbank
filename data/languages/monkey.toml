@@ -1,0 +1,5 @@
+id = "monkey"
+display-name = "Monkey"
+role = "programming"
+extensions = ["monkey", "monkey2"]
+sources = ["linguist"]

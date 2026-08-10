@@ -1,0 +1,5 @@
+id = "nl"
+display-name = "NL"
+role = "data"
+extensions = ["nl"]
+sources = ["linguist"]

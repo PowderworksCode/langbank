@@ -1,0 +1,6 @@
+id = "picolisp"
+display-name = "PicoLisp"
+role = "programming"
+extensions = ["l"]
+shebangs = ["picolisp", "pil"]
+sources = ["linguist"]

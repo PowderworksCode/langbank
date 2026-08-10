@@ -1,0 +1,5 @@
+id = "sparql"
+display-name = "SPARQL"
+role = "data"
+extensions = ["rq", "sparql"]
+sources = ["linguist"]

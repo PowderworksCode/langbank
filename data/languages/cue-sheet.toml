@@ -1,0 +1,5 @@
+id = "cue-sheet"
+display-name = "Cue Sheet"
+role = "data"
+extensions = ["cue"]
+sources = ["linguist"]

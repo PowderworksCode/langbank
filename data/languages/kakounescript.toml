@@ -1,0 +1,6 @@
+id = "kakounescript"
+display-name = "KakouneScript"
+role = "programming"
+extensions = ["kak"]
+filenames = ["kakrc"]
+sources = ["linguist"]

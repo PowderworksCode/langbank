@@ -1,0 +1,5 @@
+id = "sweave"
+display-name = "Sweave"
+role = "documentation"
+extensions = ["rnw"]
+sources = ["linguist"]

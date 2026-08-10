@@ -1,0 +1,6 @@
+id = "scenic"
+display-name = "Scenic"
+role = "programming"
+extensions = ["scenic"]
+shebangs = ["scenic"]
+sources = ["linguist"]

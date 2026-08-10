@@ -1,0 +1,5 @@
+id = "untyped-plutus-core"
+display-name = "Untyped Plutus Core"
+role = "programming"
+extensions = ["uplc"]
+sources = ["linguist"]

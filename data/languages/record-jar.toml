@@ -1,0 +1,5 @@
+id = "record-jar"
+display-name = "Record Jar"
+role = "data"
+filenames = ["language-subtag-registry.txt"]
+sources = ["linguist"]

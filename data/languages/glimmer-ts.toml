@@ -1,0 +1,5 @@
+id = "glimmer-ts"
+display-name = "Glimmer TS"
+role = "programming"
+extensions = ["gts"]
+sources = ["linguist"]

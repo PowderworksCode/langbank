@@ -1,0 +1,5 @@
+id = "cap-cds"
+display-name = "CAP CDS"
+role = "programming"
+extensions = ["cds"]
+sources = ["linguist"]

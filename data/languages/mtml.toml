@@ -1,0 +1,5 @@
+id = "mtml"
+display-name = "MTML"
+role = "markup"
+extensions = ["mtml"]
+sources = ["linguist"]

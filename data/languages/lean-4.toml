@@ -1,0 +1,5 @@
+id = "lean-4"
+display-name = "Lean 4"
+role = "programming"
+extensions = ["lean"]
+sources = ["linguist"]

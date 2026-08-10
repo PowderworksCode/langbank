@@ -1,0 +1,5 @@
+id = "vala"
+display-name = "Vala"
+role = "programming"
+extensions = ["vala", "vapi"]
+sources = ["linguist"]

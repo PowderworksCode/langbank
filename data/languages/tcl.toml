@@ -1,0 +1,7 @@
+id = "tcl"
+display-name = "Tcl"
+role = "programming"
+extensions = ["adp", "sdc", "tcl", "tcl.in", "tm", "xdc"]
+filenames = ["owh", "starfield"]
+shebangs = ["tclsh", "wish"]
+sources = ["linguist"]

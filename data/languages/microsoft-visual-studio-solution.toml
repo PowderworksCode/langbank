@@ -1,0 +1,5 @@
+id = "microsoft-visual-studio-solution"
+display-name = "Microsoft Visual Studio Solution"
+role = "data"
+extensions = ["sln"]
+sources = ["linguist"]

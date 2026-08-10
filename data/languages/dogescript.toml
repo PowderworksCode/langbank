@@ -1,0 +1,5 @@
+id = "dogescript"
+display-name = "Dogescript"
+role = "programming"
+extensions = ["djs"]
+sources = ["linguist"]

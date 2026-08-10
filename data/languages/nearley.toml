@@ -1,0 +1,5 @@
+id = "nearley"
+display-name = "Nearley"
+role = "programming"
+extensions = ["ne", "nearley"]
+sources = ["linguist"]

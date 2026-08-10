@@ -1,0 +1,5 @@
+id = "stl"
+display-name = "STL"
+role = "data"
+extensions = ["stl"]
+sources = ["linguist"]

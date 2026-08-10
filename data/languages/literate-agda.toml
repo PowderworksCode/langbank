@@ -1,0 +1,5 @@
+id = "literate-agda"
+display-name = "Literate Agda"
+role = "programming"
+extensions = ["lagda"]
+sources = ["linguist"]

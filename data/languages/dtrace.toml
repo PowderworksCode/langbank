@@ -1,0 +1,6 @@
+id = "dtrace"
+display-name = "DTrace"
+role = "programming"
+extensions = ["d"]
+shebangs = ["dtrace"]
+sources = ["linguist"]

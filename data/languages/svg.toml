@@ -1,0 +1,5 @@
+id = "svg"
+display-name = "SVG"
+role = "data"
+extensions = ["svg"]
+sources = ["linguist"]

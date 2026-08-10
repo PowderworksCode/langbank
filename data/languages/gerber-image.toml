@@ -1,0 +1,6 @@
+id = "gerber-image"
+display-name = "Gerber Image"
+role = "data"
+extensions = ["cmp", "gbl", "gbo", "gbp", "gbr", "gbs", "gko", "gml", "gpb", "gpt", "gtl", "gto", "gtp", "gts", "ncl", "sol"]
+shebangs = ["gerbv", "gerbview"]
+sources = ["linguist"]

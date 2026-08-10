@@ -1,0 +1,5 @@
+id = "openrc-runscript"
+display-name = "OpenRC runscript"
+role = "programming"
+shebangs = ["openrc-run"]
+sources = ["linguist"]

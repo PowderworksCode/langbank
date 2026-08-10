@@ -1,0 +1,7 @@
+id = "groovy"
+display-name = "Groovy"
+role = "programming"
+extensions = ["groovy", "grt", "gtpl", "gvy"]
+filenames = ["Jenkinsfile"]
+shebangs = ["groovy"]
+sources = ["linguist"]

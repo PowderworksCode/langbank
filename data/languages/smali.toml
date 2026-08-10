@@ -1,0 +1,5 @@
+id = "smali"
+display-name = "Smali"
+role = "programming"
+extensions = ["smali"]
+sources = ["linguist"]

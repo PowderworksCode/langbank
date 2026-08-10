@@ -1,0 +1,5 @@
+id = "csound"
+display-name = "Csound"
+role = "programming"
+extensions = ["orc", "udo"]
+sources = ["linguist"]

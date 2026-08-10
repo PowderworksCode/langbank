@@ -1,0 +1,5 @@
+id = "flux"
+display-name = "FLUX"
+role = "programming"
+extensions = ["flux", "fx"]
+sources = ["linguist"]

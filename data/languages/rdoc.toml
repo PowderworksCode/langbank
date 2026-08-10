@@ -1,0 +1,5 @@
+id = "rdoc"
+display-name = "RDoc"
+role = "documentation"
+extensions = ["rdoc"]
+sources = ["linguist"]

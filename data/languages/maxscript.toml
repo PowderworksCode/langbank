@@ -1,0 +1,5 @@
+id = "maxscript"
+display-name = "MAXScript"
+role = "programming"
+extensions = ["mcr", "ms"]
+sources = ["linguist"]
