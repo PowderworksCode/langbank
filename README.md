@@ -53,7 +53,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 
 | registry | count |
 |---|---|
-| languages | 29 |
+| languages | 29 curated, 793 imported for detection |
 | ecosystems | 5 — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | artifacts | binary, napi, site, tauri |
@@ -74,6 +74,31 @@ verbosity_ratio("rust", "typescript");                    // measured, corpus-ve
 Registration goes through `inventory`, so a downstream crate can add profiles
 without editing this one.
 
+## Two evidence bars, kept apart
+
+A language is either **curated** — modelled here, with conventions, facets and
+comment syntax — or **imported**, which means a name and a way to recognise it
+and nothing else. `LanguageProvenance` records which, because the difference
+decides how to read a silence:
+
+```rust
+match profile.provenance {
+    LanguageProvenance::Curated => {}                    // no conventions means none
+    LanguageProvenance::Imported { upstream } => {}      // no conventions means nobody looked
+}
+```
+
+Three rules keep the import from displacing anything anybody checked:
+
+1. **A curated id wins outright.** 28 of the 29 curated languages also appear
+   upstream; the imported entry is dropped, not merged.
+2. **A curated profile wins any extension it claims.** All 52 of them are also
+   claimed upstream, and every one still resolves to the curated language.
+3. **An extension several imported languages claim resolves to nothing.**
+   `.inc` is claimed by twelve, `.m` by seven. Guessing between them without
+   reading the file is a confident wrong answer, which is worse than none —
+   `languages_claiming_extension` hands a consumer the candidates instead.
+
 ## The data is data
 
 Languages live in `data/` as TOML and `build.rs` generates the same `&'static`
@@ -86,7 +111,8 @@ data/
   comment-syntax.toml       tables shared by languages that comment alike
   facets.toml               reusable source surfaces
   artifacts.toml            what a build produces
-  languages/rust.toml       one file per language
+  languages/rust.toml       one file per curated language
+  imported/linguist.toml    bulk detection facts, pinned to an upstream revision
   ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
   tools/cargo.toml          one file per tool, with its command patterns
 ```
@@ -117,16 +143,12 @@ change.
 
 Stated as intent rather than schedule.
 
-1. **Bootstrap detection breadth from GitHub linguist**, whose `languages.yml`
-   is MIT and already the de-facto standard, keeping the hand-modelled depth
-   layer for the languages this fleet actually works on. Two layers, two
-   evidence bars, and the difference recorded rather than blurred.
-2. **Model toolchains**, which exist nowhere today: compiler identity and
+1. **Model toolchains**, which exist nowhere today: compiler identity and
    version probes, invocation patterns for build/test/typecheck/format/lint,
    registry and popularity sources, and machine-readable diagnostic formats.
    treebank has all of this hardcoded per language in Rust, and propbank needs
    the version probes for its staleness checks.
-3. **Absorb treebank's registry data** — crates.io dumps, npm, Maven Central,
+2. **Absorb treebank's registry data** — crates.io dumps, npm, Maven Central,
    NuGet, Debian popcon, `packages.ecosyste.ms` — which is `rank`/`resolve`
    today and is plainly data.
 

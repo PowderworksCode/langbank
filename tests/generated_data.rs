@@ -12,10 +12,13 @@ fn every_language_file_produced_a_profile() {
     // A TOML file that fails to parse panics the build; one that parses but
     // loses its id would silently vanish from the registry, so the count is
     // asserted rather than assumed.
+    let curated = language_profiles()
+        .iter()
+        .filter(|profile| profile.provenance.is_curated())
+        .count();
     assert_eq!(
-        language_profiles().len(),
-        29,
-        "expected one profile per file in data/languages"
+        curated, 29,
+        "one curated profile per file in data/languages"
     );
 }
 

@@ -12,7 +12,7 @@
 //! downstream pays a runtime cost for the move — the statics are identical and
 //! the registration is identical.
 
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 use std::fmt::Write as _;
 use std::path::Path;
 
@@ -518,6 +518,95 @@ fn tools(out: &mut String, directory: &Path) {
     out.push_str("}\n\n");
 }
 
+/// Bulk-imported detection facts. A curated id always wins: the import is a
+/// floor, never an override.
+fn imported(out: &mut String, path: &Path, curated: &BTreeSet<String>) {
+    println!("cargo:rerun-if-changed={}", path.display());
+    let text = std::fs::read_to_string(path).expect("read imported languages");
+    let table: BTreeMap<String, Value> = toml::from_str(&text).expect("parse imported languages");
+    let origin = format!(
+        "{}@{}",
+        table
+            .get("upstream")
+            .and_then(Value::as_str)
+            .expect("upstream"),
+        table
+            .get("revision")
+            .and_then(Value::as_str)
+            .unwrap_or_default(),
+    );
+
+    out.push_str("    pub(crate) mod imported {\n");
+    let mut skipped = 0;
+    for (id, language) in &table {
+        // the header fields are strings; only the tables are languages
+        let Some(language) = language.as_table() else {
+            continue;
+        };
+        if curated.contains(id) {
+            skipped += 1;
+            continue;
+        }
+        let name = statik(id);
+        let extensions = strs(language.get("extensions"));
+        let display = language
+            .get("display-name")
+            .and_then(Value::as_str)
+            .unwrap_or(id);
+        let mut w = |line: String| out.push_str(&line);
+        w(format!(
+            "        pub static {name}: crate::LanguageProfile = crate::LanguageProfile {{\n"
+        ));
+        w(format!("            id: {id:?},\n"));
+        w(format!("            display_name: {display:?},\n"));
+        w(format!("            extensions: {extensions},\n"));
+        w(format!("            source_extensions: {extensions},\n"));
+        w(format!(
+            "            filenames: {},\n",
+            strs(language.get("filenames"))
+        ));
+        w(format!(
+            "            shebangs: {},\n",
+            strs(language.get("shebangs"))
+        ));
+        w(format!(
+            "            role: {},\n",
+            role(
+                language
+                    .get("role")
+                    .and_then(Value::as_str)
+                    .unwrap_or("programming")
+            )
+        ));
+        w("            facets: &[],\n".to_owned());
+        w("            comments: None,\n".to_owned());
+        w("            conventions: None,\n".to_owned());
+        w("            config_files: &[],\n".to_owned());
+        w("            package_dependencies: &[],\n".to_owned());
+        w("            supersedes: &[],\n".to_owned());
+        w(format!(
+            "            provenance: crate::LanguageProvenance::Imported {{ upstream: {origin:?} }},\n"
+        ));
+        w("        };\n".to_owned());
+        w(format!(
+            "        crate::registry::submit! {{ crate::LanguageRegistration(&{name}) }}\n"
+        ));
+    }
+    out.push_str("    }\n");
+    println!("cargo:warning=langbank: {skipped} imported languages yielded to curated profiles");
+}
+
+/// A static name for an imported id. `1c-enterprise` is a legal language id and
+/// not a legal identifier, so a leading digit takes an underscore.
+fn statik(id: &str) -> String {
+    let name = screaming(id);
+    if name.starts_with(|c: char| c.is_ascii_digit()) {
+        format!("_{name}")
+    } else {
+        name
+    }
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
@@ -529,6 +618,7 @@ fn main() {
     tools(&mut out, &data.join("tools"));
 
     out.push_str("pub(crate) mod languages {\n");
+    let mut curated_ids = BTreeSet::new();
     comment_tables(&mut out, &data.join("comment-syntax.toml"));
 
     let mut files = std::fs::read_dir(data.join("languages"))
@@ -545,6 +635,7 @@ fn main() {
         let profile: Value =
             toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
         let id = profile.get("id").and_then(Value::as_str).expect("id");
+        curated_ids.insert(id.to_owned());
 
         let facets =
             profile
@@ -594,6 +685,7 @@ fn main() {
              \x20           config_files: {config},\n\
              \x20           package_dependencies: {deps},\n\
              \x20           supersedes: &[{supersedes}],\n\
+             \x20           provenance: crate::LanguageProvenance::Curated,\n\
              \x20       }};\n\
              \x20       crate::registry::submit! {{ crate::LanguageRegistration(&PROFILE) }}\n\
              \x20   }}",
@@ -623,6 +715,7 @@ fn main() {
         )
         .expect("write profile");
     }
+    imported(&mut out, &data.join("imported/linguist.toml"), &curated_ids);
     out.push_str("}\n");
 
     let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("registries.rs");

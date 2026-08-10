@@ -36,8 +36,13 @@ fn language_ids_are_unique() {
 }
 
 #[test]
-fn every_declared_extension_resolves() {
-    for profile in language_profiles() {
+fn every_curated_extension_resolves() {
+    // Only curated ones. An imported extension claimed by several languages
+    // deliberately resolves to nothing — see `imported_languages.rs`.
+    for profile in language_profiles()
+        .iter()
+        .filter(|profile| profile.provenance.is_curated())
+    {
         for extension in profile.extensions {
             assert!(
                 language_profile_for_extension(extension).is_some(),

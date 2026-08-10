@@ -1,4 +1,4 @@
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 use std::path::Path;
 use std::sync::LazyLock;
 
@@ -28,6 +28,27 @@ pub struct CommentSyntax {
     pub multi_quotes: &'static [&'static str],
 }
 
+/// Where a profile's facts came from, and therefore how much is missing.
+///
+/// A curated profile is modelled here and its silence means something: no
+/// conventions means the language has none worth recording. An imported one
+/// carries a name and a way to recognise it and nothing else, so its silence
+/// means only that nobody looked. Collapsing the two would let a consumer read
+/// "no test layout" off 800 languages nobody has ever examined.
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum LanguageProvenance {
+    /// Hand-modelled in `data/languages/`.
+    Curated,
+    /// Imported in bulk from an upstream dataset, named here.
+    Imported { upstream: &'static str },
+}
+
+impl LanguageProvenance {
+    pub fn is_curated(self) -> bool {
+        matches!(self, Self::Curated)
+    }
+}
+
 #[derive(Debug, Clone, Copy)]
 pub struct LanguageProfile {
     pub id: &'static str,
@@ -45,6 +66,7 @@ pub struct LanguageProfile {
     pub config_files: &'static [&'static str],
     pub package_dependencies: &'static [&'static str],
     pub supersedes: &'static [&'static LanguageProfile],
+    pub provenance: LanguageProvenance,
 }
 
 impl LanguageProfile {
@@ -133,11 +155,18 @@ static REGISTERED: LazyLock<Vec<&'static LanguageProfile>> = LazyLock::new(|| {
                 facet.id
             );
         }
-        for extension in profile.extensions {
-            assert!(
-                extensions.insert(*extension),
-                "duplicate language detection extension {extension:?}"
-            );
+        // Curated extensions stay unique: these are the languages this crate
+        // models, and two of them claiming `.rs` is a mistake somebody made.
+        // Imported ones collide constantly and legitimately — `.inc` is claimed
+        // by twelve languages and `.m` by seven — so ambiguity is resolved by
+        // the lookup index rather than forbidden here.
+        if profile.provenance.is_curated() {
+            for extension in profile.extensions {
+                assert!(
+                    extensions.insert(*extension),
+                    "two curated languages claim extension {extension:?}"
+                );
+            }
         }
         for superseded in profile.supersedes {
             assert!(
@@ -170,12 +199,65 @@ impl LanguageDetection {
     }
 }
 
+/// Which language a token identifies, when exactly one language does.
+///
+/// Curated profiles win outright: they are the ones this crate models, and a
+/// bulk import must never displace an answer somebody checked. Among imported
+/// profiles a token has to be unambiguous — `.inc` is claimed by twelve
+/// languages and `.m` by seven, and choosing between them without reading the
+/// file would be a confident wrong answer, which is worse than none.
+fn index(
+    claims: fn(&'static LanguageProfile) -> &'static [&'static str],
+) -> BTreeMap<&'static str, &'static LanguageProfile> {
+    let mut curated: BTreeMap<&str, Vec<&'static LanguageProfile>> = BTreeMap::new();
+    let mut imported: BTreeMap<&str, Vec<&'static LanguageProfile>> = BTreeMap::new();
+    for profile in language_profiles() {
+        let side = if profile.provenance.is_curated() {
+            &mut curated
+        } else {
+            &mut imported
+        };
+        for token in claims(profile) {
+            side.entry(token).or_default().push(profile);
+        }
+    }
+    let mut resolved = BTreeMap::new();
+    for (token, profiles) in imported {
+        if let [only] = profiles.as_slice() {
+            resolved.insert(token, *only);
+        }
+    }
+    for (token, profiles) in curated {
+        if let [only] = profiles.as_slice() {
+            resolved.insert(token, *only);
+        }
+    }
+    resolved
+}
+
+static BY_EXTENSION: LazyLock<BTreeMap<&'static str, &'static LanguageProfile>> =
+    LazyLock::new(|| index(|profile| profile.extensions));
+
+static BY_FILENAME: LazyLock<BTreeMap<&'static str, &'static LanguageProfile>> =
+    LazyLock::new(|| index(|profile| profile.filenames));
+
 pub fn language_profile_for_extension(extension: &str) -> Option<&'static LanguageProfile> {
+    let extension = extension.to_ascii_lowercase();
+    BY_EXTENSION.get(extension.as_str()).copied()
+}
+
+/// Every language that claims this extension, ambiguous or not.
+///
+/// `language_profile_for_extension` declines to answer when more than one
+/// imported language claims a token; this is how a consumer sees the
+/// candidates and decides for itself.
+pub fn languages_claiming_extension(extension: &str) -> Vec<&'static LanguageProfile> {
     let extension = extension.to_ascii_lowercase();
     language_profiles()
         .iter()
         .copied()
-        .find(|profile| profile.extensions.contains(&extension.as_str()))
+        .filter(|profile| profile.extensions.contains(&extension.as_str()))
+        .collect()
 }
 
 pub fn comment_syntax(language: &str) -> Option<&'static CommentSyntax> {
@@ -188,11 +270,7 @@ pub fn comment_syntax_for_extension(extension: &str) -> Option<&'static CommentS
 
 pub fn detect_language(path: &Path, prefix: Option<&[u8]>) -> Option<LanguageDetection> {
     let filename = path.file_name()?.to_str()?;
-    if let Some(profile) = language_profiles()
-        .iter()
-        .copied()
-        .find(|profile| profile.filenames.contains(&filename))
-    {
+    if let Some(profile) = BY_FILENAME.get(filename).copied() {
         return Some(LanguageDetection {
             language: LanguageId::from(profile),
             evidence: vec![LanguageEvidence::Filename {
@@ -214,12 +292,18 @@ pub fn detect_language(path: &Path, prefix: Option<&[u8]>) -> Option<LanguageDet
     let first_line = prefix.split(|byte| *byte == b'\n').next()?;
     let shebang = std::str::from_utf8(first_line).ok()?.strip_prefix("#!")?; // straitjacket-allow:error-discard — a file whose first line is not UTF-8 has no shebang
     let normalized = shebang.to_ascii_lowercase();
-    let profile = language_profiles().iter().copied().find(|profile| {
+    let matches_shebang = |profile: &&'static LanguageProfile| {
         profile
             .shebangs
             .iter()
             .any(|needle| contains_interpreter(&normalized, needle))
-    })?;
+    };
+    let profile = language_profiles()
+        .iter()
+        .copied()
+        .filter(|profile| profile.provenance.is_curated())
+        .find(matches_shebang)
+        .or_else(|| language_profiles().iter().copied().find(matches_shebang))?;
     Some(LanguageDetection {
         language: LanguageId::from(profile),
         evidence: vec![LanguageEvidence::Shebang {
