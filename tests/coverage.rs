@@ -46,16 +46,6 @@ fn depth_is_read_off_the_data_not_off_a_tier() {
 }
 
 #[test]
-fn a_language_records_where_its_facts_came_from() {
-    assert_eq!(
-        language_profile("cobol").expect("cobol").sources,
-        &["linguist"]
-    );
-    // hand-written entries carry no source, because nobody imported them
-    assert!(language_profile("rust").expect("rust").sources.is_empty());
-}
-
-#[test]
 fn absorbing_upstream_changed_no_answer_langbank_already_gave() {
     // Every one of these resolved before the absorb and must still resolve the
     // same way, even though upstream hands the same extension to other

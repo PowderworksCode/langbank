@@ -2,4 +2,3 @@ id = "b4x"
 display-name = "B4X"
 role = "programming"
 extensions = ["bas"]
-sources = ["linguist"]

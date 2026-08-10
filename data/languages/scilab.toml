@@ -2,4 +2,3 @@ id = "scilab"
 display-name = "Scilab"
 role = "programming"
 extensions = ["sce", "sci", "tst"]
-sources = ["linguist"]

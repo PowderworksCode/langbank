@@ -2,4 +2,3 @@ id = "firrtl"
 display-name = "FIRRTL"
 role = "programming"
 extensions = ["fir"]
-sources = ["linguist"]

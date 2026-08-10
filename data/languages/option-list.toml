@@ -2,4 +2,3 @@ id = "option-list"
 display-name = "Option List"
 role = "data"
 filenames = [".ackrc", ".rspec", ".yardopts", "ackrc", "mocha.opts"]
-sources = ["linguist"]

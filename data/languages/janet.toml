@@ -3,4 +3,3 @@ display-name = "Janet"
 role = "programming"
 extensions = ["janet"]
 shebangs = ["janet"]
-sources = ["linguist"]

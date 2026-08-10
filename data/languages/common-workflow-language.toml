@@ -3,4 +3,3 @@ display-name = "Common Workflow Language"
 role = "programming"
 extensions = ["cwl"]
 shebangs = ["cwl-runner"]
-sources = ["linguist"]

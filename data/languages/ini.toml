@@ -3,4 +3,3 @@ display-name = "INI"
 role = "data"
 extensions = ["cfg", "cnf", "container", "dof", "frm", "ini", "lektorproject", "mount", "network", "prefs", "pro", "properties", "service", "socket", "target", "timer", "url"]
 filenames = [".buckconfig", ".coveragerc", ".flake8", ".pylintrc", "HOSTS", "buildozer.spec", "hosts", "pylintrc", "vlcrc"]
-sources = ["linguist"]

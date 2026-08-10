@@ -2,4 +2,3 @@ id = "ligolang"
 display-name = "LigoLANG"
 role = "programming"
 extensions = ["ligo"]
-sources = ["linguist"]

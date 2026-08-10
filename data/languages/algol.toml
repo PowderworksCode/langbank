@@ -2,4 +2,3 @@ id = "algol"
 display-name = "ALGOL"
 role = "programming"
 extensions = ["alg"]
-sources = ["linguist"]

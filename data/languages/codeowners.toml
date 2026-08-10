@@ -2,4 +2,3 @@ id = "codeowners"
 display-name = "CODEOWNERS"
 role = "data"
 filenames = ["CODEOWNERS"]
-sources = ["linguist"]

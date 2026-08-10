@@ -2,4 +2,3 @@ id = "nmodl"
 display-name = "NMODL"
 role = "programming"
 extensions = ["mod"]
-sources = ["linguist"]

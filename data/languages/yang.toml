@@ -2,4 +2,3 @@ id = "yang"
 display-name = "YANG"
 role = "data"
 extensions = ["yang"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "subrip-text"
 display-name = "SubRip Text"
 role = "data"
 extensions = ["srt"]
-sources = ["linguist"]

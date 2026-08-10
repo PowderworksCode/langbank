@@ -2,4 +2,3 @@ id = "mql4"
 display-name = "MQL4"
 role = "programming"
 extensions = ["mq4", "mqh"]
-sources = ["linguist"]

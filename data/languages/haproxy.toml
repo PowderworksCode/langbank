@@ -3,4 +3,3 @@ display-name = "HAProxy"
 role = "data"
 extensions = ["cfg"]
 filenames = ["haproxy.cfg"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "hyphy"
 display-name = "HyPhy"
 role = "programming"
 extensions = ["bf"]
-sources = ["linguist"]

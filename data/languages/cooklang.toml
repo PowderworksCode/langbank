@@ -2,4 +2,3 @@ id = "cooklang"
 display-name = "Cooklang"
 role = "markup"
 extensions = ["cook"]
-sources = ["linguist"]

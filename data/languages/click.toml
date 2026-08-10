@@ -2,4 +2,3 @@ id = "click"
 display-name = "Click"
 role = "programming"
 extensions = ["click"]
-sources = ["linguist"]

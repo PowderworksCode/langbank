@@ -3,4 +3,3 @@ display-name = "KiCad Layout"
 role = "data"
 extensions = ["kicad_mod", "kicad_pcb", "kicad_wks"]
 filenames = ["fp-lib-table"]
-sources = ["linguist"]

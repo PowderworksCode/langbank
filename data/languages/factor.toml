@@ -3,4 +3,3 @@ display-name = "Factor"
 role = "programming"
 extensions = ["factor"]
 filenames = [".factor-boot-rc", ".factor-rc"]
-sources = ["linguist"]

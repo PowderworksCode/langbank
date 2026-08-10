@@ -2,4 +2,3 @@ id = "4d"
 display-name = "4D"
 role = "programming"
 extensions = ["4dm"]
-sources = ["linguist"]

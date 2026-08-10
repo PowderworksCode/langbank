@@ -2,4 +2,3 @@ id = "robots-exclusion-rules"
 display-name = "Robots Exclusion Rules"
 role = "data"
 filenames = ["robots.txt"]
-sources = ["linguist"]

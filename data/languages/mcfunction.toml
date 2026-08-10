@@ -2,4 +2,3 @@ id = "mcfunction"
 display-name = "mcfunction"
 role = "programming"
 extensions = ["mcfunction"]
-sources = ["linguist"]

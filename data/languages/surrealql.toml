@@ -2,4 +2,3 @@ id = "surrealql"
 display-name = "SurrealQL"
 role = "programming"
 extensions = ["surql"]
-sources = ["linguist"]

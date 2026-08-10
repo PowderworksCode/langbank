@@ -3,4 +3,3 @@ display-name = "jq"
 role = "programming"
 extensions = ["jq"]
 shebangs = ["gojq", "jaq", "jq", "jqjq", "jqq", "query-json"]
-sources = ["linguist"]

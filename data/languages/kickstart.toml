@@ -2,4 +2,3 @@ id = "kickstart"
 display-name = "Kickstart"
 role = "data"
 extensions = ["ks"]
-sources = ["linguist"]

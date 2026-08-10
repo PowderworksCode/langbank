@@ -2,4 +2,3 @@ id = "forth"
 display-name = "Forth"
 role = "programming"
 extensions = ["4th", "f", "for", "forth", "fr", "frt", "fs", "fth"]
-sources = ["linguist"]

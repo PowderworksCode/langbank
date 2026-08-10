@@ -2,4 +2,3 @@ id = "stringtemplate"
 display-name = "StringTemplate"
 role = "markup"
 extensions = ["st"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "power-query"
 display-name = "Power Query"
 role = "programming"
 extensions = ["pq"]
-sources = ["linguist"]

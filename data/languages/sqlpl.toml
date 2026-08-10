@@ -2,4 +2,3 @@ id = "sqlpl"
 display-name = "SQLPL"
 role = "programming"
 extensions = ["db2", "sql"]
-sources = ["linguist"]

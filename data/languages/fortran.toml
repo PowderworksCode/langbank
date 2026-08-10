@@ -2,4 +2,3 @@ id = "fortran"
 display-name = "Fortran"
 role = "programming"
 extensions = ["f", "f77", "for", "fpp"]
-sources = ["linguist"]

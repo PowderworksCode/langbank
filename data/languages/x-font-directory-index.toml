@@ -2,4 +2,3 @@ id = "x-font-directory-index"
 display-name = "X Font Directory Index"
 role = "data"
 filenames = ["encodings.dir", "fonts.alias", "fonts.dir", "fonts.scale"]
-sources = ["linguist"]

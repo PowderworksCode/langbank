@@ -2,4 +2,3 @@ id = "xtend"
 display-name = "Xtend"
 role = "programming"
 extensions = ["xtend"]
-sources = ["linguist"]

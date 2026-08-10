@@ -2,4 +2,3 @@ id = "inform-7"
 display-name = "Inform 7"
 role = "programming"
 extensions = ["i7x", "ni"]
-sources = ["linguist"]

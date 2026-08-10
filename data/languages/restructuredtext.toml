@@ -2,4 +2,3 @@ id = "restructuredtext"
 display-name = "reStructuredText"
 role = "documentation"
 extensions = ["rest", "rest.txt", "rst", "rst.txt"]
-sources = ["linguist"]

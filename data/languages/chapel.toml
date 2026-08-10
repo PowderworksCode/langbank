@@ -2,4 +2,3 @@ id = "chapel"
 display-name = "Chapel"
 role = "programming"
 extensions = ["chpl"]
-sources = ["linguist"]

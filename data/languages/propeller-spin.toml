@@ -2,4 +2,3 @@ id = "propeller-spin"
 display-name = "Propeller Spin"
 role = "programming"
 extensions = ["spin"]
-sources = ["linguist"]

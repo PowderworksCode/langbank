@@ -2,4 +2,3 @@ id = "ada"
 display-name = "Ada"
 role = "programming"
 extensions = ["ada", "adb", "ads"]
-sources = ["linguist"]

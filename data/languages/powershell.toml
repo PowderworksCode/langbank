@@ -3,4 +3,3 @@ display-name = "PowerShell"
 role = "programming"
 extensions = ["ps1", "psd1", "psm1"]
 shebangs = ["pwsh"]
-sources = ["linguist"]

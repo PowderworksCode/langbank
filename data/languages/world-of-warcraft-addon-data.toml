@@ -2,4 +2,3 @@ id = "world-of-warcraft-addon-data"
 display-name = "World of Warcraft Addon Data"
 role = "data"
 extensions = ["toc"]
-sources = ["linguist"]

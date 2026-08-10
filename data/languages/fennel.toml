@@ -3,4 +3,3 @@ display-name = "Fennel"
 role = "programming"
 extensions = ["fnl"]
 shebangs = ["fennel"]
-sources = ["linguist"]

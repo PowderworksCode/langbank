@@ -2,4 +2,3 @@ id = "csound-score"
 display-name = "Csound Score"
 role = "programming"
 extensions = ["sco"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "riot"
 display-name = "Riot"
 role = "markup"
 extensions = ["riot"]
-sources = ["linguist"]

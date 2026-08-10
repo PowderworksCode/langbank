@@ -2,4 +2,3 @@ id = "objective-c"
 display-name = "Objective-C"
 role = "programming"
 extensions = ["h", "m"]
-sources = ["linguist"]

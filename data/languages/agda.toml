@@ -2,4 +2,3 @@ id = "agda"
 display-name = "Agda"
 role = "programming"
 extensions = ["agda"]
-sources = ["linguist"]

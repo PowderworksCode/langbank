@@ -2,4 +2,3 @@ id = "blueprint"
 display-name = "Blueprint"
 role = "markup"
 extensions = ["blp"]
-sources = ["linguist"]

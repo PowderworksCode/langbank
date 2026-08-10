@@ -2,4 +2,3 @@ id = "qml"
 display-name = "QML"
 role = "programming"
 extensions = ["qbs", "qml"]
-sources = ["linguist"]

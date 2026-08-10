@@ -2,4 +2,3 @@ id = "overpy"
 display-name = "OverPy"
 role = "programming"
 extensions = ["opy"]
-sources = ["linguist"]

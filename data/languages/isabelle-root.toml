@@ -2,4 +2,3 @@ id = "isabelle-root"
 display-name = "Isabelle ROOT"
 role = "programming"
 filenames = ["ROOT"]
-sources = ["linguist"]

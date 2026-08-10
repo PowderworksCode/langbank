@@ -2,4 +2,3 @@ id = "minid"
 display-name = "MiniD"
 role = "programming"
 extensions = ["minid"]
-sources = ["linguist"]

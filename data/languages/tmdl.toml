@@ -2,4 +2,3 @@ id = "tmdl"
 display-name = "TMDL"
 role = "data"
 extensions = ["tmdl"]
-sources = ["linguist"]

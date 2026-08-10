@@ -3,4 +3,3 @@ display-name = "EditorConfig"
 role = "data"
 extensions = ["editorconfig"]
 filenames = [".editorconfig"]
-sources = ["linguist"]

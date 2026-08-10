@@ -2,4 +2,3 @@ id = "p4"
 display-name = "P4"
 role = "programming"
 extensions = ["p4"]
-sources = ["linguist"]

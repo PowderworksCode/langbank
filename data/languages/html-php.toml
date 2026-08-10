@@ -2,4 +2,3 @@ id = "html-php"
 display-name = "HTML+PHP"
 role = "markup"
 extensions = ["phtml"]
-sources = ["linguist"]

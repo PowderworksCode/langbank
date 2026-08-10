@@ -2,4 +2,3 @@ id = "imba"
 display-name = "Imba"
 role = "programming"
 extensions = ["imba"]
-sources = ["linguist"]

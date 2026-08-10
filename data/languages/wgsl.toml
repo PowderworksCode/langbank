@@ -2,4 +2,3 @@ id = "wgsl"
 display-name = "WGSL"
 role = "programming"
 extensions = ["wgsl"]
-sources = ["linguist"]

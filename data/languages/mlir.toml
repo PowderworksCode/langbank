@@ -2,4 +2,3 @@ id = "mlir"
 display-name = "MLIR"
 role = "programming"
 extensions = ["mlir"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "nit"
 display-name = "Nit"
 role = "programming"
 extensions = ["nit"]
-sources = ["linguist"]

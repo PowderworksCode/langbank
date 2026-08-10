@@ -2,4 +2,3 @@ id = "gradle"
 display-name = "Gradle"
 role = "data"
 extensions = ["gradle"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "handlebars"
 display-name = "Handlebars"
 role = "markup"
 extensions = ["handlebars", "hbs"]
-sources = ["linguist"]

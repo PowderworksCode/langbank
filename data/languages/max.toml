@@ -2,4 +2,3 @@ id = "max"
 display-name = "Max"
 role = "programming"
 extensions = ["maxhelp", "maxpat", "maxproj", "mxt", "pat"]
-sources = ["linguist"]

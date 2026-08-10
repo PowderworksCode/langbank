@@ -2,4 +2,3 @@ id = "codeql"
 display-name = "CodeQL"
 role = "programming"
 extensions = ["ql", "qll"]
-sources = ["linguist"]

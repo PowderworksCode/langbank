@@ -2,4 +2,3 @@ id = "objdump"
 display-name = "ObjDump"
 role = "data"
 extensions = ["objdump"]
-sources = ["linguist"]

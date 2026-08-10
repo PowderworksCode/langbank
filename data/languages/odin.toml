@@ -2,4 +2,3 @@ id = "odin"
 display-name = "Odin"
 role = "programming"
 extensions = ["odin"]
-sources = ["linguist"]

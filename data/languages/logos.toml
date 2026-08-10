@@ -2,4 +2,3 @@ id = "logos"
 display-name = "Logos"
 role = "programming"
 extensions = ["x", "xi", "xm"]
-sources = ["linguist"]

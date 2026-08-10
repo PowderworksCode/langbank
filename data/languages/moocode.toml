@@ -2,4 +2,3 @@ id = "moocode"
 display-name = "Moocode"
 role = "programming"
 extensions = ["moo"]
-sources = ["linguist"]

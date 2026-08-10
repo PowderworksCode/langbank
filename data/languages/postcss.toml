@@ -2,4 +2,3 @@ id = "postcss"
 display-name = "PostCSS"
 role = "markup"
 extensions = ["pcss", "postcss"]
-sources = ["linguist"]

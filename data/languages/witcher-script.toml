@@ -2,4 +2,3 @@ id = "witcher-script"
 display-name = "Witcher Script"
 role = "programming"
 extensions = ["ws"]
-sources = ["linguist"]

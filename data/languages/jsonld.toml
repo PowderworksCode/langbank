@@ -2,4 +2,3 @@ id = "jsonld"
 display-name = "JSONLD"
 role = "data"
 extensions = ["jsonld"]
-sources = ["linguist"]

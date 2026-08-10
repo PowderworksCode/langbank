@@ -2,4 +2,3 @@ id = "gcc-machine-description"
 display-name = "GCC Machine Description"
 role = "programming"
 extensions = ["md"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "ooc"
 display-name = "ooc"
 role = "programming"
 extensions = ["ooc"]
-sources = ["linguist"]

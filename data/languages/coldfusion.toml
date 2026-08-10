@@ -2,4 +2,3 @@ id = "coldfusion"
 display-name = "ColdFusion"
 role = "programming"
 extensions = ["cfm", "cfml"]
-sources = ["linguist"]

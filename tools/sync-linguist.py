@@ -108,7 +108,7 @@ def gaps(upstream, local):
     return missing_languages, missing_tokens
 
 
-def write_language(lid, entry, sources):
+def write_language(lid, entry):
     lines = [f"id = {json.dumps(lid)}", f"display-name = {json.dumps(entry['display'])}",
              f"role = {json.dumps(entry['role'])}"]
     for key, values in (("extensions", entry["extensions"]),
@@ -116,7 +116,6 @@ def write_language(lid, entry, sources):
                         ("shebangs", entry["shebangs"])):
         if values:
             lines.append(f"{key} = {json.dumps(values)}")
-    lines.append(f"sources = {json.dumps(sources)}")
     open(f"data/languages/{lid}.toml", "w").write("\n".join(lines) + "\n")
 
 
@@ -134,7 +133,7 @@ def main():
 
     if args.command == "create":
         for lid in missing_languages:
-            write_language(lid, upstream[lid], ["linguist"])
+            write_language(lid, upstream[lid])
         os.makedirs("data/sources", exist_ok=True)
         open(PIN, "w").write(
             "# Upstream sources langbank is checked against. `tools/sync-linguist.py check`\n"

@@ -2,4 +2,3 @@ id = "circom"
 display-name = "Circom"
 role = "programming"
 extensions = ["circom"]
-sources = ["linguist"]

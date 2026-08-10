@@ -3,4 +3,3 @@ display-name = "REXX"
 role = "programming"
 extensions = ["pprx", "rex", "rexx"]
 shebangs = ["regina", "rexx"]
-sources = ["linguist"]

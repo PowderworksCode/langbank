@@ -3,4 +3,3 @@ display-name = "Qt Script"
 role = "programming"
 extensions = ["qs"]
 filenames = ["installscript.qs", "toolchain_installscript.qs"]
-sources = ["linguist"]

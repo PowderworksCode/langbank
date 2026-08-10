@@ -2,4 +2,3 @@ id = "rocq-prover"
 display-name = "Rocq Prover"
 role = "programming"
 extensions = ["coq", "v"]
-sources = ["linguist"]

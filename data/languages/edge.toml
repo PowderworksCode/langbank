@@ -2,4 +2,3 @@ id = "edge"
 display-name = "Edge"
 role = "markup"
 extensions = ["edge"]
-sources = ["linguist"]

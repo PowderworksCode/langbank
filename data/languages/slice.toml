@@ -2,4 +2,3 @@ id = "slice"
 display-name = "Slice"
 role = "programming"
 extensions = ["ice"]
-sources = ["linguist"]

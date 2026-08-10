@@ -1,4 +1,3 @@
 id = "python-console"
 display-name = "Python console"
 role = "programming"
-sources = ["linguist"]

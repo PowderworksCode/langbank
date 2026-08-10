@@ -2,4 +2,3 @@ id = "overpassql"
 display-name = "OverpassQL"
 role = "programming"
 extensions = ["overpassql"]
-sources = ["linguist"]

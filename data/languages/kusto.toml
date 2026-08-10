@@ -2,4 +2,3 @@ id = "kusto"
 display-name = "Kusto"
 role = "data"
 extensions = ["csl", "kql"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "diff"
 display-name = "Diff"
 role = "data"
 extensions = ["diff", "patch"]
-sources = ["linguist"]

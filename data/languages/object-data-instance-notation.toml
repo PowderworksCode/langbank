@@ -2,4 +2,3 @@ id = "object-data-instance-notation"
 display-name = "Object Data Instance Notation"
 role = "data"
 extensions = ["odin"]
-sources = ["linguist"]

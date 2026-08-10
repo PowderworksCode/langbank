@@ -3,4 +3,3 @@ display-name = "Terra"
 role = "programming"
 extensions = ["t"]
 shebangs = ["lua"]
-sources = ["linguist"]

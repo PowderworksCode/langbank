@@ -48,8 +48,6 @@ pub struct LanguageProfile {
     /// Tokens this language wins when several claim them. Detection declines
     /// to answer a contested token unless exactly one claimant says this.
     pub primary_extensions: &'static [&'static str],
-    /// Where these facts came from. Empty means hand-written here.
-    pub sources: &'static [&'static str],
 }
 
 impl LanguageProfile {

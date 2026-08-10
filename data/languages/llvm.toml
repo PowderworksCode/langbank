@@ -2,4 +2,3 @@ id = "llvm"
 display-name = "LLVM"
 role = "programming"
 extensions = ["ll"]
-sources = ["linguist"]

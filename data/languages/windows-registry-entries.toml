@@ -2,4 +2,3 @@ id = "windows-registry-entries"
 display-name = "Windows Registry Entries"
 role = "data"
 extensions = ["reg"]
-sources = ["linguist"]

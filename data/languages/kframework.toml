@@ -2,4 +2,3 @@ id = "kframework"
 display-name = "KFramework"
 role = "programming"
 extensions = ["k"]
-sources = ["linguist"]

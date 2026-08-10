@@ -2,4 +2,3 @@ id = "mathematical-programming-system"
 display-name = "Mathematical Programming System"
 role = "programming"
 extensions = ["mps"]
-sources = ["linguist"]

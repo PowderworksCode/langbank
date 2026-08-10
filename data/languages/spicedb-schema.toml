@@ -2,4 +2,3 @@ id = "spicedb-schema"
 display-name = "SpiceDB Schema"
 role = "data"
 extensions = ["zed"]
-sources = ["linguist"]

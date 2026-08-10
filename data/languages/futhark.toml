@@ -2,4 +2,3 @@ id = "futhark"
 display-name = "Futhark"
 role = "programming"
 extensions = ["fut"]
-sources = ["linguist"]

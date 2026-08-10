@@ -2,4 +2,3 @@ id = "vcl"
 display-name = "VCL"
 role = "programming"
 extensions = ["vcl"]
-sources = ["linguist"]

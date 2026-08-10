@@ -2,4 +2,3 @@ id = "hlsl"
 display-name = "HLSL"
 role = "programming"
 extensions = ["cginc", "fx", "fxh", "hlsl", "hlsli"]
-sources = ["linguist"]

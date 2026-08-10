@@ -2,4 +2,3 @@ id = "creole"
 display-name = "Creole"
 role = "documentation"
 extensions = ["creole"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "javascript-erb"
 display-name = "JavaScript+ERB"
 role = "programming"
 extensions = ["js.erb"]
-sources = ["linguist"]

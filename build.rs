@@ -612,7 +612,6 @@ fn main() {
              \x20           package_dependencies: {deps},\n\
              \x20           supersedes: &[{supersedes}],\n\
              \x20           primary_extensions: {primary},\n\
-             \x20           sources: {sources},\n\
              \x20       }};\n\
              \x20       crate::registry::submit! {{ crate::LanguageRegistration(&PROFILE) }}\n\
              \x20   }}",
@@ -640,7 +639,6 @@ fn main() {
             deps = strs(profile.get("package-dependencies")),
             supersedes = supersedes.join(", "),
             primary = strs(profile.get("primary-extensions")),
-            sources = strs(profile.get("sources")),
         )
         .expect("write profile");
     }

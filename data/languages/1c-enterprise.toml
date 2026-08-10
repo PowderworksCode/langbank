@@ -2,4 +2,3 @@ id = "1c-enterprise"
 display-name = "1C Enterprise"
 role = "programming"
 extensions = ["bsl", "os"]
-sources = ["linguist"]

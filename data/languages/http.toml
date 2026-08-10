@@ -2,4 +2,3 @@ id = "http"
 display-name = "HTTP"
 role = "data"
 extensions = ["http"]
-sources = ["linguist"]

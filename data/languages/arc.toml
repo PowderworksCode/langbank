@@ -2,4 +2,3 @@ id = "arc"
 display-name = "Arc"
 role = "programming"
 extensions = ["arc"]
-sources = ["linguist"]

@@ -3,4 +3,3 @@ display-name = "Answer Set Programming"
 role = "programming"
 extensions = ["lp"]
 shebangs = ["clingo"]
-sources = ["linguist"]

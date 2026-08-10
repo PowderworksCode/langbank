@@ -2,4 +2,3 @@ id = "rich-text-format"
 display-name = "Rich Text Format"
 role = "markup"
 extensions = ["rtf"]
-sources = ["linguist"]

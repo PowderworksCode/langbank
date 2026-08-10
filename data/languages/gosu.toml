@@ -2,4 +2,3 @@ id = "gosu"
 display-name = "Gosu"
 role = "programming"
 extensions = ["gs", "gst", "gsx", "vark"]
-sources = ["linguist"]

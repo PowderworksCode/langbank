@@ -2,4 +2,3 @@ id = "verilog"
 display-name = "Verilog"
 role = "programming"
 extensions = ["v", "veo"]
-sources = ["linguist"]

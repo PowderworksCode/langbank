@@ -2,4 +2,3 @@ id = "maven-pom"
 display-name = "Maven POM"
 role = "data"
 filenames = ["pom.xml"]
-sources = ["linguist"]

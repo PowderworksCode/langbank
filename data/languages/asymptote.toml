@@ -3,4 +3,3 @@ display-name = "Asymptote"
 role = "programming"
 extensions = ["asy"]
 shebangs = ["asy"]
-sources = ["linguist"]

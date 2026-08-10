@@ -2,4 +2,3 @@ id = "langium"
 display-name = "Langium"
 role = "programming"
 extensions = ["langium"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "oasv3-yaml"
 display-name = "OASv3-yaml"
 role = "data"
 extensions = ["yaml", "yml"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "zenscript"
 display-name = "ZenScript"
 role = "programming"
 extensions = ["zs"]
-sources = ["linguist"]

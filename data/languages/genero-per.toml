@@ -2,4 +2,3 @@ id = "genero-per"
 display-name = "Genero per"
 role = "markup"
 extensions = ["per"]
-sources = ["linguist"]

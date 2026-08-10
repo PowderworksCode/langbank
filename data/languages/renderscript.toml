@@ -2,4 +2,3 @@ id = "renderscript"
 display-name = "RenderScript"
 role = "programming"
 extensions = ["rs", "rsh"]
-sources = ["linguist"]

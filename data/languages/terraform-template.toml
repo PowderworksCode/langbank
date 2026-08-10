@@ -2,4 +2,3 @@ id = "terraform-template"
 display-name = "Terraform Template"
 role = "markup"
 extensions = ["tftpl"]
-sources = ["linguist"]

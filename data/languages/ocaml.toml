@@ -3,4 +3,3 @@ display-name = "OCaml"
 role = "programming"
 extensions = ["eliom", "eliomi", "ml", "ml4", "mli", "mll", "mly"]
 shebangs = ["ocaml", "ocamlrun", "ocamlscript"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "processing"
 display-name = "Processing"
 role = "programming"
 extensions = ["pde"]
-sources = ["linguist"]

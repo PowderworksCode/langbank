@@ -2,4 +2,3 @@ id = "kit"
 display-name = "Kit"
 role = "markup"
 extensions = ["kit"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "unix-assembly"
 display-name = "Unix Assembly"
 role = "programming"
 extensions = ["ms", "s"]
-sources = ["linguist"]

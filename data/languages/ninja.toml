@@ -2,4 +2,3 @@ id = "ninja"
 display-name = "Ninja"
 role = "data"
 extensions = ["ninja"]
-sources = ["linguist"]

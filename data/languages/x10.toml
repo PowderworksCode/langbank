@@ -2,4 +2,3 @@ id = "x10"
 display-name = "X10"
 role = "programming"
 extensions = ["x10"]
-sources = ["linguist"]

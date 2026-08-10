@@ -3,4 +3,3 @@ display-name = "Module Management System"
 role = "programming"
 extensions = ["mmk", "mms"]
 filenames = ["descrip.mmk", "descrip.mms"]
-sources = ["linguist"]

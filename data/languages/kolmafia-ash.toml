@@ -2,4 +2,3 @@ id = "kolmafia-ash"
 display-name = "KoLmafia ASH"
 role = "programming"
 extensions = ["ash"]
-sources = ["linguist"]

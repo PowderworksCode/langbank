@@ -2,4 +2,3 @@ id = "plantuml"
 display-name = "PlantUML"
 role = "data"
 extensions = ["iuml", "plantuml", "puml"]
-sources = ["linguist"]

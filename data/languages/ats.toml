@@ -2,4 +2,3 @@ id = "ats"
 display-name = "ATS"
 role = "programming"
 extensions = ["dats", "hats", "sats"]
-sources = ["linguist"]

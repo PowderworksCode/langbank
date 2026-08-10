@@ -2,4 +2,3 @@ id = "antlers"
 display-name = "Antlers"
 role = "markup"
 extensions = ["antlers.html", "antlers.php", "antlers.xml"]
-sources = ["linguist"]

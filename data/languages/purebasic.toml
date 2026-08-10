@@ -2,4 +2,3 @@ id = "purebasic"
 display-name = "PureBasic"
 role = "programming"
 extensions = ["pb", "pbi"]
-sources = ["linguist"]

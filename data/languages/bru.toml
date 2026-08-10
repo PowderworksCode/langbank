@@ -2,4 +2,3 @@ id = "bru"
 display-name = "Bru"
 role = "markup"
 extensions = ["bru"]
-sources = ["linguist"]

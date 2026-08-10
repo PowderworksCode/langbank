@@ -2,4 +2,3 @@ id = "genero-4gl"
 display-name = "Genero 4gl"
 role = "programming"
 extensions = ["4gl"]
-sources = ["linguist"]

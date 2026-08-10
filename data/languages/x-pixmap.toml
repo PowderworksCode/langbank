@@ -2,4 +2,3 @@ id = "x-pixmap"
 display-name = "X PixMap"
 role = "data"
 extensions = ["pm", "xpm"]
-sources = ["linguist"]

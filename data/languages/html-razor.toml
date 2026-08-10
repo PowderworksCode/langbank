@@ -2,4 +2,3 @@ id = "html-razor"
 display-name = "HTML+Razor"
 role = "markup"
 extensions = ["cshtml", "razor"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "robotframework"
 display-name = "RobotFramework"
 role = "programming"
 extensions = ["resource", "robot"]
-sources = ["linguist"]

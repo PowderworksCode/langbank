@@ -2,4 +2,3 @@ id = "opal"
 display-name = "Opal"
 role = "programming"
 extensions = ["opal"]
-sources = ["linguist"]

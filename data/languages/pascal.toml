@@ -3,4 +3,3 @@ display-name = "Pascal"
 role = "programming"
 extensions = ["dfm", "dpr", "inc", "lpr", "pas", "pascal", "pp"]
 shebangs = ["instantfpc"]
-sources = ["linguist"]

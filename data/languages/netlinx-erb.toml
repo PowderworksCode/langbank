@@ -2,4 +2,3 @@ id = "netlinx-erb"
 display-name = "NetLinx+ERB"
 role = "programming"
 extensions = ["axi.erb", "axs.erb"]
-sources = ["linguist"]

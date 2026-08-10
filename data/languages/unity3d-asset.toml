@@ -2,4 +2,3 @@ id = "unity3d-asset"
 display-name = "Unity3D Asset"
 role = "data"
 extensions = ["anim", "asset", "mask", "mat", "meta", "prefab", "unity"]
-sources = ["linguist"]

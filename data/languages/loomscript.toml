@@ -2,4 +2,3 @@ id = "loomscript"
 display-name = "LoomScript"
 role = "programming"
 extensions = ["ls"]
-sources = ["linguist"]

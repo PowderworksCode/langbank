@@ -2,4 +2,3 @@ id = "cson"
 display-name = "CSON"
 role = "data"
 extensions = ["cson"]
-sources = ["linguist"]

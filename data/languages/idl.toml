@@ -2,4 +2,3 @@ id = "idl"
 display-name = "IDL"
 role = "programming"
 extensions = ["dlm", "pro"]
-sources = ["linguist"]

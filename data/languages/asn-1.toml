@@ -2,4 +2,3 @@ id = "asn-1"
 display-name = "ASN.1"
 role = "data"
 extensions = ["asn", "asn1"]
-sources = ["linguist"]

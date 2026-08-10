@@ -2,4 +2,3 @@ id = "templ"
 display-name = "templ"
 role = "markup"
 extensions = ["templ"]
-sources = ["linguist"]

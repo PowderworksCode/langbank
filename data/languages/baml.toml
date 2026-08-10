@@ -2,4 +2,3 @@ id = "baml"
 display-name = "BAML"
 role = "programming"
 extensions = ["baml"]
-sources = ["linguist"]

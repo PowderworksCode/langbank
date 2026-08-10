@@ -2,4 +2,3 @@ id = "pkg-config"
 display-name = "pkg-config"
 role = "data"
 extensions = ["pc", "pc.in"]
-sources = ["linguist"]

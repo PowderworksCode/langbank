@@ -2,4 +2,3 @@ id = "piglatin"
 display-name = "PigLatin"
 role = "programming"
 extensions = ["pig"]
-sources = ["linguist"]

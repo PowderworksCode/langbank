@@ -3,4 +3,3 @@ display-name = "Pod"
 role = "documentation"
 extensions = ["pod"]
 shebangs = ["perl"]
-sources = ["linguist"]

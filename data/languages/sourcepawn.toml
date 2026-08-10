@@ -2,4 +2,3 @@ id = "sourcepawn"
 display-name = "SourcePawn"
 role = "programming"
 extensions = ["inc", "sp"]
-sources = ["linguist"]

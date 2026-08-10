@@ -2,4 +2,3 @@ id = "java-template-engine"
 display-name = "Java Template Engine"
 role = "programming"
 extensions = ["jte"]
-sources = ["linguist"]

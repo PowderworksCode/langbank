@@ -2,4 +2,3 @@ id = "clips"
 display-name = "CLIPS"
 role = "programming"
 extensions = ["clp"]
-sources = ["linguist"]

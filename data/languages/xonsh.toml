@@ -2,4 +2,3 @@ id = "xonsh"
 display-name = "Xonsh"
 role = "programming"
 extensions = ["xsh"]
-sources = ["linguist"]
