@@ -2,4 +2,3 @@ id = "g-code"
 display-name = "G-code"
 role = "programming"
 extensions = ["cnc", "g", "gco", "gcode"]
-sources = ["linguist"]

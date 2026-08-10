@@ -2,4 +2,3 @@ id = "reasonligo"
 display-name = "ReasonLIGO"
 role = "programming"
 extensions = ["religo"]
-sources = ["linguist"]

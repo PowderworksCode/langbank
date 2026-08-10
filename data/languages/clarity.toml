@@ -2,4 +2,3 @@ id = "clarity"
 display-name = "Clarity"
 role = "programming"
 extensions = ["clar"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "zmodel"
 display-name = "Zmodel"
 role = "data"
 extensions = ["zmodel"]
-sources = ["linguist"]

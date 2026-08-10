@@ -2,4 +2,3 @@ id = "git-revision-list"
 display-name = "Git Revision List"
 role = "data"
 filenames = [".git-blame-ignore-revs"]
-sources = ["linguist"]

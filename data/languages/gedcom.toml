@@ -2,4 +2,3 @@ id = "gedcom"
 display-name = "GEDCOM"
 role = "data"
 extensions = ["ged"]
-sources = ["linguist"]

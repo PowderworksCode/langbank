@@ -2,4 +2,3 @@ id = "filebench-wml"
 display-name = "Filebench WML"
 role = "programming"
 extensions = ["f"]
-sources = ["linguist"]

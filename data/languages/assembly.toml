@@ -2,4 +2,3 @@ id = "assembly"
 display-name = "Assembly"
 role = "programming"
 extensions = ["a51", "asm", "i", "inc", "nas", "nasm", "s"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "xpages"
 display-name = "XPages"
 role = "data"
 extensions = ["xsp-config", "xsp.metadata"]
-sources = ["linguist"]

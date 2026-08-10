@@ -2,4 +2,3 @@ id = "tree-sitter-query"
 display-name = "Tree-sitter Query"
 role = "programming"
 extensions = ["scm"]
-sources = ["linguist"]

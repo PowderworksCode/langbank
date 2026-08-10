@@ -2,4 +2,3 @@ id = "kdl"
 display-name = "KDL"
 role = "data"
 extensions = ["kdl"]
-sources = ["linguist"]

@@ -3,4 +3,3 @@ display-name = "ucode"
 role = "programming"
 extensions = ["uc"]
 shebangs = ["ucode"]
-sources = ["linguist"]

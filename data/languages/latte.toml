@@ -2,4 +2,3 @@ id = "latte"
 display-name = "Latte"
 role = "markup"
 extensions = ["latte"]
-sources = ["linguist"]

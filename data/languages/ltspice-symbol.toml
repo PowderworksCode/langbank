@@ -2,4 +2,3 @@ id = "ltspice-symbol"
 display-name = "LTspice Symbol"
 role = "data"
 extensions = ["asy"]
-sources = ["linguist"]

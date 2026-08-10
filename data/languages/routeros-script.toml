@@ -3,4 +3,3 @@ display-name = "RouterOS Script"
 role = "programming"
 extensions = ["rsc"]
 shebangs = ["RouterOS"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "omnetpp-ned"
 display-name = "OMNeT++ NED"
 role = "programming"
 extensions = ["ned"]
-sources = ["linguist"]

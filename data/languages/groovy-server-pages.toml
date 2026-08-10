@@ -2,4 +2,3 @@ id = "groovy-server-pages"
 display-name = "Groovy Server Pages"
 role = "programming"
 extensions = ["gsp"]
-sources = ["linguist"]

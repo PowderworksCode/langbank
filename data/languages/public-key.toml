@@ -2,4 +2,3 @@ id = "public-key"
 display-name = "Public Key"
 role = "data"
 extensions = ["asc", "pub"]
-sources = ["linguist"]

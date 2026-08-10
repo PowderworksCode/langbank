@@ -2,4 +2,3 @@ id = "ring"
 display-name = "Ring"
 role = "programming"
 extensions = ["ring"]
-sources = ["linguist"]

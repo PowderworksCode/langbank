@@ -3,4 +3,3 @@ display-name = "Awk"
 role = "programming"
 extensions = ["auk", "awk", "gawk", "mawk", "nawk"]
 shebangs = ["awk", "gawk", "mawk", "nawk"]
-sources = ["linguist"]

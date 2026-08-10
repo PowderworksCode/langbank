@@ -2,4 +2,3 @@ id = "curl-config"
 display-name = "cURL Config"
 role = "data"
 filenames = [".curlrc", "_curlrc"]
-sources = ["linguist"]

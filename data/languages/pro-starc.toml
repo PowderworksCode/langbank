@@ -2,4 +2,3 @@ id = "pro-starc"
 display-name = "Pro*C"
 role = "programming"
 extensions = ["pc"]
-sources = ["linguist"]

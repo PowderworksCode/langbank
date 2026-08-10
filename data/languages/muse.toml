@@ -2,4 +2,3 @@ id = "muse"
 display-name = "Muse"
 role = "documentation"
 extensions = ["muse"]
-sources = ["linguist"]

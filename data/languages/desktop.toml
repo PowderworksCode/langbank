@@ -2,4 +2,3 @@ id = "desktop"
 display-name = "desktop"
 role = "data"
 extensions = ["desktop", "desktop.in"]
-sources = ["linguist"]

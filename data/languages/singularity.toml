@@ -2,4 +2,3 @@ id = "singularity"
 display-name = "Singularity"
 role = "programming"
 filenames = ["Singularity"]
-sources = ["linguist"]

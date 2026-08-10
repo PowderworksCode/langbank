@@ -2,4 +2,3 @@ id = "plpgsql"
 display-name = "PLpgSQL"
 role = "programming"
 extensions = ["pgsql", "sql"]
-sources = ["linguist"]

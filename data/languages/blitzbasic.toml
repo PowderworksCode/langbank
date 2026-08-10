@@ -2,4 +2,3 @@ id = "blitzbasic"
 display-name = "BlitzBasic"
 role = "programming"
 extensions = ["bb", "decls"]
-sources = ["linguist"]

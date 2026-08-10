@@ -2,4 +2,3 @@ id = "modelica"
 display-name = "Modelica"
 role = "programming"
 extensions = ["mo"]
-sources = ["linguist"]

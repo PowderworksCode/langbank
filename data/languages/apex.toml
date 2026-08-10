@@ -2,4 +2,3 @@ id = "apex"
 display-name = "Apex"
 role = "programming"
 extensions = ["apex", "cls", "trigger"]
-sources = ["linguist"]

@@ -3,4 +3,3 @@ display-name = "AIDL"
 role = "programming"
 extensions = ["aidl"]
 shebangs = ["aidl"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "openstep-property-list"
 display-name = "OpenStep Property List"
 role = "data"
 extensions = ["glyphs", "plist"]
-sources = ["linguist"]

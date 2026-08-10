@@ -2,4 +2,3 @@ id = "lfe"
 display-name = "LFE"
 role = "programming"
 extensions = ["lfe"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "genshi"
 display-name = "Genshi"
 role = "programming"
 extensions = ["kid"]
-sources = ["linguist"]

@@ -3,4 +3,3 @@ display-name = "Nginx"
 role = "data"
 extensions = ["nginx", "nginxconf", "vhost"]
 filenames = ["nginx.conf"]
-sources = ["linguist"]

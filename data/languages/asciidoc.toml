@@ -2,4 +2,3 @@ id = "asciidoc"
 display-name = "AsciiDoc"
 role = "documentation"
 extensions = ["adoc", "asc", "asciidoc"]
-sources = ["linguist"]

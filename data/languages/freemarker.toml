@@ -2,4 +2,3 @@ id = "freemarker"
 display-name = "FreeMarker"
 role = "programming"
 extensions = ["ftl", "ftlh"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "zimpl"
 display-name = "Zimpl"
 role = "programming"
 extensions = ["zimpl", "zmpl", "zpl"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "gdshader"
 display-name = "GDShader"
 role = "programming"
 extensions = ["gdshader", "gdshaderinc"]
-sources = ["linguist"]

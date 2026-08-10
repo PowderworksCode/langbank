@@ -2,4 +2,3 @@ id = "angelscript"
 display-name = "AngelScript"
 role = "programming"
 extensions = ["angelscript", "as"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "gdb"
 display-name = "GDB"
 role = "programming"
 extensions = ["gdb", "gdbinit"]
-sources = ["linguist"]

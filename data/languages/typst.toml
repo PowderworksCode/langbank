@@ -2,4 +2,3 @@ id = "typst"
 display-name = "Typst"
 role = "programming"
 extensions = ["typ"]
-sources = ["linguist"]

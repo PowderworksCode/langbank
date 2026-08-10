@@ -2,4 +2,3 @@ id = "pogoscript"
 display-name = "PogoScript"
 role = "programming"
 extensions = ["pogo"]
-sources = ["linguist"]

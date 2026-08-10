@@ -2,4 +2,3 @@ id = "jflex"
 display-name = "JFlex"
 role = "programming"
 extensions = ["flex", "jflex"]
-sources = ["linguist"]

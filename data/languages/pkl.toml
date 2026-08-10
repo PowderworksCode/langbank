@@ -3,4 +3,3 @@ display-name = "Pkl"
 role = "programming"
 extensions = ["pkl"]
 shebangs = ["pkl"]
-sources = ["linguist"]

@@ -4,4 +4,3 @@ role = "programming"
 extensions = ["nf"]
 filenames = ["nextflow.config"]
 shebangs = ["nextflow"]
-sources = ["linguist"]

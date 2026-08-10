@@ -2,4 +2,3 @@ id = "graph-modeling-language"
 display-name = "Graph Modeling Language"
 role = "data"
 extensions = ["gml"]
-sources = ["linguist"]

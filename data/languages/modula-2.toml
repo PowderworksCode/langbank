@@ -2,4 +2,3 @@ id = "modula-2"
 display-name = "Modula-2"
 role = "programming"
 extensions = ["mod"]
-sources = ["linguist"]

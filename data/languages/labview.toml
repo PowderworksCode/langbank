@@ -2,4 +2,3 @@ id = "labview"
 display-name = "LabVIEW"
 role = "programming"
 extensions = ["lvclass", "lvlib", "lvproj"]
-sources = ["linguist"]

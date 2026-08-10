@@ -3,4 +3,3 @@ display-name = "fish"
 role = "programming"
 extensions = ["fish"]
 shebangs = ["fish"]
-sources = ["linguist"]

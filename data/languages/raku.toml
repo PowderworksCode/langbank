@@ -3,4 +3,3 @@ display-name = "Raku"
 role = "programming"
 extensions = ["6pl", "6pm", "nqp", "p6", "p6l", "p6m", "pl", "pl6", "pm", "pm6", "raku", "rakumod", "t"]
 shebangs = ["perl6", "raku", "rakudo"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "e-mail"
 display-name = "E-mail"
 role = "data"
 extensions = ["eml", "mbox"]
-sources = ["linguist"]

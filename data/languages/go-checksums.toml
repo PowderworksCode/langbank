@@ -2,4 +2,3 @@ id = "go-checksums"
 display-name = "Go Checksums"
 role = "data"
 filenames = ["go.sum", "go.work.sum"]
-sources = ["linguist"]

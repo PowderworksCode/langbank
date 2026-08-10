@@ -2,4 +2,3 @@ id = "crontab"
 display-name = "crontab"
 role = "data"
 filenames = ["crontab"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "git-commit"
 display-name = "Git Commit"
 role = "data"
 filenames = ["COMMIT_EDITMSG"]
-sources = ["linguist"]

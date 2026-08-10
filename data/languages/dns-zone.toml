@@ -2,4 +2,3 @@ id = "dns-zone"
 display-name = "DNS Zone"
 role = "data"
 extensions = ["arpa", "zone"]
-sources = ["linguist"]

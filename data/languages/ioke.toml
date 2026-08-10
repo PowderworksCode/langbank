@@ -3,4 +3,3 @@ display-name = "Ioke"
 role = "programming"
 extensions = ["ik"]
 shebangs = ["ioke"]
-sources = ["linguist"]

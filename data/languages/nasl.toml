@@ -2,4 +2,3 @@ id = "nasl"
 display-name = "NASL"
 role = "programming"
 extensions = ["inc", "nasl"]
-sources = ["linguist"]

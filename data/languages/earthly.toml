@@ -2,4 +2,3 @@ id = "earthly"
 display-name = "Earthly"
 role = "programming"
 filenames = ["Earthfile"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "bird2"
 display-name = "BIRD2"
 role = "data"
 filenames = ["bird.conf"]
-sources = ["linguist"]

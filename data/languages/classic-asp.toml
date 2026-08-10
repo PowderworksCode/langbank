@@ -2,4 +2,3 @@ id = "classic-asp"
 display-name = "Classic ASP"
 role = "programming"
 extensions = ["asp"]
-sources = ["linguist"]

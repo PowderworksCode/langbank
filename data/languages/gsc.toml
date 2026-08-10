@@ -2,4 +2,3 @@ id = "gsc"
 display-name = "GSC"
 role = "programming"
 extensions = ["csc", "gsc", "gsh"]
-sources = ["linguist"]

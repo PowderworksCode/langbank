@@ -2,4 +2,3 @@ id = "rmarkdown"
 display-name = "RMarkdown"
 role = "documentation"
 extensions = ["qmd", "rmd"]
-sources = ["linguist"]

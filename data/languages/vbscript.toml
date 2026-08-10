@@ -2,4 +2,3 @@ id = "vbscript"
 display-name = "VBScript"
 role = "programming"
 extensions = ["vbs"]
-sources = ["linguist"]

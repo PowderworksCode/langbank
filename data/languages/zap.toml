@@ -2,4 +2,3 @@ id = "zap"
 display-name = "ZAP"
 role = "programming"
 extensions = ["xzap", "zap"]
-sources = ["linguist"]

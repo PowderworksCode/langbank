@@ -3,4 +3,3 @@ display-name = "Haskell"
 role = "programming"
 extensions = ["hs", "hs-boot", "hsc"]
 shebangs = ["runghc", "runhaskell", "runhugs"]
-sources = ["linguist"]

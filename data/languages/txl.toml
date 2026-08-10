@@ -2,4 +2,3 @@ id = "txl"
 display-name = "TXL"
 role = "programming"
 extensions = ["txl"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "scaml"
 display-name = "Scaml"
 role = "markup"
 extensions = ["scaml"]
-sources = ["linguist"]

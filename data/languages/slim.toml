@@ -2,4 +2,3 @@ id = "slim"
 display-name = "Slim"
 role = "markup"
 extensions = ["slim"]
-sources = ["linguist"]

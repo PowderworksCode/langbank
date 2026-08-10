@@ -2,4 +2,3 @@ id = "netlogo"
 display-name = "NetLogo"
 role = "programming"
 extensions = ["nlogo"]
-sources = ["linguist"]

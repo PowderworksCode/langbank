@@ -2,4 +2,3 @@ id = "open-policy-agent"
 display-name = "Open Policy Agent"
 role = "programming"
 extensions = ["rego"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "clarion"
 display-name = "Clarion"
 role = "programming"
 extensions = ["clw"]
-sources = ["linguist"]

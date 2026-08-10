@@ -3,4 +3,3 @@ display-name = "Git Config"
 role = "data"
 extensions = ["gitconfig"]
 filenames = [".gitconfig", ".gitmodules", ".tgitconfig", "config.worktree"]
-sources = ["linguist"]

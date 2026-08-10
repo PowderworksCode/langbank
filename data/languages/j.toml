@@ -3,4 +3,3 @@ display-name = "J"
 role = "programming"
 extensions = ["ijs"]
 shebangs = ["jconsole"]
-sources = ["linguist"]

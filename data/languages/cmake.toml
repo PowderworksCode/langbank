@@ -3,4 +3,3 @@ display-name = "CMake"
 role = "programming"
 extensions = ["cmake", "cmake.in"]
 filenames = ["CMakeLists.txt"]
-sources = ["linguist"]

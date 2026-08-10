@@ -2,4 +2,3 @@ id = "xbase"
 display-name = "xBase"
 role = "programming"
 extensions = ["ch", "prg", "prw"]
-sources = ["linguist"]

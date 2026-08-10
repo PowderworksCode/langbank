@@ -4,4 +4,3 @@ role = "programming"
 extensions = ["r", "rd", "rsx"]
 filenames = [".Rprofile", "expr-dist"]
 shebangs = ["Rscript"]
-sources = ["linguist"]

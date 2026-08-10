@@ -3,4 +3,3 @@ display-name = "ReScript"
 role = "programming"
 extensions = ["res", "resi"]
 shebangs = ["ocaml"]
-sources = ["linguist"]

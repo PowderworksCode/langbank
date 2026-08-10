@@ -2,4 +2,3 @@ id = "sugarss"
 display-name = "SugarSS"
 role = "markup"
 extensions = ["sss"]
-sources = ["linguist"]

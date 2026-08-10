@@ -2,4 +2,3 @@ id = "readline-config"
 display-name = "Readline Config"
 role = "data"
 filenames = [".inputrc", "inputrc"]
-sources = ["linguist"]

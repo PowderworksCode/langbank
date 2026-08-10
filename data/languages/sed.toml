@@ -3,4 +3,3 @@ display-name = "sed"
 role = "programming"
 extensions = ["sed"]
 shebangs = ["gsed", "minised", "sed", "ssed"]
-sources = ["linguist"]

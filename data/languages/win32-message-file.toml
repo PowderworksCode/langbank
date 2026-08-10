@@ -2,4 +2,3 @@ id = "win32-message-file"
 display-name = "Win32 Message File"
 role = "data"
 extensions = ["mc"]
-sources = ["linguist"]

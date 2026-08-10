@@ -3,4 +3,3 @@ display-name = "Euphoria"
 role = "programming"
 extensions = ["e", "ex"]
 shebangs = ["eui", "euiw"]
-sources = ["linguist"]

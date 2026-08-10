@@ -2,4 +2,3 @@ id = "monkey-c"
 display-name = "Monkey C"
 role = "programming"
 extensions = ["mc"]
-sources = ["linguist"]

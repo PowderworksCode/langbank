@@ -1,4 +1,3 @@
 id = "elvish-transcript"
 display-name = "Elvish Transcript"
 role = "programming"
-sources = ["linguist"]

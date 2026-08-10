@@ -2,4 +2,3 @@ id = "mask"
 display-name = "Mask"
 role = "markup"
 extensions = ["mask"]
-sources = ["linguist"]

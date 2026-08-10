@@ -2,4 +2,3 @@ id = "gherkin"
 display-name = "Gherkin"
 role = "programming"
 extensions = ["feature", "story"]
-sources = ["linguist"]

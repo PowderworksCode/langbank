@@ -3,4 +3,3 @@ display-name = "Common Lisp"
 role = "programming"
 extensions = ["asd", "cl", "l", "lisp", "lsp", "ny", "podsl", "sexp"]
 shebangs = ["ccl", "clisp", "ecl", "lisp", "sbcl"]
-sources = ["linguist"]

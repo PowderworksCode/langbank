@@ -2,4 +2,3 @@ id = "survex-data"
 display-name = "Survex data"
 role = "data"
 extensions = ["svx"]
-sources = ["linguist"]

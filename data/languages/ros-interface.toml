@@ -2,4 +2,3 @@ id = "ros-interface"
 display-name = "ROS Interface"
 role = "data"
 extensions = ["action", "msg", "srv"]
-sources = ["linguist"]

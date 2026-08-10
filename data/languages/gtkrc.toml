@@ -3,4 +3,3 @@ display-name = "GtkRC"
 role = "data"
 extensions = ["gtkrc"]
 filenames = ["gtkrc", "gtkrc-2.0"]
-sources = ["linguist"]

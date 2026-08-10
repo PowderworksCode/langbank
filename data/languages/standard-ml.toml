@@ -2,4 +2,3 @@ id = "standard-ml"
 display-name = "Standard ML"
 role = "programming"
 extensions = ["fun", "ml", "sig", "sml"]
-sources = ["linguist"]

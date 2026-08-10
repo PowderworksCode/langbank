@@ -2,4 +2,3 @@ id = "berry"
 display-name = "Berry"
 role = "programming"
 extensions = ["be"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "zil"
 display-name = "ZIL"
 role = "programming"
 extensions = ["mud", "zil"]
-sources = ["linguist"]

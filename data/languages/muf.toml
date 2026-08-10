@@ -2,4 +2,3 @@ id = "muf"
 display-name = "MUF"
 role = "programming"
 extensions = ["m", "muf"]
-sources = ["linguist"]

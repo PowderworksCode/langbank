@@ -2,4 +2,3 @@ id = "ampl"
 display-name = "AMPL"
 role = "programming"
 extensions = ["ampl", "mod"]
-sources = ["linguist"]

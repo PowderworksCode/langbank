@@ -2,4 +2,3 @@ id = "openedge-abl"
 display-name = "OpenEdge ABL"
 role = "programming"
 extensions = ["cls", "p", "w"]
-sources = ["linguist"]

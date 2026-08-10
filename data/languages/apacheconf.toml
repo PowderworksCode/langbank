@@ -3,4 +3,3 @@ display-name = "ApacheConf"
 role = "data"
 extensions = ["apacheconf", "vhost"]
 filenames = [".htaccess", "apache2.conf", "httpd.conf"]
-sources = ["linguist"]

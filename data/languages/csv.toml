@@ -2,4 +2,3 @@ id = "csv"
 display-name = "CSV"
 role = "data"
 extensions = ["csv"]
-sources = ["linguist"]

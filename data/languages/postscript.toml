@@ -2,4 +2,3 @@ id = "postscript"
 display-name = "PostScript"
 role = "markup"
 extensions = ["eps", "epsi", "pfa", "ps"]
-sources = ["linguist"]

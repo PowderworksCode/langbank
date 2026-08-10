@@ -2,4 +2,3 @@ id = "glyph"
 display-name = "Glyph"
 role = "programming"
 extensions = ["glf"]
-sources = ["linguist"]

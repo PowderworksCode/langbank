@@ -2,4 +2,3 @@ id = "dm"
 display-name = "DM"
 role = "programming"
 extensions = ["dm"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "gaml"
 display-name = "GAML"
 role = "programming"
 extensions = ["gaml"]
-sources = ["linguist"]

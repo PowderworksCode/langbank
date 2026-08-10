@@ -2,4 +2,3 @@ id = "redirect-rules"
 display-name = "Redirect Rules"
 role = "data"
 filenames = ["_redirects"]
-sources = ["linguist"]

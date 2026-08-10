@@ -2,4 +2,3 @@ id = "hip"
 display-name = "HIP"
 role = "programming"
 extensions = ["hip"]
-sources = ["linguist"]

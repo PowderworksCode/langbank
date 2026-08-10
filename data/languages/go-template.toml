@@ -3,4 +3,3 @@ display-name = "Go Template"
 role = "markup"
 extensions = ["gohtml", "gotmpl", "html.tmpl", "tmpl", "tpl"]
 filenames = ["_helpers.tpl"]
-sources = ["linguist"]

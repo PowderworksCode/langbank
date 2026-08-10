@@ -2,4 +2,3 @@ id = "graphql"
 display-name = "GraphQL"
 role = "data"
 extensions = ["gql", "graphql", "graphqls"]
-sources = ["linguist"]

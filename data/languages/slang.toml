@@ -2,4 +2,3 @@ id = "slang"
 display-name = "Slang"
 role = "programming"
 extensions = ["slang"]
-sources = ["linguist"]

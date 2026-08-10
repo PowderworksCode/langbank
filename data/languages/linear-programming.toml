@@ -2,4 +2,3 @@ id = "linear-programming"
 display-name = "Linear Programming"
 role = "programming"
 extensions = ["lp"]
-sources = ["linguist"]

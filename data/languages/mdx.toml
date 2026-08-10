@@ -2,4 +2,3 @@ id = "mdx"
 display-name = "MDX"
 role = "markup"
 extensions = ["mdx"]
-sources = ["linguist"]

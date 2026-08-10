@@ -2,4 +2,3 @@ id = "bikeshed"
 display-name = "Bikeshed"
 role = "markup"
 extensions = ["bs"]
-sources = ["linguist"]

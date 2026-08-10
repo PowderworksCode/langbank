@@ -2,4 +2,3 @@ id = "oasv2-json"
 display-name = "OASv2-json"
 role = "data"
 extensions = ["json"]
-sources = ["linguist"]

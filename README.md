@@ -8,6 +8,19 @@ Everything here is a registry over static data plus the few functions needed to
 look something up. Nothing here walks a filesystem, spawns a process, or parses
 a source file.
 
+## Attribution
+
+Langbank's language data is its own, and some of it began as facts checked
+against permissively licensed upstream projects. With thanks:
+
+| upstream | licence | what it contributed |
+|---|---|---|
+| [github-linguist/linguist](https://github.com/github-linguist/linguist) | MIT | language names, extensions, filenames, interpreters |
+
+Langbank deliberately carries **no data from copyleft-licensed projects**. That
+is a standing decision rather than an oversight — see `docs/sources.md`, which
+records which upstreams were considered and why each was taken or left.
+
 ## Why it is its own repository
 
 It sits at the bottom of the fleet. Entl names languages while walking a tree,
@@ -87,12 +100,13 @@ id = "cobol"
 display-name = "COBOL"
 role = "programming"
 extensions = ["cbl", "ccp", "cob", "cpy"]
-sources = ["linguist"]
 ```
 
-There is no curated-versus-imported flag. How well a language is modelled is
-read off its data — does it have conventions? — because every language is meant
-to be fully modelled eventually and a tier tag would outlive its usefulness.
+There is no curated-versus-imported flag, and no per-language attribution. How
+well a language is modelled is read off its data — does it have conventions? —
+because every language is meant to be fully modelled eventually, and a tag
+recording where a fact came from would outlive its usefulness. Credit belongs in
+one place at the top of this file, not scattered across 827 of them.
 
 ### Contested tokens
 
@@ -134,7 +148,7 @@ data/
   facets.toml               reusable source surfaces
   artifacts.toml            what a build produces
   languages/rust.toml       one file per language, all 827 of them
-  sources/linguist.toml     upstream sources, pinned by revision and digest
+  sources/linguist.toml     upstreams checked against, pinned by revision and digest
   ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
   tools/cargo.toml          one file per tool, with its command patterns
 ```

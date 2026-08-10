@@ -2,4 +2,3 @@ id = "conll-u"
 display-name = "CoNLL-U"
 role = "data"
 extensions = ["conll", "conllu"]
-sources = ["linguist"]

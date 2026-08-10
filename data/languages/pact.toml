@@ -2,4 +2,3 @@ id = "pact"
 display-name = "Pact"
 role = "programming"
 extensions = ["pact"]
-sources = ["linguist"]

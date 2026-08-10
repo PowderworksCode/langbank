@@ -3,4 +3,3 @@ display-name = "Lex"
 role = "programming"
 extensions = ["l", "lex"]
 filenames = ["Lexer.x", "lexer.x"]
-sources = ["linguist"]

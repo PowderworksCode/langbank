@@ -2,4 +2,3 @@ id = "nasal"
 display-name = "Nasal"
 role = "programming"
 extensions = ["nas"]
-sources = ["linguist"]

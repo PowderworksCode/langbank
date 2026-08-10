@@ -2,4 +2,3 @@ id = "jest-snapshot"
 display-name = "Jest Snapshot"
 role = "data"
 extensions = ["snap"]
-sources = ["linguist"]

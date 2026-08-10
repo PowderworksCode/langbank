@@ -2,4 +2,3 @@ id = "debian-package-control-file"
 display-name = "Debian Package Control File"
 role = "data"
 extensions = ["dsc"]
-sources = ["linguist"]

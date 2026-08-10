@@ -4,4 +4,3 @@ role = "programming"
 extensions = ["fcgi", "lua", "nse", "p8", "pd_lua", "rbxs", "rockspec", "wlua"]
 filenames = [".luacheckrc"]
 shebangs = ["lua", "luajit"]
-sources = ["linguist"]

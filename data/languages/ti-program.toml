@@ -2,4 +2,3 @@ id = "ti-program"
 display-name = "TI Program"
 role = "programming"
 extensions = ["8xp", "8xp.txt"]
-sources = ["linguist"]

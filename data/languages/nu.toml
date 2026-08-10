@@ -4,4 +4,3 @@ role = "programming"
 extensions = ["nu"]
 filenames = ["Nukefile"]
 shebangs = ["nush"]
-sources = ["linguist"]

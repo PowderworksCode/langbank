@@ -2,4 +2,3 @@ id = "smarty"
 display-name = "Smarty"
 role = "programming"
 extensions = ["tpl"]
-sources = ["linguist"]

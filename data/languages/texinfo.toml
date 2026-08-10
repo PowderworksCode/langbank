@@ -3,4 +3,3 @@ display-name = "Texinfo"
 role = "documentation"
 extensions = ["texi", "texinfo", "txi"]
 shebangs = ["makeinfo"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "whiley"
 display-name = "Whiley"
 role = "programming"
 extensions = ["whiley"]
-sources = ["linguist"]

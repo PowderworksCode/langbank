@@ -2,4 +2,3 @@ id = "numpy"
 display-name = "NumPy"
 role = "programming"
 extensions = ["numpy", "numpyw", "numsc"]
-sources = ["linguist"]

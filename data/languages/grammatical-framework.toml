@@ -2,4 +2,3 @@ id = "grammatical-framework"
 display-name = "Grammatical Framework"
 role = "programming"
 extensions = ["gf"]
-sources = ["linguist"]

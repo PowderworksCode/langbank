@@ -2,4 +2,3 @@ id = "cpp-objdump"
 display-name = "Cpp-ObjDump"
 role = "data"
 extensions = ["c++-objdump", "c++objdump", "cpp-objdump", "cppobjdump", "cxx-objdump"]
-sources = ["linguist"]

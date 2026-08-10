@@ -3,4 +3,3 @@ display-name = "Starlark"
 role = "programming"
 extensions = ["bzl", "star"]
 filenames = ["BUCK", "BUILD", "BUILD.bazel", "MODULE.bazel", "Tiltfile", "WORKSPACE", "WORKSPACE.bazel", "WORKSPACE.bzlmod"]
-sources = ["linguist"]

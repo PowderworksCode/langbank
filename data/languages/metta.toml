@@ -2,4 +2,3 @@ id = "metta"
 display-name = "MeTTa"
 role = "programming"
 extensions = ["metta"]
-sources = ["linguist"]

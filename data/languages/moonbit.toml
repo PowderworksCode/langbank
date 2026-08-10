@@ -2,4 +2,3 @@ id = "moonbit"
 display-name = "MoonBit"
 role = "programming"
 extensions = ["mbt"]
-sources = ["linguist"]

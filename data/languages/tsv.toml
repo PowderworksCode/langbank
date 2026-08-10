@@ -2,4 +2,3 @@ id = "tsv"
 display-name = "TSV"
 role = "data"
 extensions = ["tsv", "vcf"]
-sources = ["linguist"]

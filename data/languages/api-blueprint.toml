@@ -2,4 +2,3 @@ id = "api-blueprint"
 display-name = "API Blueprint"
 role = "markup"
 extensions = ["apib"]
-sources = ["linguist"]

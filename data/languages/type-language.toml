@@ -2,4 +2,3 @@ id = "type-language"
 display-name = "Type Language"
 role = "data"
 extensions = ["tl"]
-sources = ["linguist"]

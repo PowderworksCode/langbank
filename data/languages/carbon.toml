@@ -2,4 +2,3 @@ id = "carbon"
 display-name = "Carbon"
 role = "programming"
 extensions = ["carbon"]
-sources = ["linguist"]

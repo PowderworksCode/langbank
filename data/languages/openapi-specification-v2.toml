@@ -1,4 +1,3 @@
 id = "openapi-specification-v2"
 display-name = "OpenAPI Specification v2"
 role = "data"
-sources = ["linguist"]

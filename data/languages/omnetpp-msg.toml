@@ -2,4 +2,3 @@ id = "omnetpp-msg"
 display-name = "OMNeT++ MSG"
 role = "programming"
 extensions = ["msg"]
-sources = ["linguist"]

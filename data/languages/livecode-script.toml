@@ -2,4 +2,3 @@ id = "livecode-script"
 display-name = "LiveCode Script"
 role = "programming"
 extensions = ["livecodescript"]
-sources = ["linguist"]

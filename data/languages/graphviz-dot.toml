@@ -2,4 +2,3 @@ id = "graphviz-dot"
 display-name = "Graphviz (DOT)"
 role = "data"
 extensions = ["dot", "gv"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "edje-data-collection"
 display-name = "Edje Data Collection"
 role = "data"
 extensions = ["edc"]
-sources = ["linguist"]

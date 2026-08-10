@@ -2,4 +2,3 @@ id = "kicad-schematic"
 display-name = "KiCad Schematic"
 role = "data"
 extensions = ["kicad_sch", "kicad_sym", "sch"]
-sources = ["linguist"]

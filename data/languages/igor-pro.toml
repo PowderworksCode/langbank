@@ -2,4 +2,3 @@ id = "igor-pro"
 display-name = "IGOR Pro"
 role = "programming"
 extensions = ["ipf"]
-sources = ["linguist"]

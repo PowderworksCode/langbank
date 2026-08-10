@@ -3,4 +3,3 @@ display-name = "Vim Script"
 role = "programming"
 extensions = ["vba", "vim", "vimrc", "vmb"]
 filenames = [".exrc", ".gvimrc", ".nvimrc", ".vimrc", "_vimrc", "gvimrc", "nvimrc", "vimrc"]
-sources = ["linguist"]

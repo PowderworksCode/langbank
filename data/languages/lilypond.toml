@@ -2,4 +2,3 @@ id = "lilypond"
 display-name = "LilyPond"
 role = "programming"
 extensions = ["ily", "ly"]
-sources = ["linguist"]

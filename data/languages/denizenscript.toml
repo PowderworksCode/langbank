@@ -2,4 +2,3 @@ id = "denizenscript"
 display-name = "DenizenScript"
 role = "programming"
 extensions = ["dsc"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "cloud-firestore-security-rules"
 display-name = "Cloud Firestore Security Rules"
 role = "data"
 filenames = ["firestore.rules"]
-sources = ["linguist"]

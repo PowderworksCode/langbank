@@ -2,4 +2,3 @@ id = "gno"
 display-name = "Gno"
 role = "programming"
 extensions = ["gno"]
-sources = ["linguist"]

@@ -3,4 +3,3 @@ display-name = "Cabal Config"
 role = "data"
 extensions = ["cabal"]
 filenames = ["cabal.config", "cabal.project"]
-sources = ["linguist"]

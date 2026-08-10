@@ -2,4 +2,3 @@ id = "python-traceback"
 display-name = "Python traceback"
 role = "data"
 extensions = ["pytb"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "peg-js"
 display-name = "PEG.js"
 role = "programming"
 extensions = ["peggy", "pegjs"]
-sources = ["linguist"]

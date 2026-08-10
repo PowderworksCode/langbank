@@ -3,4 +3,3 @@ display-name = "Ignore List"
 role = "data"
 extensions = ["gitignore"]
 filenames = [".atomignore", ".babelignore", ".bzrignore", ".ckignore", ".coffeelintignore", ".cvsignore", ".dockerignore", ".easignore", ".eleventyignore", ".eslint-ignore", ".eslintignore", ".gitignore", ".ignore", ".markdownlintignore", ".nodemonignore", ".npmignore", ".prettierignore", ".rgignore", ".stylelintignore", ".vercelignore", ".vscodeignore", "gitignore-global", "gitignore_global"]
-sources = ["linguist"]

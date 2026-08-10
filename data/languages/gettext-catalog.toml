@@ -2,4 +2,3 @@ id = "gettext-catalog"
 display-name = "Gettext Catalog"
 role = "documentation"
 extensions = ["po", "pot"]
-sources = ["linguist"]

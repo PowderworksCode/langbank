@@ -2,4 +2,3 @@ id = "c-objdump"
 display-name = "C-ObjDump"
 role = "data"
 extensions = ["c-objdump"]
-sources = ["linguist"]

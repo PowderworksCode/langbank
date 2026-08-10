@@ -2,4 +2,3 @@ id = "collada"
 display-name = "COLLADA"
 role = "data"
 extensions = ["dae"]
-sources = ["linguist"]

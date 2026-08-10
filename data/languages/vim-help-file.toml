@@ -2,4 +2,3 @@ id = "vim-help-file"
 display-name = "Vim Help File"
 role = "documentation"
 extensions = ["txt"]
-sources = ["linguist"]

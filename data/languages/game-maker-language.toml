@@ -2,4 +2,3 @@ id = "game-maker-language"
 display-name = "Game Maker Language"
 role = "programming"
 extensions = ["gml"]
-sources = ["linguist"]

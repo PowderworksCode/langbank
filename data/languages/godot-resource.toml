@@ -3,4 +3,3 @@ display-name = "Godot Resource"
 role = "data"
 extensions = ["gdnlib", "gdns", "tres", "tscn"]
 filenames = ["project.godot"]
-sources = ["linguist"]

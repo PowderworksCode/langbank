@@ -3,4 +3,3 @@ display-name = "Just"
 role = "programming"
 extensions = ["just"]
 filenames = [".JUSTFILE", ".Justfile", ".justfile", "JUSTFILE", "Justfile", "justfile"]
-sources = ["linguist"]

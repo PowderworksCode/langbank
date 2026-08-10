@@ -2,4 +2,3 @@ id = "prisma"
 display-name = "Prisma"
 role = "data"
 extensions = ["prisma"]
-sources = ["linguist"]

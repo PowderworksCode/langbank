@@ -3,4 +3,3 @@ display-name = "M4Sugar"
 role = "programming"
 extensions = ["m4"]
 filenames = ["configure.ac"]
-sources = ["linguist"]

@@ -2,4 +2,3 @@ id = "literate-coffeescript"
 display-name = "Literate CoffeeScript"
 role = "programming"
 extensions = ["coffee.md", "litcoffee"]
-sources = ["linguist"]
