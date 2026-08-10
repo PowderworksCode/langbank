@@ -1,0 +1,5 @@
+id = "toml"
+display-name = "TOML"
+role = "data"
+extensions = ["toml"]
+comments = "dockerfile"

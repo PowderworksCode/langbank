@@ -11,6 +11,9 @@ description = "Language, ecosystem and toolchain data: what a language is, how t
 registry-inventory = { package = "inventory", version = "0.3" }
 serde = { version = "1", features = ["derive"] }
 
+[build-dependencies]
+toml = "1"
+
 [dev-dependencies]
 serde_json = "1"
 

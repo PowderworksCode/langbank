@@ -1,0 +1,6 @@
+id = "scss"
+display-name = "SCSS"
+role = "stylesheet"
+extensions = ["scss", "sass"]
+facets = ["style-host"]
+comments = "less"

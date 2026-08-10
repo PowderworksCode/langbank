@@ -1,0 +1,6 @@
+id = "go"
+display-name = "Go"
+role = "programming"
+extensions = ["go"]
+facets = ["structured-code"]
+comments = "c"

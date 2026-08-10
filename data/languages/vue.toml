@@ -1,0 +1,6 @@
+id = "vue"
+display-name = "Vue"
+role = "programming"
+extensions = ["vue"]
+facets = ["structured-code", "style-host", "component-host"]
+comments = "svelte"

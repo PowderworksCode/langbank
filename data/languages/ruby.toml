@@ -1,0 +1,8 @@
+id = "ruby"
+display-name = "Ruby"
+role = "programming"
+extensions = ["rb", "rake"]
+filenames = ["Gemfile", "Rakefile"]
+shebangs = ["ruby"]
+facets = ["structured-code"]
+comments = "dockerfile"

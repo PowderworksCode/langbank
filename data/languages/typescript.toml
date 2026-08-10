@@ -1,0 +1,35 @@
+id = "typescript"
+display-name = "TypeScript"
+role = "programming"
+extensions = ["ts", "tsx", "mts", "cts"]
+source-extensions = ["ts", "tsx", "mts", "cts", "js", "jsx", "mjs", "cjs"]
+facets = ["structured-code", "style-host", "component-host"]
+comments = "javascript"
+config-files = ["tsconfig.json"]
+package-dependencies = ["typescript"]
+supersedes = ["javascript"]
+
+[conventions.typecheck]
+config-files = ["tsconfig.json"]
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "tests"
+test-suffixes = ["", ".test", ".spec"]
+
+[[conventions.inline-test]]
+starts-with = ["describe(", "describe."]
+indicator = "describe"
+
+[[conventions.inline-test]]
+starts-with = ["it(", "it."]
+indicator = "it"
+
+[[conventions.inline-test]]
+starts-with = ["test(", "test."]
+indicator = "test"
+
+[[conventions.inline-test]]
+starts-with = ["import "]
+contains-any = ["from \"vitest\"", "from 'vitest'", "@jest/globals", "node:test"]
+indicator = "test framework import"

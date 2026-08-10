@@ -25,16 +25,19 @@ mod facet;
 mod facets;
 mod ids;
 mod language;
-pub(crate) mod languages;
 mod tool;
 pub(crate) mod tools;
 mod traversal;
 mod verbosity;
 
+// The language registry is generated from `data/` at build time.
+include!(concat!(env!("OUT_DIR"), "/languages.rs"));
+
 pub use artifact::{ArtifactProfile, ArtifactRegistration, artifact_profile, artifact_profiles};
 pub use artifacts::{BINARY_ARTIFACT, NAPI_ARTIFACT, SITE_ARTIFACT, TAURI_ARTIFACT};
 pub use convention::{
-    LanguageConventions, TestLayoutDefaults, TypecheckConvention, language_conventions,
+    InlineTestRule, LanguageConventions, TestLayoutDefaults, TypecheckConvention,
+    language_conventions,
 };
 pub use dependency::DependencySource;
 pub use detection::{LanguageDetection, LanguageEvidence};

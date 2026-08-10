@@ -1,0 +1,23 @@
+id = "rust"
+display-name = "Rust"
+role = "programming"
+extensions = ["rs"]
+facets = ["structured-code"]
+comments = "rust"
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "tests"
+test-suffixes = ["", ".test", ".spec"]
+
+[[conventions.inline-test]]
+starts-with = ["#[cfg(test)]"]
+indicator = "#[cfg(test)]"
+
+[[conventions.inline-test]]
+starts-with = ["#[test]"]
+indicator = "#[test]"
+
+[[conventions.inline-test]]
+starts-with = ["mod tests"]
+indicator = "mod tests"

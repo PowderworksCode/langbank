@@ -1,0 +1,6 @@
+id = "css"
+display-name = "CSS"
+role = "stylesheet"
+extensions = ["css"]
+facets = ["style-host"]
+comments = "css"

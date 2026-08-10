@@ -1,0 +1,261 @@
+// A build script that cannot read its data must fail the build. Silently
+// generating an empty registry is worse than not compiling at all — a consumer
+// would see a language-free world and no error — so panicking here is the
+// correct behaviour, and the crate-wide denials are lifted for this file only.
+#![allow(clippy::expect_used, clippy::panic)]
+
+//! Generate the language registry from `data/`.
+//!
+//! The data is TOML because it is data: reviewable in a diff, editable without
+//! a compiler, and generable from upstream sources. What it generates is the
+//! same `&'static` tables the profiles were written as by hand, so nothing
+//! downstream pays a runtime cost for the move — the statics are identical and
+//! the registration is identical.
+
+use std::collections::BTreeMap;
+use std::fmt::Write as _;
+use std::path::Path;
+
+use toml::Value;
+
+fn strs(value: Option<&Value>) -> String {
+    let items = value
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .filter_map(Value::as_str)
+                .map(|item| format!("{item:?}"))
+                .collect()
+        });
+    format!("&[{}]", items.join(", "))
+}
+
+/// `c-sharp` is a legal language id and not a legal module name.
+fn ident(id: &str) -> String {
+    id.replace('-', "_")
+}
+
+/// `structured-code` names `crate::STRUCTURED_CODE`.
+fn screaming(id: &str) -> String {
+    id.replace('-', "_").to_uppercase()
+}
+
+fn role(value: &str) -> String {
+    let mut chars = value.chars();
+    let head = chars.next().map(|c| c.to_ascii_uppercase());
+    format!(
+        "crate::LanguageRole::{}{}",
+        head.unwrap_or('?'),
+        chars.as_str()
+    )
+}
+
+fn comment_tables(out: &mut String, path: &Path) {
+    let text = std::fs::read_to_string(path).expect("read comment-syntax.toml");
+    let tables: BTreeMap<String, Value> = toml::from_str(&text).expect("parse comment-syntax.toml");
+    out.push_str("    pub(crate) mod comment_syntax {\n");
+    for (name, table) in &tables {
+        let block = table
+            .get("block")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |pairs| {
+                pairs
+                    .iter()
+                    .filter_map(Value::as_array)
+                    .filter_map(|pair| Some((pair.first()?.as_str()?, pair.get(1)?.as_str()?)))
+                    .map(|(open, close)| format!("({open:?}, {close:?})"))
+                    .collect()
+            });
+        let quotes = table
+            .get("quotes")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .filter_map(|q| q.chars().next())
+                    .map(|q| format!("{q:?}"))
+                    .collect()
+            });
+        writeln!(
+            out,
+            "        pub(crate) static {}: crate::CommentSyntax = crate::CommentSyntax {{\n\
+             \x20            line: {},\n\
+             \x20            block: &[{}],\n\
+             \x20            documentation: {},\n\
+             \x20            quotes: &[{}],\n\
+             \x20            multi_quotes: {},\n\
+             \x20        }};",
+            screaming(name),
+            strs(table.get("line")),
+            block.join(", "),
+            strs(table.get("documentation")),
+            quotes.join(", "),
+            strs(table.get("multi-quotes")),
+        )
+        .expect("write comment table");
+    }
+    out.push_str("    }\n\n");
+}
+
+fn conventions(table: &Value) -> String {
+    let mut out = String::from("Some(crate::LanguageConventions {\n");
+    match table.get("typecheck") {
+        Some(typecheck) => {
+            let _ = writeln!(
+                out,
+                "                typecheck: Some(crate::TypecheckConvention {{ config_files: {} }}),",
+                strs(typecheck.get("config-files"))
+            );
+        }
+        None => out.push_str("                typecheck: None,\n"),
+    }
+    let layout = table
+        .get("test-layout")
+        .expect("conventions need a test layout");
+    let _ = write!(
+        out,
+        "                test_layout: crate::TestLayoutDefaults {{\n\
+         \x20                   source_roots: {},\n\
+         \x20                   test_root: {:?},\n\
+         \x20                   test_suffixes: {},\n\
+         \x20               }},\n",
+        strs(layout.get("source-roots")),
+        layout
+            .get("test-root")
+            .and_then(Value::as_str)
+            .unwrap_or_default(),
+        strs(layout.get("test-suffixes")),
+    );
+    let rules = table
+        .get("inline-test")
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .map(|rule| {
+                    format!(
+                        "crate::InlineTestRule {{ starts_with: {}, contains_any: {}, indicator: {:?} }}",
+                        strs(rule.get("starts-with")),
+                        strs(rule.get("contains-any")),
+                        rule.get("indicator").and_then(Value::as_str).unwrap_or_default(),
+                    )
+                })
+                .collect()
+        });
+    let _ = write!(
+        out,
+        "                inline_test: &[{}],\n            }})",
+        rules.join(", ")
+    );
+    out
+}
+
+fn main() {
+    let data = Path::new("data");
+    println!("cargo:rerun-if-changed=data");
+
+    let mut out = String::from(
+        "// @generated by build.rs from data/. Do not edit.\n\
+         pub(crate) mod languages {\n",
+    );
+    comment_tables(&mut out, &data.join("comment-syntax.toml"));
+
+    let mut files = std::fs::read_dir(data.join("languages"))
+        .expect("read data/languages")
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
+        .collect::<Vec<_>>();
+    files.sort();
+
+    for path in &files {
+        println!("cargo:rerun-if-changed={}", path.display());
+        let text = std::fs::read_to_string(path).expect("read language toml");
+        let profile: Value =
+            toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+        let id = profile.get("id").and_then(Value::as_str).expect("id");
+
+        let facets =
+            profile
+                .get("facets")
+                .and_then(Value::as_array)
+                .map_or_else(Vec::new, |array| {
+                    array
+                        .iter()
+                        .filter_map(Value::as_str)
+                        .map(|facet| format!("&crate::{}", screaming(facet)))
+                        .collect()
+                });
+        let supersedes = profile
+            .get("supersedes")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|other| format!("&super::{}::PROFILE", ident(other)))
+                    .collect()
+            });
+        let comments = profile.get("comments").and_then(Value::as_str).map_or_else(
+            || "None".to_owned(),
+            |name| format!("Some(&super::comment_syntax::{})", screaming(name)),
+        );
+        // A language that does not state source extensions accepts exactly what
+        // identifies it, which is what the hand-written profiles did.
+        let source = profile
+            .get("source-extensions")
+            .or_else(|| profile.get("extensions"));
+
+        writeln!(
+            out,
+            "    pub mod {module} {{\n\
+             \x20       pub static PROFILE: crate::LanguageProfile = crate::LanguageProfile {{\n\
+             \x20           id: {id:?},\n\
+             \x20           display_name: {name:?},\n\
+             \x20           extensions: {extensions},\n\
+             \x20           source_extensions: {source},\n\
+             \x20           filenames: {filenames},\n\
+             \x20           shebangs: {shebangs},\n\
+             \x20           role: {role},\n\
+             \x20           facets: &[{facets}],\n\
+             \x20           comments: {comments},\n\
+             \x20           conventions: {conventions},\n\
+             \x20           config_files: {config},\n\
+             \x20           package_dependencies: {deps},\n\
+             \x20           supersedes: &[{supersedes}],\n\
+             \x20       }};\n\
+             \x20       crate::registry::submit! {{ crate::LanguageRegistration(&PROFILE) }}\n\
+             \x20   }}",
+            module = ident(id),
+            name = profile
+                .get("display-name")
+                .and_then(Value::as_str)
+                .unwrap_or(id),
+            extensions = strs(profile.get("extensions")),
+            source = strs(source),
+            filenames = strs(profile.get("filenames")),
+            shebangs = strs(profile.get("shebangs")),
+            role = role(
+                profile
+                    .get("role")
+                    .and_then(Value::as_str)
+                    .unwrap_or("programming")
+            ),
+            facets = facets.join(", "),
+            comments = comments,
+            conventions = profile
+                .get("conventions")
+                .map_or_else(|| "None".to_owned(), conventions),
+            config = strs(profile.get("config-files")),
+            deps = strs(profile.get("package-dependencies")),
+            supersedes = supersedes.join(", "),
+        )
+        .expect("write profile");
+    }
+    out.push_str("}\n");
+
+    let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("languages.rs");
+    std::fs::write(&destination, out).expect("write generated languages");
+}

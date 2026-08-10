@@ -1,0 +1,6 @@
+id = "c"
+display-name = "C"
+role = "programming"
+extensions = ["c", "h"]
+facets = ["structured-code"]
+comments = "c"

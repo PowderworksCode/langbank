@@ -1,0 +1,6 @@
+id = "scala"
+display-name = "Scala"
+role = "programming"
+extensions = ["scala"]
+facets = ["structured-code"]
+comments = "c"

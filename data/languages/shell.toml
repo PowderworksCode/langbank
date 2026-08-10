@@ -1,0 +1,7 @@
+id = "shell"
+display-name = "Shell"
+role = "programming"
+extensions = ["sh", "bash", "zsh", "fish"]
+shebangs = ["sh", "bash", "zsh", "fish"]
+facets = ["structured-code"]
+comments = "dockerfile"

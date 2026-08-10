@@ -1,0 +1,6 @@
+id = "html"
+display-name = "HTML"
+role = "markup"
+extensions = ["html", "htm"]
+facets = ["style-host"]
+comments = "html"

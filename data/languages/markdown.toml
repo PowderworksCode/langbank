@@ -1,0 +1,4 @@
+id = "markdown"
+display-name = "Markdown"
+role = "documentation"
+extensions = ["md", "mdx", "markdown"]

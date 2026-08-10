@@ -1,0 +1,6 @@
+id = "c-sharp"
+display-name = "C#"
+role = "programming"
+extensions = ["cs"]
+facets = ["structured-code"]
+comments = "c"
