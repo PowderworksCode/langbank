@@ -1,0 +1,10 @@
+id = "stylelint"
+programs = ["stylelint"]
+languages = ["css", "scss", "less"]
+configuration-files = [".stylelintrc", ".stylelintrc.json", ".stylelintrc.yaml", ".stylelintrc.yml", ".stylelintrc.js", ".stylelintrc.cjs", ".stylelintrc.mjs", "stylelint.config.js", "stylelint.config.cjs", "stylelint.config.mjs"]
+package-json-keys = ["stylelint"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["lint"]

@@ -12,9 +12,8 @@ here needs a type from one of them, the type is in the wrong place.
   library that compiles proves nothing about whether its profiles registered.
   Facts are tested from `tests/`, which links the whole crate.
 - **`data/` is the source of truth** for languages, facets, artifacts,
-  ecosystems and traversal. `build.rs` generates the statics; never edit the
-  generated output, and never add an entry by writing Rust. Tool profiles and
-  verbosity are still Rust and should move the same way.
+  ecosystems, traversal and tool profiles. `build.rs` generates the statics;
+  never edit the generated output, and never add an entry by writing Rust.
 - A directory an ecosystem generates is declared in that ecosystem's file, so
   the two cannot drift apart.
 - A build script that cannot read its data panics on purpose. An empty registry

@@ -1,0 +1,9 @@
+id = "napi"
+programs = ["napi"]
+languages = ["javascript", "typescript"]
+ci-workload = "heavy"
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]
+artifacts = ["napi"]

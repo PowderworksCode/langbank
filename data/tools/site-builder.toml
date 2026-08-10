@@ -1,0 +1,9 @@
+id = "site-builder"
+programs = ["vite", "next", "gatsby"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]
+artifacts = ["site"]

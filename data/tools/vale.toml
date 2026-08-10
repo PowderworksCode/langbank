@@ -1,0 +1,9 @@
+id = "vale"
+programs = ["vale"]
+languages = []
+configuration-files = [".vale.ini"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["lint"]

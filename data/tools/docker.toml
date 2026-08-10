@@ -1,0 +1,8 @@
+id = "docker"
+programs = ["docker"]
+languages = []
+ci-workload = "heavy"
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]

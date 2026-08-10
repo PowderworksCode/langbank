@@ -1,0 +1,8 @@
+id = "typescript"
+programs = ["tsc", "tsgo", "vue-tsc"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["typecheck"]

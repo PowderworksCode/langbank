@@ -1,0 +1,34 @@
+id = "javascript-package-manager"
+programs = ["bun", "npm", "pnpm", "yarn"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = ["test"]
+tasks = ["test"]
+
+[[commands]]
+arguments = ["build"]
+required-arguments = [{ exact = "--compile" }]
+tasks = ["build"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["build"]
+required-arguments = [{ prefix = "--compile=" }]
+tasks = ["build"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["build"]
+required-arguments = [{ exact = "--target" }, { exact = "browser" }]
+rejected-arguments = [{ exact = "--compile" }, { prefix = "--compile=" }]
+tasks = ["build"]
+artifacts = ["site"]
+
+[[commands]]
+arguments = ["build"]
+required-arguments = [{ prefix = "--target=browser" }]
+rejected-arguments = [{ exact = "--compile" }, { prefix = "--compile=" }]
+tasks = ["build"]
+artifacts = ["site"]

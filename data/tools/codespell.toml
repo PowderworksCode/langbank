@@ -1,0 +1,8 @@
+id = "codespell"
+programs = ["codespell"]
+languages = []
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["lint"]

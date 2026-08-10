@@ -1,0 +1,8 @@
+id = "javascript-linter"
+programs = ["eslint", "oxlint"]
+languages = ["javascript", "typescript"]
+ci-workload = "light"
+
+[[commands]]
+arguments = []
+tasks = ["lint"]

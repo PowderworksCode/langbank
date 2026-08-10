@@ -23,7 +23,6 @@ mod facet;
 mod ids;
 mod language;
 mod tool;
-pub(crate) mod tools;
 mod traversal;
 mod verbosity;
 
@@ -66,8 +65,7 @@ pub use tool::{
     TestRetryProfile, TestRetrySignal, ToolId, ToolProfile, ToolRegistration, classify_tool,
     normalize_invocation, tool_profile, tool_profiles,
 };
-pub use tools::documentation::{CODESPELL, VALE};
-pub use tools::stylesheet::STYLELINT;
+pub use tools::{CODESPELL, STYLELINT, VALE};
 pub use traversal::{TraversalDirectory, TraversalDirectoryRegistration, traversal_directories};
 pub use verbosity::{
     LanguageVerbosity, VERBOSITY_BASELINE, VERBOSITY_CORPUS, VERBOSITY_CORPUS_REVISION,

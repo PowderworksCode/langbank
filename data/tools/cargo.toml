@@ -1,0 +1,43 @@
+id = "cargo"
+programs = ["cargo"]
+languages = ["rust"]
+ci-workload = "heavy"
+
+[[commands]]
+arguments = ["test"]
+tasks = ["test"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["nextest"]
+tasks = ["test"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["clippy"]
+tasks = ["lint"]
+
+[[commands]]
+arguments = ["fmt"]
+tasks = ["format"]
+
+[[commands]]
+arguments = ["build"]
+tasks = ["build"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["install"]
+tasks = ["build"]
+artifacts = ["binary"]
+
+[[commands]]
+arguments = ["check"]
+tasks = ["build"]
+
+[test-retry]
+arguments = ["--retries"]
+
+[[test-retry.configurations]]
+paths = [".config/nextest.toml"]
+signals = [{ toml-positive-integer = "retries" }]

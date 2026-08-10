@@ -1,0 +1,8 @@
+id = "system-package-manager"
+programs = ["apt", "apt-get"]
+languages = []
+ci-workload = "heavy"
+
+[[commands]]
+arguments = ["install"]
+tasks = ["build"]
