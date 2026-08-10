@@ -83,8 +83,11 @@ runtime parsing.
 
 ```
 data/
-  comment-syntax.toml     tables shared by languages that comment alike
-  languages/rust.toml     one file per language
+  comment-syntax.toml       tables shared by languages that comment alike
+  facets.toml               reusable source surfaces
+  artifacts.toml            what a build produces
+  languages/rust.toml       one file per language
+  ecosystems/cargo.toml     one file per ecosystem, with the directories it generates
 ```
 
 ```toml
@@ -113,9 +116,11 @@ change.
 
 Stated as intent rather than schedule.
 
-1. **Move the remaining registries out of Rust and into TOML.** Languages are
-   done; ecosystems, tools, artifacts, facets, traversal and the 1,334 lines of
-   verbosity still live in Rust and should follow the same path.
+1. **Move the last two registries out of Rust and into TOML.** Languages,
+   facets, artifacts, ecosystems and traversal are done. Tool profiles are more
+   structure than the rest — command patterns, argument matching, artifacts
+   produced — and verbosity is a pair matrix carrying a corpus revision, which
+   may want a different shape than TOML entirely.
 2. **Bootstrap detection breadth from GitHub linguist**, whose `languages.yml`
    is MIT and already the de-facto standard, keeping the hand-modelled depth
    layer for the languages this fleet actually works on. Two layers, two

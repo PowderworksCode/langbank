@@ -1,0 +1,18 @@
+# What a build produces. Tools name these as the outputs of their commands.
+
+[binary]
+display-name = "compiled binary"
+package-script-signals = ["bun build --compile"]
+
+[napi]
+display-name = "Node native addon (napi-rs)"
+package-dependencies = ["@napi-rs/cli"]
+package-script-signals = ["napi build"]
+
+[site]
+display-name = "web/site bundle"
+project-facets = ["static-site"]
+
+[tauri]
+display-name = "Tauri desktop application"
+project-facets = ["tauri"]

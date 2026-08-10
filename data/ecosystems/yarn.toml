@@ -1,0 +1,12 @@
+id = "yarn"
+display-name = "Yarn"
+roles = ["package-manager"]
+implied-languages = ["javascript"]
+manifest = "package.json"
+lockfiles = ["yarn.lock"]
+gitignore-patterns = ["node_modules/"]
+manifest-selection = "lockfile"
+
+[dependency-pins]
+syntax = "exact-semver"
+advisory = false

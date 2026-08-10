@@ -1,0 +1,37 @@
+id = "npm"
+display-name = "npm"
+roles = ["package-manager"]
+implied-languages = ["javascript"]
+manifest = "package.json"
+lockfiles = ["package-lock.json", "npm-shrinkwrap.json"]
+gitignore-patterns = ["node_modules/"]
+manifest-selection = "default"
+
+[dependency-pins]
+syntax = "exact-semver"
+advisory = false
+
+# node_modules is unambiguous and needs no marker; the rest are ordinary words
+# that are only build output next to a package.json.
+[[traversal]]
+name = "node_modules"
+
+[[traversal]]
+name = "dist"
+markers = ["package.json"]
+
+[[traversal]]
+name = "build"
+markers = ["package.json"]
+
+[[traversal]]
+name = ".next"
+markers = ["package.json"]
+
+[[traversal]]
+name = ".turbo"
+markers = ["package.json"]
+
+[[traversal]]
+name = "coverage"
+markers = ["package.json"]
