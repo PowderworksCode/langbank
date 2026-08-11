@@ -1,0 +1,15 @@
+id = "luarocks"
+display-name = "LuaRocks"
+uses-repository = true
+
+[namespace]
+requirement = "optional"
+case-sensitive = false
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = true

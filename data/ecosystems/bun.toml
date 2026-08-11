@@ -1,4 +1,5 @@
 id = "bun"
+registry = "npm"
 display-name = "Bun"
 roles = ["package-manager", "runtime"]
 implied-languages = ["javascript"]

@@ -1,0 +1,8 @@
+# purl-spec defines the package registries a package identity can live in.
+# `tools/sync-purl.py check` fails if it defines a type langbank does not.
+
+[purl]
+repository = "package-url/purl-spec"
+source = "https://raw.githubusercontent.com/package-url/purl-spec/main/purl-types-index.json"
+license = "MIT"
+types = 42

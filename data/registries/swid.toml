@@ -1,0 +1,15 @@
+id = "swid"
+display-name = "Software Identification (SWID) Tag"
+uses-repository = false
+
+[namespace]
+requirement = "optional"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

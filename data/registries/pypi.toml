@@ -1,0 +1,16 @@
+id = "pypi"
+display-name = "PyPI"
+default-repository = "https://pypi.org"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = false

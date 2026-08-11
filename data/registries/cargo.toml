@@ -1,0 +1,16 @@
+id = "cargo"
+display-name = "Cargo"
+default-repository = "https://crates.io/"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

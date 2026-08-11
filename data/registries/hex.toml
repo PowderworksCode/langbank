@@ -1,0 +1,16 @@
+id = "hex"
+display-name = "Hex"
+default-repository = "https://repo.hex.pm"
+uses-repository = true
+
+[namespace]
+requirement = "optional"
+case-sensitive = false
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = true

@@ -1,0 +1,16 @@
+id = "vscode-extension"
+display-name = "VS Code Extension packages"
+default-repository = "https://marketplace.visualstudio.com/vscode-extension"
+uses-repository = true
+
+[namespace]
+requirement = "required"
+case-sensitive = false
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = false

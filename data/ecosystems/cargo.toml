@@ -1,4 +1,5 @@
 id = "cargo"
+registry = "cargo"
 display-name = "Cargo"
 roles = ["package-manager", "build-system"]
 implied-languages = ["rust"]

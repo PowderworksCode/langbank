@@ -1,0 +1,16 @@
+id = "conda"
+display-name = "Conda"
+default-repository = "https://repo.anaconda.com"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

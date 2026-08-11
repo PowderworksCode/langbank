@@ -1,0 +1,16 @@
+id = "docker"
+display-name = "Docker image"
+default-repository = "https://hub.docker.com"
+uses-repository = true
+
+[namespace]
+requirement = "optional"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

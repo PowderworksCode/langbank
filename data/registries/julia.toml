@@ -1,0 +1,16 @@
+id = "julia"
+display-name = "Julia Package"
+default-repository = "https://github.com/JuliaRegistries/General"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

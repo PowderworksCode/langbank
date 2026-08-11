@@ -1,0 +1,16 @@
+id = "bitnami"
+display-name = "Bitnami"
+default-repository = "https://downloads.bitnami.com/files/stacksmith"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = true

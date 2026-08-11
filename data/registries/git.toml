@@ -1,0 +1,15 @@
+id = "git"
+display-name = "Git"
+uses-repository = true
+
+[namespace]
+requirement = "required"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

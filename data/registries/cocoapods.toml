@@ -1,0 +1,16 @@
+id = "cocoapods"
+display-name = "CocoaPods"
+default-repository = "https://cdn.cocoapods.org/"
+uses-repository = true
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = true
+
+[version]
+requirement = "optional"
+case-sensitive = true

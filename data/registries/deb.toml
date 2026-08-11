@@ -1,0 +1,15 @@
+id = "deb"
+display-name = "Debian package"
+uses-repository = true
+
+[namespace]
+requirement = "required"
+case-sensitive = false
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = true

@@ -1,0 +1,15 @@
+id = "otp"
+display-name = "BEAM/OTP Application"
+uses-repository = false
+
+[namespace]
+requirement = "prohibited"
+case-sensitive = true
+
+[name]
+requirement = "required"
+case-sensitive = false
+
+[version]
+requirement = "optional"
+case-sensitive = true
