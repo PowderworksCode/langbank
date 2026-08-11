@@ -2,4 +2,5 @@ id = "nim"
 display-name = "Nim"
 role = "programming"
 extensions = ["nim", "nim.cfg", "nimble", "nimrod", "nims"]
+comments = "awk"
 filenames = ["nim.cfg"]

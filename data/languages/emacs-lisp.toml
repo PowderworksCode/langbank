@@ -2,4 +2,5 @@ id = "emacs-lisp"
 display-name = "Emacs Lisp"
 role = "programming"
 extensions = ["el", "emacs", "emacs.desktop"]
+comments = "abnf"
 filenames = [".abbrev_defs", ".emacs", ".emacs.desktop", ".gnus", ".spacemacs", ".viper", "Cask", "Eask", "Project.ede", "_emacs", "abbrev_defs"]

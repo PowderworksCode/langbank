@@ -2,3 +2,4 @@ id = "twig"
 display-name = "Twig"
 role = "markup"
 extensions = ["twig"]
+comments = "twig"

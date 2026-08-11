@@ -1,4 +1,5 @@
 id = "pan"
 display-name = "Pan"
 role = "programming"
-extensions = ["pan"]
+extensions = ["pan", "tpl"]
+comments = "awk"

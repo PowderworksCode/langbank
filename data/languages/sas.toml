@@ -2,3 +2,4 @@ id = "sas"
 display-name = "SAS"
 role = "programming"
 extensions = ["sas"]
+comments = "sas"

@@ -2,3 +2,4 @@ id = "haxe"
 display-name = "Haxe"
 role = "programming"
 extensions = ["hx", "hxsl"]
+comments = "actionscript"

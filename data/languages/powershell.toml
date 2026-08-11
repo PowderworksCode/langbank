@@ -1,5 +1,6 @@
 id = "powershell"
 display-name = "PowerShell"
 role = "programming"
-extensions = ["ps1", "psd1", "psm1"]
+extensions = ["cdxml", "ps1", "ps1xml", "psc1", "psd1", "psm1", "pssc"]
+comments = "powershell"
 shebangs = ["pwsh"]

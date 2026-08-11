@@ -1,6 +1,7 @@
 id = "makefile"
 display-name = "Makefile"
 role = "programming"
-extensions = ["d", "mak", "make", "makefile", "mk", "mkfile"]
+extensions = ["bp", "d", "mak", "make", "makefile", "mk", "mkfile"]
+comments = "awk"
 filenames = ["BSDmakefile", "GNUmakefile", "Kbuild", "Makefile", "Makefile.am", "Makefile.boot", "Makefile.frag", "Makefile.in", "Makefile.inc", "Makefile.pc", "Makefile.wat", "makefile", "makefile.sco", "mkfile"]
 shebangs = ["make"]

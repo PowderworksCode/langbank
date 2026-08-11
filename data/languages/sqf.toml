@@ -2,3 +2,4 @@ id = "sqf"
 display-name = "SQF"
 role = "programming"
 extensions = ["hqf", "sqf"]
+comments = "actionscript"

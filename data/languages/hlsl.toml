@@ -1,4 +1,5 @@
 id = "hlsl"
 display-name = "HLSL"
 role = "programming"
-extensions = ["cginc", "fx", "fxh", "hlsl", "hlsli"]
+extensions = ["cginc", "fx", "fxh", "fxsub", "hlsl", "hlsli"]
+comments = "actionscript"

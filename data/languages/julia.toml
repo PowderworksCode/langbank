@@ -2,4 +2,5 @@ id = "julia"
 display-name = "Julia"
 role = "programming"
 extensions = ["jl"]
+comments = "julia"
 shebangs = ["julia"]

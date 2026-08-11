@@ -1,4 +1,5 @@
 id = "modelica"
 display-name = "Modelica"
 role = "programming"
-extensions = ["mo"]
+extensions = ["mo", "mos"]
+comments = "actionscript"

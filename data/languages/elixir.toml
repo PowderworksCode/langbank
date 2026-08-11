@@ -2,5 +2,6 @@ id = "elixir"
 display-name = "Elixir"
 role = "programming"
 extensions = ["ex", "exs"]
+comments = "awk"
 filenames = ["mix.lock"]
 shebangs = ["elixir"]

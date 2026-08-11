@@ -2,3 +2,4 @@ id = "bitbake"
 display-name = "BitBake"
 role = "programming"
 extensions = ["bb", "bbappend", "bbclass", "inc"]
+comments = "awk"

@@ -1,4 +1,5 @@
 id = "moonbit"
 display-name = "MoonBit"
 role = "programming"
-extensions = ["mbt"]
+extensions = ["mbt", "mbti"]
+comments = "cairo"

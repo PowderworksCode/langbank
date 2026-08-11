@@ -1,4 +1,5 @@
 id = "freemarker"
 display-name = "FreeMarker"
 role = "programming"
-extensions = ["ftl", "ftlh"]
+extensions = ["ftl", "ftlh", "ftlx"]
+comments = "freemarker"

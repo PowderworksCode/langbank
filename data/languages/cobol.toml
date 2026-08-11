@@ -2,3 +2,4 @@ id = "cobol"
 display-name = "COBOL"
 role = "programming"
 extensions = ["cbl", "ccp", "cob", "cobol", "cpy"]
+comments = "cobol"

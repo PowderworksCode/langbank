@@ -34,3 +34,5 @@ jobs:
         run: tools/sync-linguist.py check
       - name: purl coverage
         run: tools/sync-purl.py check
+      - name: tokei and scc coverage
+        run: tools/sync-corpora.py check

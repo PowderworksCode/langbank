@@ -1,4 +1,5 @@
 id = "shaderlab"
 display-name = "ShaderLab"
 role = "programming"
-extensions = ["shader"]
+extensions = ["cginc", "shader"]
+comments = "actionscript"

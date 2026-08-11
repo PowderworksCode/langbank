@@ -2,3 +2,4 @@ id = "pug"
 display-name = "Pug"
 role = "markup"
 extensions = ["jade", "pug"]
+comments = "pug"

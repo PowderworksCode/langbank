@@ -1,4 +1,5 @@
 id = "mojo"
 display-name = "Mojo"
 role = "programming"
-extensions = ["mojo"]
+extensions = ["mojo", "🔥"]
+comments = "awk"

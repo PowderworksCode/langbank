@@ -2,4 +2,5 @@ id = "sed"
 display-name = "sed"
 role = "programming"
 extensions = ["sed"]
+comments = "awk"
 shebangs = ["gsed", "minised", "sed", "ssed"]

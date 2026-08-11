@@ -2,3 +2,4 @@ id = "alloy"
 display-name = "Alloy"
 role = "programming"
 extensions = ["als"]
+comments = "alloy"

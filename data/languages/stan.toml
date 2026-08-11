@@ -2,3 +2,4 @@ id = "stan"
 display-name = "Stan"
 role = "programming"
 extensions = ["stan"]
+comments = "jsonnet"

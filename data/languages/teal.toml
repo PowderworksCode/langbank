@@ -1,5 +1,6 @@
 id = "teal"
 display-name = "Teal"
 role = "programming"
-extensions = ["tl"]
+extensions = ["teal", "tl"]
+comments = "cairo"
 shebangs = ["tl"]

@@ -2,3 +2,4 @@ id = "logtalk"
 display-name = "Logtalk"
 role = "programming"
 extensions = ["lgt", "logtalk"]
+comments = "logtalk"

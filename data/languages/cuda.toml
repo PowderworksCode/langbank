@@ -2,3 +2,4 @@ id = "cuda"
 display-name = "Cuda"
 role = "programming"
 extensions = ["cu", "cuh"]
+comments = "actionscript"

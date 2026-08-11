@@ -2,3 +2,4 @@ id = "actionscript"
 display-name = "ActionScript"
 role = "programming"
 extensions = ["as"]
+comments = "actionscript"

@@ -17,6 +17,11 @@ import re
 import sys
 import urllib.request
 
+
+def dumps(value):
+    """TOML takes literal UTF-8; json.dumps escapes non-BMP into surrogate pairs."""
+    return json.dumps(value, ensure_ascii=False)
+
 INDEX = "https://raw.githubusercontent.com/package-url/purl-spec/main/purl-types-index.json"
 TYPE = "https://raw.githubusercontent.com/package-url/purl-spec/main/types/{name}-definition.json"
 PIN = "data/sources/purl.toml"
@@ -47,18 +52,18 @@ def requirement(definition, key):
 def write_type(name, definition):
     repository = definition.get("repository") or {}
     lines = [
-        f"id = {json.dumps(name)}",
-        f"display-name = {json.dumps(definition.get('type_name') or name)}",
+        f"id = {dumps(name)}",
+        f"display-name = {dumps(definition.get('type_name') or name)}",
     ]
     url = repository.get("default_repository_url")
     if url:
-        lines.append(f"default-repository = {json.dumps(url)}")
-    lines.append(f"uses-repository = {json.dumps(bool(repository.get('use_repository', False)))}")
+        lines.append(f"default-repository = {dumps(url)}")
+    lines.append(f"uses-repository = {dumps(bool(repository.get('use_repository', False)))}")
     for key in ("namespace", "name", "version"):
         required, case_sensitive = requirement(definition, key)
         lines.append(f"\n[{key}]")
         lines.append(f'requirement = "{required}"')
-        lines.append(f"case-sensitive = {json.dumps(case_sensitive)}")
+        lines.append(f"case-sensitive = {dumps(case_sensitive)}")
     open(f"data/registries/{name}.toml", "w").write("\n".join(lines) + "\n")
 
 

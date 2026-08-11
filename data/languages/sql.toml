@@ -1,6 +1,6 @@
 id = "sql"
 display-name = "SQL"
 role = "programming"
-extensions = ["ddl", "inc", "mysql", "prc", "sql", "tab", "udf", "viw"]
+extensions = ["ddl", "dml", "dql", "inc", "mysql", "prc", "sql", "tab", "udf", "viw"]
 primary-extensions = ["sql"]
 comments = "sql"

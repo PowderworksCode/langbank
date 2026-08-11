@@ -2,3 +2,4 @@ id = "liquid"
 display-name = "Liquid"
 role = "markup"
 extensions = ["liquid"]
+comments = "liquid"

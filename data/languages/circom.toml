@@ -2,3 +2,4 @@ id = "circom"
 display-name = "Circom"
 role = "programming"
 extensions = ["circom"]
+comments = "actionscript"

@@ -1,4 +1,5 @@
 id = "ada"
 display-name = "Ada"
 role = "programming"
-extensions = ["ada", "adb", "ads"]
+extensions = ["ada", "adb", "ads", "pad"]
+comments = "ada"

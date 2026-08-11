@@ -2,3 +2,4 @@ id = "redscript"
 display-name = "Redscript"
 role = "programming"
 extensions = ["reds"]
+comments = "game-maker-language"

@@ -1,4 +1,5 @@
 id = "sass"
 display-name = "Sass"
 role = "markup"
-extensions = ["sass"]
+extensions = ["sass", "scss"]
+comments = "actionscript"

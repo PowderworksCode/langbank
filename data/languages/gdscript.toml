@@ -2,3 +2,4 @@ id = "gdscript"
 display-name = "GDScript"
 role = "programming"
 extensions = ["gd"]
+comments = "awk"

@@ -2,3 +2,4 @@ id = "agda"
 display-name = "Agda"
 role = "programming"
 extensions = ["agda"]
+comments = "agda"

@@ -34,6 +34,13 @@ PIN = "data/sources/linguist.toml"
 ROLE = {"programming": "programming", "markup": "markup", "data": "data", "prose": "documentation"}
 
 
+def dumps(value):
+    """TOML takes literal UTF-8. json.dumps escapes non-BMP characters into
+    surrogate pairs, which TOML does not accept -- Mojo's `.🔥` extension is
+    the one that finds this out."""
+    return json.dumps(value, ensure_ascii=False)
+
+
 def slug(name):
     """`C#` -> `c-sharp`, matching the ids the hand-written profiles use."""
     out = name.lower().replace("#", "-sharp").replace("++", "pp").replace("*", "-star")
@@ -109,13 +116,13 @@ def gaps(upstream, local):
 
 
 def write_language(lid, entry):
-    lines = [f"id = {json.dumps(lid)}", f"display-name = {json.dumps(entry['display'])}",
-             f"role = {json.dumps(entry['role'])}"]
+    lines = [f"id = {dumps(lid)}", f"display-name = {dumps(entry['display'])}",
+             f"role = {dumps(entry['role'])}"]
     for key, values in (("extensions", entry["extensions"]),
                         ("filenames", entry["filenames"]),
                         ("shebangs", entry["shebangs"])):
         if values:
-            lines.append(f"{key} = {json.dumps(values)}")
+            lines.append(f"{key} = {dumps(values)}")
     open(f"data/languages/{lid}.toml", "w").write("\n".join(lines) + "\n")
 
 

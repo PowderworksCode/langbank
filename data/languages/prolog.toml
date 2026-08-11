@@ -1,5 +1,6 @@
 id = "prolog"
 display-name = "Prolog"
 role = "programming"
-extensions = ["pl", "plt", "pro", "prolog", "yap"]
+extensions = ["p", "pl", "plt", "pro", "prolog", "yap"]
+comments = "logtalk"
 shebangs = ["swipl", "yap"]

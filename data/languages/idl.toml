@@ -1,4 +1,5 @@
 id = "idl"
 display-name = "IDL"
 role = "programming"
-extensions = ["dlm", "pro"]
+extensions = ["dlm", "idl", "pro", "webidl", "widl"]
+comments = "actionscript"

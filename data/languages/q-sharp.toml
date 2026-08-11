@@ -2,3 +2,4 @@ id = "q-sharp"
 display-name = "Q#"
 role = "programming"
 extensions = ["qs"]
+comments = "cairo"

@@ -1,4 +1,5 @@
 id = "jcl"
 display-name = "JCL"
 role = "programming"
-extensions = ["jcl"]
+extensions = ["jcl", "jcls"]
+comments = "jcl"

@@ -1,4 +1,5 @@
 id = "forth"
 display-name = "Forth"
 role = "programming"
-extensions = ["4th", "f", "for", "forth", "fr", "frt", "fs", "fth"]
+extensions = ["4th", "e4", "f", "f83", "fb", "for", "forth", "fpm", "fr", "frt", "fs", "ft", "fth", "rx"]
+comments = "forth"

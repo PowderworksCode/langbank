@@ -1,5 +1,6 @@
 id = "ocaml"
 display-name = "OCaml"
 role = "programming"
-extensions = ["eliom", "eliomi", "ml", "ml4", "mli", "mll", "mly"]
+extensions = ["eliom", "eliomi", "ml", "ml4", "mli", "mll", "mly", "re", "rei"]
+comments = "f-star"
 shebangs = ["ocaml", "ocamlrun", "ocamlscript"]

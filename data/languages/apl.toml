@@ -1,5 +1,6 @@
 id = "apl"
 display-name = "APL"
 role = "programming"
-extensions = ["apl", "dyalog"]
+extensions = ["apl", "aplc", "aplf", "apln", "apls", "dyalog"]
+comments = "apl"
 shebangs = ["apl", "aplx", "dyalog"]

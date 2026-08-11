@@ -2,3 +2,4 @@ id = "astro"
 display-name = "Astro"
 role = "markup"
 extensions = ["astro"]
+comments = "astro"

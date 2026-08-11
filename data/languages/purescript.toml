@@ -2,3 +2,4 @@ id = "purescript"
 display-name = "PureScript"
 role = "programming"
 extensions = ["purs"]
+comments = "agda"

@@ -2,3 +2,4 @@ id = "flatbuffers"
 display-name = "FlatBuffers"
 role = "data"
 extensions = ["fbs"]
+comments = "actionscript"

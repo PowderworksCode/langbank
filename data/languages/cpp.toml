@@ -1,7 +1,7 @@
 id = "cpp"
 display-name = "C++"
 role = "programming"
-extensions = ["c++", "cc", "cp", "cpp", "cppm", "cxx", "h", "h++", "hh", "hpp", "hxx", "inc", "inl", "ino", "ipp", "ixx", "re", "tcc", "tpp", "txx"]
+extensions = ["c++", "c++m", "cc", "ccm", "cp", "cpp", "cppm", "cxx", "cxxm", "h", "h++", "hh", "hpp", "hxx", "inc", "inl", "ino", "ipp", "ixx", "mxx", "pcc", "re", "tcc", "tpp", "txx"]
 primary-extensions = ["cp", "hh", "re"]
 facets = ["structured-code"]
 comments = "c"

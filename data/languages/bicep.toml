@@ -2,3 +2,4 @@ id = "bicep"
 display-name = "Bicep"
 role = "programming"
 extensions = ["bicep", "bicepparam"]
+comments = "actionscript"

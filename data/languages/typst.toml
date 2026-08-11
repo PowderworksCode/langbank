@@ -2,3 +2,4 @@ id = "typst"
 display-name = "Typst"
 role = "programming"
 extensions = ["typ"]
+comments = "actionscript"

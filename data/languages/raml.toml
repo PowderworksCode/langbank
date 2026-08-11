@@ -1,4 +1,5 @@
 id = "raml"
 display-name = "RAML"
 role = "markup"
-extensions = ["raml"]
+extensions = ["raml", "rml"]
+comments = "awk"

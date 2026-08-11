@@ -2,3 +2,4 @@ id = "srecode-template"
 display-name = "SRecode Template"
 role = "markup"
 extensions = ["srt"]
+comments = "srecode-template"

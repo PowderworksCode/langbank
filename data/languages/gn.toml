@@ -2,5 +2,6 @@ id = "gn"
 display-name = "GN"
 role = "data"
 extensions = ["gn", "gni"]
+comments = "awk"
 filenames = [".gn"]
 shebangs = ["gn"]

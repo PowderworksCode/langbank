@@ -2,3 +2,4 @@ id = "cil"
 display-name = "CIL"
 role = "data"
 extensions = ["cil"]
+comments = "abnf"

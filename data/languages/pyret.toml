@@ -2,3 +2,4 @@ id = "pyret"
 display-name = "Pyret"
 role = "programming"
 extensions = ["arr"]
+comments = "pyret"
