@@ -2,3 +2,4 @@ id = "gdshader"
 display-name = "GDShader"
 role = "programming"
 extensions = ["gdshader", "gdshaderinc"]
+comments = "actionscript"

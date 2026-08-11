@@ -2,3 +2,4 @@ id = "gradle"
 display-name = "Gradle"
 role = "data"
 extensions = ["gradle"]
+comments = "cairo"

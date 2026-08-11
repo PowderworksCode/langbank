@@ -1,5 +1,5 @@
 id = "fennel"
 display-name = "Fennel"
 role = "programming"
-extensions = ["fnl"]
+extensions = ["fnl", "fnlm"]
 shebangs = ["fennel"]

@@ -2,3 +2,4 @@ id = "sieve"
 display-name = "Sieve"
 role = "programming"
 extensions = ["sieve"]
+comments = "livescript"

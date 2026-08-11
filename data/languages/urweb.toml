@@ -2,3 +2,4 @@ id = "urweb"
 display-name = "UrWeb"
 role = "programming"
 extensions = ["ur", "urs"]
+comments = "f-star"

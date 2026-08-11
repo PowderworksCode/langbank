@@ -2,3 +2,4 @@ id = "webassembly"
 display-name = "WebAssembly"
 role = "programming"
 extensions = ["wast", "wat"]
+comments = "srecode-template"

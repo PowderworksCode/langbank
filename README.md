@@ -17,6 +17,8 @@ against permissively licensed upstream projects. With thanks:
 |---|---|---|
 | [github-linguist/linguist](https://github.com/github-linguist/linguist) | MIT | language names, extensions, filenames, interpreters |
 | [package-url/purl-spec](https://github.com/package-url/purl-spec) | MIT | package registry types, canonical hosts, identity rules |
+| [XAMPPRocky/tokei](https://github.com/XAMPPRocky/tokei) | MIT / Apache-2.0 | comment syntax, extensions |
+| [boyter/scc](https://github.com/boyter/scc) | MIT | comment syntax, extensions |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -146,7 +148,7 @@ runtime parsing.
 
 ```
 data/
-  comment-syntax.toml       tables shared by languages that comment alike
+  comment-syntax.toml       tables shared by languages that comment alike (76)
   facets.toml               reusable source surfaces
   artifacts.toml            what a build produces
   languages/rust.toml       one file per language, all 827 of them

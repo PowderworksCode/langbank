@@ -2,3 +2,4 @@ id = "apex"
 display-name = "Apex"
 role = "programming"
 extensions = ["apex", "cls", "trigger"]
+comments = "actionscript"

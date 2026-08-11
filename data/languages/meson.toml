@@ -2,3 +2,4 @@ id = "meson"
 display-name = "Meson"
 role = "programming"
 filenames = ["meson.build", "meson_options.txt"]
+comments = "awk"

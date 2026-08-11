@@ -2,3 +2,4 @@ id = "bqn"
 display-name = "BQN"
 role = "programming"
 extensions = ["bqn"]
+comments = "awk"

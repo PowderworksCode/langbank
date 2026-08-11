@@ -2,3 +2,4 @@ id = "tsx"
 display-name = "TSX"
 role = "programming"
 extensions = ["tsx"]
+comments = "actionscript"

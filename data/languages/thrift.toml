@@ -2,3 +2,4 @@ id = "thrift"
 display-name = "Thrift"
 role = "programming"
 extensions = ["thrift"]
+comments = "jsonnet"

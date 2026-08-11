@@ -2,3 +2,4 @@ id = "blade"
 display-name = "Blade"
 role = "markup"
 extensions = ["blade", "blade.php"]
+comments = "blade"

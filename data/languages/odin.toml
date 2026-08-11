@@ -2,3 +2,4 @@ id = "odin"
 display-name = "Odin"
 role = "programming"
 extensions = ["odin"]
+comments = "actionscript"

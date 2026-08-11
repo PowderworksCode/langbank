@@ -1,4 +1,5 @@
 id = "postcss"
 display-name = "PostCSS"
 role = "markup"
-extensions = ["pcss", "postcss"]
+extensions = ["pcss", "postcss", "sss"]
+comments = "actionscript"

@@ -2,3 +2,4 @@ id = "xtend"
 display-name = "Xtend"
 role = "programming"
 extensions = ["xtend"]
+comments = "actionscript"

@@ -2,4 +2,5 @@ id = "crystal"
 display-name = "Crystal"
 role = "programming"
 extensions = ["cr"]
+comments = "awk"
 shebangs = ["crystal"]

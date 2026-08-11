@@ -1,5 +1,6 @@
 id = "snakemake"
 display-name = "Snakemake"
 role = "programming"
-extensions = ["smk", "snakefile"]
+extensions = ["rules", "smk", "snakefile"]
+comments = "awk"
 filenames = ["Snakefile"]

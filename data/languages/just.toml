@@ -1,5 +1,6 @@
 id = "just"
 display-name = "Just"
 role = "programming"
-extensions = ["just"]
+extensions = ["just", "justfile"]
+comments = "awk"
 filenames = [".JUSTFILE", ".Justfile", ".justfile", "JUSTFILE", "Justfile", "justfile"]

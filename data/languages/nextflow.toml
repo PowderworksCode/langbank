@@ -1,6 +1,7 @@
 id = "nextflow"
 display-name = "Nextflow"
 role = "programming"
-extensions = ["nf"]
+extensions = ["nextflow", "nf"]
+comments = "actionscript"
 filenames = ["nextflow.config"]
 shebangs = ["nextflow"]

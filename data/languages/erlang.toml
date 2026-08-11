@@ -2,5 +2,6 @@ id = "erlang"
 display-name = "Erlang"
 role = "programming"
 extensions = ["app", "app.src", "erl", "es", "escript", "hrl", "xrl", "yrl"]
+comments = "erlang"
 filenames = ["Emakefile", "rebar.config", "rebar.config.lock", "rebar.lock"]
 shebangs = ["escript"]

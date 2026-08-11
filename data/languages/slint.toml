@@ -2,3 +2,4 @@ id = "slint"
 display-name = "Slint"
 role = "markup"
 extensions = ["slint"]
+comments = "actionscript"

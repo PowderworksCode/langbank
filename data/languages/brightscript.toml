@@ -2,3 +2,4 @@ id = "brightscript"
 display-name = "Brightscript"
 role = "programming"
 extensions = ["brs"]
+comments = "brightscript"

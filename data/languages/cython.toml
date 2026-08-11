@@ -2,3 +2,4 @@ id = "cython"
 display-name = "Cython"
 role = "programming"
 extensions = ["pxd", "pxi", "pyx"]
+comments = "awk"

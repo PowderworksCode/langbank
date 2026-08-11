@@ -1,5 +1,6 @@
 id = "vim-script"
 display-name = "Vim Script"
 role = "programming"
-extensions = ["vba", "vim", "vimrc", "vmb"]
+extensions = ["gvimrc", "vba", "vim", "vimrc", "vmb"]
+comments = "vim-script"
 filenames = [".exrc", ".gvimrc", ".nvimrc", ".vimrc", "_vimrc", "gvimrc", "nvimrc", "vimrc"]

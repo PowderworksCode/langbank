@@ -2,3 +2,4 @@ id = "typespec"
 display-name = "TypeSpec"
 role = "programming"
 extensions = ["tsp"]
+comments = "actionscript"

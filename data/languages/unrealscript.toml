@@ -1,4 +1,5 @@
 id = "unrealscript"
 display-name = "UnrealScript"
 role = "programming"
-extensions = ["uc"]
+extensions = ["uc", "uci", "upkg"]
+comments = "actionscript"

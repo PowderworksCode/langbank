@@ -2,3 +2,4 @@ id = "processing"
 display-name = "Processing"
 role = "programming"
 extensions = ["pde"]
+comments = "actionscript"

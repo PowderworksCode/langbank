@@ -2,3 +2,4 @@ id = "objective-cpp"
 display-name = "Objective-C++"
 role = "programming"
 extensions = ["mm"]
+comments = "actionscript"

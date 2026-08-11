@@ -2,3 +2,4 @@ id = "stylus"
 display-name = "Stylus"
 role = "markup"
 extensions = ["styl"]
+comments = "actionscript"

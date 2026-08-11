@@ -34,8 +34,8 @@ MIT; GitHub reports both as `NOASSERTION` and is wrong to.
 |---|---|---|---|
 | github-linguist/linguist | MIT | language identity | **absorbed** |
 | package-url/purl-spec | MIT | package registries | **absorbed** |
-| XAMPPRocky/tokei | MIT / Apache-2.0 | language identity, comment syntax | queued |
-| boyter/scc | MIT | language identity, comment syntax | queued |
+| XAMPPRocky/tokei | MIT / Apache-2.0 | comment syntax, extensions | **absorbed** |
+| boyter/scc | MIT | comment syntax, extensions | **absorbed** |
 | neovim/nvim-lspconfig | Apache-2.0 | language → server, root markers | after toolchains |
 | mason-org/mason-registry | Apache-2.0 | tool → languages, categories | after toolchains |
 | dependabot/dependabot-core | MIT | ecosystem manifests, registries | after toolchains |
@@ -92,26 +92,41 @@ One source needed no machinery. Several do.
    sources differing on a language's role is a finding for a person, in the same
    spirit as the 148 contests langbank already declines to guess at.
 
-### Agreement is only evidence if the sources are independent
+### Agreement is only evidence if the sources are independent — measured
 
-go-enry derives from linguist. scc, tokei and cloc may share ancestry with each
-other. Before treating "three sources agree" as confidence, establish that they
-are three sources: if two agree on 99.9% of extensions they are one corpus
-wearing two hats, and counting it twice is how a registry becomes confidently
-wrong. The first corroboration should measure this rather than assume it.
+go-enry derives from linguist and is skipped for that reason. tokei and scc were
+suspected of sharing ancestry and turned out not to. On the 187 languages both
+carry:
+
+| | agreement |
+|---|---:|
+| identical extension sets | 77% |
+| identical line comments | 93% |
+| identical block comments | 89% |
+
+Two corpora agreeing on 99.9% of anything would be one corpus wearing two hats.
+These are far enough apart to be two, so their agreement is evidence — and the
+7–23% they disagree about is where the decisions live rather than noise to
+average away.
+
+**The rule that follows.** Both agree, absorb. Only one carries it, absorb as a
+single source, which is what linguist already is. Both carry it and differ,
+report it and change nothing: 21 languages sit in that bucket, Lua among them,
+where scc records six block-comment forms for its `--[==[` long brackets and
+tokei records one. Neither is wrong and the smaller answer would quietly lose
+the difference.
 
 ## Order
 
 ```
 0. purl-spec               done: 42 registries, and the registry/manager split
                            it forced
-1. tokei + scc             comment syntax is langbank's thinnest area — 11 tables
-                           for 827 languages — and this is the first corroboration
-2. independence audit      is agreement actually evidence?
-3. TOOLCHAIN MODEL         the hinge; four sources below wait on it, and propbank
+1. tokei + scc             done: comment syntax 27 -> 220 languages, and the
+                           independence audit folded in
+2. TOOLCHAIN MODEL         the hinge; four sources below wait on it, and propbank
                            needs the version probes regardless
-4. nvim-lspconfig          root markers, which langbank has no concept of
-5. mason-registry          tool → language, categories, distribution
-6. dependabot-core         ecosystem manifests, lockfiles, registries
-7. static-analysis         analyzer coverage per language
+3. nvim-lspconfig          root markers, which langbank has no concept of
+4. mason-registry          tool → language, categories, distribution
+5. dependabot-core         ecosystem manifests, lockfiles, registries
+6. static-analysis         analyzer coverage per language
 ```

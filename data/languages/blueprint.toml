@@ -2,3 +2,4 @@ id = "blueprint"
 display-name = "Blueprint"
 role = "markup"
 extensions = ["blp"]
+comments = "actionscript"

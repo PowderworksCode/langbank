@@ -1,4 +1,5 @@
 id = "cypher"
 display-name = "Cypher"
 role = "programming"
-extensions = ["cyp", "cypher"]
+extensions = ["cql", "cyp", "cypher"]
+comments = "actionscript"

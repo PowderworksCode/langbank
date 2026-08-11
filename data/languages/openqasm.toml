@@ -2,3 +2,4 @@ id = "openqasm"
 display-name = "OpenQASM"
 role = "programming"
 extensions = ["qasm"]
+comments = "actionscript"

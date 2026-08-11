@@ -2,3 +2,4 @@ id = "edn"
 display-name = "edn"
 role = "data"
 extensions = ["edn"]
+comments = "abnf"

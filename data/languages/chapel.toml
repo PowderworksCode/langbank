@@ -2,3 +2,4 @@ id = "chapel"
 display-name = "Chapel"
 role = "programming"
 extensions = ["chpl"]
+comments = "actionscript"

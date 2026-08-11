@@ -2,3 +2,4 @@ id = "haml"
 display-name = "Haml"
 role = "markup"
 extensions = ["haml", "haml.deface"]
+comments = "haml"

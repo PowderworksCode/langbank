@@ -2,3 +2,4 @@ id = "edgeql"
 display-name = "EdgeQL"
 role = "programming"
 extensions = ["edgeql", "esdl"]
+comments = "awk"

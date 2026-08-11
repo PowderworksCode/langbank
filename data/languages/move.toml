@@ -2,3 +2,4 @@ id = "move"
 display-name = "Move"
 role = "programming"
 extensions = ["move"]
+comments = "actionscript"

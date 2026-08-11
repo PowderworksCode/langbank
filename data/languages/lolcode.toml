@@ -1,4 +1,5 @@
 id = "lolcode"
 display-name = "LOLCODE"
 role = "programming"
-extensions = ["lol"]
+extensions = ["lol", "lols"]
+comments = "lolcode"

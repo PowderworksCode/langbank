@@ -1,4 +1,5 @@
 id = "f-sharp"
 display-name = "F#"
 role = "programming"
-extensions = ["fs", "fsi", "fsx"]
+extensions = ["fs", "fsi", "fsscript", "fsx"]
+comments = "f-sharp"

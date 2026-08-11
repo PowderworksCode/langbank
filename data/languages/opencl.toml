@@ -1,4 +1,5 @@
 id = "opencl"
 display-name = "OpenCL"
 role = "programming"
-extensions = ["cl", "opencl"]
+extensions = ["cl", "ocl", "opencl"]
+comments = "opencl"

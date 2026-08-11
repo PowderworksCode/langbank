@@ -2,4 +2,5 @@ id = "scheme"
 display-name = "Scheme"
 role = "programming"
 extensions = ["sch", "scm", "sld", "sls", "sps", "ss"]
+comments = "scheme"
 shebangs = ["bigloo", "chicken", "csi", "gosh", "guile", "r6rs", "scheme"]

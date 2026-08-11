@@ -2,5 +2,6 @@ id = "coffeescript"
 display-name = "CoffeeScript"
 role = "programming"
 extensions = ["_coffee", "cake", "cjsx", "coffee", "iced"]
+comments = "coffeescript"
 filenames = ["Cakefile"]
 shebangs = ["coffee"]

@@ -2,4 +2,5 @@ id = "dart"
 display-name = "Dart"
 role = "programming"
 extensions = ["dart"]
+comments = "actionscript"
 shebangs = ["dart"]

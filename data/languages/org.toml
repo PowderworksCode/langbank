@@ -2,3 +2,4 @@ id = "org"
 display-name = "Org"
 role = "documentation"
 extensions = ["org"]
+comments = "org"

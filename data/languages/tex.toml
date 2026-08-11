@@ -2,3 +2,4 @@ id = "tex"
 display-name = "TeX"
 role = "markup"
 extensions = ["aux", "bbx", "cbx", "cls", "dtx", "ins", "lbx", "ltx", "mkii", "mkiv", "mkvi", "sty", "tex", "toc"]
+comments = "erlang"

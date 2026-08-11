@@ -2,3 +2,4 @@ id = "vbscript"
 display-name = "VBScript"
 role = "programming"
 extensions = ["vbs"]
+comments = "brightscript"

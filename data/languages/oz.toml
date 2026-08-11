@@ -2,3 +2,4 @@ id = "oz"
 display-name = "Oz"
 role = "programming"
 extensions = ["oz"]
+comments = "logtalk"

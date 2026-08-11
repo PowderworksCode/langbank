@@ -2,4 +2,5 @@ id = "elvish"
 display-name = "Elvish"
 role = "programming"
 extensions = ["elv"]
+comments = "awk"
 shebangs = ["elvish"]

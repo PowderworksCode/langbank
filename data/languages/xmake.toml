@@ -2,3 +2,4 @@ id = "xmake"
 display-name = "Xmake"
 role = "programming"
 filenames = ["xmake.lua"]
+comments = "luau"
