@@ -44,7 +44,7 @@ pub use ecosystem::{
 };
 pub use ecosystems::{
     BUN as BUN_ECOSYSTEM, CARGO as CARGO_ECOSYSTEM, NPM as NPM_ECOSYSTEM, PNPM as PNPM_ECOSYSTEM,
-    YARN as YARN_ECOSYSTEM,
+    YARN as YARN_ECOSYSTEM, ZIG as ZIG_ECOSYSTEM,
 };
 pub use facet::{LanguageFacet, LanguageFacetRegistration, language_facet, language_facets};
 pub use facets::{COMPONENT_HOST, STRUCTURED_CODE, STYLE_HOST};

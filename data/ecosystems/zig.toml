@@ -1,0 +1,21 @@
+id = "zig"
+display-name = "Zig build system"
+roles = ["package-manager", "build-system"]
+implied-languages = ["zig"]
+# Optional in practice: a package declares one only when it has dependencies.
+# The Zig compiler's own tree has one; Bun 1.3.14 does not.
+manifest = "build.zig.zon"
+# Always present, which is why it and not the manifest is the selector.
+selector-files = ["build.zig"]
+gitignore-patterns = [".zig-cache/", "zig-out/"]
+manifest-selection = "default"
+
+# Directories the build system generates. Both names are generic enough to want
+# a marker, on the same reasoning `cargo.toml` gives for `target`.
+[[traversal]]
+name = ".zig-cache"
+markers = ["build.zig"]
+
+[[traversal]]
+name = "zig-out"
+markers = ["build.zig"]

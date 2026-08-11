@@ -10,9 +10,10 @@ use langbank::*;
 fn the_registries_are_the_expected_size() {
     assert_eq!(language_facets().len(), 3, "facets");
     assert_eq!(artifact_profiles().len(), 4, "artifacts");
-    assert_eq!(ecosystem_profiles().len(), 5, "ecosystems");
-    // target (cargo) plus node_modules, dist, build, .next, .turbo, coverage (npm)
-    assert_eq!(traversal_directories().len(), 7, "traversal directories");
+    assert_eq!(ecosystem_profiles().len(), 6, "ecosystems");
+    // target (cargo); node_modules, dist, build, .next, .turbo, coverage (npm);
+    // .zig-cache, zig-out (zig)
+    assert_eq!(traversal_directories().len(), 9, "traversal directories");
 }
 
 #[test]
@@ -152,4 +153,28 @@ fn traversal_markers_separate_unambiguous_names_from_ordinary_words() {
             .iter()
             .any(|directory| directory.name == ".turbo")
     );
+}
+
+/// Zig's build script is always present and its manifest is not, so the
+/// selector cannot be the manifest.
+///
+/// Checked against two real trees: the Zig compiler's own source carries
+/// `build.zig`, `build.zig.zon`, `.zig-cache/` and `zig-out/`; Bun 1.3.14
+/// carries `build.zig` and no `build.zig.zon`. An ecosystem keyed on the
+/// manifest would miss the largest Zig codebase there is.
+#[test]
+fn zig_selects_on_its_build_script_rather_than_its_manifest() {
+    let zig = ecosystem_profile("zig").expect("zig registered");
+    assert_eq!(zig.manifest, Some("build.zig.zon"));
+    assert_eq!(zig.selector_files, &["build.zig"]);
+
+    let language = language_profile("zig").expect("zig language");
+    assert!(zig.implies_language(language));
+
+    let generated: Vec<&str> = traversal_directories()
+        .iter()
+        .filter(|directory| directory.markers.contains(&"build.zig"))
+        .map(|directory| directory.name)
+        .collect();
+    assert_eq!(generated, &[".zig-cache", "zig-out"]);
 }
