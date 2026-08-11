@@ -1,0 +1,10 @@
+id = "zig"
+display-name = "Zig"
+kind = "compiler"
+languages = ["zig"]
+programs = ["zig"]
+
+[version]
+arguments = ["version"]
+stream = "stdout"
+pattern = '^(\d+\.\d+\.\d+)'

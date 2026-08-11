@@ -610,6 +610,104 @@ fn registries(out: &mut String, directory: &Path) {
     out.push_str("}\n\n");
 }
 
+/// The programs a language is processed by. Not tool profiles: those classify
+/// an invocation, these describe the program itself.
+fn toolchains(out: &mut String, directory: &Path) {
+    let mut files = std::fs::read_dir(directory)
+        .expect("read data/toolchains")
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
+        .collect::<Vec<_>>();
+    files.sort();
+
+    out.push_str("pub(crate) mod toolchains {\n");
+    for path in &files {
+        println!("cargo:rerun-if-changed={}", path.display());
+        let text = std::fs::read_to_string(path).expect("read toolchain toml");
+        let entry: Value =
+            toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+        let id = entry
+            .get("id")
+            .and_then(Value::as_str)
+            .expect("toolchain id");
+        let languages = entry
+            .get("languages")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .filter_map(Value::as_str)
+                    .map(|language| format!("&super::languages::{}::PROFILE", ident(language)))
+                    .collect()
+            });
+        let stream = |table: Option<&Value>| {
+            format!(
+                "crate::OutputStream::{}",
+                camel(
+                    table
+                        .and_then(|table| table.get("stream"))
+                        .and_then(Value::as_str)
+                        .unwrap_or("stdout")
+                )
+            )
+        };
+        let version = entry.get("version").map_or_else(
+            || "None".to_owned(),
+            |probe| {
+                format!(
+                    "Some(crate::VersionProbe {{ arguments: {}, stream: {}, pattern: {:?} }})",
+                    strs(probe.get("arguments")),
+                    stream(Some(probe)),
+                    probe
+                        .get("pattern")
+                        .and_then(Value::as_str)
+                        .unwrap_or_default(),
+                )
+            },
+        );
+        let diagnostics = entry.get("diagnostics").map_or_else(
+            || "None".to_owned(),
+            |diag| {
+                format!(
+                    "Some(crate::DiagnosticFormat {{ format: {:?}, arguments: {}, stream: {} }})",
+                    diag.get("format").and_then(Value::as_str).unwrap_or("text"),
+                    strs(diag.get("arguments")),
+                    stream(Some(diag)),
+                )
+            },
+        );
+        writeln!(
+            out,
+            "    pub static {name}: crate::Toolchain = crate::Toolchain {{\n\
+             \x20       id: {id:?},\n\
+             \x20       display_name: {display:?},\n\
+             \x20       kind: crate::ToolchainKind::{kind},\n\
+             \x20       languages: &[{languages}],\n\
+             \x20       programs: {programs},\n\
+             \x20       version: {version},\n\
+             \x20       diagnostics: {diagnostics},\n\
+             \x20   }};\n\
+             \x20   crate::registry::submit! {{ crate::ToolchainRegistration(&{name}) }}",
+            name = screaming(id),
+            display = entry
+                .get("display-name")
+                .and_then(Value::as_str)
+                .unwrap_or(id),
+            kind = camel(
+                entry
+                    .get("kind")
+                    .and_then(Value::as_str)
+                    .unwrap_or("compiler")
+            ),
+            languages = languages.join(", "),
+            programs = strs(entry.get("programs")),
+        )
+        .expect("write toolchain");
+    }
+    out.push_str("}\n\n");
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
@@ -719,6 +817,7 @@ fn main() {
         .expect("write profile");
     }
     out.push_str("}\n");
+    toolchains(&mut out, &data.join("toolchains"));
 
     let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("registries.rs");
     std::fs::write(&destination, out).expect("write generated registries");

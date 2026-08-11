@@ -1,0 +1,10 @@
+id = "go"
+display-name = "Go"
+kind = "compiler"
+languages = ["go"]
+programs = ["go"]
+
+[version]
+arguments = ["version"]
+stream = "stdout"
+pattern = '^go version go(\d+(?:\.\d+)*)'

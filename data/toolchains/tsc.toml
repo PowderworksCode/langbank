@@ -1,0 +1,10 @@
+id = "tsc"
+display-name = "TypeScript compiler"
+kind = "type-checker"
+languages = ["typescript"]
+programs = ["tsc"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^Version (\d+\.\d+\.\d+)'

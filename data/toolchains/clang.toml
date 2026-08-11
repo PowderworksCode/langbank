@@ -1,0 +1,13 @@
+id = "clang"
+display-name = "Clang"
+kind = "compiler"
+languages = ["c", "cpp", "objective-c"]
+# The unversioned name is frequently absent even where clang is installed;
+# packaged builds land as `clang-20`. A consumer that probes only `clang` will
+# conclude a machine has no C compiler when it has two.
+programs = ["clang", "clang-21", "clang-20", "clang-19"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = 'clang version (\d+\.\d+\.\d+)'

@@ -1,0 +1,10 @@
+id = "php"
+display-name = "PHP"
+kind = "runtime"
+languages = ["php"]
+programs = ["php"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^PHP (\d+\.\d+\.\d+)'

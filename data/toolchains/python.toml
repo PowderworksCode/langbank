@@ -1,0 +1,11 @@
+id = "python"
+display-name = "CPython"
+kind = "runtime"
+languages = ["python"]
+# `python` is Python 2 on older systems and absent on many modern ones.
+programs = ["python3", "python"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^Python (\d+\.\d+\.\d+)'

@@ -123,8 +123,8 @@ the difference.
                            it forced
 1. tokei + scc             done: comment syntax 27 -> 220 languages, and the
                            independence audit folded in
-2. TOOLCHAIN MODEL         the hinge; four sources below wait on it, and propbank
-                           needs the version probes regardless
+2. TOOLCHAIN MODEL         done: 16 programs with version probes and diagnostic
+                           formats, measured against installed tools
 3. nvim-lspconfig          root markers, which langbank has no concept of
 4. mason-registry          tool → language, categories, distribution
 5. dependabot-core         ecosystem manifests, lockfiles, registries

@@ -1,0 +1,15 @@
+id = "rustc"
+display-name = "rustc"
+kind = "compiler"
+languages = ["rust"]
+programs = ["rustc"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^rustc (\d+\.\d+\.\d+)'
+
+[diagnostics]
+format = "json"
+arguments = ["--error-format=json"]
+stream = "stderr"
