@@ -1,0 +1,15 @@
+id = "cargo"
+display-name = "Cargo"
+kind = "build-system"
+languages = ["rust"]
+programs = ["cargo"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^cargo (\d+\.\d+\.\d+)'
+
+[diagnostics]
+format = "json"
+arguments = ["--message-format=json"]
+stream = "stdout"

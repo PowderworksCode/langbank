@@ -1,0 +1,12 @@
+id = "java"
+display-name = "Java runtime"
+kind = "runtime"
+languages = ["java"]
+programs = ["java"]
+
+[version]
+arguments = ["-version"]
+# stderr, where javac with the same flag writes to stdout. Same vendor, same
+# spelling, different stream; measured rather than assumed.
+stream = "stderr"
+pattern = 'version "(\d+(?:\.\d+)*)'

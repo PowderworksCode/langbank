@@ -1,0 +1,10 @@
+id = "dotnet"
+display-name = ".NET SDK"
+kind = "build-system"
+languages = ["c-sharp", "f-sharp", "visual-basic-net"]
+programs = ["dotnet"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^(\d+\.\d+\.\d+)'

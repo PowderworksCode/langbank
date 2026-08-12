@@ -1,0 +1,10 @@
+id = "javac"
+display-name = "javac"
+kind = "compiler"
+languages = ["java"]
+programs = ["javac"]
+
+[version]
+arguments = ["-version"]
+stream = "stdout"
+pattern = '^javac (\d+(?:\.\d+)*)'

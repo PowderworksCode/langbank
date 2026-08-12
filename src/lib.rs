@@ -24,6 +24,7 @@ mod ids;
 mod language;
 mod package_registry;
 mod tool;
+mod toolchain;
 mod traversal;
 mod verbosity;
 
@@ -69,6 +70,10 @@ pub use tool::{
     ArgumentPattern, CiWorkload, CommandPattern, TaskKind, TestRetryConfiguration,
     TestRetryProfile, TestRetrySignal, ToolId, ToolProfile, ToolRegistration, classify_tool,
     normalize_invocation, tool_profile, tool_profiles,
+};
+pub use toolchain::{
+    DiagnosticFormat, OutputStream, Toolchain, ToolchainKind, ToolchainRegistration, VersionProbe,
+    toolchain, toolchains, toolchains_for,
 };
 pub use tools::{CODESPELL, STYLELINT, VALE};
 pub use traversal::{TraversalDirectory, TraversalDirectoryRegistration, traversal_directories};

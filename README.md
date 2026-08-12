@@ -73,6 +73,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | package registries | 42, aligned with purl |
 | ecosystems | 5 package managers — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
+| toolchains | 16 — which program implements a language, how to read its version, how to get machine-readable diagnostics |
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
 | conventions | test layout, inline-test detection, typecheck defaults |
@@ -124,6 +125,38 @@ reading the file is a wrong answer where declining is merely an unhelpful one �
 and `languages_claiming_extension` hands a consumer the candidates so it can
 decide for itself. 28 contests are settled; 148 are left honestly open.
 
+### Toolchains are facts about programs, and they were measured
+
+A toolchain entry says which program implements a language, how to find out
+whether it is installed and at what version, and how to ask it for
+machine-readable diagnostics. Langbank never runs any of it — it supplies the
+arguments, the stream and the pattern, and the consumer executes.
+
+```toml
+# data/toolchains/java.toml
+[version]
+arguments = ["-version"]
+# stderr, where javac with the same flag writes to stdout
+stream = "stderr"
+pattern = 'version "(\d+(?:\.\d+)*)'
+```
+
+Three of these were measured rather than assumed, and none would have been
+guessed right:
+
+- **`java -version` writes to stderr; `javac -version` writes to stdout.** Same
+  vendor, same flag.
+- **`clang` is frequently absent where clang is installed** — packaged builds
+  land as `clang-21`. `programs` is a fallback chain, and on the machine this
+  was written the entry verified via `clang-21` with no `clang` present at all.
+- **GCC prints its version twice**, once inside the distribution's package
+  string and once at the end. The pattern is anchored to the end because those
+  two agree only by convention.
+
+`tools/verify-toolchains.py` runs every probe against whatever is installed and
+reports; it skips absent programs rather than failing, because no machine has
+all of them. 14 of 16 verified where this was written.
+
 ### Staying current
 
 Upstream sources are what langbank is *checked against*, never what it defers
@@ -156,6 +189,7 @@ data/
   ecosystems/cargo.toml     one file per package manager, with what it generates
   registries/npm.toml       one file per purl type: where package identities live
   tools/cargo.toml          one file per tool, with its command patterns
+  toolchains/rustc.toml     one file per program: version probe, diagnostics
 ```
 
 ```toml

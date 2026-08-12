@@ -1,0 +1,10 @@
+id = "npm"
+display-name = "npm"
+kind = "package-manager"
+languages = ["javascript", "typescript"]
+programs = ["npm"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^(\d+\.\d+\.\d+)'

@@ -1,0 +1,18 @@
+id = "gcc"
+display-name = "GCC"
+kind = "compiler"
+languages = ["c", "cpp"]
+programs = ["gcc", "g++"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+# Anchored at end of line on purpose. The first version-shaped run of digits is
+# inside the distribution's package string — `gcc (Ubuntu 13.3.0-6ubuntu2) 13.3.0`
+# — and those two are the same number only by convention.
+pattern = '(\d+\.\d+\.\d+)$'
+
+[diagnostics]
+format = "json"
+arguments = ["-fdiagnostics-format=json"]
+stream = "stderr"

@@ -1,0 +1,10 @@
+id = "ruby"
+display-name = "Ruby"
+kind = "runtime"
+languages = ["ruby"]
+programs = ["ruby"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^ruby (\d+\.\d+\.\d+)'

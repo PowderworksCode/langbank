@@ -1,0 +1,10 @@
+id = "bun"
+display-name = "Bun"
+kind = "runtime"
+languages = ["javascript", "typescript"]
+programs = ["bun"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^(\d+\.\d+\.\d+)'

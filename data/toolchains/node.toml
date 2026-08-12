@@ -1,0 +1,10 @@
+id = "node"
+display-name = "Node.js"
+kind = "runtime"
+languages = ["javascript", "typescript"]
+programs = ["node"]
+
+[version]
+arguments = ["--version"]
+stream = "stdout"
+pattern = '^v(\d+\.\d+\.\d+)'
