@@ -1,0 +1,6 @@
+id = "lsp-gnls"
+display-name = "gnls"
+kind = "language-server"
+languages = ["gn"]
+programs = ["gnls"]
+root-markers = [".gn", ".git"]

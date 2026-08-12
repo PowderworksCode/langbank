@@ -1,0 +1,6 @@
+id = "lsp-alloy-ls"
+display-name = "alloy_ls"
+kind = "language-server"
+languages = ["alloy"]
+programs = ["alloy"]
+root-markers = [".git"]

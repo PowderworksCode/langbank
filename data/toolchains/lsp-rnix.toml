@@ -1,0 +1,5 @@
+id = "lsp-rnix"
+display-name = "rnix"
+kind = "language-server"
+languages = ["nix"]
+programs = ["rnix-lsp"]

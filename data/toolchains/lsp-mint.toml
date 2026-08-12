@@ -1,0 +1,6 @@
+id = "lsp-mint"
+display-name = "mint"
+kind = "language-server"
+languages = ["mint"]
+programs = ["mint"]
+root-markers = ["mint.json", ".git"]

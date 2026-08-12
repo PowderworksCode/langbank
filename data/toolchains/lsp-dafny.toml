@@ -1,0 +1,6 @@
+id = "lsp-dafny"
+display-name = "dafny"
+kind = "language-server"
+languages = ["dafny"]
+programs = ["dafny"]
+root-markers = [".git"]

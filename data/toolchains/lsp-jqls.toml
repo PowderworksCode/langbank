@@ -1,0 +1,6 @@
+id = "lsp-jqls"
+display-name = "jqls"
+kind = "language-server"
+languages = ["jq"]
+programs = ["jq-lsp"]
+root-markers = [".git"]

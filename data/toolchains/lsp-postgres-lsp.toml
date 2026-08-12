@@ -1,0 +1,6 @@
+id = "lsp-postgres-lsp"
+display-name = "postgres_lsp"
+kind = "language-server"
+languages = ["sql"]
+programs = ["postgres-language-server"]
+root-markers = ["postgres-language-server.jsonc"]

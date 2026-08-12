@@ -1,0 +1,6 @@
+id = "lsp-pug"
+display-name = "pug"
+kind = "language-server"
+languages = ["pug"]
+programs = ["pug-lsp"]
+root-markers = ["package.json"]

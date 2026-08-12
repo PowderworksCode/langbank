@@ -1,0 +1,6 @@
+id = "lsp-ttags"
+display-name = "ttags"
+kind = "language-server"
+languages = ["haskell", "javascript", "ruby", "rust"]
+programs = ["ttags"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-neocmake"
+display-name = "neocmake"
+kind = "language-server"
+languages = ["cmake"]
+programs = ["neocmakelsp"]
+root-markers = [".neocmake.toml", ".git", "build", "cmake"]

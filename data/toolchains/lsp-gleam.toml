@@ -1,0 +1,6 @@
+id = "lsp-gleam"
+display-name = "gleam"
+kind = "language-server"
+languages = ["gleam"]
+programs = ["gleam"]
+root-markers = ["gleam.toml", ".git"]

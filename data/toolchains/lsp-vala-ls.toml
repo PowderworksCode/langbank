@@ -1,0 +1,5 @@
+id = "lsp-vala-ls"
+display-name = "vala_ls"
+kind = "language-server"
+languages = ["genie", "vala"]
+programs = ["vala-language-server"]

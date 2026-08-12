@@ -1,0 +1,6 @@
+id = "lsp-tvm-ffi-navigator"
+display-name = "tvm_ffi_navigator"
+kind = "language-server"
+languages = ["cpp", "python"]
+programs = ["python"]
+root-markers = ["pyproject.toml", ".git"]

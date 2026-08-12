@@ -1,0 +1,5 @@
+id = "lsp-nushell"
+display-name = "nushell"
+kind = "language-server"
+languages = ["nu"]
+programs = ["nu"]

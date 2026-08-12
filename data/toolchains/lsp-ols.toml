@@ -1,0 +1,5 @@
+id = "lsp-ols"
+display-name = "ols"
+kind = "language-server"
+languages = ["odin"]
+programs = ["ols"]

@@ -1,0 +1,6 @@
+id = "lsp-stan-ls"
+display-name = "stan_ls"
+kind = "language-server"
+languages = ["stan"]
+programs = ["stan-language-server"]
+root-markers = [".git"]

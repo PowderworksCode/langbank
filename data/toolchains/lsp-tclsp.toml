@@ -1,0 +1,6 @@
+id = "lsp-tclsp"
+display-name = "tclsp"
+kind = "language-server"
+languages = ["tcl"]
+programs = ["tclsp"]
+root-markers = ["tclint.toml", ".tclint", "pyproject.toml", ".git"]

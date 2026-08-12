@@ -1,0 +1,5 @@
+id = "lsp-agda-ls"
+display-name = "agda_ls"
+kind = "language-server"
+languages = ["agda"]
+programs = ["als"]

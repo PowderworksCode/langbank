@@ -1,0 +1,6 @@
+id = "lsp-serve-d"
+display-name = "serve_d"
+kind = "language-server"
+languages = ["d"]
+programs = ["serve-d"]
+root-markers = ["dub.json", "dub.sdl", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-daedalus-ls"
+display-name = "daedalus_ls"
+kind = "language-server"
+languages = ["d"]
+programs = ["DaedalusLanguageServer"]
+root-markers = ["Gothic.src", "Camera.src", "Menu.src", "Music.src", "ParticleFX.src", "SFX.src", "VisualFX.src"]

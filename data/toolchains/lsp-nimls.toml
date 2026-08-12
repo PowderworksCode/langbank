@@ -1,0 +1,5 @@
+id = "lsp-nimls"
+display-name = "nimls"
+kind = "language-server"
+languages = ["nim"]
+programs = ["nimlsp"]

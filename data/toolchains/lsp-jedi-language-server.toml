@@ -1,0 +1,6 @@
+id = "lsp-jedi-language-server"
+display-name = "jedi_language_server"
+kind = "language-server"
+languages = ["python"]
+programs = ["jedi-language-server"]
+root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

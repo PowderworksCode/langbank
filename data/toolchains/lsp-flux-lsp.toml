@@ -1,0 +1,6 @@
+id = "lsp-flux-lsp"
+display-name = "flux_lsp"
+kind = "language-server"
+languages = ["flux"]
+programs = ["flux-lsp"]
+root-markers = [".git"]

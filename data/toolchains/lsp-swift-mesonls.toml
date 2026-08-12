@@ -1,0 +1,6 @@
+id = "lsp-swift-mesonls"
+display-name = "swift_mesonls"
+kind = "language-server"
+languages = ["meson"]
+programs = ["Swift-MesonLSP"]
+root-markers = ["meson.build", "meson_options.txt", "meson.options", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-quick-lint-js"
+display-name = "quick_lint_js"
+kind = "language-server"
+languages = ["javascript", "typescript"]
+programs = ["quick-lint-js"]
+root-markers = ["package.json", "jsconfig.json", ".git"]

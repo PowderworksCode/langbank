@@ -1,0 +1,6 @@
+id = "lsp-guile-ls"
+display-name = "guile_ls"
+kind = "language-server"
+languages = ["scheme"]
+programs = ["guile-lsp-server"]
+root-markers = ["guix.scm", ".git"]

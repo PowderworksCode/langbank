@@ -1,0 +1,6 @@
+id = "lsp-nxls"
+display-name = "nxls"
+kind = "language-server"
+languages = ["json", "json-with-comments"]
+programs = ["nxls"]
+root-markers = ["nx.json", ".git"]

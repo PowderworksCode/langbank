@@ -1,0 +1,6 @@
+id = "lsp-ghcide"
+display-name = "ghcide"
+kind = "language-server"
+languages = ["haskell"]
+programs = ["ghcide"]
+root-markers = ["stack.yaml", "hie-bios", "BUILD.bazel", "cabal.config", "package.yaml"]

@@ -1,0 +1,6 @@
+id = "lsp-yang-lsp"
+display-name = "yang_lsp"
+kind = "language-server"
+languages = ["yang"]
+programs = ["yang-language-server"]
+root-markers = [".git"]

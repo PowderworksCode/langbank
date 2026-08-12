@@ -1,0 +1,5 @@
+id = "lsp-lua-ls"
+display-name = "lua_ls"
+kind = "language-server"
+languages = ["lua"]
+programs = ["lua-language-server"]

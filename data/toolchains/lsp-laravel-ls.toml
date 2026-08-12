@@ -1,0 +1,6 @@
+id = "lsp-laravel-ls"
+display-name = "laravel_ls"
+kind = "language-server"
+languages = ["blade", "php"]
+programs = ["laravel-ls"]
+root-markers = ["artisan"]

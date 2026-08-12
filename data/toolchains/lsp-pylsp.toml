@@ -1,0 +1,6 @@
+id = "lsp-pylsp"
+display-name = "pylsp"
+kind = "language-server"
+languages = ["python"]
+programs = ["pylsp"]
+root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

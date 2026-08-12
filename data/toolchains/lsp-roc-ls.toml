@@ -1,0 +1,6 @@
+id = "lsp-roc-ls"
+display-name = "roc_ls"
+kind = "language-server"
+languages = ["roc"]
+programs = ["roc_language_server"]
+root-markers = [".git"]

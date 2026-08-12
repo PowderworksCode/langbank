@@ -1,0 +1,6 @@
+id = "lsp-yls"
+display-name = "yls"
+kind = "language-server"
+languages = ["yara"]
+programs = ["yls"]
+root-markers = [".git"]

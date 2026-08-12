@@ -1,0 +1,6 @@
+id = "lsp-lemminx"
+display-name = "lemminx"
+kind = "language-server"
+languages = ["svg", "xml", "xslt"]
+programs = ["lemminx"]
+root-markers = [".git"]

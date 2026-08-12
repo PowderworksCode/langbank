@@ -1,0 +1,6 @@
+id = "lsp-superhtml"
+display-name = "superhtml"
+kind = "language-server"
+languages = ["html"]
+programs = ["superhtml"]
+root-markers = [".git"]

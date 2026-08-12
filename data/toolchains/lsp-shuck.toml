@@ -1,0 +1,6 @@
+id = "lsp-shuck"
+display-name = "shuck"
+kind = "language-server"
+languages = ["shell"]
+programs = ["shuck"]
+root-markers = [".shuck.toml", ".git"]

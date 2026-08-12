@@ -1,0 +1,5 @@
+id = "lsp-elmls"
+display-name = "elmls"
+kind = "language-server"
+languages = ["elm"]
+programs = ["elm-language-server"]

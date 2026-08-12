@@ -1,0 +1,6 @@
+id = "lsp-cypher-ls"
+display-name = "cypher_ls"
+kind = "language-server"
+languages = ["cypher"]
+programs = ["cypher-language-server"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-standardrb"
+display-name = "standardrb"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["standardrb"]
+root-markers = ["Gemfile", ".git"]

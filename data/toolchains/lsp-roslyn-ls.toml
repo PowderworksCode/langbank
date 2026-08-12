@@ -1,0 +1,5 @@
+id = "lsp-roslyn-ls"
+display-name = "roslyn_ls"
+kind = "language-server"
+languages = ["c-sharp"]
+programs = ["Microsoft.CodeAnalysis.LanguageServer"]

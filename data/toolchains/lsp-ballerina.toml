@@ -1,0 +1,6 @@
+id = "lsp-ballerina"
+display-name = "ballerina"
+kind = "language-server"
+languages = ["ballerina"]
+programs = ["bal"]
+root-markers = ["Ballerina.toml"]

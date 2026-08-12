@@ -1,0 +1,6 @@
+id = "lsp-ty"
+display-name = "ty"
+kind = "language-server"
+languages = ["python"]
+programs = ["ty"]
+root-markers = ["ty.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git"]

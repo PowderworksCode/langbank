@@ -1,0 +1,6 @@
+id = "lsp-perlnavigator"
+display-name = "perlnavigator"
+kind = "language-server"
+languages = ["perl"]
+programs = ["perlnavigator"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-luau-lsp"
+display-name = "luau_lsp"
+kind = "language-server"
+languages = ["luau"]
+programs = ["luau-lsp"]
+root-markers = [".git"]

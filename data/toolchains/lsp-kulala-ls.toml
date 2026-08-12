@@ -1,0 +1,6 @@
+id = "lsp-kulala-ls"
+display-name = "kulala_ls"
+kind = "language-server"
+languages = ["http"]
+programs = ["kulala-ls"]
+root-markers = [".git"]

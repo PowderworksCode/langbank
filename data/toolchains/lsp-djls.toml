@@ -1,0 +1,6 @@
+id = "lsp-djls"
+display-name = "djls"
+kind = "language-server"
+languages = ["html", "python"]
+programs = ["djls"]
+root-markers = ["manage.py", "pyproject.toml", ".git"]

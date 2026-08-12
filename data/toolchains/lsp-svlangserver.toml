@@ -1,0 +1,6 @@
+id = "lsp-svlangserver"
+display-name = "svlangserver"
+kind = "language-server"
+languages = ["systemverilog", "verilog"]
+programs = ["svlangserver"]
+root-markers = [".svlangserver", ".git"]

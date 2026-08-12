@@ -1,0 +1,6 @@
+id = "lsp-janet-lsp"
+display-name = "janet_lsp"
+kind = "language-server"
+languages = ["janet"]
+programs = ["janet-lsp"]
+root-markers = ["project.janet", ".git"]

@@ -1,0 +1,5 @@
+id = "lsp-ada-ls"
+display-name = "ada_ls"
+kind = "language-server"
+languages = ["ada"]
+programs = ["ada_language_server"]

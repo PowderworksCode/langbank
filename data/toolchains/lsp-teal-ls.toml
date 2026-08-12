@@ -1,0 +1,6 @@
+id = "lsp-teal-ls"
+display-name = "teal_ls"
+kind = "language-server"
+languages = ["teal"]
+programs = ["teal-language-server"]
+root-markers = ["tlconfig.lua"]

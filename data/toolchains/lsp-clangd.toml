@@ -1,0 +1,6 @@
+id = "lsp-clangd"
+display-name = "clangd"
+kind = "language-server"
+languages = ["c", "cpp", "cuda", "objective-c", "objective-cpp"]
+programs = ["clangd"]
+root-markers = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]

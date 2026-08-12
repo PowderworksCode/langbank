@@ -1,0 +1,6 @@
+id = "lsp-gdshader-lsp"
+display-name = "gdshader_lsp"
+kind = "language-server"
+languages = ["gdshader"]
+programs = ["gdshader-lsp"]
+root-markers = ["project.godot"]

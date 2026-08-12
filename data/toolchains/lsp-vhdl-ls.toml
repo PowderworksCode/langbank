@@ -1,0 +1,6 @@
+id = "lsp-vhdl-ls"
+display-name = "vhdl_ls"
+kind = "language-server"
+languages = ["vhdl"]
+programs = ["vhdl_ls"]
+root-markers = ["vhdl_ls.toml", ".vhdl_ls.toml"]

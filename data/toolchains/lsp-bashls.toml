@@ -1,0 +1,6 @@
+id = "lsp-bashls"
+display-name = "bashls"
+kind = "language-server"
+languages = ["shell"]
+programs = ["bash-language-server"]
+root-markers = [".git"]

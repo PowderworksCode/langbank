@@ -1,0 +1,6 @@
+id = "lsp-dartls"
+display-name = "dartls"
+kind = "language-server"
+languages = ["dart"]
+programs = ["dart"]
+root-markers = ["pubspec.yaml"]

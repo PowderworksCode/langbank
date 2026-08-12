@@ -1,0 +1,6 @@
+id = "lsp-nextflow-ls"
+display-name = "nextflow_ls"
+kind = "language-server"
+languages = ["nextflow"]
+programs = ["nextflow-language-server"]
+root-markers = ["nextflow.config", ".git"]

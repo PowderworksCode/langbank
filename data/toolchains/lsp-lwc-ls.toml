@@ -1,0 +1,6 @@
+id = "lsp-lwc-ls"
+display-name = "lwc_ls"
+kind = "language-server"
+languages = ["html", "javascript"]
+programs = ["lwc-language-server"]
+root-markers = ["sfdx-project.json"]

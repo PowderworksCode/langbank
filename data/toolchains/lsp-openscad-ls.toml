@@ -1,0 +1,6 @@
+id = "lsp-openscad-ls"
+display-name = "openscad_ls"
+kind = "language-server"
+languages = ["openscad"]
+programs = ["openscad-language-server"]
+root-markers = [".git"]

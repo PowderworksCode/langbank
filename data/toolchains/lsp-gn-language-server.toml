@@ -1,0 +1,6 @@
+id = "lsp-gn-language-server"
+display-name = "gn_language_server"
+kind = "language-server"
+languages = ["gn"]
+programs = ["gn-language-server"]
+root-markers = [".gn", ".git"]

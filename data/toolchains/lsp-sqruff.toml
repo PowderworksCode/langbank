@@ -1,0 +1,6 @@
+id = "lsp-sqruff"
+display-name = "sqruff"
+kind = "language-server"
+languages = ["sql"]
+programs = ["sqruff"]
+root-markers = [".sqruff", ".git"]

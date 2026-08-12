@@ -1,0 +1,6 @@
+id = "lsp-phpactor"
+display-name = "phpactor"
+kind = "language-server"
+languages = ["php"]
+programs = ["phpactor"]
+root-markers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]

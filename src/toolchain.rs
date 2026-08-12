@@ -77,6 +77,13 @@ pub struct Toolchain {
     pub programs: &'static [&'static str],
     pub version: Option<VersionProbe>,
     pub diagnostics: Option<DiagnosticFormat>,
+    /// Files this program looks for to decide where a project begins.
+    ///
+    /// A property of the program, not of the language. clangd wants a
+    /// `compile_commands.json` and ts_ls wants a lockfile; unioning those by
+    /// language yields a pile in which `Cargo.toml` is outvoted by the config
+    /// files of every generic formatter that happens to list Rust.
+    pub root_markers: &'static [&'static str],
 }
 
 impl Toolchain {

@@ -1,0 +1,6 @@
+id = "lsp-prolog-ls"
+display-name = "prolog_ls"
+kind = "language-server"
+languages = ["prolog"]
+programs = ["swipl"]
+root-markers = ["pack.pl"]

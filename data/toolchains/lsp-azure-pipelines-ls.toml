@@ -1,0 +1,6 @@
+id = "lsp-azure-pipelines-ls"
+display-name = "azure_pipelines_ls"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["azure-pipelines-language-server"]
+root-markers = ["azure-pipelines.yml"]

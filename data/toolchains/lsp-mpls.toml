@@ -1,0 +1,6 @@
+id = "lsp-mpls"
+display-name = "mpls"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["mpls"]
+root-markers = [".marksman.toml", ".git"]

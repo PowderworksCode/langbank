@@ -1,0 +1,6 @@
+id = "lsp-shopify-theme-ls"
+display-name = "shopify_theme_ls"
+kind = "language-server"
+languages = ["liquid"]
+programs = ["shopify"]
+root-markers = [".shopifyignore", ".theme-check.yml", ".theme-check.yaml", "shopify.theme.toml"]

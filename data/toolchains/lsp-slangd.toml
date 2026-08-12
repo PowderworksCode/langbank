@@ -1,0 +1,6 @@
+id = "lsp-slangd"
+display-name = "slangd"
+kind = "language-server"
+languages = ["hlsl"]
+programs = ["slangd"]
+root-markers = ["slangdconfig.json", ".clang-format", ".git"]

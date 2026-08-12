@@ -1,0 +1,6 @@
+id = "lsp-fortitude"
+display-name = "fortitude"
+kind = "language-server"
+languages = ["fortran"]
+programs = ["fortitude"]
+root-markers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]

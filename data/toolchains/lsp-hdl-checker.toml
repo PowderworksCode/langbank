@@ -1,0 +1,6 @@
+id = "lsp-hdl-checker"
+display-name = "hdl_checker"
+kind = "language-server"
+languages = ["systemverilog", "verilog", "vhdl"]
+programs = ["hdl_checker"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-clarinet"
+display-name = "clarinet"
+kind = "language-server"
+languages = ["clarity"]
+programs = ["clarinet"]
+root-markers = ["Clarinet.toml"]

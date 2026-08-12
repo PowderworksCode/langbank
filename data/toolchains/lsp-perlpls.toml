@@ -1,0 +1,6 @@
+id = "lsp-perlpls"
+display-name = "perlpls"
+kind = "language-server"
+languages = ["perl"]
+programs = ["pls"]
+root-markers = [".git"]

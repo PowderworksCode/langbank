@@ -1,0 +1,6 @@
+id = "lsp-racket-langserver"
+display-name = "racket_langserver"
+kind = "language-server"
+languages = ["racket", "scheme"]
+programs = ["racket"]
+root-markers = [".git"]

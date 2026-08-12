@@ -1,0 +1,6 @@
+id = "lsp-tofu-ls"
+display-name = "tofu_ls"
+kind = "language-server"
+languages = ["hcl"]
+programs = ["tofu-ls"]
+root-markers = [".terraform", ".git"]

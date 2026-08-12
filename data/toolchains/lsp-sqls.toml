@@ -1,0 +1,6 @@
+id = "lsp-sqls"
+display-name = "sqls"
+kind = "language-server"
+languages = ["sql"]
+programs = ["sqls"]
+root-markers = ["config.yml"]

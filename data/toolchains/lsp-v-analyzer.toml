@@ -1,0 +1,6 @@
+id = "lsp-v-analyzer"
+display-name = "v_analyzer"
+kind = "language-server"
+languages = ["v"]
+programs = ["v-analyzer"]
+root-markers = ["v.mod", ".git"]

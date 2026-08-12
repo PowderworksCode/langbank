@@ -1,0 +1,5 @@
+id = "lsp-awk-ls"
+display-name = "awk_ls"
+kind = "language-server"
+languages = ["awk"]
+programs = ["awk-language-server"]

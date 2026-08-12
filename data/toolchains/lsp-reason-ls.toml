@@ -1,0 +1,6 @@
+id = "lsp-reason-ls"
+display-name = "reason_ls"
+kind = "language-server"
+languages = ["reason"]
+programs = ["reason-language-server"]
+root-markers = ["bsconfig.json", ".git"]

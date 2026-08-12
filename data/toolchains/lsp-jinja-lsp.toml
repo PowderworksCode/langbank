@@ -1,0 +1,6 @@
+id = "lsp-jinja-lsp"
+display-name = "jinja_lsp"
+kind = "language-server"
+languages = ["jinja"]
+programs = ["jinja-lsp"]
+root-markers = [".git"]

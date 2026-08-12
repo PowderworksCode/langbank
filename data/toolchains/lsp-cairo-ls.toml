@@ -1,0 +1,6 @@
+id = "lsp-cairo-ls"
+display-name = "cairo_ls"
+kind = "language-server"
+languages = ["cairo"]
+programs = ["scarb"]
+root-markers = ["Scarb.toml", "cairo_project.toml", ".git"]

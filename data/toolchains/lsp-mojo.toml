@@ -1,0 +1,6 @@
+id = "lsp-mojo"
+display-name = "mojo"
+kind = "language-server"
+languages = ["mojo"]
+programs = ["mojo-lsp-server"]
+root-markers = [".git"]

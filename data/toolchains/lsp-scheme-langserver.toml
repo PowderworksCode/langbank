@@ -1,0 +1,6 @@
+id = "lsp-scheme-langserver"
+display-name = "scheme_langserver"
+kind = "language-server"
+languages = ["scheme"]
+programs = ["scheme-langserver"]
+root-markers = ["Akku.manifest", ".git"]

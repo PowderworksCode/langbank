@@ -1,0 +1,6 @@
+id = "lsp-air"
+display-name = "air"
+kind = "language-server"
+languages = ["r"]
+programs = ["air"]
+root-markers = ["air.toml", ".air.toml", ".git"]

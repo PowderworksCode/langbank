@@ -1,0 +1,6 @@
+id = "lsp-phpantom-lsp"
+display-name = "phpantom_lsp"
+kind = "language-server"
+languages = ["php"]
+programs = ["phpantom_lsp"]
+root-markers = [".phpantom.toml", ".git", "composer.json"]

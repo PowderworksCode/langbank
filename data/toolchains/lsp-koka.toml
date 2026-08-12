@@ -1,0 +1,6 @@
+id = "lsp-koka"
+display-name = "koka"
+kind = "language-server"
+languages = ["koka"]
+programs = ["koka"]
+root-markers = [".git"]

@@ -1,0 +1,5 @@
+id = "lsp-solc"
+display-name = "solc"
+kind = "language-server"
+languages = ["solidity"]
+programs = ["solc"]

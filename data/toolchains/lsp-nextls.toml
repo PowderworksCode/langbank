@@ -1,0 +1,6 @@
+id = "lsp-nextls"
+display-name = "nextls"
+kind = "language-server"
+languages = ["elixir"]
+programs = ["nextls"]
+root-markers = ["mix.exs", ".git"]

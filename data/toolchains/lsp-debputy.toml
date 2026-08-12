@@ -1,0 +1,6 @@
+id = "lsp-debputy"
+display-name = "debputy"
+kind = "language-server"
+languages = ["makefile", "yaml"]
+programs = ["debputy"]
+root-markers = ["debian"]

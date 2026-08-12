@@ -1,0 +1,6 @@
+id = "lsp-csskit"
+display-name = "csskit"
+kind = "language-server"
+languages = ["css"]
+programs = ["csskit"]
+root-markers = ["package.json", ".git"]

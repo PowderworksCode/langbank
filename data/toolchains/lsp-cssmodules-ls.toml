@@ -1,0 +1,6 @@
+id = "lsp-cssmodules-ls"
+display-name = "cssmodules_ls"
+kind = "language-server"
+languages = ["javascript", "typescript"]
+programs = ["cssmodules-language-server"]
+root-markers = ["package.json"]

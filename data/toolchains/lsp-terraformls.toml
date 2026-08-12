@@ -1,0 +1,6 @@
+id = "lsp-terraformls"
+display-name = "terraformls"
+kind = "language-server"
+languages = ["hcl"]
+programs = ["terraform-ls"]
+root-markers = [".terraform", ".git"]

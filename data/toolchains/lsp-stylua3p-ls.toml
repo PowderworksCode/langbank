@@ -1,0 +1,6 @@
+id = "lsp-stylua3p-ls"
+display-name = "stylua3p_ls"
+kind = "language-server"
+languages = ["lua"]
+programs = ["stylua-3p-language-server"]
+root-markers = [".stylua.toml", "stylua.toml"]

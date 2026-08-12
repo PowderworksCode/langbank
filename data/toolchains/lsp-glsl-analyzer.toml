@@ -1,0 +1,6 @@
+id = "lsp-glsl-analyzer"
+display-name = "glsl_analyzer"
+kind = "language-server"
+languages = ["glsl"]
+programs = ["glsl_analyzer"]
+root-markers = [".git"]

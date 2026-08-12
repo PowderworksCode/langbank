@@ -1,0 +1,6 @@
+id = "lsp-rubocop"
+display-name = "rubocop"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["rubocop"]
+root-markers = ["Gemfile", ".git"]

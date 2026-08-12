@@ -1,0 +1,6 @@
+id = "lsp-nixd"
+display-name = "nixd"
+kind = "language-server"
+languages = ["nix"]
+programs = ["nixd"]
+root-markers = ["flake.nix", ".git"]

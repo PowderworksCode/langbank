@@ -1,0 +1,6 @@
+id = "lsp-hie"
+display-name = "hie"
+kind = "language-server"
+languages = ["haskell"]
+programs = ["hie-wrapper"]
+root-markers = ["stack.yaml", "package.yaml", ".git"]

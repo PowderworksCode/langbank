@@ -1,0 +1,6 @@
+id = "lsp-spyglassmc-language-server"
+display-name = "spyglassmc_language_server"
+kind = "language-server"
+languages = ["mcfunction"]
+programs = ["spyglassmc-language-server"]
+root-markers = ["pack.mcmeta"]

@@ -1,0 +1,6 @@
+id = "lsp-sqlls"
+display-name = "sqlls"
+kind = "language-server"
+languages = ["sql"]
+programs = ["sql-language-server"]
+root-markers = [".sqllsrc.json"]

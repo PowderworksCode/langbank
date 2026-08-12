@@ -1,0 +1,6 @@
+id = "lsp-pkl"
+display-name = "pkl"
+kind = "language-server"
+languages = ["pkl"]
+programs = ["pkl-lsp"]
+root-markers = ["PklProject", ".git"]

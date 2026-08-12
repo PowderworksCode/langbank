@@ -1,0 +1,6 @@
+id = "lsp-groovyls"
+display-name = "groovyls"
+kind = "language-server"
+languages = ["groovy"]
+programs = ["groovy-language-server"]
+root-markers = ["Jenkinsfile", ".git"]

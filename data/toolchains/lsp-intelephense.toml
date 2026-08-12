@@ -1,0 +1,6 @@
+id = "lsp-intelephense"
+display-name = "intelephense"
+kind = "language-server"
+languages = ["php"]
+programs = ["intelephense"]
+root-markers = [".git", "composer.json"]

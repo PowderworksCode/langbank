@@ -1,0 +1,5 @@
+id = "lsp-rust-analyzer"
+display-name = "rust_analyzer"
+kind = "language-server"
+languages = ["rust"]
+programs = ["rust-analyzer"]

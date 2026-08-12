@@ -1,0 +1,6 @@
+id = "lsp-smithy-ls"
+display-name = "smithy_ls"
+kind = "language-server"
+languages = ["smithy"]
+programs = ["cs"]
+root-markers = ["smithy-build.json", "build.gradle", "build.gradle.kts", ".git"]

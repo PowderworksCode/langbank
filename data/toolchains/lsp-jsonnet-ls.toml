@@ -1,0 +1,6 @@
+id = "lsp-jsonnet-ls"
+display-name = "jsonnet_ls"
+kind = "language-server"
+languages = ["jsonnet"]
+programs = ["jsonnet-language-server"]
+root-markers = ["jsonnetfile.json", ".git"]

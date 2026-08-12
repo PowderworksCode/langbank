@@ -1,0 +1,6 @@
+id = "lsp-rumdl"
+display-name = "rumdl"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["rumdl"]
+root-markers = [".git"]

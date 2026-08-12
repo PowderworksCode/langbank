@@ -1,0 +1,6 @@
+id = "lsp-ghdl-ls"
+display-name = "ghdl_ls"
+kind = "language-server"
+languages = ["vhdl"]
+programs = ["ghdl-ls"]
+root-markers = ["hdl-prj.json", ".git"]

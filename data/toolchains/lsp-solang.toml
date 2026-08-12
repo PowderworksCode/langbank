@@ -1,0 +1,6 @@
+id = "lsp-solang"
+display-name = "solang"
+kind = "language-server"
+languages = ["solidity"]
+programs = ["solang"]
+root-markers = [".git"]

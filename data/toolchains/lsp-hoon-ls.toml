@@ -1,0 +1,6 @@
+id = "lsp-hoon-ls"
+display-name = "hoon_ls"
+kind = "language-server"
+languages = ["hoon"]
+programs = ["hoon-language-server"]
+root-markers = [".git"]

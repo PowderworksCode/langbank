@@ -1,0 +1,6 @@
+id = "lsp-twiggy-language-server"
+display-name = "twiggy_language_server"
+kind = "language-server"
+languages = ["twig"]
+programs = ["twiggy-language-server"]
+root-markers = ["composer.json", ".git"]

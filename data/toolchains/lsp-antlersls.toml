@@ -1,0 +1,6 @@
+id = "lsp-antlersls"
+display-name = "antlersls"
+kind = "language-server"
+languages = ["antlers", "html"]
+programs = ["antlersls"]
+root-markers = ["composer.json"]

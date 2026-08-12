@@ -1,0 +1,6 @@
+id = "lsp-nil-ls"
+display-name = "nil_ls"
+kind = "language-server"
+languages = ["nix"]
+programs = ["nil"]
+root-markers = ["flake.nix", ".git"]

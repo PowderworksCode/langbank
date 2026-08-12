@@ -1,0 +1,6 @@
+id = "lsp-bacon-ls"
+display-name = "bacon_ls"
+kind = "language-server"
+languages = ["rust"]
+programs = ["bacon-ls"]
+root-markers = [".bacon-locations", "Cargo.toml"]

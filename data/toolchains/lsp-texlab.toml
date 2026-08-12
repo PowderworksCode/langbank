@@ -1,0 +1,6 @@
+id = "lsp-texlab"
+display-name = "texlab"
+kind = "language-server"
+languages = ["tex"]
+programs = ["texlab"]
+root-markers = [".git", ".latexmkrc", "latexmkrc", ".texlabroot", "texlabroot", "Tectonic.toml"]

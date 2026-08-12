@@ -1,0 +1,6 @@
+id = "lsp-puppet"
+display-name = "puppet"
+kind = "language-server"
+languages = ["puppet"]
+programs = ["puppet-languageserver"]
+root-markers = ["manifests", ".puppet-lint.rc", "hiera.yaml", ".git"]

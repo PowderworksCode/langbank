@@ -1,0 +1,6 @@
+id = "lsp-anakin-language-server"
+display-name = "anakin_language_server"
+kind = "language-server"
+languages = ["python"]
+programs = ["anakinls"]
+root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

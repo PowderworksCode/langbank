@@ -1,0 +1,6 @@
+id = "lsp-selene3p-ls"
+display-name = "selene3p_ls"
+kind = "language-server"
+languages = ["lua"]
+programs = ["selene-3p-language-server"]
+root-markers = ["selene.toml"]

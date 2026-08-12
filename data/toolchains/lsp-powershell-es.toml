@@ -1,0 +1,6 @@
+id = "lsp-powershell-es"
+display-name = "powershell_es"
+kind = "language-server"
+languages = ["powershell"]
+programs = ["-NoLogo"]
+root-markers = ["PSScriptAnalyzerSettings.psd1", ".git"]

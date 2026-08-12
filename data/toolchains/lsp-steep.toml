@@ -1,0 +1,6 @@
+id = "lsp-steep"
+display-name = "steep"
+kind = "language-server"
+languages = ["html-erb", "ruby"]
+programs = ["steep"]
+root-markers = ["Steepfile", ".git"]

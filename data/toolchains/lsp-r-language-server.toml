@@ -1,0 +1,5 @@
+id = "lsp-r-language-server"
+display-name = "r_language_server"
+kind = "language-server"
+languages = ["r", "rmarkdown"]
+programs = ["R"]

@@ -1,0 +1,6 @@
+id = "lsp-nginx-language-server"
+display-name = "nginx_language_server"
+kind = "language-server"
+languages = ["nginx"]
+programs = ["nginx-language-server"]
+root-markers = ["nginx.conf", ".git"]

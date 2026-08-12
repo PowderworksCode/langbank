@@ -1,0 +1,6 @@
+id = "lsp-mdx-analyzer"
+display-name = "mdx_analyzer"
+kind = "language-server"
+languages = ["mdx"]
+programs = ["mdx-language-server"]
+root-markers = ["package.json"]

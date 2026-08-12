@@ -1,0 +1,5 @@
+id = "lsp-oso"
+display-name = "oso"
+kind = "language-server"
+languages = ["polar"]
+programs = ["oso-cloud"]

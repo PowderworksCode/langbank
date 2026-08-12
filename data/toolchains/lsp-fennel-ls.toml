@@ -1,0 +1,5 @@
+id = "lsp-fennel-ls"
+display-name = "fennel_ls"
+kind = "language-server"
+languages = ["fennel"]
+programs = ["fennel-ls"]

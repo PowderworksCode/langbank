@@ -1,0 +1,6 @@
+id = "lsp-ember"
+display-name = "ember"
+kind = "language-server"
+languages = ["handlebars", "javascript", "typescript"]
+programs = ["ember-language-server"]
+root-markers = ["ember-cli-build.js", ".git"]

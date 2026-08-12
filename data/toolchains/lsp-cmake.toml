@@ -1,0 +1,6 @@
+id = "lsp-cmake"
+display-name = "cmake"
+kind = "language-server"
+languages = ["cmake"]
+programs = ["cmake-language-server"]
+root-markers = ["CMakePresets.json", "CTestConfig.cmake", ".git", "build", "cmake"]

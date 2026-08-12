@@ -1,0 +1,6 @@
+id = "lsp-fish-lsp"
+display-name = "fish_lsp"
+kind = "language-server"
+languages = ["fish"]
+programs = ["fish-lsp"]
+root-markers = ["config.fish", ".git"]

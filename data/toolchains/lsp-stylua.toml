@@ -1,0 +1,6 @@
+id = "lsp-stylua"
+display-name = "stylua"
+kind = "language-server"
+languages = ["lua"]
+programs = ["stylua"]
+root-markers = [".stylua.toml", "stylua.toml", ".editorconfig"]

@@ -1,0 +1,6 @@
+id = "lsp-syntax-tree"
+display-name = "syntax_tree"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["stree"]
+root-markers = [".streerc", "Gemfile", ".git"]

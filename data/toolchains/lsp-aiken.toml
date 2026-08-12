@@ -1,0 +1,6 @@
+id = "lsp-aiken"
+display-name = "aiken"
+kind = "language-server"
+languages = ["aiken"]
+programs = ["aiken"]
+root-markers = ["aiken.toml", ".git"]

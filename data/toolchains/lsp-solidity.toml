@@ -1,0 +1,6 @@
+id = "lsp-solidity"
+display-name = "solidity"
+kind = "language-server"
+languages = ["solidity"]
+programs = ["solidity-ls"]
+root-markers = [".git", "package.json"]
