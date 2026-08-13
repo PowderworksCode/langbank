@@ -1,0 +1,10 @@
+id = "mason-eslint_d"
+display-name = "eslint_d"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["eslint_d"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "eslint_d"

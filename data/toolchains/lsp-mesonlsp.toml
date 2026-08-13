@@ -3,3 +3,8 @@ display-name = "mesonlsp"
 kind = "language-server"
 languages = ["meson"]
 programs = ["mesonlsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "JCWasmx86/mesonlsp"

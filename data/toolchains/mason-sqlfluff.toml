@@ -1,0 +1,10 @@
+id = "mason-sqlfluff"
+display-name = "sqlfluff"
+kind = "linter"
+languages = ["sql"]
+programs = ["sqlfluff"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "sqlfluff"

@@ -1,0 +1,10 @@
+id = "mason-csharpier"
+display-name = "csharpier"
+kind = "formatter"
+languages = ["c-sharp"]
+programs = ["csharpier"]
+categories = ["formatter"]
+
+[distribution]
+registry = "nuget"
+package = "csharpier"

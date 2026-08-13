@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["nginx"]
 programs = ["nginx-language-server"]
 root-markers = ["nginx.conf", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "nginx-language-server"

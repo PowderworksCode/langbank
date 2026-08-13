@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["prosemd-lsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "kitten/prosemd-lsp"

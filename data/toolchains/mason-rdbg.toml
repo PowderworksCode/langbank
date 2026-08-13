@@ -1,0 +1,10 @@
+id = "mason-rdbg"
+display-name = "rdbg"
+kind = "debugger"
+languages = ["ruby"]
+programs = ["rdbg"]
+categories = ["debugger"]
+
+[distribution]
+registry = "gem"
+package = "debug"

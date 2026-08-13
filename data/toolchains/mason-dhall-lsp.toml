@@ -1,0 +1,10 @@
+id = "mason-dhall-lsp"
+display-name = "dhall-lsp"
+kind = "language-server"
+languages = ["dhall"]
+programs = ["dhall-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "dhall-lang/dhall-haskell"

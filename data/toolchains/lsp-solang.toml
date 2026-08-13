@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["solidity"]
 programs = ["solang"]
 root-markers = [".git"]
+categories = ["language-server", "compiler"]
+
+[distribution]
+registry = "github"
+package = "hyperledger-labs/solang"

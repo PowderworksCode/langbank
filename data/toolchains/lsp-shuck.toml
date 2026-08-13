@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["shell"]
 programs = ["shuck"]
 root-markers = [".shuck.toml", ".git"]
+categories = ["language-server", "linter", "formatter"]
+
+[distribution]
+registry = "github"
+package = "ewhauser/shuck"

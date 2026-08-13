@@ -1,0 +1,10 @@
+id = "mason-cljfmt"
+display-name = "cljfmt"
+kind = "formatter"
+languages = ["clojure"]
+programs = ["cljfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "weavejester/cljfmt"

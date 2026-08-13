@@ -1,0 +1,10 @@
+id = "mason-raku-navigator"
+display-name = "raku-navigator"
+kind = "language-server"
+languages = ["raku"]
+programs = ["raku-navigator"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "bscan/RakuNavigator"

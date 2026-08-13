@@ -1,0 +1,10 @@
+id = "mason-termux-language-server"
+display-name = "termux-language-server"
+kind = "language-server"
+languages = ["shell"]
+programs = ["termux-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "termux-language-server"

@@ -1,0 +1,10 @@
+id = "mason-twigcs"
+display-name = "twigcs"
+kind = "linter"
+languages = ["twig"]
+programs = ["twigcs"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "friendsoftwig/twigcs"

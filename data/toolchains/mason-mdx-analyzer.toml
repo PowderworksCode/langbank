@@ -1,0 +1,10 @@
+id = "mason-mdx-analyzer"
+display-name = "mdx-analyzer"
+kind = "language-server"
+languages = ["mdx"]
+programs = ["mdx-analyzer"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40mdx-js/language-server"

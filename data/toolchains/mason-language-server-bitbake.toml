@@ -1,0 +1,10 @@
+id = "mason-language-server-bitbake"
+display-name = "language-server-bitbake"
+kind = "language-server"
+languages = ["bitbake"]
+programs = ["language-server-bitbake"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "language-server-bitbake"

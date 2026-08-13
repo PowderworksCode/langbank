@@ -1,0 +1,10 @@
+id = "mason-cpptools"
+display-name = "cpptools"
+kind = "debugger"
+languages = ["c", "cpp", "rust"]
+programs = ["cpptools"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "microsoft/vscode-cpptools"

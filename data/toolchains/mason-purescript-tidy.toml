@@ -1,0 +1,10 @@
+id = "mason-purescript-tidy"
+display-name = "purescript-tidy"
+kind = "formatter"
+languages = ["purescript"]
+programs = ["purescript-tidy"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "purs-tidy"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["luau"]
 programs = ["luau-lsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "JohnnyMorganz/luau-lsp"

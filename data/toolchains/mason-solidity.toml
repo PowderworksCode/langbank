@@ -1,0 +1,10 @@
+id = "mason-solidity"
+display-name = "solidity"
+kind = "compiler"
+languages = ["solidity"]
+programs = ["solidity"]
+categories = ["compiler", "language-server"]
+
+[distribution]
+registry = "github"
+package = "ethereum/solidity"

@@ -1,0 +1,10 @@
+id = "mason-usort"
+display-name = "usort"
+kind = "formatter"
+languages = ["python"]
+programs = ["usort"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "usort"

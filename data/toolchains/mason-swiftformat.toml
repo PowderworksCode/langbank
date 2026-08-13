@@ -1,0 +1,10 @@
+id = "mason-swiftformat"
+display-name = "swiftformat"
+kind = "formatter"
+languages = ["swift"]
+programs = ["swiftformat"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "nicklockwood/SwiftFormat"

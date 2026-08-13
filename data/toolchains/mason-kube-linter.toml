@@ -1,0 +1,10 @@
+id = "mason-kube-linter"
+display-name = "kube-linter"
+kind = "linter"
+languages = ["yaml"]
+programs = ["kube-linter"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "stackrox/kube-linter"

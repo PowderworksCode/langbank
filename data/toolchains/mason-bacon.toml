@@ -1,0 +1,10 @@
+id = "mason-bacon"
+display-name = "bacon"
+kind = "linter"
+languages = ["rust"]
+programs = ["bacon"]
+categories = ["linter"]
+
+[distribution]
+registry = "cargo"
+package = "bacon"

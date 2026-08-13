@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["svg", "xml", "xslt"]
 programs = ["lemminx"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "redhat-developer/vscode-xml"

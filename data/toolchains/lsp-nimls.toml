@@ -3,3 +3,8 @@ display-name = "nimls"
 kind = "language-server"
 languages = ["nim"]
 programs = ["nimlsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "PMunch/nimlsp"

@@ -1,0 +1,10 @@
+id = "mason-pretty-php"
+display-name = "pretty-php"
+kind = "formatter"
+languages = ["php"]
+programs = ["pretty-php"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "lkrms/pretty-php"

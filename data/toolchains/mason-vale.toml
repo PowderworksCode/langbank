@@ -1,0 +1,10 @@
+id = "mason-vale"
+display-name = "vale"
+kind = "linter"
+languages = ["markdown", "tex", "text"]
+programs = ["vale"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "errata-ai/vale"

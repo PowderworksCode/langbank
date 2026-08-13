@@ -3,3 +3,8 @@ display-name = "rnix"
 kind = "language-server"
 languages = ["nix"]
 programs = ["rnix-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "rnix-lsp"

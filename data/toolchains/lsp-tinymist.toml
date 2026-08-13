@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["typst"]
 programs = ["tinymist"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "Myriad-Dreamin/tinymist"

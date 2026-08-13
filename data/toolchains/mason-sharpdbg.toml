@@ -1,0 +1,10 @@
+id = "mason-sharpdbg"
+display-name = "sharpdbg"
+kind = "debugger"
+languages = ["c-sharp", "f-sharp"]
+programs = ["sharpdbg"]
+categories = ["debugger"]
+
+[distribution]
+registry = "nuget"
+package = "SharpDbg.Cli"

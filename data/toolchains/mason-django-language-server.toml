@@ -1,0 +1,10 @@
+id = "mason-django-language-server"
+display-name = "django-language-server"
+kind = "language-server"
+languages = ["python"]
+programs = ["django-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "django-language-server"

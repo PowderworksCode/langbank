@@ -1,0 +1,10 @@
+id = "mason-sql-formatter"
+display-name = "sql-formatter"
+kind = "formatter"
+languages = ["sql"]
+programs = ["sql-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "sql-formatter"

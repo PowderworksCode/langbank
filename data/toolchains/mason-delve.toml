@@ -1,0 +1,10 @@
+id = "mason-delve"
+display-name = "delve"
+kind = "debugger"
+languages = ["go"]
+programs = ["delve"]
+categories = ["debugger"]
+
+[distribution]
+registry = "golang"
+package = "github.com/go-delve/delve"

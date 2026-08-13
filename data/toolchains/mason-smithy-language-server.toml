@@ -1,0 +1,10 @@
+id = "mason-smithy-language-server"
+display-name = "smithy-language-server"
+kind = "language-server"
+languages = ["smithy"]
+programs = ["smithy-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "awslabs/smithy-language-server"

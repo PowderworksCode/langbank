@@ -1,0 +1,10 @@
+id = "mason-jdtls"
+display-name = "jdtls"
+kind = "language-server"
+languages = ["java"]
+programs = ["jdtls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "generic"
+package = "eclipse/eclipse.jdt.ls"

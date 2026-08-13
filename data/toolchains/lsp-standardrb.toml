@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["ruby"]
 programs = ["standardrb"]
 root-markers = ["Gemfile", ".git"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "gem"
+package = "standard"

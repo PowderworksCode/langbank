@@ -3,3 +3,8 @@ display-name = "emmylua_ls"
 kind = "language-server"
 languages = ["lua"]
 programs = ["emmylua_ls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "CppCXY/emmylua-analyzer-rust"

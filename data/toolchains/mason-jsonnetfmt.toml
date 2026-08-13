@@ -1,0 +1,10 @@
+id = "mason-jsonnetfmt"
+display-name = "jsonnetfmt"
+kind = "formatter"
+languages = ["jsonnet"]
+programs = ["jsonnetfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/google/go-jsonnet"

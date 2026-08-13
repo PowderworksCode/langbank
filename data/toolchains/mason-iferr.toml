@@ -1,0 +1,9 @@
+id = "mason-iferr"
+display-name = "iferr"
+kind = "linter"
+languages = ["go"]
+programs = ["iferr"]
+
+[distribution]
+registry = "golang"
+package = "github.com/koron/iferr"

@@ -1,0 +1,10 @@
+id = "mason-darker"
+display-name = "darker"
+kind = "formatter"
+languages = ["python"]
+programs = ["darker"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "darker"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["just"]
 programs = ["just-lsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "terror/just-lsp"

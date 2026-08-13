@@ -1,0 +1,10 @@
+id = "mason-rust_hdl"
+display-name = "rust_hdl"
+kind = "language-server"
+languages = ["vhdl"]
+programs = ["rust_hdl"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "vhdl-ls/rust_hdl"

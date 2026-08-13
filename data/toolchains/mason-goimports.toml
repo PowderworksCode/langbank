@@ -1,0 +1,10 @@
+id = "mason-goimports"
+display-name = "goimports"
+kind = "formatter"
+languages = ["go"]
+programs = ["goimports"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "golang.org/x/tools"

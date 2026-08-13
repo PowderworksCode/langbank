@@ -1,0 +1,10 @@
+id = "mason-proselint"
+display-name = "proselint"
+kind = "linter"
+languages = ["markdown", "text"]
+programs = ["proselint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "proselint"

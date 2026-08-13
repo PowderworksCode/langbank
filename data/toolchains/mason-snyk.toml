@@ -1,0 +1,10 @@
+id = "mason-snyk"
+display-name = "snyk"
+kind = "language-server"
+languages = ["apex", "c-sharp", "cpp", "dart", "dockerfile", "elixir", "go", "groovy", "hcl", "java", "javascript", "kotlin", "php", "python", "ruby", "rust", "scala", "swift", "typescript"]
+programs = ["snyk"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "github"
+package = "snyk/cli"

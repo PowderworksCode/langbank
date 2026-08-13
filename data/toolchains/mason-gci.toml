@@ -1,0 +1,10 @@
+id = "mason-gci"
+display-name = "gci"
+kind = "formatter"
+languages = ["go"]
+programs = ["gci"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/daixiang0/gci"

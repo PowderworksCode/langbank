@@ -1,0 +1,10 @@
+id = "mason-revive"
+display-name = "revive"
+kind = "linter"
+languages = ["go"]
+programs = ["revive"]
+categories = ["linter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/mgechev/revive"

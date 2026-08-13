@@ -1,0 +1,10 @@
+id = "mason-fprettify"
+display-name = "fprettify"
+kind = "formatter"
+languages = ["fortran"]
+programs = ["fprettify"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "fprettify"

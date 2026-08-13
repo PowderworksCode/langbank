@@ -1,0 +1,10 @@
+id = "mason-luacheck"
+display-name = "luacheck"
+kind = "linter"
+languages = ["lua"]
+programs = ["luacheck"]
+categories = ["linter"]
+
+[distribution]
+registry = "luarocks"
+package = "luacheck"

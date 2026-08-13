@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["deno"]
 root-markers = ["deno.lock", "deno.json", "deno.jsonc"]
+categories = ["language-server", "runtime", "linter"]
+
+[distribution]
+registry = "github"
+package = "denoland/deno"

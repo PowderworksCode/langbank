@@ -1,0 +1,10 @@
+id = "mason-java-debug-adapter"
+display-name = "java-debug-adapter"
+kind = "debugger"
+languages = ["java"]
+programs = ["java-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "openvsx"
+package = "vscjava/vscode-java-debug"

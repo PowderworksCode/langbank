@@ -1,0 +1,10 @@
+id = "mason-julia-lsp"
+display-name = "julia-lsp"
+kind = "language-server"
+languages = ["julia"]
+programs = ["julia-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "mason-org/julia-lsp"

@@ -1,0 +1,10 @@
+id = "mason-checkmake"
+display-name = "checkmake"
+kind = "linter"
+languages = ["makefile"]
+programs = ["checkmake"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "mrtazz/checkmake"

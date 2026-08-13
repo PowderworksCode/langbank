@@ -1,0 +1,10 @@
+id = "mason-xmlformatter"
+display-name = "xmlformatter"
+kind = "formatter"
+languages = ["xml"]
+programs = ["xmlformatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "xmlformatter"

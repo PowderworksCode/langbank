@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["cssmodules-language-server"]
 root-markers = ["package.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "cssmodules-language-server"

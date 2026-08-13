@@ -1,0 +1,10 @@
+id = "mason-blade-formatter"
+display-name = "blade-formatter"
+kind = "formatter"
+languages = ["blade"]
+programs = ["blade-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "blade-formatter"

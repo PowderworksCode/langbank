@@ -1,0 +1,10 @@
+id = "mason-vscode-java-decompiler"
+display-name = "vscode-java-decompiler"
+kind = "debugger"
+languages = ["java"]
+programs = ["vscode-java-decompiler"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "dgileadi/vscode-java-decompiler"

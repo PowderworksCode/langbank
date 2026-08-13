@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["qml"]
 programs = ["qmlls"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "TheQtCompanyRnD/qmlls-workflow"

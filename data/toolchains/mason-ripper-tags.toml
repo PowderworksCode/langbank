@@ -1,0 +1,9 @@
+id = "mason-ripper-tags"
+display-name = "ripper-tags"
+kind = "linter"
+languages = ["ruby"]
+programs = ["ripper-tags"]
+
+[distribution]
+registry = "gem"
+package = "ripper-tags"

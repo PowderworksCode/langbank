@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["python"]
 programs = ["pylyzer"]
 root-markers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "mtshiba/pylyzer"

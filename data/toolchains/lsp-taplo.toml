@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["toml"]
 programs = ["taplo"]
 root-markers = [".taplo.toml", "taplo.toml", ".git"]
+categories = ["language-server", "formatter"]
+
+[distribution]
+registry = "github"
+package = "tamasfe/taplo"

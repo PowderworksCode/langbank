@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["fortran"]
 programs = ["fortitude"]
 root-markers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "PlasmaFAIR/fortitude"

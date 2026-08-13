@@ -1,0 +1,10 @@
+id = "mason-shellharden"
+display-name = "shellharden"
+kind = "formatter"
+languages = ["shell"]
+programs = ["shellharden"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "cargo"
+package = "shellharden"

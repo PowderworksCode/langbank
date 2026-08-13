@@ -1,0 +1,10 @@
+id = "mason-mutt-language-server"
+display-name = "mutt-language-server"
+kind = "language-server"
+languages = ["python"]
+programs = ["mutt-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "mutt-language-server"

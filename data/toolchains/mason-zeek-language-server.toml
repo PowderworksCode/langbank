@@ -1,0 +1,10 @@
+id = "mason-zeek-language-server"
+display-name = "zeek-language-server"
+kind = "language-server"
+languages = ["zeek"]
+programs = ["zeek-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "bbannier/zeek-language-server"

@@ -1,0 +1,10 @@
+id = "mason-flakeheaven"
+display-name = "flakeheaven"
+kind = "linter"
+languages = ["python"]
+programs = ["flakeheaven"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "flakeheaven"

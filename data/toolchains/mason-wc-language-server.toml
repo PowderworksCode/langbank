@@ -1,0 +1,10 @@
+id = "mason-wc-language-server"
+display-name = "wc-language-server"
+kind = "language-server"
+languages = ["html", "javascript", "typescript"]
+programs = ["wc-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "wc-toolkit/wc-language-server"

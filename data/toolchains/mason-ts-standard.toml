@@ -1,0 +1,10 @@
+id = "mason-ts-standard"
+display-name = "ts-standard"
+kind = "linter"
+languages = ["typescript"]
+programs = ["ts-standard"]
+categories = ["linter", "formatter"]
+
+[distribution]
+registry = "npm"
+package = "ts-standard"

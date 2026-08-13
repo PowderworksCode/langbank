@@ -1,0 +1,10 @@
+id = "mason-vscode-java-dependency"
+display-name = "vscode-java-dependency"
+kind = "runtime"
+languages = ["java"]
+programs = ["vscode-java-dependency"]
+categories = ["runtime"]
+
+[distribution]
+registry = "openvsx"
+package = "vscjava/vscode-java-dependency"

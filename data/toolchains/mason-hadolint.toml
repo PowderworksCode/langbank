@@ -1,0 +1,10 @@
+id = "mason-hadolint"
+display-name = "hadolint"
+kind = "linter"
+languages = ["dockerfile"]
+programs = ["hadolint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "hadolint/hadolint"

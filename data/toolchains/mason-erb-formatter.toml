@@ -1,0 +1,10 @@
+id = "mason-erb-formatter"
+display-name = "erb-formatter"
+kind = "formatter"
+languages = ["html", "ruby"]
+programs = ["erb-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "gem"
+package = "erb-formatter"

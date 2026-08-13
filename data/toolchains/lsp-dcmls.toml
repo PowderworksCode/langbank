@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["dart"]
 programs = ["dcm"]
 root-markers = ["pubspec.yaml"]
+categories = ["language-server", "formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "CQLabs/homebrew-dcm"

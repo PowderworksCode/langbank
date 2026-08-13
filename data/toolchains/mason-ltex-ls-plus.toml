@@ -1,0 +1,10 @@
+id = "mason-ltex-ls-plus"
+display-name = "ltex-ls-plus"
+kind = "language-server"
+languages = ["markdown", "restructuredtext", "tex", "text"]
+programs = ["ltex-ls-plus"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "ltex-plus/ltex-ls-plus"

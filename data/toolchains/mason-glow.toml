@@ -1,0 +1,9 @@
+id = "mason-glow"
+display-name = "glow"
+kind = "linter"
+languages = ["markdown"]
+programs = ["glow"]
+
+[distribution]
+registry = "github"
+package = "charmbracelet/glow"

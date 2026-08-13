@@ -1,0 +1,10 @@
+id = "mason-stylelint"
+display-name = "stylelint"
+kind = "linter"
+languages = ["css", "less", "sass", "scss"]
+programs = ["stylelint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "stylelint"

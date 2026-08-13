@@ -1,0 +1,10 @@
+id = "mason-squawk"
+display-name = "squawk"
+kind = "linter"
+languages = ["sql"]
+programs = ["squawk"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "sbdchd/squawk"

@@ -1,0 +1,10 @@
+id = "mason-ruby-lsp"
+display-name = "ruby-lsp"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["ruby-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "gem"
+package = "ruby-lsp"

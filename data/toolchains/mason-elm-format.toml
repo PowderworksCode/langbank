@@ -1,0 +1,10 @@
+id = "mason-elm-format"
+display-name = "elm-format"
+kind = "formatter"
+languages = ["elm"]
+programs = ["elm-format"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "elm-format"

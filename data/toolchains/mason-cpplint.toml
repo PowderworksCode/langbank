@@ -1,0 +1,10 @@
+id = "mason-cpplint"
+display-name = "cpplint"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["cpplint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "cpplint"

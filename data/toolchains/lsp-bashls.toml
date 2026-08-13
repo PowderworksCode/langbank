@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["shell"]
 programs = ["bash-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "bash-language-server"

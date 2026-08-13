@@ -1,0 +1,10 @@
+id = "mason-sith-language-server"
+display-name = "sith-language-server"
+kind = "language-server"
+languages = ["python"]
+programs = ["sith-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "LaBatata101/sith-language-server"

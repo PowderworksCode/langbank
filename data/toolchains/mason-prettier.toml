@@ -1,0 +1,10 @@
+id = "mason-prettier"
+display-name = "prettier"
+kind = "formatter"
+languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
+programs = ["prettier"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "prettier"

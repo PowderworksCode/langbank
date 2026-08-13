@@ -1,0 +1,10 @@
+id = "mason-goimports-reviser"
+display-name = "goimports-reviser"
+kind = "formatter"
+languages = ["go"]
+programs = ["goimports-reviser"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "incu6us/goimports-reviser"

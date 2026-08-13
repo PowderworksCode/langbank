@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["stan"]
 programs = ["stan-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "stan-language-server-bin"

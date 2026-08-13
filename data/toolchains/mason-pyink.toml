@@ -1,0 +1,10 @@
+id = "mason-pyink"
+display-name = "pyink"
+kind = "formatter"
+languages = ["python"]
+programs = ["pyink"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "pyink"

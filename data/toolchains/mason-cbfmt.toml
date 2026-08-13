@@ -1,0 +1,10 @@
+id = "mason-cbfmt"
+display-name = "cbfmt"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["cbfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "lukas-reineke/cbfmt"

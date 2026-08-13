@@ -1,0 +1,10 @@
+id = "mason-mdsf"
+display-name = "mdsf"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["mdsf"]
+categories = ["formatter"]
+
+[distribution]
+registry = "cargo"
+package = "mdsf"

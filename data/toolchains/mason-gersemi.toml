@@ -1,0 +1,10 @@
+id = "mason-gersemi"
+display-name = "gersemi"
+kind = "formatter"
+languages = ["cmake"]
+programs = ["gersemi"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "gersemi"

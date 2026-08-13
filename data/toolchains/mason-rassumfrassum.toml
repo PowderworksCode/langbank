@@ -1,0 +1,10 @@
+id = "mason-rassumfrassum"
+display-name = "rassumfrassum"
+kind = "language-server"
+languages = ["python"]
+programs = ["rassumfrassum"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "rassumfrassum"

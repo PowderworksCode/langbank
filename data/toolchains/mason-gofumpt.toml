@@ -1,0 +1,10 @@
+id = "mason-gofumpt"
+display-name = "gofumpt"
+kind = "formatter"
+languages = ["go"]
+programs = ["gofumpt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "mvdan.cc/gofumpt"

@@ -1,0 +1,10 @@
+id = "mason-ada-language-server"
+display-name = "ada-language-server"
+kind = "language-server"
+languages = ["ada"]
+programs = ["ada-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "AdaCore/ada_language_server"

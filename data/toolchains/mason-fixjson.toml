@@ -1,0 +1,10 @@
+id = "mason-fixjson"
+display-name = "fixjson"
+kind = "formatter"
+languages = ["json"]
+programs = ["fixjson"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "fixjson"

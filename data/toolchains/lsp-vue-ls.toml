@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["vue"]
 programs = ["vue-language-server"]
 root-markers = ["package.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40vue/language-server"

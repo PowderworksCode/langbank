@@ -1,0 +1,10 @@
+id = "mason-pydocstyle"
+display-name = "pydocstyle"
+kind = "linter"
+languages = ["python"]
+programs = ["pydocstyle"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pydocstyle"

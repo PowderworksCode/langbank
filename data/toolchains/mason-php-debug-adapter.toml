@@ -1,0 +1,10 @@
+id = "mason-php-debug-adapter"
+display-name = "php-debug-adapter"
+kind = "debugger"
+languages = ["php"]
+programs = ["php-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "xdebug/vscode-php-debug"

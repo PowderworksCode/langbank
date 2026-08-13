@@ -1,0 +1,10 @@
+id = "mason-zprint-clj"
+display-name = "zprint-clj"
+kind = "formatter"
+languages = ["clojure"]
+programs = ["zprint-clj"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "zprint-clj"

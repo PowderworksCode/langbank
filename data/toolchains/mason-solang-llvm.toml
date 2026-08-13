@@ -1,0 +1,10 @@
+id = "mason-solang-llvm"
+display-name = "solang-llvm"
+kind = "language-server"
+languages = ["solidity"]
+programs = ["solang-llvm"]
+categories = ["language-server", "compiler"]
+
+[distribution]
+registry = "github"
+package = "hyperledger/solang-llvm"

@@ -1,0 +1,10 @@
+id = "mason-tclint"
+display-name = "tclint"
+kind = "linter"
+languages = ["tcl"]
+programs = ["tclint"]
+categories = ["linter", "formatter", "language-server"]
+
+[distribution]
+registry = "pypi"
+package = "tclint"

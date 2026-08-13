@@ -1,0 +1,10 @@
+id = "mason-dockerfmt"
+display-name = "dockerfmt"
+kind = "formatter"
+languages = ["dockerfile"]
+programs = ["dockerfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/reteps/dockerfmt"

@@ -1,0 +1,10 @@
+id = "mason-solhint"
+display-name = "solhint"
+kind = "linter"
+languages = ["solidity"]
+programs = ["solhint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "solhint"

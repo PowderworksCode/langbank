@@ -1,0 +1,10 @@
+id = "mason-yls-yara"
+display-name = "yls-yara"
+kind = "language-server"
+languages = ["yara"]
+programs = ["yls-yara"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "yls-yara"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["solidity"]
 programs = ["solidity-ls"]
 root-markers = [".git", "package.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "solidity-ls"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["sql"]
 programs = ["postgres-language-server"]
 root-markers = ["postgres-language-server.jsonc"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "github"
+package = "supabase-community/postgres-language-server"

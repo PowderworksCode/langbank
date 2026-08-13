@@ -1,0 +1,10 @@
+id = "mason-htmlhint"
+display-name = "htmlhint"
+kind = "linter"
+languages = ["html"]
+programs = ["htmlhint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "htmlhint"

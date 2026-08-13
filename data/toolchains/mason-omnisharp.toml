@@ -1,0 +1,10 @@
+id = "mason-omnisharp"
+display-name = "omnisharp"
+kind = "language-server"
+languages = ["c-sharp"]
+programs = ["omnisharp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "OmniSharp/omnisharp-roslyn"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["move"]
 programs = ["move-analyzer"]
 root-markers = ["Move.toml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "move-analyzer"

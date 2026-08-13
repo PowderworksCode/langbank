@@ -1,0 +1,10 @@
+id = "mason-r-languageserver"
+display-name = "r-languageserver"
+kind = "language-server"
+languages = ["r"]
+programs = ["r-languageserver"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "mason-org/r-languageserver"

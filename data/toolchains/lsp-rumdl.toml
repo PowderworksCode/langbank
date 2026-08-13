@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["rumdl"]
 root-markers = [".git"]
+categories = ["linter", "formatter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "rvben/rumdl"

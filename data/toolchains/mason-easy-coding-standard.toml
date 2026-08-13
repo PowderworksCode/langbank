@@ -1,0 +1,10 @@
+id = "mason-easy-coding-standard"
+display-name = "easy-coding-standard"
+kind = "formatter"
+languages = ["php"]
+programs = ["easy-coding-standard"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "composer"
+package = "symplify/easy-coding-standard"

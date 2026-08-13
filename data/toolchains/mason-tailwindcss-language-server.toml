@@ -1,0 +1,10 @@
+id = "mason-tailwindcss-language-server"
+display-name = "tailwindcss-language-server"
+kind = "language-server"
+languages = ["css"]
+programs = ["tailwindcss-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40tailwindcss/language-server"

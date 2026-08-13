@@ -1,0 +1,10 @@
+id = "mason-millet"
+display-name = "millet"
+kind = "language-server"
+languages = ["standard-ml"]
+programs = ["millet"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "azdavis/millet"

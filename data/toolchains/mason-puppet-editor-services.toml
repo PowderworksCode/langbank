@@ -1,0 +1,10 @@
+id = "mason-puppet-editor-services"
+display-name = "puppet-editor-services"
+kind = "language-server"
+languages = ["puppet"]
+programs = ["puppet-editor-services"]
+categories = ["language-server", "debugger"]
+
+[distribution]
+registry = "github"
+package = "puppetlabs/puppet-editor-services"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["pkl"]
 programs = ["pkl-lsp"]
 root-markers = ["PklProject", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "apple/pkl-lsp"

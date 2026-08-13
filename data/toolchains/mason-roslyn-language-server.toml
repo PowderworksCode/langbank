@@ -1,0 +1,10 @@
+id = "mason-roslyn-language-server"
+display-name = "roslyn-language-server"
+kind = "language-server"
+languages = ["c-sharp"]
+programs = ["roslyn-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "nuget"
+package = "roslyn-language-server"

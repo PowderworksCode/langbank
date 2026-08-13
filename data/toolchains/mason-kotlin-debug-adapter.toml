@@ -1,0 +1,10 @@
+id = "mason-kotlin-debug-adapter"
+display-name = "kotlin-debug-adapter"
+kind = "debugger"
+languages = ["kotlin"]
+programs = ["kotlin-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "fwcd/kotlin-debug-adapter"

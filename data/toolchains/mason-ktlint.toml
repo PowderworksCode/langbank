@@ -1,0 +1,10 @@
+id = "mason-ktlint"
+display-name = "ktlint"
+kind = "formatter"
+languages = ["kotlin"]
+programs = ["ktlint"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "pinterest/ktlint"

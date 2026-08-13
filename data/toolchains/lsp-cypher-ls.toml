@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cypher"]
 programs = ["cypher-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40neo4j-cypher/language-server"

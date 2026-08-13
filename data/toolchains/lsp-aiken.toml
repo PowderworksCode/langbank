@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["aiken"]
 programs = ["aiken"]
 root-markers = ["aiken.toml", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "aiken-lang/aiken"

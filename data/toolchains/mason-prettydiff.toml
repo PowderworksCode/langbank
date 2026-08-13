@@ -1,0 +1,10 @@
+id = "mason-prettydiff"
+display-name = "prettydiff"
+kind = "formatter"
+languages = ["html"]
+programs = ["prettydiff"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "prettydiff"

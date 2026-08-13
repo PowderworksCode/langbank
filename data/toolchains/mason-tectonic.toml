@@ -1,0 +1,10 @@
+id = "mason-tectonic"
+display-name = "tectonic"
+kind = "compiler"
+languages = ["tex"]
+programs = ["tectonic"]
+categories = ["compiler"]
+
+[distribution]
+registry = "github"
+package = "tectonic-typesetting/tectonic"

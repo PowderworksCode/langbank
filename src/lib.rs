@@ -72,8 +72,8 @@ pub use tool::{
     normalize_invocation, tool_profile, tool_profiles,
 };
 pub use toolchain::{
-    DiagnosticFormat, OutputStream, Toolchain, ToolchainKind, ToolchainRegistration, VersionProbe,
-    toolchain, toolchains, toolchains_for,
+    DiagnosticFormat, Distribution, OutputStream, Toolchain, ToolchainKind, ToolchainRegistration,
+    VersionProbe, toolchain, toolchains, toolchains_for,
 };
 pub use tools::{CODESPELL, STYLELINT, VALE};
 pub use traversal::{TraversalDirectory, TraversalDirectoryRegistration, traversal_directories};

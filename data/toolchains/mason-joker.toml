@@ -1,0 +1,10 @@
+id = "mason-joker"
+display-name = "joker"
+kind = "formatter"
+languages = ["clojure"]
+programs = ["joker"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "candid82/joker"

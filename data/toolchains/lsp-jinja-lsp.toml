@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["jinja"]
 programs = ["jinja-lsp"]
 root-markers = [".git"]
+categories = ["language-server", "linter", "compiler"]
+
+[distribution]
+registry = "github"
+package = "uros-5/jinja-lsp"

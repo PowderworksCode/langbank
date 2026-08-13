@@ -1,0 +1,10 @@
+id = "mason-pyproject-flake8"
+display-name = "pyproject-flake8"
+kind = "linter"
+languages = ["python"]
+programs = ["pyproject-flake8"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pyproject-flake8"

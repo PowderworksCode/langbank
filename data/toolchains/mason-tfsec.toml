@@ -1,0 +1,10 @@
+id = "mason-tfsec"
+display-name = "tfsec"
+kind = "linter"
+languages = ["hcl"]
+programs = ["tfsec"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "aquasecurity/tfsec"

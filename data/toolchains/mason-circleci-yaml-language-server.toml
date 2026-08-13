@@ -1,0 +1,10 @@
+id = "mason-circleci-yaml-language-server"
+display-name = "circleci-yaml-language-server"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["circleci-yaml-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "CircleCI-Public/circleci-yaml-language-server"

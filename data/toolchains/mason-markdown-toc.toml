@@ -1,0 +1,10 @@
+id = "mason-markdown-toc"
+display-name = "markdown-toc"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["markdown-toc"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "markdown-toc"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["toml"]
 programs = ["tombi"]
 root-markers = ["tombi.toml", "pyproject.toml", ".git"]
+categories = ["formatter", "linter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "tombi-toml/tombi"

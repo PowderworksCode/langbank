@@ -1,0 +1,10 @@
+id = "mason-findent"
+display-name = "findent"
+kind = "formatter"
+languages = ["fortran"]
+programs = ["findent"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "findent"

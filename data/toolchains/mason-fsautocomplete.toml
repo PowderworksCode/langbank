@@ -1,0 +1,10 @@
+id = "mason-fsautocomplete"
+display-name = "fsautocomplete"
+kind = "language-server"
+languages = ["f-sharp"]
+programs = ["fsautocomplete"]
+categories = ["language-server"]
+
+[distribution]
+registry = "nuget"
+package = "fsautocomplete"

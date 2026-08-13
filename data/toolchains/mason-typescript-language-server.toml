@@ -1,0 +1,10 @@
+id = "mason-typescript-language-server"
+display-name = "typescript-language-server"
+kind = "language-server"
+languages = ["javascript", "typescript"]
+programs = ["typescript-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "typescript-language-server"

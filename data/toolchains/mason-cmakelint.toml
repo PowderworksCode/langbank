@@ -1,0 +1,10 @@
+id = "mason-cmakelint"
+display-name = "cmakelint"
+kind = "linter"
+languages = ["cmake"]
+programs = ["cmakelint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "cmakelint"

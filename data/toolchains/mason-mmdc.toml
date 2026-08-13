@@ -1,0 +1,5 @@
+id = "mason-mmdc"
+display-name = "mmdc"
+kind = "linter"
+languages = ["markdown", "mermaid"]
+programs = ["mmdc"]

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cmake"]
 programs = ["cmake-language-server"]
 root-markers = ["CMakePresets.json", "CTestConfig.cmake", ".git", "build", "cmake"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "cmake-language-server"

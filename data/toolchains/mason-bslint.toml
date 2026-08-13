@@ -1,0 +1,10 @@
+id = "mason-bslint"
+display-name = "bslint"
+kind = "linter"
+languages = ["brighterscript"]
+programs = ["bslint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "%40rokucommunity/bslint"

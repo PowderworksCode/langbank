@@ -1,0 +1,10 @@
+id = "mason-remark-cli"
+display-name = "remark-cli"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["remark-cli"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "remark-cli"

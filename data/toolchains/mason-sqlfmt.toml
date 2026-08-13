@@ -1,0 +1,10 @@
+id = "mason-sqlfmt"
+display-name = "sqlfmt"
+kind = "formatter"
+languages = ["sql"]
+programs = ["sqlfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "shandy-sqlfmt"

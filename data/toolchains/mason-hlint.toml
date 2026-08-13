@@ -1,0 +1,10 @@
+id = "mason-hlint"
+display-name = "hlint"
+kind = "linter"
+languages = ["haskell"]
+programs = ["hlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "ndmitchell/hlint"

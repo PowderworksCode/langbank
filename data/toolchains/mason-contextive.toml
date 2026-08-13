@@ -1,0 +1,10 @@
+id = "mason-contextive"
+display-name = "contextive"
+kind = "language-server"
+languages = ["f-sharp"]
+programs = ["contextive"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "dev-cycles/contextive"

@@ -1,0 +1,10 @@
+id = "mason-shfmt"
+display-name = "shfmt"
+kind = "formatter"
+languages = ["shell"]
+programs = ["shfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "mvdan/sh"

@@ -1,0 +1,10 @@
+id = "mason-bandit"
+display-name = "bandit"
+kind = "linter"
+languages = ["python"]
+programs = ["bandit"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "bandit"

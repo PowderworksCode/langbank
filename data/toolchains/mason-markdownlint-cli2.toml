@@ -1,0 +1,10 @@
+id = "mason-markdownlint-cli2"
+display-name = "markdownlint-cli2"
+kind = "linter"
+languages = ["markdown"]
+programs = ["markdownlint-cli2"]
+categories = ["linter", "formatter"]
+
+[distribution]
+registry = "npm"
+package = "markdownlint-cli2"

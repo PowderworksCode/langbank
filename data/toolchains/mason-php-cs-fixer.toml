@@ -1,0 +1,10 @@
+id = "mason-php-cs-fixer"
+display-name = "php-cs-fixer"
+kind = "formatter"
+languages = ["php"]
+programs = ["php-cs-fixer"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "PHP-CS-Fixer/PHP-CS-Fixer"

@@ -1,0 +1,10 @@
+id = "mason-codeql"
+display-name = "codeql"
+kind = "language-server"
+languages = ["codeql"]
+programs = ["codeql"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "github/codeql-cli-binaries"

@@ -1,0 +1,10 @@
+id = "mason-kdlfmt"
+display-name = "kdlfmt"
+kind = "formatter"
+languages = ["kdl"]
+programs = ["kdlfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "hougesen/kdlfmt"

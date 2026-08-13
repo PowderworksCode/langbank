@@ -3,3 +3,8 @@ display-name = "fennel_ls"
 kind = "language-server"
 languages = ["fennel"]
 programs = ["fennel-ls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "luarocks"
+package = "fennel-ls"

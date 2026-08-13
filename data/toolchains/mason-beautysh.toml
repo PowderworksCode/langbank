@@ -1,0 +1,10 @@
+id = "mason-beautysh"
+display-name = "beautysh"
+kind = "formatter"
+languages = ["shell"]
+programs = ["beautysh"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "beautysh"

@@ -1,0 +1,10 @@
+id = "mason-sleek"
+display-name = "sleek"
+kind = "formatter"
+languages = ["sql"]
+programs = ["sleek"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "nrempel/sleek"

@@ -1,0 +1,10 @@
+id = "mason-tlint"
+display-name = "tlint"
+kind = "formatter"
+languages = ["blade", "php"]
+programs = ["tlint"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "composer"
+package = "tightenco/tlint"

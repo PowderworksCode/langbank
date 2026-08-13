@@ -1,0 +1,10 @@
+id = "mason-rubyfmt"
+display-name = "rubyfmt"
+kind = "formatter"
+languages = ["ruby"]
+programs = ["rubyfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "fables-tales/rubyfmt"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown", "rmarkdown"]
 programs = ["panache"]
 root-markers = [".panache.toml", "panache.toml", "_quarto.yml", "_bookdown.yml", ".git"]
+categories = ["language-server", "formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "jolars/panache"

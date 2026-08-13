@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["quick-lint-js"]
 root-markers = ["package.json", "jsconfig.json", ".git"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "generic"
+package = "quick-lint/quick-lint-js"

@@ -1,0 +1,10 @@
+id = "mason-erlang-ls"
+display-name = "erlang-ls"
+kind = "language-server"
+languages = ["erlang"]
+programs = ["erlang-ls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "erlang-ls/erlang_ls"

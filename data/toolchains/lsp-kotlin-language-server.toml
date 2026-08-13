@@ -3,3 +3,8 @@ display-name = "kotlin_language_server"
 kind = "language-server"
 languages = ["kotlin"]
 programs = ["kotlin-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "fwcd/kotlin-language-server"

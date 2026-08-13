@@ -1,0 +1,6 @@
+id = "mason-tsgo"
+display-name = "tsgo"
+kind = "language-server"
+languages = ["javascript", "typescript"]
+programs = ["tsgo"]
+categories = ["language-server"]

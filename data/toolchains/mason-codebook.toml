@@ -1,0 +1,10 @@
+id = "mason-codebook"
+display-name = "codebook"
+kind = "language-server"
+languages = ["c", "css", "go", "haskell", "html", "java", "javascript", "lua", "markdown", "php", "python", "ruby", "rust", "toml", "typescript"]
+programs = ["codebook"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "blopker/codebook"

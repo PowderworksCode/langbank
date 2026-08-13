@@ -1,0 +1,10 @@
+id = "mason-dotenv-linter"
+display-name = "dotenv-linter"
+kind = "linter"
+languages = ["dotenv"]
+programs = ["dotenv-linter"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "dotenv-linter/dotenv-linter"

@@ -1,0 +1,10 @@
+id = "mason-pyright"
+display-name = "pyright"
+kind = "language-server"
+languages = ["python"]
+programs = ["pyright"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "pyright"

@@ -1,0 +1,10 @@
+id = "mason-csharp-language-server"
+display-name = "csharp-language-server"
+kind = "language-server"
+languages = ["c-sharp"]
+programs = ["csharp-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "nuget"
+package = "csharp-ls"

@@ -1,0 +1,10 @@
+id = "mason-harper-ls"
+display-name = "harper-ls"
+kind = "language-server"
+languages = ["c", "c-sharp", "cpp", "go", "java", "javascript", "lua", "markdown", "python", "ruby", "rust", "tex", "toml", "typescript"]
+programs = ["harper-ls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "elijah-potter/harper"

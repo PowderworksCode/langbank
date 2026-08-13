@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["slint"]
 programs = ["slint-lsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "slint-ui/slint"

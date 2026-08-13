@@ -1,0 +1,10 @@
+id = "mason-edb"
+display-name = "edb"
+kind = "debugger"
+languages = ["elixir", "erlang"]
+programs = ["edb"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "WhatsApp/edb"

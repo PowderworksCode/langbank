@@ -1,0 +1,10 @@
+id = "mason-google-java-format"
+display-name = "google-java-format"
+kind = "formatter"
+languages = ["java"]
+programs = ["google-java-format"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "google/google-java-format"

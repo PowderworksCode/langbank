@@ -1,0 +1,10 @@
+id = "mason-rufo"
+display-name = "rufo"
+kind = "formatter"
+languages = ["ruby"]
+programs = ["rufo"]
+categories = ["formatter"]
+
+[distribution]
+registry = "gem"
+package = "rufo"

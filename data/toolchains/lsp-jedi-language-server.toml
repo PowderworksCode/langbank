@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["python"]
 programs = ["jedi-language-server"]
 root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "jedi-language-server"

@@ -1,0 +1,10 @@
+id = "mason-gdscript-formatter"
+display-name = "gdscript-formatter"
+kind = "formatter"
+languages = ["gdscript"]
+programs = ["gdscript-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "GDQuest/GDScript-formatter"

@@ -1,0 +1,10 @@
+id = "mason-clj-kondo"
+display-name = "clj-kondo"
+kind = "linter"
+languages = ["clojure"]
+programs = ["clj-kondo"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "clj-kondo/clj-kondo"

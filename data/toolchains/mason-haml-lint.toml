@@ -1,0 +1,10 @@
+id = "mason-haml-lint"
+display-name = "haml-lint"
+kind = "linter"
+languages = ["haml"]
+programs = ["haml-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "gem"
+package = "haml_lint"

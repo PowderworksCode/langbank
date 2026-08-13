@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["erlang"]
 programs = ["elp"]
 root-markers = ["rebar.config", "erlang.mk", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "WhatsApp/erlang-language-platform"

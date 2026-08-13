@@ -1,0 +1,10 @@
+id = "mason-swiftlint"
+display-name = "swiftlint"
+kind = "linter"
+languages = ["swift"]
+programs = ["swiftlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "realm/SwiftLint"

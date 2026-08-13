@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cue"]
 programs = ["cuelsp"]
 root-markers = ["cue.mod", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "golang"
+package = "github.com/dagger/cuelsp"

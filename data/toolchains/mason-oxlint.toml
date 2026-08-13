@@ -1,0 +1,10 @@
+id = "mason-oxlint"
+display-name = "oxlint"
+kind = "language-server"
+languages = ["javascript", "typescript"]
+programs = ["oxlint"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "npm"
+package = "oxlint"

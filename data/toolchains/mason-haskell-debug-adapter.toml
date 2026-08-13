@@ -1,0 +1,10 @@
+id = "mason-haskell-debug-adapter"
+display-name = "haskell-debug-adapter"
+kind = "debugger"
+languages = ["haskell"]
+programs = ["haskell-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "generic"
+package = "phoityne/haskell-debug-adapter"

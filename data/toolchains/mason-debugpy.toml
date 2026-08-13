@@ -1,0 +1,10 @@
+id = "mason-debugpy"
+display-name = "debugpy"
+kind = "debugger"
+languages = ["python"]
+programs = ["debugpy"]
+categories = ["debugger"]
+
+[distribution]
+registry = "pypi"
+package = "debugpy"

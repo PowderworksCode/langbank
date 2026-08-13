@@ -1,0 +1,10 @@
+id = "mason-luafmt"
+display-name = "luafmt"
+kind = "formatter"
+languages = ["lua"]
+programs = ["luafmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "EmmyLuaLs/emmylua-analyzer-rust"

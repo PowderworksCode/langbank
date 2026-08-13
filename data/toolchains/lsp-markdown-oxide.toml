@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["markdown-oxide"]
 root-markers = [".git", ".obsidian", ".moxide.toml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "feel-ix-343/markdown-oxide"

@@ -1,0 +1,10 @@
+id = "mason-black"
+display-name = "black"
+kind = "formatter"
+languages = ["python"]
+programs = ["black"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "black"

@@ -1,0 +1,10 @@
+id = "mason-brighterscript-formatter"
+display-name = "brighterscript-formatter"
+kind = "formatter"
+languages = ["brighterscript"]
+programs = ["brighterscript-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "brighterscript-formatter"

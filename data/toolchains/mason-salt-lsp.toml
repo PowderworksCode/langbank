@@ -1,0 +1,10 @@
+id = "mason-salt-lsp"
+display-name = "salt-lsp"
+kind = "language-server"
+languages = ["salt"]
+programs = ["salt-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "salt-lsp"

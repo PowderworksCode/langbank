@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["python"]
 programs = ["ruff"]
 root-markers = ["pyproject.toml", "ruff.toml", ".ruff.toml", ".git"]
+categories = ["linter", "formatter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "astral-sh/ruff"

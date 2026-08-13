@@ -1,0 +1,10 @@
+id = "mason-shopify-cli"
+display-name = "shopify-cli"
+kind = "language-server"
+languages = ["liquid"]
+programs = ["shopify-cli"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "npm"
+package = "%40shopify/cli"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["css"]
 programs = ["csskit"]
 root-markers = ["package.json", ".git"]
+categories = ["language-server", "formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "csskit/csskit"

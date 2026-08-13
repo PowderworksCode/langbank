@@ -1,0 +1,10 @@
+id = "mason-duster"
+display-name = "duster"
+kind = "formatter"
+languages = ["blade", "php"]
+programs = ["duster"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "composer"
+package = "tightenco/duster"

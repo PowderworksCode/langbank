@@ -1,0 +1,10 @@
+id = "mason-sqlls"
+display-name = "sqlls"
+kind = "language-server"
+languages = ["sql"]
+programs = ["sqlls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "sql-language-server"

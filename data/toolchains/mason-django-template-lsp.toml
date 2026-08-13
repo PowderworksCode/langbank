@@ -1,0 +1,10 @@
+id = "mason-django-template-lsp"
+display-name = "django-template-lsp"
+kind = "language-server"
+languages = ["html", "python"]
+programs = ["django-template-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "django-template-lsp"

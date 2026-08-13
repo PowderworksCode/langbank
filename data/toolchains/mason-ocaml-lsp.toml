@@ -1,0 +1,10 @@
+id = "mason-ocaml-lsp"
+display-name = "ocaml-lsp"
+kind = "language-server"
+languages = ["ocaml"]
+programs = ["ocaml-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "opam"
+package = "ocaml-lsp-server"

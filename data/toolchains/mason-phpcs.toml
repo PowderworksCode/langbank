@@ -1,0 +1,10 @@
+id = "mason-phpcs"
+display-name = "phpcs"
+kind = "linter"
+languages = ["php"]
+programs = ["phpcs"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "PHPCSStandards/PHP_CodeSniffer"

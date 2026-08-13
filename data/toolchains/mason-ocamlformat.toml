@@ -1,0 +1,10 @@
+id = "mason-ocamlformat"
+display-name = "ocamlformat"
+kind = "formatter"
+languages = ["ocaml"]
+programs = ["ocamlformat"]
+categories = ["formatter"]
+
+[distribution]
+registry = "opam"
+package = "ocamlformat"

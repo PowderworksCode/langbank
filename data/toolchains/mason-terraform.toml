@@ -1,0 +1,10 @@
+id = "mason-terraform"
+display-name = "terraform"
+kind = "formatter"
+languages = ["hcl"]
+programs = ["terraform"]
+categories = ["formatter", "linter", "runtime"]
+
+[distribution]
+registry = "generic"
+package = "hashicorp/terraform"

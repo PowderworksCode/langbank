@@ -1,0 +1,10 @@
+id = "mason-emmylua-codeformat"
+display-name = "emmylua-codeformat"
+kind = "formatter"
+languages = ["lua"]
+programs = ["emmylua-codeformat"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "CppCXY/EmmyLuaCodeStyle"

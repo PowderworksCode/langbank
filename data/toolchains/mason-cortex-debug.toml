@@ -1,0 +1,10 @@
+id = "mason-cortex-debug"
+display-name = "cortex-debug"
+kind = "debugger"
+languages = ["c", "cpp", "rust"]
+programs = ["cortex-debug"]
+categories = ["debugger"]
+
+[distribution]
+registry = "openvsx"
+package = "marus25/cortex-debug"

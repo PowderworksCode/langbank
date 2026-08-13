@@ -1,0 +1,10 @@
+id = "mason-blue"
+display-name = "blue"
+kind = "formatter"
+languages = ["python"]
+programs = ["blue"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "blue"
