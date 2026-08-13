@@ -75,7 +75,7 @@ def upstream_tools():
 
 def langbank():
     by_display = {}
-    for path in glob.glob("data/languages/*.toml"):
+    for path in sorted(glob.glob("data/languages/*.toml")):
         text = open(path).read()
         lid = re.search(r'^id = "([^"]+)"', text, re.M).group(1)
         by_display[lid] = lid
@@ -83,7 +83,7 @@ def langbank():
         if display:
             by_display[display.group(1).lower()] = lid
     toolchains, programs = {}, {}
-    for path in glob.glob("data/toolchains/*.toml"):
+    for path in sorted(glob.glob("data/toolchains/*.toml")):
         text = open(path).read()
         tid = re.search(r'^id = "([^"]+)"', text, re.M).group(1)
         toolchains[tid] = (path, text)

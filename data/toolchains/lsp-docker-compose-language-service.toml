@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["docker-compose-langserver"]
 root-markers = ["docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "@microsoft/compose-language-service"

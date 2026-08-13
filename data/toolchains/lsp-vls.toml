@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["v"]
 programs = ["v"]
 root-markers = ["v.mod", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "vlang/vls"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["kcl"]
 programs = ["kcl-language-server"]
 root-markers = [".git"]
+categories = ["compiler", "formatter", "language-server", "linter"]
+
+[distribution]
+registry = "github"
+package = "kcl-lang/kcl"

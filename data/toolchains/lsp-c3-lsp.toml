@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["c3"]
 programs = ["c3lsp"]
 root-markers = ["project.json", "manifest.json", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "pherrymason/c3-lsp"

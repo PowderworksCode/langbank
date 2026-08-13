@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["sql"]
 programs = ["sql-language-server"]
 root-markers = [".sqllsrc.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "sql-language-server"

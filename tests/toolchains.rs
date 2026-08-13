@@ -105,6 +105,26 @@ fn every_toolchain_probe_is_well_formed() {
 }
 
 #[test]
+fn no_two_toolchains_describe_the_same_tool() {
+    // One tool arriving from two sources used to become two entries — mason's
+    // `basedpyright` beside lspconfig's — and which one a sync tool matched
+    // depended on the order the filesystem happened to return files in. That
+    // made a CI check pass locally and fail on a runner over identical data.
+    let mut names = toolchains()
+        .iter()
+        .map(|entry| entry.display_name.to_ascii_lowercase())
+        .collect::<Vec<_>>();
+    names.sort();
+    for pair in names.windows(2) {
+        assert_ne!(
+            pair[0], pair[1],
+            "two toolchains both call themselves {}",
+            pair[0]
+        );
+    }
+}
+
+#[test]
 fn the_languages_a_toolchain_names_are_real() {
     // A typo in data/toolchains would otherwise fail the build, but this names
     // the invariant rather than leaving it to a compile error.
