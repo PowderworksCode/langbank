@@ -1,0 +1,6 @@
+id = "sa-tscancode"
+display-name = "TscanCode"
+kind = "linter"
+languages = ["c", "cpp", "lua"]
+programs = ["tscancode"]
+categories = ["linter"]

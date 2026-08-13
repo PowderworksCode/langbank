@@ -1,0 +1,6 @@
+id = "sa-clayton"
+display-name = "Clayton"
+kind = "linter"
+languages = ["apex"]
+programs = ["clayton"]
+categories = ["linter"]

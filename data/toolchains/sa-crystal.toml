@@ -1,0 +1,6 @@
+id = "sa-crystal"
+display-name = "crystal"
+kind = "linter"
+languages = ["crystal"]
+programs = ["crystal"]
+categories = ["linter"]

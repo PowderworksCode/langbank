@@ -1,0 +1,6 @@
+id = "sa-safeql"
+display-name = "SafeQL"
+kind = "linter"
+languages = ["javascript", "sql", "typescript"]
+programs = ["safeql"]
+categories = ["linter"]

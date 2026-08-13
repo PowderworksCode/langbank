@@ -1,0 +1,6 @@
+id = "sa-haxe-checkstyle"
+display-name = "Haxe Checkstyle"
+kind = "linter"
+languages = ["haxe"]
+programs = ["haxe checkstyle"]
+categories = ["linter"]

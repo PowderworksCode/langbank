@@ -1,0 +1,6 @@
+id = "sa-langlint"
+display-name = "LangLint"
+kind = "linter"
+languages = ["cpp", "go", "java", "javascript", "json", "markdown", "python", "rust", "typescript", "yaml"]
+programs = ["langlint"]
+categories = ["linter"]

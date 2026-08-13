@@ -1,0 +1,6 @@
+id = "sa-owasp-dependency-check"
+display-name = "OWASP Dependency Check"
+kind = "linter"
+languages = ["java"]
+programs = ["owasp dependency check"]
+categories = ["linter"]

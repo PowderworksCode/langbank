@@ -1,0 +1,6 @@
+id = "sa-tencentcodeanalysis"
+display-name = "TencentCodeAnalysis"
+kind = "linter"
+languages = ["c", "cpp", "css", "go", "html", "java", "javascript", "kotlin", "php", "python", "scala", "typescript", "xml"]
+programs = ["tencentcodeanalysis"]
+categories = ["linter"]

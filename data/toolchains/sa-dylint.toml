@@ -1,0 +1,6 @@
+id = "sa-dylint"
+display-name = "dylint"
+kind = "linter"
+languages = ["rust"]
+programs = ["dylint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-mago"
+display-name = "mago"
+kind = "linter"
+languages = ["php"]
+programs = ["mago"]
+categories = ["linter", "formatter"]

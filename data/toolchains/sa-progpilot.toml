@@ -1,0 +1,6 @@
+id = "sa-progpilot"
+display-name = "Progpilot"
+kind = "linter"
+languages = ["php"]
+programs = ["progpilot"]
+categories = ["linter"]

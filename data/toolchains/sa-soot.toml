@@ -1,0 +1,6 @@
+id = "sa-soot"
+display-name = "Soot"
+kind = "linter"
+languages = ["java"]
+programs = ["soot"]
+categories = ["linter"]

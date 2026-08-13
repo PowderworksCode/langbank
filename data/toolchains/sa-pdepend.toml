@@ -1,0 +1,6 @@
+id = "sa-pdepend"
+display-name = "pdepend"
+kind = "linter"
+languages = ["php"]
+programs = ["pdepend"]
+categories = ["linter"]

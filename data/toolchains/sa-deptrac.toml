@@ -1,0 +1,6 @@
+id = "sa-deptrac"
+display-name = "deptrac"
+kind = "linter"
+languages = ["php"]
+programs = ["deptrac"]
+categories = ["linter"]

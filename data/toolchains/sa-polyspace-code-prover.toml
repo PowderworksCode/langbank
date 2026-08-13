@@ -1,0 +1,6 @@
+id = "sa-polyspace-code-prover"
+display-name = "Polyspace Code Prover"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["polyspace code prover"]
+categories = ["linter"]

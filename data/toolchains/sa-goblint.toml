@@ -1,0 +1,6 @@
+id = "sa-goblint"
+display-name = "Goblint"
+kind = "linter"
+languages = ["c"]
+programs = ["goblint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-laser"
+display-name = "laser"
+kind = "linter"
+languages = ["ruby"]
+programs = ["laser"]
+categories = ["linter"]

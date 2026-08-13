@@ -1,0 +1,6 @@
+id = "sa-sh"
+display-name = "sh"
+kind = "linter"
+languages = ["shell"]
+programs = ["sh"]
+categories = ["linter"]

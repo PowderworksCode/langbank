@@ -1,0 +1,6 @@
+id = "sa-steady"
+display-name = "steady"
+kind = "linter"
+languages = ["java"]
+programs = ["steady"]
+categories = ["linter"]

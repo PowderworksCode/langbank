@@ -1,0 +1,6 @@
+id = "sa-bellybutton"
+display-name = "bellybutton"
+kind = "linter"
+languages = ["python"]
+programs = ["bellybutton"]
+categories = ["linter"]

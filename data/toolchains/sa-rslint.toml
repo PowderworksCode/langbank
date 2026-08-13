@@ -1,0 +1,6 @@
+id = "sa-rslint"
+display-name = "RSLint"
+kind = "linter"
+languages = ["javascript"]
+programs = ["rslint"]
+categories = ["linter"]

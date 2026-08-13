@@ -1,0 +1,6 @@
+id = "sa-brakeman"
+display-name = "brakeman"
+kind = "linter"
+languages = ["ruby"]
+programs = ["brakeman"]
+categories = ["linter"]

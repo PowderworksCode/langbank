@@ -1,0 +1,6 @@
+id = "sa-jsprime"
+display-name = "JSPrime"
+kind = "linter"
+languages = ["javascript"]
+programs = ["jsprime"]
+categories = ["linter"]

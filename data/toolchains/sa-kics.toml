@@ -1,0 +1,6 @@
+id = "sa-kics"
+display-name = "kics"
+kind = "linter"
+languages = ["hcl"]
+programs = ["kics"]
+categories = ["linter"]

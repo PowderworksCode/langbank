@@ -1,0 +1,6 @@
+id = "sa-phpmetrics"
+display-name = "PhpMetrics"
+kind = "linter"
+languages = ["php"]
+programs = ["phpmetrics"]
+categories = ["linter"]

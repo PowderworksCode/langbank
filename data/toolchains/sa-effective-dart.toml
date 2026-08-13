@@ -1,0 +1,6 @@
+id = "sa-effective-dart"
+display-name = "effective_dart"
+kind = "linter"
+languages = ["dart"]
+programs = ["effective_dart"]
+categories = ["linter"]

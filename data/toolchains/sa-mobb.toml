@@ -1,0 +1,6 @@
+id = "sa-mobb"
+display-name = "Mobb"
+kind = "formatter"
+languages = ["java", "javascript", "typescript"]
+programs = ["mobb"]
+categories = ["formatter", "linter"]

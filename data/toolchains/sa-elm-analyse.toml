@@ -1,0 +1,6 @@
+id = "sa-elm-analyse"
+display-name = "elm-analyse"
+kind = "linter"
+languages = ["elm"]
+programs = ["elm-analyse"]
+categories = ["linter"]

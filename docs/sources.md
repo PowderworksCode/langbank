@@ -39,7 +39,7 @@ MIT; GitHub reports both as `NOASSERTION` and is wrong to.
 | neovim/nvim-lspconfig | Apache-2.0 | language servers, root markers | **absorbed** |
 | mason-org/mason-registry | Apache-2.0 | tool roles, distribution | **absorbed** |
 | dependabot/dependabot-core | MIT | ecosystem manifests, registries | after toolchains |
-| analysis-tools-dev/static-analysis | MIT | language → analyzers | later |
+| analysis-tools-dev/static-analysis | MIT | linters and formatters per language | **absorbed** |
 | git-pkgs/brief | MIT | language → toolchain, 22 categories | schema reference |
 | codemirror/language-data | MIT, archived | aliases | low value |
 
@@ -116,6 +116,30 @@ where scc records six block-comment forms for its `--[==[` long brackets and
 tokei records one. Neither is wrong and the smaller answer would quietly lose
 the difference.
 
+## Why dependabot went last
+
+The documented order had dependabot before static-analysis. Measuring the two
+reversed it, which is the reason to measure.
+
+static-analysis publishes 755 tools as YAML with a stable schema — name,
+categories, tags, license — and 666 of them were tools langbank did not know.
+It overlaps mason far less than expected: mason indexes what an editor can
+install, this indexes what an analyser community has written.
+
+dependabot has the breadth — thirty-odd ecosystems against langbank's six —
+but its facts are inside Ruby:
+
+```ruby
+def self.required_files_in?(filenames)
+  filenames.include?("Cargo.toml")
+end
+```
+
+That is extractable by regex over method bodies, per ecosystem, across fetchers
+that do not share a shape. It is worth doing for the ecosystems langbank does
+not yet model, and it is the one source where the extraction is a project rather
+than an afternoon.
+
 ## Order
 
 ```
@@ -127,6 +151,8 @@ the difference.
                            formats, measured against installed tools
 3. nvim-lspconfig          done: 266 servers with their root markers
 4. mason-registry          done: 157 tools gained a distribution, 326 are new
-5. dependabot-core         ecosystem manifests, lockfiles, registries
-6. static-analysis         analyzer coverage per language
+5. static-analysis         done: 510 linters and formatters across 117 languages
+6. dependabot-core         last, and measured to be the most expensive: its facts
+                           live inside Ruby method bodies rather than in a
+                           dataset, across ~30 differently shaped file fetchers
 ```

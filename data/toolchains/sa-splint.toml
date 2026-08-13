@@ -1,0 +1,6 @@
+id = "sa-splint"
+display-name = "splint"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["splint"]
+categories = ["linter"]

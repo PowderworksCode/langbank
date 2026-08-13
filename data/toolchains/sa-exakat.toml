@@ -1,0 +1,6 @@
+id = "sa-exakat"
+display-name = "exakat"
+kind = "linter"
+languages = ["php"]
+programs = ["exakat"]
+categories = ["linter"]

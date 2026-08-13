@@ -1,0 +1,6 @@
+id = "sa-gotype"
+display-name = "gotype"
+kind = "linter"
+languages = ["go"]
+programs = ["gotype"]
+categories = ["linter"]

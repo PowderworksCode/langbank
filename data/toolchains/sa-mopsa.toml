@@ -1,0 +1,6 @@
+id = "sa-mopsa"
+display-name = "MOPSA"
+kind = "linter"
+languages = ["c", "python"]
+programs = ["mopsa"]
+categories = ["linter"]

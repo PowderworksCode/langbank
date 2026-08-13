@@ -1,0 +1,6 @@
+id = "sa-axe-core"
+display-name = "axe-core"
+kind = "linter"
+languages = ["html"]
+programs = ["axe-core"]
+categories = ["linter"]

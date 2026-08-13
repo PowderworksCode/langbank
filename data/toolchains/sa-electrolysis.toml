@@ -1,0 +1,6 @@
+id = "sa-electrolysis"
+display-name = "electrolysis"
+kind = "linter"
+languages = ["rust"]
+programs = ["electrolysis"]
+categories = ["linter"]

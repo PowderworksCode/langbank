@@ -1,0 +1,6 @@
+id = "sa-ameba"
+display-name = "ameba"
+kind = "linter"
+languages = ["crystal"]
+programs = ["ameba"]
+categories = ["linter"]

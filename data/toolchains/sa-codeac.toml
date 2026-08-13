@@ -1,0 +1,6 @@
+id = "sa-codeac"
+display-name = "Codeac"
+kind = "linter"
+languages = ["go", "java", "javascript", "php", "python", "ruby", "typescript"]
+programs = ["codeac"]
+categories = ["linter"]

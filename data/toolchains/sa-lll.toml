@@ -1,0 +1,6 @@
+id = "sa-lll"
+display-name = "lll"
+kind = "linter"
+languages = ["go"]
+programs = ["lll"]
+categories = ["linter"]

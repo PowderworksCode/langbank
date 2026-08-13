@@ -1,0 +1,6 @@
+id = "sa-py-find-injection"
+display-name = "py-find-injection"
+kind = "linter"
+languages = ["python"]
+programs = ["py-find-injection"]
+categories = ["linter"]

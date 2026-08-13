@@ -1,0 +1,6 @@
+id = "sa-pyra"
+display-name = "Pyra"
+kind = "linter"
+languages = ["python"]
+programs = ["pyra"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-phpqa-jmolivas"
+display-name = "phpqa - jmolivas"
+kind = "linter"
+languages = ["php"]
+programs = ["phpqa - jmolivas"]
+categories = ["linter"]

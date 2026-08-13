@@ -1,0 +1,6 @@
+id = "sa-perltidy"
+display-name = "perltidy"
+kind = "formatter"
+languages = ["perl"]
+programs = ["perltidy"]
+categories = ["formatter"]

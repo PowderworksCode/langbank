@@ -1,0 +1,6 @@
+id = "sa-codesee"
+display-name = "CodeSee"
+kind = "linter"
+languages = ["go", "java", "javascript", "python", "rust", "typescript"]
+programs = ["codesee"]
+categories = ["linter"]

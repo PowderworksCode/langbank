@@ -1,0 +1,6 @@
+id = "sa-diffblue"
+display-name = "Diffblue"
+kind = "linter"
+languages = ["java"]
+programs = ["diffblue"]
+categories = ["linter"]

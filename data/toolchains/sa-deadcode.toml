@@ -1,0 +1,6 @@
+id = "sa-deadcode"
+display-name = "deadcode"
+kind = "linter"
+languages = ["go"]
+programs = ["deadcode"]
+categories = ["linter"]

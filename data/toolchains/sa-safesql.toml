@@ -1,0 +1,6 @@
+id = "sa-safesql"
+display-name = "safesql"
+kind = "linter"
+languages = ["go"]
+programs = ["safesql"]
+categories = ["linter"]

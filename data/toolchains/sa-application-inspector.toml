@@ -1,0 +1,6 @@
+id = "sa-application-inspector"
+display-name = "Application Inspector"
+kind = "linter"
+languages = ["c", "cpp", "html", "java", "javascript", "php", "sql", "swift"]
+programs = ["application inspector"]
+categories = ["linter"]

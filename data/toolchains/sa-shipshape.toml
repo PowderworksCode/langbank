@@ -1,0 +1,6 @@
+id = "sa-shipshape"
+display-name = "shipshape"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["shipshape"]
+categories = ["linter"]

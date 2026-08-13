@@ -1,0 +1,6 @@
+id = "sa-php-codesniffer"
+display-name = "PHP_CodeSniffer"
+kind = "linter"
+languages = ["php"]
+programs = ["php_codesniffer"]
+categories = ["linter"]

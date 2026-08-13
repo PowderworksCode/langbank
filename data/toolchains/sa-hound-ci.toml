@@ -1,0 +1,6 @@
+id = "sa-hound-ci"
+display-name = "Hound CI"
+kind = "linter"
+languages = ["coffeescript", "css", "go", "javascript", "ruby", "swift"]
+programs = ["hound ci"]
+categories = ["linter"]

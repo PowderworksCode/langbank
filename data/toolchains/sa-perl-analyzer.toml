@@ -1,0 +1,6 @@
+id = "sa-perl-analyzer"
+display-name = "Perl::Analyzer"
+kind = "linter"
+languages = ["perl"]
+programs = ["perl::analyzer"]
+categories = ["linter"]

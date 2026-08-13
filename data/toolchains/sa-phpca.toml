@@ -1,0 +1,6 @@
+id = "sa-phpca"
+display-name = "phpca"
+kind = "linter"
+languages = ["php"]
+programs = ["phpca"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-mate"
+display-name = "MATE"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["mate"]
+categories = ["linter"]

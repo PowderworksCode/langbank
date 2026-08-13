@@ -1,0 +1,6 @@
+id = "sa-dbcritic"
+display-name = "dbcritic"
+kind = "linter"
+languages = ["sql"]
+programs = ["dbcritic"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-verible-linter-action"
+display-name = "verible-linter-action"
+kind = "linter"
+languages = ["verilog"]
+programs = ["verible-linter-action"]
+categories = ["linter"]

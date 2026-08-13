@@ -1,0 +1,6 @@
+id = "sa-phpmnd"
+display-name = "phpmnd"
+kind = "linter"
+languages = ["php"]
+programs = ["phpmnd"]
+categories = ["linter"]

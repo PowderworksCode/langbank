@@ -1,0 +1,6 @@
+id = "sa-csscomb"
+display-name = "CSScomb"
+kind = "formatter"
+languages = ["css"]
+programs = ["csscomb"]
+categories = ["formatter"]

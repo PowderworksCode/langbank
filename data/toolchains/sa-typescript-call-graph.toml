@@ -1,0 +1,6 @@
+id = "sa-typescript-call-graph"
+display-name = "TypeScript Call Graph"
+kind = "linter"
+languages = ["typescript"]
+programs = ["typescript call graph"]
+categories = ["linter"]

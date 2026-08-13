@@ -1,0 +1,6 @@
+id = "sa-rust-audit"
+display-name = "rust-audit"
+kind = "linter"
+languages = ["rust"]
+programs = ["rust-audit"]
+categories = ["linter"]

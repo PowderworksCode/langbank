@@ -1,0 +1,6 @@
+id = "sa-oxc"
+display-name = "oxc"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["oxc"]
+categories = ["linter", "formatter"]

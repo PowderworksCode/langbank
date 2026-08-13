@@ -1,0 +1,6 @@
+id = "sa-pyroma"
+display-name = "pyroma"
+kind = "linter"
+languages = ["python"]
+programs = ["pyroma"]
+categories = ["linter"]

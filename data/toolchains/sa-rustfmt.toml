@@ -1,0 +1,6 @@
+id = "sa-rustfmt"
+display-name = "rustfmt"
+kind = "formatter"
+languages = ["rust"]
+programs = ["rustfmt"]
+categories = ["formatter"]

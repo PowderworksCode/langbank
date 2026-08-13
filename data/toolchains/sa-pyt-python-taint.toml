@@ -1,0 +1,6 @@
+id = "sa-pyt-python-taint"
+display-name = "PyT - Python Taint"
+kind = "linter"
+languages = ["python"]
+programs = ["pyt - python taint"]
+categories = ["linter"]

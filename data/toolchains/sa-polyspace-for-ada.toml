@@ -1,0 +1,6 @@
+id = "sa-polyspace-for-ada"
+display-name = "Polyspace for Ada"
+kind = "linter"
+languages = ["ada"]
+programs = ["polyspace for ada"]
+categories = ["linter"]

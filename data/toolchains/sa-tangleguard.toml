@@ -1,0 +1,6 @@
+id = "sa-tangleguard"
+display-name = "TangleGuard"
+kind = "linter"
+languages = ["rust"]
+programs = ["tangleguard"]
+categories = ["linter"]

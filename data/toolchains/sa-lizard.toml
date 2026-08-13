@@ -1,0 +1,6 @@
+id = "sa-lizard"
+display-name = "lizard"
+kind = "linter"
+languages = ["c", "cpp", "go", "java", "javascript", "lua", "php", "python", "ruby", "rust", "scala", "swift", "typescript"]
+programs = ["lizard"]
+categories = ["linter"]

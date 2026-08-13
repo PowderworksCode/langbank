@@ -1,0 +1,6 @@
+id = "sa-r-language-server"
+display-name = "R Language Server"
+kind = "linter"
+languages = ["r"]
+programs = ["r language server"]
+categories = ["linter"]

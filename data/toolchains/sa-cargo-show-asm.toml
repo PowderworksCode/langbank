@@ -1,0 +1,6 @@
+id = "sa-cargo-show-asm"
+display-name = "cargo-show-asm"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-show-asm"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-neurolint-cli"
+display-name = "Neurolint-CLI"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["neurolint-cli"]
+categories = ["linter"]

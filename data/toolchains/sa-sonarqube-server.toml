@@ -1,0 +1,6 @@
+id = "sa-sonarqube-server"
+display-name = "SonarQube Server"
+kind = "linter"
+languages = ["abap", "apex", "c", "cobol", "cpp", "css", "dockerfile", "go", "hcl", "html", "java", "javascript", "kotlin", "php", "plsql", "python", "ruby", "scala", "swift", "tsql", "typescript", "xml"]
+programs = ["sonarqube server"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-cohesion"
+display-name = "cohesion"
+kind = "linter"
+languages = ["python"]
+programs = ["cohesion"]
+categories = ["linter"]

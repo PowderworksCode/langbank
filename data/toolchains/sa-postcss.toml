@@ -1,0 +1,6 @@
+id = "sa-postcss"
+display-name = "PostCSS"
+kind = "linter"
+languages = ["css"]
+programs = ["postcss"]
+categories = ["linter"]

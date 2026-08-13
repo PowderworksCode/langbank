@@ -1,0 +1,6 @@
+id = "sa-openrewrite"
+display-name = "OpenRewrite"
+kind = "linter"
+languages = ["groovy", "java", "json", "kotlin", "python", "sql", "xml", "yaml"]
+programs = ["openrewrite"]
+categories = ["linter", "formatter"]

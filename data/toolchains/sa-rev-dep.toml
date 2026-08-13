@@ -1,0 +1,6 @@
+id = "sa-rev-dep"
+display-name = "Rev-dep"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["rev-dep"]
+categories = ["linter"]

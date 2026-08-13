@@ -1,0 +1,6 @@
+id = "sa-phpdocumentor"
+display-name = "phpDocumentor"
+kind = "linter"
+languages = ["php"]
+programs = ["phpdocumentor"]
+categories = ["linter"]

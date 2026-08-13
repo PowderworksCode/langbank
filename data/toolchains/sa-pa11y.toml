@@ -1,0 +1,6 @@
+id = "sa-pa11y"
+display-name = "Pa11y"
+kind = "linter"
+languages = ["html"]
+programs = ["pa11y"]
+categories = ["linter"]

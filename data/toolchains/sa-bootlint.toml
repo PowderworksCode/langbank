@@ -1,0 +1,6 @@
+id = "sa-bootlint"
+display-name = "Bootlint"
+kind = "linter"
+languages = ["html"]
+programs = ["bootlint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-rector"
+display-name = "rector"
+kind = "linter"
+languages = ["php"]
+programs = ["rector"]
+categories = ["linter"]

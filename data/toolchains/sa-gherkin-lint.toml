@@ -1,0 +1,6 @@
+id = "sa-gherkin-lint"
+display-name = "gherkin-lint"
+kind = "linter"
+languages = ["gherkin"]
+programs = ["gherkin-lint"]
+categories = ["linter"]

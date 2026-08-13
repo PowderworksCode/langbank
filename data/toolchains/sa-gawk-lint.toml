@@ -1,0 +1,6 @@
+id = "sa-gawk-lint"
+display-name = "gawk --lint"
+kind = "linter"
+languages = ["awk"]
+programs = ["gawk --lint"]
+categories = ["linter"]

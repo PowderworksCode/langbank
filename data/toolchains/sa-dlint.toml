@@ -1,0 +1,6 @@
+id = "sa-dlint"
+display-name = "Dlint"
+kind = "linter"
+languages = ["python"]
+programs = ["dlint"]
+categories = ["linter"]

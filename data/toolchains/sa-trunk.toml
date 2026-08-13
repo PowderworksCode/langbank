@@ -1,0 +1,6 @@
+id = "sa-trunk"
+display-name = "trunk"
+kind = "linter"
+languages = ["c", "cpp", "dockerfile", "go", "hcl", "java", "javascript", "markdown", "protocol-buffer", "python", "ruby", "rust", "typescript"]
+programs = ["trunk"]
+categories = ["linter", "formatter"]

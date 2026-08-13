@@ -1,0 +1,6 @@
+id = "sa-flay"
+display-name = "flay"
+kind = "linter"
+languages = ["ruby"]
+programs = ["flay"]
+categories = ["linter"]

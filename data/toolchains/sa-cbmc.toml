@@ -1,0 +1,6 @@
+id = "sa-cbmc"
+display-name = "CBMC"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["cbmc"]
+categories = ["linter"]

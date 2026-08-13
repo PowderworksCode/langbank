@@ -1,0 +1,6 @@
+id = "sa-tslint"
+display-name = "tslint"
+kind = "linter"
+languages = ["typescript"]
+programs = ["tslint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-rails-best-practices"
+display-name = "rails_best_practices"
+kind = "linter"
+languages = ["ruby"]
+programs = ["rails_best_practices"]
+categories = ["linter"]

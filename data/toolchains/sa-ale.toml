@@ -1,0 +1,6 @@
+id = "sa-ale"
+display-name = "ale"
+kind = "linter"
+languages = ["javascript", "python"]
+programs = ["ale"]
+categories = ["linter"]

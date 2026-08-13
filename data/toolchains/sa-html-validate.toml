@@ -1,0 +1,6 @@
+id = "sa-html-validate"
+display-name = "HTML-Validate"
+kind = "linter"
+languages = ["html", "vue"]
+programs = ["html-validate"]
+categories = ["linter"]

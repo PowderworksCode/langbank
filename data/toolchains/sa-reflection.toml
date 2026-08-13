@@ -1,0 +1,6 @@
+id = "sa-reflection"
+display-name = "Reflection"
+kind = "linter"
+languages = ["php"]
+programs = ["reflection"]
+categories = ["linter"]

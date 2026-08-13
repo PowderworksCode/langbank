@@ -1,0 +1,6 @@
+id = "sa-flawfinder"
+display-name = "flawfinder"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["flawfinder"]
+categories = ["linter"]

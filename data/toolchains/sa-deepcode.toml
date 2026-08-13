@@ -1,0 +1,6 @@
+id = "sa-deepcode"
+display-name = "DeepCode"
+kind = "linter"
+languages = ["c", "cpp", "java", "javascript", "python", "typescript"]
+programs = ["deepcode"]
+categories = ["linter"]

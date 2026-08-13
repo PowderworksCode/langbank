@@ -1,0 +1,6 @@
+id = "sa-nagelfar"
+display-name = "Nagelfar"
+kind = "linter"
+languages = ["tcl"]
+programs = ["nagelfar"]
+categories = ["linter"]

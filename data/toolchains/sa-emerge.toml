@@ -1,0 +1,6 @@
+id = "sa-emerge"
+display-name = "emerge"
+kind = "linter"
+languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "swift", "typescript"]
+programs = ["emerge"]
+categories = ["linter"]

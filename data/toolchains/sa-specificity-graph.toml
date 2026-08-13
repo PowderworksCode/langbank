@@ -1,0 +1,6 @@
+id = "sa-specificity-graph"
+display-name = "Specificity Graph"
+kind = "linter"
+languages = ["css"]
+programs = ["specificity graph"]
+categories = ["linter"]

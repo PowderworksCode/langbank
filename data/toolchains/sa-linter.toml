@@ -1,0 +1,6 @@
+id = "sa-linter"
+display-name = "linter"
+kind = "linter"
+languages = ["scala"]
+programs = ["linter"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-holistic"
+display-name = "holistic"
+kind = "linter"
+languages = ["sql"]
+programs = ["holistic"]
+categories = ["linter"]

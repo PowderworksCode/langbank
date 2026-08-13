@@ -1,0 +1,6 @@
+id = "sa-phpdoc-to-typehint"
+display-name = "phpdoc-to-typehint"
+kind = "linter"
+languages = ["php"]
+programs = ["phpdoc-to-typehint"]
+categories = ["linter"]

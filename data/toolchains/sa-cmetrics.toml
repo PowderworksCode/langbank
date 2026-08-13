@@ -1,0 +1,6 @@
+id = "sa-cmetrics"
+display-name = "CMetrics"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["cmetrics"]
+categories = ["linter"]

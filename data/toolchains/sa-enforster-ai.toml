@@ -1,0 +1,6 @@
+id = "sa-enforster-ai"
+display-name = "Enforster AI"
+kind = "linter"
+languages = ["c", "cpp", "go", "java", "javascript", "php", "python", "typescript"]
+programs = ["enforster ai"]
+categories = ["linter"]

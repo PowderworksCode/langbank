@@ -1,0 +1,6 @@
+id = "sa-violations-lib"
+display-name = "Violations Lib"
+kind = "linter"
+languages = ["java"]
+programs = ["violations lib"]
+categories = ["linter"]

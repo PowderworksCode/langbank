@@ -1,0 +1,6 @@
+id = "sa-security-code-scan"
+display-name = "Security Code Scan"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["security code scan"]
+categories = ["linter"]

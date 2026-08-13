@@ -1,0 +1,6 @@
+id = "sa-coderush"
+display-name = "CodeRush"
+kind = "linter"
+languages = ["c-sharp"]
+programs = ["coderush"]
+categories = ["linter"]

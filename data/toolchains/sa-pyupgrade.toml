@@ -1,0 +1,6 @@
+id = "sa-pyupgrade"
+display-name = "pyupgrade"
+kind = "linter"
+languages = ["python"]
+programs = ["pyupgrade"]
+categories = ["linter"]

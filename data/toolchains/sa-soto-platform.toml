@@ -1,0 +1,6 @@
+id = "sa-soto-platform"
+display-name = "Soto Platform"
+kind = "linter"
+languages = ["abap", "c", "cpp", "java", "php", "typescript"]
+programs = ["soto platform"]
+categories = ["linter"]

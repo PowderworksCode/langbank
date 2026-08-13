@@ -1,0 +1,6 @@
+id = "sa-go-tool-vet-shadow"
+display-name = "go tool vet --shadow"
+kind = "linter"
+languages = ["go"]
+programs = ["go tool vet --shadow"]
+categories = ["linter"]

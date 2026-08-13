@@ -1,0 +1,6 @@
+id = "sa-putout"
+display-name = "Putout"
+kind = "linter"
+languages = ["css", "javascript", "json", "markdown", "typescript", "yaml"]
+programs = ["putout"]
+categories = ["linter"]

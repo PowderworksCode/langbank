@@ -1,0 +1,6 @@
+id = "sa-i-code-cnes-for-fortran"
+display-name = "i-Code CNES for Fortran"
+kind = "linter"
+languages = ["fortran"]
+programs = ["i-code cnes for fortran"]
+categories = ["linter"]

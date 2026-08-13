@@ -1,0 +1,6 @@
+id = "sa-railroader"
+display-name = "Railroader"
+kind = "linter"
+languages = ["ruby"]
+programs = ["railroader"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-churn-php"
+display-name = "churn-php"
+kind = "linter"
+languages = ["php"]
+programs = ["churn-php"]
+categories = ["linter"]

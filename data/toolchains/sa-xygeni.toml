@@ -1,0 +1,6 @@
+id = "sa-xygeni"
+display-name = "Xygeni"
+kind = "linter"
+languages = ["dockerfile", "go", "hcl", "java", "javascript", "python"]
+programs = ["xygeni"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-dart-code-metrics"
+display-name = "Dart Code Metrics"
+kind = "linter"
+languages = ["dart"]
+programs = ["dart code metrics"]
+categories = ["linter"]

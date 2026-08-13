@@ -1,0 +1,6 @@
+id = "sa-goroutine-inspect"
+display-name = "goroutine-inspect"
+kind = "linter"
+languages = ["go"]
+programs = ["goroutine-inspect"]
+categories = ["linter"]

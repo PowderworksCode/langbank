@@ -1,0 +1,6 @@
+id = "sa-zarn"
+display-name = "zarn"
+kind = "linter"
+languages = ["perl"]
+programs = ["zarn"]
+categories = ["linter"]

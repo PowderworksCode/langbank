@@ -1,0 +1,6 @@
+id = "sa-misspell"
+display-name = "misspell"
+kind = "linter"
+languages = ["go"]
+programs = ["misspell"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-cscout"
+display-name = "CScout"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["cscout"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-ast-grep"
+display-name = "ast-grep"
+kind = "linter"
+languages = ["c", "go", "java", "javascript", "json", "kotlin", "lua", "python", "ruby", "rust", "typescript", "yaml"]
+programs = ["ast-grep"]
+categories = ["linter"]

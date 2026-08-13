@@ -1,0 +1,6 @@
+id = "sa-flen"
+display-name = "flen"
+kind = "linter"
+languages = ["go"]
+programs = ["flen"]
+categories = ["linter"]

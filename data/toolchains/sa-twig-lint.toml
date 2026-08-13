@@ -1,0 +1,6 @@
+id = "sa-twig-lint"
+display-name = "twig-lint"
+kind = "linter"
+languages = ["php"]
+programs = ["twig-lint"]
+categories = ["linter"]

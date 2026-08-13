@@ -1,0 +1,6 @@
+id = "sa-clippy"
+display-name = "clippy"
+kind = "linter"
+languages = ["rust"]
+programs = ["clippy"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-goodcheck"
+display-name = "Goodcheck"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["goodcheck"]
+categories = ["linter"]

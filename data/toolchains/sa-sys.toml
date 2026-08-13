@@ -1,0 +1,6 @@
+id = "sa-sys"
+display-name = "Sys"
+kind = "linter"
+languages = ["ocaml"]
+programs = ["sys"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-mlint"
+display-name = "mlint"
+kind = "linter"
+languages = ["matlab"]
+programs = ["mlint"]
+categories = ["linter"]

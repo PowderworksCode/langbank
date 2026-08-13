@@ -1,0 +1,6 @@
+id = "sa-phpqa-jakzal"
+display-name = "phpqa - jakzal"
+kind = "linter"
+languages = ["php"]
+programs = ["phpqa - jakzal"]
+categories = ["linter"]

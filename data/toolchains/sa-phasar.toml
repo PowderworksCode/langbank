@@ -1,0 +1,6 @@
+id = "sa-phasar"
+display-name = "Phasar"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["phasar"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-fukuzatsu"
+display-name = "Fukuzatsu"
+kind = "linter"
+languages = ["ruby"]
+programs = ["fukuzatsu"]
+categories = ["linter"]

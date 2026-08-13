@@ -1,0 +1,6 @@
+id = "sa-undebt"
+display-name = "Undebt"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["undebt"]
+categories = ["linter"]

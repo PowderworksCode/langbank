@@ -1,0 +1,6 @@
+id = "sa-keploy"
+display-name = "keploy"
+kind = "linter"
+languages = ["go", "java", "javascript", "python", "rust"]
+programs = ["keploy"]
+categories = ["linter"]

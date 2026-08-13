@@ -1,0 +1,6 @@
+id = "sa-deal"
+display-name = "deal"
+kind = "linter"
+languages = ["python"]
+programs = ["deal"]
+categories = ["linter"]

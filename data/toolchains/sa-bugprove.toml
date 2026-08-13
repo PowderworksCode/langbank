@@ -1,0 +1,6 @@
+id = "sa-bugprove"
+display-name = "BugProve"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["bugprove"]
+categories = ["linter"]

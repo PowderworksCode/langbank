@@ -1,0 +1,6 @@
+id = "sa-cargo-unused-features"
+display-name = "cargo-unused-features"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-unused-features"]
+categories = ["linter"]

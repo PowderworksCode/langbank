@@ -1,0 +1,6 @@
+id = "sa-c2rust"
+display-name = "C2Rust"
+kind = "linter"
+languages = ["rust"]
+programs = ["c2rust"]
+categories = ["linter"]

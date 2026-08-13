@@ -1,0 +1,6 @@
+id = "sa-sandimeter"
+display-name = "SandiMeter"
+kind = "linter"
+languages = ["ruby"]
+programs = ["sandimeter"]
+categories = ["linter"]

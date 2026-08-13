@@ -1,0 +1,6 @@
+id = "sa-stan"
+display-name = "Stan"
+kind = "linter"
+languages = ["haskell"]
+programs = ["stan"]
+categories = ["linter"]

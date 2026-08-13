@@ -1,0 +1,6 @@
+id = "sa-refactorfirst"
+display-name = "RefactorFirst"
+kind = "linter"
+languages = ["java"]
+programs = ["refactorfirst"]
+categories = ["linter"]

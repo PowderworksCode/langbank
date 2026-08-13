@@ -1,0 +1,6 @@
+id = "sa-gokart"
+display-name = "gokart"
+kind = "linter"
+languages = ["go"]
+programs = ["gokart"]
+categories = ["linter"]

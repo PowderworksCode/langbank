@@ -1,0 +1,6 @@
+id = "sa-jet"
+display-name = "JET"
+kind = "linter"
+languages = ["julia"]
+programs = ["jet"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-stc"
+display-name = "stc"
+kind = "linter"
+languages = ["typescript"]
+programs = ["stc"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-gulp-bootlint"
+display-name = "gulp-bootlint"
+kind = "linter"
+languages = ["html"]
+programs = ["gulp-bootlint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-primitive-erlang-security-tool-pest"
+display-name = "Primitive Erlang Security Tool (PEST)"
+kind = "linter"
+languages = ["erlang"]
+programs = ["primitive erlang security tool (pest)"]
+categories = ["linter"]

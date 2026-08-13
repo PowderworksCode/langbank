@@ -1,0 +1,6 @@
+id = "sa-archunit"
+display-name = "ArchUnit"
+kind = "linter"
+languages = ["java", "kotlin"]
+programs = ["archunit"]
+categories = ["linter"]

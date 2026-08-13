@@ -1,0 +1,6 @@
+id = "sa-fasterer"
+display-name = "Fasterer"
+kind = "linter"
+languages = ["ruby"]
+programs = ["fasterer"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-pronto"
+display-name = "Pronto"
+kind = "linter"
+languages = ["c", "cpp", "elixir", "java", "javascript", "php", "ruby"]
+programs = ["pronto"]
+categories = ["linter"]

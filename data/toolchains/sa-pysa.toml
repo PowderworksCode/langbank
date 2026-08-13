@@ -1,0 +1,6 @@
+id = "sa-pysa"
+display-name = "Pysa"
+kind = "linter"
+languages = ["python"]
+programs = ["pysa"]
+categories = ["linter"]

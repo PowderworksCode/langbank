@@ -1,0 +1,6 @@
+id = "sa-html-inspector"
+display-name = "HTML Inspector"
+kind = "linter"
+languages = ["html"]
+programs = ["html inspector"]
+categories = ["linter"]

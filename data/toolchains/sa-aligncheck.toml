@@ -1,0 +1,6 @@
+id = "sa-aligncheck"
+display-name = "aligncheck"
+kind = "linter"
+languages = ["go"]
+programs = ["aligncheck"]
+categories = ["linter"]

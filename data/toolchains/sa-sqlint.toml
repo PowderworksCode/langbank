@@ -1,0 +1,6 @@
+id = "sa-sqlint"
+display-name = "sqlint"
+kind = "linter"
+languages = ["sql"]
+programs = ["sqlint"]
+categories = ["linter"]

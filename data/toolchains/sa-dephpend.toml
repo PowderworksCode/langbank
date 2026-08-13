@@ -1,0 +1,6 @@
+id = "sa-dephpend"
+display-name = "dephpend"
+kind = "linter"
+languages = ["php"]
+programs = ["dephpend"]
+categories = ["linter"]

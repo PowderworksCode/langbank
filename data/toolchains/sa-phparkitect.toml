@@ -1,0 +1,6 @@
+id = "sa-phparkitect"
+display-name = "PHPArkitect"
+kind = "linter"
+languages = ["php"]
+programs = ["phparkitect"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-elm-review"
+display-name = "elm-review"
+kind = "linter"
+languages = ["elm"]
+programs = ["elm-review"]
+categories = ["linter"]

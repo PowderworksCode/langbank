@@ -1,0 +1,6 @@
+id = "sa-closure-compiler"
+display-name = "Closure Compiler"
+kind = "linter"
+languages = ["javascript"]
+programs = ["closure compiler"]
+categories = ["linter"]

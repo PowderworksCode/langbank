@@ -1,0 +1,6 @@
+id = "sa-abapopenchecks"
+display-name = "abapOpenChecks"
+kind = "linter"
+languages = ["abap"]
+programs = ["abapopenchecks"]
+categories = ["linter"]

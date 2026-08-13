@@ -1,0 +1,6 @@
+id = "sa-wemake-python-styleguide"
+display-name = "wemake-python-styleguide"
+kind = "linter"
+languages = ["python"]
+programs = ["wemake-python-styleguide"]
+categories = ["linter"]

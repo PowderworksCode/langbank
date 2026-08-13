@@ -1,0 +1,6 @@
+id = "sa-kmdr"
+display-name = "kmdr"
+kind = "linter"
+languages = ["shell"]
+programs = ["kmdr"]
+categories = ["linter"]

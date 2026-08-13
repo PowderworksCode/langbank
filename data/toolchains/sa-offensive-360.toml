@@ -1,0 +1,6 @@
+id = "sa-offensive-360"
+display-name = "Offensive 360"
+kind = "linter"
+languages = ["c-sharp", "html", "java", "javascript", "php", "typescript", "vbscript", "xml"]
+programs = ["offensive 360"]
+categories = ["linter"]

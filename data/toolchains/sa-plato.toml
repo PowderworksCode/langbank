@@ -1,0 +1,6 @@
+id = "sa-plato"
+display-name = "plato"
+kind = "linter"
+languages = ["javascript"]
+programs = ["plato"]
+categories = ["linter"]

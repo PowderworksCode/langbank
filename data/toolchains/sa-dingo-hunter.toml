@@ -1,0 +1,6 @@
+id = "sa-dingo-hunter"
+display-name = "dingo-hunter"
+kind = "linter"
+languages = ["go"]
+programs = ["dingo-hunter"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-zod"
+display-name = "zod"
+kind = "linter"
+languages = ["typescript"]
+programs = ["zod"]
+categories = ["linter"]

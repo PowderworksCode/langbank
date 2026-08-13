@@ -1,0 +1,6 @@
+id = "sa-designpatterndetector"
+display-name = "DesignPatternDetector"
+kind = "linter"
+languages = ["php"]
+programs = ["designpatterndetector"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-elvis"
+display-name = "elvis"
+kind = "linter"
+languages = ["erlang"]
+programs = ["elvis"]
+categories = ["linter"]

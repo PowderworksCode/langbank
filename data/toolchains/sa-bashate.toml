@@ -1,0 +1,6 @@
+id = "sa-bashate"
+display-name = "bashate"
+kind = "linter"
+languages = ["shell"]
+programs = ["bashate"]
+categories = ["linter"]

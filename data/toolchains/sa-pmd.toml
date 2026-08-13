@@ -1,0 +1,6 @@
+id = "sa-pmd"
+display-name = "PMD"
+kind = "linter"
+languages = ["apex", "java", "javascript", "plsql", "scala", "xml"]
+programs = ["pmd"]
+categories = ["linter"]

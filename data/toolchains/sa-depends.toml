@@ -1,0 +1,6 @@
+id = "sa-depends"
+display-name = "Depends"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["depends"]
+categories = ["linter"]

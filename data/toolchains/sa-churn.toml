@@ -1,0 +1,6 @@
+id = "sa-churn"
+display-name = "Churn"
+kind = "linter"
+languages = ["ruby"]
+programs = ["churn"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-infer"
+display-name = "Infer"
+kind = "linter"
+languages = ["c", "cpp", "java"]
+programs = ["infer"]
+categories = ["linter"]

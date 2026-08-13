@@ -1,0 +1,6 @@
+id = "sa-php-semantic-versioning-checker"
+display-name = "PHP Semantic Versioning Checker"
+kind = "linter"
+languages = ["php"]
+programs = ["php semantic versioning checker"]
+categories = ["linter"]

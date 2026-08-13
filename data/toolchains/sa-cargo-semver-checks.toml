@@ -1,0 +1,6 @@
+id = "sa-cargo-semver-checks"
+display-name = "cargo-semver-checks"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-semver-checks"]
+categories = ["linter"]

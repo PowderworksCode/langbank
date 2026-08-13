@@ -1,0 +1,6 @@
+id = "sa-jlisa"
+display-name = "JLiSA"
+kind = "linter"
+languages = ["java"]
+programs = ["jlisa"]
+categories = ["linter"]

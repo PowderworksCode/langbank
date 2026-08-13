@@ -4,3 +4,4 @@ kind = "language-server"
 languages = ["javascript"]
 programs = ["flow"]
 root-markers = [".flowconfig"]
+categories = ["linter"]

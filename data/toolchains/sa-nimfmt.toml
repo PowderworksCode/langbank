@@ -1,0 +1,6 @@
+id = "sa-nimfmt"
+display-name = "nimfmt"
+kind = "linter"
+languages = ["nim"]
+programs = ["nimfmt"]
+categories = ["linter"]

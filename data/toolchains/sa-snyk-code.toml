@@ -1,0 +1,6 @@
+id = "sa-snyk-code"
+display-name = "Snyk Code"
+kind = "linter"
+languages = ["go", "java", "javascript", "php", "python", "ruby", "typescript"]
+programs = ["snyk code"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-coffeelint"
+display-name = "coffeelint"
+kind = "linter"
+languages = ["coffeescript"]
+programs = ["coffeelint"]
+categories = ["linter"]

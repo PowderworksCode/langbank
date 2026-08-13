@@ -1,0 +1,6 @@
+id = "sa-jarchitect"
+display-name = "JArchitect"
+kind = "linter"
+languages = ["java"]
+programs = ["jarchitect"]
+categories = ["linter"]

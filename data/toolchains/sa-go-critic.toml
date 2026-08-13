@@ -1,0 +1,6 @@
+id = "sa-go-critic"
+display-name = "go-critic"
+kind = "linter"
+languages = ["go"]
+programs = ["go-critic"]
+categories = ["linter"]

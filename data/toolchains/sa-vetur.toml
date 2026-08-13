@@ -1,0 +1,6 @@
+id = "sa-vetur"
+display-name = "Vetur"
+kind = "linter"
+languages = ["vue"]
+programs = ["vetur"]
+categories = ["linter", "formatter"]

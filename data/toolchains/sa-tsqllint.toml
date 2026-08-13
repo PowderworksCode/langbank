@@ -1,0 +1,6 @@
+id = "sa-tsqllint"
+display-name = "tsqllint"
+kind = "linter"
+languages = ["sql"]
+programs = ["tsqllint"]
+categories = ["linter"]

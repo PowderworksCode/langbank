@@ -1,0 +1,6 @@
+id = "sa-fb-contrib"
+display-name = "fb-contrib"
+kind = "linter"
+languages = ["java"]
+programs = ["fb-contrib"]
+categories = ["linter"]

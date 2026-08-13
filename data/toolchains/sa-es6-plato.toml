@@ -1,0 +1,6 @@
+id = "sa-es6-plato"
+display-name = "es6-plato"
+kind = "linter"
+languages = ["javascript"]
+programs = ["es6-plato"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-codacy"
+display-name = "Codacy"
+kind = "linter"
+languages = ["apex", "coffeescript", "cpp", "crystal", "css", "elixir", "go", "groovy", "java", "javascript", "json", "kotlin", "markdown", "php", "plsql", "python", "ruby", "scala", "shell", "swift", "tsql", "typescript", "vbscript", "xml"]
+programs = ["codacy"]
+categories = ["linter"]

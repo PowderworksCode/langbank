@@ -1,0 +1,6 @@
+id = "sa-php-speller"
+display-name = "php-speller"
+kind = "linter"
+languages = ["php"]
+programs = ["php-speller"]
+categories = ["linter"]

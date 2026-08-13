@@ -1,0 +1,6 @@
+id = "sa-sqlcheck"
+display-name = "sqlcheck"
+kind = "linter"
+languages = ["sql"]
+programs = ["sqlcheck"]
+categories = ["linter"]

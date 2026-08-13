@@ -1,0 +1,6 @@
+id = "sa-databaseconsistency"
+display-name = "DatabaseConsistency"
+kind = "linter"
+languages = ["ruby"]
+programs = ["databaseconsistency"]
+categories = ["linter"]

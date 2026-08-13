@@ -1,0 +1,6 @@
+id = "sa-phpcpd"
+display-name = "phpcpd"
+kind = "linter"
+languages = ["php"]
+programs = ["phpcpd"]
+categories = ["linter"]

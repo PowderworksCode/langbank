@@ -1,0 +1,6 @@
+id = "sa-phpdependencyanalysis"
+display-name = "PhpDependencyAnalysis"
+kind = "linter"
+languages = ["php"]
+programs = ["phpdependencyanalysis"]
+categories = ["linter"]

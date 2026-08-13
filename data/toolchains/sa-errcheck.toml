@@ -1,0 +1,6 @@
+id = "sa-errcheck"
+display-name = "errcheck"
+kind = "linter"
+languages = ["go"]
+programs = ["errcheck"]
+categories = ["linter"]

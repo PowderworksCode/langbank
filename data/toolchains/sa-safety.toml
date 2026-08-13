@@ -1,0 +1,6 @@
+id = "sa-safety"
+display-name = "Safety"
+kind = "linter"
+languages = ["python"]
+programs = ["safety"]
+categories = ["linter"]

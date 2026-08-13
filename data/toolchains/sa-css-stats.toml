@@ -1,0 +1,6 @@
+id = "sa-css-stats"
+display-name = "CSS Stats"
+kind = "linter"
+languages = ["css"]
+programs = ["css stats"]
+categories = ["linter"]

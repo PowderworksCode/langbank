@@ -1,0 +1,6 @@
+id = "sa-doop"
+display-name = "Doop"
+kind = "linter"
+languages = ["java"]
+programs = ["doop"]
+categories = ["linter"]

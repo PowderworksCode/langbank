@@ -1,0 +1,6 @@
+id = "sa-chktex"
+display-name = "ChkTeX"
+kind = "linter"
+languages = ["tex"]
+programs = ["chktex"]
+categories = ["linter"]

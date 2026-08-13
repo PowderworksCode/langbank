@@ -1,0 +1,6 @@
+id = "sa-ikos"
+display-name = "IKOS"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["ikos"]
+categories = ["linter"]

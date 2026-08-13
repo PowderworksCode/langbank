@@ -1,0 +1,6 @@
+id = "sa-radon"
+display-name = "radon"
+kind = "linter"
+languages = ["python"]
+programs = ["radon"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-mirai"
+display-name = "MIRAI"
+kind = "linter"
+languages = ["rust"]
+programs = ["mirai"]
+categories = ["linter"]

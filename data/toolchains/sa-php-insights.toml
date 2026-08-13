@@ -1,0 +1,6 @@
+id = "sa-php-insights"
+display-name = "PHP Insights"
+kind = "linter"
+languages = ["php"]
+programs = ["php insights"]
+categories = ["linter"]

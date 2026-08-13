@@ -1,0 +1,6 @@
+id = "sa-gochecknoglobals"
+display-name = "gochecknoglobals"
+kind = "linter"
+languages = ["go"]
+programs = ["gochecknoglobals"]
+categories = ["linter"]

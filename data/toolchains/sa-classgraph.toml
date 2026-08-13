@@ -1,0 +1,6 @@
+id = "sa-classgraph"
+display-name = "ClassGraph"
+kind = "linter"
+languages = ["groovy", "java", "kotlin"]
+programs = ["classgraph"]
+categories = ["linter"]

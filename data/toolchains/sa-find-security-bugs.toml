@@ -1,0 +1,6 @@
+id = "sa-find-security-bugs"
+display-name = "Find Security Bugs"
+kind = "linter"
+languages = ["groovy", "java", "kotlin", "scala"]
+programs = ["find security bugs"]
+categories = ["linter"]

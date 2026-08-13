@@ -1,0 +1,6 @@
+id = "sa-wala"
+display-name = "WALA"
+kind = "linter"
+languages = ["java", "javascript"]
+programs = ["wala"]
+categories = ["linter"]

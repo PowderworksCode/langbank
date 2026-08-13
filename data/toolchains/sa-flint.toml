@@ -1,0 +1,6 @@
+id = "sa-flint"
+display-name = "flint++"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["flint++"]
+categories = ["linter"]

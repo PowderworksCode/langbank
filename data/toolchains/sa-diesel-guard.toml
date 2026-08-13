@@ -1,0 +1,6 @@
+id = "sa-diesel-guard"
+display-name = "diesel-guard"
+kind = "linter"
+languages = ["rust", "sql"]
+programs = ["diesel-guard"]
+categories = ["linter"]

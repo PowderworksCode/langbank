@@ -1,0 +1,6 @@
+id = "sa-larastan"
+display-name = "larastan"
+kind = "linter"
+languages = ["php"]
+programs = ["larastan"]
+categories = ["linter"]

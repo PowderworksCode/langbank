@@ -1,0 +1,6 @@
+id = "sa-atom-beautify"
+display-name = "Atom-Beautify"
+kind = "linter"
+languages = ["c", "coffeescript", "coldfusion", "cpp", "css", "html", "java", "javascript", "php", "python", "ruby", "sql", "typescript"]
+programs = ["atom-beautify"]
+categories = ["linter"]

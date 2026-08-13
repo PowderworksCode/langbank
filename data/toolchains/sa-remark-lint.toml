@@ -1,0 +1,6 @@
+id = "sa-remark-lint"
+display-name = "remark-lint"
+kind = "linter"
+languages = ["markdown"]
+programs = ["remark-lint"]
+categories = ["linter"]

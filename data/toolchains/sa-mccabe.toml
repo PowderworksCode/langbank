@@ -1,0 +1,6 @@
+id = "sa-mccabe"
+display-name = "mccabe"
+kind = "linter"
+languages = ["python"]
+programs = ["mccabe"]
+categories = ["linter"]

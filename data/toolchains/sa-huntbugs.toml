@@ -1,0 +1,6 @@
+id = "sa-huntbugs"
+display-name = "HuntBugs"
+kind = "linter"
+languages = ["java"]
+programs = ["huntbugs"]
+categories = ["linter"]

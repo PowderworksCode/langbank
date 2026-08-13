@@ -1,0 +1,6 @@
+id = "sa-staticlint"
+display-name = "StaticLint"
+kind = "linter"
+languages = ["julia"]
+programs = ["staticlint"]
+categories = ["linter"]

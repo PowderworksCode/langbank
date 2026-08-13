@@ -1,0 +1,6 @@
+id = "sa-vint"
+display-name = "vint"
+kind = "linter"
+languages = ["vim-script"]
+programs = ["vint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-wartremover"
+display-name = "WartRemover"
+kind = "linter"
+languages = ["scala"]
+programs = ["wartremover"]
+categories = ["linter"]

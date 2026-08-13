@@ -1,0 +1,6 @@
+id = "sa-qulice"
+display-name = "qulice"
+kind = "linter"
+languages = ["java"]
+programs = ["qulice"]
+categories = ["linter"]

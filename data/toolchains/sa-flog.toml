@@ -1,0 +1,6 @@
+id = "sa-flog"
+display-name = "flog"
+kind = "linter"
+languages = ["ruby"]
+programs = ["flog"]
+categories = ["linter"]

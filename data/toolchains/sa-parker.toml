@@ -1,0 +1,6 @@
+id = "sa-parker"
+display-name = "Parker"
+kind = "linter"
+languages = ["css"]
+programs = ["parker"]
+categories = ["linter"]

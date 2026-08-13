@@ -1,0 +1,6 @@
+id = "sa-ciocheck"
+display-name = "ciocheck"
+kind = "formatter"
+languages = ["python"]
+programs = ["ciocheck"]
+categories = ["formatter"]

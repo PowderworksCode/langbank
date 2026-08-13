@@ -1,0 +1,6 @@
+id = "sa-bullet"
+display-name = "Bullet"
+kind = "linter"
+languages = ["ruby"]
+programs = ["bullet"]
+categories = ["linter"]

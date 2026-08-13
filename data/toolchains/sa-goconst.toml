@@ -1,0 +1,6 @@
+id = "sa-goconst"
+display-name = "goconst"
+kind = "linter"
+languages = ["go"]
+programs = ["goconst"]
+categories = ["linter"]

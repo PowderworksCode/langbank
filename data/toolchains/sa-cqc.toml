@@ -1,0 +1,6 @@
+id = "sa-cqc"
+display-name = "cqc"
+kind = "linter"
+languages = ["css", "javascript", "less", "vue"]
+programs = ["cqc"]
+categories = ["linter"]

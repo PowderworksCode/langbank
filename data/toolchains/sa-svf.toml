@@ -1,0 +1,6 @@
+id = "sa-svf"
+display-name = "SVF"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["svf"]
+categories = ["linter"]

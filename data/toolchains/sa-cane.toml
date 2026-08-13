@@ -1,0 +1,6 @@
+id = "sa-cane"
+display-name = "cane"
+kind = "linter"
+languages = ["ruby"]
+programs = ["cane"]
+categories = ["linter"]

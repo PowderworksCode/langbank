@@ -1,0 +1,6 @@
+id = "sa-include-gardener"
+display-name = "include-gardener"
+kind = "formatter"
+languages = ["c", "cpp", "python", "ruby"]
+programs = ["include-gardener"]
+categories = ["formatter"]

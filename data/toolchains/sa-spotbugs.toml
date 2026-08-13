@@ -1,0 +1,6 @@
+id = "sa-spotbugs"
+display-name = "SpotBugs"
+kind = "linter"
+languages = ["java"]
+programs = ["spotbugs"]
+categories = ["linter"]

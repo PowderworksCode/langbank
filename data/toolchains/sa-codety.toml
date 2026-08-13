@@ -1,0 +1,6 @@
+id = "sa-codety"
+display-name = "Codety"
+kind = "linter"
+languages = ["cpp", "go", "java", "javascript", "json", "kotlin", "plsql", "python", "scala", "swift", "typescript"]
+programs = ["codety"]
+categories = ["linter"]

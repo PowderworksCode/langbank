@@ -1,0 +1,6 @@
+id = "sa-roslyn-analyzers"
+display-name = "Roslyn Analyzers"
+kind = "linter"
+languages = ["c-sharp"]
+programs = ["roslyn analyzers"]
+categories = ["linter"]

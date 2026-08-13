@@ -1,0 +1,6 @@
+id = "sa-sourcemeter"
+display-name = "SourceMeter"
+kind = "linter"
+languages = ["c", "cpp", "java", "python"]
+programs = ["sourcemeter"]
+categories = ["linter"]

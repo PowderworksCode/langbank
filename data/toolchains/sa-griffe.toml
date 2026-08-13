@@ -1,0 +1,6 @@
+id = "sa-griffe"
+display-name = "Griffe"
+kind = "linter"
+languages = ["python"]
+programs = ["griffe"]
+categories = ["linter"]

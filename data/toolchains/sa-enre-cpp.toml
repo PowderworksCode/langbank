@@ -1,0 +1,6 @@
+id = "sa-enre-cpp"
+display-name = "ENRE-cpp"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["enre-cpp"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-cpp-linter-action"
+display-name = "cpp-linter-action"
+kind = "linter"
+languages = ["c", "cpp", "python"]
+programs = ["cpp-linter-action"]
+categories = ["linter"]

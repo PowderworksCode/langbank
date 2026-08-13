@@ -1,0 +1,6 @@
+id = "sa-frama-c"
+display-name = "Frama-C"
+kind = "linter"
+languages = ["c"]
+programs = ["frama-c"]
+categories = ["linter"]
