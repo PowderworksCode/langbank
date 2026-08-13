@@ -1,0 +1,6 @@
+id = "sa-standard-ruby"
+display-name = "Standard Ruby"
+kind = "linter"
+languages = ["ruby"]
+programs = ["standard ruby"]
+categories = ["linter"]

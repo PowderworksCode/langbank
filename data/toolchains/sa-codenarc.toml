@@ -1,0 +1,6 @@
+id = "sa-codenarc"
+display-name = "CodeNarc"
+kind = "linter"
+languages = ["groovy"]
+programs = ["codenarc"]
+categories = ["linter"]

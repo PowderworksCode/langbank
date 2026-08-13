@@ -1,0 +1,6 @@
+id = "sa-clazy"
+display-name = "clazy"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["clazy"]
+categories = ["linter"]

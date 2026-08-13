@@ -1,0 +1,6 @@
+id = "sa-appchecker"
+display-name = "AppChecker"
+kind = "linter"
+languages = ["c", "cpp", "java", "php"]
+programs = ["appchecker"]
+categories = ["linter"]

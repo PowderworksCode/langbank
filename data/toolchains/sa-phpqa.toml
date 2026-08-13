@@ -1,0 +1,6 @@
+id = "sa-phpqa"
+display-name = "PHPQA"
+kind = "linter"
+languages = ["php"]
+programs = ["phpqa"]
+categories = ["linter"]

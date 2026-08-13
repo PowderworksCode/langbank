@@ -1,0 +1,6 @@
+id = "sa-codesonar-from-grammatech"
+display-name = "CodeSonar from GrammaTech"
+kind = "linter"
+languages = ["c", "cpp", "java"]
+programs = ["codesonar from grammatech"]
+categories = ["linter"]

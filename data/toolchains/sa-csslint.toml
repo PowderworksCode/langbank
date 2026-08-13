@@ -1,0 +1,6 @@
+id = "sa-csslint"
+display-name = "CSSLint"
+kind = "linter"
+languages = ["css"]
+programs = ["csslint"]
+categories = ["linter"]

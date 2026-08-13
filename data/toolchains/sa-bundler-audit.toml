@@ -1,0 +1,6 @@
+id = "sa-bundler-audit"
+display-name = "bundler-audit"
+kind = "linter"
+languages = ["ruby"]
+programs = ["bundler-audit"]
+categories = ["linter"]

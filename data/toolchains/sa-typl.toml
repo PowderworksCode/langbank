@@ -1,0 +1,6 @@
+id = "sa-typl"
+display-name = "TypL"
+kind = "linter"
+languages = ["javascript"]
+programs = ["typl"]
+categories = ["linter"]

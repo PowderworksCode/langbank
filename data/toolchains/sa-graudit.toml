@@ -1,0 +1,6 @@
+id = "sa-graudit"
+display-name = "graudit"
+kind = "linter"
+languages = ["c", "cpp", "java", "perl", "php", "python", "ruby"]
+programs = ["graudit"]
+categories = ["linter"]

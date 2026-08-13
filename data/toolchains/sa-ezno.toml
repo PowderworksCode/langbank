@@ -1,0 +1,6 @@
+id = "sa-ezno"
+display-name = "ezno"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["ezno"]
+categories = ["linter"]

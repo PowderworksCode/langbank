@@ -1,0 +1,6 @@
+id = "sa-bowler"
+display-name = "Bowler"
+kind = "linter"
+languages = ["python"]
+programs = ["bowler"]
+categories = ["linter"]

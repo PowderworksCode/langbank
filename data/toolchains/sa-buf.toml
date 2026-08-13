@@ -1,0 +1,6 @@
+id = "sa-buf"
+display-name = "buf"
+kind = "linter"
+languages = ["protocol-buffer"]
+programs = ["buf"]
+categories = ["linter"]

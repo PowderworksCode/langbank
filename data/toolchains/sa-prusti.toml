@@ -1,0 +1,6 @@
+id = "sa-prusti"
+display-name = "Prusti"
+kind = "linter"
+languages = ["rust"]
+programs = ["prusti"]
+categories = ["linter"]

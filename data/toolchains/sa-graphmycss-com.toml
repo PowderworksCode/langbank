@@ -1,0 +1,6 @@
+id = "sa-graphmycss-com"
+display-name = "GraphMyCSS.com"
+kind = "linter"
+languages = ["css"]
+programs = ["graphmycss.com"]
+categories = ["linter"]

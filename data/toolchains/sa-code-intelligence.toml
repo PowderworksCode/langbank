@@ -1,0 +1,6 @@
+id = "sa-code-intelligence"
+display-name = "Code Intelligence"
+kind = "linter"
+languages = ["c", "cpp", "go", "java"]
+programs = ["code intelligence"]
+categories = ["linter"]

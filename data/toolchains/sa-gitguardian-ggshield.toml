@@ -1,0 +1,6 @@
+id = "sa-gitguardian-ggshield"
+display-name = "GitGuardian ggshield"
+kind = "linter"
+languages = ["dotenv", "hcl"]
+programs = ["gitguardian ggshield"]
+categories = ["linter"]

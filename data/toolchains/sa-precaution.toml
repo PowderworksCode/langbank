@@ -1,0 +1,6 @@
+id = "sa-precaution"
+display-name = "Precaution"
+kind = "linter"
+languages = ["go", "java", "python"]
+programs = ["precaution"]
+categories = ["linter"]

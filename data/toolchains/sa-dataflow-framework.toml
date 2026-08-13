@@ -1,0 +1,6 @@
+id = "sa-dataflow-framework"
+display-name = "Dataflow Framework"
+kind = "linter"
+languages = ["java"]
+programs = ["dataflow framework"]
+categories = ["linter"]

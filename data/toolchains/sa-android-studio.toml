@@ -1,0 +1,6 @@
+id = "sa-android-studio"
+display-name = "Android Studio"
+kind = "linter"
+languages = ["java", "kotlin"]
+programs = ["android studio"]
+categories = ["linter"]

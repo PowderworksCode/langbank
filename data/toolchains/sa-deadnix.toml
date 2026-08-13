@@ -1,0 +1,6 @@
+id = "sa-deadnix"
+display-name = "deadnix"
+kind = "linter"
+languages = ["nix"]
+programs = ["deadnix"]
+categories = ["linter"]

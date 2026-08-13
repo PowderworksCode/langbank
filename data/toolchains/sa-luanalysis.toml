@@ -1,0 +1,6 @@
+id = "sa-luanalysis"
+display-name = "Luanalysis"
+kind = "linter"
+languages = ["lua"]
+programs = ["luanalysis"]
+categories = ["linter"]

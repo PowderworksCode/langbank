@@ -1,0 +1,6 @@
+id = "sa-cognicrypt"
+display-name = "CogniCrypt"
+kind = "linter"
+languages = ["java"]
+programs = ["cognicrypt"]
+categories = ["linter"]

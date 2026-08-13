@@ -1,0 +1,6 @@
+id = "sa-cargo-call-stack"
+display-name = "cargo-call-stack"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-call-stack"]
+categories = ["linter"]

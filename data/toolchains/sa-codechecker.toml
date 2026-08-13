@@ -1,0 +1,6 @@
+id = "sa-codechecker"
+display-name = "codechecker"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["codechecker"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-easycodingstandard"
+display-name = "EasyCodingStandard"
+kind = "linter"
+languages = ["php"]
+programs = ["easycodingstandard"]
+categories = ["linter"]

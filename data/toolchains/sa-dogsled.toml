@@ -1,0 +1,6 @@
+id = "sa-dogsled"
+display-name = "dogsled"
+kind = "linter"
+languages = ["go"]
+programs = ["dogsled"]
+categories = ["linter"]

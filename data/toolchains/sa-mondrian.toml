@@ -1,0 +1,6 @@
+id = "sa-mondrian"
+display-name = "Mondrian"
+kind = "linter"
+languages = ["php"]
+programs = ["mondrian"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-dialyzer"
+display-name = "dialyzer"
+kind = "linter"
+languages = ["erlang"]
+programs = ["dialyzer"]
+categories = ["linter"]

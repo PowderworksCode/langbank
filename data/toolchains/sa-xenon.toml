@@ -1,0 +1,6 @@
+id = "sa-xenon"
+display-name = "xenon"
+kind = "linter"
+languages = ["python"]
+programs = ["xenon"]
+categories = ["linter"]

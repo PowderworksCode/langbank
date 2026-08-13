@@ -1,0 +1,6 @@
+id = "sa-aether"
+display-name = "aether"
+kind = "linter"
+languages = ["javascript"]
+programs = ["aether"]
+categories = ["linter"]

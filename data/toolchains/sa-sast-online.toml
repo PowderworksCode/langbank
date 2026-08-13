@@ -1,0 +1,6 @@
+id = "sa-sast-online"
+display-name = "SAST Online"
+kind = "linter"
+languages = ["dart", "java", "kotlin"]
+programs = ["sast online"]
+categories = ["linter"]

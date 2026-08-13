@@ -1,0 +1,6 @@
+id = "sa-composer-dependency-analyser"
+display-name = "composer-dependency-analyser"
+kind = "linter"
+languages = ["php"]
+programs = ["composer-dependency-analyser"]
+categories = ["linter"]

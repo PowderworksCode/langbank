@@ -1,0 +1,6 @@
+id = "sa-ck"
+display-name = "ck"
+kind = "linter"
+languages = ["java"]
+programs = ["ck"]
+categories = ["linter"]

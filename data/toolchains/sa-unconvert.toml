@@ -1,0 +1,6 @@
+id = "sa-unconvert"
+display-name = "unconvert"
+kind = "linter"
+languages = ["go"]
+programs = ["unconvert"]
+categories = ["linter"]

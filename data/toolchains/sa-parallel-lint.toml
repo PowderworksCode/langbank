@@ -1,0 +1,6 @@
+id = "sa-parallel-lint"
+display-name = "parallel-lint"
+kind = "linter"
+languages = ["php"]
+programs = ["parallel-lint"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-wap"
+display-name = "WAP"
+kind = "linter"
+languages = ["php"]
+programs = ["wap"]
+categories = ["linter"]

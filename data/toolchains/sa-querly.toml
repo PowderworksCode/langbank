@@ -1,0 +1,6 @@
+id = "sa-querly"
+display-name = "Querly"
+kind = "linter"
+languages = ["ruby"]
+programs = ["querly"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-code-pathfinder"
+display-name = "Code Pathfinder"
+kind = "linter"
+languages = ["dockerfile", "go", "python"]
+programs = ["code pathfinder"]
+categories = ["linter"]

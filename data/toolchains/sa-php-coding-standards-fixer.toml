@@ -1,0 +1,6 @@
+id = "sa-php-coding-standards-fixer"
+display-name = "PHP Coding Standards Fixer"
+kind = "linter"
+languages = ["php"]
+programs = ["php coding standards fixer"]
+categories = ["linter"]

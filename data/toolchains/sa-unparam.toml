@@ -1,0 +1,6 @@
+id = "sa-unparam"
+display-name = "unparam"
+kind = "linter"
+languages = ["go"]
+programs = ["unparam"]
+categories = ["linter"]

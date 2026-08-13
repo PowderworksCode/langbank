@@ -1,0 +1,6 @@
+id = "sa-parse"
+display-name = "Parse"
+kind = "linter"
+languages = ["php"]
+programs = ["parse"]
+categories = ["linter"]

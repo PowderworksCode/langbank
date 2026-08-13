@@ -1,0 +1,6 @@
+id = "sa-trustinsoft-analyzer"
+display-name = "TrustInSoft Analyzer"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["trustinsoft analyzer"]
+categories = ["linter"]

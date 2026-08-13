@@ -1,0 +1,6 @@
+id = "sa-goast"
+display-name = "goast"
+kind = "linter"
+languages = ["go"]
+programs = ["goast"]
+categories = ["linter"]

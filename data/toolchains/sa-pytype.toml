@@ -1,0 +1,6 @@
+id = "sa-pytype"
+display-name = "pytype"
+kind = "linter"
+languages = ["python"]
+programs = ["pytype"]
+categories = ["linter"]

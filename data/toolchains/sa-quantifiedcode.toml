@@ -1,0 +1,6 @@
+id = "sa-quantifiedcode"
+display-name = "QuantifiedCode"
+kind = "linter"
+languages = ["python"]
+programs = ["quantifiedcode"]
+categories = ["linter"]

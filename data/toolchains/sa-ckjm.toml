@@ -1,0 +1,6 @@
+id = "sa-ckjm"
+display-name = "ckjm"
+kind = "linter"
+languages = ["java"]
+programs = ["ckjm"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-autocorrect"
+display-name = "autocorrect"
+kind = "linter"
+languages = ["css", "go", "html", "javascript", "json", "markdown", "python", "ruby", "rust", "scala", "shell", "typescript", "vue", "xml", "yaml"]
+programs = ["autocorrect"]
+categories = ["linter", "formatter"]

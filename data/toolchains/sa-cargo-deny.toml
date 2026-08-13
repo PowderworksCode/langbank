@@ -1,0 +1,6 @@
+id = "sa-cargo-deny"
+display-name = "cargo-deny"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-deny"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-checkmarx-cxsast"
+display-name = "Checkmarx CxSAST"
+kind = "linter"
+languages = ["apex", "c", "cpp", "go", "groovy", "html", "java", "javascript", "perl", "php", "python", "ruby", "scala", "swift", "vbscript"]
+programs = ["checkmarx cxsast"]
+categories = ["linter"]

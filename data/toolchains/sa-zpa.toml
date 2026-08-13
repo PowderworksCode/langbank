@@ -1,0 +1,6 @@
+id = "sa-zpa"
+display-name = "ZPA"
+kind = "linter"
+languages = ["plsql"]
+programs = ["zpa"]
+categories = ["linter"]

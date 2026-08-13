@@ -1,0 +1,6 @@
+id = "sa-coala"
+display-name = "coala"
+kind = "linter"
+languages = ["c", "cpp", "css", "java", "javascript"]
+programs = ["coala"]
+categories = ["linter"]

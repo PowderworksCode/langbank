@@ -1,0 +1,6 @@
+id = "sa-tslint-clean-code"
+display-name = "tslint-clean-code"
+kind = "linter"
+languages = ["typescript"]
+programs = ["tslint-clean-code"]
+categories = ["linter"]

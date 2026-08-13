@@ -1,0 +1,6 @@
+id = "sa-grunt-bootlint"
+display-name = "grunt-bootlint"
+kind = "linter"
+languages = ["html"]
+programs = ["grunt-bootlint"]
+categories = ["linter"]

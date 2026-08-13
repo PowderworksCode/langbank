@@ -1,0 +1,6 @@
+id = "sa-esprima"
+display-name = "Esprima"
+kind = "linter"
+languages = ["javascript"]
+programs = ["esprima"]
+categories = ["linter"]

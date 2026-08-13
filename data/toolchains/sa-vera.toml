@@ -1,0 +1,6 @@
+id = "sa-vera"
+display-name = "vera++"
+kind = "formatter"
+languages = ["c", "cpp"]
+programs = ["vera++"]
+categories = ["formatter"]

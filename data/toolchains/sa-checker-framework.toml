@@ -1,0 +1,6 @@
+id = "sa-checker-framework"
+display-name = "Checker Framework"
+kind = "linter"
+languages = ["java"]
+programs = ["checker framework"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-wsl"
+display-name = "wsl"
+kind = "linter"
+languages = ["go"]
+programs = ["wsl"]
+categories = ["linter"]

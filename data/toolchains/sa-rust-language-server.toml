@@ -1,0 +1,6 @@
+id = "sa-rust-language-server"
+display-name = "Rust Language Server"
+kind = "formatter"
+languages = ["rust"]
+programs = ["rust language server"]
+categories = ["formatter"]

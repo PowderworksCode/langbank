@@ -1,0 +1,6 @@
+id = "sa-govulncheck"
+display-name = "govulncheck"
+kind = "linter"
+languages = ["go"]
+programs = ["govulncheck"]
+categories = ["linter"]

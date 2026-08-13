@@ -1,0 +1,6 @@
+id = "sa-ineffassign"
+display-name = "ineffassign"
+kind = "linter"
+languages = ["go"]
+programs = ["ineffassign"]
+categories = ["linter"]

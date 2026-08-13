@@ -1,0 +1,6 @@
+id = "sa-pfff"
+display-name = "pfff"
+kind = "formatter"
+languages = ["c", "cpp", "css", "erlang", "haskell", "html", "java", "javascript", "php", "python", "rust"]
+programs = ["pfff"]
+categories = ["formatter"]

@@ -1,0 +1,6 @@
+id = "sa-deleaker"
+display-name = "deleaker"
+kind = "linter"
+languages = ["c", "c-sharp", "cpp"]
+programs = ["deleaker"]
+categories = ["linter"]

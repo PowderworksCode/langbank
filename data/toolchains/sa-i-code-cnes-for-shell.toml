@@ -1,0 +1,6 @@
+id = "sa-i-code-cnes-for-shell"
+display-name = "i-Code CNES for Shell"
+kind = "linter"
+languages = ["shell"]
+programs = ["i-code cnes for shell"]
+categories = ["linter"]

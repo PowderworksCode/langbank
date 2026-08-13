@@ -1,0 +1,6 @@
+id = "sa-liquid-haskell"
+display-name = "Liquid Haskell"
+kind = "linter"
+languages = ["haskell"]
+programs = ["liquid haskell"]
+categories = ["linter"]

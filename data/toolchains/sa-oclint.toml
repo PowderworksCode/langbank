@@ -1,0 +1,6 @@
+id = "sa-oclint"
+display-name = "oclint"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["oclint"]
+categories = ["linter"]

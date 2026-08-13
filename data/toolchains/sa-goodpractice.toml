@@ -1,0 +1,6 @@
+id = "sa-goodpractice"
+display-name = "goodpractice"
+kind = "linter"
+languages = ["r"]
+programs = ["goodpractice"]
+categories = ["linter"]

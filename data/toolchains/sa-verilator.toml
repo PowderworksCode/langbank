@@ -1,0 +1,6 @@
+id = "sa-verilator"
+display-name = "Verilator"
+kind = "linter"
+languages = ["verilog"]
+programs = ["verilator"]
+categories = ["linter"]

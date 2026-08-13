@@ -1,0 +1,6 @@
+id = "sa-semgrep-supply-chain"
+display-name = "Semgrep Supply Chain"
+kind = "linter"
+languages = ["go", "java", "javascript", "python", "ruby", "typescript"]
+programs = ["semgrep supply chain"]
+categories = ["linter"]

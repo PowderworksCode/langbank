@@ -1,0 +1,6 @@
+id = "sa-ruby-lint"
+display-name = "ruby-lint"
+kind = "linter"
+languages = ["ruby"]
+programs = ["ruby-lint"]
+categories = ["linter"]

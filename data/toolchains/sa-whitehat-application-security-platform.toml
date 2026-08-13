@@ -1,0 +1,6 @@
+id = "sa-whitehat-application-security-platform"
+display-name = "WhiteHat Application Security Platform"
+kind = "linter"
+languages = ["html", "java", "javascript", "php", "typescript"]
+programs = ["whitehat application security platform"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-tclchecker"
+display-name = "tclchecker"
+kind = "linter"
+languages = ["tcl"]
+programs = ["tclchecker"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-herbie"
+display-name = "herbie"
+kind = "linter"
+languages = ["rust"]
+programs = ["herbie"]
+categories = ["linter"]

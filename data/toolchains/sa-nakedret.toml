@@ -1,0 +1,6 @@
+id = "sa-nakedret"
+display-name = "nakedret"
+kind = "linter"
+languages = ["go"]
+programs = ["nakedret"]
+categories = ["linter"]

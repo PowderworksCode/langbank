@@ -1,0 +1,6 @@
+id = "sa-traceroute"
+display-name = "Traceroute"
+kind = "linter"
+languages = ["ruby"]
+programs = ["traceroute"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-rustviz"
+display-name = "RustViz"
+kind = "linter"
+languages = ["rust"]
+programs = ["rustviz"]
+categories = ["linter"]

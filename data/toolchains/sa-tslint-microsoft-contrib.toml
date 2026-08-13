@@ -1,0 +1,6 @@
+id = "sa-tslint-microsoft-contrib"
+display-name = "tslint-microsoft-contrib"
+kind = "linter"
+languages = ["typescript"]
+programs = ["tslint-microsoft-contrib"]
+categories = ["linter"]

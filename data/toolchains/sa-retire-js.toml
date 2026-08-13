@@ -1,0 +1,6 @@
+id = "sa-retire-js"
+display-name = "retire.js"
+kind = "linter"
+languages = ["javascript"]
+programs = ["retire.js"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-eslint"
+display-name = "ESLint"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["eslint"]
+categories = ["linter"]

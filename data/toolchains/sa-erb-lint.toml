@@ -1,0 +1,6 @@
+id = "sa-erb-lint"
+display-name = "ERB Lint"
+kind = "linter"
+languages = ["html", "ruby"]
+programs = ["erb lint"]
+categories = ["linter"]

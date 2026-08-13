@@ -1,0 +1,6 @@
+id = "sa-standard"
+display-name = "standard"
+kind = "linter"
+languages = ["javascript"]
+programs = ["standard"]
+categories = ["linter"]

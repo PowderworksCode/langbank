@@ -1,0 +1,6 @@
+id = "sa-xo"
+display-name = "xo"
+kind = "linter"
+languages = ["javascript"]
+programs = ["xo"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-maligned"
+display-name = "maligned"
+kind = "linter"
+languages = ["go"]
+programs = ["maligned"]
+categories = ["linter"]

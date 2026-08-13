@@ -1,0 +1,6 @@
+id = "sa-devskim"
+display-name = "DevSkim"
+kind = "linter"
+languages = ["c", "cpp", "java", "php", "python", "ruby"]
+programs = ["devskim"]
+categories = ["linter"]

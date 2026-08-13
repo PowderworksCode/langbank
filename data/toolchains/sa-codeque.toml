@@ -1,0 +1,6 @@
+id = "sa-codeque"
+display-name = "CodeQue"
+kind = "linter"
+languages = ["javascript", "json", "lua", "python", "typescript"]
+programs = ["codeque"]
+categories = ["linter"]

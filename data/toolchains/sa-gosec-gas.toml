@@ -1,0 +1,6 @@
+id = "sa-gosec-gas"
+display-name = "gosec (gas)"
+kind = "linter"
+languages = ["go"]
+programs = ["gosec (gas)"]
+categories = ["linter"]

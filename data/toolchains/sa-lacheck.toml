@@ -1,0 +1,6 @@
+id = "sa-lacheck"
+display-name = "lacheck"
+kind = "linter"
+languages = ["tex"]
+programs = ["lacheck"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-interfacer"
+display-name = "interfacer"
+kind = "linter"
+languages = ["go"]
+programs = ["interfacer"]
+categories = ["linter"]

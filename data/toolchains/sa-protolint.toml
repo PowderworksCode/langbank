@@ -1,0 +1,6 @@
+id = "sa-protolint"
+display-name = "protolint"
+kind = "linter"
+languages = ["protocol-buffer"]
+programs = ["protolint"]
+categories = ["linter"]

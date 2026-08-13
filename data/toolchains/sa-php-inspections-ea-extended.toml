@@ -1,0 +1,6 @@
+id = "sa-php-inspections-ea-extended"
+display-name = "Php Inspections (EA Extended)"
+kind = "linter"
+languages = ["php"]
+programs = ["php inspections (ea extended)"]
+categories = ["linter"]

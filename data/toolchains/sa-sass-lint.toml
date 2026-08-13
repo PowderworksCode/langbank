@@ -1,0 +1,6 @@
+id = "sa-sass-lint"
+display-name = "sass-lint"
+kind = "linter"
+languages = ["css"]
+programs = ["sass-lint"]
+categories = ["linter"]

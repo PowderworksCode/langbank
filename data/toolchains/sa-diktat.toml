@@ -1,0 +1,6 @@
+id = "sa-diktat"
+display-name = "diktat"
+kind = "linter"
+languages = ["kotlin"]
+programs = ["diktat"]
+categories = ["linter", "formatter"]

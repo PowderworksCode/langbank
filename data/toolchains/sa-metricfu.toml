@@ -1,0 +1,6 @@
+id = "sa-metricfu"
+display-name = "MetricFu"
+kind = "linter"
+languages = ["ruby"]
+programs = ["metricfu"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-lockbud"
+display-name = "lockbud"
+kind = "linter"
+languages = ["rust"]
+programs = ["lockbud"]
+categories = ["linter"]

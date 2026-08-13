@@ -87,7 +87,7 @@ def upstream_servers():
 def languages():
     return {
         re.search(r'^id = "([^"]+)"', open(path).read(), re.M).group(1)
-        for path in glob.glob("data/languages/*.toml")
+        for path in sorted(glob.glob("data/languages/*.toml"))
     }
 
 
@@ -137,7 +137,7 @@ def main():
     keep, dropped = usable(servers, known)
     have = {
         re.search(r'^id = "([^"]+)"', open(path).read(), re.M).group(1)
-        for path in glob.glob("data/toolchains/*.toml")
+        for path in sorted(glob.glob("data/toolchains/*.toml"))
     }
     missing = [s for s in keep if f'lsp-{s["id"].replace("_", "-")}' not in have]
 

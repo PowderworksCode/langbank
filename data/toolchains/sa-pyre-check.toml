@@ -1,0 +1,6 @@
+id = "sa-pyre-check"
+display-name = "pyre-check"
+kind = "linter"
+languages = ["python"]
+programs = ["pyre-check"]
+categories = ["linter"]

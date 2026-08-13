@@ -1,0 +1,6 @@
+id = "sa-nodejsscan"
+display-name = "NodeJSScan"
+kind = "linter"
+languages = ["javascript"]
+programs = ["nodejsscan"]
+categories = ["linter"]

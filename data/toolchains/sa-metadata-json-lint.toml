@@ -1,0 +1,6 @@
+id = "sa-metadata-json-lint"
+display-name = "metadata-json-lint"
+kind = "linter"
+languages = ["puppet"]
+programs = ["metadata-json-lint"]
+categories = ["linter"]

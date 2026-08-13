@@ -1,0 +1,6 @@
+id = "sa-inspectortiger"
+display-name = "InspectorTiger"
+kind = "linter"
+languages = ["python"]
+programs = ["inspectortiger"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-frink"
+display-name = "Frink"
+kind = "formatter"
+languages = ["tcl"]
+programs = ["frink"]
+categories = ["formatter"]

@@ -1,0 +1,6 @@
+id = "sa-corrode"
+display-name = "Corrode"
+kind = "linter"
+languages = ["c", "cpp", "rust"]
+programs = ["corrode"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-cargo-udeps"
+display-name = "cargo udeps"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo udeps"]
+categories = ["linter"]

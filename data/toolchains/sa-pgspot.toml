@@ -1,0 +1,6 @@
+id = "sa-pgspot"
+display-name = "pgspot"
+kind = "linter"
+languages = ["sql"]
+programs = ["pgspot"]
+categories = ["linter"]

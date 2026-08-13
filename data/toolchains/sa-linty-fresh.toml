@@ -1,0 +1,6 @@
+id = "sa-linty-fresh"
+display-name = "linty fresh"
+kind = "linter"
+languages = ["python"]
+programs = ["linty fresh"]
+categories = ["linter"]

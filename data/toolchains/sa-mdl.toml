@@ -1,0 +1,6 @@
+id = "sa-mdl"
+display-name = "mdl"
+kind = "linter"
+languages = ["markdown"]
+programs = ["mdl"]
+categories = ["linter"]

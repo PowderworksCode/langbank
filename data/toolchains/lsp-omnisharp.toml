@@ -3,3 +3,8 @@ display-name = "omnisharp"
 kind = "language-server"
 languages = ["c-sharp", "visual-basic-net"]
 programs = ["OmniSharp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "OmniSharp/omnisharp-roslyn"

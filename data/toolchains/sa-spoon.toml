@@ -1,0 +1,6 @@
+id = "sa-spoon"
+display-name = "Spoon"
+kind = "formatter"
+languages = ["java"]
+programs = ["spoon"]
+categories = ["formatter"]

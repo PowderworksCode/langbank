@@ -1,0 +1,6 @@
+id = "sa-dockle"
+display-name = "Dockle"
+kind = "linter"
+languages = ["dockerfile"]
+programs = ["dockle"]
+categories = ["linter"]

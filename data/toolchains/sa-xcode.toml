@@ -1,0 +1,6 @@
+id = "sa-xcode"
+display-name = "XCode"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["xcode"]
+categories = ["linter"]

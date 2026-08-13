@@ -1,0 +1,6 @@
+id = "sa-deepscan"
+display-name = "DeepScan"
+kind = "linter"
+languages = ["javascript"]
+programs = ["deepscan"]
+categories = ["linter"]

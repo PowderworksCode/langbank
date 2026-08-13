@@ -1,0 +1,6 @@
+id = "sa-yardstick"
+display-name = "yardstick"
+kind = "linter"
+languages = ["javascript"]
+programs = ["yardstick"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-sobelow"
+display-name = "sobelow"
+kind = "linter"
+languages = ["elixir"]
+programs = ["sobelow"]
+categories = ["linter"]

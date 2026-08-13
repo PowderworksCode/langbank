@@ -1,0 +1,6 @@
+id = "sa-pelusa"
+display-name = "pelusa"
+kind = "linter"
+languages = ["ruby"]
+programs = ["pelusa"]
+categories = ["linter"]

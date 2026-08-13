@@ -1,0 +1,6 @@
+id = "sa-structslop"
+display-name = "structslop"
+kind = "linter"
+languages = ["go"]
+programs = ["structslop"]
+categories = ["linter", "formatter"]

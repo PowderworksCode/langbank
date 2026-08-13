@@ -1,0 +1,6 @@
+id = "sa-dodgy"
+display-name = "Dodgy"
+kind = "linter"
+languages = ["python"]
+programs = ["dodgy"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-goone"
+display-name = "goone"
+kind = "linter"
+languages = ["go", "sql"]
+programs = ["goone"]
+categories = ["linter"]

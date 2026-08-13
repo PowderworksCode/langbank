@@ -1,0 +1,6 @@
+id = "sa-mariana-trench"
+display-name = "Mariana Trench"
+kind = "linter"
+languages = ["java"]
+programs = ["mariana trench"]
+categories = ["linter"]

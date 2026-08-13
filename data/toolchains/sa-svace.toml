@@ -1,0 +1,6 @@
+id = "sa-svace"
+display-name = "Svace"
+kind = "linter"
+languages = ["c", "cpp", "go", "java"]
+programs = ["svace"]
+categories = ["linter"]

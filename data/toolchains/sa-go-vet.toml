@@ -1,0 +1,6 @@
+id = "sa-go-vet"
+display-name = "go vet"
+kind = "linter"
+languages = ["go"]
+programs = ["go vet"]
+categories = ["linter"]

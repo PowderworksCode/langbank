@@ -1,0 +1,6 @@
+id = "sa-esbmc"
+display-name = "ESBMC"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["esbmc"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-bearer"
+display-name = "Bearer"
+kind = "linter"
+languages = ["c", "go", "html", "java", "javascript", "json", "ruby", "typescript", "yaml"]
+programs = ["bearer"]
+categories = ["linter"]

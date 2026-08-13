@@ -73,20 +73,25 @@ def upstream_packages():
 
 def langbank():
     languages, by_display = {}, {}
-    for path in glob.glob("data/languages/*.toml"):
+    for path in sorted(glob.glob("data/languages/*.toml")):
         text = open(path).read()
         lid = re.search(r'^id = "([^"]+)"', text, re.M).group(1)
         display = re.search(r'^display-name = "([^"]+)"', text, re.M)
         languages[lid] = path
         by_display[(display.group(1) if display else lid).lower()] = lid
     toolchains, programs = {}, {}
-    for path in glob.glob("data/toolchains/*.toml"):
+    for path in sorted(glob.glob("data/toolchains/*.toml")):
         text = open(path).read()
         tid = re.search(r'^id = "([^"]+)"', text, re.M).group(1)
         toolchains[tid] = (path, text)
         found = re.search(r"^programs = \[(.*?)\]", text, re.M)
         for program in re.findall(r'"([^"]+)"', found.group(1) if found else ""):
             programs.setdefault(program, tid)
+        # lspconfig names a server by its own id; mason names the same tool by
+        # its package. Matching on both is what stops one tool becoming two.
+        display = re.search(r'^display-name = "([^"]+)"', text, re.M)
+        if display:
+            programs.setdefault(display.group(1), tid)
     return languages, by_display, toolchains, programs
 
 
@@ -124,7 +129,7 @@ def main():
     _, by_display, toolchains, programs = langbank()
     registries = {
         re.search(r'^id = "([^"]+)"', open(path).read(), re.M).group(1)
-        for path in glob.glob("data/registries/*.toml")
+        for path in sorted(glob.glob("data/registries/*.toml"))
     }
 
     merges, creates, skipped = [], [], 0

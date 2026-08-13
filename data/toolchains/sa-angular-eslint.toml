@@ -1,0 +1,6 @@
+id = "sa-angular-eslint"
+display-name = "Angular ESLint"
+kind = "linter"
+languages = ["html", "typescript"]
+programs = ["angular eslint"]
+categories = ["linter"]

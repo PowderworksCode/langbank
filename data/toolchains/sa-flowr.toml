@@ -1,0 +1,6 @@
+id = "sa-flowr"
+display-name = "flowR"
+kind = "linter"
+languages = ["r"]
+programs = ["flowr"]
+categories = ["linter"]

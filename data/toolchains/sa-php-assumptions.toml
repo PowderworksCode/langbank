@@ -1,0 +1,6 @@
+id = "sa-php-assumptions"
+display-name = "PHP Assumptions"
+kind = "linter"
+languages = ["php"]
+programs = ["php assumptions"]
+categories = ["linter"]

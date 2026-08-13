@@ -1,0 +1,6 @@
+id = "sa-enre-ts"
+display-name = "ENRE-ts"
+kind = "linter"
+languages = ["typescript"]
+programs = ["enre-ts"]
+categories = ["linter"]

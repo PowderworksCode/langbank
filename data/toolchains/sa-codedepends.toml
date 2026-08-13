@@ -1,0 +1,6 @@
+id = "sa-codedepends"
+display-name = "CodeDepends"
+kind = "linter"
+languages = ["r"]
+programs = ["codedepends"]
+categories = ["linter"]

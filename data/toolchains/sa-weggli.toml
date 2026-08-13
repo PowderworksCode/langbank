@@ -1,0 +1,6 @@
+id = "sa-weggli"
+display-name = "weggli"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["weggli"]
+categories = ["linter"]

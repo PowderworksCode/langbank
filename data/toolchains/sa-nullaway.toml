@@ -1,0 +1,6 @@
+id = "sa-nullaway"
+display-name = "NullAway"
+kind = "linter"
+languages = ["java"]
+programs = ["nullaway"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-gocyclo"
+display-name = "gocyclo"
+kind = "linter"
+languages = ["go"]
+programs = ["gocyclo"]
+categories = ["linter"]

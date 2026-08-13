@@ -1,0 +1,6 @@
+id = "sa-icarus-verilog"
+display-name = "Icarus Verilog"
+kind = "linter"
+languages = ["verilog"]
+programs = ["icarus verilog"]
+categories = ["linter"]

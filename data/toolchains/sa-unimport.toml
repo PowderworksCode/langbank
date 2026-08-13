@@ -1,0 +1,6 @@
+id = "sa-unimport"
+display-name = "unimport"
+kind = "formatter"
+languages = ["python"]
+programs = ["unimport"]
+categories = ["formatter", "linter"]

@@ -1,0 +1,6 @@
+id = "sa-unibeautify"
+display-name = "Unibeautify"
+kind = "formatter"
+languages = ["c", "cpp", "css", "go", "html", "java", "javascript", "markdown", "php", "python", "typescript", "vue"]
+programs = ["unibeautify"]
+categories = ["formatter"]

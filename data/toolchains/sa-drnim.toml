@@ -1,0 +1,6 @@
+id = "sa-drnim"
+display-name = "DrNim"
+kind = "linter"
+languages = ["nim"]
+programs = ["drnim"]
+categories = ["linter"]

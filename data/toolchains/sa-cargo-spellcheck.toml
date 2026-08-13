@@ -1,0 +1,6 @@
+id = "sa-cargo-spellcheck"
+display-name = "cargo-spellcheck"
+kind = "linter"
+languages = ["rust"]
+programs = ["cargo-spellcheck"]
+categories = ["linter"]

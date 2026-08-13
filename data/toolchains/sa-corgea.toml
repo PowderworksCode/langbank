@@ -1,0 +1,6 @@
+id = "sa-corgea"
+display-name = "Corgea"
+kind = "linter"
+languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "typescript"]
+programs = ["corgea"]
+categories = ["linter"]

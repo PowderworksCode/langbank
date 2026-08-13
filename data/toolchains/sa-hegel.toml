@@ -1,0 +1,6 @@
+id = "sa-hegel"
+display-name = "hegel"
+kind = "linter"
+languages = ["javascript"]
+programs = ["hegel"]
+categories = ["linter"]

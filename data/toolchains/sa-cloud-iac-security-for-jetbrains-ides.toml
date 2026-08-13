@@ -1,0 +1,6 @@
+id = "sa-cloud-iac-security-for-jetbrains-ides"
+display-name = "Cloud (IaC) Security for JetBrains IDEs"
+kind = "linter"
+languages = ["dockerfile"]
+programs = ["cloud (iac) security for jetbrains ides"]
+categories = ["linter"]

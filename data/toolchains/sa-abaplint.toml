@@ -1,0 +1,6 @@
+id = "sa-abaplint"
+display-name = "abaplint"
+kind = "linter"
+languages = ["abap"]
+programs = ["abaplint"]
+categories = ["linter"]

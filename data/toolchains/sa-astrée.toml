@@ -1,0 +1,6 @@
+id = "sa-astrée"
+display-name = "Astrée"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["astrée"]
+categories = ["linter"]

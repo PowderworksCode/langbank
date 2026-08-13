@@ -1,0 +1,6 @@
+id = "sa-phpsa"
+display-name = "phpsa"
+kind = "linter"
+languages = ["php"]
+programs = ["phpsa"]
+categories = ["linter"]

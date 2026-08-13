@@ -1,0 +1,6 @@
+id = "sa-pycodestyle"
+display-name = "pycodestyle"
+kind = "linter"
+languages = ["python"]
+programs = ["pycodestyle"]
+categories = ["linter"]

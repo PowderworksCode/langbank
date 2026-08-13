@@ -1,0 +1,6 @@
+id = "sa-grumphp"
+display-name = "GrumPHP"
+kind = "linter"
+languages = ["php"]
+programs = ["grumphp"]
+categories = ["linter"]

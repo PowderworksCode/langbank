@@ -1,0 +1,6 @@
+id = "sa-diff-rs"
+display-name = "diff.rs"
+kind = "linter"
+languages = ["rust"]
+programs = ["diff.rs"]
+categories = ["linter"]

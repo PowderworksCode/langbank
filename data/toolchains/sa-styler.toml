@@ -1,0 +1,6 @@
+id = "sa-styler"
+display-name = "styler"
+kind = "formatter"
+languages = ["r"]
+programs = ["styler"]
+categories = ["formatter"]

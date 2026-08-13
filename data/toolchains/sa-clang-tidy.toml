@@ -1,0 +1,6 @@
+id = "sa-clang-tidy"
+display-name = "clang-tidy"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["clang-tidy"]
+categories = ["linter"]

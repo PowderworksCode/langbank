@@ -1,0 +1,6 @@
+id = "sa-escomplex"
+display-name = "escomplex"
+kind = "linter"
+languages = ["javascript"]
+programs = ["escomplex"]
+categories = ["linter"]

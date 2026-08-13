@@ -1,0 +1,6 @@
+id = "sa-php7cc"
+display-name = "php7cc"
+kind = "linter"
+languages = ["php"]
+programs = ["php7cc"]
+categories = ["linter"]

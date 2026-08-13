@@ -1,0 +1,6 @@
+id = "sa-lint"
+display-name = "lint"
+kind = "linter"
+languages = ["dart"]
+programs = ["lint"]
+categories = ["linter"]

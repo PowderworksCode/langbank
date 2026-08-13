@@ -1,0 +1,6 @@
+id = "sa-codelyzer"
+display-name = "Codelyzer"
+kind = "linter"
+languages = ["typescript"]
+programs = ["codelyzer"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-rubycritic"
+display-name = "rubycritic"
+kind = "linter"
+languages = ["ruby"]
+programs = ["rubycritic"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-nargs"
+display-name = "nargs"
+kind = "linter"
+languages = ["go"]
+programs = ["nargs"]
+categories = ["linter"]

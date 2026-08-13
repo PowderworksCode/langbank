@@ -1,0 +1,6 @@
+id = "sa-jbmc"
+display-name = "JBMC"
+kind = "linter"
+languages = ["java"]
+programs = ["jbmc"]
+categories = ["linter"]

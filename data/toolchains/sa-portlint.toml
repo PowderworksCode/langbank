@@ -1,0 +1,6 @@
+id = "sa-portlint"
+display-name = "portlint"
+kind = "linter"
+languages = ["make"]
+programs = ["portlint"]
+categories = ["linter"]

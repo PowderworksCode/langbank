@@ -1,0 +1,6 @@
+id = "sa-dupl"
+display-name = "dupl"
+kind = "linter"
+languages = ["go"]
+programs = ["dupl"]
+categories = ["linter"]

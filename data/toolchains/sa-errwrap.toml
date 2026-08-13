@@ -1,0 +1,6 @@
+id = "sa-errwrap"
+display-name = "errwrap"
+kind = "linter"
+languages = ["go"]
+programs = ["errwrap"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-polymer-analyzer"
+display-name = "Polymer-analyzer"
+kind = "linter"
+languages = ["html", "javascript"]
+programs = ["polymer-analyzer"]
+categories = ["linter"]

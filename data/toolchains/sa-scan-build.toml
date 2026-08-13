@@ -1,0 +1,6 @@
+id = "sa-scan-build"
+display-name = "scan-build"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["scan-build"]
+categories = ["linter"]

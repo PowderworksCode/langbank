@@ -1,0 +1,6 @@
+id = "sa-skunk"
+display-name = "Skunk"
+kind = "linter"
+languages = ["ruby"]
+programs = ["skunk"]
+categories = ["linter"]

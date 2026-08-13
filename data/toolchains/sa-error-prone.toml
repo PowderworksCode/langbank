@@ -1,0 +1,6 @@
+id = "sa-error-prone"
+display-name = "Error Prone"
+kind = "linter"
+languages = ["java"]
+programs = ["error prone"]
+categories = ["linter"]

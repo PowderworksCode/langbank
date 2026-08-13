@@ -1,0 +1,6 @@
+id = "sa-jslint"
+display-name = "JSLint"
+kind = "linter"
+languages = ["javascript"]
+programs = ["jslint"]
+categories = ["linter"]

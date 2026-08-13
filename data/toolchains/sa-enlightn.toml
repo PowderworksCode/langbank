@@ -1,0 +1,6 @@
+id = "sa-enlightn"
+display-name = "Enlightn"
+kind = "linter"
+languages = ["php"]
+programs = ["enlightn"]
+categories = ["linter"]

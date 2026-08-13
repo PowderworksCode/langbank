@@ -1,0 +1,6 @@
+id = "sa-html-tidy"
+display-name = "HTML Tidy"
+kind = "linter"
+languages = ["html"]
+programs = ["html tidy"]
+categories = ["linter"]

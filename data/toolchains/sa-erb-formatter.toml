@@ -1,0 +1,6 @@
+id = "sa-erb-formatter"
+display-name = "ERB::Formatter"
+kind = "formatter"
+languages = ["html", "ruby"]
+programs = ["erb::formatter"]
+categories = ["formatter"]

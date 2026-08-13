@@ -1,0 +1,6 @@
+id = "sa-nu-html-checker"
+display-name = "Nu Html Checker"
+kind = "linter"
+languages = ["css", "html"]
+programs = ["nu html checker"]
+categories = ["linter"]

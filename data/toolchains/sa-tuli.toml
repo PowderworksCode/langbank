@@ -1,0 +1,6 @@
+id = "sa-tuli"
+display-name = "Tuli"
+kind = "linter"
+languages = ["php"]
+programs = ["tuli"]
+categories = ["linter"]

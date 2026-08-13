@@ -1,0 +1,6 @@
+id = "sa-klee"
+display-name = "KLEE"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["klee"]
+categories = ["linter"]

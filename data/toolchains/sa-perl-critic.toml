@@ -1,0 +1,6 @@
+id = "sa-perl-critic"
+display-name = "Perl::Critic"
+kind = "linter"
+languages = ["perl"]
+programs = ["perl::critic"]
+categories = ["linter"]

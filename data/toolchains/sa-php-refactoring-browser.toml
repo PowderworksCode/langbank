@@ -1,0 +1,6 @@
+id = "sa-php-refactoring-browser"
+display-name = "PHP Refactoring Browser"
+kind = "linter"
+languages = ["php"]
+programs = ["php refactoring browser"]
+categories = ["linter"]

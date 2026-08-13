@@ -1,0 +1,6 @@
+id = "sa-tern"
+display-name = "tern"
+kind = "linter"
+languages = ["javascript"]
+programs = ["tern"]
+categories = ["linter"]

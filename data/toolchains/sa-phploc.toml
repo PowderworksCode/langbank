@@ -1,0 +1,6 @@
+id = "sa-phploc"
+display-name = "phploc"
+kind = "linter"
+languages = ["php"]
+programs = ["phploc"]
+categories = ["linter"]

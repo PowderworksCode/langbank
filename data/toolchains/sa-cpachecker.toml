@@ -1,0 +1,6 @@
+id = "sa-cpachecker"
+display-name = "CPAchecker"
+kind = "linter"
+languages = ["c"]
+programs = ["cpachecker"]
+categories = ["linter"]

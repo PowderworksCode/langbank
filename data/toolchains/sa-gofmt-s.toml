@@ -1,0 +1,6 @@
+id = "sa-gofmt-s"
+display-name = "gofmt -s"
+kind = "formatter"
+languages = ["go"]
+programs = ["gofmt -s"]
+categories = ["formatter", "linter"]

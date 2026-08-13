@@ -1,0 +1,6 @@
+id = "sa-reek"
+display-name = "reek"
+kind = "linter"
+languages = ["ruby"]
+programs = ["reek"]
+categories = ["linter"]

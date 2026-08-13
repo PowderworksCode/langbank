@@ -1,0 +1,6 @@
+id = "sa-osv-scanner"
+display-name = "OSV-Scanner"
+kind = "linter"
+languages = ["go"]
+programs = ["osv-scanner"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-prae"
+display-name = "prae"
+kind = "linter"
+languages = ["rust"]
+programs = ["prae"]
+categories = ["linter"]

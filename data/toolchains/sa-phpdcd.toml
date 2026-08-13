@@ -1,0 +1,6 @@
+id = "sa-phpdcd"
+display-name = "phpdcd"
+kind = "linter"
+languages = ["php"]
+programs = ["phpdcd"]
+categories = ["linter"]

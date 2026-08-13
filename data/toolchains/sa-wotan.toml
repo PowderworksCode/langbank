@@ -1,0 +1,6 @@
+id = "sa-wotan"
+display-name = "Wotan"
+kind = "linter"
+languages = ["javascript", "typescript"]
+programs = ["wotan"]
+categories = ["linter"]

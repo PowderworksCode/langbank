@@ -1,0 +1,6 @@
+id = "sa-kani"
+display-name = "kani"
+kind = "linter"
+languages = ["rust"]
+programs = ["kani"]
+categories = ["linter"]

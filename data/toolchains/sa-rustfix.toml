@@ -1,0 +1,6 @@
+id = "sa-rustfix"
+display-name = "rustfix"
+kind = "linter"
+languages = ["rust"]
+programs = ["rustfix"]
+categories = ["linter"]

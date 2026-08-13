@@ -1,0 +1,6 @@
+id = "sa-closurelinter"
+display-name = "ClosureLinter"
+kind = "linter"
+languages = ["javascript"]
+programs = ["closurelinter"]
+categories = ["linter"]

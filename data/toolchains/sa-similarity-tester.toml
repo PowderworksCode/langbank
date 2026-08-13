@@ -1,0 +1,6 @@
+id = "sa-similarity-tester"
+display-name = "Similarity Tester"
+kind = "linter"
+languages = ["c", "cpp", "java", "pascal"]
+programs = ["similarity tester"]
+categories = ["linter"]

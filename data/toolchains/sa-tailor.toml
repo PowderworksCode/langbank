@@ -1,0 +1,6 @@
+id = "sa-tailor"
+display-name = "Tailor"
+kind = "linter"
+languages = ["swift"]
+programs = ["tailor"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-complexity-report"
+display-name = "complexity-report"
+kind = "linter"
+languages = ["javascript"]
+programs = ["complexity-report"]
+categories = ["linter"]

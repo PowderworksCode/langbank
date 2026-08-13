@@ -1,0 +1,6 @@
+id = "sa-cakefuzzer"
+display-name = "CakeFuzzer"
+kind = "linter"
+languages = ["php"]
+programs = ["cakefuzzer"]
+categories = ["linter"]

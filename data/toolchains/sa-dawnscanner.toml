@@ -1,0 +1,6 @@
+id = "sa-dawnscanner"
+display-name = "dawnscanner"
+kind = "linter"
+languages = ["ruby"]
+programs = ["dawnscanner"]
+categories = ["linter"]

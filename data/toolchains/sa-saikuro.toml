@@ -1,0 +1,6 @@
+id = "sa-saikuro"
+display-name = "Saikuro"
+kind = "linter"
+languages = ["ruby"]
+programs = ["saikuro"]
+categories = ["linter"]

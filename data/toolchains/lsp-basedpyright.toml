@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["python"]
 programs = ["basedpyright-langserver"]
 root-markers = ["pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "basedpyright"

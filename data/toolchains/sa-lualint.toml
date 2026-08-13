@@ -1,0 +1,6 @@
+id = "sa-lualint"
+display-name = "lualint"
+kind = "linter"
+languages = ["lua"]
+programs = ["lualint"]
+categories = ["linter"]

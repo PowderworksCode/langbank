@@ -1,0 +1,6 @@
+id = "sa-relint"
+display-name = "relint"
+kind = "linter"
+languages = ["c", "c-sharp", "cpp", "java", "javascript", "python"]
+programs = ["relint"]
+categories = ["linter"]

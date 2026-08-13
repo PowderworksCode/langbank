@@ -1,0 +1,6 @@
+id = "sa-seqra"
+display-name = "Seqra"
+kind = "linter"
+languages = ["java", "kotlin", "yaml"]
+programs = ["seqra"]
+categories = ["linter"]

@@ -1,0 +1,6 @@
+id = "sa-pc-lint"
+display-name = "PC-lint"
+kind = "linter"
+languages = ["c", "cpp"]
+programs = ["pc-lint"]
+categories = ["linter"]

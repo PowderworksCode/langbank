@@ -1,0 +1,6 @@
+id = "sa-reviewdog"
+display-name = "Reviewdog"
+kind = "linter"
+languages = ["go"]
+programs = ["reviewdog"]
+categories = ["linter"]

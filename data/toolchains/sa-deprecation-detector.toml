@@ -1,0 +1,6 @@
+id = "sa-deprecation-detector"
+display-name = "deprecation-detector"
+kind = "linter"
+languages = ["php"]
+programs = ["deprecation-detector"]
+categories = ["linter"]

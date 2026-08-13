@@ -1,0 +1,6 @@
+id = "sa-dotnet-format"
+display-name = "dotnet-format"
+kind = "linter"
+languages = ["c-sharp"]
+programs = ["dotnet-format"]
+categories = ["linter"]

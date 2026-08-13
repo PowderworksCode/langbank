@@ -16,3 +16,4 @@ pattern = '(\d+\.\d+\.\d+)$'
 format = "json"
 arguments = ["-fdiagnostics-format=json"]
 stream = "stderr"
+categories = ["linter"]

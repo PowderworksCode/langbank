@@ -1,0 +1,6 @@
+id = "sa-phan"
+display-name = "phan"
+kind = "linter"
+languages = ["php"]
+programs = ["phan"]
+categories = ["linter"]

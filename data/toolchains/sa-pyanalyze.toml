@@ -1,0 +1,6 @@
+id = "sa-pyanalyze"
+display-name = "pyanalyze"
+kind = "linter"
+languages = ["python"]
+programs = ["pyanalyze"]
+categories = ["linter"]

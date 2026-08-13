@@ -1,0 +1,6 @@
+id = "sa-deepsource"
+display-name = "DeepSource"
+kind = "linter"
+languages = ["go", "javascript", "python", "ruby", "sql"]
+programs = ["deepsource"]
+categories = ["linter"]

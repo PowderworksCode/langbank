@@ -1,0 +1,6 @@
+id = "sa-varcheck"
+display-name = "varcheck"
+kind = "linter"
+languages = ["go"]
+programs = ["varcheck"]
+categories = ["linter"]

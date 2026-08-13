@@ -1,0 +1,6 @@
+id = "sa-bodyclose"
+display-name = "bodyclose"
+kind = "linter"
+languages = ["go"]
+programs = ["bodyclose"]
+categories = ["linter"]

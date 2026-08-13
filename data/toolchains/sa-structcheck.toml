@@ -1,0 +1,6 @@
+id = "sa-structcheck"
+display-name = "structcheck"
+kind = "linter"
+languages = ["go"]
+programs = ["structcheck"]
+categories = ["linter"]

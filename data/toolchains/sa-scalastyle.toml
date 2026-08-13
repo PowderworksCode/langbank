@@ -1,0 +1,6 @@
+id = "sa-scalastyle"
+display-name = "Scalastyle"
+kind = "linter"
+languages = ["scala"]
+programs = ["scalastyle"]
+categories = ["linter"]

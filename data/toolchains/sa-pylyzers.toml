@@ -1,0 +1,6 @@
+id = "sa-pylyzers"
+display-name = "pylyzers"
+kind = "linter"
+languages = ["python"]
+programs = ["pylyzers"]
+categories = ["linter"]

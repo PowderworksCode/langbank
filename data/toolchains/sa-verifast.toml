@@ -1,0 +1,6 @@
+id = "sa-verifast"
+display-name = "VeriFast"
+kind = "linter"
+languages = ["ocaml"]
+programs = ["verifast"]
+categories = ["linter"]

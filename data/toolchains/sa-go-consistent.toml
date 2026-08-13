@@ -1,0 +1,6 @@
+id = "sa-go-consistent"
+display-name = "go-consistent"
+kind = "linter"
+languages = ["go"]
+programs = ["go-consistent"]
+categories = ["linter"]

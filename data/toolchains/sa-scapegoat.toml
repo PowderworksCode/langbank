@@ -1,0 +1,6 @@
+id = "sa-scapegoat"
+display-name = "scapegoat"
+kind = "linter"
+languages = ["scala"]
+programs = ["scapegoat"]
+categories = ["linter"]

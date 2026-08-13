@@ -1,0 +1,6 @@
+id = "sa-php-architecture-tester"
+display-name = "PHP Architecture Tester"
+kind = "linter"
+languages = ["php"]
+programs = ["php architecture tester"]
+categories = ["linter"]

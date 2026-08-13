@@ -1,0 +1,6 @@
+id = "sa-lintr"
+display-name = "lintr"
+kind = "linter"
+languages = ["r"]
+programs = ["lintr"]
+categories = ["linter"]

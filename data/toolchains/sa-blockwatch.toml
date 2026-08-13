@@ -1,0 +1,6 @@
+id = "sa-blockwatch"
+display-name = "BlockWatch"
+kind = "linter"
+languages = ["c", "cpp", "css", "go", "html", "java", "javascript", "kotlin", "make", "markdown", "php", "python", "ruby", "rust", "shell", "sql", "swift", "typescript", "xml", "yaml"]
+programs = ["blockwatch"]
+categories = ["linter"]
