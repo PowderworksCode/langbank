@@ -7,4 +7,4 @@ categories = ["language-server", "linter"]
 
 [distribution]
 registry = "npm"
-package = "%40glint/core"
+package = "@glint/core"

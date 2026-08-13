@@ -3,3 +3,7 @@ display-name = "mmdc"
 kind = "linter"
 languages = ["markdown", "mermaid"]
 programs = ["mmdc"]
+
+[distribution]
+registry = "npm"
+package = "@mermaid-js/mermaid-cli"

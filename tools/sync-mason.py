@@ -25,6 +25,7 @@ import json
 import re
 import sys
 import tarfile
+import urllib.parse
 import urllib.request
 from io import BytesIO
 
@@ -95,8 +96,23 @@ def to_language(name, by_display):
 
 
 def purl_parts(purl):
-    match = re.match(r"pkg:([a-zA-Z0-9.+-]+)/([^@?]+)", purl or "")
-    return (match.group(1), match.group(2)) if match else (None, None)
+    """Split `pkg:type/namespace/name@version` into its type and its name.
+
+    The version is after the *last* `@`, not the first. An npm scope is part of
+    the name and is spelled either `@scope/name` or percent-encoded as
+    `%40scope/name`, so a pattern that stops at the first `@` drops every scoped
+    package on the floor — which is exactly what the first version did, losing
+    the distribution for thirteen tools without saying anything.
+    """
+    match = re.match(r"pkg:([a-zA-Z0-9.+-]+)/(.+)", purl or "")
+    if not match:
+        return (None, None)
+    kind, rest = match.group(1), match.group(2)
+    rest = rest.split("?")[0].split("#")[0]
+    at = rest.rfind("@")
+    if at > 0:
+        rest = rest[:at]
+    return (kind, urllib.parse.unquote(rest))
 
 
 def main():
@@ -124,7 +140,13 @@ def main():
         existing = programs.get(package["name"])
         if existing:
             _, text = toolchains[existing]
-            if "distribution" not in text:
+            # Outstanding only when there is something to write. A package with
+            # no purl gets no distribution block, so counting it as pending
+            # would leave the check permanently red — and a check that cannot
+            # go green teaches everyone to ignore it.
+            wants_distribution = registry and name and "[distribution]" not in text
+            wants_categories = kinds and "categories" not in text
+            if wants_distribution or wants_categories:
                 merges.append((existing, entry))
         elif f'mason-{package["name"]}' not in toolchains:
             creates.append(entry)
@@ -139,13 +161,16 @@ def main():
         return 1 if merges or creates else 0
 
     for tid, entry in merges:
-        path, _ = toolchains[tid]
+        path, text = toolchains[tid]
         lines = []
-        if entry["kinds"]:
+        # Append only what is absent. `create` has to be safe to run twice —
+        # the first version appended unconditionally and produced files with
+        # `categories` written twice, which TOML rejects as overwriting a value.
+        if entry["kinds"] and "categories" not in text:
             lines.append(f'categories = {json.dumps(entry["kinds"], ensure_ascii=False)}')
         # a package with no purl has no distribution to record, and a null is
         # not a fact
-        if entry["registry"] and entry["package"]:
+        if entry["registry"] and entry["package"] and "[distribution]" not in text:
             lines.append(f'\n[distribution]\nregistry = {json.dumps(entry["registry"], ensure_ascii=False)}')
             lines.append(f'package = {json.dumps(entry["package"], ensure_ascii=False)}')
         if lines:

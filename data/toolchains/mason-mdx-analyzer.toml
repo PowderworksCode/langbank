@@ -7,4 +7,4 @@ categories = ["language-server"]
 
 [distribution]
 registry = "npm"
-package = "%40mdx-js/language-server"
+package = "@mdx-js/language-server"

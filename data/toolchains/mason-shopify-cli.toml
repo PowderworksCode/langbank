@@ -7,4 +7,4 @@ categories = ["language-server", "linter"]
 
 [distribution]
 registry = "npm"
-package = "%40shopify/cli"
+package = "@shopify/cli"

@@ -7,4 +7,4 @@ categories = ["formatter", "linter"]
 
 [distribution]
 registry = "npm"
-package = "%40mistweaverco/kulala-fmt"
+package = "@mistweaverco/kulala-fmt"

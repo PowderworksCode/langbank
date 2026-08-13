@@ -7,4 +7,4 @@ categories = ["language-server"]
 
 [distribution]
 registry = "npm"
-package = "%40astrojs/language-server"
+package = "@astrojs/language-server"

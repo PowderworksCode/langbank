@@ -7,4 +7,4 @@ categories = ["language-server"]
 
 [distribution]
 registry = "npm"
-package = "%40tailwindcss/language-server"
+package = "@tailwindcss/language-server"
