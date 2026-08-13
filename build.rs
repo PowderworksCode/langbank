@@ -245,7 +245,9 @@ fn ecosystems(out: &mut String, directory: &Path) {
         .collect::<Vec<_>>();
     files.sort();
 
-    out.push_str("pub(crate) mod ecosystems {\n");
+    // A profile is emitted for every ecosystem; which of them lib.rs surfaces
+    // by name is its own choice, so the unused ones are not a warning.
+    out.push_str("#[allow(unused_imports)]\npub(crate) mod ecosystems {\n");
     let mut exports = Vec::new();
     for path in &files {
         println!("cargo:rerun-if-changed={}", path.display());

@@ -1,0 +1,7 @@
+id = "swift-pm"
+registry = "swift"
+display-name = "Swift Package Manager"
+roles = ["package-manager", "build-system"]
+implied-languages = ["swift"]
+manifest = "Package.swift"
+manifest-selection = "default"

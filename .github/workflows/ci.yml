@@ -42,5 +42,12 @@ jobs:
         run: tools/sync-mason.py check
       - name: static-analysis coverage
         run: tools/sync-static-analysis.py check
+      - name: dependabot ecosystems
+        run: |
+          # Dependabot states its facts in Ruby, so they are read with Ripper
+          # rather than by regex. A shallow clone is enough; nothing is vendored.
+          git clone --depth 1 https://github.com/dependabot/dependabot-core.git /tmp/dependabot-core
+          ruby tools/extract-dependabot.rb /tmp/dependabot-core > /tmp/dependabot.json
+          tools/sync-dependabot.py check /tmp/dependabot.json
       - name: version probes, against whatever this runner has
         run: tools/verify-toolchains.py --strict

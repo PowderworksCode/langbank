@@ -1,0 +1,7 @@
+id = "hex"
+registry = "hex"
+display-name = "Hex"
+roles = ["package-manager"]
+implied-languages = ["elixir"]
+manifest = "mix.exs"
+manifest-selection = "default"

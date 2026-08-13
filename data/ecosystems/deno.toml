@@ -1,0 +1,8 @@
+id = "deno"
+display-name = "Deno"
+roles = ["package-manager", "runtime"]
+implied-languages = ["typescript", "javascript"]
+manifest = "deno.json"
+selector-files = ["deno.jsonc"]
+lockfiles = ["deno.lock"]
+manifest-selection = "default"

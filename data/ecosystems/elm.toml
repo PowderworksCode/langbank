@@ -1,0 +1,6 @@
+id = "elm"
+display-name = "Elm packages"
+roles = ["package-manager"]
+implied-languages = ["elm"]
+manifest = "elm.json"
+manifest-selection = "default"

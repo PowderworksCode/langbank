@@ -1,0 +1,7 @@
+id = "maven"
+registry = "maven"
+display-name = "Maven"
+roles = ["package-manager", "build-system"]
+implied-languages = ["java"]
+manifest = "pom.xml"
+manifest-selection = "default"

@@ -38,7 +38,7 @@ MIT; GitHub reports both as `NOASSERTION` and is wrong to.
 | boyter/scc | MIT | comment syntax, extensions | **absorbed** |
 | neovim/nvim-lspconfig | Apache-2.0 | language servers, root markers | **absorbed** |
 | mason-org/mason-registry | Apache-2.0 | tool roles, distribution | **absorbed** |
-| dependabot/dependabot-core | MIT | ecosystem manifests, registries | after toolchains |
+| dependabot/dependabot-core | MIT | package ecosystems, manifests, lockfiles | **absorbed** |
 | analysis-tools-dev/static-analysis | MIT | linters and formatters per language | **absorbed** |
 | git-pkgs/brief | MIT | language → toolchain, 22 categories | schema reference |
 | codemirror/language-data | MIT, archived | aliases | low value |
@@ -152,7 +152,7 @@ than an afternoon.
 3. nvim-lspconfig          done: 266 servers with their root markers
 4. mason-registry          done: 157 tools gained a distribution, 326 are new
 5. static-analysis         done: 510 linters and formatters across 117 languages
-6. dependabot-core         last, and measured to be the most expensive: its facts
-                           live inside Ruby method bodies rather than in a
-                           dataset, across ~30 differently shaped file fetchers
+6. dependabot-core         done: 13 package ecosystems, read with Ripper rather
+                           than regex — following constant references took the
+                           yield from 16 ecosystems to 27
 ```
