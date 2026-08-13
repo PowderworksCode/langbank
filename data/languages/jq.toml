@@ -2,5 +2,6 @@ id = "jq"
 display-name = "jq"
 role = "programming"
 extensions = ["jq"]
+primary-extensions = ["jq"]
 comments = "awk"
 shebangs = ["gojq", "jaq", "jq", "jqjq", "jqq", "query-json"]

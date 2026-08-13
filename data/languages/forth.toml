@@ -2,4 +2,5 @@ id = "forth"
 display-name = "Forth"
 role = "programming"
 extensions = ["4th", "e4", "f", "f83", "fb", "for", "forth", "fpm", "fr", "frt", "fs", "ft", "fth", "rx"]
+primary-extensions = ["fr"]
 comments = "forth"

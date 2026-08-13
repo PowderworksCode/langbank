@@ -2,5 +2,6 @@ id = "livescript"
 display-name = "LiveScript"
 role = "programming"
 extensions = ["_ls", "ls"]
+primary-extensions = ["ls"]
 comments = "livescript"
 filenames = ["Slakefile"]

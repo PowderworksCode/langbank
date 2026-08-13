@@ -2,5 +2,6 @@ id = "nushell"
 display-name = "Nushell"
 role = "programming"
 extensions = ["nu"]
+primary-extensions = ["nu"]
 comments = "awk"
 shebangs = ["nu"]

@@ -2,4 +2,5 @@ id = "solidity"
 display-name = "Solidity"
 role = "programming"
 extensions = ["sol"]
+primary-extensions = ["sol"]
 comments = "actionscript"

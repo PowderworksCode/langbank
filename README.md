@@ -127,7 +127,14 @@ A contest is settled only when exactly one claimant declares the token
 `primary-extensions`. Otherwise detection **returns nothing** — guessing without
 reading the file is a wrong answer where declining is merely an unhelpful one —
 and `languages_claiming_extension` hands a consumer the candidates so it can
-decide for itself. 28 contests are settled; 148 are left honestly open.
+decide for itself.
+
+61 contests are settled and 127 are left open. Half of the settled ones came
+from a person; the rest were taken where **tokei and scc independently name the
+same claimant**, which is corroboration rather than an echo — the two were
+measured at 77%/93%/89% agreement, nowhere near the ~100% a shared lineage would
+show. Where only one corpus has an opinion, or the two disagree, nothing is
+claimed. `.luau` is Lua to tokei and Luau to scc, and langbank says neither.
 
 ### Toolchains are facts about programs, and they were measured
 

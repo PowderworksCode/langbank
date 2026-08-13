@@ -2,4 +2,5 @@ id = "verilog"
 display-name = "Verilog"
 role = "programming"
 extensions = ["v", "veo", "vg", "vh"]
+primary-extensions = ["vh"]
 comments = "actionscript"

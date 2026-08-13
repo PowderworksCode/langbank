@@ -2,6 +2,7 @@ id = "r"
 display-name = "R"
 role = "programming"
 extensions = ["r", "rd", "rsx"]
+primary-extensions = ["r"]
 comments = "awk"
 filenames = [".Rprofile", "expr-dist"]
 shebangs = ["Rscript"]
