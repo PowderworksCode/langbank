@@ -1,0 +1,6 @@
+id = "lsp-metals"
+display-name = "metals"
+kind = "language-server"
+languages = ["scala"]
+programs = ["metals"]
+root-markers = ["build.sbt", "build.sc", "build.gradle", "build.gradle.kts", "pom.xml"]

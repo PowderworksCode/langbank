@@ -1,0 +1,6 @@
+id = "lsp-sorbet"
+display-name = "sorbet"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["srb"]
+root-markers = ["Gemfile", ".git"]

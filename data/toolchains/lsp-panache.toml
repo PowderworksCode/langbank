@@ -1,0 +1,6 @@
+id = "lsp-panache"
+display-name = "panache"
+kind = "language-server"
+languages = ["markdown", "rmarkdown"]
+programs = ["panache"]
+root-markers = [".panache.toml", "panache.toml", "_quarto.yml", "_bookdown.yml", ".git"]

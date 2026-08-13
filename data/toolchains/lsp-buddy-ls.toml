@@ -1,0 +1,6 @@
+id = "lsp-buddy-ls"
+display-name = "buddy_ls"
+kind = "language-server"
+languages = ["mlir"]
+programs = ["buddy-lsp-server"]
+root-markers = [".git"]

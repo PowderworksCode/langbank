@@ -1,0 +1,5 @@
+id = "lsp-sourcekit"
+display-name = "sourcekit"
+kind = "language-server"
+languages = ["c", "cpp", "objective-c", "objective-cpp", "swift"]
+programs = ["sourcekit-lsp"]

@@ -1,0 +1,6 @@
+id = "lsp-prismals"
+display-name = "prismals"
+kind = "language-server"
+languages = ["prisma"]
+programs = ["prisma-language-server"]
+root-markers = [".git", "package.json"]

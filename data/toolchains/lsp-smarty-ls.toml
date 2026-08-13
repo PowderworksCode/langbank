@@ -1,0 +1,5 @@
+id = "lsp-smarty-ls"
+display-name = "smarty_ls"
+kind = "language-server"
+languages = ["smarty"]
+programs = ["smarty-language-server"]

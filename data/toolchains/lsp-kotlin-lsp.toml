@@ -1,0 +1,6 @@
+id = "lsp-kotlin-lsp"
+display-name = "kotlin_lsp"
+kind = "language-server"
+languages = ["kotlin"]
+programs = ["intellij-server"]
+root-markers = ["settings.gradle", "settings.gradle.kts", "pom.xml", "build.gradle", "build.gradle.kts", "workspace.json"]

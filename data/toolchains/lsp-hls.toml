@@ -1,0 +1,5 @@
+id = "lsp-hls"
+display-name = "hls"
+kind = "language-server"
+languages = ["haskell"]
+programs = ["haskell-language-server-wrapper"]

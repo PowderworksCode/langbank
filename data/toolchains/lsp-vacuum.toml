@@ -1,0 +1,6 @@
+id = "lsp-vacuum"
+display-name = "vacuum"
+kind = "language-server"
+languages = ["json", "yaml"]
+programs = ["vacuum"]
+root-markers = [".git"]

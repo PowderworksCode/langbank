@@ -1,0 +1,6 @@
+id = "lsp-statix"
+display-name = "statix"
+kind = "language-server"
+languages = ["nix"]
+programs = ["statix"]
+root-markers = ["flake.nix", ".git"]

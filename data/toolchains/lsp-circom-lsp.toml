@@ -1,0 +1,6 @@
+id = "lsp-circom-lsp"
+display-name = "circom-lsp"
+kind = "language-server"
+languages = ["circom"]
+programs = ["circom-lsp"]
+root-markers = [".git"]

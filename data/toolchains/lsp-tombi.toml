@@ -1,0 +1,6 @@
+id = "lsp-tombi"
+display-name = "tombi"
+kind = "language-server"
+languages = ["toml"]
+programs = ["tombi"]
+root-markers = ["tombi.toml", "pyproject.toml", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-verible"
+display-name = "verible"
+kind = "language-server"
+languages = ["systemverilog", "verilog"]
+programs = ["verible-verilog-ls"]
+root-markers = ["verible.filelist", ".git"]

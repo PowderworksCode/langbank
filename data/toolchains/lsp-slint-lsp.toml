@@ -1,0 +1,6 @@
+id = "lsp-slint-lsp"
+display-name = "slint_lsp"
+kind = "language-server"
+languages = ["slint"]
+programs = ["slint-lsp"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-thriftls"
+display-name = "thriftls"
+kind = "language-server"
+languages = ["thrift"]
+programs = ["thriftls"]
+root-markers = [".thrift"]

@@ -19,6 +19,7 @@ against permissively licensed upstream projects. With thanks:
 | [package-url/purl-spec](https://github.com/package-url/purl-spec) | MIT | package registry types, canonical hosts, identity rules |
 | [XAMPPRocky/tokei](https://github.com/XAMPPRocky/tokei) | MIT / Apache-2.0 | comment syntax, extensions |
 | [boyter/scc](https://github.com/boyter/scc) | MIT | comment syntax, extensions |
+| [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Apache-2.0 | language servers, commands, root markers |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -73,7 +74,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | package registries | 42, aligned with purl |
 | ecosystems | 5 package managers — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
-| toolchains | 16 — which program implements a language, how to read its version, how to get machine-readable diagnostics |
+| toolchains | 282 — 16 compilers and runtimes with version probes, plus 266 language servers with their root markers |
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
 | conventions | test layout, inline-test detection, typecheck defaults |
@@ -156,6 +157,13 @@ guessed right:
 `tools/verify-toolchains.py` runs every probe against whatever is installed and
 reports; it skips absent programs rather than failing, because no machine has
 all of them. 14 of 16 verified where this was written.
+
+**Root markers belong to the program, not to the language.** clangd decides a
+project by `compile_commands.json`, deno by `deno.json`, pyright by
+`pyrightconfig.json` — three conventions, one of which is not even about the
+same language. Unioning them per language was tried and produces noise: most
+servers listing `rust` among their filetypes are generic formatters and
+spellcheckers, and in that pile `Cargo.toml` is outvoted by `dprint.json`.
 
 ### Staying current
 

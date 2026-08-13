@@ -1,0 +1,6 @@
+id = "lsp-remark-ls"
+display-name = "remark_ls"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["remark-language-server"]
+root-markers = [".remarkrc", ".remarkrc.json", ".remarkrc.js", ".remarkrc.cjs", ".remarkrc.mjs", ".remarkrc.yml", ".remarkrc.yaml", ".remarkignore"]

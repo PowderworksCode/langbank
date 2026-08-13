@@ -1,0 +1,6 @@
+id = "lsp-stylelint-lsp"
+display-name = "stylelint_lsp"
+kind = "language-server"
+languages = ["astro", "css", "html", "less", "scss", "vue"]
+programs = ["stylelint-language-server"]
+root-markers = ["package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock"]

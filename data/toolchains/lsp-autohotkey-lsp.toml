@@ -1,0 +1,6 @@
+id = "lsp-autohotkey-lsp"
+display-name = "autohotkey_lsp"
+kind = "language-server"
+languages = ["autohotkey"]
+programs = ["autohotkey_lsp"]
+root-markers = ["package.json"]

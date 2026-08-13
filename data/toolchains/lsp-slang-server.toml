@@ -1,0 +1,6 @@
+id = "lsp-slang-server"
+display-name = "slang_server"
+kind = "language-server"
+languages = ["systemverilog", "verilog"]
+programs = ["slang-server"]
+root-markers = [".git", ".slang"]

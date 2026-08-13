@@ -1,0 +1,6 @@
+id = "lsp-markdown-oxide"
+display-name = "markdown_oxide"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["markdown-oxide"]
+root-markers = [".git", ".obsidian", ".moxide.toml"]

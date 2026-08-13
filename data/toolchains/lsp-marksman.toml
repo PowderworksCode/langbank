@@ -1,0 +1,6 @@
+id = "lsp-marksman"
+display-name = "marksman"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["marksman"]
+root-markers = [".marksman.toml", ".git"]

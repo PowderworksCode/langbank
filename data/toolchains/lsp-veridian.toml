@@ -1,0 +1,6 @@
+id = "lsp-veridian"
+display-name = "veridian"
+kind = "language-server"
+languages = ["systemverilog", "verilog"]
+programs = ["veridian"]
+root-markers = [".git"]

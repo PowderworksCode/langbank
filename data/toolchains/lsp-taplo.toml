@@ -1,0 +1,6 @@
+id = "lsp-taplo"
+display-name = "taplo"
+kind = "language-server"
+languages = ["toml"]
+programs = ["taplo"]
+root-markers = [".taplo.toml", "taplo.toml", ".git"]

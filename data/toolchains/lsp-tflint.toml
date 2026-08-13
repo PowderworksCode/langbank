@@ -1,0 +1,6 @@
+id = "lsp-tflint"
+display-name = "tflint"
+kind = "language-server"
+languages = ["hcl"]
+programs = ["tflint"]
+root-markers = [".terraform", ".git", ".tflint.hcl"]

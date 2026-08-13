@@ -1,0 +1,6 @@
+id = "lsp-zk"
+display-name = "zk"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["zk"]
+root-markers = [".zk"]

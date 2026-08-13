@@ -1,0 +1,6 @@
+id = "lsp-qmlls"
+display-name = "qmlls"
+kind = "language-server"
+languages = ["qml"]
+programs = ["qmlls"]
+root-markers = [".git"]

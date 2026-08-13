@@ -1,0 +1,6 @@
+id = "lsp-kcl"
+display-name = "kcl"
+kind = "language-server"
+languages = ["kcl"]
+programs = ["kcl-language-server"]
+root-markers = [".git"]

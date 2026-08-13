@@ -1,0 +1,6 @@
+id = "lsp-cue"
+display-name = "cue"
+kind = "language-server"
+languages = ["cue"]
+programs = ["cue"]
+root-markers = ["cue.mod", ".git"]

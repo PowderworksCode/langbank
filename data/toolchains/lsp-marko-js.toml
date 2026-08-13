@@ -1,0 +1,6 @@
+id = "lsp-marko-js"
+display-name = "marko-js"
+kind = "language-server"
+languages = ["marko"]
+programs = ["marko-language-server"]
+root-markers = [".git"]

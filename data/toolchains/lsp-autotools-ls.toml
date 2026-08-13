@@ -1,0 +1,5 @@
+id = "lsp-autotools-ls"
+display-name = "autotools_ls"
+kind = "language-server"
+languages = ["makefile"]
+programs = ["autotools-language-server"]

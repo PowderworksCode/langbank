@@ -1,0 +1,6 @@
+id = "lsp-herb-ls"
+display-name = "herb_ls"
+kind = "language-server"
+languages = ["html", "html-erb"]
+programs = ["herb-language-server"]
+root-markers = ["Gemfile", ".git"]

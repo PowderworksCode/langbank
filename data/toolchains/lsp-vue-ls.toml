@@ -1,0 +1,6 @@
+id = "lsp-vue-ls"
+display-name = "vue_ls"
+kind = "language-server"
+languages = ["vue"]
+programs = ["vue-language-server"]
+root-markers = ["package.json"]

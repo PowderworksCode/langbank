@@ -1,0 +1,6 @@
+id = "lsp-kdl-lsp"
+display-name = "kdl_lsp"
+kind = "language-server"
+languages = ["kdl"]
+programs = ["kdl-lsp"]
+root-markers = [".git"]

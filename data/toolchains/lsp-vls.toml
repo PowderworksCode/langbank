@@ -1,0 +1,6 @@
+id = "lsp-vls"
+display-name = "vls"
+kind = "language-server"
+languages = ["v"]
+programs = ["v"]
+root-markers = ["v.mod", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-bqls"
+display-name = "bqls"
+kind = "language-server"
+languages = ["sql"]
+programs = ["bqls"]
+root-markers = [".git"]

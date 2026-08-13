@@ -1,0 +1,6 @@
+id = "lsp-glslls"
+display-name = "glslls"
+kind = "language-server"
+languages = ["glsl"]
+programs = ["glslls"]
+root-markers = [".git"]

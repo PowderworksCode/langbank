@@ -1,0 +1,6 @@
+id = "lsp-move-analyzer"
+display-name = "move_analyzer"
+kind = "language-server"
+languages = ["move"]
+programs = ["move-analyzer"]
+root-markers = ["Move.toml"]

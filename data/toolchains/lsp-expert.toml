@@ -1,0 +1,5 @@
+id = "lsp-expert"
+display-name = "expert"
+kind = "language-server"
+languages = ["elixir"]
+programs = ["expert"]

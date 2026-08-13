@@ -1,0 +1,6 @@
+id = "lsp-hare-lsp"
+display-name = "hare_lsp"
+kind = "language-server"
+languages = ["hare"]
+programs = ["hare-lsp"]
+root-markers = [".git"]

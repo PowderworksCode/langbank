@@ -1,0 +1,6 @@
+id = "lsp-hydra-lsp"
+display-name = "hydra_lsp"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["hydra-lsp"]
+root-markers = [".git"]

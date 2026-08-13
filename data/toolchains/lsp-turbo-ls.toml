@@ -1,0 +1,6 @@
+id = "lsp-turbo-ls"
+display-name = "turbo_ls"
+kind = "language-server"
+languages = ["blade", "html", "html-erb", "php", "ruby"]
+programs = ["turbo-language-server"]
+root-markers = ["Gemfile", ".git"]

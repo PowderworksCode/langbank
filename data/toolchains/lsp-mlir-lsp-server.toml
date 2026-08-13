@@ -1,0 +1,6 @@
+id = "lsp-mlir-lsp-server"
+display-name = "mlir_lsp_server"
+kind = "language-server"
+languages = ["mlir"]
+programs = ["mlir-lsp-server"]
+root-markers = [".git"]

@@ -687,6 +687,7 @@ fn toolchains(out: &mut String, directory: &Path) {
              \x20       programs: {programs},\n\
              \x20       version: {version},\n\
              \x20       diagnostics: {diagnostics},\n\
+             \x20       root_markers: {markers},\n\
              \x20   }};\n\
              \x20   crate::registry::submit! {{ crate::ToolchainRegistration(&{name}) }}",
             name = screaming(id),
@@ -702,6 +703,7 @@ fn toolchains(out: &mut String, directory: &Path) {
             ),
             languages = languages.join(", "),
             programs = strs(entry.get("programs")),
+            markers = strs(entry.get("root-markers")),
         )
         .expect("write toolchain");
     }

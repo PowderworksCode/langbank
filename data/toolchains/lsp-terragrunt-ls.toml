@@ -1,0 +1,6 @@
+id = "lsp-terragrunt-ls"
+display-name = "terragrunt_ls"
+kind = "language-server"
+languages = ["hcl"]
+programs = ["terragrunt-ls"]
+root-markers = ["terragrunt.hcl", ".git"]

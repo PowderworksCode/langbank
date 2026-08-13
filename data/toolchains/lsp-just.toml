@@ -1,0 +1,6 @@
+id = "lsp-just"
+display-name = "just"
+kind = "language-server"
+languages = ["just"]
+programs = ["just-lsp"]
+root-markers = [".git"]

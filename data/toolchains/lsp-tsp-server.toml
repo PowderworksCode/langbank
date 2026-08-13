@@ -1,0 +1,6 @@
+id = "lsp-tsp-server"
+display-name = "tsp_server"
+kind = "language-server"
+languages = ["typespec"]
+programs = ["tsp-server"]
+root-markers = ["tspconfig.yaml", ".git"]

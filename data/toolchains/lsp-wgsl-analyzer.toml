@@ -1,0 +1,6 @@
+id = "lsp-wgsl-analyzer"
+display-name = "wgsl_analyzer"
+kind = "language-server"
+languages = ["wgsl"]
+programs = ["wgsl-analyzer"]
+root-markers = [".git"]

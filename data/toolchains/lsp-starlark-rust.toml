@@ -1,0 +1,6 @@
+id = "lsp-starlark-rust"
+display-name = "starlark_rust"
+kind = "language-server"
+languages = ["star"]
+programs = ["starlark"]
+root-markers = [".git"]

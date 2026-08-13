@@ -1,0 +1,6 @@
+id = "lsp-dagger"
+display-name = "dagger"
+kind = "language-server"
+languages = ["cue"]
+programs = ["cuelsp"]
+root-markers = ["cue.mod", ".git"]

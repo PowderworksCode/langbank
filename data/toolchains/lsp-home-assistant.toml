@@ -1,0 +1,6 @@
+id = "lsp-home-assistant"
+display-name = "home_assistant"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["vscode-home-assistant"]
+root-markers = ["configuration.yaml", "configuration.yml"]

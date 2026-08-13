@@ -1,0 +1,6 @@
+id = "lsp-nickel-ls"
+display-name = "nickel_ls"
+kind = "language-server"
+languages = ["ncl", "nickel"]
+programs = ["nls"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-flow"
+display-name = "flow"
+kind = "language-server"
+languages = ["javascript"]
+programs = ["flow"]
+root-markers = [".flowconfig"]

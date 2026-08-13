@@ -1,0 +1,6 @@
+id = "lsp-dockerls"
+display-name = "dockerls"
+kind = "language-server"
+languages = ["dockerfile"]
+programs = ["docker-langserver"]
+root-markers = ["Dockerfile"]

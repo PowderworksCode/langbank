@@ -1,0 +1,5 @@
+id = "lsp-ocamllsp"
+display-name = "ocamllsp"
+kind = "language-server"
+languages = ["dune", "ocaml", "reason"]
+programs = ["ocamllsp"]

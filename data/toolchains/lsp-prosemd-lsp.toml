@@ -1,0 +1,6 @@
+id = "lsp-prosemd-lsp"
+display-name = "prosemd_lsp"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["prosemd-lsp"]
+root-markers = [".git"]

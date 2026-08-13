@@ -1,0 +1,6 @@
+id = "lsp-motoko-lsp"
+display-name = "motoko_lsp"
+kind = "language-server"
+languages = ["motoko"]
+programs = ["motoko-lsp"]
+root-markers = ["dfx.json", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-solargraph"
+display-name = "solargraph"
+kind = "language-server"
+languages = ["ruby"]
+programs = ["solargraph"]
+root-markers = ["Gemfile", ".git"]

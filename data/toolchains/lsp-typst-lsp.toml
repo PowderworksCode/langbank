@@ -1,0 +1,6 @@
+id = "lsp-typst-lsp"
+display-name = "typst_lsp"
+kind = "language-server"
+languages = ["typst"]
+programs = ["typst-lsp"]
+root-markers = [".git"]

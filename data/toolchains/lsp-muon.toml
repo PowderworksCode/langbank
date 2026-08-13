@@ -1,0 +1,5 @@
+id = "lsp-muon"
+display-name = "muon"
+kind = "language-server"
+languages = ["meson"]
+programs = ["muon"]

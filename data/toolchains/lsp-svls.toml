@@ -1,0 +1,6 @@
+id = "lsp-svls"
+display-name = "svls"
+kind = "language-server"
+languages = ["systemverilog", "verilog"]
+programs = ["svls"]
+root-markers = [".git"]

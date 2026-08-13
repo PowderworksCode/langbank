@@ -1,0 +1,6 @@
+id = "lsp-bitbake-language-server"
+display-name = "bitbake_language_server"
+kind = "language-server"
+languages = ["bitbake"]
+programs = ["bitbake-language-server"]
+root-markers = [".git"]

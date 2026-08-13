@@ -1,0 +1,6 @@
+id = "lsp-pylyzer"
+display-name = "pylyzer"
+kind = "language-server"
+languages = ["python"]
+programs = ["pylyzer"]
+root-markers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]

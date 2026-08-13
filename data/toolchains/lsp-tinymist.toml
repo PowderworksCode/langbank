@@ -1,0 +1,6 @@
+id = "lsp-tinymist"
+display-name = "tinymist"
+kind = "language-server"
+languages = ["typst"]
+programs = ["tinymist"]
+root-markers = [".git"]

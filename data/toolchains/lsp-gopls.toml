@@ -1,0 +1,5 @@
+id = "lsp-gopls"
+display-name = "gopls"
+kind = "language-server"
+languages = ["go"]
+programs = ["gopls"]

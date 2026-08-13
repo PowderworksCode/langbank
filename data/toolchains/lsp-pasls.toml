@@ -1,0 +1,5 @@
+id = "lsp-pasls"
+display-name = "pasls"
+kind = "language-server"
+languages = ["pascal"]
+programs = ["pasls"]

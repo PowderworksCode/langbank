@@ -1,0 +1,6 @@
+id = "lsp-futhark-lsp"
+display-name = "futhark_lsp"
+kind = "language-server"
+languages = ["futhark"]
+programs = ["futhark"]
+root-markers = [".git"]

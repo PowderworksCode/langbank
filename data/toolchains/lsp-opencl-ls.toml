@@ -1,0 +1,6 @@
+id = "lsp-opencl-ls"
+display-name = "opencl_ls"
+kind = "language-server"
+languages = ["opencl"]
+programs = ["opencl-language-server"]
+root-markers = [".git"]

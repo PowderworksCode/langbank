@@ -1,0 +1,6 @@
+id = "lsp-templ"
+display-name = "templ"
+kind = "language-server"
+languages = ["templ"]
+programs = ["templ"]
+root-markers = ["go.work", "go.mod", ".git"]

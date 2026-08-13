@@ -1,0 +1,6 @@
+id = "lsp-typeprof"
+display-name = "typeprof"
+kind = "language-server"
+languages = ["html-erb", "ruby"]
+programs = ["typeprof"]
+root-markers = ["Gemfile", ".git"]

@@ -1,0 +1,6 @@
+id = "lsp-pony-lsp"
+display-name = "pony_lsp"
+kind = "language-server"
+languages = ["pony"]
+programs = ["pony-lsp"]
+root-markers = ["corral.json", ".git"]

@@ -36,5 +36,7 @@ jobs:
         run: tools/sync-purl.py check
       - name: tokei and scc coverage
         run: tools/sync-corpora.py check
+      - name: nvim-lspconfig coverage
+        run: tools/sync-lspconfig.py check
       - name: version probes, against whatever this runner has
         run: tools/verify-toolchains.py --strict

@@ -1,0 +1,6 @@
+id = "lsp-angularls"
+display-name = "angularls"
+kind = "language-server"
+languages = ["html", "typescript"]
+programs = ["ngserver"]
+root-markers = ["angular.json", "nx.json"]

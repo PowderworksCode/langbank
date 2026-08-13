@@ -1,0 +1,6 @@
+id = "lsp-ruff-lsp"
+display-name = "ruff_lsp"
+kind = "language-server"
+languages = ["python"]
+programs = ["ruff-lsp"]
+root-markers = ["pyproject.toml", "ruff.toml", ".git"]

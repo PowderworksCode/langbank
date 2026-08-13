@@ -1,0 +1,6 @@
+id = "lsp-djlsp"
+display-name = "djlsp"
+kind = "language-server"
+languages = ["html"]
+programs = ["djlsp"]
+root-markers = [".git"]

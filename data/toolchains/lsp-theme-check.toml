@@ -1,0 +1,6 @@
+id = "lsp-theme-check"
+display-name = "theme_check"
+kind = "language-server"
+languages = ["liquid"]
+programs = ["theme-check-language-server"]
+root-markers = [".theme-check.yml"]

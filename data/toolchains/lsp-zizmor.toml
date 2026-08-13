@@ -1,0 +1,5 @@
+id = "lsp-zizmor"
+display-name = "zizmor"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["zizmor"]

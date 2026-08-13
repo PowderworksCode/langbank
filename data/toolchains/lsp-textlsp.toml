@@ -1,0 +1,6 @@
+id = "lsp-textlsp"
+display-name = "textlsp"
+kind = "language-server"
+languages = ["org", "tex", "text"]
+programs = ["textlsp"]
+root-markers = [".git"]

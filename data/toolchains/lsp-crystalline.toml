@@ -1,0 +1,6 @@
+id = "lsp-crystalline"
+display-name = "crystalline"
+kind = "language-server"
+languages = ["crystal"]
+programs = ["crystalline"]
+root-markers = ["shard.yml", ".git"]

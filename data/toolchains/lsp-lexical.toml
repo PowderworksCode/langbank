@@ -1,0 +1,6 @@
+id = "lsp-lexical"
+display-name = "lexical"
+kind = "language-server"
+languages = ["elixir"]
+programs = ["lexical"]
+root-markers = ["mix.exs", ".git"]

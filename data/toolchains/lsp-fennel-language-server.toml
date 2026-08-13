@@ -1,0 +1,6 @@
+id = "lsp-fennel-language-server"
+display-name = "fennel_language_server"
+kind = "language-server"
+languages = ["fennel"]
+programs = ["fennel-language-server"]
+root-markers = [".git"]

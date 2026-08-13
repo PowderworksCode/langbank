@@ -1,0 +1,5 @@
+id = "lsp-elixirls"
+display-name = "elixirls"
+kind = "language-server"
+languages = ["elixir"]
+programs = ["elixir-ls"]

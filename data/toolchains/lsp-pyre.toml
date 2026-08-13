@@ -1,0 +1,6 @@
+id = "lsp-pyre"
+display-name = "pyre"
+kind = "language-server"
+languages = ["python"]
+programs = ["pyre"]
+root-markers = [".pyre_configuration"]

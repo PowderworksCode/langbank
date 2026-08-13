@@ -1,0 +1,6 @@
+id = "lsp-java-language-server"
+display-name = "java_language_server"
+kind = "language-server"
+languages = ["java"]
+programs = ["java-language-server"]
+root-markers = ["build.gradle", "build.gradle.kts", "pom.xml", ".git"]

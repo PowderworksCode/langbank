@@ -1,0 +1,5 @@
+id = "lsp-graphql"
+display-name = "graphql"
+kind = "language-server"
+languages = ["graphql", "javascript", "typescript"]
+programs = ["graphql-lsp"]

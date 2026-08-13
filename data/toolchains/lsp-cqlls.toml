@@ -1,0 +1,6 @@
+id = "lsp-cqlls"
+display-name = "cqlls"
+kind = "language-server"
+languages = ["cql"]
+programs = ["cqlls"]
+root-markers = [".cqlls", ".git"]

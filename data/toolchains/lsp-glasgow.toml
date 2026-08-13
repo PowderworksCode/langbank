@@ -1,0 +1,6 @@
+id = "lsp-glasgow"
+display-name = "glasgow"
+kind = "language-server"
+languages = ["wgsl"]
+programs = ["glasgow"]
+root-markers = [".git"]

@@ -1,0 +1,6 @@
+id = "lsp-blueprint-ls"
+display-name = "blueprint_ls"
+kind = "language-server"
+languages = ["blueprint"]
+programs = ["blueprint-compiler"]
+root-markers = [".git"]

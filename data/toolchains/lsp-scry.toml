@@ -1,0 +1,6 @@
+id = "lsp-scry"
+display-name = "scry"
+kind = "language-server"
+languages = ["crystal"]
+programs = ["scry"]
+root-markers = ["shard.yml", ".git"]

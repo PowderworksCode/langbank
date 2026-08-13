@@ -1,0 +1,6 @@
+id = "lsp-cobol-ls"
+display-name = "cobol_ls"
+kind = "language-server"
+languages = ["cobol"]
+programs = ["cobol-language-support"]
+root-markers = [".git"]

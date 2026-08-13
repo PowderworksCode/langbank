@@ -1,0 +1,6 @@
+id = "lsp-pyright"
+display-name = "pyright"
+kind = "language-server"
+languages = ["python"]
+programs = ["pyright-langserver"]
+root-markers = ["pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]

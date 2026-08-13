@@ -1,0 +1,5 @@
+id = "lsp-phptools"
+display-name = "phptools"
+kind = "language-server"
+languages = ["php"]
+programs = ["devsense-php-ls"]

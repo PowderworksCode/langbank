@@ -1,0 +1,6 @@
+id = "lsp-ccls"
+display-name = "ccls"
+kind = "language-server"
+languages = ["c", "cpp", "cuda", "objective-c", "objective-cpp"]
+programs = ["ccls"]
+root-markers = ["compile_commands.json", ".ccls", ".git"]

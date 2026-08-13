@@ -1,0 +1,6 @@
+id = "lsp-dcmls"
+display-name = "dcmls"
+kind = "language-server"
+languages = ["dart"]
+programs = ["dcm"]
+root-markers = ["pubspec.yaml"]

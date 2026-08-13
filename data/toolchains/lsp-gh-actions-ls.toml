@@ -1,0 +1,5 @@
+id = "lsp-gh-actions-ls"
+display-name = "gh_actions_ls"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["gh-actions-language-server"]

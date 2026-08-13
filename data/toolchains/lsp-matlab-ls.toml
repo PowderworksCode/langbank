@@ -1,0 +1,5 @@
+id = "lsp-matlab-ls"
+display-name = "matlab_ls"
+kind = "language-server"
+languages = ["matlab"]
+programs = ["matlab-language-server"]

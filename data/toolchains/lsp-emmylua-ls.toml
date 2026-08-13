@@ -1,0 +1,5 @@
+id = "lsp-emmylua-ls"
+display-name = "emmylua_ls"
+kind = "language-server"
+languages = ["lua"]
+programs = ["emmylua_ls"]

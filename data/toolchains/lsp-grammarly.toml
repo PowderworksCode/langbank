@@ -1,0 +1,6 @@
+id = "lsp-grammarly"
+display-name = "grammarly"
+kind = "language-server"
+languages = ["markdown"]
+programs = ["grammarly-languageserver"]
+root-markers = [".git"]

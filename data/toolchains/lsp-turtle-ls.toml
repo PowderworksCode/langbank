@@ -1,0 +1,6 @@
+id = "lsp-turtle-ls"
+display-name = "turtle_ls"
+kind = "language-server"
+languages = ["turtle"]
+programs = ["node"]
+root-markers = [".git"]

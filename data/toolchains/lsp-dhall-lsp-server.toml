@@ -1,0 +1,6 @@
+id = "lsp-dhall-lsp-server"
+display-name = "dhall_lsp_server"
+kind = "language-server"
+languages = ["dhall"]
+programs = ["dhall-lsp-server"]
+root-markers = [".git"]

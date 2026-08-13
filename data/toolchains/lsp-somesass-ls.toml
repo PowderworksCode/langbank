@@ -1,0 +1,6 @@
+id = "lsp-somesass-ls"
+display-name = "somesass_ls"
+kind = "language-server"
+languages = ["sass", "scss"]
+programs = ["some-sass-language-server"]
+root-markers = [".git", ".package.json"]

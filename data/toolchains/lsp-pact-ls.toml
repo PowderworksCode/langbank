@@ -1,0 +1,6 @@
+id = "lsp-pact-ls"
+display-name = "pact_ls"
+kind = "language-server"
+languages = ["pact"]
+programs = ["pact-lsp"]
+root-markers = [".git"]

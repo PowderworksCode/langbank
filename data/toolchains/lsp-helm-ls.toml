@@ -1,0 +1,6 @@
+id = "lsp-helm-ls"
+display-name = "helm_ls"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["helm_ls"]
+root-markers = ["Chart.yaml"]

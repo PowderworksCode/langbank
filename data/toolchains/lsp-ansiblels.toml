@@ -1,0 +1,6 @@
+id = "lsp-ansiblels"
+display-name = "ansiblels"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["ansible-language-server"]
+root-markers = ["ansible.cfg", ".ansible-lint"]
