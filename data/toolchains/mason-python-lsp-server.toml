@@ -1,0 +1,10 @@
+id = "mason-python-lsp-server"
+display-name = "python-lsp-server"
+kind = "language-server"
+languages = ["python"]
+programs = ["python-lsp-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "python-lsp-server"

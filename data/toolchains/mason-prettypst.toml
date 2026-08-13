@@ -1,0 +1,10 @@
+id = "mason-prettypst"
+display-name = "prettypst"
+kind = "formatter"
+languages = ["typst"]
+programs = ["prettypst"]
+categories = ["formatter"]
+
+[distribution]
+registry = "cargo"
+package = "prettypst"

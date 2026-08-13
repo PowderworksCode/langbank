@@ -1,0 +1,10 @@
+id = "mason-cql-language-server"
+display-name = "cql-language-server"
+kind = "language-server"
+languages = ["cql"]
+programs = ["cql-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "generic"
+package = "cqframework/cql-language-server"

@@ -1,0 +1,9 @@
+id = "mason-markmap-cli"
+display-name = "markmap-cli"
+kind = "linter"
+languages = ["markdown"]
+programs = ["markmap-cli"]
+
+[distribution]
+registry = "npm"
+package = "markmap-cli"

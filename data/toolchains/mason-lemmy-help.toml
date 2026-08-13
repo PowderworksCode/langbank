@@ -1,0 +1,9 @@
+id = "mason-lemmy-help"
+display-name = "lemmy-help"
+kind = "linter"
+languages = ["lua"]
+programs = ["lemmy-help"]
+
+[distribution]
+registry = "github"
+package = "numToStr/lemmy-help"

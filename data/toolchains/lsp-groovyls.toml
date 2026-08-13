@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["groovy"]
 programs = ["groovy-language-server"]
 root-markers = ["Jenkinsfile", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "GroovyLanguageServer/groovy-language-server"

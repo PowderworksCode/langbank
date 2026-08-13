@@ -1,0 +1,10 @@
+id = "mason-c3-lsp"
+display-name = "c3-lsp"
+kind = "language-server"
+languages = ["c3"]
+programs = ["c3-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "pherrymason/c3-lsp"

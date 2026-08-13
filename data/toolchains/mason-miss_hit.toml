@@ -1,0 +1,10 @@
+id = "mason-miss_hit"
+display-name = "miss_hit"
+kind = "formatter"
+languages = ["matlab"]
+programs = ["miss_hit"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "pypi"
+package = "miss-hit"

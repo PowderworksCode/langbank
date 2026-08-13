@@ -1,0 +1,10 @@
+id = "mason-refurb"
+display-name = "refurb"
+kind = "linter"
+languages = ["python"]
+programs = ["refurb"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "refurb"

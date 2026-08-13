@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["clojure", "edn"]
 programs = ["clojure-lsp"]
 root-markers = ["project.clj", "deps.edn", "build.boot", "shadow-cljs.edn", ".git", "bb.edn"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "clojure-lsp/clojure-lsp"

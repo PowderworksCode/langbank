@@ -1,0 +1,10 @@
+id = "mason-jq"
+display-name = "jq"
+kind = "formatter"
+languages = ["json"]
+programs = ["jq"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "stedolan/jq"

@@ -1,0 +1,9 @@
+id = "mason-pinact"
+display-name = "pinact"
+kind = "linter"
+languages = ["yaml"]
+programs = ["pinact"]
+
+[distribution]
+registry = "github"
+package = "suzuki-shunsuke/pinact"

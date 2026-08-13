@@ -1,0 +1,10 @@
+id = "mason-yamlfix"
+display-name = "yamlfix"
+kind = "formatter"
+languages = ["yaml"]
+programs = ["yamlfix"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "yamlfix"

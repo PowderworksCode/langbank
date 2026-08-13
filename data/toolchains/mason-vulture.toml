@@ -1,0 +1,10 @@
+id = "mason-vulture"
+display-name = "vulture"
+kind = "linter"
+languages = ["python"]
+programs = ["vulture"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "vulture"

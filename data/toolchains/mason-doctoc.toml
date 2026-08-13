@@ -1,0 +1,10 @@
+id = "mason-doctoc"
+display-name = "doctoc"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["doctoc"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "doctoc"

@@ -1,0 +1,10 @@
+id = "mason-kmp-lsp"
+display-name = "kmp-lsp"
+kind = "language-server"
+languages = ["java", "kotlin", "swift"]
+programs = ["kmp-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "Hessesian/kmp-lsp"

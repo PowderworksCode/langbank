@@ -1,0 +1,10 @@
+id = "mason-ltex-ls"
+display-name = "ltex-ls"
+kind = "language-server"
+languages = ["markdown", "restructuredtext", "tex", "text"]
+programs = ["ltex-ls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "valentjn/ltex-ls"

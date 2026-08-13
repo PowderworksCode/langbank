@@ -1,0 +1,10 @@
+id = "mason-kulala-fmt"
+display-name = "kulala-fmt"
+kind = "formatter"
+languages = ["http"]
+programs = ["kulala-fmt"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "npm"
+package = "@mistweaverco/kulala-fmt"

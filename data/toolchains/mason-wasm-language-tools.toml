@@ -1,0 +1,10 @@
+id = "mason-wasm-language-tools"
+display-name = "wasm-language-tools"
+kind = "language-server"
+languages = ["webassembly"]
+programs = ["wasm-language-tools"]
+categories = ["language-server", "formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "g-plane/wasm-language-tools"

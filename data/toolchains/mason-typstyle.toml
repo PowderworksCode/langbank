@@ -1,0 +1,10 @@
+id = "mason-typstyle"
+display-name = "typstyle"
+kind = "formatter"
+languages = ["typst"]
+programs = ["typstyle"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "Enter-tainer/typstyle"

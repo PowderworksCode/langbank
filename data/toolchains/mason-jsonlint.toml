@@ -1,0 +1,10 @@
+id = "mason-jsonlint"
+display-name = "jsonlint"
+kind = "linter"
+languages = ["json"]
+programs = ["jsonlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "jsonlint"

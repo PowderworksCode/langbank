@@ -1,0 +1,10 @@
+id = "mason-tilt"
+display-name = "tilt"
+kind = "runtime"
+languages = ["starlark"]
+programs = ["tilt"]
+categories = ["runtime", "language-server"]
+
+[distribution]
+registry = "github"
+package = "tilt-dev/tilt"

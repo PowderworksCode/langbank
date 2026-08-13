@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["nix"]
 programs = ["nil"]
 root-markers = ["flake.nix", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "nil"

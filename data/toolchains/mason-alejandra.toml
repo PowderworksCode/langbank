@@ -1,0 +1,10 @@
+id = "mason-alejandra"
+display-name = "alejandra"
+kind = "formatter"
+languages = ["nix"]
+programs = ["alejandra"]
+categories = ["formatter"]
+
+[distribution]
+registry = "cargo"
+package = "alejandra_cli"

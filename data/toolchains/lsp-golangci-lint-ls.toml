@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["go"]
 programs = ["golangci-lint-langserver"]
 root-markers = [".golangci.yml", ".golangci.yaml", ".golangci.toml", ".golangci.json", "go.work", "go.mod", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "golang"
+package = "github.com/nametake/golangci-lint-langserver"

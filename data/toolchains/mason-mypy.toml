@@ -1,0 +1,10 @@
+id = "mason-mypy"
+display-name = "mypy"
+kind = "linter"
+languages = ["python"]
+programs = ["mypy"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "mypy"

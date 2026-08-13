@@ -1,0 +1,10 @@
+id = "mason-fourmolu"
+display-name = "fourmolu"
+kind = "formatter"
+languages = ["haskell"]
+programs = ["fourmolu"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "fourmolu/fourmolu"

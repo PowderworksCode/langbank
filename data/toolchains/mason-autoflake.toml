@@ -1,0 +1,10 @@
+id = "mason-autoflake"
+display-name = "autoflake"
+kind = "formatter"
+languages = ["python"]
+programs = ["autoflake"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "autoflake"

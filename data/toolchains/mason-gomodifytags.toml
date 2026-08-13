@@ -1,0 +1,10 @@
+id = "mason-gomodifytags"
+display-name = "gomodifytags"
+kind = "formatter"
+languages = ["go"]
+programs = ["gomodifytags"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/fatih/gomodifytags"

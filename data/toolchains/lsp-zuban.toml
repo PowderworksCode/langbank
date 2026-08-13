@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["python"]
 programs = ["zuban"]
 root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
+categories = ["linter", "language-server"]
+
+[distribution]
+registry = "pypi"
+package = "zuban"

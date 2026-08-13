@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["r"]
 programs = ["air"]
 root-markers = ["air.toml", ".air.toml", ".git"]
+categories = ["formatter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "posit-dev/air"

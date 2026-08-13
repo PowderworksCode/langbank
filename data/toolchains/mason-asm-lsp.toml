@@ -1,0 +1,10 @@
+id = "mason-asm-lsp"
+display-name = "asm-lsp"
+kind = "language-server"
+languages = ["assembly"]
+programs = ["asm-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "asm-lsp"

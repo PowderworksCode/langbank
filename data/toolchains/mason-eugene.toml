@@ -1,0 +1,10 @@
+id = "mason-eugene"
+display-name = "eugene"
+kind = "linter"
+languages = ["sql"]
+programs = ["eugene"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "kaaveland/eugene"

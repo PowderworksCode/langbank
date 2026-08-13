@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["twig"]
 programs = ["twiggy-language-server"]
 root-markers = ["composer.json", ".git"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "npm"
+package = "twiggy-language-server"

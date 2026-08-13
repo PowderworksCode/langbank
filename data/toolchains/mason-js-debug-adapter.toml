@@ -1,0 +1,10 @@
+id = "mason-js-debug-adapter"
+display-name = "js-debug-adapter"
+kind = "debugger"
+languages = ["javascript", "typescript"]
+programs = ["js-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "microsoft/vscode-js-debug"

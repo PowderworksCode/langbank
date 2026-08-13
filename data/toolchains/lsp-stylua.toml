@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["lua"]
 programs = ["stylua"]
 root-markers = [".stylua.toml", "stylua.toml", ".editorconfig"]
+categories = ["formatter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "johnnymorganz/stylua"

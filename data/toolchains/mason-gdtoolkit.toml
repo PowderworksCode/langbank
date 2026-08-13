@@ -1,0 +1,10 @@
+id = "mason-gdtoolkit"
+display-name = "gdtoolkit"
+kind = "linter"
+languages = ["gdscript"]
+programs = ["gdtoolkit"]
+categories = ["linter", "formatter"]
+
+[distribution]
+registry = "pypi"
+package = "gdtoolkit"

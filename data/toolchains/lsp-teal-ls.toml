@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["teal"]
 programs = ["teal-language-server"]
 root-markers = ["tlconfig.lua"]
+categories = ["language-server"]
+
+[distribution]
+registry = "luarocks"
+package = "teal-language-server"

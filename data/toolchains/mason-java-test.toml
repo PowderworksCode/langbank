@@ -1,0 +1,10 @@
+id = "mason-java-test"
+display-name = "java-test"
+kind = "debugger"
+languages = ["java"]
+programs = ["java-test"]
+categories = ["debugger"]
+
+[distribution]
+registry = "openvsx"
+package = "vscjava/vscode-java-test"

@@ -1,0 +1,10 @@
+id = "mason-salt-lint"
+display-name = "salt-lint"
+kind = "linter"
+languages = ["salt"]
+programs = ["salt-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "salt-lint"

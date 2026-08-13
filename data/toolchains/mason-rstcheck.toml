@@ -1,0 +1,10 @@
+id = "mason-rstcheck"
+display-name = "rstcheck"
+kind = "linter"
+languages = ["restructuredtext"]
+programs = ["rstcheck"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "rstcheck"

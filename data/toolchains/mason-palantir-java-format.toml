@@ -1,0 +1,10 @@
+id = "mason-palantir-java-format"
+display-name = "palantir-java-format"
+kind = "formatter"
+languages = ["java"]
+programs = ["palantir-java-format"]
+categories = ["formatter"]
+
+[distribution]
+registry = "generic"
+package = "palantir/palantir-java-format"

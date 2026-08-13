@@ -1,0 +1,10 @@
+id = "mason-brighterscript"
+display-name = "brighterscript"
+kind = "compiler"
+languages = ["brighterscript"]
+programs = ["brighterscript"]
+categories = ["compiler", "language-server"]
+
+[distribution]
+registry = "npm"
+package = "brighterscript"

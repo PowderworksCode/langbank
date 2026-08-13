@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["org", "tex", "text"]
 programs = ["textlsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "textLSP"

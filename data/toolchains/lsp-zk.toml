@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["zk"]
 root-markers = [".zk"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "zk-org/zk"

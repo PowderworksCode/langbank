@@ -1,0 +1,10 @@
+id = "mason-unocss-language-server"
+display-name = "unocss-language-server"
+kind = "language-server"
+languages = ["css"]
+programs = ["unocss-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "unocss-language-server"

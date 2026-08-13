@@ -1,0 +1,10 @@
+id = "mason-mdformat"
+display-name = "mdformat"
+kind = "formatter"
+languages = ["markdown"]
+programs = ["mdformat"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "mdformat"

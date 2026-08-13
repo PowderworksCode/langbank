@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["marksman"]
 root-markers = [".marksman.toml", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "artempyanykh/marksman"

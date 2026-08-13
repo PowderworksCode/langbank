@@ -1,0 +1,10 @@
+id = "mason-cairo-language-server"
+display-name = "cairo-language-server"
+kind = "language-server"
+languages = ["cairo"]
+programs = ["cairo-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "cairo-language-server"

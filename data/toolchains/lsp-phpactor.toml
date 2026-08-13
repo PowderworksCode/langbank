@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["php"]
 programs = ["phpactor"]
 root-markers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "phpactor/phpactor"

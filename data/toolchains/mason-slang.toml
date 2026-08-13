@@ -1,0 +1,10 @@
+id = "mason-slang"
+display-name = "slang"
+kind = "language-server"
+languages = ["slang"]
+programs = ["slang"]
+categories = ["language-server", "compiler"]
+
+[distribution]
+registry = "github"
+package = "shader-slang/slang"

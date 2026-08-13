@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["asciidoc", "html", "markdown", "tex", "text", "xml"]
 programs = ["vale-ls"]
 root-markers = [".vale.ini"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "errata-ai/vale-ls"

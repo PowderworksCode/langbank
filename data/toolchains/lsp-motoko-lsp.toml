@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["motoko"]
 programs = ["motoko-lsp"]
 root-markers = ["dfx.json", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "openvsx"
+package = "dfinity-foundation/vscode-motoko"

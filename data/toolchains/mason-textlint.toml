@@ -1,0 +1,10 @@
+id = "mason-textlint"
+display-name = "textlint"
+kind = "linter"
+languages = ["markdown", "text"]
+programs = ["textlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "textlint"

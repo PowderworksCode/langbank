@@ -1,0 +1,10 @@
+id = "mason-powershell-editor-services"
+display-name = "powershell-editor-services"
+kind = "language-server"
+languages = ["powershell"]
+programs = ["powershell-editor-services"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "PowerShell/PowerShellEditorServices"

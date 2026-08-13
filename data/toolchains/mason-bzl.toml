@@ -1,0 +1,10 @@
+id = "mason-bzl"
+display-name = "bzl"
+kind = "language-server"
+languages = ["starlark"]
+programs = ["bzl"]
+categories = ["language-server", "debugger"]
+
+[distribution]
+registry = "generic"
+package = "bzl"

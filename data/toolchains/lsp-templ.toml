@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["templ"]
 programs = ["templ"]
 root-markers = ["go.work", "go.mod", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "a-h/templ"

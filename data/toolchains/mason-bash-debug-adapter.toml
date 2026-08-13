@@ -1,0 +1,10 @@
+id = "mason-bash-debug-adapter"
+display-name = "bash-debug-adapter"
+kind = "debugger"
+languages = ["shell"]
+programs = ["bash-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "rogalmic/vscode-bash-debug"

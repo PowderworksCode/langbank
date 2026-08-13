@@ -1,0 +1,10 @@
+id = "mason-ocamlearlybird"
+display-name = "ocamlearlybird"
+kind = "debugger"
+languages = ["ocaml"]
+programs = ["ocamlearlybird"]
+categories = ["debugger"]
+
+[distribution]
+registry = "opam"
+package = "earlybird"

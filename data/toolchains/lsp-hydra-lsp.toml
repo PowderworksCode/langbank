@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["hydra-lsp"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "hydra-lsp"

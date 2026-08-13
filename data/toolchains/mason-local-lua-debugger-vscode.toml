@@ -1,0 +1,10 @@
+id = "mason-local-lua-debugger-vscode"
+display-name = "local-lua-debugger-vscode"
+kind = "debugger"
+languages = ["lua"]
+programs = ["local-lua-debugger-vscode"]
+categories = ["debugger"]
+
+[distribution]
+registry = "openvsx"
+package = "tomblind/local-lua-debugger-vscode"

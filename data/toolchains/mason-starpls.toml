@@ -1,0 +1,10 @@
+id = "mason-starpls"
+display-name = "starpls"
+kind = "language-server"
+languages = ["starlark"]
+programs = ["starpls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "withered-magic/starpls"

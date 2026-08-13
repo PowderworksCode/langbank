@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["clarity"]
 programs = ["clarinet"]
 root-markers = ["Clarinet.toml"]
+categories = ["language-server", "runtime"]
+
+[distribution]
+registry = "github"
+package = "hirosystems/clarinet"

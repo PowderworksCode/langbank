@@ -1,0 +1,10 @@
+id = "mason-nixpkgs-fmt"
+display-name = "nixpkgs-fmt"
+kind = "formatter"
+languages = ["nix"]
+programs = ["nixpkgs-fmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "cargo"
+package = "nixpkgs-fmt"

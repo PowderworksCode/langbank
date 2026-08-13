@@ -687,6 +687,8 @@ fn toolchains(out: &mut String, directory: &Path) {
              \x20       programs: {programs},\n\
              \x20       version: {version},\n\
              \x20       diagnostics: {diagnostics},\n\
+             \x20       categories: &[{categories}],\n\
+             \x20       distribution: {distribution},\n\
              \x20       root_markers: {markers},\n\
              \x20   }};\n\
              \x20   crate::registry::submit! {{ crate::ToolchainRegistration(&{name}) }}",
@@ -704,6 +706,31 @@ fn toolchains(out: &mut String, directory: &Path) {
             languages = languages.join(", "),
             programs = strs(entry.get("programs")),
             markers = strs(entry.get("root-markers")),
+            categories = entry
+                .get("categories")
+                .and_then(Value::as_array)
+                .map_or_else(Vec::new, |array| {
+                    array
+                        .iter()
+                        .filter_map(Value::as_str)
+                        .map(|role| format!("crate::ToolchainKind::{}", camel(role)))
+                        .collect()
+                })
+                .join(", "),
+            distribution = entry.get("distribution").map_or_else(
+                || "None".to_owned(),
+                |dist| {
+                    format!(
+                        "Some(crate::Distribution {{ registry: {:?}, package: {:?} }})",
+                        dist.get("registry")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default(),
+                        dist.get("package")
+                            .and_then(Value::as_str)
+                            .unwrap_or_default(),
+                    )
+                },
+            ),
         )
         .expect("write toolchain");
     }

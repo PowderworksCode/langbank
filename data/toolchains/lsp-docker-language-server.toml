@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["dockerfile", "yaml"]
 programs = ["docker-language-server"]
 root-markers = ["Dockerfile", "docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml", "docker-bake.json", "docker-bake.hcl", "docker-bake.override.json", "docker-bake.override.hcl"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "docker/docker-language-server"

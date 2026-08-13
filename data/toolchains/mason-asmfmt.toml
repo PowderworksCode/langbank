@@ -1,0 +1,10 @@
+id = "mason-asmfmt"
+display-name = "asmfmt"
+kind = "formatter"
+languages = ["assembly"]
+programs = ["asmfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "klauspost/asmfmt"

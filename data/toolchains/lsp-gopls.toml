@@ -3,3 +3,8 @@ display-name = "gopls"
 kind = "language-server"
 languages = ["go"]
 programs = ["gopls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "golang"
+package = "golang.org/x/tools/gopls"

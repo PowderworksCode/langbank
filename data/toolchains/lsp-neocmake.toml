@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cmake"]
 programs = ["neocmakelsp"]
 root-markers = [".neocmake.toml", ".git", "build", "cmake"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "neocmakelsp/neocmakelsp"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["blade", "php"]
 programs = ["laravel-ls"]
 root-markers = ["artisan"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "laravel-ls/laravel-ls"

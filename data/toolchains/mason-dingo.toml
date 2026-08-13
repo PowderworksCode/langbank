@@ -1,0 +1,10 @@
+id = "mason-dingo"
+display-name = "dingo"
+kind = "compiler"
+languages = ["go"]
+programs = ["dingo"]
+categories = ["compiler", "formatter", "linter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/MadAppGang/dingo/cmd/dingo"

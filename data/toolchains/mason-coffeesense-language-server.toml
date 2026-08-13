@@ -1,0 +1,10 @@
+id = "mason-coffeesense-language-server"
+display-name = "coffeesense-language-server"
+kind = "language-server"
+languages = ["coffeescript"]
+programs = ["coffeesense-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "coffeesense-language-server"

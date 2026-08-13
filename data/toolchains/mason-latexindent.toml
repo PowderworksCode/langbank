@@ -1,0 +1,10 @@
+id = "mason-latexindent"
+display-name = "latexindent"
+kind = "formatter"
+languages = ["tex"]
+programs = ["latexindent"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "cmhughes/latexindent.pl"

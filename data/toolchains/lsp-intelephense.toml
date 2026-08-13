@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["php"]
 programs = ["intelephense"]
 root-markers = [".git", "composer.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "intelephense"

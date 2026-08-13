@@ -1,0 +1,10 @@
+id = "mason-yamllint"
+display-name = "yamllint"
+kind = "linter"
+languages = ["yaml"]
+programs = ["yamllint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "yamllint"

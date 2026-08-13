@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["d"]
 programs = ["serve-d"]
 root-markers = ["dub.json", "dub.sdl", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "Pure-D/serve-d"

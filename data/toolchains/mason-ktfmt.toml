@@ -1,0 +1,10 @@
+id = "mason-ktfmt"
+display-name = "ktfmt"
+kind = "formatter"
+languages = ["kotlin"]
+programs = ["ktfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "facebook/ktfmt"

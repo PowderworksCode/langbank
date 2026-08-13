@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["crystal"]
 programs = ["crystalline"]
 root-markers = ["shard.yml", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "elbywan/crystalline"

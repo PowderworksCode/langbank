@@ -1,0 +1,10 @@
+id = "mason-pint"
+display-name = "pint"
+kind = "formatter"
+languages = ["php"]
+programs = ["pint"]
+categories = ["formatter"]
+
+[distribution]
+registry = "composer"
+package = "laravel/pint"

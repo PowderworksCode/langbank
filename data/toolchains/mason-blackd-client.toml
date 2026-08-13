@@ -1,0 +1,10 @@
+id = "mason-blackd-client"
+display-name = "blackd-client"
+kind = "formatter"
+languages = ["python"]
+programs = ["blackd-client"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "disrupted/blackd-client"

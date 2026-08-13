@@ -3,3 +3,8 @@ display-name = "expert"
 kind = "language-server"
 languages = ["elixir"]
 programs = ["expert"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "elixir-lang/expert"

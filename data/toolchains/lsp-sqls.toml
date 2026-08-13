@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["sql"]
 programs = ["sqls"]
 root-markers = ["config.yml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "golang"
+package = "github.com/sqls-server/sqls"

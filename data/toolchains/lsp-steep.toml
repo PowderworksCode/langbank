@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["html-erb", "ruby"]
 programs = ["steep"]
 root-markers = ["Steepfile", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "gem"
+package = "steep"

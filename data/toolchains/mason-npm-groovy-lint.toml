@@ -1,0 +1,10 @@
+id = "mason-npm-groovy-lint"
+display-name = "npm-groovy-lint"
+kind = "linter"
+languages = ["groovy"]
+programs = ["npm-groovy-lint"]
+categories = ["linter", "formatter"]
+
+[distribution]
+registry = "npm"
+package = "npm-groovy-lint"

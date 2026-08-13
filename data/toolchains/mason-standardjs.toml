@@ -1,0 +1,10 @@
+id = "mason-standardjs"
+display-name = "standardjs"
+kind = "linter"
+languages = ["javascript"]
+programs = ["standardjs"]
+categories = ["linter", "formatter"]
+
+[distribution]
+registry = "npm"
+package = "standard"

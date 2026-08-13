@@ -1,0 +1,10 @@
+id = "mason-phpcbf"
+display-name = "phpcbf"
+kind = "formatter"
+languages = ["php"]
+programs = ["phpcbf"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "PHPCSStandards/PHP_CodeSniffer"

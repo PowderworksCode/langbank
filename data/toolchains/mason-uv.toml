@@ -1,0 +1,9 @@
+id = "mason-uv"
+display-name = "uv"
+kind = "linter"
+languages = ["python"]
+programs = ["uv"]
+
+[distribution]
+registry = "github"
+package = "astral-sh/uv"

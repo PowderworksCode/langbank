@@ -1,0 +1,10 @@
+id = "mason-actionlint"
+display-name = "actionlint"
+kind = "linter"
+languages = ["yaml"]
+programs = ["actionlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "rhysd/actionlint"

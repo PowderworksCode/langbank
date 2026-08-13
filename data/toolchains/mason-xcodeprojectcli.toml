@@ -1,0 +1,10 @@
+id = "mason-xcodeprojectcli"
+display-name = "xcodeprojectcli"
+kind = "runtime"
+languages = ["swift"]
+programs = ["xcodeprojectcli"]
+categories = ["runtime"]
+
+[distribution]
+registry = "github"
+package = "wojciech-kulik/XcodeProjectCLI"

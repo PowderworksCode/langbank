@@ -1,0 +1,10 @@
+id = "mason-vetur-vls"
+display-name = "vetur-vls"
+kind = "language-server"
+languages = ["vue"]
+programs = ["vetur-vls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "vls"

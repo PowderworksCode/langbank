@@ -1,0 +1,10 @@
+id = "mason-kos-language-server"
+display-name = "kos-language-server"
+kind = "language-server"
+languages = ["kerboscript"]
+programs = ["kos-language-server"]
+categories = ["language-server", "linter", "formatter"]
+
+[distribution]
+registry = "npm"
+package = "kos-language-server"

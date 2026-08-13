@@ -1,0 +1,10 @@
+id = "mason-pyflakes"
+display-name = "pyflakes"
+kind = "linter"
+languages = ["python"]
+programs = ["pyflakes"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pyflakes"

@@ -1,0 +1,9 @@
+id = "mason-json-to-struct"
+display-name = "json-to-struct"
+kind = "linter"
+languages = ["go"]
+programs = ["json-to-struct"]
+
+[distribution]
+registry = "golang"
+package = "github.com/tmc/json-to-struct"

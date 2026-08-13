@@ -1,0 +1,10 @@
+id = "mason-kubescape"
+display-name = "kubescape"
+kind = "linter"
+languages = ["yaml"]
+programs = ["kubescape"]
+categories = ["linter", "runtime"]
+
+[distribution]
+registry = "github"
+package = "kubescape/kubescape"

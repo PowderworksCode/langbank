@@ -1,0 +1,10 @@
+id = "mason-phpstan"
+display-name = "phpstan"
+kind = "linter"
+languages = ["php"]
+programs = ["phpstan"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "phpstan/phpstan"

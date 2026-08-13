@@ -3,3 +3,8 @@ display-name = "rust_analyzer"
 kind = "language-server"
 languages = ["rust"]
 programs = ["rust-analyzer"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "rust-lang/rust-analyzer"

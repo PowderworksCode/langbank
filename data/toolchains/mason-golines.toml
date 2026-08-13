@@ -1,0 +1,10 @@
+id = "mason-golines"
+display-name = "golines"
+kind = "formatter"
+languages = ["go"]
+programs = ["golines"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/golangci/golines"

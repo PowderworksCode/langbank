@@ -1,0 +1,10 @@
+id = "mason-curlylint"
+display-name = "curlylint"
+kind = "linter"
+languages = ["jinja", "liquid", "nunjucks", "twig"]
+programs = ["curlylint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "curlylint"

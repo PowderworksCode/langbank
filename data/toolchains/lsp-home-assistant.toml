@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["vscode-home-assistant"]
 root-markers = ["configuration.yaml", "configuration.yml"]
+categories = ["language-server"]
+
+[distribution]
+registry = "openvsx"
+package = "keesschollaart/vscode-home-assistant"

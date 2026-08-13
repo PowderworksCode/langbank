@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["fennel"]
 programs = ["fennel-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "fennel-language-server"

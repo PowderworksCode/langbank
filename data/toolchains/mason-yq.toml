@@ -1,0 +1,9 @@
+id = "mason-yq"
+display-name = "yq"
+kind = "linter"
+languages = ["yaml"]
+programs = ["yq"]
+
+[distribution]
+registry = "github"
+package = "mikefarah/yq"

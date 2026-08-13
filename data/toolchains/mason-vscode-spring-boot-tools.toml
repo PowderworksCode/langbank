@@ -1,0 +1,10 @@
+id = "mason-vscode-spring-boot-tools"
+display-name = "vscode-spring-boot-tools"
+kind = "language-server"
+languages = ["java"]
+programs = ["vscode-spring-boot-tools"]
+categories = ["language-server"]
+
+[distribution]
+registry = "openvsx"
+package = "VMware/vscode-spring-boot"

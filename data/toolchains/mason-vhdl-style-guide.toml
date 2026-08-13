@@ -1,0 +1,10 @@
+id = "mason-vhdl-style-guide"
+display-name = "vhdl-style-guide"
+kind = "formatter"
+languages = ["vhdl"]
+programs = ["vhdl-style-guide"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "vsg"

@@ -1,0 +1,10 @@
+id = "mason-fantomas"
+display-name = "fantomas"
+kind = "formatter"
+languages = ["f-sharp"]
+programs = ["fantomas"]
+categories = ["formatter"]
+
+[distribution]
+registry = "nuget"
+package = "fantomas"

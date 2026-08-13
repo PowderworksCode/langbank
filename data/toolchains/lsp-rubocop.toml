@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["ruby"]
 programs = ["rubocop"]
 root-markers = ["Gemfile", ".git"]
+categories = ["formatter", "linter", "language-server"]
+
+[distribution]
+registry = "gem"
+package = "rubocop"

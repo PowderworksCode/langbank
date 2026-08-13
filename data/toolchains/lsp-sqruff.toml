@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["sql"]
 programs = ["sqruff"]
 root-markers = [".sqruff", ".git"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "github"
+package = "quarylabs/sqruff"

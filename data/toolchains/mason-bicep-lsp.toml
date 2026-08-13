@@ -1,0 +1,10 @@
+id = "mason-bicep-lsp"
+display-name = "bicep-lsp"
+kind = "language-server"
+languages = ["bicep"]
+programs = ["bicep-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "Azure/bicep"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["openscad"]
 programs = ["openscad-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "openscad-language-server"

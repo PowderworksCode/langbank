@@ -1,0 +1,10 @@
+id = "mason-vectorcode"
+display-name = "vectorcode"
+kind = "language-server"
+languages = ["python"]
+programs = ["vectorcode"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "VectorCode"

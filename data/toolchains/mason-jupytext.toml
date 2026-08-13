@@ -1,0 +1,10 @@
+id = "mason-jupytext"
+display-name = "jupytext"
+kind = "formatter"
+languages = ["julia", "markdown", "python", "r"]
+programs = ["jupytext"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "jupytext"

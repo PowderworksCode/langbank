@@ -37,7 +37,7 @@ MIT; GitHub reports both as `NOASSERTION` and is wrong to.
 | XAMPPRocky/tokei | MIT / Apache-2.0 | comment syntax, extensions | **absorbed** |
 | boyter/scc | MIT | comment syntax, extensions | **absorbed** |
 | neovim/nvim-lspconfig | Apache-2.0 | language servers, root markers | **absorbed** |
-| mason-org/mason-registry | Apache-2.0 | tool → languages, categories | after toolchains |
+| mason-org/mason-registry | Apache-2.0 | tool roles, distribution | **absorbed** |
 | dependabot/dependabot-core | MIT | ecosystem manifests, registries | after toolchains |
 | analysis-tools-dev/static-analysis | MIT | language → analyzers | later |
 | git-pkgs/brief | MIT | language → toolchain, 22 categories | schema reference |
@@ -126,7 +126,7 @@ the difference.
 2. TOOLCHAIN MODEL         done: 16 programs with version probes and diagnostic
                            formats, measured against installed tools
 3. nvim-lspconfig          done: 266 servers with their root markers
-4. mason-registry          tool → language, categories, distribution
+4. mason-registry          done: 157 tools gained a distribution, 326 are new
 5. dependabot-core         ecosystem manifests, lockfiles, registries
 6. static-analysis         analyzer coverage per language
 ```

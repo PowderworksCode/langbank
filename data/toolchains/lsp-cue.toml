@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cue"]
 programs = ["cue"]
 root-markers = ["cue.mod", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "golang"
+package = "cuelang.org/go"

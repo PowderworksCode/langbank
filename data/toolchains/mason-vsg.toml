@@ -1,0 +1,10 @@
+id = "mason-vsg"
+display-name = "vsg"
+kind = "formatter"
+languages = ["vhdl"]
+programs = ["vsg"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "pypi"
+package = "vsg"

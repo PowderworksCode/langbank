@@ -1,0 +1,10 @@
+id = "mason-golangci-lint"
+display-name = "golangci-lint"
+kind = "linter"
+languages = ["go"]
+programs = ["golangci-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "golangci/golangci-lint"

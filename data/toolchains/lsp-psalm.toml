@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["php"]
 programs = ["psalm"]
 root-markers = ["psalm.xml", "psalm.xml.dist"]
+categories = ["language-server"]
+
+[distribution]
+registry = "composer"
+package = "vimeo/psalm"

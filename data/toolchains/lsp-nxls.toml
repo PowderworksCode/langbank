@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["json", "json-with-comments"]
 programs = ["nxls"]
 root-markers = ["nx.json", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "nxls"

@@ -1,0 +1,10 @@
+id = "mason-pylama"
+display-name = "pylama"
+kind = "linter"
+languages = ["python"]
+programs = ["pylama"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pylama"

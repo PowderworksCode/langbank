@@ -1,0 +1,10 @@
+id = "mason-rustywind"
+display-name = "rustywind"
+kind = "formatter"
+languages = ["html", "javascript", "typescript", "vue"]
+programs = ["rustywind"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "rustywind"

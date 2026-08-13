@@ -1,0 +1,10 @@
+id = "mason-shellcheck"
+display-name = "shellcheck"
+kind = "linter"
+languages = ["shell"]
+programs = ["shellcheck"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "vscode-shellcheck/shellcheck-binaries"

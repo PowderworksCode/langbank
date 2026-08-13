@@ -1,0 +1,10 @@
+id = "mason-prettierd"
+display-name = "prettierd"
+kind = "formatter"
+languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
+programs = ["prettierd"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "@fsouza/prettierd"

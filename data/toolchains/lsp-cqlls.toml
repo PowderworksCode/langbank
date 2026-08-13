@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["cql"]
 programs = ["cqlls"]
 root-markers = [".cqlls", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "cqlls"

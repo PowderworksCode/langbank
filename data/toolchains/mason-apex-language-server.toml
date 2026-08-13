@@ -1,0 +1,10 @@
+id = "mason-apex-language-server"
+display-name = "apex-language-server"
+kind = "language-server"
+languages = ["apex"]
+programs = ["apex-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "forcedotcom/salesforcedx-vscode"

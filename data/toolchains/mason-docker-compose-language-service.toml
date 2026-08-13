@@ -1,0 +1,10 @@
+id = "mason-docker-compose-language-service"
+display-name = "docker-compose-language-service"
+kind = "language-server"
+languages = ["dockerfile"]
+programs = ["docker-compose-language-service"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "@microsoft/compose-language-service"

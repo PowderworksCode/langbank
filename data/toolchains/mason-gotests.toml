@@ -1,0 +1,10 @@
+id = "mason-gotests"
+display-name = "gotests"
+kind = "formatter"
+languages = ["go"]
+programs = ["gotests"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/cweill/gotests"

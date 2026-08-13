@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["vtsls"]
 root-markers = ["package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40vtsls/language-server"

@@ -1,0 +1,10 @@
+id = "mason-codelldb"
+display-name = "codelldb"
+kind = "debugger"
+languages = ["c", "cpp", "rust", "zig"]
+programs = ["codelldb"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "vadimcn/vscode-lldb"

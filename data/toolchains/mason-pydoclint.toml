@@ -1,0 +1,10 @@
+id = "mason-pydoclint"
+display-name = "pydoclint"
+kind = "linter"
+languages = ["python"]
+programs = ["pydoclint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pydoclint"

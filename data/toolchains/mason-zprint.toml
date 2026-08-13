@@ -1,0 +1,10 @@
+id = "mason-zprint"
+display-name = "zprint"
+kind = "formatter"
+languages = ["clojure"]
+programs = ["zprint"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "kkinnear/zprint"

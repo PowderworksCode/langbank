@@ -1,0 +1,10 @@
+id = "mason-kotlin-lsp"
+display-name = "kotlin-lsp"
+kind = "language-server"
+languages = ["kotlin"]
+programs = ["kotlin-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "generic"
+package = "Kotlin/kotlin-lsp"

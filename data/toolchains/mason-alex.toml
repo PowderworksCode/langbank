@@ -1,0 +1,10 @@
+id = "mason-alex"
+display-name = "alex"
+kind = "linter"
+languages = ["markdown"]
+programs = ["alex"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "alex"

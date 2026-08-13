@@ -1,0 +1,10 @@
+id = "mason-erb-lint"
+display-name = "erb-lint"
+kind = "linter"
+languages = ["html", "ruby"]
+programs = ["erb-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "gem"
+package = "erb_lint"

@@ -1,0 +1,10 @@
+id = "mason-haskell-language-server"
+display-name = "haskell-language-server"
+kind = "language-server"
+languages = ["haskell"]
+programs = ["haskell-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "generic"
+package = "haskell/haskell-language-server"

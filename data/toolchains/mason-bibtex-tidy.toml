@@ -1,0 +1,10 @@
+id = "mason-bibtex-tidy"
+display-name = "bibtex-tidy"
+kind = "formatter"
+languages = ["tex"]
+programs = ["bibtex-tidy"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "bibtex-tidy"

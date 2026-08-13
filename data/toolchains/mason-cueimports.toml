@@ -1,0 +1,10 @@
+id = "mason-cueimports"
+display-name = "cueimports"
+kind = "formatter"
+languages = ["cue"]
+programs = ["cueimports"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/asdine/cueimports"

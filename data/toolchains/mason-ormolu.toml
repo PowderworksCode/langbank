@@ -1,0 +1,10 @@
+id = "mason-ormolu"
+display-name = "ormolu"
+kind = "formatter"
+languages = ["haskell"]
+programs = ["ormolu"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "tweag/ormolu"

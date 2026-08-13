@@ -1,0 +1,10 @@
+id = "mason-json-lsp"
+display-name = "json-lsp"
+kind = "language-server"
+languages = ["json"]
+programs = ["json-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "vscode-langservers-extracted"

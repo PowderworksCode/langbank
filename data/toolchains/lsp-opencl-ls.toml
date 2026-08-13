@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["opencl"]
 programs = ["opencl-language-server"]
 root-markers = [".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "Galarius/opencl-language-server"

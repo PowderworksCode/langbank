@@ -1,0 +1,10 @@
+id = "mason-write-good"
+display-name = "write-good"
+kind = "linter"
+languages = ["markdown"]
+programs = ["write-good"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "write-good"

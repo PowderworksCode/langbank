@@ -1,0 +1,10 @@
+id = "mason-svelte-language-server"
+display-name = "svelte-language-server"
+kind = "language-server"
+languages = ["svelte"]
+programs = ["svelte-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "svelte-language-server"

@@ -1,0 +1,10 @@
+id = "mason-earthlyls"
+display-name = "earthlyls"
+kind = "language-server"
+languages = ["earthly"]
+programs = ["earthlyls"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "glehmann/earthlyls"

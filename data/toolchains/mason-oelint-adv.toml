@@ -1,0 +1,10 @@
+id = "mason-oelint-adv"
+display-name = "oelint-adv"
+kind = "linter"
+languages = ["bitbake"]
+programs = ["oelint-adv"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "oelint-adv"

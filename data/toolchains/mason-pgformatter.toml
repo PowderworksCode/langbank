@@ -1,0 +1,10 @@
+id = "mason-pgformatter"
+display-name = "pgformatter"
+kind = "formatter"
+languages = ["sql"]
+programs = ["pgformatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "darold/pgformatter"

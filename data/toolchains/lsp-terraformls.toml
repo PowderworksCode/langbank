@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["hcl"]
 programs = ["terraform-ls"]
 root-markers = [".terraform", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "generic"
+package = "hashicorp/terraform-ls"

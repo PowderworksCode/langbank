@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["autohotkey"]
 programs = ["autohotkey_lsp"]
 root-markers = ["package.json"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "thqby/vscode-autohotkey2-lsp"

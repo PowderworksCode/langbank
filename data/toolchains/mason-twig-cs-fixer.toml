@@ -1,0 +1,10 @@
+id = "mason-twig-cs-fixer"
+display-name = "twig-cs-fixer"
+kind = "formatter"
+languages = ["twig"]
+programs = ["twig-cs-fixer"]
+categories = ["formatter"]
+
+[distribution]
+registry = "composer"
+package = "vincentlanglet/twig-cs-fixer"

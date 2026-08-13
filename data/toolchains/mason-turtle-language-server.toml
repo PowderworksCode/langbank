@@ -1,0 +1,10 @@
+id = "mason-turtle-language-server"
+display-name = "turtle-language-server"
+kind = "language-server"
+languages = ["turtle"]
+programs = ["turtle-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "turtle-language-server"

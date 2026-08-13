@@ -1,0 +1,10 @@
+id = "mason-mbake"
+display-name = "mbake"
+kind = "formatter"
+languages = ["makefile"]
+programs = ["mbake"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "pypi"
+package = "mbake"

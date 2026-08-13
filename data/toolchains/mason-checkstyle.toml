@@ -1,0 +1,10 @@
+id = "mason-checkstyle"
+display-name = "checkstyle"
+kind = "linter"
+languages = ["java"]
+programs = ["checkstyle"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "checkstyle/checkstyle"

@@ -1,0 +1,10 @@
+id = "mason-reorder-python-imports"
+display-name = "reorder-python-imports"
+kind = "formatter"
+languages = ["python"]
+programs = ["reorder-python-imports"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "reorder-python-imports"

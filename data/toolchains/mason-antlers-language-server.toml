@@ -1,0 +1,10 @@
+id = "mason-antlers-language-server"
+display-name = "antlers-language-server"
+kind = "language-server"
+languages = ["antlers"]
+programs = ["antlers-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "antlers-language-server"

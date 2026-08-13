@@ -3,3 +3,8 @@ display-name = "lua_ls"
 kind = "language-server"
 languages = ["lua"]
 programs = ["lua-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "LuaLS/lua-language-server"

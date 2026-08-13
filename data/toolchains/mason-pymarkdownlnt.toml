@@ -1,0 +1,10 @@
+id = "mason-pymarkdownlnt"
+display-name = "pymarkdownlnt"
+kind = "linter"
+languages = ["markdown"]
+programs = ["pymarkdownlnt"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "pymarkdownlnt"

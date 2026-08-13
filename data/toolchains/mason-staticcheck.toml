@@ -1,0 +1,10 @@
+id = "mason-staticcheck"
+display-name = "staticcheck"
+kind = "linter"
+languages = ["go"]
+programs = ["staticcheck"]
+categories = ["linter"]
+
+[distribution]
+registry = "golang"
+package = "honnef.co/go/tools"

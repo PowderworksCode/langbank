@@ -1,0 +1,10 @@
+id = "mason-clang-format"
+display-name = "clang-format"
+kind = "formatter"
+languages = ["c", "c-sharp", "cpp", "java", "javascript", "json"]
+programs = ["clang-format"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "clang-format"

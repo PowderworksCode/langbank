@@ -3,3 +3,8 @@ display-name = "elmls"
 kind = "language-server"
 languages = ["elm"]
 programs = ["elm-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40elm-tooling/elm-language-server"

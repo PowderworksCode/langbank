@@ -3,3 +3,8 @@ display-name = "zizmor"
 kind = "language-server"
 languages = ["yaml"]
 programs = ["zizmor"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "zizmor"

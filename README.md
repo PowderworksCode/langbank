@@ -20,6 +20,7 @@ against permissively licensed upstream projects. With thanks:
 | [XAMPPRocky/tokei](https://github.com/XAMPPRocky/tokei) | MIT / Apache-2.0 | comment syntax, extensions |
 | [boyter/scc](https://github.com/boyter/scc) | MIT | comment syntax, extensions |
 | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Apache-2.0 | language servers, commands, root markers |
+| [mason-org/mason-registry](https://github.com/mason-org/mason-registry) | Apache-2.0 | tool roles and distribution |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -74,7 +75,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | package registries | 42, aligned with purl |
 | ecosystems | 5 package managers — cargo, npm, pnpm, yarn, bun |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
-| toolchains | 282 — 16 compilers and runtimes with version probes, plus 266 language servers with their root markers |
+| toolchains | 608 — compilers and runtimes with version probes, language servers with root markers, and linters, formatters and debuggers with their distribution |
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
 | conventions | test layout, inline-test detection, typecheck defaults |
@@ -164,6 +165,25 @@ project by `compile_commands.json`, deno by `deno.json`, pyright by
 same language. Unioning them per language was tried and produces noise: most
 servers listing `rust` among their filetypes are generic formatters and
 spellcheckers, and in that pile `Cargo.toml` is outvoted by `dprint.json`.
+
+### Where a tool comes from
+
+Mason is the inverse index of lspconfig: lspconfig knows how to *run* a tool,
+mason knows what it *is* and how it is *published* — in purl, which is the
+vocabulary `data/registries/` already carries.
+
+```toml
+categories = ["linter", "formatter", "language-server"]
+
+[distribution]
+registry = "github"
+package = "astral-sh/ruff"
+```
+
+A tool is frequently several things at once, so `categories` is a list and
+`kind` is only the primary role. `distribution.registry` resolves to a purl type
+where purl defines one — mason publishes some packages under `openvsx`, which it
+does not, so those resolve to nothing rather than to something wrong.
 
 ### Staying current
 

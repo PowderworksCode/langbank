@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["nextflow"]
 programs = ["nextflow-language-server"]
 root-markers = ["nextflow.config", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "nextflow-io/language-server"

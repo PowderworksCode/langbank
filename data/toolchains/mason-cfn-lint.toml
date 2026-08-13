@@ -1,0 +1,10 @@
+id = "mason-cfn-lint"
+display-name = "cfn-lint"
+kind = "linter"
+languages = ["json", "yaml"]
+programs = ["cfn-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "cfn-lint"

@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["thrift"]
 programs = ["thriftls"]
 root-markers = [".thrift"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "joyme123/thrift-ls"

@@ -1,0 +1,10 @@
+id = "mason-json-repair"
+display-name = "json-repair"
+kind = "formatter"
+languages = ["python"]
+programs = ["json-repair"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "json-repair"

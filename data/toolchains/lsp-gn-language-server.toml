@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["gn"]
 programs = ["gn-language-server"]
 root-markers = [".gn", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "google/gn-language-server"

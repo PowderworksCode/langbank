@@ -1,0 +1,9 @@
+id = "mason-impl"
+display-name = "impl"
+kind = "linter"
+languages = ["go"]
+programs = ["impl"]
+
+[distribution]
+registry = "golang"
+package = "github.com/josharian/impl"

@@ -1,0 +1,10 @@
+id = "mason-nilaway"
+display-name = "nilaway"
+kind = "linter"
+languages = ["go"]
+programs = ["nilaway"]
+categories = ["linter"]
+
+[distribution]
+registry = "golang"
+package = "go.uber.org/nilaway"

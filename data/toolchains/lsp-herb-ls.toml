@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["html", "html-erb"]
 programs = ["herb-language-server"]
 root-markers = ["Gemfile", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "@herb-tools/language-server"

@@ -1,0 +1,10 @@
+id = "mason-go-debug-adapter"
+display-name = "go-debug-adapter"
+kind = "debugger"
+languages = ["go"]
+programs = ["go-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "golang/vscode-go"

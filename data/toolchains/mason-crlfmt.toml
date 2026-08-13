@@ -1,0 +1,10 @@
+id = "mason-crlfmt"
+display-name = "crlfmt"
+kind = "formatter"
+languages = ["go"]
+programs = ["crlfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/cockroachdb/crlfmt"

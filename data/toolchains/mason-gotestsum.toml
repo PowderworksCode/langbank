@@ -1,0 +1,9 @@
+id = "mason-gotestsum"
+display-name = "gotestsum"
+kind = "linter"
+languages = ["go"]
+programs = ["gotestsum"]
+
+[distribution]
+registry = "golang"
+package = "gotest.tools/gotestsum"

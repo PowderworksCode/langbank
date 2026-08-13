@@ -1,0 +1,10 @@
+id = "mason-yapf"
+display-name = "yapf"
+kind = "formatter"
+languages = ["python"]
+programs = ["yapf"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "yapf"

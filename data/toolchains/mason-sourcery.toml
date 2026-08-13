@@ -1,0 +1,10 @@
+id = "mason-sourcery"
+display-name = "sourcery"
+kind = "language-server"
+languages = ["python"]
+programs = ["sourcery"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "sourcery"

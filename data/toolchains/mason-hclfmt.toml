@@ -1,0 +1,10 @@
+id = "mason-hclfmt"
+display-name = "hclfmt"
+kind = "formatter"
+languages = ["hcl"]
+programs = ["hclfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/hashicorp/hcl/v2"

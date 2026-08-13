@@ -1,0 +1,10 @@
+id = "mason-sphinx-lint"
+display-name = "sphinx-lint"
+kind = "linter"
+languages = ["python", "restructuredtext"]
+programs = ["sphinx-lint"]
+categories = ["linter"]
+
+[distribution]
+registry = "pypi"
+package = "sphinx-lint"

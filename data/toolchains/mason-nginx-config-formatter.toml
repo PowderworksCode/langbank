@@ -1,0 +1,10 @@
+id = "mason-nginx-config-formatter"
+display-name = "nginx-config-formatter"
+kind = "formatter"
+languages = ["nginx"]
+programs = ["nginx-config-formatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "nginxfmt"

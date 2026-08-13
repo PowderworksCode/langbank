@@ -1,0 +1,10 @@
+id = "mason-selene"
+display-name = "selene"
+kind = "linter"
+languages = ["lua", "luau"]
+programs = ["selene"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "Kampfkarren/selene"

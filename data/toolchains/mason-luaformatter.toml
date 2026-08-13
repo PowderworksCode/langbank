@@ -1,0 +1,10 @@
+id = "mason-luaformatter"
+display-name = "luaformatter"
+kind = "formatter"
+languages = ["lua"]
+programs = ["luaformatter"]
+categories = ["formatter"]
+
+[distribution]
+registry = "luarocks"
+package = "luaformatter"

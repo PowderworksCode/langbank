@@ -1,0 +1,10 @@
+id = "mason-dart-debug-adapter"
+display-name = "dart-debug-adapter"
+kind = "debugger"
+languages = ["dart"]
+programs = ["dart-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "Dart-Code/Dart-Code"

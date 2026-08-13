@@ -1,0 +1,10 @@
+id = "mason-snakefmt"
+display-name = "snakefmt"
+kind = "formatter"
+languages = ["snakemake"]
+programs = ["snakefmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "snakefmt"

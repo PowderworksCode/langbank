@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["systemverilog", "verilog"]
 programs = ["svlangserver"]
 root-markers = [".svlangserver", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "%40imc-trading/svlangserver"

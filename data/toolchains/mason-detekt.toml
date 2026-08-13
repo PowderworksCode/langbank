@@ -1,0 +1,10 @@
+id = "mason-detekt"
+display-name = "detekt"
+kind = "linter"
+languages = ["kotlin"]
+programs = ["detekt"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "detekt/detekt"

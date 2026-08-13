@@ -1,0 +1,10 @@
+id = "mason-nixfmt"
+display-name = "nixfmt"
+kind = "formatter"
+languages = ["nix"]
+programs = ["nixfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "NixOS/nixfmt"

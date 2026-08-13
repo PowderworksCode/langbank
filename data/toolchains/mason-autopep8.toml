@@ -1,0 +1,10 @@
+id = "mason-autopep8"
+display-name = "autopep8"
+kind = "formatter"
+languages = ["python"]
+programs = ["autopep8"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "autopep8"

@@ -1,0 +1,10 @@
+id = "mason-isort"
+display-name = "isort"
+kind = "formatter"
+languages = ["python"]
+programs = ["isort"]
+categories = ["formatter"]
+
+[distribution]
+registry = "pypi"
+package = "isort"

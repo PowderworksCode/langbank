@@ -1,0 +1,10 @@
+id = "mason-yaml-language-server"
+display-name = "yaml-language-server"
+kind = "language-server"
+languages = ["yaml"]
+programs = ["yaml-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "yaml-language-server"

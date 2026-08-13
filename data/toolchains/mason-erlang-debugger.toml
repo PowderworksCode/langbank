@@ -1,0 +1,10 @@
+id = "mason-erlang-debugger"
+display-name = "erlang-debugger"
+kind = "debugger"
+languages = ["erlang"]
+programs = ["erlang-debugger"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "erlang-ls/els_dap"

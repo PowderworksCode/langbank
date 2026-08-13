@@ -1,0 +1,10 @@
+id = "mason-nickel-lang-lsp"
+display-name = "nickel-lang-lsp"
+kind = "language-server"
+languages = ["nickel"]
+programs = ["nickel-lang-lsp"]
+categories = ["language-server"]
+
+[distribution]
+registry = "cargo"
+package = "nickel-lang-lsp"

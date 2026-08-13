@@ -1,0 +1,10 @@
+id = "mason-djlint"
+display-name = "djlint"
+kind = "formatter"
+languages = ["go", "handlebars", "jinja", "mustache", "nunjucks", "twig"]
+programs = ["djlint"]
+categories = ["formatter", "linter"]
+
+[distribution]
+registry = "pypi"
+package = "djlint"

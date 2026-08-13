@@ -3,3 +3,8 @@ display-name = "awk_ls"
 kind = "language-server"
 languages = ["awk"]
 programs = ["awk-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "awk-language-server"

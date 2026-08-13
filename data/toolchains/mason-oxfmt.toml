@@ -1,0 +1,10 @@
+id = "mason-oxfmt"
+display-name = "oxfmt"
+kind = "formatter"
+languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
+programs = ["oxfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "npm"
+package = "oxfmt"

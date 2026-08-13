@@ -1,0 +1,10 @@
+id = "mason-markuplint"
+display-name = "markuplint"
+kind = "linter"
+languages = ["html"]
+programs = ["markuplint"]
+categories = ["linter"]
+
+[distribution]
+registry = "npm"
+package = "markuplint"

@@ -1,0 +1,10 @@
+id = "mason-yamlfmt"
+display-name = "yamlfmt"
+kind = "formatter"
+languages = ["yaml"]
+programs = ["yamlfmt"]
+categories = ["formatter"]
+
+[distribution]
+registry = "github"
+package = "google/yamlfmt"

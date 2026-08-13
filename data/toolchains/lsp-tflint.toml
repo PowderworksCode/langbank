@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["hcl"]
 programs = ["tflint"]
 root-markers = [".terraform", ".git", ".tflint.hcl"]
+categories = ["language-server", "linter"]
+
+[distribution]
+registry = "github"
+package = "terraform-linters/tflint"

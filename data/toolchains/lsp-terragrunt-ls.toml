@@ -4,3 +4,8 @@ kind = "language-server"
 languages = ["hcl"]
 programs = ["terragrunt-ls"]
 root-markers = ["terragrunt.hcl", ".git"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "gruntwork-io/terragrunt-ls"

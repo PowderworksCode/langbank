@@ -33,6 +33,7 @@ pub enum ToolchainKind {
     Formatter,
     Linter,
     LanguageServer,
+    Debugger,
 }
 
 /// Which stream a program prints to. Not decoration: `java -version` writes to
@@ -52,6 +53,25 @@ pub struct VersionProbe {
     /// A string rather than a compiled regex, because compiling one is the
     /// consumer's job and a regex crate is not a dependency this leaf imposes.
     pub pattern: &'static str,
+}
+
+/// Where a program is published, in the vocabulary purl already uses.
+///
+/// `registry` is a purl type where purl defines one. Mason ships packages under
+/// `openvsx`, which purl does not define — the field is therefore a string, and
+/// [`Distribution::package_registry`] returns `None` for those rather than
+/// pretending an unknown registry is a known one.
+#[derive(Debug, Clone, Copy)]
+pub struct Distribution {
+    pub registry: &'static str,
+    pub package: &'static str,
+}
+
+impl Distribution {
+    /// The registry this is published to, when purl defines it.
+    pub fn package_registry(&self) -> Option<&'static crate::PackageRegistry> {
+        crate::package_registry(self.registry)
+    }
 }
 
 /// How to ask a program for diagnostics a machine can read.
@@ -77,6 +97,12 @@ pub struct Toolchain {
     pub programs: &'static [&'static str],
     pub version: Option<VersionProbe>,
     pub diagnostics: Option<DiagnosticFormat>,
+    /// Every role this program fills. `kind` is the primary one; a tool is
+    /// frequently several things at once — ruff is a linter, a formatter and a
+    /// language server — and collapsing that to one loses the question a
+    /// consumer is usually asking.
+    pub categories: &'static [ToolchainKind],
+    pub distribution: Option<Distribution>,
     /// Files this program looks for to decide where a project begins.
     ///
     /// A property of the program, not of the language. clangd wants a
@@ -87,6 +113,11 @@ pub struct Toolchain {
 }
 
 impl Toolchain {
+    /// Whether the program fills this role, primary or otherwise.
+    pub fn is(&self, kind: ToolchainKind) -> bool {
+        self.kind == kind || self.categories.contains(&kind)
+    }
+
     pub fn handles(&self, language: &LanguageProfile) -> bool {
         self.languages
             .iter()

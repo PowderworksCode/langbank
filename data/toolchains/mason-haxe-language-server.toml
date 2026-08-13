@@ -1,0 +1,10 @@
+id = "mason-haxe-language-server"
+display-name = "haxe-language-server"
+kind = "language-server"
+languages = ["haxe"]
+programs = ["haxe-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "openvsx"
+package = "nadako/vshaxe"

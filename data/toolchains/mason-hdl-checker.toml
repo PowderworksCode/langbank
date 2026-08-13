@@ -1,0 +1,10 @@
+id = "mason-hdl-checker"
+display-name = "hdl-checker"
+kind = "language-server"
+languages = ["systemverilog", "verilog", "vhdl"]
+programs = ["hdl-checker"]
+categories = ["language-server"]
+
+[distribution]
+registry = "pypi"
+package = "hdl-checker"

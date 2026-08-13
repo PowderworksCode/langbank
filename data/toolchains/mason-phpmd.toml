@@ -1,0 +1,10 @@
+id = "mason-phpmd"
+display-name = "phpmd"
+kind = "linter"
+languages = ["php"]
+programs = ["phpmd"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "phpmd/phpmd"

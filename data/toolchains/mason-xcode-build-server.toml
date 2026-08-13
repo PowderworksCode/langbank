@@ -1,0 +1,10 @@
+id = "mason-xcode-build-server"
+display-name = "xcode-build-server"
+kind = "language-server"
+languages = ["swift"]
+programs = ["xcode-build-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "github"
+package = "SolaWing/xcode-build-server"

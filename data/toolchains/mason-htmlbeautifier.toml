@@ -1,0 +1,10 @@
+id = "mason-htmlbeautifier"
+display-name = "htmlbeautifier"
+kind = "formatter"
+languages = ["html", "ruby"]
+programs = ["htmlbeautifier"]
+categories = ["formatter"]
+
+[distribution]
+registry = "gem"
+package = "htmlbeautifier"

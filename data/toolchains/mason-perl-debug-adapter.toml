@@ -1,0 +1,10 @@
+id = "mason-perl-debug-adapter"
+display-name = "perl-debug-adapter"
+kind = "debugger"
+languages = ["perl"]
+programs = ["perl-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "Nihilus118/perl-debug-adapter"

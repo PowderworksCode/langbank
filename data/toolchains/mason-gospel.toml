@@ -1,0 +1,10 @@
+id = "mason-gospel"
+display-name = "gospel"
+kind = "linter"
+languages = ["go"]
+programs = ["gospel"]
+categories = ["linter"]
+
+[distribution]
+registry = "golang"
+package = "github.com/kortschak/gospel"

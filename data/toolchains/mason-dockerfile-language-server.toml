@@ -1,0 +1,10 @@
+id = "mason-dockerfile-language-server"
+display-name = "dockerfile-language-server"
+kind = "language-server"
+languages = ["dockerfile"]
+programs = ["dockerfile-language-server"]
+categories = ["language-server"]
+
+[distribution]
+registry = "npm"
+package = "dockerfile-language-server-nodejs"

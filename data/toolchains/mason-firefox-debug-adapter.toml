@@ -1,0 +1,10 @@
+id = "mason-firefox-debug-adapter"
+display-name = "firefox-debug-adapter"
+kind = "debugger"
+languages = ["javascript", "typescript"]
+programs = ["firefox-debug-adapter"]
+categories = ["debugger"]
+
+[distribution]
+registry = "github"
+package = "firefox-devtools/vscode-firefox-debug"
