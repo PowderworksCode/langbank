@@ -34,6 +34,8 @@ jobs:
         run: tools/sync-mason.py check
       - name: static-analysis coverage
         run: tools/sync-static-analysis.py check
+      - name: language coverage report
+        run: tools/coverage-report.py
       - name: contested extensions
         run: tools/resolve-contested.py check
       - name: dependabot ecosystems

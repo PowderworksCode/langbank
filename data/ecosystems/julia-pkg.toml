@@ -1,0 +1,8 @@
+id = "julia-pkg"
+registry = "julia"
+display-name = "Julia Pkg"
+roles = ["package-manager"]
+implied-languages = ["julia"]
+manifest = "Project.toml"
+lockfiles = ["Manifest.toml"]
+manifest-selection = "default"

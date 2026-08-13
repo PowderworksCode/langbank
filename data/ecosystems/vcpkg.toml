@@ -1,0 +1,8 @@
+id = "vcpkg"
+registry = "vcpkg"
+display-name = "vcpkg"
+roles = ["package-manager"]
+implied-languages = ["c", "cpp"]
+manifest = "vcpkg.json"
+selector-files = ["vcpkg-configuration.json"]
+manifest-selection = "default"
