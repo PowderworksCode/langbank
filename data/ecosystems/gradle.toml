@@ -4,6 +4,6 @@ display-name = "Gradle"
 roles = ["package-manager", "build-system"]
 implied-languages = ["java", "kotlin"]
 manifest = "build.gradle"
-selector-files = ["build.gradle.kts"]
+alternate-manifests = ["build.gradle.kts"]
 lockfiles = ["gradle.lockfile"]
 manifest-selection = "default"

@@ -4,5 +4,5 @@ display-name = "Bundler"
 roles = ["package-manager"]
 implied-languages = ["ruby"]
 manifest = "Gemfile"
-selector-files = ["gems.rb"]
+alternate-manifests = ["gems.rb"]
 manifest-selection = "default"

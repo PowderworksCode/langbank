@@ -20,6 +20,7 @@ mod dependency;
 mod detection;
 mod ecosystem;
 mod facet;
+mod gap;
 mod ids;
 mod language;
 mod package_registry;
@@ -49,6 +50,7 @@ pub use ecosystems::{
 };
 pub use facet::{LanguageFacet, LanguageFacetRegistration, language_facet, language_facets};
 pub use facets::{COMPONENT_HOST, STRUCTURED_CODE, STYLE_HOST};
+pub use gap::{Gap, GapReason, GapRegistration, gap, gaps, gaps_for};
 pub use ids::{ArtifactId, EcosystemId, LanguageId, ProjectFacetId};
 pub use language::{
     CommentSyntax, LanguageProfile, LanguageRegistration, LanguageRole, comment_syntax,

@@ -86,7 +86,17 @@ pub struct EcosystemProfile {
     pub implied_languages: &'static [&'static LanguageProfile],
     pub manifest: Option<&'static str>,
     pub lockfiles: &'static [&'static str],
+    /// Files whose presence identifies this ecosystem where its manifest does
+    /// not settle the question. Two shapes, one meaning: `pnpm-workspace.yaml`
+    /// tells pnpm apart from three other managers reading the same
+    /// `package.json`, and `build.zig` identifies a Zig project whose
+    /// `build.zig.zon` is optional and frequently absent — Bun has no manifest
+    /// and is still the largest Zig codebase there is.
     pub selector_files: &'static [&'static str],
+    /// Other filenames that are *also* this ecosystem's manifest. Not a
+    /// disambiguator — `build.gradle.kts` does not decide ownership, it is
+    /// simply the other way to spell `build.gradle`.
+    pub alternate_manifests: &'static [&'static str],
     pub gitignore_patterns: &'static [&'static str],
     pub manifest_selection: ManifestSelection,
     pub dependency_pins: Option<DependencyPinPolicy>,

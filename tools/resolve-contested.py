@@ -127,6 +127,19 @@ def main():
             anchor = re.search(r"^extensions = \[.*?\]\n", text, re.M | re.S)
             text = text[: anchor.end()] + line + text[anchor.end():]
         open(path, "w").write(text)
+    rows = []
+    for extension, language in sorted(single.items()):
+        rows.append(f'\n[[gap]]\nsubject = {json.dumps(extension)}\nreason = "uncorroborated"\n'
+                    f'note = {json.dumps(f"one corpus names {language}; the other is silent")}\n')
+    for extension, (left, right) in sorted(disputed.items()):
+        rows.append(f'\n[[gap]]\nsubject = {json.dumps(extension)}\nreason = "sources-disagree"\n'
+                    f'note = {json.dumps(f"tokei says {left}, scc says {right}")}\n')
+    open("data/gaps/extension-owner.toml", "w").write(
+        "# Contested extensions no corroborated source settles. Detection\n"
+        "# declines rather than guessing; these say why.\n"
+        'facet = "extension-owner"\n' + "".join(rows)
+    )
+
     print(f"settled {len(agreed)} contested extensions across {len(by_language)} languages; "
           f"{len(single)} single-source and {len(disputed)} disputed left alone")
     return 0

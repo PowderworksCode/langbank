@@ -1,0 +1,107 @@
+# Comment syntax tokei and scc disagree about. Neither is taken.
+facet = "comment-syntax"
+
+[[gap]]
+subject = "assembly"
+reason = "sources-disagree"
+note = "tokei: line [';'], 0 block forms; scc: line [';'], 1 block forms"
+
+[[gap]]
+subject = "ats"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 2 block forms; scc: line ['//'], 3 block forms"
+
+[[gap]]
+subject = "c3"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 1 block forms; scc: line ['//'], 2 block forms"
+
+[[gap]]
+subject = "cmake"
+reason = "sources-disagree"
+note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
+
+[[gap]]
+subject = "d"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 1 block forms; scc: line ['//'], 2 block forms"
+
+[[gap]]
+subject = "d2"
+reason = "sources-disagree"
+note = "tokei: line ['#'], 1 block forms; scc: line ['#'], 0 block forms"
+
+[[gap]]
+subject = "factor"
+reason = "sources-disagree"
+note = "tokei: line ['!', '#!'], 1 block forms; scc: line ['!'], 9 block forms"
+
+[[gap]]
+subject = "fennel"
+reason = "sources-disagree"
+note = "tokei: line [';', ';;'], 0 block forms; scc: line [';'], 0 block forms"
+
+[[gap]]
+subject = "graphql"
+reason = "sources-disagree"
+note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
+
+[[gap]]
+subject = "hcl"
+reason = "sources-disagree"
+note = "tokei: line ['#', '//'], 1 block forms; scc: line ['#'], 1 block forms"
+
+[[gap]]
+subject = "lex"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 1 block forms; scc: line [], 1 block forms"
+
+[[gap]]
+subject = "lua"
+reason = "sources-disagree"
+note = "tokei: line ['--'], 1 block forms; scc: line ['--'], 6 block forms"
+
+[[gap]]
+subject = "m4"
+reason = "sources-disagree"
+note = "tokei: line ['#', 'dnl'], 0 block forms; scc: line ['#'], 0 block forms"
+
+[[gap]]
+subject = "puppet"
+reason = "sources-disagree"
+note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
+
+[[gap]]
+subject = "racket"
+reason = "sources-disagree"
+note = "tokei: line [';'], 1 block forms; scc: line [';'], 1 block forms"
+
+[[gap]]
+subject = "raku"
+reason = "sources-disagree"
+note = "tokei: line ['#'], 4 block forms; scc: line ['#'], 5 block forms"
+
+[[gap]]
+subject = "smalltalk"
+reason = "sources-disagree"
+note = "tokei: line [], 1 block forms; scc: line [], 1 block forms"
+
+[[gap]]
+subject = "swig"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 1 block forms; scc: line [], 1 block forms"
+
+[[gap]]
+subject = "tact"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 1 block forms; scc: line ['//', '///'], 1 block forms"
+
+[[gap]]
+subject = "templ"
+reason = "sources-disagree"
+note = "tokei: line ['//'], 2 block forms; scc: line ['//'], 1 block forms"
+
+[[gap]]
+subject = "vhdl"
+reason = "sources-disagree"
+note = "tokei: line ['--'], 1 block forms; scc: line ['--'], 0 block forms"

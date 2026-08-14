@@ -4,5 +4,5 @@ display-name = "pip"
 roles = ["package-manager"]
 implied-languages = ["python"]
 manifest = "requirements.txt"
-selector-files = ["setup.py", "setup.cfg"]
+alternate-manifests = ["setup.py", "setup.cfg"]
 manifest-selection = "default"

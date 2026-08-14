@@ -5,5 +5,5 @@ roles = ["package-manager"]
 implied-languages = ["perl"]
 manifest = "cpanfile"
 lockfiles = ["cpanfile.snapshot"]
-selector-files = ["Makefile.PL", "Build.PL"]
+alternate-manifests = ["Makefile.PL", "Build.PL"]
 manifest-selection = "default"

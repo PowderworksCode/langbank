@@ -5,5 +5,5 @@ roles = ["package-manager"]
 implied-languages = ["c", "cpp"]
 manifest = "conanfile.txt"
 lockfiles = ["conan.lock"]
-selector-files = ["conanfile.py"]
+alternate-manifests = ["conanfile.py"]
 manifest-selection = "default"

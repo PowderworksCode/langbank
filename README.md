@@ -209,6 +209,24 @@ tools/sync-linguist.py create    # writes a file for each language we lack
 missing token is reported for a person to add, never silently rewritten. The
 same shape of tool is how any further source gets absorbed.
 
+## Absence with a reason
+
+Seven sources disagree with each other, and until now those disagreements were
+printed and thrown away — rediscovered on every sync run and discarded again. A
+**gap** is what langbank knows it does not know:
+
+```rust
+language_profile_for_extension("luau")   // None
+gap("luau", "extension-owner")           // SourcesDisagree,
+                                         // "tokei says ['lua'], scc says ['luau']"
+```
+
+Langbank still declines to answer. The difference is that a consumer can now
+tell three things apart that used to look identical: a fact **nobody recorded**,
+a fact **two sources contradict** each other about, and a fact **one source
+asserts and nothing confirms**. The first is work waiting to be done; the second
+is work already done whose answer is genuinely disputed.
+
 ## What langbank knows, and what it does not
 
 `tools/coverage-report.py` counts what is present per language, so the gaps are
