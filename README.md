@@ -8,6 +8,22 @@ Everything here is a registry over static data plus the few functions needed to
 look something up. Nothing here walks a filesystem, spawns a process, or parses
 a source file.
 
+**[langbank.dev](https://langbank.dev)** browses all of it, and runs the content
+rules against a file you paste.
+
+## The workspace
+
+`langbank` is the leaf and stays one: a consumer takes it without taking a
+network stack, a regex engine or an archive reader. Everything that needs those
+is a separate member, and CI fails if the leaf gains a dependency.
+
+| crate | what it is |
+|---|---|
+| `langbank` | the data, as `&'static` tables compiled from `data/**/*.toml` |
+| `langbank-detect` | runs the rules the leaf only describes, and reports which one fired |
+| `langbank-sync` | `check` and `create` against each upstream; what keeps the data honest |
+| `langbank-web` | langbank.dev — see [docs/deploy.md](docs/deploy.md) |
+
 ## Attribution
 
 Langbank's language data is its own, and some of it began as facts checked

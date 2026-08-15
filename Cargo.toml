@@ -1,7 +1,7 @@
 # The leaf crate stays dependency-free; the tools that maintain its data are a
 # separate member so nothing downstream inherits an HTTP client.
 [workspace]
-members = ["detect", "sync"]
+members = ["detect", "sync", "web"]
 
 [package]
 name = "langbank"

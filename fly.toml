@@ -1,0 +1,35 @@
+# langbank.dev — main, deployed on every merge by .github/workflows/deploy.yml.
+# Previews use fly.preview.toml instead (they idle-stop; this does not).
+#
+# There is no volume and no state. Every page is rendered from tables compiled
+# into the binary, so two machines serving the same image serve byte-identical
+# pages, and a machine that has just booted is as correct as one that has been
+# up for a week. Nothing to migrate, nothing to back up.
+
+app = "langbank"
+primary_region = "ewr"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  # The public site: keep one machine warm rather than make the first visitor
+  # of the hour wait for a cold start.
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = "5s"
+    interval = "30s"
+    method = "GET"
+    timeout = "5s"
+    # Reports the registry sizes, not a bare ok — a binary that somehow started
+    # with an empty registry should fail this rather than pass it.
+    path = "/health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  # The whole dataset is in the binary's rodata and every page is built into a
+  # String and dropped. 256mb is ample; 512mb is the smallest that leaves room
+  # for a burst of concurrent renders of the 199 KB toolchains table.
+  memory = "512mb"

@@ -1,0 +1,22 @@
+[package]
+name = "langbank-web"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/PowderworksCode/langbank"
+description = "langbank.dev — the data langbank carries, served from the statics it compiles into."
+publish = false
+
+[dependencies]
+langbank = { path = ".." }
+langbank-detect = { path = "../detect" }
+axum = "0.8"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal"] }
+serde = { version = "1", features = ["derive"] }
+
+[lints.rust]
+unused_must_use = "deny"
+
+[lints.clippy]
+unwrap_used = "deny"
