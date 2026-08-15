@@ -23,6 +23,7 @@ against permissively licensed upstream projects. With thanks:
 | [mason-org/mason-registry](https://github.com/mason-org/mason-registry) | Apache-2.0 | tool roles and distribution |
 | [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis) | MIT | linters and formatters per language |
 | [dependabot/dependabot-core](https://github.com/dependabot/dependabot-core) | MIT | package ecosystems, manifests, lockfiles |
+| linguist `heuristics.yml` | MIT | content rules for contested extensions |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -208,6 +209,24 @@ tools/sync-linguist.py create    # writes a file for each language we lack
 `create` only ever writes files that do not exist — a hand-written entry with a
 missing token is reported for a person to add, never silently rewritten. The
 same shape of tool is how any further source gets absorbed.
+
+## Reading the file, when the name is not enough
+
+An extension several languages claim resolves to nothing. Langbank cannot do
+better, because it does not read files — but linguist publishes the rules for
+reading them, and langbank now carries those:
+
+```rust
+language_profile_for_extension("h")   // None: C, C++ and Objective-C all claim it
+disambiguation_for("h")               // 3 ordered rules, first match wins
+```
+
+Same bargain as the version probes: langbank states the rule, the consumer runs
+it. **91 of the 127 extensions langbank declines now come with instructions**, and
+with the recorded reasons alongside, **106 of 127 explain themselves** one way or
+the other,
+and three rules of 317 are marked unportable because they use lookaround, which
+Rust's regex crate rejects — better said here than discovered from a panic.
 
 ## Absence with a reason
 

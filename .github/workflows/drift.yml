@@ -36,6 +36,8 @@ jobs:
         run: tools/sync-static-analysis.py check
       - name: language coverage report
         run: tools/coverage-report.py
+      - name: linguist heuristics
+        run: tools/sync-heuristics.py check
       - name: contested extensions
         run: tools/resolve-contested.py check
       - name: dependabot ecosystems
