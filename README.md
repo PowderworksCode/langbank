@@ -75,7 +75,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 |---|---|
 | languages | 827 |
 | package registries | 42, aligned with purl |
-| ecosystems | 19 package managers across 13 languages |
+| ecosystems | 31 package managers across 25 languages |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | toolchains | 1,118 — compilers and runtimes with version probes, language servers with root markers, and linters, formatters and debuggers across 117 languages |
 | artifacts | binary, napi, site, tauri |
@@ -208,6 +208,35 @@ tools/sync-linguist.py create    # writes a file for each language we lack
 `create` only ever writes files that do not exist — a hand-written entry with a
 missing token is reported for a person to add, never silently rewritten. The
 same shape of tool is how any further source gets absorbed.
+
+## What langbank knows, and what it does not
+
+`tools/coverage-report.py` counts what is present per language, so the gaps are
+a distribution rather than a feeling:
+
+```
+facet            have   lack
+detection         822      5
+comments          220    607
+toolchain         206    621
+analyser          108    719
+ecosystem          25    802
+facets             22    805
+compiler           23    804
+conventions         3    824
+```
+
+535 languages know exactly one of those eight — that they exist and how to
+recognise a file. That is the honest state of a registry that took breadth
+first, and the report exists so it stays visible.
+
+Two gaps are deliberate rather than pending. **Five languages cannot be
+detected at all** — `python-console`, `julia-repl`, the OpenAPI documents —
+because linguist identifies those by reading a file and langbank does not read
+files. And **`structured-code` is not pasted onto every programming language**,
+though it would be true of all of them: a facet coextensive with `role` says
+nothing `role` does not, and a fact carrying no information is worse than an
+absent one because it looks like knowledge.
 
 ## The data is data
 

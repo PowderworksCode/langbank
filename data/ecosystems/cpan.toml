@@ -1,0 +1,9 @@
+id = "cpan"
+registry = "cpan"
+display-name = "CPAN"
+roles = ["package-manager"]
+implied-languages = ["perl"]
+manifest = "cpanfile"
+lockfiles = ["cpanfile.snapshot"]
+selector-files = ["Makefile.PL", "Build.PL"]
+manifest-selection = "default"

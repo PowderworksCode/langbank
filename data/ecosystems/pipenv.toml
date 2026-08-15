@@ -1,0 +1,8 @@
+id = "pipenv"
+registry = "pypi"
+display-name = "Pipenv"
+roles = ["package-manager"]
+implied-languages = ["python"]
+manifest = "Pipfile"
+lockfiles = ["Pipfile.lock"]
+manifest-selection = "default"

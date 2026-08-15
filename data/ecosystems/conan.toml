@@ -1,0 +1,9 @@
+id = "conan"
+registry = "conan"
+display-name = "Conan"
+roles = ["package-manager"]
+implied-languages = ["c", "cpp"]
+manifest = "conanfile.txt"
+lockfiles = ["conan.lock"]
+selector-files = ["conanfile.py"]
+manifest-selection = "default"

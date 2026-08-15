@@ -1,0 +1,8 @@
+id = "uv"
+registry = "pypi"
+display-name = "uv"
+roles = ["package-manager"]
+implied-languages = ["python"]
+manifest = "pyproject.toml"
+lockfiles = ["uv.lock"]
+manifest-selection = "lockfile"

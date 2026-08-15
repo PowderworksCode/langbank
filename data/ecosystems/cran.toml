@@ -1,0 +1,7 @@
+id = "cran"
+registry = "cran"
+display-name = "CRAN"
+roles = ["package-manager"]
+implied-languages = ["r"]
+manifest = "DESCRIPTION"
+manifest-selection = "default"

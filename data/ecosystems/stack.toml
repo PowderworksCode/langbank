@@ -1,0 +1,8 @@
+id = "stack"
+registry = "hackage"
+display-name = "Stack"
+roles = ["package-manager", "build-system"]
+implied-languages = ["haskell"]
+manifest = "stack.yaml"
+lockfiles = ["stack.yaml.lock"]
+manifest-selection = "default"
