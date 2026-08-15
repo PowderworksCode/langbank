@@ -8,3 +8,8 @@ programs = ["tsc"]
 arguments = ["--version"]
 stream = "stdout"
 pattern = '^Version (\d+\.\d+\.\d+)'
+categories = ["compiler", "language-server"]
+
+[distribution]
+registry = "npm"
+package = "typescript"
