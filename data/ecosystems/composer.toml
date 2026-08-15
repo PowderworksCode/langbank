@@ -1,0 +1,8 @@
+id = "composer"
+registry = "composer"
+display-name = "Composer"
+roles = ["package-manager"]
+implied-languages = ["php"]
+manifest = "composer.json"
+lockfiles = ["composer.lock"]
+manifest-selection = "default"

@@ -1,0 +1,7 @@
+id = "bazel"
+registry = "bazel"
+display-name = "Bazel"
+roles = ["build-system"]
+manifest = "WORKSPACE"
+selector-files = ["WORKSPACE.bazel", "MODULE.bazel"]
+manifest-selection = "default"

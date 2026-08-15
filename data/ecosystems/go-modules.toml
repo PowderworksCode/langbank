@@ -1,0 +1,8 @@
+id = "go-modules"
+registry = "golang"
+display-name = "Go modules"
+roles = ["package-manager", "build-system"]
+implied-languages = ["go"]
+manifest = "go.mod"
+selector-files = ["go.work"]
+manifest-selection = "default"

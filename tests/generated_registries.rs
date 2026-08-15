@@ -10,7 +10,7 @@ use langbank::*;
 fn the_registries_are_the_expected_size() {
     assert_eq!(language_facets().len(), 3, "facets");
     assert_eq!(artifact_profiles().len(), 4, "artifacts");
-    assert_eq!(ecosystem_profiles().len(), 6, "ecosystems");
+    assert_eq!(ecosystem_profiles().len(), 19, "ecosystems");
     // target (cargo); node_modules, dist, build, .next, .turbo, coverage (npm);
     // .zig-cache, zig-out (zig)
     assert_eq!(traversal_directories().len(), 9, "traversal directories");

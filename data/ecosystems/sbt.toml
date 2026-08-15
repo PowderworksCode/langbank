@@ -1,0 +1,7 @@
+id = "sbt"
+registry = "maven"
+display-name = "sbt"
+roles = ["package-manager", "build-system"]
+implied-languages = ["scala"]
+manifest = "build.sbt"
+manifest-selection = "default"

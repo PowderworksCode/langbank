@@ -1,0 +1,7 @@
+id = "pub"
+registry = "pub"
+display-name = "Pub"
+roles = ["package-manager"]
+implied-languages = ["dart"]
+manifest = "pubspec.yaml"
+manifest-selection = "default"

@@ -1,0 +1,8 @@
+id = "bundler"
+registry = "gem"
+display-name = "Bundler"
+roles = ["package-manager"]
+implied-languages = ["ruby"]
+manifest = "Gemfile"
+selector-files = ["gems.rb"]
+manifest-selection = "default"

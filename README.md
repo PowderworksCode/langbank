@@ -22,6 +22,7 @@ against permissively licensed upstream projects. With thanks:
 | [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Apache-2.0 | language servers, commands, root markers |
 | [mason-org/mason-registry](https://github.com/mason-org/mason-registry) | Apache-2.0 | tool roles and distribution |
 | [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis) | MIT | linters and formatters per language |
+| [dependabot/dependabot-core](https://github.com/dependabot/dependabot-core) | MIT | package ecosystems, manifests, lockfiles |
 
 Langbank deliberately carries **no data from copyleft-licensed projects**. That
 is a standing decision rather than an oversight — see `docs/sources.md`, which
@@ -74,7 +75,7 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 |---|---|
 | languages | 827 |
 | package registries | 42, aligned with purl |
-| ecosystems | 5 package managers — cargo, npm, pnpm, yarn, bun |
+| ecosystems | 19 package managers across 13 languages |
 | tool profiles | 17, with 31 command patterns — what an invocation does and what it produces |
 | toolchains | 1,118 — compilers and runtimes with version probes, language servers with root markers, and linters, formatters and debuggers across 117 languages |
 | artifacts | binary, napi, site, tauri |
