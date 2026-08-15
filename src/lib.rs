@@ -18,6 +18,7 @@ mod artifact;
 mod convention;
 mod dependency;
 mod detection;
+mod disambiguation;
 mod ecosystem;
 mod facet;
 mod gap;
@@ -40,6 +41,10 @@ pub use convention::{
 };
 pub use dependency::DependencySource;
 pub use detection::{LanguageDetection, LanguageEvidence};
+pub use disambiguation::{
+    Clause, Disambiguation, DisambiguationRegistration, DisambiguationRule, disambiguation_for,
+    disambiguations,
+};
 pub use ecosystem::{
     DependencyPinPolicy, DependencyPinStatus, DependencyPinSyntax, EcosystemProfile,
     EcosystemRegistration, EcosystemRole, ManifestSelection, ecosystem_profile, ecosystem_profiles,

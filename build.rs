@@ -800,6 +800,66 @@ fn gaps(out: &mut String, directory: &Path) {
     out.push_str("}\n\n");
 }
 
+/// Content rules for extensions several languages claim.
+fn disambiguations(out: &mut String, path: &Path) {
+    if !path.exists() {
+        return;
+    }
+    println!("cargo:rerun-if-changed={}", path.display());
+    let text = std::fs::read_to_string(path).expect("read heuristics.toml");
+    let document: Value = toml::from_str(&text).expect("parse heuristics.toml");
+    let Some(blocks) = document.get("disambiguation").and_then(Value::as_array) else {
+        return;
+    };
+
+    out.push_str("pub(crate) mod heuristics {\n");
+    for (index, block) in blocks.iter().enumerate() {
+        let rules = block
+            .get("rule")
+            .and_then(Value::as_array)
+            .map_or_else(Vec::new, |array| {
+                array
+                    .iter()
+                    .map(|rule| {
+                        let clauses = rule
+                            .get("clause")
+                            .and_then(Value::as_array)
+                            .map_or_else(Vec::new, |clauses| {
+                                clauses
+                                    .iter()
+                                    .map(|clause| {
+                                        format!(
+                                            "crate::Clause {{ patterns: {}, negative: {} }}",
+                                            strs(clause.get("patterns")),
+                                            strs(clause.get("negative")),
+                                        )
+                                    })
+                                    .collect()
+                            });
+                        format!(
+                            "crate::DisambiguationRule {{ language: &super::languages::{}::PROFILE, clauses: &[{}], portable: {} }}",
+                            ident(rule.get("language").and_then(Value::as_str).unwrap_or_default()),
+                            clauses.join(", "),
+                            rule.get("portable").and_then(Value::as_bool).unwrap_or(true),
+                        )
+                    })
+                    .collect::<Vec<_>>()
+            });
+        writeln!(
+            out,
+            "    pub static BLOCK_{index}: crate::Disambiguation = crate::Disambiguation {{\n\
+             \x20       extensions: {},\n\
+             \x20       rules: &[{}],\n\
+             \x20   }};\n\
+             \x20   crate::registry::submit! {{ crate::DisambiguationRegistration(&BLOCK_{index}) }}",
+            strs(block.get("extensions")),
+            rules.join(", "),
+        )
+        .expect("write disambiguation");
+    }
+    out.push_str("}\n\n");
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
@@ -911,6 +971,7 @@ fn main() {
     out.push_str("}\n");
     toolchains(&mut out, &data.join("toolchains"));
     gaps(&mut out, &data.join("gaps"));
+    disambiguations(&mut out, &data.join("heuristics.toml"));
 
     let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("registries.rs");
     std::fs::write(&destination, out).expect("write generated registries");
