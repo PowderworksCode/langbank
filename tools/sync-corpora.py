@@ -210,6 +210,20 @@ def main():
         insert = anchor.end() if anchor else re.search(r"^role = .*\n", text, re.M).end()
         open(path, "w").write(text[:insert] + f"comments = {dumps(name)}\n" + text[insert:])
 
+    # A disagreement is a finding. Printing it and moving on means rediscovering
+    # it on every run and never acting on it, so it is written down.
+    if conflicts:
+        rows = "".join(
+            f'\n[[gap]]\nsubject = {dumps(lid)}\nreason = "sources-disagree"\n'
+            f'note = {dumps(f"tokei: line {list(left[0])}, {len(left[1])} block forms; "
+                            f"scc: line {list(right[0])}, {len(right[1])} block forms")}\n'
+            for lid, (left, right) in sorted(conflicts.items())
+        )
+        open("data/gaps/comment-syntax.toml", "w").write(
+            "# Comment syntax tokei and scc disagree about. Neither is taken.\n"
+            'facet = "comment-syntax"\n' + rows
+        )
+
     if appended:
         with open(TABLES, "a") as handle:
             for name, syntax in appended:

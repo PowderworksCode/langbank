@@ -4,5 +4,5 @@ display-name = "Go modules"
 roles = ["package-manager", "build-system"]
 implied-languages = ["go"]
 manifest = "go.mod"
-selector-files = ["go.work"]
+alternate-manifests = ["go.work"]
 manifest-selection = "default"

@@ -4,5 +4,5 @@ display-name = "NuGet"
 roles = ["package-manager"]
 implied-languages = ["c-sharp", "f-sharp", "visual-basic-net"]
 manifest = "packages.config"
-selector-files = ["Directory.Packages.props"]
+alternate-manifests = ["Directory.Packages.props"]
 manifest-selection = "default"

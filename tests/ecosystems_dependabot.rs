@@ -79,12 +79,15 @@ fn an_ecosystem_with_no_purl_type_says_so_rather_than_inventing_one() {
 
 #[test]
 fn alternate_manifests_are_kept_rather_than_dropped() {
-    // Langbank models one manifest per ecosystem, and dependabot accepts
-    // several for some. The rest are recorded as selectors so nothing is lost.
+    // Langbank models one manifest per ecosystem and dependabot accepts several
+    // for some. These were briefly filed as selector files, which was wrong: a
+    // selector decides *which manager owns* a shared manifest, and `gems.rb` is
+    // simply the other way to spell bundler's.
     let bundler = ecosystem_profile("bundler").expect("bundler");
-    assert_eq!(bundler.selector_files, &["gems.rb"]);
+    assert_eq!(bundler.alternate_manifests, &["gems.rb"]);
+    assert!(bundler.selector_files.is_empty());
     let go = ecosystem_profile("go-modules").expect("go modules");
-    assert_eq!(go.selector_files, &["go.work"]);
+    assert_eq!(go.alternate_manifests, &["go.work"]);
 }
 
 #[test]

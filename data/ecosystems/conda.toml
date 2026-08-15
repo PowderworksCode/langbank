@@ -4,5 +4,5 @@ display-name = "conda"
 roles = ["package-manager"]
 implied-languages = ["python"]
 manifest = "environment.yml"
-selector-files = ["environment.yaml"]
+alternate-manifests = ["environment.yaml"]
 manifest-selection = "default"

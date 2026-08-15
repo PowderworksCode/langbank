@@ -94,9 +94,10 @@ One source needed no machinery. Several do.
    never go green: everyone learns to ignore it.
 3. **Contests are resolved by `primary-extensions`, and only by that.** It needs
    no redesign for more sources — corroboration is what justifies each new claim.
-4. **Disagreement between sources is recorded, never silently resolved.** Two
-   sources differing on a language's role is a finding for a person, in the same
-   spirit as the 148 contests langbank already declines to guess at.
+4. **Disagreement between sources is recorded, never silently resolved.** It is
+   written to `data/gaps/` and surfaced as `GapReason::SourcesDisagree`, so a
+   declined answer can say why it declined. Printing a finding and moving on
+   means rediscovering it on every run and never acting on it.
 
 ### Agreement is only evidence if the sources are independent — measured
 

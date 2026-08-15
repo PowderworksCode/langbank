@@ -3,5 +3,5 @@ registry = "bazel"
 display-name = "Bazel"
 roles = ["build-system"]
 manifest = "WORKSPACE"
-selector-files = ["WORKSPACE.bazel", "MODULE.bazel"]
+alternate-manifests = ["WORKSPACE.bazel", "MODULE.bazel"]
 manifest-selection = "default"

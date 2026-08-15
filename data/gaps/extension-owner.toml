@@ -1,0 +1,178 @@
+# Contested extensions no corroborated source settles. Detection
+# declines rather than guessing; these say why.
+facet = "extension-owner"
+
+[[gap]]
+subject = "al"
+reason = "uncorroborated"
+note = "one corpus names al; the other is silent"
+
+[[gap]]
+subject = "bas"
+reason = "uncorroborated"
+note = "one corpus names basic; the other is silent"
+
+[[gap]]
+subject = "bf"
+reason = "uncorroborated"
+note = "one corpus names brainfuck; the other is silent"
+
+[[gap]]
+subject = "bst"
+reason = "uncorroborated"
+note = "one corpus names buildstream; the other is silent"
+
+[[gap]]
+subject = "cginc"
+reason = "uncorroborated"
+note = "one corpus names shaderlab; the other is silent"
+
+[[gap]]
+subject = "cl"
+reason = "uncorroborated"
+note = "one corpus names opencl; the other is silent"
+
+[[gap]]
+subject = "cql"
+reason = "uncorroborated"
+note = "one corpus names cypher; the other is silent"
+
+[[gap]]
+subject = "cue"
+reason = "uncorroborated"
+note = "one corpus names cue; the other is silent"
+
+[[gap]]
+subject = "ddl"
+reason = "uncorroborated"
+note = "one corpus names sql; the other is silent"
+
+[[gap]]
+subject = "fs"
+reason = "uncorroborated"
+note = "one corpus names f-sharp; the other is silent"
+
+[[gap]]
+subject = "ftl"
+reason = "uncorroborated"
+note = "one corpus names freemarker; the other is silent"
+
+[[gap]]
+subject = "fx"
+reason = "uncorroborated"
+note = "one corpus names hlsl; the other is silent"
+
+[[gap]]
+subject = "gml"
+reason = "uncorroborated"
+note = "one corpus names game-maker-language; the other is silent"
+
+[[gap]]
+subject = "inc"
+reason = "uncorroborated"
+note = "one corpus names bitbake; the other is silent"
+
+[[gap]]
+subject = "mc"
+reason = "uncorroborated"
+note = "one corpus names monkey-c; the other is silent"
+
+[[gap]]
+subject = "mm"
+reason = "uncorroborated"
+note = "one corpus names objective-cpp; the other is silent"
+
+[[gap]]
+subject = "mo"
+reason = "uncorroborated"
+note = "one corpus names modelica; the other is silent"
+
+[[gap]]
+subject = "pkl"
+reason = "uncorroborated"
+note = "one corpus names pkl; the other is silent"
+
+[[gap]]
+subject = "ps1xml"
+reason = "uncorroborated"
+note = "one corpus names powershell; the other is silent"
+
+[[gap]]
+subject = "psc1"
+reason = "uncorroborated"
+note = "one corpus names powershell; the other is silent"
+
+[[gap]]
+subject = "q"
+reason = "uncorroborated"
+note = "one corpus names q; the other is silent"
+
+[[gap]]
+subject = "qs"
+reason = "uncorroborated"
+note = "one corpus names q-sharp; the other is silent"
+
+[[gap]]
+subject = "rei"
+reason = "uncorroborated"
+note = "one corpus names ocaml; the other is silent"
+
+[[gap]]
+subject = "s"
+reason = "uncorroborated"
+note = "one corpus names assembly; the other is silent"
+
+[[gap]]
+subject = "shader"
+reason = "uncorroborated"
+note = "one corpus names shaderlab; the other is silent"
+
+[[gap]]
+subject = "srt"
+reason = "uncorroborated"
+note = "one corpus names srecode-template; the other is silent"
+
+[[gap]]
+subject = "sss"
+reason = "uncorroborated"
+note = "one corpus names postcss; the other is silent"
+
+[[gap]]
+subject = "t"
+reason = "uncorroborated"
+note = "one corpus names raku; the other is silent"
+
+[[gap]]
+subject = "tpl"
+reason = "uncorroborated"
+note = "one corpus names pan; the other is silent"
+
+[[gap]]
+subject = "tsp"
+reason = "uncorroborated"
+note = "one corpus names typespec; the other is silent"
+
+[[gap]]
+subject = "txt"
+reason = "uncorroborated"
+note = "one corpus names text; the other is silent"
+
+[[gap]]
+subject = "uc"
+reason = "uncorroborated"
+note = "one corpus names unrealscript; the other is silent"
+
+[[gap]]
+subject = "webidl"
+reason = "uncorroborated"
+note = "one corpus names idl; the other is silent"
+
+[[gap]]
+subject = "luau"
+reason = "sources-disagree"
+note = "tokei says ['lua'], scc says ['luau']"
+
+[[gap]]
+subject = "tmpl"
+reason = "sources-disagree"
+note = "tokei says ['templ'], scc says ['go-template']"

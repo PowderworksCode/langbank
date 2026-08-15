@@ -305,6 +305,7 @@ fn ecosystems(out: &mut String, directory: &Path) {
              \x20           manifest: {manifest},\n\
              \x20           lockfiles: {lockfiles},\n\
              \x20           selector_files: {selectors},\n\
+             \x20           alternate_manifests: {alternates},\n\
              \x20           gitignore_patterns: {gitignore},\n\
              \x20           manifest_selection: crate::ManifestSelection::{selection},\n\
              \x20           dependency_pins: {pins},\n\
@@ -322,6 +323,7 @@ fn ecosystems(out: &mut String, directory: &Path) {
             languages = languages.join(", "),
             lockfiles = strs(eco.get("lockfiles")),
             selectors = strs(eco.get("selector-files")),
+            alternates = strs(eco.get("alternate-manifests")),
             gitignore = strs(eco.get("gitignore-patterns")),
             selection = camel(
                 eco.get("manifest-selection")
@@ -739,6 +741,65 @@ fn toolchains(out: &mut String, directory: &Path) {
     out.push_str("}\n\n");
 }
 
+/// Gaps: what langbank knows it does not know, and why.
+fn gaps(out: &mut String, directory: &Path) {
+    let mut files = std::fs::read_dir(directory)
+        .map(|entries| {
+            entries
+                .filter_map(Result::ok)
+                .map(|entry| entry.path())
+                .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+    files.sort();
+
+    out.push_str("pub(crate) mod gaps {\n");
+    let mut index = 0;
+    for path in &files {
+        println!("cargo:rerun-if-changed={}", path.display());
+        let text = std::fs::read_to_string(path).expect("read gap toml");
+        let table: Value =
+            toml::from_str(&text).unwrap_or_else(|error| panic!("{}: {error}", path.display()));
+        let facet = table
+            .get("facet")
+            .and_then(Value::as_str)
+            .expect("a gap file names the facet it is about");
+        let Some(entries) = table.get("gap").and_then(Value::as_array) else {
+            continue;
+        };
+        for entry in entries {
+            writeln!(
+                out,
+                "    pub static GAP_{index}: crate::Gap = crate::Gap {{\n\
+                 \x20       subject: {subject:?},\n\
+                 \x20       facet: {facet:?},\n\
+                 \x20       reason: crate::GapReason::{reason},\n\
+                 \x20       note: {note:?},\n\
+                 \x20   }};\n\
+                 \x20   crate::registry::submit! {{ crate::GapRegistration(&GAP_{index}) }}",
+                subject = entry
+                    .get("subject")
+                    .and_then(Value::as_str)
+                    .unwrap_or_default(),
+                reason = camel(
+                    entry
+                        .get("reason")
+                        .and_then(Value::as_str)
+                        .unwrap_or("not-modelled")
+                ),
+                note = entry
+                    .get("note")
+                    .and_then(Value::as_str)
+                    .unwrap_or_default(),
+            )
+            .expect("write gap");
+            index += 1;
+        }
+    }
+    out.push_str("}\n\n");
+}
+
 fn main() {
     let data = Path::new("data");
     println!("cargo:rerun-if-changed=data");
@@ -849,6 +910,7 @@ fn main() {
     }
     out.push_str("}\n");
     toolchains(&mut out, &data.join("toolchains"));
+    gaps(&mut out, &data.join("gaps"));
 
     let destination = Path::new(&std::env::var("OUT_DIR").expect("OUT_DIR")).join("registries.rs");
     std::fs::write(&destination, out).expect("write generated registries");

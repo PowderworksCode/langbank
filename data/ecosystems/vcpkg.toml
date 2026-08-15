@@ -4,5 +4,5 @@ display-name = "vcpkg"
 roles = ["package-manager"]
 implied-languages = ["c", "cpp"]
 manifest = "vcpkg.json"
-selector-files = ["vcpkg-configuration.json"]
+alternate-manifests = ["vcpkg-configuration.json"]
 manifest-selection = "default"
