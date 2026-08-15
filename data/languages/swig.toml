@@ -2,3 +2,4 @@ id = "swig"
 display-name = "SWIG"
 role = "programming"
 extensions = ["i", "swg", "swig"]
+primary-extensions = ["i"]

@@ -2,3 +2,4 @@ id = "d"
 display-name = "D"
 role = "programming"
 extensions = ["d", "di"]
+primary-extensions = ["d"]

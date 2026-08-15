@@ -2,5 +2,6 @@ id = "rescript"
 display-name = "ReScript"
 role = "programming"
 extensions = ["res", "resi"]
+primary-extensions = ["res"]
 comments = "actionscript"
 shebangs = ["ocaml"]

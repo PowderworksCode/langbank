@@ -1,13 +1,13 @@
 name: ci
 
+# Gates pull requests on the repository alone: does it build, is it formatted,
+# do the tests pass. Whether an upstream has moved ahead of us is a different
+# question with a different answer, and lives in drift.yml.
+
 on:
   push:
     branches: [main]
   pull_request:
-  schedule:
-    # Upstream moves without asking. A weekly run turns "linguist added a
-    # language" into a red build rather than a slow drift nobody notices.
-    - cron: "17 6 * * 1"
 
 jobs:
   rust:
@@ -18,36 +18,3 @@ jobs:
       - run: cargo fmt --check
       - run: cargo clippy --all-targets -- -D warnings
       - run: cargo test
-
-  coverage:
-    # Langbank owns its language data; upstream sources are what it is checked
-    # against. This fails if any of them knows a language, extension, filename
-    # or interpreter that langbank does not.
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install pyyaml
-      - name: linguist coverage
-        run: tools/sync-linguist.py check
-      - name: purl coverage
-        run: tools/sync-purl.py check
-      - name: tokei and scc coverage
-        run: tools/sync-corpora.py check
-      - name: nvim-lspconfig coverage
-        run: tools/sync-lspconfig.py check
-      - name: mason-registry coverage
-        run: tools/sync-mason.py check
-      - name: static-analysis coverage
-        run: tools/sync-static-analysis.py check
-      - name: dependabot ecosystems
-        run: |
-          # Dependabot states its facts in Ruby, so they are read with Ripper
-          # rather than by regex. A shallow clone is enough; nothing is vendored.
-          git clone --depth 1 https://github.com/dependabot/dependabot-core.git /tmp/dependabot-core
-          ruby tools/extract-dependabot.rb /tmp/dependabot-core > /tmp/dependabot.json
-          tools/sync-dependabot.py check /tmp/dependabot.json
-      - name: version probes, against whatever this runner has
-        run: tools/verify-toolchains.py --strict

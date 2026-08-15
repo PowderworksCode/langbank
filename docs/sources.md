@@ -82,10 +82,16 @@ One source needed no machinery. Several do.
    eventually, at which point the tag says nothing, and credit reads better in
    one place than scattered across 827 files.
 2. **Each source gets its own `tools/sync-<source>.py`**, with the same
-   `check` / `create` split linguist uses. `check` reports what upstream knows
-   and langbank does not and runs in CI; `create` only ever writes files that do
-   not exist, because a hand-written entry carries conventions no importer should
-   touch.
+   `check` / `create` split linguist uses. `create` only ever writes files that
+   do not exist, because a hand-written entry carries conventions no importer
+   should touch.
+
+   `check` runs in **`drift.yml`, on a schedule and on `main` — not on pull
+   requests.** Seven upstreams move without asking, and a package appearing in
+   mason has nothing to do with the change under review. Gating every branch on
+   the state of somebody else's repository produces a red build nobody can fix
+   from inside their own work, which is the same failure as a check that can
+   never go green: everyone learns to ignore it.
 3. **Contests are resolved by `primary-extensions`, and only by that.** It needs
    no redesign for more sources — corroboration is what justifies each new claim.
 4. **Disagreement between sources is recorded, never silently resolved.** Two
