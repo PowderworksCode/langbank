@@ -52,6 +52,44 @@ pub fn scalar(text: &str, key: &str) -> Option<String> {
 
 // Used by the sources still being ported; they land one at a time.
 #[allow(dead_code)]
+/// Where a top-level `key = [...]` starts and ends, including its newline.
+///
+/// Rewriting an array in place needs its bounds, not its contents, and the
+/// arrays here span lines — an `extensions = [` list can run to a dozen. The
+/// end is found by matching the bracket rather than by a non-greedy regex,
+/// which is what read past a closing brace once and turned every filetype in a
+/// toolchain into a root marker.
+pub fn span(text: &str, key: &str) -> Option<(usize, usize)> {
+    let start = find_key(text, key)?;
+    let open = text[start..].find('[')? + start;
+    let mut depth = 0usize;
+    let mut inside = false;
+    let mut escaped = false;
+    for (offset, c) in text[open..].char_indices() {
+        if escaped {
+            escaped = false;
+            continue;
+        }
+        match c {
+            '\\' if inside => escaped = true,
+            '"' => inside = !inside,
+            '[' if !inside => depth += 1,
+            ']' if !inside => {
+                depth -= 1;
+                if depth == 0 {
+                    let mut end = open + offset + 1;
+                    if text[end..].starts_with('\n') {
+                        end += 1;
+                    }
+                    return Some((start, end));
+                }
+            }
+            _ => {}
+        }
+    }
+    None
+}
+
 /// A top-level `key = [...]`, which may span lines.
 pub fn array(text: &str, key: &str) -> Vec<String> {
     let mut out = Vec::new();

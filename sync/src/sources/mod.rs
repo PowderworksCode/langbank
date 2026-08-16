@@ -1,5 +1,11 @@
+pub mod contested;
+pub mod corpora;
 pub mod coverage;
+pub mod dependabot;
 pub mod heuristics;
 pub mod linguist;
+pub mod lspconfig;
+pub mod mason;
 pub mod purl;
+pub mod static_analysis;
 pub mod toolchains;
