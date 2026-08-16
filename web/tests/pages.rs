@@ -19,7 +19,10 @@ fn every_page_renders_and_closes_its_document() {
         ("gaps", pages::gaps()),
     ];
     for (name, html) in pages {
-        assert!(html.starts_with("<!doctype html>"), "{name}");
+        assert!(
+            html.to_lowercase().starts_with("<!doctype html>"),
+            "{name} does not open with a doctype"
+        );
         assert!(html.contains("</footer>"), "{name} was cut short");
         assert!(html.len() > 2_000, "{name} rendered {} bytes", html.len());
     }

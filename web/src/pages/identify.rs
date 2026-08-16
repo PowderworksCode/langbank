@@ -1,14 +1,14 @@
 //! The rules, run against whatever a visitor pastes in.
 //!
-//! This is the only page with a form, and the only one that renders input it did
-//! not author — every value from the request goes through `escape` on the way
-//! back out. Nothing is stored and nothing is logged; the answer is computed
-//! from the statics and thrown away.
+//! This is the only page that renders input it did not author. Every value from
+//! the request is interpolated through maud, which escapes it — there is no
+//! call site here that could forget. Nothing is stored and nothing is logged;
+//! the answer is computed from the statics and thrown away.
 
-use crate::render::{code, escape, link, page};
+use crate::render::{code, link, page};
 use langbank_detect::{Evidence, Undecided, identify};
+use maud::{Markup, html};
 use serde::Deserialize;
-use std::fmt::Write as _;
 
 #[derive(Deserialize, Default)]
 pub struct Query {
@@ -36,98 +36,102 @@ fn clamp(text: &str) -> &str {
     &text[..end]
 }
 
-fn verdict(query: &Query) -> String {
+fn how(evidence: &Evidence, language: &langbank::LanguageProfile) -> Markup {
+    match evidence {
+        Evidence::Filename(name) => html! {
+            "The whole filename " (code(name)) " is claimed, so nothing had to be read."
+        },
+        Evidence::Extension(extension) => {
+            let claimants = langbank::languages_claiming_extension(extension).len();
+            let dotted = code(&format!(".{extension}"));
+            html! {
+                @if claimants > 1 {
+                    (claimants) " languages claim " (dotted) ", and " (language.display_name)
+                    " claims it first — the answer for a caller that has not opened the
+                     file. Paste some content below and the content rules decide instead."
+                } @else {
+                    (dotted) " is claimed by one language, so the name is the answer."
+                }
+            }
+        }
+        Evidence::Shebang(line) => html! {
+            "The first line " (code(line))
+            " names the interpreter; the filename was not needed."
+        },
+        Evidence::Content { extension, rule } => {
+            let total = langbank::disambiguation_for(extension)
+                .map(|d| d.rules.len())
+                .unwrap_or(0);
+            html! {
+                "The name could not settle " (code(&format!(".{extension}")))
+                " — rule " (rule + 1) " of " (total) " for it matched the content."
+            }
+        }
+    }
+}
+
+/// The languages contesting an extension, linked where langbank carries a page
+/// for one. Its own function because the alternative is four levels of macro
+/// inside the branch that uses it, and the branch is hard enough to read.
+fn claimant_list(claimants: &[&str]) -> Markup {
+    html! {
+        @for (index, id) in claimants.iter().enumerate() {
+            @if index > 0 { ", " }
+            @match langbank::language_profile(id) {
+                Some(language) => (link(&format!("/languages/{id}"), language.display_name)),
+                None => (id),
+            }
+        }
+    }
+}
+
+fn verdict(query: &Query) -> Markup {
     let path = query.path.trim();
     if path.is_empty() {
-        return String::new();
+        return html! {};
     }
     let content = query.content.trim_end_matches('\n');
-    let content = if content.is_empty() {
-        None
-    } else {
-        Some(clamp(content))
-    };
+    let content = (!content.is_empty()).then(|| clamp(content));
 
     match identify(path, content) {
-        Ok(found) => {
-            let how = match &found.evidence {
-                Evidence::Filename(name) => format!(
-                    "The whole filename {} is claimed, so nothing had to be read.",
-                    code(name)
-                ),
-                Evidence::Extension(ext) => {
-                    let claimants = langbank::languages_claiming_extension(ext).len();
-                    if claimants > 1 {
-                        format!(
-                            "{} languages claim {}, and {} claims it first — the answer for a \
-                             caller that has not opened the file. Paste some content below and \
-                             the content rules decide instead.",
-                            claimants,
-                            code(&format!(".{ext}")),
-                            escape(found.language.display_name),
-                        )
-                    } else {
-                        format!(
-                            "{} is claimed by one language, so the name is the answer.",
-                            code(&format!(".{ext}"))
-                        )
-                    }
+        Ok(found) => html! {
+            div.verdict {
+                h3 { (link(&format!("/languages/{}", found.language.id),
+                           found.language.display_name)) }
+                p { (how(&found.evidence, found.language)) }
+                p { (format!("{:?}", found.evidence)) }
+            }
+        },
+        Err(Undecided::Unknown) => html! {
+            div.verdict {
+                h3 { "Not known" }
+                p {
+                    "No language claims that name, and no shebang was found. langbank
+                     says nothing rather than guessing."
                 }
-                Evidence::Shebang(line) => format!(
-                    "The first line {} names the interpreter; the filename was not needed.",
-                    code(line)
-                ),
-                Evidence::Content { extension, rule } => {
-                    let total = langbank::disambiguation_for(extension)
-                        .map(|d| d.rules.len())
-                        .unwrap_or(0);
-                    format!(
-                        "The name could not settle {} — rule {} of {} for it matched the content.",
-                        code(&format!(".{extension}")),
-                        rule + 1,
-                        total
-                    )
-                }
-            };
-            format!(
-                "<div class=verdict><h3>{}</h3><p>{how}</p><p>{}</p></div>",
-                link(
-                    &format!("/languages/{}", found.language.id),
-                    found.language.display_name
-                ),
-                escape(&format!("{:?}", found.evidence))
-            )
-        }
-        Err(Undecided::Unknown) => {
-            "<div class=verdict><h3>Not known</h3><p>No language claims that name, and no \
-             shebang was found. langbank says nothing rather than guessing.</p></div>"
-                .into()
-        }
+            }
+        },
         Err(Undecided::Contested {
             extension,
             claimants,
             had_rules,
-        }) => {
-            let names = claimants
-                .iter()
-                .map(|id| {
-                    langbank::language_profile(id)
-                        .map(|l| link(&format!("/languages/{id}"), l.display_name))
-                        .unwrap_or_else(|| escape(id))
-                })
-                .collect::<Vec<_>>()
-                .join(", ");
-            let advice = if had_rules {
-                "There are content rules for it — paste the file below and they will run."
-            } else {
-                "langbank carries no content rules for this extension, so it stays contested."
-            };
-            format!(
-                "<div class=verdict><h3>Contested</h3><p>{} is claimed by {names}, and none of \
-                 them claims it first. {advice}</p></div>",
-                code(&format!(".{extension}"))
-            )
-        }
+        }) => html! {
+            div.verdict {
+                h3 { "Contested" }
+                p {
+                    (code(&format!(".{extension}"))) " is claimed by "
+                    (claimant_list(&claimants))
+                    ", and none of them claims it first. "
+                    @if had_rules {
+                        "There are content rules for it — paste the file below and they
+                         will run."
+                    } @else {
+                        "langbank carries no content rules for this extension, so it
+                         stays contested."
+                    }
+                }
+            }
+        },
     }
 }
 
@@ -136,54 +140,56 @@ pub fn render(query: &Query) -> String {
         .iter()
         .map(|d| d.rules.len())
         .sum();
-    let contested = langbank::disambiguations().len();
-
-    let mut examples = String::new();
-    for (path, label) in [
+    let examples = [
         ("src/main.rs", "a name that settles itself"),
         ("legacy.h", "three languages claim it"),
         ("man/git.1", "contested with no first claim"),
         ("scripts/deploy", "no extension at all"),
-    ] {
-        let _ = write!(
-            examples,
-            "<li>{} <small>{}</small></li>",
-            link(&format!("/identify?path={path}"), path),
-            escape(label)
-        );
-    }
+    ];
 
-    let body = format!(
-        r##"<h1>Identify a file</h1>
-<p class=lede>langbank does not read files. It carries {rules} ordered rules across
-{contested} contested extensions so a caller holding the bytes can settle what a
-filename cannot — and reports which rule fired, not just the verdict.</p>
+    let body = html! {
+        h1 { "Identify a file" }
+        p.lede {
+            "langbank does not read files. It carries " (rules) " ordered rules across "
+            (langbank::disambiguations().len()) " contested extensions so a caller
+             holding the bytes can settle what a filename cannot — and reports which
+             rule fired, not just the verdict."
+        }
 
-{verdict}
+        (verdict(query))
 
-<form method=post action="/identify">
-  <label for=path>Path or filename</label>
-  <input id=path name=path value="{path}" placeholder="src/main.rs" autofocus>
-  <label for=content>File content <span class=none>— optional; the rules only run when there is something to read</span></label>
-  <textarea id=content name=content placeholder="#!/usr/bin/env bash&#10;echo hi">{content}</textarea>
-  <button type=submit>Identify</button>
-</form>
+        form method="post" action="/identify" {
+            label for="path" { "Path or filename" }
+            input id="path" name="path" value=(query.path) placeholder="src/main.rs" autofocus;
+            label for="content" {
+                "File content "
+                span.none { "— optional; the rules only run when there is something to read" }
+            }
+            textarea id="content" name="content"
+                     placeholder="#!/usr/bin/env bash\necho hi" { (query.content) }
+            button type="submit" { "Identify" }
+        }
 
-<h2>Try these</h2>
-<ul class=grid>{examples}</ul>
+        h2 { "Try these" }
+        ul.grid {
+            @for (path, label) in examples {
+                li { (link(&format!("/identify?path={path}"), path)) " " small { (label) } }
+            }
+        }
 
-<h2>Why the evidence matters</h2>
-<p>“This is C” and “this is C because rule 3 for <code>.h</code> matched” are
-different claims. A consumer joining this answer to a parse tree or a compiler
-observation needs the second one: it can tell a confident answer from a fallback,
-and it can disagree with a specific rule rather than with langbank.</p>
-<p>The same call is available without the web page:</p>
-<pre><code>langbank_detect::identify("legacy.h", Some(source))
-// Ok(Identification {{ language: cpp, evidence: Content {{ extension: "h", rule: 1 }} }})</code></pre>
-"##,
-        verdict = verdict(query),
-        path = escape(&query.path),
-        content = escape(&query.content),
-    );
-    page("Identify a file", &[("/", "langbank")], &body)
+        h2 { "Why the evidence matters" }
+        p {
+            "“This is C” and “this is C because rule 3 for " code { ".h" } " matched” are
+             different claims. A consumer joining this answer to a parse tree or a
+             compiler observation needs the second one: it can tell a confident answer
+             from a fallback, and it can disagree with a specific rule rather than with
+             langbank."
+        }
+        p { "The same call is available without the web page:" }
+        pre { code {
+"langbank_detect::identify(\"legacy.h\", Some(source))
+// Ok(Identification { language: cpp, evidence: Content { extension: \"h\", rule: 1 } })"
+        } }
+    };
+    page("Identify a file", &[("/", "langbank")], body)
 }

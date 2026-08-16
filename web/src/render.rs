@@ -1,106 +1,97 @@
-//! HTML by string building, because the alternative is a template engine and a
-//! build step for a site whose entire content is already `&'static` in the
-//! binary.
+//! The page shell, and the small pieces every page shares.
 //!
-//! `escape` is not optional anywhere. `/identify` renders a filename and a file
-//! body that a visitor supplied, and langbank's own data contains `<`, `>` and
-//! `&` in shebangs, comment markers and regex patterns.
+//! Markup is `maud`: an HTML macro checked at compile time, so an unclosed tag
+//! is a build error rather than a page that renders sideways. It also escapes
+//! every interpolated value by default, and opting out has to be spelled
+//! `PreEscaped`. That matters more here than anywhere else on the site —
+//! `/identify` renders a filename and a file body a visitor supplied, and
+//! langbank's own data carries `<`, `>` and `&` in shebangs, comment markers
+//! and regex patterns. The previous version escaped by hand, which worked, but
+//! it worked because every call site remembered to.
 
-use std::fmt::Write as _;
+use maud::{DOCTYPE, Markup, PreEscaped, html};
 
-/// Everything that can end a tag or start an entity. Attributes are quoted with
-/// `"` throughout, so `'` is left alone deliberately.
-pub fn escape(text: &str) -> String {
-    let mut out = String::with_capacity(text.len());
-    for c in text.chars() {
-        match c {
-            '&' => out.push_str("&amp;"),
-            '<' => out.push_str("&lt;"),
-            '>' => out.push_str("&gt;"),
-            '"' => out.push_str("&quot;"),
-            _ => out.push(c),
+/// A `<code>` span.
+pub fn code(text: &str) -> Markup {
+    html! { code { (text) } }
+}
+
+/// A run of `<code>` spans, or an em dash when there are none — an empty cell
+/// and a cell that says "nothing here" read differently in a table.
+pub fn codes<S: AsRef<str>>(values: &[S]) -> Markup {
+    if values.is_empty() {
+        return html! { span.none { "—" } };
+    }
+    html! {
+        @for (index, value) in values.iter().enumerate() {
+            @if index > 0 { " " }
+            (code(value.as_ref()))
         }
     }
-    out
 }
 
-/// A `<code>` span, escaped.
-pub fn code(text: &str) -> String {
-    format!("<code>{}</code>", escape(text))
+pub fn link(href: &str, text: &str) -> Markup {
+    html! { a href=(href) { (text) } }
 }
 
-/// A comma-run of `<code>` spans, or an em dash when there are none — an empty
-/// cell and a cell that says "nothing here" read differently in a table.
-pub fn codes<S: AsRef<str>>(values: &[S]) -> String {
-    if values.is_empty() {
-        return "<span class=none>—</span>".into();
+/// A definition row, skipped when there is nothing to say. Rendering forty
+/// empty rows for a language langbank knows three things about would bury the
+/// three.
+pub fn row(label: &str, value: Option<Markup>) -> Markup {
+    html! {
+        @if let Some(value) = value {
+            div.row { dt { (label) } dd { (value) } }
+        }
     }
-    values
-        .iter()
-        .map(|v| code(v.as_ref()))
-        .collect::<Vec<_>>()
-        .join(" ")
 }
 
-pub fn link(href: &str, text: &str) -> String {
-    format!("<a href=\"{}\">{}</a>", escape(href), escape(text))
-}
-
-/// A definition row, skipped entirely when there is nothing to say. Rendering
-/// forty empty rows for a language langbank knows three things about would bury
-/// the three.
-pub fn row(label: &str, value: String) -> String {
-    if value.is_empty() {
-        return String::new();
-    }
-    format!(
-        "<div class=row><dt>{}</dt><dd>{value}</dd></div>",
-        escape(label)
-    )
-}
-
-/// The shell every page shares. `title` is the browser tab and the `h1` is the
+/// The shell every page shares. `title` is the browser tab; the `h1` is the
 /// page's own, because they are not always the same thing.
-pub fn page(title: &str, breadcrumb: &[(&str, &str)], body: &str) -> String {
-    let mut crumbs = String::new();
-    for (href, text) in breadcrumb {
-        let _ = write!(crumbs, "{} <span class=sep>/</span> ", link(href, text));
+pub fn page(title: &str, breadcrumb: &[(&str, &str)], body: Markup) -> String {
+    html! {
+        (DOCTYPE)
+        html lang="en";
+        meta charset="utf-8";
+        meta name="viewport" content="width=device-width,initial-scale=1";
+        title { (title) " — langbank" }
+        meta name="description" content="Structured data about programming languages, ecosystems and toolchains, compiled into a Rust crate with no runtime parsing.";
+        style { (PreEscaped(CSS)) }
+        header {
+            nav {
+                a.brand href="/" { "langbank" }
+                a href="/languages" { "languages" }
+                a href="/ecosystems" { "ecosystems" }
+                a href="/toolchains" { "toolchains" }
+                a href="/registries" { "registries" }
+                a href="/identify" { "identify" }
+                a.out href="https://github.com/PowderworksCode/langbank" { "source" }
+            }
+        }
+        main {
+            @if !breadcrumb.is_empty() {
+                p.crumbs {
+                    @for (href, text) in breadcrumb {
+                        (link(href, text)) " " span.sep { "/" } " "
+                    }
+                }
+            }
+            (body)
+        }
+        footer {
+            p {
+                "langbank is a leaf: it depends on nothing and describes what other tools
+                 need to agree on. Data is compiled to " code { "&'static" } " at build time —
+                 this page parses nothing to render."
+            }
+            p.quiet {
+                "Assembled from " a href="https://github.com/github-linguist/linguist" { "linguist" }
+                ", " a href="https://github.com/package-url/purl-spec" { "purl-spec" }
+                " and other permissively licensed sources. Every figure on this site is
+                 generated from the data in the repository."
+            }
+        }
     }
-    format!(
-        r#"<!doctype html>
-<html lang=en>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<title>{title} — langbank</title>
-<meta name=description content="Structured data about programming languages, ecosystems and toolchains, compiled into a Rust crate with no runtime parsing.">
-<style>{CSS}</style>
-<header>
-  <nav>
-    <a class=brand href="/">langbank</a>
-    <a href="/languages">languages</a>
-    <a href="/ecosystems">ecosystems</a>
-    <a href="/toolchains">toolchains</a>
-    <a href="/registries">registries</a>
-    <a href="/identify">identify</a>
-    <a class=out href="https://github.com/PowderworksCode/langbank">source</a>
-  </nav>
-</header>
-<main>
-<p class=crumbs>{crumbs}</p>
-{body}
-</main>
-<footer>
-  <p>langbank is a leaf: it depends on nothing and describes what other tools
-  need to agree on. Data is compiled to <code>&amp;'static</code> at build time —
-  this page parses nothing to render.</p>
-  <p class=quiet>Assembled from <a href="https://github.com/github-linguist/linguist">linguist</a>,
-  <a href="https://github.com/package-url/purl-spec">purl-spec</a> and other permissively
-  licensed sources. Every figure on this site is generated from the data in the repository.</p>
-</footer>
-"#,
-        title = escape(title),
-        CSS = CSS,
-    )
+    .into_string()
 }
 
 const CSS: &str = r#"
@@ -142,7 +133,6 @@ h1 { font-size: 1.9rem; line-height: 1.2; letter-spacing: -.025em; margin: .2rem
 h2 { font-size: 1.15rem; letter-spacing: -.015em; margin: 2.2rem 0 .6rem }
 h3 { font-size: .95rem; margin: 1.4rem 0 .4rem }
 .crumbs { color: var(--dim); font-size: .85rem; margin: 0 0 .8rem }
-.crumbs:empty { display: none }
 .sep { opacity: .5 }
 .lede { font-size: 1.12rem; color: var(--dim); max-width: 44rem; margin: 0 0 1.4rem }
 code {
