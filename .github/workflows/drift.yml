@@ -19,10 +19,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: rustup show
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install pyyaml
       - name: linguist coverage
         run: cargo run -q -p langbank-sync -- linguist check
       - name: purl coverage
@@ -40,13 +36,13 @@ jobs:
       - name: linguist heuristics
         run: cargo run -q -p langbank-sync -- heuristics check
       - name: contested extensions
-        run: tools/resolve-contested.py check
+        run: cargo run -q -p langbank-sync -- contested check
       - name: dependabot ecosystems
         run: |
           # Dependabot states its facts in Ruby, so they are read with Ripper
           # rather than by regex. A shallow clone is enough; nothing is vendored.
           git clone --depth 1 https://github.com/dependabot/dependabot-core.git /tmp/dependabot-core
           ruby tools/extract-dependabot.rb /tmp/dependabot-core > /tmp/dependabot.json
-          tools/sync-dependabot.py check /tmp/dependabot.json
+          cargo run -q -p langbank-sync -- dependabot check /tmp/dependabot.json
       - name: version probes, against whatever this runner has
         run: cargo run -q -p langbank-sync -- toolchains --strict
