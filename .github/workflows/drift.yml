@@ -38,7 +38,7 @@ jobs:
       - name: language coverage report
         run: cargo run -q -p langbank-sync -- coverage
       - name: linguist heuristics
-        run: tools/sync-heuristics.py check
+        run: cargo run -q -p langbank-sync -- heuristics check
       - name: contested extensions
         run: tools/resolve-contested.py check
       - name: dependabot ecosystems

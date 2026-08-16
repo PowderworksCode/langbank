@@ -16,5 +16,45 @@ jobs:
       - uses: actions/checkout@v4
       - run: rustup show                      # honours rust-toolchain.toml
       - run: cargo fmt --check
-      - run: cargo clippy --all-targets -- -D warnings
-      - run: cargo test
+      # --workspace, because without it clippy and the tests see only the root
+      # package. `langbank-detect` and `langbank-sync` merged with their tests
+      # never once run in CI, which is how a workspace member quietly stops
+      # being checked: nothing fails, it just goes unexamined.
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
+
+      # drift.yml runs only on main and on a schedule, so a workflow calling a
+      # script deleted on a branch stays green through review and fails after
+      # the merge. That is not hypothetical: porting sync-heuristics.py to Rust
+      # left drift.yml calling it, and main went red on exit 127. Eight more of
+      # these scripts will be deleted as they are ported.
+      - name: Workflows only call scripts that exist
+        run: |
+          missing=0
+          for script in $(grep -rhoE 'tools/[A-Za-z0-9_.-]+\.(py|rb)' .github/workflows/ | sort -u); do
+            if [ ! -f "$script" ]; then
+              echo "::error::a workflow calls $script, which does not exist"
+              missing=1
+            fi
+          done
+          [ "$missing" = 0 ] && echo "every tools/ script a workflow calls is present"
+          exit "$missing"
+
+      # langbank is the leaf: a consumer takes it without taking a network
+      # stack, a regex engine or an archive reader. The sync tools fetch over
+      # HTTP and the site runs axum — that is what the other workspace members
+      # are for. Checked rather than assumed, because the easiest way to lose
+      # this property is one convenient `cargo add` in the wrong directory.
+      - name: The leaf stays a leaf
+        run: |
+          allowed='inventory serde serde_json toml'
+          actual=$(cargo metadata --format-version 1 --no-deps |
+            jq -r '.packages[] | select(.name == "langbank") | .dependencies[].name' | sort -u)
+          for dep in $actual; do
+            case " $allowed " in
+              *" $dep "*) ;;
+              *) echo "::error::langbank gained a runtime dependency: $dep"; exit 1 ;;
+            esac
+          done
+          echo "langbank depends only on: $(echo $actual)"
+          echo "(serde derives the data types, toml is build-only, serde_json is dev-only)"
