@@ -49,14 +49,36 @@ pub enum Undecided {
     },
 }
 
+/// Take a lock, recovering from poisoning rather than propagating it.
+///
+/// The regex cache holds no invariant a panic could have broken — it is a map
+/// from a pattern to a compiled copy of that pattern, and a half-finished
+/// insert leaves it merely incomplete. Treating a poisoned lock as failure
+/// instead meant that one panic anywhere while it was held turned every content
+/// rule off for the life of the process: silently and permanently, with
+/// `identify` falling back to filename answers and reporting nothing wrong. On
+/// a long-running server that is a site that quietly stops working and still
+/// returns 200 — the same failure shape as the `^`-anchoring bug, and just as
+/// hard to notice.
+///
+/// Only reachable if something panics inside the critical section below, which
+/// is why `lock_poisoning_is_recovered_from` poisons a mutex directly rather
+/// than trying to provoke it through `identify` — an earlier attempt that did
+/// the latter poisoned nothing and passed against the unfixed code.
+fn lock_recovering<T>(mutex: &std::sync::Mutex<T>) -> std::sync::MutexGuard<'_, T> {
+    mutex
+        .lock()
+        .unwrap_or_else(std::sync::PoisonError::into_inner)
+}
+
 fn compiled(pattern: &str) -> Option<&'static Regex> {
     // Rules are evaluated repeatedly and the patterns are fixed, so each is
-    // compiled once. Three of 317 use lookaround, which this crate's engine
-    // rejects; those simply never match rather than taking the process down.
+    // compiled once. Six of 317 use a construct Rust's regex rejects; those
+    // simply never match rather than taking the process down.
     static CACHE: OnceLock<std::sync::Mutex<std::collections::HashMap<String, &'static Regex>>> =
         OnceLock::new();
     let cache = CACHE.get_or_init(Default::default);
-    let mut cache = cache.lock().ok()?;
+    let mut cache = lock_recovering(cache);
     if let Some(found) = cache.get(pattern) {
         return Some(found);
     }
@@ -69,6 +91,13 @@ fn compiled(pattern: &str) -> Option<&'static Regex> {
         regex::RegexBuilder::new(pattern)
             .multi_line(true)
             .build()
+            // Discarding this one is deliberate: a pattern that does not
+            // compile is a rule that cannot fire, which langbank already
+            // records in the data as `portable = false`, and
+            // `every_rule_in_the_registry_compiles_or_is_marked_unportable`
+            // fails if the two disagree. `identify` answers `Undecided`, which
+            // is a statement about the file rather than about the registry, so
+            // there is nothing here for a caller to do with the error.
             .ok()?,
     ));
     cache.insert(pattern.to_owned(), compiled);
@@ -189,4 +218,27 @@ pub fn identify(path: &str, content: Option<&str>) -> Result<Identification, Und
         claimants: claimants.iter().map(|profile| profile.id).collect(),
         had_rules: block.is_some(),
     })
+}
+
+#[cfg(test)]
+mod tests {
+    use super::lock_recovering;
+    use std::sync::Mutex;
+
+    #[test]
+    fn lock_poisoning_is_recovered_from() {
+        let mutex = Mutex::new(vec!["a rule"]);
+        let poisoned = std::panic::catch_unwind(|| {
+            let _guard = mutex.lock().expect("first lock");
+            panic!("poison it while the guard is held");
+        });
+        assert!(poisoned.is_err(), "the panic did not happen");
+        assert!(mutex.is_poisoned(), "the mutex was not actually poisoned");
+
+        // The behaviour that matters: still usable, and the contents survived.
+        // `mutex.lock().ok()` here would be `None`, which is how every content
+        // rule used to switch itself off.
+        assert!(mutex.lock().is_err(), "a plain lock would still fail");
+        assert_eq!(*lock_recovering(&mutex), vec!["a rule"]);
+    }
 }
