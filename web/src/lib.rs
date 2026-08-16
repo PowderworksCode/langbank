@@ -69,3 +69,44 @@ pub fn not_found(subject: &str) -> String {
         ),
     )
 }
+
+/// Unset means 8080. Set to something unusable does not.
+///
+/// `PORT.ok().and_then(|p| p.parse().ok()).unwrap_or(8080)` folds those two
+/// cases together, so a typo in `fly.toml` binds 8080 while Fly routes to the
+/// port that was meant, and the only symptom is a health check that times out
+/// with nothing in the logs to say why. The whole job of that check is to
+/// report what is wrong, so a misconfiguration is reported here instead of
+/// quietly becoming a different, working-looking configuration.
+///
+/// Takes the looked-up value rather than reading the environment itself, so it
+/// can be tested without mutating process-global state.
+pub fn port_from(value: Result<&str, &std::env::VarError>) -> Result<u16, String> {
+    match value {
+        Err(std::env::VarError::NotPresent) => Ok(8080),
+        Err(error) => Err(format!("PORT is set but unreadable: {error}")),
+        Ok(value) => value
+            .parse()
+            .map_err(|error| format!("PORT is set to {value:?}, which is not a port: {error}")),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::port_from;
+    use std::env::VarError;
+
+    #[test]
+    fn an_unset_port_is_the_default_and_a_broken_one_is_an_error() {
+        assert_eq!(port_from(Err(&VarError::NotPresent)), Ok(8080));
+        assert_eq!(port_from(Ok("8090")), Ok(8090));
+
+        // The cases that used to be indistinguishable from "unset".
+        for broken in ["8o80", "99999", "", "8080 "] {
+            assert!(
+                port_from(Ok(broken)).is_err(),
+                "{broken:?} silently became a working default"
+            );
+        }
+    }
+}

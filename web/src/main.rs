@@ -62,10 +62,13 @@ async fn main() {
         .route("/health", get(health))
         .fallback(|| async { (StatusCode::NOT_FOUND, Html(site::not_found("that page"))) });
 
-    let port: u16 = std::env::var("PORT")
-        .ok()
-        .and_then(|p| p.parse().ok())
-        .unwrap_or(8080);
+    let port = match site::port_from(std::env::var("PORT").as_deref()) {
+        Ok(port) => port,
+        Err(error) => {
+            eprintln!("langbank-web: {error}");
+            std::process::exit(1);
+        }
+    };
     let listener = match tokio::net::TcpListener::bind(("0.0.0.0", port)).await {
         Ok(listener) => listener,
         Err(error) => {
