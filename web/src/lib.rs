@@ -9,6 +9,7 @@ mod pages;
 pub mod render;
 
 pub use pages::identify::Query;
+pub use render::{CSS, stylesheet_path};
 
 pub fn home() -> String {
     pages::home::render()
@@ -61,12 +62,11 @@ pub fn not_found(subject: &str) -> String {
     render::page(
         "Not found",
         &[("/", "langbank")],
-        &format!(
-            "<h1>Not found</h1><p class=lede>langbank carries no {}.</p>\
-             <p>{} lists everything it does.</p>",
-            render::code(subject),
-            render::link("/languages", "The language index")
-        ),
+        maud::html! {
+            h1 { "Not found" }
+            p.lede { "langbank carries no " (render::code(subject)) "." }
+            p { (render::link("/languages", "The language index")) " lists everything it does." }
+        },
     )
 }
 
