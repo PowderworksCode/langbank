@@ -18,6 +18,8 @@ against. This tool does two jobs and refuses to confuse them:
 import argparse
 import glob
 import hashlib
+# straitjacket-allow-file:emoji -- Mojo's `.🔥` extension appears in the docstring
+# of the encoder that exists to handle it; a docstring takes no trailing comment.
 import json
 import os
 import re

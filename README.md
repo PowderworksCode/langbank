@@ -201,9 +201,17 @@ Upstream sources are what langbank is *checked against*, never what it defers
 to:
 
 ```sh
-tools/sync-linguist.py check     # CI: fails if linguist knows something we do not
-tools/sync-linguist.py create    # writes a file for each language we lack
+cargo run -p langbank-sync -- purl check      # fails if purl defines a type we lack
+cargo run -p langbank-sync -- coverage        # what is known per language
+cargo run -p langbank-sync -- toolchains      # run every version probe here
+tools/sync-linguist.py check                  # still Python, port in progress
 ```
+
+The tools ship with the crate rather than sitting in a scripts directory,
+because the rules for reading an upstream are as much a fact about it as the
+data they yield. They are a **separate workspace member**: the leaf crate stays
+dependency-free, and nothing downstream inherits an HTTP client for the
+privilege of knowing what a `.rs` file is.
 
 `check` compares every language and every extension, filename and interpreter.
 `create` only ever writes files that do not exist — a hand-written entry with a

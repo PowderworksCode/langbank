@@ -1,0 +1,25 @@
+[package]
+name = "langbank-sync"
+version = "0.0.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/PowderworksCode/langbank"
+description = "Keeps langbank's data in step with the upstreams it is checked against."
+
+[dependencies]
+langbank = { path = ".." }
+flate2 = "1"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml_ng = "0.10"
+tar = "0.4"
+toml = "1"
+ureq = "2"
+
+[lints.rust]
+unused_must_use = "deny"
+
+[lints.clippy]
+unwrap_used = "deny"

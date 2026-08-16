@@ -1,0 +1,13 @@
+# straitjacket configuration for langbank.
+#
+# Two rules need scoping here, and both for the same reason: langbank's subject
+# matter is the exact material these rules exist to flag. A registry of file
+# extensions contains emoji because one language really does use one, and a
+# generated table of 317 regexes is long because upstream publishes 317 rules.
+# Everything else stays on.
+
+# `data/heuristics.toml` is generated from linguist by `langbank-sync` and is as
+# long as linguist's ruleset is. Splitting it would mean either splitting the
+# generator's output along a boundary linguist does not have, or hand-editing a
+# file whose header says it is generated. Neither is an improvement.
+file-size-exclude = ["data/heuristics.toml"]

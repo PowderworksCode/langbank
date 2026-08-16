@@ -82,12 +82,12 @@ fn languages_the_corpora_disagree_about_are_left_alone() {
 
 #[test]
 fn an_extension_can_be_an_emoji() {
-    // Mojo really does accept `.🔥`, and it is the case that proves the data
-    // files are UTF-8 rather than ASCII with escapes.
+    // Mojo really does accept `.🔥`, straitjacket-allow:emoji — and it is the
+    // case that proves the data files are UTF-8 rather than ASCII with escapes.
     let mojo = language_profile("mojo").expect("mojo");
-    assert!(mojo.extensions.contains(&"🔥"), "{:?}", mojo.extensions);
+    assert!(mojo.extensions.contains(&"🔥"), "{:?}", mojo.extensions); // straitjacket-allow:emoji — Mojo's real extension, which is the assertion
     assert_eq!(
-        language_profile_for_extension("🔥").map(|p| p.id),
+        language_profile_for_extension("🔥").map(|p| p.id), // straitjacket-allow:emoji — as above: the datum, not decoration
         Some("mojo")
     );
     assert!(!mojo.extensions.iter().any(|e| e.contains("\\u")));

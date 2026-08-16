@@ -14,7 +14,7 @@
 
 use std::collections::BTreeMap;
 use std::fmt::Write as _;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use toml::Value;
 
@@ -236,14 +236,32 @@ fn camel(value: &str) -> String {
         .collect()
 }
 
-fn ecosystems(out: &mut String, directory: &Path) {
-    let mut files = std::fs::read_dir(directory)
-        .expect("read data/ecosystems")
-        .filter_map(Result::ok)
-        .map(|entry| entry.path())
+/// Every `.toml` under `directory`, sorted, with any failure fatal.
+///
+/// This used to be `read_dir(..).filter_map(Result::ok)`, which skipped an
+/// entry that could not be read and carried on — so an unreadable data file
+/// left the registry a language short and the build green. `gaps` was worse
+/// still: it took `unwrap_or_default()` on the directory itself, so an
+/// unreadable `data/gaps/` compiled to zero recorded absences, which is the
+/// exact "language-free world and no error" this file's header refuses to
+/// produce. A build that cannot see its data must not finish.
+fn toml_files(directory: &Path) -> Vec<PathBuf> {
+    let entries = std::fs::read_dir(directory)
+        .unwrap_or_else(|error| panic!("read {}: {error}", directory.display()));
+    let mut files: Vec<PathBuf> = entries
+        .map(|entry| {
+            entry
+                .unwrap_or_else(|error| panic!("read an entry of {}: {error}", directory.display()))
+                .path()
+        })
         .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-        .collect::<Vec<_>>();
+        .collect();
     files.sort();
+    files
+}
+
+fn ecosystems(out: &mut String, directory: &Path) {
+    let files = toml_files(directory);
 
     // A profile is emitted for every ecosystem; which of them lib.rs surfaces
     // by name is its own choice, so the unused ones are not a warning.
@@ -488,13 +506,7 @@ fn test_retry(tool: &Value) -> String {
 }
 
 fn tools(out: &mut String, directory: &Path) {
-    let mut files = std::fs::read_dir(directory)
-        .expect("read data/tools")
-        .filter_map(Result::ok)
-        .map(|entry| entry.path())
-        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-        .collect::<Vec<_>>();
-    files.sort();
+    let files = toml_files(directory);
 
     out.push_str("pub(crate) mod tools {\n");
     for path in &files {
@@ -548,13 +560,7 @@ fn tools(out: &mut String, directory: &Path) {
 /// identity lives; the manager that reads a lockfile is a different thing and
 /// lives in data/ecosystems/.
 fn registries(out: &mut String, directory: &Path) {
-    let mut files = std::fs::read_dir(directory)
-        .expect("read data/registries")
-        .filter_map(Result::ok)
-        .map(|entry| entry.path())
-        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-        .collect::<Vec<_>>();
-    files.sort();
+    let files = toml_files(directory);
 
     out.push_str("pub(crate) mod registries {\n");
     for path in &files {
@@ -617,13 +623,7 @@ fn registries(out: &mut String, directory: &Path) {
 /// The programs a language is processed by. Not tool profiles: those classify
 /// an invocation, these describe the program itself.
 fn toolchains(out: &mut String, directory: &Path) {
-    let mut files = std::fs::read_dir(directory)
-        .expect("read data/toolchains")
-        .filter_map(Result::ok)
-        .map(|entry| entry.path())
-        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-        .collect::<Vec<_>>();
-    files.sort();
+    let files = toml_files(directory);
 
     out.push_str("pub(crate) mod toolchains {\n");
     for path in &files {
@@ -743,16 +743,7 @@ fn toolchains(out: &mut String, directory: &Path) {
 
 /// Gaps: what langbank knows it does not know, and why.
 fn gaps(out: &mut String, directory: &Path) {
-    let mut files = std::fs::read_dir(directory)
-        .map(|entries| {
-            entries
-                .filter_map(Result::ok)
-                .map(|entry| entry.path())
-                .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-                .collect::<Vec<_>>()
-        })
-        .unwrap_or_default();
-    files.sort();
+    let files = toml_files(directory);
 
     out.push_str("pub(crate) mod gaps {\n");
     let mut index = 0;
@@ -801,6 +792,48 @@ fn gaps(out: &mut String, directory: &Path) {
 }
 
 /// Content rules for extensions several languages claim.
+/// One rule's clauses, as constructor source. Every clause must hold, so an
+/// empty list is a rule that always matches — which is how the fallback at the
+/// end of a block is spelled.
+fn disambiguation_clauses(rule: &Value) -> Vec<String> {
+    rule.get("clause")
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |clauses| {
+            clauses
+                .iter()
+                .map(|clause| {
+                    format!(
+                        "crate::Clause {{ patterns: {}, negative: {} }}",
+                        strs(clause.get("patterns")),
+                        strs(clause.get("negative")),
+                    )
+                })
+                .collect()
+        })
+}
+
+/// One block's rules, in the order linguist evaluates them. The order is the
+/// meaning here — the first rule whose clauses all match wins — so this must
+/// not sort or dedupe.
+fn disambiguation_rules(block: &Value) -> Vec<String> {
+    block
+        .get("rule")
+        .and_then(Value::as_array)
+        .map_or_else(Vec::new, |array| {
+            array
+                .iter()
+                .map(|rule| {
+                    format!(
+                        "crate::DisambiguationRule {{ language: &super::languages::{}::PROFILE, clauses: &[{}], portable: {} }}",
+                        ident(rule.get("language").and_then(Value::as_str).unwrap_or_default()),
+                        disambiguation_clauses(rule).join(", "),
+                        rule.get("portable").and_then(Value::as_bool).unwrap_or(true),
+                    )
+                })
+                .collect()
+        })
+}
+
 fn disambiguations(out: &mut String, path: &Path) {
     if !path.exists() {
         return;
@@ -814,37 +847,7 @@ fn disambiguations(out: &mut String, path: &Path) {
 
     out.push_str("pub(crate) mod heuristics {\n");
     for (index, block) in blocks.iter().enumerate() {
-        let rules = block
-            .get("rule")
-            .and_then(Value::as_array)
-            .map_or_else(Vec::new, |array| {
-                array
-                    .iter()
-                    .map(|rule| {
-                        let clauses = rule
-                            .get("clause")
-                            .and_then(Value::as_array)
-                            .map_or_else(Vec::new, |clauses| {
-                                clauses
-                                    .iter()
-                                    .map(|clause| {
-                                        format!(
-                                            "crate::Clause {{ patterns: {}, negative: {} }}",
-                                            strs(clause.get("patterns")),
-                                            strs(clause.get("negative")),
-                                        )
-                                    })
-                                    .collect()
-                            });
-                        format!(
-                            "crate::DisambiguationRule {{ language: &super::languages::{}::PROFILE, clauses: &[{}], portable: {} }}",
-                            ident(rule.get("language").and_then(Value::as_str).unwrap_or_default()),
-                            clauses.join(", "),
-                            rule.get("portable").and_then(Value::as_bool).unwrap_or(true),
-                        )
-                    })
-                    .collect::<Vec<_>>()
-            });
+        let rules = disambiguation_rules(block);
         writeln!(
             out,
             "    pub static BLOCK_{index}: crate::Disambiguation = crate::Disambiguation {{\n\
@@ -874,13 +877,7 @@ fn main() {
     out.push_str("pub(crate) mod languages {\n");
     comment_tables(&mut out, &data.join("comment-syntax.toml"));
 
-    let mut files = std::fs::read_dir(data.join("languages"))
-        .expect("read data/languages")
-        .filter_map(Result::ok)
-        .map(|entry| entry.path())
-        .filter(|path| path.extension().is_some_and(|ext| ext == "toml"))
-        .collect::<Vec<_>>();
-    files.sort();
+    let files = toml_files(&data.join("languages"));
 
     for path in &files {
         println!("cargo:rerun-if-changed={}", path.display());
