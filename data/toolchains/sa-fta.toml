@@ -1,0 +1,6 @@
+id = "sa-fta"
+display-name = "fta"
+kind = "linter"
+languages = ["typescript"]
+programs = ["fta"]
+categories = ["linter"]

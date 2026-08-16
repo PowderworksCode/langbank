@@ -30,11 +30,11 @@ jobs:
       - name: tokei and scc coverage
         run: cargo run -q -p langbank-sync -- corpora check
       - name: nvim-lspconfig coverage
-        run: tools/sync-lspconfig.py check
+        run: cargo run -q -p langbank-sync -- lspconfig check
       - name: mason-registry coverage
-        run: tools/sync-mason.py check
+        run: cargo run -q -p langbank-sync -- mason check
       - name: static-analysis coverage
-        run: tools/sync-static-analysis.py check
+        run: cargo run -q -p langbank-sync -- static-analysis check
       - name: language coverage report
         run: cargo run -q -p langbank-sync -- coverage
       - name: linguist heuristics

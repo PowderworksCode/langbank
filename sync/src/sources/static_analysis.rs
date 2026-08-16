@@ -1,0 +1,282 @@
+//! Linters and formatters from analysis-tools-dev/static-analysis.
+//!
+//! Ported from `tools/sync-static-analysis.py`. 755 tools curated per language,
+//! largely disjoint from mason — 666 of them are tools langbank does not
+//! otherwise know — because mason indexes what an editor can install and this
+//! indexes what an analyser community has written.
+//!
+//! Same split as the other sources: a tool whose program langbank already knows
+//! gains its categories, appended, with nothing rewritten; a tool it does not
+//! know becomes a new entry. Tools categorised only as `meta` or `performance`
+//! are skipped, being collections and benchmarks rather than something a
+//! language can be asked through.
+
+use crate::report::{Outcome, Result};
+use crate::{fetch, local};
+use std::collections::{BTreeMap, BTreeSet};
+
+const UPSTREAM: &str = "analysis-tools-dev/static-analysis";
+
+fn tarball() -> String {
+    format!("https://codeload.github.com/{UPSTREAM}/tar.gz/refs/heads/master")
+}
+
+const CATEGORY: &[(&str, &str)] = &[("linter", "linter"), ("formatter", "formatter")];
+
+/// The upstream tags are already close to langbank ids; these are the strays.
+/// A `None` is a tag that names no language at all — `security`, `ci`, `all` —
+/// and mapping it to something would invent a fact.
+const ALIAS: &[(&str, Option<&str>)] = &[
+    ("c++", Some("cpp")),
+    ("c#", Some("c-sharp")),
+    ("objective-c", Some("objective-c")),
+    ("bash", Some("shell")),
+    ("shell", Some("shell")),
+    ("docker", Some("dockerfile")),
+    ("terraform", Some("hcl")),
+    ("latex", Some("tex")),
+    ("golang", Some("go")),
+    ("node", Some("javascript")),
+    ("vue", Some("vue")),
+    ("dotnet", Some("c-sharp")),
+    ("protobuf", Some("protocol-buffer")),
+    ("config", None),
+    ("ci", None),
+    ("security", None),
+    ("all", None),
+    ("multi", None),
+];
+
+fn slug(name: &str) -> String {
+    let mut out = String::with_capacity(name.len());
+    for c in name.to_lowercase().chars() {
+        out.push(if c.is_alphanumeric() { c } else { '-' });
+    }
+    while out.contains("--") {
+        out = out.replace("--", "-");
+    }
+    out.trim_matches('-').to_string()
+}
+
+/// A `key:` followed by an indented `- ` list, with quotes stripped.
+///
+/// This handles CRLF, and the script it replaces did not. Two of the 755
+/// upstream files use CRLF line endings, and the script matched
+/// `^categories:\n`, which cannot match `categories:\r\n` — so both parsed as
+/// having no categories and no tags and were counted under "skipped (no
+/// analysable category or language)". A parse failure had been sitting in the
+/// bucket that means "deliberately excluded", which is why the two counts do
+/// not agree with the script's: `fta` is a real linter for TypeScript and is
+/// now carried. `delphilint` stays skipped, correctly — langbank has no Delphi.
+fn block(text: &str, key: &str) -> Vec<String> {
+    let mut out = Vec::new();
+    let mut inside = false;
+    for line in text.lines() {
+        if line == format!("{key}:") {
+            inside = true;
+            continue;
+        }
+        if inside {
+            match line.strip_prefix("  - ") {
+                Some(value) => out.push(value.trim().trim_matches(['\'', '"']).to_string()),
+                None => break,
+            }
+        }
+    }
+    out
+}
+
+struct Tool {
+    name: String,
+    categories: Vec<String>,
+    tags: Vec<String>,
+}
+
+fn upstream_tools() -> Result<Vec<Tool>> {
+    let wanted = regex::Regex::new(r"/data/tools/[^/]+\.yml$")?;
+    let files = fetch::tarball(&tarball(), |name| wanted.is_match(name))?;
+    let mut out = Vec::new();
+    for (_, text) in files {
+        let Some(name) = text.lines().find_map(|line| {
+            line.strip_prefix("name:")
+                .map(|v| v.trim().trim_matches(['\'', '"']).to_string())
+        }) else {
+            continue;
+        };
+        if name.is_empty() {
+            continue;
+        }
+        out.push(Tool {
+            name,
+            categories: block(&text, "categories"),
+            tags: block(&text, "tags"),
+        });
+    }
+    out.sort_by_key(|tool| tool.name.to_lowercase());
+    Ok(out)
+}
+
+struct Local {
+    by_display: BTreeMap<String, String>,
+    toolchains: BTreeMap<String, (std::path::PathBuf, String)>,
+    programs: BTreeMap<String, String>,
+}
+
+fn langbank() -> Result<Local> {
+    let mut by_display = BTreeMap::new();
+    for path in local::files("data/languages")? {
+        let text =
+            std::fs::read_to_string(&path).map_err(|e| format!("{}: {e}", path.display()))?;
+        let Some(id) = local::scalar(&text, "id") else {
+            continue;
+        };
+        by_display.insert(id.clone(), id.clone());
+        if let Some(display) = local::scalar(&text, "display-name") {
+            by_display.entry(display.to_lowercase()).or_insert(id);
+        }
+    }
+
+    let (mut toolchains, mut programs) = (BTreeMap::new(), BTreeMap::new());
+    for path in local::files("data/toolchains")? {
+        let text =
+            std::fs::read_to_string(&path).map_err(|e| format!("{}: {e}", path.display()))?;
+        let Some(id) = local::scalar(&text, "id") else {
+            continue;
+        };
+        for program in local::array(&text, "programs") {
+            programs
+                .entry(program.to_lowercase())
+                .or_insert_with(|| id.clone());
+        }
+        if let Some(display) = local::scalar(&text, "display-name") {
+            programs
+                .entry(display.to_lowercase())
+                .or_insert_with(|| id.clone());
+        }
+        toolchains.insert(id, (path, text));
+    }
+    Ok(Local {
+        by_display,
+        toolchains,
+        programs,
+    })
+}
+
+struct Entry {
+    id: String,
+    name: String,
+    kinds: Vec<String>,
+    languages: Vec<String>,
+}
+
+fn plan(tools: &[Tool], carried: &Local) -> (Vec<(String, Entry)>, Vec<Entry>, usize) {
+    let category: BTreeMap<&str, &str> = CATEGORY.iter().copied().collect();
+    let alias: BTreeMap<&str, Option<&str>> = ALIAS.iter().copied().collect();
+    let (mut merges, mut creates, mut skipped) = (Vec::new(), Vec::new(), 0usize);
+
+    for tool in tools {
+        let kinds: Vec<String> = tool
+            .categories
+            .iter()
+            .filter_map(|c| category.get(c.as_str()).map(|k| k.to_string()))
+            .collect();
+        if kinds.is_empty() {
+            skipped += 1;
+            continue;
+        }
+        let languages: BTreeSet<String> = tool
+            .tags
+            .iter()
+            .filter_map(|tag| {
+                let key = tag.to_lowercase();
+                let mapped = match alias.get(key.as_str()) {
+                    Some(None) => return None,
+                    Some(Some(mapped)) => (*mapped).to_string(),
+                    None => key,
+                };
+                carried.by_display.get(&mapped).cloned()
+            })
+            .collect();
+        if languages.is_empty() {
+            skipped += 1;
+            continue;
+        }
+        let entry = Entry {
+            id: format!("sa-{}", slug(&tool.name)),
+            name: tool.name.clone(),
+            kinds,
+            languages: languages.into_iter().collect(),
+        };
+        match carried.programs.get(&tool.name.to_lowercase()) {
+            Some(existing) => {
+                let Some((_, text)) = carried.toolchains.get(existing) else {
+                    continue;
+                };
+                if !text.contains("categories") {
+                    merges.push((existing.clone(), entry));
+                }
+            }
+            None => {
+                if !carried.toolchains.contains_key(&entry.id) {
+                    creates.push(entry);
+                }
+            }
+        }
+    }
+    (merges, creates, skipped)
+}
+
+pub fn run(verb: &str) -> Result<Outcome> {
+    let tools = upstream_tools()?;
+    let carried = langbank()?;
+    let (merges, creates, skipped) = plan(&tools, &carried);
+
+    if verb == "check" {
+        println!(
+            "{} tools upstream; {} would gain categories, {} are new, {skipped} skipped \
+             (no analysable category or language)",
+            tools.len(),
+            merges.len(),
+            creates.len()
+        );
+        return Ok(Outcome::of(merges.len() + creates.len()));
+    }
+
+    for (id, entry) in &merges {
+        let Some((path, text)) = carried.toolchains.get(id) else {
+            continue;
+        };
+        if !text.contains("categories") {
+            let mut text =
+                std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
+            text.push_str(&format!(
+                "categories = {}\n",
+                local::toml_array(&entry.kinds)
+            ));
+            std::fs::write(path, text).map_err(|e| format!("{}: {e}", path.display()))?;
+        }
+    }
+
+    for entry in &creates {
+        let lines = [
+            format!("id = \"{}\"", entry.id),
+            format!("display-name = {}", local::toml_string(&entry.name)),
+            format!("kind = \"{}\"", entry.kinds[0]),
+            format!("languages = {}", local::toml_array(&entry.languages)),
+            format!(
+                "programs = {}",
+                local::toml_array(&[entry.name.to_lowercase()])
+            ),
+            format!("categories = {}", local::toml_array(&entry.kinds)),
+        ];
+        let path = format!("data/toolchains/{}.toml", entry.id);
+        std::fs::write(&path, lines.join("\n") + "\n").map_err(|e| format!("{path}: {e}"))?;
+    }
+
+    println!(
+        "gave categories to {} known tools, created {} new, {skipped} skipped",
+        merges.len(),
+        creates.len()
+    );
+    Ok(Outcome::Complete)
+}
