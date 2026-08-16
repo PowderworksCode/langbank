@@ -1,8 +1,36 @@
 //! The language index and one page per language.
 
 use crate::render::{code, codes, link, page, row};
-use langbank::LanguageProfile;
+use langbank::{Knowledge, LanguageProfile};
 use maud::{Markup, html};
+
+/// Eight cells, one per facet, filled where langbank carries it.
+///
+/// The index used to show a name and an extension, which told a reader nothing
+/// about whether the entry was worth opening. This is the difference between a
+/// language langbank has a paragraph about and one it has a filename for, and
+/// it is legible at a glance down a column.
+fn marks(knowledge: &Knowledge) -> Markup {
+    html! {
+        span.marks title=(summary(knowledge)) {
+            @for (facet, have) in knowledge.facets() {
+                @if have { i.on data-facet=(facet.name()) {} } @else { i {} }
+            }
+        }
+    }
+}
+
+fn summary(knowledge: &Knowledge) -> String {
+    let carried: Vec<&str> = knowledge
+        .facets()
+        .filter(|(_, have)| *have)
+        .map(|(facet, _)| facet.name())
+        .collect();
+    if carried.is_empty() {
+        return "nothing but a name".into();
+    }
+    format!("{} of 8: {}", carried.len(), carried.join(", "))
+}
 
 pub fn index() -> String {
     let mut all: Vec<&LanguageProfile> = langbank::language_profiles().to_vec();
@@ -11,13 +39,15 @@ pub fn index() -> String {
     let body = html! {
         h1 { (all.len()) " languages" }
         p.lede {
-            "Every language langbank carries, with the extension it claims first. A
-             language is here because a source named it, not because it seemed
-             important."
+            "A language is here because a source named it, not because it seemed
+             important. The cells are the eight things langbank can know about one —
+             hover for which."
         }
-        ul.grid {
+        ul.grid.marked {
             @for language in &all {
+                @let knowledge = Knowledge::of(language);
                 li {
+                    (marks(&knowledge))
                     (link(&format!("/languages/{}", language.id), language.display_name))
                     @if let Some(hint) = language.primary_extensions.first()
                         .or_else(|| language.extensions.first())
@@ -67,8 +97,16 @@ pub fn detail(id: &str) -> Option<String> {
         .collect();
     let gaps = langbank::gaps_for(language.id);
 
+    let knowledge = Knowledge::of(language);
     let body = html! {
         h1 { (language.display_name) }
+        ul.knows {
+            @for (facet, have) in knowledge.facets() {
+                li.have[have] {
+                    (facet.name()) " " span.dim { (facet.purpose()) }
+                }
+            }
+        }
         dl {
             (row("id", Some(code(language.id))))
             (row("role", Some(html! { (format!("{:?}", language.role).to_lowercase()) })))
