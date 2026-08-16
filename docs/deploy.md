@@ -21,7 +21,8 @@ stopped, so a preview costs nothing while nobody is reading it.
 
 ## One-time setup
 
-Neither workflow can do these; they need an account.
+Neither workflow can do these; they need an account. `docs/fly-setup.sh` runs
+the whole sequence; what follows is what each step is for.
 
 1. **A preview-scoped Fly token that can create apps.** Both workflows read
    `secrets.FLY_PREVIEW_TOKEN`. A deploy token scoped to a single app will
