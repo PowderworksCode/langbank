@@ -40,6 +40,18 @@ jobs:
           [ "$missing" = 0 ] && echo "every tools/ script a workflow calls is present"
           exit "$missing"
 
+      # The taste rules cargo does not have: emoji and colour literals in
+      # source, files past a line budget, code past a nesting budget, stray
+      # TODOs. Pinned rather than floating, because the action installs
+      # `latest` by default and a withdrawn rule turns a checked-in config
+      # into a hard error — which is how this step first went red.
+      #
+      # Which findings are excused, and why, is in straitjacket.toml.
+      - name: Straitjacket
+        uses: PowderworksCode/straitjacket@v0.1.1
+        with:
+          version: v0.1.1
+
       # langbank is the leaf: a consumer takes it without taking a network
       # stack, a regex engine or an archive reader. The sync tools fetch over
       # HTTP and the site runs axum — that is what the other workspace members

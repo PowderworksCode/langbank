@@ -1,0 +1,77 @@
+# Deploy main to https://langbank.dev
+#
+# No test gate here on purpose — the Docker build compiles the workspace, so a
+# main that does not build cannot deploy, and ci.yml already gates the PR.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Two merges in quick succession would otherwise race to release different
+# images. Newer wins; the older is cancelled before it deploys.
+concurrency:
+  group: deploy-langbank
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+
+      # First deploy on a fresh org has no app yet. Creating it here keeps the
+      # workflow self-contained rather than requiring a manual `fly launch`.
+      - name: Ensure the app exists
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_PREVIEW_TOKEN }}
+        run: |
+          if flyctl status --app langbank >/dev/null 2>&1; then
+            echo "app exists"
+          else
+            # `orgs list --json` has been both an array and a name->slug map
+            # across flyctl versions; accept either rather than pinning one.
+            ORG="${{ vars.FLY_ORG }}"
+            if [ -z "$ORG" ]; then
+              ORG=$(flyctl orgs list --json |
+                jq -r 'if type=="array" then .[0].Slug else to_entries[0].value end')
+            fi
+            echo "creating langbank in org $ORG"
+            flyctl apps create langbank --org "$ORG"
+          fi
+
+      # The remote builder is fast (it keeps the cargo-chef layers warm) but
+      # intermittently cannot reach Fly's own registry while pushing layers.
+      # The fallback deliberately takes a different path — building on the
+      # runner — so it is a fallback rather than the same roll of the dice.
+      - name: Deploy
+        id: deploy
+        continue-on-error: true
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_PREVIEW_TOKEN }}
+        run: flyctl deploy --config fly.toml --dockerfile Dockerfile --remote-only
+
+      - name: Deploy (local build fallback)
+        if: steps.deploy.outcome == 'failure'
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_PREVIEW_TOKEN }}
+        run: flyctl deploy --config fly.toml --dockerfile Dockerfile --local-only
+
+      # A 200 is not enough: a binary serving an empty registry would return one.
+      # The health endpoint reports the counts, so assert they are non-zero.
+      - name: Smoke test
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS https://langbank.dev/health -o /tmp/health; then
+              cat /tmp/health; echo
+              if jq -e '.ok == true and .languages > 0 and .toolchains > 0' /tmp/health >/dev/null; then
+                echo "langbank.dev is up with a populated registry"; exit 0
+              fi
+              echo "  up, but the registry looks empty"
+            fi
+            sleep 5
+          done
+          echo "::error::langbank.dev did not come up healthy"; exit 1
