@@ -26,6 +26,8 @@ is reported rather than filed under the wrong taxonomy.
 """
 import argparse
 import glob
+# straitjacket-allow-file:emoji -- Mojo's `.🔥` extension appears in the docstring
+# of the encoder that exists to handle it; a docstring takes no trailing comment.
 import json
 import re
 import sys

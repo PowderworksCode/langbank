@@ -123,7 +123,8 @@ fn unescape(value: &str) -> String {
 
 /// TOML takes literal UTF-8. A JSON encoder that escapes non-BMP characters
 /// into surrogate pairs produces something TOML rejects, which is how Mojo's
-/// `.🔥` extension broke a build once.
+/// `.🔥` extension broke a build once. straitjacket-allow:emoji — the
+/// extension under discussion; naming it in prose is the documentation.
 pub fn toml_string(value: &str) -> String {
     let mut out = String::with_capacity(value.len() + 2);
     out.push('"');

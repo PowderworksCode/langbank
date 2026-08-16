@@ -13,20 +13,34 @@ use regex::Regex;
 
 use crate::report::{Outcome, Result};
 
-fn installed(program: &str) -> bool {
-    let Ok(path) = std::env::var("PATH") else {
-        return false;
-    };
-    std::env::split_paths(&path).any(|directory| directory.join(program).is_file())
+/// No `PATH` is reported once, not folded into "not installed" for every
+/// program in turn: the two look identical in the output and mean entirely
+/// different things — one is a machine without rustc, the other is a broken
+/// environment where nothing could be found however much was installed.
+fn path_entries() -> Result<Vec<std::path::PathBuf>> {
+    let path = std::env::var("PATH")
+        .map_err(|error| format!("PATH is unreadable, so nothing can be found: {error}"))?;
+    Ok(std::env::split_paths(&path).collect())
+}
+
+fn installed(directories: &[std::path::PathBuf], program: &str) -> bool {
+    directories
+        .iter()
+        .any(|directory| directory.join(program).is_file())
 }
 
 pub fn run(arguments: &[String]) -> Result<Outcome> {
     let strict = arguments.iter().any(|argument| argument == "--strict");
+    let directories = path_entries()?;
     let (mut verified, mut skipped, mut failed) = (0usize, 0usize, 0usize);
 
     for entry in toolchains() {
         let Some(probe) = entry.version else { continue };
-        let Some(program) = entry.programs.iter().find(|program| installed(program)) else {
+        let Some(program) = entry
+            .programs
+            .iter()
+            .find(|program| installed(&directories, program))
+        else {
             println!(
                 "  {:<10} skipped   (none of {} installed)",
                 entry.id,
