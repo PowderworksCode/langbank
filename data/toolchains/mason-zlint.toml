@@ -1,0 +1,10 @@
+id = "mason-zlint"
+display-name = "zlint"
+kind = "linter"
+languages = ["zig"]
+programs = ["zlint"]
+categories = ["linter"]
+
+[distribution]
+registry = "github"
+package = "DonIsaac/zlint"
