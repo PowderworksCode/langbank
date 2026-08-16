@@ -58,6 +58,18 @@ pub fn codes<S: AsRef<str>>(values: &[S]) -> Markup {
     }
 }
 
+/// A proportional bar, as a share of `largest` rather than of a total.
+///
+/// Against the total, every row but the biggest is a sliver and the shape is
+/// invisible — which defeats the point of drawing it.
+pub fn bar(part: usize, largest: usize) -> Markup {
+    let percent = part
+        .checked_mul(100)
+        .and_then(|n| n.checked_div(largest))
+        .unwrap_or(0);
+    html! { span.bartrack { span.bar style=(format!("width:{percent}%")) {} } }
+}
+
 pub fn link(href: &str, text: &str) -> Markup {
     html! { a href=(href) { (text) } }
 }
@@ -91,6 +103,7 @@ pub fn page(title: &str, breadcrumb: &[(&str, &str)], body: Markup) -> String {
                 a href="/ecosystems" { "ecosystems" }
                 a href="/toolchains" { "toolchains" }
                 a href="/registries" { "registries" }
+                a href="/coverage" { "coverage" }
                 a href="/identify" { "identify" }
                 a.out href="https://github.com/PowderworksCode/langbank" { "source" }
             }

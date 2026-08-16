@@ -153,3 +153,53 @@ fn the_stylesheet_url_changes_when_the_stylesheet_does() {
     assert_eq!(swapped.len(), pages::CSS.len());
     assert_ne!(hash(&swapped), path, "an edit did not change the URL");
 }
+
+#[test]
+fn the_front_page_leads_with_what_is_known_rather_than_with_prose() {
+    let html = pages::home();
+    // Every facet, and its purpose, on the front page — the thing a reader
+    // wants first is what is actually in here.
+    for facet in langbank::Facet::ALL {
+        assert!(html.contains(facet.name()), "home omits {}", facet.name());
+        assert!(
+            html.contains(facet.purpose()),
+            "home omits why {} matters",
+            facet.name()
+        );
+    }
+    // And the shape of it: most languages know exactly one thing.
+    let one = langbank::distribution()[1];
+    assert!(
+        html.contains(&one.to_string()),
+        "home omits the 1-of-8 count"
+    );
+}
+
+#[test]
+fn the_index_shows_how_much_is_known_about_each_language() {
+    let html = pages::languages();
+    // Eight cells per language, filled ones marked.
+    assert!(html.contains("class=\"marks\""), "no per-language marks");
+    assert!(html.contains("<i class=\"on\""), "no filled marks");
+    // A well-covered language and a bare one both appear, with their counts in
+    // the title text — which is what makes the column worth scanning.
+    assert!(
+        html.contains("nothing but a name"),
+        "no bare language is labelled"
+    );
+}
+
+#[test]
+fn coverage_agrees_with_what_the_tool_reports() {
+    // The site and `langbank-sync coverage` read the same function, so this is
+    // really a check that the page renders the figures it was given rather than
+    // recomputing them differently.
+    let html = pages::coverage();
+    for (facet, have) in langbank::Facet::ALL.into_iter().zip(langbank::coverage()) {
+        assert!(
+            html.contains(&format!("<td class=\"num\">{have}</td>")),
+            "coverage page omits {} = {have}",
+            facet.name()
+        );
+    }
+}

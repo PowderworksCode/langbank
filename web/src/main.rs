@@ -65,6 +65,7 @@ async fn main() {
     let app = Router::new()
         .route("/", get(|| async { Html(site::home()) }))
         .route("/languages", get(|| async { Html(site::languages()) }))
+        .route("/coverage", get(|| async { Html(site::coverage()) }))
         .route("/languages/{id}", get(language))
         .route("/ecosystems", get(|| async { Html(site::ecosystems()) }))
         .route("/toolchains", get(|| async { Html(site::toolchains()) }))

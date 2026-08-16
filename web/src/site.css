@@ -96,7 +96,28 @@ button:hover { opacity: .9 }
 .tag { display: inline-block; font-size: .74rem; font-family: var(--mono);
        border: 1px solid var(--line); border-radius: 3px; padding: .05em .4em;
        color: var(--dim); margin-right: .3rem }
-.bar { display: inline-block; height: .55rem; background: var(--accent);
-       border-radius: 2px; vertical-align: middle; min-width: 1px }
-.bartrack { display: inline-block; width: 7rem; background: var(--line);
-            border-radius: 2px; margin-right: .5rem }
+.bartrack { display: block; width: 100%; min-width: 4rem; height: .5rem;
+            background: var(--line); border-radius: 2px }
+.bar { display: block; height: 100%; background: var(--accent);
+       border-radius: 2px; min-width: 2px }
+
+/* The eight facets as cells, filled where langbank carries one. Small enough to
+   sit inline beside a name and still be countable at a glance. */
+.marks { display: inline-flex; gap: 1px; margin-right: .45rem; vertical-align: baseline }
+.marks i { width: 4px; height: .72rem; border-radius: 1px; background: var(--line) }
+.marks i.on { background: var(--accent) }
+
+/* The same eight, spelled out, at the top of a language page. */
+.knows { list-style: none; padding: 0; margin: .6rem 0 1.4rem;
+         display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+         gap: .2rem .9rem; font-size: .85rem }
+.knows li { color: var(--dim); padding-left: 1.1rem; position: relative }
+.knows li::before { content: "·"; position: absolute; left: .25rem; opacity: .5 }
+.knows li.have { color: var(--fg) }
+.knows li.have::before { content: "●"; color: var(--accent); opacity: 1; font-size: .7em; top: .1em }
+
+.facets td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap }
+.facets th.num { text-align: right }
+.facets td.wide { width: 40%; min-width: 5rem }
+.facets td.dim, .dim { color: var(--dim) }
+.grid.marked li { display: flex; align-items: baseline; gap: 0 }

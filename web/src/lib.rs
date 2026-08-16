@@ -15,6 +15,10 @@ pub fn home() -> String {
     pages::home::render()
 }
 
+pub fn coverage() -> String {
+    pages::coverage::render()
+}
+
 pub fn languages() -> String {
     pages::languages::index()
 }
