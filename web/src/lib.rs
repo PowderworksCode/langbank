@@ -9,6 +9,7 @@ mod pages;
 pub mod render;
 
 pub use pages::identify::Query;
+pub use render::{CSS, stylesheet_path};
 
 pub fn home() -> String {
     pages::home::render()

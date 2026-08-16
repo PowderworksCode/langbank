@@ -106,3 +106,50 @@ fn a_paste_larger_than_the_limit_is_truncated_rather_than_refused() {
         "the page did not finish rendering"
     );
 }
+
+#[test]
+fn every_page_links_the_stylesheet_rather_than_carrying_a_copy() {
+    // 5 KB of CSS inlined into an 11 KB language page made nearly half of every
+    // page a copy of the previous one, on a site meant to be clicked through.
+    let path = pages::stylesheet_path();
+    for (name, html) in [
+        ("home", pages::home()),
+        ("languages", pages::languages()),
+        ("gaps", pages::gaps()),
+        ("identify", pages::identify("src/main.rs", "")),
+    ] {
+        assert!(html.contains(path), "{name} does not link {path}");
+        assert!(!html.contains("<style"), "{name} still carries inline CSS");
+    }
+}
+
+#[test]
+fn the_stylesheet_url_changes_when_the_stylesheet_does() {
+    // The URL is promised `immutable` for a year, which is only safe because a
+    // changed file means a changed name. This checks the hash is of the
+    // content and not of, say, the length.
+    let path = pages::stylesheet_path();
+    assert!(
+        path.starts_with("/site.") && path.ends_with(".css"),
+        "{path}"
+    );
+
+    let hash = |css: &str| {
+        let mut h: u64 = 0xcbf2_9ce4_8422_2325;
+        for byte in css.as_bytes() {
+            h ^= u64::from(*byte);
+            h = h.wrapping_mul(0x100_0000_01b3);
+        }
+        format!("/site.{h:016x}.css")
+    };
+    assert_eq!(
+        hash(pages::CSS),
+        path,
+        "the served hash is not of the served bytes"
+    );
+
+    // Same length, different contents.
+    let swapped = pages::CSS.replacen("--bg", "--gb", 1);
+    assert_eq!(swapped.len(), pages::CSS.len());
+    assert_ne!(hash(&swapped), path, "an edit did not change the URL");
+}

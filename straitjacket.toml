@@ -6,6 +6,12 @@
 # generated table of 317 regexes is long because upstream publishes 317 rules.
 # Everything else stays on.
 
+# `web/src/site.css` is where the palette is declared — every colour literal on
+# the site is in its `:root` block and everything else references a token. That
+# is the file the rule exists to protect, not one it should flag, so it is named
+# here and stays checked everywhere else.
+theme-files = ["web/src/site.css"]
+
 # `data/heuristics.toml` is generated from linguist by `langbank-sync` and is as
 # long as linguist's ruleset is. Splitting it would mean either splitting the
 # generator's output along a boundary linguist does not have, or hand-editing a

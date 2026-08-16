@@ -34,6 +34,19 @@ async fn identify_posted(Form(query): Form<site::Query>) -> Html<String> {
     Html(site::identify_query(&query))
 }
 
+/// The stylesheet, at a URL that carries a hash of its contents — so it is
+/// promised as immutable and a visitor clicking through languages fetches it
+/// once rather than on every page.
+async fn stylesheet() -> impl IntoResponse {
+    (
+        [
+            (header::CONTENT_TYPE, "text/css; charset=utf-8"),
+            (header::CACHE_CONTROL, "public, max-age=31536000, immutable"),
+        ],
+        site::CSS,
+    )
+}
+
 /// Fly's health check. Reports the registry sizes rather than a bare `ok`,
 /// because a binary that started with an empty registry would otherwise pass.
 async fn health() -> impl IntoResponse {
@@ -58,6 +71,7 @@ async fn main() {
         .route("/registries", get(|| async { Html(site::registries()) }))
         .route("/tools", get(|| async { Html(site::tools()) }))
         .route("/gaps", get(|| async { Html(site::gaps()) }))
+        .route(site::stylesheet_path(), get(stylesheet))
         .route("/identify", get(identify).post(identify_posted))
         .route("/health", get(health))
         .fallback(|| async { (StatusCode::NOT_FOUND, Html(site::not_found("that page"))) });
