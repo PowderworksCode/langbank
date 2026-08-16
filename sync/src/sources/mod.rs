@@ -1,3 +1,4 @@
+pub mod corpora;
 pub mod coverage;
 pub mod heuristics;
 pub mod linguist;

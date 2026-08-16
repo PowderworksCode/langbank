@@ -24,11 +24,11 @@ jobs:
           python-version: "3.12"
       - run: pip install pyyaml
       - name: linguist coverage
-        run: tools/sync-linguist.py check
+        run: cargo run -q -p langbank-sync -- linguist check
       - name: purl coverage
         run: cargo run -q -p langbank-sync -- purl check
       - name: tokei and scc coverage
-        run: tools/sync-corpora.py check
+        run: cargo run -q -p langbank-sync -- corpora check
       - name: nvim-lspconfig coverage
         run: tools/sync-lspconfig.py check
       - name: mason-registry coverage
