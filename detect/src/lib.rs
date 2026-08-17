@@ -10,6 +10,7 @@
 //! nothing for the machinery that reads one.
 
 pub mod project;
+pub mod walk;
 
 use std::sync::OnceLock;
 
