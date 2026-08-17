@@ -3,5 +3,4 @@ display-name = "Specificity Graph"
 kind = "linter"
 languages = ["css"]
 programs = ["specificity graph"]
-categories = ["linter"]
 repository = "https://github.com/pocketjoso/specificity-graph"

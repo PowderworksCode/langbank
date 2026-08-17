@@ -3,5 +3,4 @@ display-name = "MetricFu"
 kind = "linter"
 languages = ["ruby"]
 programs = ["metricfu"]
-categories = ["linter"]
 repository = "https://github.com/metricfu/metric_fu"

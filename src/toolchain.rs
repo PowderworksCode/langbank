@@ -101,6 +101,16 @@ pub struct Toolchain {
     /// frequently several things at once — ruff is a linter, a formatter and a
     /// language server — and collapsing that to one loses the question a
     /// consumer is usually asking.
+    /// What it does *besides* its `kind`.
+    ///
+    /// gcc's kind is `Compiler` and its category is `Linter`, because it is a
+    /// compiler that also analyses. pyright is a `LanguageServer` that also
+    /// lints. This list does not repeat the kind: 906 entries used to carry
+    /// `categories = [kind]`, which `is` already answered from `kind` alone and
+    /// which said nothing a reader could act on.
+    ///
+    /// Ask `is` rather than reading this — it is the union that matters, and
+    /// which half a role came from is an accident of who published it.
     pub categories: &'static [ToolchainKind],
     pub distribution: Option<Distribution>,
     /// Files this program looks for to decide where a project begins.
@@ -117,8 +127,20 @@ pub struct Toolchain {
 
 impl Toolchain {
     /// Whether the program fills this role, primary or otherwise.
+    /// Whether this toolchain does `kind` at all, as its primary role or as
+    /// one of its others.
     pub fn is(&self, kind: ToolchainKind) -> bool {
         self.kind == kind || self.categories.contains(&kind)
+    }
+
+    /// Every role, primary first, without repeats. What to show a reader.
+    pub fn roles(&self) -> impl Iterator<Item = ToolchainKind> + '_ {
+        std::iter::once(self.kind).chain(
+            self.categories
+                .iter()
+                .copied()
+                .filter(move |kind| *kind != self.kind),
+        )
     }
 
     pub fn handles(&self, language: &LanguageProfile) -> bool {
@@ -161,4 +183,45 @@ pub fn toolchains_for(language: &LanguageProfile) -> Vec<&'static Toolchain> {
         .copied()
         .filter(|toolchain| toolchain.handles(language))
         .collect()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn categories_never_repeat_the_kind() {
+        // 906 entries used to carry `categories = [kind]`, which `is` already
+        // answered from `kind` alone. Worse, the merge guard in the sync tools
+        // is "does this file mention categories" — so a redundant list blocked
+        // a later source from adding a role the tool genuinely has. sqlfluff
+        // was a linter *and* a formatter upstream and langbank only knew the
+        // first, because `categories = ["linter"]` was already in the file.
+        let offenders: Vec<&str> = crate::toolchains()
+            .iter()
+            .filter(|entry| entry.categories.contains(&entry.kind))
+            .map(|entry| entry.id)
+            .collect();
+        assert!(offenders.is_empty(), "{offenders:?}");
+    }
+
+    #[test]
+    fn roles_lead_with_the_kind_and_do_not_repeat() {
+        for entry in crate::toolchains() {
+            let roles: Vec<ToolchainKind> = entry.roles().collect();
+            assert_eq!(roles.first(), Some(&entry.kind), "{}", entry.id);
+            let mut seen = roles.clone();
+            seen.sort_by_key(|role| format!("{role:?}"));
+            seen.dedup();
+            assert_eq!(seen.len(), roles.len(), "{} repeats a role", entry.id);
+            // Every role reported is one `is` agrees with, and vice versa.
+            for role in &roles {
+                assert!(
+                    entry.is(*role),
+                    "{} reports {role:?} but is() denies it",
+                    entry.id
+                );
+            }
+        }
+    }
 }

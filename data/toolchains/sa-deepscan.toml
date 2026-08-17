@@ -3,5 +3,4 @@ display-name = "DeepScan"
 kind = "linter"
 languages = ["javascript"]
 programs = ["deepscan"]
-categories = ["linter"]
 homepage = "https://deepscan.io"

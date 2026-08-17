@@ -3,7 +3,6 @@ display-name = "rufo"
 kind = "formatter"
 languages = ["ruby"]
 programs = ["rufo"]
-categories = ["formatter"]
 repository = "https://github.com/ruby-formatter/rufo"
 homepage = "https://github.com/ruby-formatter/rufo"
 

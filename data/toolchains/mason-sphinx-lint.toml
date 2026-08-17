@@ -3,7 +3,6 @@ display-name = "sphinx-lint"
 kind = "linter"
 languages = ["python", "restructuredtext"]
 programs = ["sphinx-lint"]
-categories = ["linter"]
 homepage = "https://github.com/sphinx-contrib/sphinx-lint"
 
 [distribution]

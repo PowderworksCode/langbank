@@ -3,7 +3,6 @@ display-name = "cpptools"
 kind = "debugger"
 languages = ["c", "cpp", "rust"]
 programs = ["cpptools"]
-categories = ["debugger"]
 repository = "https://github.com/microsoft/vscode-cpptools"
 
 [distribution]

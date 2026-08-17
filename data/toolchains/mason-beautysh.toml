@@ -3,7 +3,6 @@ display-name = "beautysh"
 kind = "formatter"
 languages = ["shell"]
 programs = ["beautysh"]
-categories = ["formatter"]
 homepage = "https://github.com/lovesegfault/beautysh"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "pymobiledevice3"
 kind = "runtime"
 languages = ["python"]
 programs = ["pymobiledevice3"]
-categories = ["runtime"]
 homepage = "https://github.com/doronz88/pymobiledevice3"
 
 [distribution]

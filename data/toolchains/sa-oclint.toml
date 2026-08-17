@@ -3,6 +3,5 @@ display-name = "oclint"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["oclint"]
-categories = ["linter"]
 homepage = "http://oclint.org"
 repository = "https://github.com/oclint/oclint"

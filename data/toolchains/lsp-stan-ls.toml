@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["stan"]
 programs = ["stan-language-server"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/tomatitito/stan-language-server"
 
 [distribution]

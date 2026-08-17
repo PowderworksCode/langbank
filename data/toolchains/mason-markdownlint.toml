@@ -3,7 +3,7 @@ display-name = "markdownlint"
 kind = "linter"
 languages = ["markdown"]
 programs = ["markdownlint"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 repository = "https://github.com/DavidAnson/markdownlint"
 homepage = "https://github.com/igorshubovych/markdownlint-cli"
 

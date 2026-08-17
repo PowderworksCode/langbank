@@ -3,7 +3,6 @@ display-name = "debugpy"
 kind = "debugger"
 languages = ["python"]
 programs = ["debugpy"]
-categories = ["debugger"]
 homepage = "https://github.com/microsoft/debugpy"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "Pysa"
 kind = "linter"
 languages = ["python"]
 programs = ["pysa"]
-categories = ["linter"]
 homepage = "https://pyre-check.org/docs/pysa-basics.html"
 repository = "https://github.com/facebook/pyre-check"

@@ -3,6 +3,5 @@ display-name = "Spoon"
 kind = "formatter"
 languages = ["java"]
 programs = ["spoon"]
-categories = ["formatter"]
 homepage = "https://spoon.gforge.inria.fr"
 repository = "https://github.com/INRIA/spoon"

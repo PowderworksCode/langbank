@@ -3,7 +3,6 @@ display-name = "local-lua-debugger-vscode"
 kind = "debugger"
 languages = ["lua"]
 programs = ["local-lua-debugger-vscode"]
-categories = ["debugger"]
 homepage = "https://github.com/tomblind/local-lua-debugger-vscode"
 
 [distribution]

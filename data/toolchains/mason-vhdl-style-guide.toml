@@ -3,7 +3,6 @@ display-name = "vhdl-style-guide"
 kind = "formatter"
 languages = ["vhdl"]
 programs = ["vhdl-style-guide"]
-categories = ["formatter"]
 homepage = "https://github.com/jeremiah-c-leary/vhdl-style-guide"
 
 [distribution]

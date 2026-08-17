@@ -3,5 +3,4 @@ display-name = "Hopper"
 kind = "linter"
 languages = ["groovy", "java", "kotlin", "scala"]
 programs = ["hopper"]
-categories = ["linter"]
 repository = "https://github.com/cuplv/hopper"

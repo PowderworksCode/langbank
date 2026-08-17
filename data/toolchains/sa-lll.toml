@@ -3,5 +3,4 @@ display-name = "lll"
 kind = "linter"
 languages = ["go"]
 programs = ["lll"]
-categories = ["linter"]
 repository = "https://github.com/walle/lll"

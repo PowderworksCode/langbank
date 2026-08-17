@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["php"]
 programs = ["phpactor"]
 root-markers = [".git", "composer.json", ".phpactor.json", ".phpactor.yml"]
-categories = ["language-server"]
 homepage = "https://phpactor.readthedocs.io/en/master/"
 repository = "https://github.com/phpactor/phpactor"
 

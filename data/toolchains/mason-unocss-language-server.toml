@@ -3,7 +3,6 @@ display-name = "unocss-language-server"
 kind = "language-server"
 languages = ["css"]
 programs = ["unocss-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/xna00/unocss-language-server"
 
 [distribution]

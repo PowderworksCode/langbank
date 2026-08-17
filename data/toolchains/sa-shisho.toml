@@ -3,5 +3,4 @@ display-name = "shisho"
 kind = "linter"
 languages = ["go", "hcl"]
 programs = ["shisho"]
-categories = ["linter"]
 repository = "https://github.com/flatt-security/shisho"

@@ -3,5 +3,4 @@ display-name = "i-Code CNES for Shell"
 kind = "linter"
 languages = ["shell"]
 programs = ["i-code cnes for shell"]
-categories = ["linter"]
 repository = "https://github.com/lequal/i-CodeCNES"

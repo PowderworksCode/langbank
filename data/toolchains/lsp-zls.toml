@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["zig"]
 programs = ["zls"]
 root-markers = ["zls.json", "build.zig", ".git"]
-categories = ["language-server"]
 repository = "https://github.com/zigtools/zls"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "Polymer-analyzer"
 kind = "linter"
 languages = ["html", "javascript"]
 programs = ["polymer-analyzer"]
-categories = ["linter"]
 repository = "https://github.com/Polymer/tools/tree/master/packages/analyzer"

@@ -3,7 +3,6 @@ display-name = "curlylint"
 kind = "linter"
 languages = ["jinja", "liquid", "nunjucks", "twig"]
 programs = ["curlylint"]
-categories = ["linter"]
 homepage = "https://www.curlylint.org/"
 
 [distribution]

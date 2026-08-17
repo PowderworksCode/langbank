@@ -3,5 +3,4 @@ display-name = "cqmetrics"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cqmetrics"]
-categories = ["linter"]
 repository = "https://github.com/dspinellis/cqmetrics"

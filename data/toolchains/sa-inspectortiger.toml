@@ -3,5 +3,4 @@ display-name = "InspectorTiger"
 kind = "linter"
 languages = ["python"]
 programs = ["inspectortiger"]
-categories = ["linter"]
 repository = "https://github.com/thg-consulting/it"

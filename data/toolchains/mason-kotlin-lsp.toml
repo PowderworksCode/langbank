@@ -3,7 +3,6 @@ display-name = "kotlin-lsp"
 kind = "language-server"
 languages = ["kotlin"]
 programs = ["kotlin-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/Kotlin/kotlin-lsp"
 
 [distribution]

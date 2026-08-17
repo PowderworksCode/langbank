@@ -3,7 +3,6 @@ display-name = "purescript-tidy"
 kind = "formatter"
 languages = ["purescript"]
 programs = ["purescript-tidy"]
-categories = ["formatter"]
 homepage = "https://github.com/natefaubion/purescript-tidy"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "prettier"
 kind = "formatter"
 languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
 programs = ["prettier"]
-categories = ["formatter"]
 homepage = "https://prettier.io"
 repository = "https://github.com/prettier/prettier"
 

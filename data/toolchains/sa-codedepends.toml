@@ -3,5 +3,4 @@ display-name = "CodeDepends"
 kind = "linter"
 languages = ["r"]
 programs = ["codedepends"]
-categories = ["linter"]
 repository = "https://github.com/duncantl/CodeDepends"

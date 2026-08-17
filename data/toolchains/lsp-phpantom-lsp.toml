@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["php"]
 programs = ["phpantom_lsp"]
 root-markers = [".phpantom.toml", ".git", "composer.json"]
-categories = ["language-server"]
 repository = "https://github.com/PHPantom-dev/phpantom_lsp"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "rustfix"
 kind = "linter"
 languages = ["rust"]
 programs = ["rustfix"]
-categories = ["linter"]
 repository = "https://github.com/rust-lang/rustfix"

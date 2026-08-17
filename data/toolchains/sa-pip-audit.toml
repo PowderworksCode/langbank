@@ -3,5 +3,4 @@ display-name = "pip-audit"
 kind = "linter"
 languages = ["python"]
 programs = ["pip-audit"]
-categories = ["linter"]
 repository = "https://github.com/pypa/pip-audit"

@@ -1,0 +1,10 @@
+# Toolchain entries whose upstream matches are ambiguous by name. Absorbed
+# facts are not taken where two sources are plainly describing different
+# projects; the reason is written down rather than the merge being silently
+# undone by hand.
+facet = "toolchain-identity"
+
+[[gap]]
+subject = "lsp-solidity"
+reason = "sources-disagree"
+note = "mason's `solidity` package is the ethereum compiler; this entry is the qiuxiang/solidity-ls language server. They matched on the display name `solidity` alone, so mason's repository and its compiler role are not taken here."

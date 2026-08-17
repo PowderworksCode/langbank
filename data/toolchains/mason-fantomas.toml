@@ -3,7 +3,6 @@ display-name = "fantomas"
 kind = "formatter"
 languages = ["f-sharp"]
 programs = ["fantomas"]
-categories = ["formatter"]
 homepage = "https://fsprojects.github.io/fantomas"
 
 [distribution]

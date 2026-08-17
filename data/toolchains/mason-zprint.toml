@@ -3,7 +3,6 @@ display-name = "zprint"
 kind = "formatter"
 languages = ["clojure"]
 programs = ["zprint"]
-categories = ["formatter"]
 repository = "https://github.com/kkinnear/zprint"
 
 [distribution]

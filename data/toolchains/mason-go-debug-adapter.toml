@@ -3,7 +3,6 @@ display-name = "go-debug-adapter"
 kind = "debugger"
 languages = ["go"]
 programs = ["go-debug-adapter"]
-categories = ["debugger"]
 repository = "https://github.com/golang/vscode-go"
 
 [distribution]

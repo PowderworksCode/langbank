@@ -3,7 +3,6 @@ display-name = "zeek-language-server"
 kind = "language-server"
 languages = ["zeek"]
 programs = ["zeek-language-server"]
-categories = ["language-server"]
 repository = "https://github.com/bbannier/zeek-language-server"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "shfmt"
 kind = "formatter"
 languages = ["shell"]
 programs = ["shfmt"]
-categories = ["formatter"]
 repository = "https://github.com/mvdan/sh"
 
 [distribution]

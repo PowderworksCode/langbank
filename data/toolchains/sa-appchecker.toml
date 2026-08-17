@@ -3,5 +3,4 @@ display-name = "AppChecker"
 kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["appchecker"]
-categories = ["linter"]
 homepage = "https://npo-echelon.ru/en/solutions/appchecker.php"

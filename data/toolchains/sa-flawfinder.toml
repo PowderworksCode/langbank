@@ -3,6 +3,5 @@ display-name = "flawfinder"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["flawfinder"]
-categories = ["linter"]
 homepage = "http://dwheeler.com/flawfinder/"
 repository = "https://github.com/david-a-wheeler/flawfinder"

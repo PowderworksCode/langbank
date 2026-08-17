@@ -3,7 +3,6 @@ display-name = "ltex-ls"
 kind = "language-server"
 languages = ["markdown", "restructuredtext", "tex", "text"]
 programs = ["ltex-ls"]
-categories = ["language-server"]
 homepage = "https://valentjn.github.io/ltex/"
 repository = "https://github.com/valentjn/ltex-ls"
 

@@ -3,7 +3,6 @@ display-name = "tex-fmt"
 kind = "formatter"
 languages = ["tex"]
 programs = ["tex-fmt"]
-categories = ["formatter"]
 repository = "https://github.com/WGUNDERWOOD/tex-fmt"
 
 [distribution]

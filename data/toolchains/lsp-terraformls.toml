@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["hcl"]
 programs = ["terraform-ls"]
 root-markers = [".terraform", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/hashicorp/terraform-ls"
 
 [distribution]

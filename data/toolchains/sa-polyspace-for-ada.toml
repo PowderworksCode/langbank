@@ -3,5 +3,4 @@ display-name = "Polyspace for Ada"
 kind = "linter"
 languages = ["ada"]
 programs = ["polyspace for ada"]
-categories = ["linter"]
 homepage = "https://www.mathworks.com/products/polyspace-ada.html"

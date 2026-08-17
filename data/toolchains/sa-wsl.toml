@@ -3,5 +3,4 @@ display-name = "wsl"
 kind = "linter"
 languages = ["go"]
 programs = ["wsl"]
-categories = ["linter"]
 repository = "https://github.com/bombsimon/wsl"

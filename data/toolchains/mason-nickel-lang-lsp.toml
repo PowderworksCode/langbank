@@ -3,7 +3,6 @@ display-name = "nickel-lang-lsp"
 kind = "language-server"
 languages = ["nickel"]
 programs = ["nickel-lang-lsp"]
-categories = ["language-server"]
 homepage = "https://nickel-lang.org/"
 
 [distribution]

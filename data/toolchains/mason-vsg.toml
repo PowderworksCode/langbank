@@ -3,7 +3,7 @@ display-name = "vsg"
 kind = "formatter"
 languages = ["vhdl"]
 programs = ["vsg"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://pypi.org/project/vsg/"
 
 [distribution]

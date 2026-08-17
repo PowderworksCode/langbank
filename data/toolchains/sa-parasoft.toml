@@ -3,5 +3,4 @@ display-name = "parasoft"
 kind = "linter"
 languages = ["c", "cpp", "javascript"]
 programs = ["parasoft"]
-categories = ["linter"]
 homepage = "https://www.parasoft.com/"

@@ -3,5 +3,4 @@ display-name = "Frink"
 kind = "formatter"
 languages = ["tcl"]
 programs = ["frink"]
-categories = ["formatter"]
 repository = "http://catless.ncl.ac.uk/Programs/Frink"

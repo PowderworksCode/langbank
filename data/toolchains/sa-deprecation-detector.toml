@@ -3,5 +3,4 @@ display-name = "deprecation-detector"
 kind = "linter"
 languages = ["php"]
 programs = ["deprecation-detector"]
-categories = ["linter"]
 repository = "https://github.com/sensiolabs-de/deprecation-detector"

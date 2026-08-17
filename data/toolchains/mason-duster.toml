@@ -3,7 +3,7 @@ display-name = "duster"
 kind = "formatter"
 languages = ["blade", "php"]
 programs = ["duster"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://github.com/tighten/duster"
 
 [distribution]

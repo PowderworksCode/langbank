@@ -3,7 +3,6 @@ display-name = "circleci-yaml-language-server"
 kind = "language-server"
 languages = ["yaml"]
 programs = ["circleci-yaml-language-server"]
-categories = ["language-server"]
 repository = "https://github.com/CircleCI-Public/circleci-yaml-language-server"
 
 [distribution]

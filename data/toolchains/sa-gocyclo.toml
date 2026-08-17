@@ -3,5 +3,4 @@ display-name = "gocyclo"
 kind = "linter"
 languages = ["go"]
 programs = ["gocyclo"]
-categories = ["linter"]
 repository = "https://github.com/fzipp/gocyclo"

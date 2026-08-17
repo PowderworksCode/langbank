@@ -3,7 +3,7 @@ display-name = "brighterscript"
 kind = "compiler"
 languages = ["brighterscript"]
 programs = ["brighterscript"]
-categories = ["compiler", "language-server"]
+categories = ["language-server"]
 homepage = "https://github.com/RokuCommunity/brighterscript"
 
 [distribution]

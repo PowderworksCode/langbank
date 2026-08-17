@@ -3,6 +3,5 @@ display-name = "TypL"
 kind = "linter"
 languages = ["javascript"]
 programs = ["typl"]
-categories = ["linter"]
 homepage = "https://typl.dev"
 repository = "https://github.com/getify/TypL"

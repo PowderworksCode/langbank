@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["templ"]
 programs = ["templ"]
 root-markers = ["go.work", "go.mod", ".git"]
-categories = ["language-server"]
 homepage = "https://templ.guide"
 repository = "https://github.com/a-h/templ"
 

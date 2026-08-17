@@ -3,6 +3,5 @@ display-name = "lacheck"
 kind = "linter"
 languages = ["tex"]
 programs = ["lacheck"]
-categories = ["linter"]
 homepage = "https://www.ctan.org/pkg/lacheck"
 repository = "https://www.ctan.org/tex-archive/support/lacheck"

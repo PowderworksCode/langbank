@@ -3,5 +3,4 @@ display-name = "TSqlRules"
 kind = "linter"
 languages = ["sql"]
 programs = ["tsqlrules"]
-categories = ["linter"]
 repository = "https://github.com/ashleyglee/TSqlRules"

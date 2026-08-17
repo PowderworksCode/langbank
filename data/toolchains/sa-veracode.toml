@@ -3,5 +3,4 @@ display-name = "Veracode"
 kind = "linter"
 languages = ["c", "c-sharp", "cpp", "java", "javascript", "php", "swift"]
 programs = ["veracode"]
-categories = ["linter"]
 homepage = "https://www.veracode.com/security/static-code-analysis"

@@ -3,5 +3,4 @@ display-name = "cargo udeps"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo udeps"]
-categories = ["linter"]
 repository = "https://github.com/est31/cargo-udeps"

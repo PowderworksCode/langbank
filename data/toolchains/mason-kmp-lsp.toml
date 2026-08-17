@@ -3,7 +3,6 @@ display-name = "kmp-lsp"
 kind = "language-server"
 languages = ["java", "kotlin", "swift"]
 programs = ["kmp-lsp"]
-categories = ["language-server"]
 repository = "https://github.com/Hessesian/kmp-lsp"
 
 [distribution]

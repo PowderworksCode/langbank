@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["cue"]
 programs = ["cuelsp"]
 root-markers = ["cue.mod", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/dagger/cuelsp"
 
 [distribution]

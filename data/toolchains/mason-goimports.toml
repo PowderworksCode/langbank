@@ -3,9 +3,9 @@ display-name = "goimports"
 kind = "formatter"
 languages = ["go"]
 programs = ["goimports"]
-categories = ["formatter"]
 homepage = "https://pkg.go.dev/golang.org/x/tools/cmd/goimports"
 repository = "https://github.com/golang/tools/tree/master/cmd/goimports"
+categories = ["linter"]
 
 [distribution]
 registry = "golang"

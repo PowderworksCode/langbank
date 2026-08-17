@@ -3,5 +3,4 @@ display-name = "phpdoc-to-typehint"
 kind = "linter"
 languages = ["php"]
 programs = ["phpdoc-to-typehint"]
-categories = ["linter"]
 repository = "https://github.com/dunglas/phpdoc-to-typehint"

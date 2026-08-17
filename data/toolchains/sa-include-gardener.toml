@@ -3,5 +3,4 @@ display-name = "include-gardener"
 kind = "formatter"
 languages = ["c", "cpp", "python", "ruby"]
 programs = ["include-gardener"]
-categories = ["formatter"]
 repository = "https://github.com/feddischson/include_gardener"

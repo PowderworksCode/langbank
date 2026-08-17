@@ -3,6 +3,5 @@ display-name = "codechecker"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["codechecker"]
-categories = ["linter"]
 homepage = "https://codechecker.readthedocs.io/en/latest"
 repository = "https://github.com/Ericsson/codechecker"

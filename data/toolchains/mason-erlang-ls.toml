@@ -3,7 +3,6 @@ display-name = "erlang-ls"
 kind = "language-server"
 languages = ["erlang"]
 programs = ["erlang-ls"]
-categories = ["language-server"]
 homepage = "https://erlang-ls.github.io/"
 repository = "https://github.com/erlang-ls/erlang_ls"
 

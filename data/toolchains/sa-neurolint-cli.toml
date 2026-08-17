@@ -3,6 +3,5 @@ display-name = "Neurolint-CLI"
 kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["neurolint-cli"]
-categories = ["linter"]
 homepage = "https://neurolint.dev"
 repository = "https://github.com/Alcatecablee/Neurolint-CLI"

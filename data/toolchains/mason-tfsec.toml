@@ -3,7 +3,6 @@ display-name = "tfsec"
 kind = "linter"
 languages = ["hcl"]
 programs = ["tfsec"]
-categories = ["linter"]
 repository = "https://github.com/aquasecurity/tfsec"
 
 [distribution]

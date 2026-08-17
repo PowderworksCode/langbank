@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["deno"]
 root-markers = ["deno.lock", "deno.json", "deno.jsonc"]
-categories = ["language-server", "runtime", "linter"]
+categories = ["runtime", "linter"]
 homepage = "https://deno.land/"
 repository = "https://github.com/denoland/deno"
 

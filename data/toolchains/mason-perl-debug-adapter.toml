@@ -3,7 +3,6 @@ display-name = "perl-debug-adapter"
 kind = "debugger"
 languages = ["perl"]
 programs = ["perl-debug-adapter"]
-categories = ["debugger"]
 repository = "https://github.com/Nihilus118/perl-debug-adapter"
 
 [distribution]

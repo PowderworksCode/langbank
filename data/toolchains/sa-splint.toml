@@ -3,6 +3,5 @@ display-name = "splint"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["splint"]
-categories = ["linter"]
 homepage = "http://splint.org"
 repository = "https://github.com/ravenexp/splint"

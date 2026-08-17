@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["python"]
 programs = ["pytest-language-server"]
 root-markers = ["pytest.ini", "pyproject.toml", "setup.py", "setup.cfg", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/bellini666/pytest-language-server"
 
 [distribution]

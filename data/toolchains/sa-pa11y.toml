@@ -3,6 +3,5 @@ display-name = "Pa11y"
 kind = "linter"
 languages = ["html"]
 programs = ["pa11y"]
-categories = ["linter"]
 homepage = "https://pa11y.org/"
 repository = "https://github.com/pa11y/pa11y"

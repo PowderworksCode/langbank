@@ -3,6 +3,5 @@ display-name = "Project Wallace CSS Analyzer"
 kind = "linter"
 languages = ["css"]
 programs = ["project wallace css analyzer"]
-categories = ["linter"]
 homepage = "https://www.projectwallace.com"
 repository = "https://github.com/projectwallace/css-analyzer"

@@ -3,5 +3,4 @@ display-name = "rust-audit"
 kind = "linter"
 languages = ["rust"]
 programs = ["rust-audit"]
-categories = ["linter"]
 repository = "https://github.com/Shnatsel/rust-audit"

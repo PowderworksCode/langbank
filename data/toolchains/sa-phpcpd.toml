@@ -3,5 +3,4 @@ display-name = "phpcpd"
 kind = "linter"
 languages = ["php"]
 programs = ["phpcpd"]
-categories = ["linter"]
 repository = "https://github.com/sebastianbergmann/phpcpd"

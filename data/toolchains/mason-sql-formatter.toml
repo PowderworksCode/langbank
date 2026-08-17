@@ -3,7 +3,6 @@ display-name = "sql-formatter"
 kind = "formatter"
 languages = ["sql"]
 programs = ["sql-formatter"]
-categories = ["formatter"]
 homepage = "https://sql-formatter-org.github.io/sql-formatter/"
 
 [distribution]

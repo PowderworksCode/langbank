@@ -3,6 +3,5 @@ display-name = "rails_best_practices"
 kind = "linter"
 languages = ["ruby"]
 programs = ["rails_best_practices"]
-categories = ["linter"]
 homepage = "https://rails-bestpractices.com"
 repository = "https://github.com/flyerhzm/rails_best_practices"

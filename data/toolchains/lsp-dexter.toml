@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["elixir"]
 programs = ["dexter"]
 root-markers = [".dexter/dexter.db", ".dexter.db", ".git", "mix.exs"]
-categories = ["language-server"]
 repository = "https://github.com/remoteoss/dexter"
 
 [distribution]

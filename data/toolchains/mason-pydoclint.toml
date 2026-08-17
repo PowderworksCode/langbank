@@ -3,7 +3,6 @@ display-name = "pydoclint"
 kind = "linter"
 languages = ["python"]
 programs = ["pydoclint"]
-categories = ["linter"]
 homepage = "https://github.com/jsh9/pydoclint"
 
 [distribution]

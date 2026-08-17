@@ -3,5 +3,4 @@ display-name = "ENRE-ts"
 kind = "linter"
 languages = ["typescript"]
 programs = ["enre-ts"]
-categories = ["linter"]
 repository = "https://github.com/xjtu-enre/ENRE-ts"

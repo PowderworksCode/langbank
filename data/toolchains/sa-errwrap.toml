@@ -3,5 +3,4 @@ display-name = "errwrap"
 kind = "linter"
 languages = ["go"]
 programs = ["errwrap"]
-categories = ["linter"]
 repository = "https://github.com/fatih/errwrap"

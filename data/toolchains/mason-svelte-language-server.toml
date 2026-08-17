@@ -3,7 +3,6 @@ display-name = "svelte-language-server"
 kind = "language-server"
 languages = ["svelte"]
 programs = ["svelte-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/sveltejs/language-tools"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "nginx-config-formatter"
 kind = "formatter"
 languages = ["nginx"]
 programs = ["nginx-config-formatter"]
-categories = ["formatter"]
 homepage = "https://github.com/slomkowski/nginx-config-formatter"
 
 [distribution]

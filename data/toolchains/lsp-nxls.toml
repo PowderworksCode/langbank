@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["json", "json-with-comments"]
 programs = ["nxls"]
 root-markers = ["nx.json", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/nrwl/nx-console/tree/master/apps/nxls"
 
 [distribution]

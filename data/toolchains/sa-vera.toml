@@ -3,6 +3,5 @@ display-name = "vera++"
 kind = "formatter"
 languages = ["c", "cpp"]
 programs = ["vera++"]
-categories = ["formatter"]
 homepage = "https://bitbucket.org/verateam/vera/wiki/Introduction"
 repository = "https://bitbucket.org/verateam/vera/src/master"

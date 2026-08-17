@@ -3,6 +3,5 @@ display-name = "Perl::Critic"
 kind = "linter"
 languages = ["perl"]
 programs = ["perl::critic"]
-categories = ["linter"]
 homepage = "https://metacpan.org/pod/Perl::Critic"
 repository = "https://metacpan.org/release/Perl-Critic/source/lib/Perl/Critic.pm"

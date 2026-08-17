@@ -3,5 +3,4 @@ display-name = "HTML Inspector"
 kind = "linter"
 languages = ["html"]
 programs = ["html inspector"]
-categories = ["linter"]
 repository = "https://github.com/philipwalton/html-inspector"

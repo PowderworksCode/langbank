@@ -3,5 +3,4 @@ display-name = "DrNim"
 kind = "linter"
 languages = ["nim"]
 programs = ["drnim"]
-categories = ["linter"]
 repository = "https://nim-lang.org/docs/drnim.html"

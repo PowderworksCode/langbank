@@ -3,6 +3,5 @@ display-name = "cpp-linter-action"
 kind = "linter"
 languages = ["c", "cpp", "python"]
 programs = ["cpp-linter-action"]
-categories = ["linter"]
 homepage = "https://cpp-linter.github.io/cpp-linter-action/"
 repository = "https://github.com/cpp-linter/cpp-linter-action"

@@ -185,6 +185,22 @@ struct Entry {
     repository: Option<String>,
 }
 
+impl Entry {
+    /// The same, judged against an existing entry's `kind` when there is one:
+    /// a merge must not repeat the kind of the file it is writing into, which
+    /// is not necessarily this source's own primary.
+    fn others_besides(&self, kind: Option<&str>) -> Vec<String> {
+        let Some(primary) = kind.or_else(|| self.kinds.first().map(String::as_str)) else {
+            return Vec::new();
+        };
+        self.kinds
+            .iter()
+            .filter(|other| other.as_str() != primary)
+            .cloned()
+            .collect()
+    }
+}
+
 /// The `key: value` lines that are not lists.
 fn scalar(text: &str, key: &str) -> Option<String> {
     text.lines().find_map(|line| {
@@ -197,8 +213,12 @@ fn scalar(text: &str, key: &str) -> Option<String> {
 /// The lines a merge would append: only what the file does not already carry.
 fn additions(entry: &Entry, text: &str) -> Vec<String> {
     let mut lines = Vec::new();
-    if !entry.kinds.is_empty() && !text.contains("categories") {
-        lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+    // `categories` records what a tool does *besides* its kind, so a list that
+    // only restates the kind is not written. 906 entries carried one, and `is`
+    // answered every one of them from `kind` alone.
+    let others = entry.others_besides(local::scalar(text, "kind").as_deref());
+    if !others.is_empty() && !text.contains("categories") {
+        lines.push(format!("categories = {}", local::toml_array(&others)));
     }
     if let Some(homepage) = &entry.homepage
         && !text.contains("homepage")
@@ -316,7 +336,6 @@ pub fn run(verb: &str) -> Result<Outcome> {
                 "programs = {}",
                 local::toml_array(&[entry.name.to_lowercase()])
             ),
-            format!("categories = {}", local::toml_array(&entry.kinds)),
         ]
         .into_iter()
         .chain(

@@ -3,6 +3,5 @@ display-name = "pycodestyle"
 kind = "linter"
 languages = ["python"]
 programs = ["pycodestyle"]
-categories = ["linter"]
 homepage = "https://pycodestyle.pycqa.org/en/latest"
 repository = "https://github.com/PyCQA/pycodestyle"

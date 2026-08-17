@@ -3,6 +3,5 @@ display-name = "go tool vet --shadow"
 kind = "linter"
 languages = ["go"]
 programs = ["go tool vet --shadow"]
-categories = ["linter"]
 homepage = "https://golang.org/cmd/vet#hdr-Shadowed_variables"
 repository = "https://github.com/golang/go/tree/master/src/cmd/vet"

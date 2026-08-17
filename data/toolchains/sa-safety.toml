@@ -3,6 +3,5 @@ display-name = "Safety"
 kind = "linter"
 languages = ["python"]
 programs = ["safety"]
-categories = ["linter"]
 homepage = "https://safetycli.com/"
 repository = "https://github.com/pyupio/safety"

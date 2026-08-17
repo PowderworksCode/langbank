@@ -3,5 +3,4 @@ display-name = "flen"
 kind = "linter"
 languages = ["go"]
 programs = ["flen"]
-categories = ["linter"]
 repository = "https://github.com/lafolle/flen"

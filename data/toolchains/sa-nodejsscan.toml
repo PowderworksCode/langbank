@@ -3,6 +3,5 @@ display-name = "NodeJSScan"
 kind = "linter"
 languages = ["javascript"]
 programs = ["nodejsscan"]
-categories = ["linter"]
 homepage = "https://opensecurity.in"
 repository = "https://github.com/ajinabraham/NodeJsScan"

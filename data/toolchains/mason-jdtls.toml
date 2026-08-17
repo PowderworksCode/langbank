@@ -3,7 +3,6 @@ display-name = "jdtls"
 kind = "language-server"
 languages = ["java"]
 programs = ["jdtls"]
-categories = ["language-server"]
 homepage = "https://github.com/eclipse/eclipse.jdt.ls"
 
 [distribution]

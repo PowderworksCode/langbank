@@ -3,6 +3,5 @@ display-name = "Android Studio"
 kind = "linter"
 languages = ["java", "kotlin"]
 programs = ["android studio"]
-categories = ["linter"]
 homepage = "https://developer.android.com/studio"
 repository = ">-"

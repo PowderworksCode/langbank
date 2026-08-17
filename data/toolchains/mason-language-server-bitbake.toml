@@ -3,7 +3,6 @@ display-name = "language-server-bitbake"
 kind = "language-server"
 languages = ["bitbake"]
 programs = ["language-server-bitbake"]
-categories = ["language-server"]
 homepage = "https://github.com/yoctoproject/vscode-bitbake"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "emerge"
 kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "swift", "typescript"]
 programs = ["emerge"]
-categories = ["linter"]
 repository = "https://github.com/glato/emerge"

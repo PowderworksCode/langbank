@@ -3,5 +3,4 @@ display-name = "scapegoat"
 kind = "linter"
 languages = ["scala"]
 programs = ["scapegoat"]
-categories = ["linter"]
 repository = "https://github.com/sksamuel/scapegoat"

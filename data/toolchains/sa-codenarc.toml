@@ -3,6 +3,5 @@ display-name = "CodeNarc"
 kind = "linter"
 languages = ["groovy"]
 programs = ["codenarc"]
-categories = ["linter"]
 homepage = "https://codenarc.github.io/CodeNarc"
 repository = "https://github.com/CodeNarc/CodeNarc"

@@ -3,7 +3,6 @@ display-name = "matlab_ls"
 kind = "language-server"
 languages = ["matlab"]
 programs = ["matlab-language-server"]
-categories = ["language-server"]
 repository = "https://github.com/mathworks/MATLAB-language-server"
 
 [distribution]

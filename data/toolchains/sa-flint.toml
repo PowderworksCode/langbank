@@ -3,5 +3,4 @@ display-name = "flint++"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["flint++"]
-categories = ["linter"]
 repository = "https://github.com/JossWhittle/FlintPlusPlus"

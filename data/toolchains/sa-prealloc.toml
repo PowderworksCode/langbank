@@ -3,5 +3,4 @@ display-name = "prealloc"
 kind = "linter"
 languages = ["go"]
 programs = ["prealloc"]
-categories = ["linter"]
 repository = "https://github.com/alexkohler/prealloc"

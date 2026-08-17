@@ -3,5 +3,4 @@ display-name = "twig-lint"
 kind = "linter"
 languages = ["php"]
 programs = ["twig-lint"]
-categories = ["linter"]
 repository = "https://github.com/asm89/twig-lint"

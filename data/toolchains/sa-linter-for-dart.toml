@@ -3,5 +3,4 @@ display-name = "Linter for dart"
 kind = "linter"
 languages = ["dart"]
 programs = ["linter for dart"]
-categories = ["linter"]
 repository = "https://github.com/dart-lang/linter"

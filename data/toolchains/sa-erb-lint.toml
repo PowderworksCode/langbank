@@ -3,5 +3,4 @@ display-name = "ERB Lint"
 kind = "linter"
 languages = ["html", "ruby"]
 programs = ["erb lint"]
-categories = ["linter"]
 repository = "https://github.com/Shopify/erb-lint"

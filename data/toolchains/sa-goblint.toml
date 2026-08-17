@@ -3,6 +3,5 @@ display-name = "Goblint"
 kind = "linter"
 languages = ["c"]
 programs = ["goblint"]
-categories = ["linter"]
 homepage = "https://goblint.in.tum.de"
 repository = "https://github.com/goblint/analyzer"

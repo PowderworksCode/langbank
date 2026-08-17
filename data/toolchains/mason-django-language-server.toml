@@ -3,7 +3,6 @@ display-name = "django-language-server"
 kind = "language-server"
 languages = ["python"]
 programs = ["django-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/joshuadavidthomas/django-language-server"
 
 [distribution]

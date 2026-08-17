@@ -3,7 +3,6 @@ display-name = "mdx-analyzer"
 kind = "language-server"
 languages = ["mdx"]
 programs = ["mdx-analyzer"]
-categories = ["language-server"]
 homepage = "https://github.com/mdx-js/mdx-analyzer/tree/main/packages/language-server"
 
 [distribution]

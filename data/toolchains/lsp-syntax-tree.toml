@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["ruby"]
 programs = ["stree"]
 root-markers = [".streerc", "Gemfile", ".git"]
-categories = ["language-server"]
 homepage = "https://ruby-syntax-tree.github.io/syntax_tree/"
 
 [distribution]

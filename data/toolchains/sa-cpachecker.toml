@@ -3,6 +3,5 @@ display-name = "CPAchecker"
 kind = "linter"
 languages = ["c"]
 programs = ["cpachecker"]
-categories = ["linter"]
 homepage = "https://cpachecker.sosy-lab.org"
 repository = "https://cpachecker.sosy-lab.org/download.php"

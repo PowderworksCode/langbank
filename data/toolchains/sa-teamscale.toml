@@ -3,5 +3,4 @@ display-name = "Teamscale"
 kind = "linter"
 languages = ["abap", "c", "cpp", "java"]
 programs = ["teamscale"]
-categories = ["linter"]
 homepage = "https://teamscale.com"

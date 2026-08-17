@@ -3,5 +3,4 @@ display-name = "structcheck"
 kind = "linter"
 languages = ["go"]
 programs = ["structcheck"]
-categories = ["linter"]
 repository = "https://gitlab.com/opennota/check"

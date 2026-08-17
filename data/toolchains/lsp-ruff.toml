@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["ruff"]
 root-markers = ["pyproject.toml", "ruff.toml", ".ruff.toml", ".git"]
-categories = ["linter", "formatter", "language-server"]
+categories = ["linter", "formatter"]
 homepage = "https://astral.sh/ruff"
 repository = "https://github.com/charliermarsh/ruff"
 

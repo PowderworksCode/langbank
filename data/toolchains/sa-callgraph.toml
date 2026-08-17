@@ -3,5 +3,4 @@ display-name = "callGraph"
 kind = "linter"
 languages = ["awk", "dart", "fortran", "go", "javascript", "julia", "kotlin", "lua", "matlab", "pascal", "perl", "php", "python", "r", "raku", "ruby", "rust", "scala", "shell", "swift", "tcl", "typescript"]
 programs = ["callgraph"]
-categories = ["linter"]
 repository = "https://github.com/koknat/callGraph"

@@ -3,6 +3,5 @@ display-name = "SVF"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["svf"]
-categories = ["linter"]
 homepage = "https://svf-tools.github.io/SVF"
 repository = "https://github.com/SVF-tools/SVF"

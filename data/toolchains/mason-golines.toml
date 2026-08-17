@@ -3,7 +3,6 @@ display-name = "golines"
 kind = "formatter"
 languages = ["go"]
 programs = ["golines"]
-categories = ["formatter"]
 homepage = "https://github.com/segmentio/golines"
 
 [distribution]

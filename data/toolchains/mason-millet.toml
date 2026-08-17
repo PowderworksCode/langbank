@@ -3,7 +3,6 @@ display-name = "millet"
 kind = "language-server"
 languages = ["standard-ml"]
 programs = ["millet"]
-categories = ["language-server"]
 repository = "https://github.com/azdavis/millet"
 
 [distribution]

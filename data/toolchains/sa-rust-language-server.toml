@@ -3,5 +3,4 @@ display-name = "Rust Language Server"
 kind = "formatter"
 languages = ["rust"]
 programs = ["rust language server"]
-categories = ["formatter"]
 repository = "https://github.com/rust-lang-nursery/rls"

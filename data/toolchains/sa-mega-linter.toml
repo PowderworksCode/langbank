@@ -3,6 +3,5 @@ display-name = "Mega-Linter"
 kind = "linter"
 languages = ["apex", "c", "c-sharp", "clojure", "coffeescript", "cpp", "css", "dart", "dockerfile", "dotenv", "gherkin", "go", "groovy", "hcl", "html", "java", "javascript", "json", "kotlin", "lua", "markdown", "perl", "php", "powershell", "protocol-buffer", "puppet", "python", "r", "raku", "ruby", "rust", "scala", "shell", "sql", "tex", "typescript", "vue", "xml", "yaml"]
 programs = ["mega-linter"]
-categories = ["linter"]
 homepage = "https://megalinter.io/"
 repository = "https://github.com/nvuillam/mega-linter"

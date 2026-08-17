@@ -3,5 +3,4 @@ display-name = "Cobra"
 kind = "linter"
 languages = ["ada", "c", "cpp", "python"]
 programs = ["cobra"]
-categories = ["linter"]
 homepage = "https://spinroot.com/cobra"

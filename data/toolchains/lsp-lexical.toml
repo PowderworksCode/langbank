@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["elixir"]
 programs = ["lexical"]
 root-markers = ["mix.exs", ".git"]
-categories = ["language-server"]
 repository = "https://github.com/lexical-lsp/lexical"
 
 [distribution]

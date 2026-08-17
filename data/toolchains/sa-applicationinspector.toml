@@ -3,5 +3,4 @@ display-name = "ApplicationInspector"
 kind = "linter"
 languages = ["c", "cpp", "go", "html", "java", "javascript", "php", "powershell", "python", "ruby"]
 programs = ["applicationinspector"]
-categories = ["linter"]
 repository = "https://github.com/microsoft/ApplicationInspector"

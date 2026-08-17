@@ -56,8 +56,15 @@ fn a_disputed_fact_is_absent_from_the_data_and_present_in_the_gaps() {
 #[test]
 fn every_gap_is_about_something_langbank_actually_carries() {
     for gap in gaps() {
+        // A gap can be about anything langbank carries, not only a language:
+        // `lsp-solidity` is a toolchain whose upstream match is ambiguous, and
+        // recording why is the same job as recording a disputed comment syntax.
         let known = language_profile(gap.subject).is_some()
-            || !languages_claiming_extension(gap.subject).is_empty();
+            || !languages_claiming_extension(gap.subject).is_empty()
+            || langbank::toolchain(gap.subject).is_some()
+            || langbank::ecosystem_profile(gap.subject).is_some()
+            || langbank::package_registry(gap.subject).is_some()
+            || langbank::tool_profile(gap.subject).is_some();
         assert!(
             known,
             "gap names {:?}, which langbank does not carry",

@@ -3,5 +3,4 @@ display-name = "Fasterer"
 kind = "linter"
 languages = ["ruby"]
 programs = ["fasterer"]
-categories = ["linter"]
 repository = "https://github.com/DamirSvrtan/fasterer"

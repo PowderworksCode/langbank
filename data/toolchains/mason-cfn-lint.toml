@@ -3,7 +3,6 @@ display-name = "cfn-lint"
 kind = "linter"
 languages = ["json", "yaml"]
 programs = ["cfn-lint"]
-categories = ["linter"]
 homepage = "https://github.com/aws-cloudformation/cfn-lint"
 
 [distribution]

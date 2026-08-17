@@ -3,6 +3,5 @@ display-name = "RSLint"
 kind = "linter"
 languages = ["javascript"]
 programs = ["rslint"]
-categories = ["linter"]
 homepage = "http://rslint.org/"
 repository = "https://github.com/RDambrosio016/RSLint"

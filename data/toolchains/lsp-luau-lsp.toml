@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["luau"]
 programs = ["luau-lsp"]
 root-markers = [".git"]
-categories = ["language-server"]
 repository = "https://github.com/JohnnyMorganz/luau-lsp"
 
 [distribution]

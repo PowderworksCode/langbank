@@ -3,5 +3,4 @@ display-name = "PHP-Token-Reflection"
 kind = "linter"
 languages = ["php"]
 programs = ["php-token-reflection"]
-categories = ["linter"]
 repository = "https://github.com/Andrewsville/PHP-Token-Reflection"

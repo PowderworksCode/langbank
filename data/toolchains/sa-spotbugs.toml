@@ -3,6 +3,5 @@ display-name = "SpotBugs"
 kind = "linter"
 languages = ["java"]
 programs = ["spotbugs"]
-categories = ["linter"]
 homepage = "https://spotbugs.github.io"
 repository = "https://github.com/spotbugs/spotbugs"

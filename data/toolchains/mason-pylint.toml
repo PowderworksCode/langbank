@@ -3,7 +3,6 @@ display-name = "pylint"
 kind = "linter"
 languages = ["python"]
 programs = ["pylint"]
-categories = ["linter"]
 homepage = "http://pylint.pycqa.org/en/latest"
 repository = "https://github.com/PyCQA/pylint"
 

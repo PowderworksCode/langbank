@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["systemverilog", "verilog"]
 programs = ["verible-verilog-ls"]
 root-markers = ["verible.filelist", ".git"]
-categories = ["language-server", "linter", "formatter"]
+categories = ["linter", "formatter"]
 homepage = "https://chipsalliance.github.io/verible/"
 repository = "https://github.com/chipsalliance/verible"
 

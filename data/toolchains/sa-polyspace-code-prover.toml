@@ -3,5 +3,4 @@ display-name = "Polyspace Code Prover"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["polyspace code prover"]
-categories = ["linter"]
 homepage = "https://www.mathworks.com/products/polyspace-code-prover.html"

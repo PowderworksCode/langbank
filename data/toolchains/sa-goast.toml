@@ -3,5 +3,4 @@ display-name = "goast"
 kind = "linter"
 languages = ["go"]
 programs = ["goast"]
-categories = ["linter"]
 repository = "https://github.com/m-mizutani/goast"

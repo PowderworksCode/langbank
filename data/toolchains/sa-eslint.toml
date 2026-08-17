@@ -3,5 +3,4 @@ display-name = "ESLint"
 kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["eslint"]
-categories = ["linter"]
 repository = "https://github.com/eslint/eslint"

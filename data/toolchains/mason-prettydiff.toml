@@ -3,7 +3,6 @@ display-name = "prettydiff"
 kind = "formatter"
 languages = ["html"]
 programs = ["prettydiff"]
-categories = ["formatter"]
 homepage = "https://github.com/prettydiff/prettydiff"
 
 [distribution]

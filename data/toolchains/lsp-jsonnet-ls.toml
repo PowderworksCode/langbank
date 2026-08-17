@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["jsonnet"]
 programs = ["jsonnet-language-server"]
 root-markers = ["jsonnetfile.json", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/grafana/jsonnet-language-server"
 
 [distribution]

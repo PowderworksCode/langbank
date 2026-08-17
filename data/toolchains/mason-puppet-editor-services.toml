@@ -3,7 +3,7 @@ display-name = "puppet-editor-services"
 kind = "language-server"
 languages = ["puppet"]
 programs = ["puppet-editor-services"]
-categories = ["language-server", "debugger"]
+categories = ["debugger"]
 repository = "https://github.com/puppetlabs/puppet-editor-services"
 
 [distribution]

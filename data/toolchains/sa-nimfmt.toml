@@ -3,5 +3,4 @@ display-name = "nimfmt"
 kind = "linter"
 languages = ["nim"]
 programs = ["nimfmt"]
-categories = ["linter"]
 repository = "https://github.com/FedericoCeratto/nimfmt"

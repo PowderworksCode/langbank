@@ -3,5 +3,4 @@ display-name = "BugProve"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["bugprove"]
-categories = ["linter"]
 homepage = "https://bugprove.com"

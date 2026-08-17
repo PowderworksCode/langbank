@@ -3,7 +3,6 @@ display-name = "rstcheck"
 kind = "linter"
 languages = ["restructuredtext"]
 programs = ["rstcheck"]
-categories = ["linter"]
 homepage = "https://rstcheck.readthedocs.io/"
 
 [distribution]

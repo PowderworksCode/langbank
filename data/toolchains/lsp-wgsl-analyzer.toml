@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["wgsl"]
 programs = ["wgsl-analyzer"]
 root-markers = [".git"]
-categories = ["language-server"]
 repository = "https://github.com/wgsl-analyzer/wgsl-analyzer"
 
 [distribution]

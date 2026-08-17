@@ -3,7 +3,6 @@ display-name = "hlint"
 kind = "linter"
 languages = ["haskell"]
 programs = ["hlint"]
-categories = ["linter"]
 repository = "https://github.com/ndmitchell/hlint"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "goimports-reviser"
 kind = "formatter"
 languages = ["go"]
 programs = ["goimports-reviser"]
-categories = ["formatter"]
 repository = "https://github.com/incu6us/goimports-reviser"
 
 [distribution]

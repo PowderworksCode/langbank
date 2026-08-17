@@ -3,7 +3,6 @@ display-name = "textlint"
 kind = "linter"
 languages = ["markdown", "text"]
 programs = ["textlint"]
-categories = ["linter"]
 homepage = "https://textlint.github.io"
 
 [distribution]

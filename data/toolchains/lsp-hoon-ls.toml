@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["hoon"]
 programs = ["hoon-language-server"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/urbit/hoon-language-server"
 
 [distribution]

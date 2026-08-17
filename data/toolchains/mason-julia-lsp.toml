@@ -3,7 +3,6 @@ display-name = "julia-lsp"
 kind = "language-server"
 languages = ["julia"]
 programs = ["julia-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/julia-vscode/LanguageServer.jl"
 repository = "https://github.com/mason-org/julia-lsp"
 

@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["css"]
 programs = ["csskit"]
 root-markers = ["package.json", ".git"]
-categories = ["language-server", "formatter", "linter"]
+categories = ["formatter", "linter"]
 homepage = "https://csskit.rs"
 repository = "https://github.com/csskit/csskit"
 

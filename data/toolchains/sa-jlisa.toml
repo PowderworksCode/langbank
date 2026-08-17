@@ -3,5 +3,4 @@ display-name = "JLiSA"
 kind = "linter"
 languages = ["java"]
 programs = ["jlisa"]
-categories = ["linter"]
 repository = "https://github.com/lisa-analyzer/jlisa"

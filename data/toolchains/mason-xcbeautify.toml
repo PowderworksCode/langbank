@@ -3,7 +3,6 @@ display-name = "xcbeautify"
 kind = "runtime"
 languages = ["swift"]
 programs = ["xcbeautify"]
-categories = ["runtime"]
 repository = "https://github.com/cpisciotta/xcbeautify"
 
 [distribution]

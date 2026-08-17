@@ -3,7 +3,6 @@ display-name = "clang-format"
 kind = "formatter"
 languages = ["c", "c-sharp", "cpp", "java", "javascript", "json"]
 programs = ["clang-format"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/clang-format/"
 
 [distribution]

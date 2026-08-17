@@ -3,6 +3,5 @@ display-name = "Closure Compiler"
 kind = "linter"
 languages = ["javascript"]
 programs = ["closure compiler"]
-categories = ["linter"]
 homepage = "https://developers.google.com/closure/compiler"
 repository = "https://github.com/google/closure-compiler"

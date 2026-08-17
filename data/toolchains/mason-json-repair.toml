@@ -3,7 +3,6 @@ display-name = "json-repair"
 kind = "formatter"
 languages = ["python"]
 programs = ["json-repair"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/json-repair/"
 
 [distribution]

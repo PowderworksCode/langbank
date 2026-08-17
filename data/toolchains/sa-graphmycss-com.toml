@@ -3,6 +3,5 @@ display-name = "GraphMyCSS.com"
 kind = "linter"
 languages = ["css"]
 programs = ["graphmycss.com"]
-categories = ["linter"]
 homepage = "https://graphmycss.com"
 repository = "https://github.com/TheJaredWilcurt/itcss-specificity-graph"

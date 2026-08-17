@@ -3,5 +3,4 @@ display-name = "cargo-call-stack"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo-call-stack"]
-categories = ["linter"]
 repository = "https://github.com/japaric/cargo-call-stack"

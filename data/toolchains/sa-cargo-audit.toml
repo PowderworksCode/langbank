@@ -3,6 +3,5 @@ display-name = "cargo-audit"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo-audit"]
-categories = ["linter"]
 homepage = "https://rustsec.org"
 repository = "https://github.com/RustSec/cargo-audit"

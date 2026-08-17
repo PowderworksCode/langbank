@@ -3,6 +3,5 @@ display-name = "go vet"
 kind = "linter"
 languages = ["go"]
 programs = ["go vet"]
-categories = ["linter"]
 homepage = "https://golang.org/cmd/vet"
 repository = "https://github.com/golang/go/tree/master/src/cmd/vet"

@@ -3,7 +3,6 @@ display-name = "jq"
 kind = "formatter"
 languages = ["json"]
 programs = ["jq"]
-categories = ["formatter"]
 repository = "https://github.com/stedolan/jq"
 
 [distribution]

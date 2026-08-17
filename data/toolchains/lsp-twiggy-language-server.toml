@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["twig"]
 programs = ["twiggy-language-server"]
 root-markers = ["composer.json", ".git"]
-categories = ["language-server", "linter"]
+categories = ["linter"]
 homepage = "https://github.com/moetelo/twiggy"
 
 [distribution]

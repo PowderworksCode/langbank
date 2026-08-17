@@ -3,5 +3,4 @@ display-name = "cargo-breaking"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo-breaking"]
-categories = ["linter"]
 repository = "https://github.com/iomentum/cargo-breaking"

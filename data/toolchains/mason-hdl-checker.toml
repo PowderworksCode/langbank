@@ -3,7 +3,6 @@ display-name = "hdl-checker"
 kind = "language-server"
 languages = ["systemverilog", "verilog", "vhdl"]
 programs = ["hdl-checker"]
-categories = ["language-server"]
 homepage = "https://pypi.org/project/hdl-checker/"
 
 [distribution]

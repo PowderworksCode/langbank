@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["systemverilog", "verilog", "vhdl"]
 programs = ["hdl_checker"]
 root-markers = [".git"]
-categories = ["language-server"]
 
 [distribution]
 registry = "pypi"

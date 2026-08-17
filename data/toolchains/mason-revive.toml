@@ -3,7 +3,6 @@ display-name = "revive"
 kind = "linter"
 languages = ["go"]
 programs = ["revive"]
-categories = ["linter"]
 homepage = "https://revive.run"
 repository = "https://github.com/mgechev/revive"
 

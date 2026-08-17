@@ -3,5 +3,4 @@ display-name = "pelusa"
 kind = "linter"
 languages = ["ruby"]
 programs = ["pelusa"]
-categories = ["linter"]
 repository = "https://github.com/codegram/pelusa"

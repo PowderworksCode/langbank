@@ -3,5 +3,4 @@ display-name = "clazy"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["clazy"]
-categories = ["linter"]
 repository = "https://github.com/KDE/clazy"

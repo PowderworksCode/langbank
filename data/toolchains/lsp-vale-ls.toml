@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["asciidoc", "html", "markdown", "tex", "text", "xml"]
 programs = ["vale-ls"]
 root-markers = [".vale.ini"]
-categories = ["language-server"]
 homepage = "https://vale.sh/"
 repository = "https://github.com/errata-ai/vale-ls"
 

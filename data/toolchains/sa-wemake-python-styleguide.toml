@@ -3,6 +3,5 @@ display-name = "wemake-python-styleguide"
 kind = "linter"
 languages = ["python"]
 programs = ["wemake-python-styleguide"]
-categories = ["linter"]
 homepage = "https://wemake-python-styleguide.rtfd.io/"
 repository = "https://github.com/wemake-services/wemake-python-styleguide"

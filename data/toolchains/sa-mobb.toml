@@ -3,5 +3,5 @@ display-name = "Mobb"
 kind = "formatter"
 languages = ["java", "javascript", "typescript"]
 programs = ["mobb"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://mobb.ai"

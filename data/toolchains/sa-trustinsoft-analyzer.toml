@@ -3,5 +3,4 @@ display-name = "TrustInSoft Analyzer"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["trustinsoft analyzer"]
-categories = ["linter"]
 homepage = "https://trust-in-soft.com"

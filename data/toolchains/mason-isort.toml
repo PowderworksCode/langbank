@@ -3,7 +3,6 @@ display-name = "isort"
 kind = "formatter"
 languages = ["python"]
 programs = ["isort"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/isort/"
 
 [distribution]

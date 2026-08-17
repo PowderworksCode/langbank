@@ -3,6 +3,5 @@ display-name = "electrolysis"
 kind = "linter"
 languages = ["rust"]
 programs = ["electrolysis"]
-categories = ["linter"]
 homepage = "https://kha.github.io/electrolysis"
 repository = "https://github.com/Kha/electrolysis"

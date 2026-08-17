@@ -3,5 +3,4 @@ display-name = "rustfmt"
 kind = "formatter"
 languages = ["rust"]
 programs = ["rustfmt"]
-categories = ["formatter"]
 repository = "https://github.com/rust-lang/rustfmt"

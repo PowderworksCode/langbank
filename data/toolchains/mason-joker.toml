@@ -3,7 +3,7 @@ display-name = "joker"
 kind = "formatter"
 languages = ["clojure"]
 programs = ["joker"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 repository = "https://github.com/candid82/joker"
 
 [distribution]

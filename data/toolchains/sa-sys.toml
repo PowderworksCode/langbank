@@ -3,5 +3,4 @@ display-name = "Sys"
 kind = "linter"
 languages = ["ocaml"]
 programs = ["sys"]
-categories = ["linter"]
 repository = "https://github.com/PLSysSec/sys"

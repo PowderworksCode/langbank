@@ -3,6 +3,5 @@ display-name = "Joern"
 kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "swift", "typescript"]
 programs = ["joern"]
-categories = ["linter"]
 homepage = "https://joern.io"
 repository = "https://github.com/joernio/joern"

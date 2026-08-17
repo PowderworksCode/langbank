@@ -3,5 +3,4 @@ display-name = "Pronto"
 kind = "linter"
 languages = ["c", "cpp", "elixir", "java", "javascript", "php", "ruby"]
 programs = ["pronto"]
-categories = ["linter"]
 repository = "https://github.com/prontolabs/pronto"

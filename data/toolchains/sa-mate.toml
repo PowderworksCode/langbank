@@ -3,6 +3,5 @@ display-name = "MATE"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["mate"]
-categories = ["linter"]
 homepage = "https://galoisinc.github.io/MATE/"
 repository = "https://github.com/GaloisInc/MATE"

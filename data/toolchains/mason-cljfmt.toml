@@ -3,7 +3,6 @@ display-name = "cljfmt"
 kind = "formatter"
 languages = ["clojure"]
 programs = ["cljfmt"]
-categories = ["formatter"]
 repository = "https://github.com/weavejester/cljfmt"
 
 [distribution]

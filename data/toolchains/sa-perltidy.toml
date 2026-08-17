@@ -3,6 +3,5 @@ display-name = "perltidy"
 kind = "formatter"
 languages = ["perl"]
 programs = ["perltidy"]
-categories = ["formatter"]
 homepage = "https://perltidy.sourceforge.net/"
 repository = "https://github.com/perltidy/perltidy"

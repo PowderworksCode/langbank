@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["ruby"]
 programs = ["rubocop"]
 root-markers = ["Gemfile", ".git"]
-categories = ["formatter", "linter", "language-server"]
+categories = ["formatter", "linter"]
 homepage = "https://docs.rubocop.org/rubocop"
 repository = "https://github.com/rubocop-hq/rubocop"
 

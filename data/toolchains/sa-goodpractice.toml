@@ -3,6 +3,5 @@ display-name = "goodpractice"
 kind = "linter"
 languages = ["r"]
 programs = ["goodpractice"]
-categories = ["linter"]
 homepage = "https://docs.ropensci.org/goodpractice/"
 repository = "https://github.com/mangothecat/goodpractice"

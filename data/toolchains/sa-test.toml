@@ -3,5 +3,4 @@ display-name = "test"
 kind = "linter"
 languages = ["go"]
 programs = ["test"]
-categories = ["linter"]
 repository = "https://pkg.go.dev/testing"

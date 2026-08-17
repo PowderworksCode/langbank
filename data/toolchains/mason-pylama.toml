@@ -3,7 +3,6 @@ display-name = "pylama"
 kind = "linter"
 languages = ["python"]
 programs = ["pylama"]
-categories = ["linter"]
 homepage = "https://klen.github.io/pylama/"
 repository = "https://github.com/klen/pylama"
 

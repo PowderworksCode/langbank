@@ -3,5 +3,4 @@ display-name = "go-consistent"
 kind = "linter"
 languages = ["go"]
 programs = ["go-consistent"]
-categories = ["linter"]
 repository = "https://github.com/Quasilyte/go-consistent"

@@ -3,7 +3,6 @@ display-name = "tailwindcss-language-server"
 kind = "language-server"
 languages = ["css"]
 programs = ["tailwindcss-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/tailwindlabs/tailwindcss-intellisense"
 
 [distribution]

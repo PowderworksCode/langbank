@@ -3,7 +3,6 @@ display-name = "roslyn-language-server"
 kind = "language-server"
 languages = ["c-sharp"]
 programs = ["roslyn-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/dotnet/roslyn"
 
 [distribution]

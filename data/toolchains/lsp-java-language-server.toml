@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["java"]
 programs = ["java-language-server"]
 root-markers = ["build.gradle", "build.gradle.kts", "pom.xml", ".git"]
-categories = ["language-server", "debugger"]
+categories = ["debugger"]
 repository = "https://github.com/georgewfraser/java-language-server"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "cyclocomp"
 kind = "linter"
 languages = ["r"]
 programs = ["cyclocomp"]
-categories = ["linter"]
 repository = "https://github.com/MangoTheCat/cyclocomp"

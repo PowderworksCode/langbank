@@ -3,5 +3,4 @@ display-name = "PHP Assumptions"
 kind = "linter"
 languages = ["php"]
 programs = ["php assumptions"]
-categories = ["linter"]
 repository = "https://github.com/rskuipers/php-assumptions"

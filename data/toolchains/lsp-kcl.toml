@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["kcl"]
 programs = ["kcl-language-server"]
 root-markers = [".git"]
-categories = ["compiler", "formatter", "language-server", "linter"]
+categories = ["compiler", "formatter", "linter"]
 homepage = "https://kcl-lang.io"
 repository = "https://github.com/kcl-lang/kcl"
 

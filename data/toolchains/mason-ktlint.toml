@@ -3,7 +3,7 @@ display-name = "ktlint"
 kind = "formatter"
 languages = ["kotlin"]
 programs = ["ktlint"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://ktlint.github.io"
 repository = "https://github.com/shyiko/ktlint"
 

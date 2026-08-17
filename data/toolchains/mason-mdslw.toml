@@ -3,7 +3,6 @@ display-name = "mdslw"
 kind = "formatter"
 languages = ["markdown"]
 programs = ["mdslw"]
-categories = ["formatter"]
 repository = "https://github.com/razziel89/mdslw"
 
 [distribution]

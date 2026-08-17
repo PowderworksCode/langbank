@@ -3,5 +3,4 @@ display-name = "CodeFactor"
 kind = "linter"
 languages = ["c", "coffeescript", "cpp", "css", "dart", "go", "groovy", "html", "java", "javascript", "kotlin", "php", "powershell", "python", "r", "ruby", "scala", "shell", "swift", "typescript", "vue", "yaml"]
 programs = ["codefactor"]
-categories = ["linter"]
 homepage = "https://codefactor.io"

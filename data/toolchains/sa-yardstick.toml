@@ -3,5 +3,4 @@ display-name = "yardstick"
 kind = "linter"
 languages = ["javascript"]
 programs = ["yardstick"]
-categories = ["linter"]
 repository = "https://github.com/calmh/yardstick"

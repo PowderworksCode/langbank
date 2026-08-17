@@ -3,5 +3,4 @@ display-name = "RIPS"
 kind = "linter"
 languages = ["java", "php"]
 programs = ["rips"]
-categories = ["linter"]
 homepage = "https://www.ripstech.com"

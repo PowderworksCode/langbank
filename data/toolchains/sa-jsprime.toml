@@ -3,6 +3,5 @@ display-name = "JSPrime"
 kind = "linter"
 languages = ["javascript"]
 programs = ["jsprime"]
-categories = ["linter"]
 homepage = "https://dpnishant.github.io/jsprime"
 repository = "https://github.com/dpnishant/jsprime"

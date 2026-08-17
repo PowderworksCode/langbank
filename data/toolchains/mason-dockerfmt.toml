@@ -3,7 +3,6 @@ display-name = "dockerfmt"
 kind = "formatter"
 languages = ["dockerfile"]
 programs = ["dockerfmt"]
-categories = ["formatter"]
 homepage = "https://github.com/reteps/dockerfmt"
 
 [distribution]

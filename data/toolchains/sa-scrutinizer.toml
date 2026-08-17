@@ -3,5 +3,4 @@ display-name = "Scrutinizer"
 kind = "linter"
 languages = ["go", "java", "javascript", "php", "python", "ruby", "typescript"]
 programs = ["scrutinizer"]
-categories = ["linter"]
 homepage = "https://scrutinizer-ci.com"

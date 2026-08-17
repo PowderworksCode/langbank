@@ -3,7 +3,6 @@ display-name = "ktfmt"
 kind = "formatter"
 languages = ["kotlin"]
 programs = ["ktfmt"]
-categories = ["formatter"]
 homepage = "https://facebook.github.io/ktfmt/"
 repository = "https://github.com/facebook/ktfmt"
 

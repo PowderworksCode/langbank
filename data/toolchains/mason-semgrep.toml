@@ -3,7 +3,6 @@ display-name = "semgrep"
 kind = "linter"
 languages = ["c-sharp", "go", "java", "javascript", "json", "php", "python", "ruby", "scala", "typescript"]
 programs = ["semgrep"]
-categories = ["linter"]
 homepage = "https://semgrep.dev"
 repository = "https://github.com/returntocorp/semgrep"
 

@@ -3,7 +3,6 @@ display-name = "salt-lint"
 kind = "linter"
 languages = ["salt"]
 programs = ["salt-lint"]
-categories = ["linter"]
 homepage = "https://github.com/warpnet/salt-lint"
 
 [distribution]

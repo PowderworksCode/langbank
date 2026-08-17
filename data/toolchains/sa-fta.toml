@@ -3,6 +3,5 @@ display-name = "fta"
 kind = "linter"
 languages = ["typescript"]
 programs = ["fta"]
-categories = ["linter"]
 homepage = "https://ftaproject.dev/"
 repository = "https://github.com/sgb-io/fta"

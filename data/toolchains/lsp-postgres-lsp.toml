@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["sql"]
 programs = ["postgres-language-server"]
 root-markers = ["postgres-language-server.jsonc"]
-categories = ["language-server", "linter"]
+categories = ["linter"]
 homepage = "https://pg-language-server.com"
 repository = "https://github.com/supabase-community/postgres-language-server"
 

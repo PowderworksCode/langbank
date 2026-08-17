@@ -3,6 +3,5 @@ display-name = "PHP_CodeSniffer"
 kind = "linter"
 languages = ["php"]
 programs = ["php_codesniffer"]
-categories = ["linter"]
 homepage = "https://pear.php.net/package/PHP_CodeSniffer"
 repository = "https://github.com/squizlabs/PHP_CodeSniffer"

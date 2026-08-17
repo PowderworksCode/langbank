@@ -3,6 +3,5 @@ display-name = "pre-commit"
 kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["pre-commit"]
-categories = ["linter"]
 homepage = "https://pre-commit.com"
 repository = "https://github.com/pre-commit/pre-commit"

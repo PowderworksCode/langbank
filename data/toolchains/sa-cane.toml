@@ -3,5 +3,4 @@ display-name = "cane"
 kind = "linter"
 languages = ["ruby"]
 programs = ["cane"]
-categories = ["linter"]
 repository = "https://github.com/square/cane"

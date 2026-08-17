@@ -3,7 +3,6 @@ display-name = "earthlyls"
 kind = "language-server"
 languages = ["earthly"]
 programs = ["earthlyls"]
-categories = ["language-server"]
 repository = "https://github.com/glehmann/earthlyls"
 
 [distribution]

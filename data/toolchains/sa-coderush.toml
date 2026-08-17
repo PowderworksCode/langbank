@@ -3,5 +3,4 @@ display-name = "CodeRush"
 kind = "linter"
 languages = ["c-sharp"]
 programs = ["coderush"]
-categories = ["linter"]
 homepage = "https://www.devexpress.com/products/coderush"

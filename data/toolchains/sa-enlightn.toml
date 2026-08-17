@@ -3,6 +3,5 @@ display-name = "Enlightn"
 kind = "linter"
 languages = ["php"]
 programs = ["enlightn"]
-categories = ["linter"]
 homepage = "https://www.laravel-enlightn.com/"
 repository = "https://github.com/enlightn/enlightn"

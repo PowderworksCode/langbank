@@ -3,7 +3,6 @@ display-name = "proselint"
 kind = "linter"
 languages = ["markdown", "text"]
 programs = ["proselint"]
-categories = ["linter"]
 homepage = "https://github.com/amperser/proselint"
 
 [distribution]

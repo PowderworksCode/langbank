@@ -3,7 +3,7 @@ display-name = "djlint"
 kind = "formatter"
 languages = ["go", "handlebars", "jinja", "mustache", "nunjucks", "twig"]
 programs = ["djlint"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://github.com/Riverside-Healthcare/djLint"
 
 [distribution]

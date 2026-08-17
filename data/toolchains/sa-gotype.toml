@@ -3,6 +3,5 @@ display-name = "gotype"
 kind = "linter"
 languages = ["go"]
 programs = ["gotype"]
-categories = ["linter"]
 homepage = "https://pkg.go.dev/golang.org/x/tools/cmd/gotype"
 repository = "https://golang.org/x/tools/cmd/gotype"

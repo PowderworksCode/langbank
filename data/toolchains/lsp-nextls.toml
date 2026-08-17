@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["elixir"]
 programs = ["nextls"]
 root-markers = ["mix.exs", ".git"]
-categories = ["language-server"]
 homepage = "https://www.elixir-tools.dev/next-ls/"
 repository = "https://github.com/elixir-tools/next-ls"
 

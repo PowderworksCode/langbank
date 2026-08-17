@@ -3,6 +3,5 @@ display-name = "diff.rs"
 kind = "linter"
 languages = ["rust"]
 programs = ["diff.rs"]
-categories = ["linter"]
 homepage = "https://diff.rs"
 repository = "https://github.com/xfbs/diff.rs"

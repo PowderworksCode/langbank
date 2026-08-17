@@ -3,6 +3,5 @@ display-name = "SonarQube for IDE"
 kind = "linter"
 languages = ["c", "cobol", "cpp", "css", "dockerfile", "go", "hcl", "html", "java", "javascript", "kotlin", "php", "plsql", "python", "ruby", "scala", "swift", "tsql", "typescript", "xml"]
 programs = ["sonarqube for ide"]
-categories = ["linter"]
 homepage = "https://sonarlint.org"
 repository = "https://github.com/SonarSource/sonarlint-intellij"

@@ -3,7 +3,7 @@ display-name = "elixirls"
 kind = "language-server"
 languages = ["elixir"]
 programs = ["elixir-ls"]
-categories = ["language-server", "debugger"]
+categories = ["debugger"]
 repository = "https://github.com/elixir-lsp/elixir-ls"
 
 [distribution]

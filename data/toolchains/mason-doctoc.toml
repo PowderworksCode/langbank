@@ -3,7 +3,6 @@ display-name = "doctoc"
 kind = "formatter"
 languages = ["markdown"]
 programs = ["doctoc"]
-categories = ["formatter"]
 homepage = "https://github.com/thlorenz/doctoc"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "Dlint"
 kind = "linter"
 languages = ["python"]
 programs = ["dlint"]
-categories = ["linter"]
 repository = "https://github.com/dlint-py/dlint"

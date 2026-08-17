@@ -3,7 +3,6 @@ display-name = "usort"
 kind = "formatter"
 languages = ["python"]
 programs = ["usort"]
-categories = ["formatter"]
 homepage = "https://usort.readthedocs.io/"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "brunette"
 kind = "formatter"
 languages = ["python"]
 programs = ["brunette"]
-categories = ["formatter"]
 homepage = "https://github.com/odwyersoftware/brunette"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "jedi"
 kind = "linter"
 languages = ["python"]
 programs = ["jedi"]
-categories = ["linter"]
 homepage = "https://jedi.readthedocs.io/en/latest"
 repository = "https://github.com/davidhalter/jedi"

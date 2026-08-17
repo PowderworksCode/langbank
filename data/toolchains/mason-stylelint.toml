@@ -3,7 +3,6 @@ display-name = "stylelint"
 kind = "linter"
 languages = ["css", "less", "sass", "scss"]
 programs = ["stylelint"]
-categories = ["linter"]
 homepage = "http://stylelint.io"
 repository = "https://github.com/stylelint/stylelint"
 

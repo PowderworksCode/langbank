@@ -3,5 +3,4 @@ display-name = "phpqa - jmolivas"
 kind = "linter"
 languages = ["php"]
 programs = ["phpqa - jmolivas"]
-categories = ["linter"]
 repository = "https://github.com/jmolivas/phpqa"

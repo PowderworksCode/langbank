@@ -3,5 +3,4 @@ display-name = "PHP Insights"
 kind = "linter"
 languages = ["php"]
 programs = ["php insights"]
-categories = ["linter"]
 repository = "https://github.com/nunomaduro/phpinsights"

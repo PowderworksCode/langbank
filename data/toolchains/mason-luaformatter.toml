@@ -3,7 +3,6 @@ display-name = "luaformatter"
 kind = "formatter"
 languages = ["lua"]
 programs = ["luaformatter"]
-categories = ["formatter"]
 homepage = "https://github.com/Koihik/LuaFormatter"
 
 [distribution]

@@ -3,7 +3,7 @@ display-name = "mbake"
 kind = "formatter"
 languages = ["makefile"]
 programs = ["mbake"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://pypi.org/project/mbake/"
 repository = "https://github.com/EbodShojaei/bake"
 

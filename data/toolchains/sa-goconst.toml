@@ -3,5 +3,4 @@ display-name = "goconst"
 kind = "linter"
 languages = ["go"]
 programs = ["goconst"]
-categories = ["linter"]
 repository = "https://github.com/jgautheron/goconst"

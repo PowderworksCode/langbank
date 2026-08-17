@@ -3,7 +3,6 @@ display-name = "findent"
 kind = "formatter"
 languages = ["fortran"]
 programs = ["findent"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/findent/"
 
 [distribution]

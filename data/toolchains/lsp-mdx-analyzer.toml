@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["mdx"]
 programs = ["mdx-language-server"]
 root-markers = ["package.json"]
-categories = ["language-server"]
 
 [distribution]
 registry = "npm"

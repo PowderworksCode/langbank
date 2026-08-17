@@ -4,9 +4,9 @@ kind = "language-server"
 languages = ["tex"]
 programs = ["texlab"]
 root-markers = [".git", ".latexmkrc", "latexmkrc", ".texlabroot", "texlabroot", "Tectonic.toml"]
-categories = ["language-server"]
 homepage = "https://texlab.netlify.app"
 repository = "https://github.com/latex-lsp/texlab"
+categories = ["linter"]
 
 [distribution]
 registry = "github"

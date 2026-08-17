@@ -47,11 +47,12 @@ pub fn toolchain(id: &str) -> Option<String> {
         (origin(&entry.origin))
         dl {
             (row("id", Some(code(entry.id))))
-            (row("kind", Some(html! { (format!("{:?}", entry.kind).to_lowercase()) })))
-            (row("categories", some(!entry.categories.is_empty(), html! {
-                @for (index, kind) in entry.categories.iter().enumerate() {
+            // Primary role first, then anything else it does. `categories`
+            // holds only the others, so this is the whole picture in one row.
+            (row("does", Some(html! {
+                @for (index, role) in entry.roles().enumerate() {
                     @if index > 0 { ", " }
-                    (format!("{kind:?}").to_lowercase())
+                    (format!("{role:?}").to_lowercase())
                 }
             })))
             (row("programs", some(!entry.programs.is_empty(), codes(entry.programs))))

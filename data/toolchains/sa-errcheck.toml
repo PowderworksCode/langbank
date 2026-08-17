@@ -3,5 +3,4 @@ display-name = "errcheck"
 kind = "linter"
 languages = ["go"]
 programs = ["errcheck"]
-categories = ["linter"]
 repository = "https://github.com/kisielk/errcheck"

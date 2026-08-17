@@ -3,7 +3,6 @@ display-name = "yaml-language-server"
 kind = "language-server"
 languages = ["yaml"]
 programs = ["yaml-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/redhat-developer/yaml-language-server"
 
 [distribution]

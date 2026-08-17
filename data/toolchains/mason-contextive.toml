@@ -3,7 +3,6 @@ display-name = "contextive"
 kind = "language-server"
 languages = ["f-sharp"]
 programs = ["contextive"]
-categories = ["language-server"]
 repository = "https://github.com/dev-cycles/contextive"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "govulncheck"
 kind = "linter"
 languages = ["go"]
 programs = ["govulncheck"]
-categories = ["linter"]
 homepage = "https://go.dev/blog/vuln"
 repository = "https://pkg.go.dev/golang.org/x/vuln/vulncheck"

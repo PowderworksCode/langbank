@@ -3,7 +3,6 @@ display-name = "haxe-language-server"
 kind = "language-server"
 languages = ["haxe"]
 programs = ["haxe-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/vshaxe/haxe-language-server"
 
 [distribution]

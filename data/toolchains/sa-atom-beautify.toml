@@ -3,6 +3,5 @@ display-name = "Atom-Beautify"
 kind = "linter"
 languages = ["c", "coffeescript", "coldfusion", "cpp", "css", "html", "java", "javascript", "php", "python", "ruby", "sql", "typescript"]
 programs = ["atom-beautify"]
-categories = ["linter"]
 homepage = "https://atom.io/packages/atom-beautify"
 repository = "https://github.com/Glavin001/atom-beautify"

@@ -3,5 +3,4 @@ display-name = "scsslint"
 kind = "linter"
 languages = ["css"]
 programs = ["scsslint"]
-categories = ["linter"]
 repository = "https://github.com/brigade/scss-lint"

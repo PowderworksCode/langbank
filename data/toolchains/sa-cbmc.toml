@@ -3,6 +3,5 @@ display-name = "CBMC"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cbmc"]
-categories = ["linter"]
 homepage = "http://www.cprover.org/cbmc"
 repository = "https://github.com/diffblue/cbmc"

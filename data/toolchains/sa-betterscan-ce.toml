@@ -3,5 +3,4 @@ display-name = "Betterscan CE"
 kind = "linter"
 languages = ["apex", "c", "cpp", "go", "java", "javascript", "kotlin", "perl", "php", "python", "ruby", "scala", "swift", "typescript"]
 programs = ["betterscan ce"]
-categories = ["linter"]
 repository = "https://github.com/tcosolutions/betterscan-ce"
