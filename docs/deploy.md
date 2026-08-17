@@ -49,10 +49,19 @@ the whole sequence; what follows is what each step is for.
    fly certs check langbank.dev --app langbank
    ```
 
-   Until the certificate is issued, the smoke test in `deploy.yml` fails against
-   `https://langbank.dev` while the app itself is healthy at
-   `https://langbank.fly.dev/health`. That is the expected state between the
-   first deploy and DNS propagating; it is not a broken deploy.
+   Until DNS points at Fly, `deploy.yml`'s **Custom domain** step reports and
+   passes — the app's own address is what gates the deploy, because that is
+   what the deploy actually controls.
+
+   A domain registered but not pointed is the trap here. It still resolves, to
+   the registrar's parking page, so nothing looks obviously wrong: port 80
+   answers and 443 does not. Check where it actually points before assuming
+   propagation:
+
+   ```sh
+   getent hosts langbank.dev     # Fly is 66.241.x / 149.248.x
+   fly ips list --app langbank   # what it should be
+   ```
 
 ## Why the build looks like that
 
