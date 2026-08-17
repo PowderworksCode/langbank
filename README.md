@@ -98,16 +98,14 @@ Lifted from `entl-codebase/src/profiles`, essentially unchanged:
 | artifacts | binary, napi, site, tauri |
 | facets | structured-code, style-host, component-host |
 | conventions | test layout, inline-test detection, typecheck defaults |
-| verbosity | measured relative verbosity per language and per language pair |
 | traversal | registered pruning directories |
 
 ```rust
-use langbank::{detect_language, language_profile, verbosity_ratio};
+use langbank::{detect_language, language_profile};
 
 detect_language(Path::new("src/main.rs"), None);          // -> rust, by extension
 detect_language(Path::new("deploy"), Some(b"#!/bin/sh")); // -> shell, by shebang
 language_profile("rust").and_then(|p| p.conventions);     // test layout, inline tests
-verbosity_ratio("rust", "typescript");                    // measured, corpus-versioned
 ```
 
 Registration goes through `inventory`, so a downstream crate can add profiles

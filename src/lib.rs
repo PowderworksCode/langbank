@@ -30,7 +30,6 @@ mod package_registry;
 mod tool;
 mod toolchain;
 mod traversal;
-mod verbosity;
 
 // The registries are generated from `data/` at build time.
 include!(concat!(env!("OUT_DIR"), "/registries.rs"));
@@ -88,9 +87,5 @@ pub use toolchain::{
 };
 pub use tools::{CODESPELL, STYLELINT, VALE};
 pub use traversal::{TraversalDirectory, TraversalDirectoryRegistration, traversal_directories};
-pub use verbosity::{
-    LanguageVerbosity, VERBOSITY_BASELINE, VERBOSITY_CORPUS, VERBOSITY_CORPUS_REVISION,
-    VerbosityRatio, verbosity, verbosity_ratio, verbosity_ratios,
-};
 
 pub use registry_inventory as registry;
