@@ -2,3 +2,4 @@ id = "x-bitmap"
 display-name = "X BitMap"
 role = "data"
 extensions = ["xbm"]
+groups-under = "c"

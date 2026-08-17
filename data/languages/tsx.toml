@@ -3,3 +3,4 @@ display-name = "TSX"
 role = "programming"
 extensions = ["tsx"]
 comments = "actionscript"
+groups-under = "typescript"

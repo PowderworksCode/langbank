@@ -1,4 +1,4 @@
-# Upstream sources langbank is checked against. `tools/sync-linguist.py check`
+# Upstream sources langbank is checked against. `langbank-sync linguist check`
 # fails if any of them knows a language or a detection token we do not.
 
 [linguist]

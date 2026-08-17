@@ -2,3 +2,4 @@ id = "easybuild"
 display-name = "Easybuild"
 role = "data"
 extensions = ["eb"]
+groups-under = "python"

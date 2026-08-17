@@ -4,3 +4,4 @@ role = "programming"
 extensions = ["rules", "smk", "snakefile"]
 comments = "awk"
 filenames = ["Snakefile"]
+groups-under = "python"

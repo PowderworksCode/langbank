@@ -2,3 +2,4 @@ id = "java-template-engine"
 display-name = "Java Template Engine"
 role = "programming"
 extensions = ["jte"]
+groups-under = "java"

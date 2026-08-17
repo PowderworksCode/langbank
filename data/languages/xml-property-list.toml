@@ -2,3 +2,4 @@ id = "xml-property-list"
 display-name = "XML Property List"
 role = "data"
 extensions = ["plist", "sttheme", "tmcommand", "tmlanguage", "tmpreferences", "tmsnippet", "tmtheme"]
+groups-under = "xml"

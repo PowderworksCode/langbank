@@ -2,3 +2,4 @@ id = "rbs"
 display-name = "RBS"
 role = "data"
 extensions = ["rbs"]
+groups-under = "ruby"

@@ -2,3 +2,4 @@ id = "eclipse"
 display-name = "ECLiPSe"
 role = "programming"
 extensions = ["ecl"]
+groups-under = "prolog"

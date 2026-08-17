@@ -3,3 +3,4 @@ display-name = "PostCSS"
 role = "markup"
 extensions = ["pcss", "postcss", "sss"]
 comments = "actionscript"
+groups-under = "css"

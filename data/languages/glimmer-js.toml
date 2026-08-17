@@ -2,3 +2,4 @@ id = "glimmer-js"
 display-name = "Glimmer JS"
 role = "programming"
 extensions = ["gjs"]
+groups-under = "javascript"

@@ -3,3 +3,4 @@ display-name = "Parrot Assembly"
 role = "programming"
 extensions = ["pasm"]
 shebangs = ["parrot"]
+groups-under = "parrot"

@@ -2,3 +2,4 @@ id = "oasv3-yaml"
 display-name = "OASv3-yaml"
 role = "data"
 extensions = ["yaml", "yml"]
+groups-under = "openapi-specification-v3"

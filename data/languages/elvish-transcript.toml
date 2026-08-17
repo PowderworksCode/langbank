@@ -1,3 +1,4 @@
 id = "elvish-transcript"
 display-name = "Elvish Transcript"
 role = "programming"
+groups-under = "elvish"

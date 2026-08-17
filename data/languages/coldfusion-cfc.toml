@@ -2,3 +2,4 @@ id = "coldfusion-cfc"
 display-name = "ColdFusion CFC"
 role = "programming"
 extensions = ["cfc"]
+groups-under = "coldfusion"

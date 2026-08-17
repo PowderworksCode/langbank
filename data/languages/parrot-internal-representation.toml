@@ -3,3 +3,4 @@ display-name = "Parrot Internal Representation"
 role = "programming"
 extensions = ["pir"]
 shebangs = ["parrot"]
+groups-under = "parrot"

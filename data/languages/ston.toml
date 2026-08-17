@@ -2,3 +2,4 @@ id = "ston"
 display-name = "STON"
 role = "data"
 extensions = ["ston"]
+groups-under = "smalltalk"

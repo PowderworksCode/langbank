@@ -2,3 +2,4 @@ id = "html-eex"
 display-name = "HTML+EEX"
 role = "markup"
 extensions = ["heex", "html.eex", "leex"]
+groups-under = "html"

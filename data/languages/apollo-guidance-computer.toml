@@ -2,3 +2,4 @@ id = "apollo-guidance-computer"
 display-name = "Apollo Guidance Computer"
 role = "programming"
 extensions = ["agc"]
+groups-under = "assembly"

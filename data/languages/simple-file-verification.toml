@@ -2,3 +2,4 @@ id = "simple-file-verification"
 display-name = "Simple File Verification"
 role = "data"
 extensions = ["sfv"]
+groups-under = "checksums"
