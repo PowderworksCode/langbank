@@ -1,4 +1,5 @@
 id = "scilab"
 display-name = "Scilab"
 role = "programming"
+comments = "cairo"
 extensions = ["sce", "sci", "tst"]

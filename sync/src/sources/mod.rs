@@ -1,3 +1,4 @@
+pub mod comments;
 pub mod contested;
 pub mod corpora;
 pub mod coverage;

@@ -26,6 +26,7 @@ usage: langbank-sync <source> <check|create> [options]
 sources:
   linguist          languages, extensions, filenames, interpreters
   corpora           comment syntax and extensions, from tokei and scc
+  comments          line comments Pygments and highlight.js both name
   lspconfig         language servers from nvim-lspconfig
   mason             tool distribution and categories, from mason-registry
   static-analysis   linters and formatters, curated per language
@@ -57,6 +58,7 @@ fn main() -> ExitCode {
     let outcome = match (source, verb) {
         ("linguist", verb) => sources::linguist::run(verb),
         ("corpora", verb) => sources::corpora::run(verb),
+        ("comments", verb) => sources::comments::run(verb),
         ("contested", verb) => sources::contested::run(verb),
         ("lspconfig", verb) => sources::lspconfig::run(verb),
         ("mason", verb) => sources::mason::run(verb),

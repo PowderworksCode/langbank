@@ -1,4 +1,5 @@
 id = "vhdl"
 display-name = "VHDL"
 role = "programming"
+comments = "ada"
 extensions = ["vhd", "vhdl", "vhf", "vhi", "vho", "vhs", "vht", "vhw"]

@@ -1,4 +1,5 @@
 id = "smali"
 display-name = "Smali"
 role = "programming"
+comments = "dockerfile"
 extensions = ["smali"]

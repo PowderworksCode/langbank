@@ -25,6 +25,8 @@ jobs:
         run: cargo run -q -p langbank-sync -- purl check
       - name: tokei and scc coverage
         run: cargo run -q -p langbank-sync -- corpora check
+      - name: pygments and highlight.js comment syntax
+        run: cargo run -q -p langbank-sync -- comments check
       - name: nvim-lspconfig coverage
         run: cargo run -q -p langbank-sync -- lspconfig check
       - name: mason-registry coverage
