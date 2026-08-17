@@ -7,3 +7,16 @@ filenames = [".irbrc", ".pryrc", ".simplecov", "Appraisals", "Berksfile", "Brewf
 shebangs = ["jruby", "macruby", "rake", "rbx", "ruby"]
 facets = ["structured-code"]
 comments = "dockerfile"
+
+[conventions.test-layout]
+source-roots = ["lib"]
+test-root = "spec"
+test-suffixes = ["_spec", "_test"]
+
+[[conventions.inline-test]]
+starts-with = ["RSpec.describe"]
+indicator = "RSpec.describe"
+
+[[conventions.inline-test]]
+starts-with = ["require \"minitest"]
+indicator = "minitest require"

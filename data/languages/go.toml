@@ -4,3 +4,16 @@ role = "programming"
 extensions = ["go", "gop"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = []
+test-root = ""
+test-suffixes = ["_test"]
+
+[[conventions.inline-test]]
+starts-with = ["func Test"]
+indicator = "func Test"
+
+[[conventions.inline-test]]
+starts-with = ["func Benchmark"]
+indicator = "func Benchmark"

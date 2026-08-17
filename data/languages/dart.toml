@@ -4,3 +4,12 @@ role = "programming"
 extensions = ["dart"]
 comments = "actionscript"
 shebangs = ["dart"]
+
+[conventions.test-layout]
+source-roots = ["lib"]
+test-root = "test"
+test-suffixes = ["_test"]
+
+[[conventions.inline-test]]
+starts-with = ["import 'package:test/test.dart'"]
+indicator = "package:test import"

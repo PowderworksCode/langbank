@@ -4,3 +4,12 @@ role = "programming"
 extensions = ["zig", "zig.zon"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = ""
+test-suffixes = ["_test"]
+
+[[conventions.inline-test]]
+starts-with = ["test \""]
+indicator = "test block"

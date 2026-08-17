@@ -7,3 +7,12 @@ primary-extensions = ["php"]
 shebangs = ["php"]
 facets = ["structured-code"]
 comments = "php"
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "tests"
+test-suffixes = ["Test"]
+
+[[conventions.inline-test]]
+starts-with = ["use PHPUnit"]
+indicator = "PHPUnit use"

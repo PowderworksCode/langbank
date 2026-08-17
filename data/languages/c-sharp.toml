@@ -5,3 +5,16 @@ extensions = ["cake", "cs", "cs.pp", "csx", "linq"]
 primary-extensions = ["cake", "cs"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "tests"
+test-suffixes = ["Test", "Tests"]
+
+[[conventions.inline-test]]
+starts-with = ["[Fact]"]
+indicator = "[Fact]"
+
+[[conventions.inline-test]]
+starts-with = ["[Test]"]
+indicator = "[Test]"

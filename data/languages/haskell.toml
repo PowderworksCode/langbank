@@ -4,3 +4,8 @@ role = "programming"
 extensions = ["hs", "hs-boot", "hsc"]
 comments = "agda"
 shebangs = ["runghc", "runhaskell", "runhugs"]
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "test"
+test-suffixes = ["Spec"]

@@ -4,3 +4,12 @@ role = "programming"
 extensions = ["swift"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = ["Sources"]
+test-root = "Tests"
+test-suffixes = ["Tests"]
+
+[[conventions.inline-test]]
+starts-with = ["import XCTest"]
+indicator = "XCTest import"

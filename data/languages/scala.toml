@@ -6,3 +6,8 @@ extensions = ["kojo", "sbt", "sc", "scala"]
 primary-extensions = ["sc"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = ["src/main/scala"]
+test-root = "src/test/scala"
+test-suffixes = ["Spec", "Test"]
