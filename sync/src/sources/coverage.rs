@@ -8,7 +8,7 @@
 //! because langbank.dev reports the same figures and a registry whose coverage
 //! report disagrees with its own website has a worse problem than a thin facet.
 
-use langbank::{Facet, Knowledge, coverage, distribution, language_profiles};
+use langbank::{Facet, Knowledge, coverage, coverage_by_role, distribution, language_profiles};
 
 use crate::report::{Outcome, Result};
 
@@ -40,6 +40,23 @@ pub fn run(arguments: &[String]) -> Result<Outcome> {
     for (facet, have) in Facet::ALL.into_iter().zip(coverage()) {
         let bar = "#".repeat(scaled(40, have, total));
         println!("{:<14} {have:>6} {:>6}   {bar}", facet.name(), total - have);
+    }
+
+    // The plain total sets the wrong target on its own: `ecosystem 25/827`
+    // reads as 802 languages to go and fill in, and 270 of them are data,
+    // markup or documentation formats that will never have a package manager.
+    println!("\nby role, so the denominator means something:");
+    print!("{:<16} {:>6}", "role", "count");
+    for facet in Facet::ALL {
+        print!(" {:>10}", &facet.name()[..facet.name().len().min(10)]);
+    }
+    println!();
+    for (role, count, carried) in coverage_by_role() {
+        print!("{:<16} {count:>6}", format!("{role:?}").to_lowercase());
+        for have in carried {
+            print!(" {have:>10}");
+        }
+        println!();
     }
 
     println!("\nfacets known, by language count:");

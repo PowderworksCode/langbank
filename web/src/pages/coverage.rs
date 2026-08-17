@@ -53,6 +53,35 @@ pub fn render() -> String {
             }
         } }
 
+        h2 { "By role, so the denominator means something" }
+        p.dim {
+            "The totals above set the wrong target on their own. "
+            code { "ecosystem" } " reads as 802 languages waiting to be filled in — but
+             JSON has no package manager and CSV has no compiler, and 270 of the 827
+             are data, markup, documentation, stylesheet or build formats. This says
+             which languages the question was even asked of."
+        }
+        div.scroll { table.facets {
+            thead {
+                tr {
+                    th { "role" }
+                    th.num { "languages" }
+                    @for facet in Facet::ALL { th.num { (facet.name()) } }
+                }
+            }
+            tbody {
+                @for (role, count, carried) in langbank::coverage_by_role() {
+                    tr {
+                        td { (format!("{role:?}").to_lowercase()) }
+                        td.num { (count) }
+                        @for have in carried {
+                            td.num { @if have == 0 { span.none { "—" } } @else { (have) } }
+                        }
+                    }
+                }
+            }
+        } }
+
         h2 { "How many languages know how much" }
         div.scroll { table.facets {
             tbody {

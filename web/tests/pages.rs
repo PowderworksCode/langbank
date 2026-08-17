@@ -265,3 +265,19 @@ fn a_thing_with_no_links_says_so_rather_than_showing_an_empty_line() {
         );
     }
 }
+
+#[test]
+fn coverage_shows_the_denominator_not_only_the_total() {
+    // `ecosystem: 25 of 827` reads as 802 languages to go and fill in. 270 of
+    // them are data, markup or documentation formats that will never have a
+    // package manager, and the page has to say so or it sets the wrong target.
+    let html = pages::coverage();
+    for (role, count, _) in langbank::coverage_by_role() {
+        let name = format!("{role:?}").to_lowercase();
+        assert!(html.contains(&name), "coverage omits the {name} role");
+        assert!(
+            html.contains(&format!("<td class=\"num\">{count}</td>")),
+            "coverage omits the {name} count of {count}"
+        );
+    }
+}

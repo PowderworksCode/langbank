@@ -59,7 +59,7 @@ pub use facet::{LanguageFacet, LanguageFacetRegistration, language_facet, langua
 pub use facets::{COMPONENT_HOST, STRUCTURED_CODE, STYLE_HOST};
 pub use gap::{Gap, GapReason, GapRegistration, gap, gaps, gaps_for};
 pub use ids::{ArtifactId, EcosystemId, LanguageId, ProjectFacetId};
-pub use knowledge::{Facet, Knowledge, coverage, distribution};
+pub use knowledge::{Facet, Knowledge, coverage, coverage_by_role, distribution};
 pub use language::{
     CommentSyntax, LanguageProfile, LanguageRegistration, LanguageRole, comment_syntax,
     comment_syntax_for_extension, detect_language, language_profile,
