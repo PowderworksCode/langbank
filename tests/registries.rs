@@ -19,7 +19,6 @@ fn every_registry_populates() {
     assert!(!artifact_profiles().is_empty(), "artifacts");
     assert!(!language_facets().is_empty(), "facets");
     assert!(!traversal_directories().is_empty(), "traversal");
-    assert!(verbosity_ratios().next().is_some(), "verbosity");
 }
 
 #[test]
@@ -83,13 +82,6 @@ fn profiles_carry_the_facts_consumers_ask_for() {
         rust.conventions.is_some(),
         "rust declares test-layout conventions"
     );
-}
-
-#[test]
-fn verbosity_is_a_measured_pair_relation() {
-    assert!(verbosity("rust").is_some());
-    assert!(verbosity_ratio("rust", "typescript").is_some());
-    assert!(verbosity_ratio("rust", "no-such-language").is_none());
 }
 
 #[test]

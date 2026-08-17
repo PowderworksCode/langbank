@@ -4,9 +4,7 @@ use std::sync::LazyLock;
 
 use crate::{LanguageDetection, LanguageEvidence, LanguageId};
 
-use crate::{
-    LanguageConventions, LanguageFacet, LanguageVerbosity, language_facets, registry, verbosity,
-};
+use crate::{LanguageConventions, LanguageFacet, language_facets, registry};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum LanguageRole {
@@ -97,11 +95,6 @@ impl LanguageProfile {
     ///
     /// The number is as much a property of that corpus as of the language.
     /// Measured on a mid-sized program instead of small exercises, the same
-    /// languages spread about twice as far apart; see `notes/verbosity.md`.
-    pub fn verbosity(&self) -> Option<&'static LanguageVerbosity> {
-        verbosity(self.id)
-    }
-
     pub fn has_facet(&self, facet: &LanguageFacet) -> bool {
         self.facets
             .iter()
