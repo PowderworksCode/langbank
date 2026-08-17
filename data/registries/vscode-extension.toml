@@ -2,6 +2,7 @@ id = "vscode-extension"
 display-name = "VS Code Extension packages"
 default-repository = "https://marketplace.visualstudio.com/vscode-extension"
 uses-repository = true
+homepage = "https://marketplace.visualstudio.com/vscode"
 
 [namespace]
 requirement = "required"

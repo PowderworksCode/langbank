@@ -90,6 +90,8 @@ struct Tool {
     name: String,
     categories: Vec<String>,
     tags: Vec<String>,
+    homepage: Option<String>,
+    repository: Option<String>,
 }
 
 fn upstream_tools() -> Result<Vec<Tool>> {
@@ -106,10 +108,22 @@ fn upstream_tools() -> Result<Vec<Tool>> {
         if name.is_empty() {
             continue;
         }
+        // `homepage` is dropped when it is the repository under another
+        // spelling — 368 of the 656 that publish both publish the same URL
+        // twice, and recording it twice makes a reader look for a difference
+        // that is not there. See `langbank::Origin`.
+        let repository = scalar(&text, "source");
+        let homepage = scalar(&text, "homepage").filter(|home| {
+            repository
+                .as_deref()
+                .is_none_or(|repo| !langbank::same_place(home, repo))
+        });
         out.push(Tool {
             name,
             categories: block(&text, "categories"),
             tags: block(&text, "tags"),
+            homepage,
+            repository,
         });
     }
     out.sort_by_key(|tool| tool.name.to_lowercase());
@@ -167,6 +181,36 @@ struct Entry {
     name: String,
     kinds: Vec<String>,
     languages: Vec<String>,
+    homepage: Option<String>,
+    repository: Option<String>,
+}
+
+/// The `key: value` lines that are not lists.
+fn scalar(text: &str, key: &str) -> Option<String> {
+    text.lines().find_map(|line| {
+        let value = line.strip_prefix(key)?.strip_prefix(':')?.trim();
+        let value = value.trim_matches(['\'', '"']);
+        (!value.is_empty()).then(|| value.to_string())
+    })
+}
+
+/// The lines a merge would append: only what the file does not already carry.
+fn additions(entry: &Entry, text: &str) -> Vec<String> {
+    let mut lines = Vec::new();
+    if !entry.kinds.is_empty() && !text.contains("categories") {
+        lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+    }
+    if let Some(homepage) = &entry.homepage
+        && !text.contains("homepage")
+    {
+        lines.push(format!("homepage = {}", local::toml_string(homepage)));
+    }
+    if let Some(repository) = &entry.repository
+        && !text.contains("repository")
+    {
+        lines.push(format!("repository = {}", local::toml_string(repository)));
+    }
+    lines
 }
 
 fn plan(tools: &[Tool], carried: &Local) -> (Vec<(String, Entry)>, Vec<Entry>, usize) {
@@ -206,13 +250,18 @@ fn plan(tools: &[Tool], carried: &Local) -> (Vec<(String, Entry)>, Vec<Entry>, u
             name: tool.name.clone(),
             kinds,
             languages: languages.into_iter().collect(),
+            homepage: tool.homepage.clone(),
+            repository: tool.repository.clone(),
         };
         match carried.programs.get(&tool.name.to_lowercase()) {
             Some(existing) => {
                 let Some((_, text)) = carried.toolchains.get(existing) else {
                     continue;
                 };
-                if !text.contains("categories") {
+                // Outstanding when there is anything to add, not only when
+                // categories are missing — otherwise a tool that already has
+                // categories never gains its links.
+                if !additions(&entry, text).is_empty() {
                     merges.push((existing.clone(), entry));
                 }
             }
@@ -233,7 +282,7 @@ pub fn run(verb: &str) -> Result<Outcome> {
 
     if verb == "check" {
         println!(
-            "{} tools upstream; {} would gain categories, {} are new, {skipped} skipped \
+            "{} tools upstream; {} would gain categories or links, {} are new, {skipped} skipped \
              (no analysable category or language)",
             tools.len(),
             merges.len(),
@@ -246,15 +295,15 @@ pub fn run(verb: &str) -> Result<Outcome> {
         let Some((path, text)) = carried.toolchains.get(id) else {
             continue;
         };
-        if !text.contains("categories") {
-            let mut text =
-                std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
-            text.push_str(&format!(
-                "categories = {}\n",
-                local::toml_array(&entry.kinds)
-            ));
-            std::fs::write(path, text).map_err(|e| format!("{}: {e}", path.display()))?;
+        let lines = additions(entry, text);
+        if lines.is_empty() {
+            continue;
         }
+        let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
+        // Root keys go before the first [table] header, not at the end of the
+        // file — see `local::append_root`.
+        std::fs::write(path, local::append_root(&text, &lines))
+            .map_err(|e| format!("{}: {e}", path.display()))?;
     }
 
     for entry in &creates {
@@ -268,13 +317,27 @@ pub fn run(verb: &str) -> Result<Outcome> {
                 local::toml_array(&[entry.name.to_lowercase()])
             ),
             format!("categories = {}", local::toml_array(&entry.kinds)),
-        ];
+        ]
+        .into_iter()
+        .chain(
+            entry
+                .homepage
+                .iter()
+                .map(|home| format!("homepage = {}", local::toml_string(home))),
+        )
+        .chain(
+            entry
+                .repository
+                .iter()
+                .map(|repo| format!("repository = {}", local::toml_string(repo))),
+        )
+        .collect::<Vec<_>>();
         let path = format!("data/toolchains/{}.toml", entry.id);
         std::fs::write(&path, lines.join("\n") + "\n").map_err(|e| format!("{path}: {e}"))?;
     }
 
     println!(
-        "gave categories to {} known tools, created {} new, {skipped} skipped",
+        "merged into {} known tools, created {} new, {skipped} skipped",
         merges.len(),
         creates.len()
     );

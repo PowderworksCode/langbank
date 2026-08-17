@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["markdown"]
 programs = ["mdl"]
 categories = ["linter"]
+repository = "https://github.com/mivok/markdownlint"

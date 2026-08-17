@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["marksman"]
 root-markers = [".marksman.toml", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/artempyanykh/marksman"
 
 [distribution]
 registry = "github"

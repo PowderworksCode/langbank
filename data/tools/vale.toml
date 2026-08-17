@@ -3,6 +3,8 @@ programs = ["vale"]
 languages = []
 configuration-files = [".vale.ini"]
 ci-workload = "light"
+homepage = "https://vale.sh"
+repository = "https://github.com/errata-ai/vale"
 
 [[commands]]
 arguments = []

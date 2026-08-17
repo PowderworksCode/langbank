@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["dawnscanner"]
 categories = ["linter"]
+repository = "https://github.com/thesp0nge/dawnscanner"

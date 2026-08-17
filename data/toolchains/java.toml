@@ -3,6 +3,8 @@ display-name = "Java runtime"
 kind = "runtime"
 languages = ["java"]
 programs = ["java"]
+homepage = "https://openjdk.org"
+repository = "https://github.com/openjdk/jdk"
 
 [version]
 arguments = ["-version"]

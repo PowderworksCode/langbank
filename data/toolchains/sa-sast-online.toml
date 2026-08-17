@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["dart", "java", "kotlin"]
 programs = ["sast online"]
 categories = ["linter"]
+repository = "https://sast.online/"

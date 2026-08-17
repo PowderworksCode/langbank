@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["shell"]
 programs = ["termux-language-server"]
 categories = ["language-server"]
+homepage = "https://termux-language-server.readthedocs.io/en/latest/"
 
 [distribution]
 registry = "pypi"

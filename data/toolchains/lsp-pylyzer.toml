@@ -5,6 +5,7 @@ languages = ["python"]
 programs = ["pylyzer"]
 root-markers = ["setup.py", "tox.ini", "requirements.txt", "Pipfile", "pyproject.toml", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/mtshiba/pylyzer"
 
 [distribution]
 registry = "github"

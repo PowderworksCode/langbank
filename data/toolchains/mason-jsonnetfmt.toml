@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["jsonnet"]
 programs = ["jsonnetfmt"]
 categories = ["formatter"]
+homepage = "https://github.com/google/go-jsonnet/tree/master/cmd/jsonnetfmt"
 
 [distribution]
 registry = "golang"

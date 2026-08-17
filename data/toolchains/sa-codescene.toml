@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "clojure", "cpp", "dart", "elixir", "erlang", "go", "groovy", "java", "javascript", "kotlin", "perl", "php", "powershell", "python", "ruby", "scala", "swift", "typescript"]
 programs = ["codescene"]
 categories = ["linter"]
+homepage = "https://codescene.com"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["elm"]
 programs = ["elm-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/elm-tooling/elm-language-server"
 
 [distribution]
 registry = "npm"

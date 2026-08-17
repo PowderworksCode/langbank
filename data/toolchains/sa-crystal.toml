@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["crystal"]
 programs = ["crystal"]
 categories = ["linter"]
+homepage = "https://crystal-lang.org"
+repository = "https://github.com/crystal-lang/crystal"

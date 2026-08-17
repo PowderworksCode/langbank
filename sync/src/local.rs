@@ -52,6 +52,41 @@ pub fn scalar(text: &str, key: &str) -> Option<String> {
 
 // Used by the sources still being ported; they land one at a time.
 #[allow(dead_code)]
+/// Add root-level keys to a TOML document, before the first `[table]` header.
+///
+/// Appending to the end of the file is the obvious thing and it is wrong: a
+/// `key = value` written after `[diagnostics]` belongs to `[diagnostics]`, and
+/// the document still parses, so nothing complains. `gcc.toml` carried its
+/// `categories` under `[diagnostics]` for months that way, and adding homepages
+/// the same way put 485 of them somewhere no reader would look.
+///
+/// The build script reads these at the root and finds nothing — no error, just
+/// a field that is quietly always `None`.
+pub fn append_root(text: &str, lines: &[String]) -> String {
+    if lines.is_empty() {
+        return text.to_string();
+    }
+    let block = lines.join("\n") + "\n";
+    match text
+        .lines()
+        .position(|line| line.starts_with('['))
+        .map(|index| {
+            text.lines()
+                .take(index)
+                .map(|line| line.len() + 1)
+                .sum::<usize>()
+        }) {
+        Some(at) => {
+            let head = text[..at].trim_end_matches('\n');
+            format!("{head}\n{block}\n{}", &text[at..])
+        }
+        None => {
+            let head = text.trim_end_matches('\n');
+            format!("{head}\n{block}")
+        }
+    }
+}
+
 /// Where a top-level `key = [...]` starts and ends, including its newline.
 ///
 /// Rewriting an array in place needs its bounds, not its contents, and the

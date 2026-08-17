@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["linter-rust"]
 categories = ["linter"]
+repository = "https://github.com/AtomLinter/linter-rust"

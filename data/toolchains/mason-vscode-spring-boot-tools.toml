@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["java"]
 programs = ["vscode-spring-boot-tools"]
 categories = ["language-server"]
+homepage = "https://github.com/spring-projects/spring-tools"
 
 [distribution]
 registry = "openvsx"

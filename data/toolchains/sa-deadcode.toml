@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["deadcode"]
 categories = ["linter"]
+repository = "https://github.com/tsenart/deadcode"

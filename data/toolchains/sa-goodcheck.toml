@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["goodcheck"]
 categories = ["linter"]
+homepage = "https://sider.github.io/goodcheck"

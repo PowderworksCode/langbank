@@ -5,6 +5,8 @@ languages = ["solidity"]
 programs = ["solang"]
 root-markers = [".git"]
 categories = ["language-server", "compiler"]
+homepage = "https://solang.readthedocs.io/en/latest/"
+repository = "https://github.com/hyperledger-labs/solang"
 
 [distribution]
 registry = "github"

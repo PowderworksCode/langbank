@@ -2,6 +2,7 @@ id = "maven"
 display-name = "Maven"
 default-repository = "https://repo.maven.apache.org/maven2/"
 uses-repository = true
+homepage = "https://central.sonatype.com"
 
 [namespace]
 requirement = "required"

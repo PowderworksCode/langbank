@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["tslint-microsoft-contrib"]
 categories = ["linter"]
+repository = "https://github.com/Microsoft/tslint-microsoft-contrib"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["go", "java", "python"]
 programs = ["precaution"]
 categories = ["linter"]
+homepage = "https://www.securesauce.dev/"
+repository = "https://github.com/securesauce/precli"

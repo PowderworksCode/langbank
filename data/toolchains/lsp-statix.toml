@@ -5,6 +5,8 @@ languages = ["nix"]
 programs = ["statix"]
 root-markers = ["flake.nix", ".git"]
 categories = ["linter"]
+repository = "https://github.com/nerdypepper/statix"
+homepage = "https://github.com/oppiliappan/statix"
 
 [distribution]
 registry = "cargo"

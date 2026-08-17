@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["cue"]
 programs = ["cueimports"]
 categories = ["formatter"]
+homepage = "https://github.com/asdine/cueimports"
 
 [distribution]
 registry = "golang"

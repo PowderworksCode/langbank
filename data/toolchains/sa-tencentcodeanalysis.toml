@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["c", "cpp", "css", "go", "html", "java", "javascript", "kotlin", "php", "python", "scala", "typescript", "xml"]
 programs = ["tencentcodeanalysis"]
 categories = ["linter"]
+homepage = "https://tca.tencent.com/"
+repository = "https://github.com/Tencent/CodeAnalysis"

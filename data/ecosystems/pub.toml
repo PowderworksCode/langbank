@@ -5,3 +5,5 @@ roles = ["package-manager"]
 implied-languages = ["dart"]
 manifest = "pubspec.yaml"
 manifest-selection = "default"
+homepage = "https://dart.dev/tools/pub"
+repository = "https://github.com/dart-lang/pub"

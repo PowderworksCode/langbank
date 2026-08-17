@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["c-sharp"]
 programs = ["omnisharp-mono"]
 categories = ["language-server"]
+repository = "https://github.com/OmniSharp/omnisharp-roslyn"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["bicep"]
 programs = ["bicep-lsp"]
 categories = ["language-server"]
+repository = "https://github.com/Azure/bicep"
 
 [distribution]
 registry = "github"

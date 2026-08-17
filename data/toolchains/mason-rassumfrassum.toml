@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["rassumfrassum"]
 categories = ["language-server"]
+homepage = "https://github.com/joaotavora/rassumfrassum"
 
 [distribution]
 registry = "pypi"

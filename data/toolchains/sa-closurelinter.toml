@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["closurelinter"]
 categories = ["linter"]
+repository = "https://github.com/google/closure-linter"

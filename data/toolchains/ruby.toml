@@ -3,6 +3,8 @@ display-name = "Ruby"
 kind = "runtime"
 languages = ["ruby"]
 programs = ["ruby"]
+homepage = "https://www.ruby-lang.org"
+repository = "https://github.com/ruby/ruby"
 
 [version]
 arguments = ["--version"]

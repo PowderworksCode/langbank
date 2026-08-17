@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["rust"]
 programs = ["dylint"]
 categories = ["linter"]
+homepage = "https://www.trailofbits.com/post/write-rust-lints-without-forking-clippy"
+repository = "https://github.com/trailofbits/dylint"

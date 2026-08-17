@@ -5,6 +5,7 @@ languages = ["sql"]
 programs = ["sql-language-server"]
 root-markers = [".sqllsrc.json"]
 categories = ["language-server"]
+homepage = "https://github.com/joe-re/sql-language-server"
 
 [distribution]
 registry = "npm"

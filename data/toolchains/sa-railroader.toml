@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["railroader"]
 categories = ["linter"]
+homepage = "https://railroader.org"
+repository = "https://github.com/david-a-wheeler/railroader"

@@ -5,6 +5,7 @@ languages = ["nextflow"]
 programs = ["nextflow-language-server"]
 root-markers = ["nextflow.config", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/nextflow-io/language-server"
 
 [distribution]
 registry = "github"

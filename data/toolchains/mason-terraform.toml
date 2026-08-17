@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["hcl"]
 programs = ["terraform"]
 categories = ["formatter", "linter", "runtime"]
+homepage = "https://www.terraform.io/"
 
 [distribution]
 registry = "generic"

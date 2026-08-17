@@ -5,6 +5,7 @@ languages = ["rust"]
 programs = ["bacon-ls"]
 root-markers = [".bacon-locations", "Cargo.toml"]
 categories = ["language-server"]
+homepage = "https://github.com/crisidev/bacon-ls"
 
 [distribution]
 registry = "cargo"

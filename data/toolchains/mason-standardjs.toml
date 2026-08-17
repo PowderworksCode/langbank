@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["standardjs"]
 categories = ["linter", "formatter"]
+homepage = "https://standardjs.com"
 
 [distribution]
 registry = "npm"

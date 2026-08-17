@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["java"]
 programs = ["java-test"]
 categories = ["debugger"]
+homepage = "https://github.com/microsoft/vscode-java-test"
 
 [distribution]
 registry = "openvsx"

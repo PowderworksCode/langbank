@@ -3,6 +3,7 @@ display-name = "glow"
 kind = "linter"
 languages = ["markdown"]
 programs = ["glow"]
+repository = "https://github.com/charmbracelet/glow"
 
 [distribution]
 registry = "github"

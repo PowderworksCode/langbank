@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["smithy"]
 programs = ["smithy-language-server"]
 categories = ["language-server"]
+repository = "https://github.com/awslabs/smithy-language-server"
 
 [distribution]
 registry = "github"

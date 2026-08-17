@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["protocol-buffer"]
 programs = ["protolint"]
 categories = ["linter"]
+repository = "https://github.com/yoheimuta/protolint"

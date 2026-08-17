@@ -5,6 +5,7 @@ languages = ["javascript", "typescript"]
 programs = ["quick-lint-js"]
 root-markers = ["package.json", "jsconfig.json", ".git"]
 categories = ["language-server", "linter"]
+homepage = "https://quick-lint-js.com/"
 
 [distribution]
 registry = "generic"

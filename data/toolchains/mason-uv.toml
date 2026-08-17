@@ -3,6 +3,8 @@ display-name = "uv"
 kind = "linter"
 languages = ["python"]
 programs = ["uv"]
+homepage = "https://docs.astral.sh/uv/"
+repository = "https://github.com/astral-sh/uv"
 
 [distribution]
 registry = "github"

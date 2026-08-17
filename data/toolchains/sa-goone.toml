@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go", "sql"]
 programs = ["goone"]
 categories = ["linter"]
+repository = "https://github.com/masibw/goone"

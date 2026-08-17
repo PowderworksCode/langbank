@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["ocaml"]
 programs = ["ocaml-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/ocaml/ocaml-lsp"
 
 [distribution]
 registry = "opam"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["typescript-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/typescript-language-server/typescript-language-server"
 
 [distribution]
 registry = "npm"

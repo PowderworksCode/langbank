@@ -39,6 +39,9 @@ pub struct PackageRegistry {
     pub display_name: &'static str,
     /// The canonical host, where there is one. `generic` and `github` have none.
     pub default_repository: Option<&'static str>,
+    /// Where the project lives and where its code is. `homepage` is set
+    /// only when it is somewhere other than the repository.
+    pub origin: crate::Origin,
     pub uses_repository: bool,
     pub namespace: IdentityComponent,
     pub name: IdentityComponent,

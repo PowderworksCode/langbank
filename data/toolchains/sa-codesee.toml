@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go", "java", "javascript", "python", "rust", "typescript"]
 programs = ["codesee"]
 categories = ["linter"]
+homepage = "https://www.codesee.io/"

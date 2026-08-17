@@ -5,6 +5,7 @@ languages = ["pkl"]
 programs = ["pkl-lsp"]
 root-markers = ["PklProject", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/apple/pkl-lsp"
 
 [distribution]
 registry = "github"

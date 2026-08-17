@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java"]
 programs = ["nullaway"]
 categories = ["linter"]
+repository = "https://github.com/uber/NullAway"

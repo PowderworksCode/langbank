@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["hcl"]
 programs = ["hclfmt"]
 categories = ["formatter"]
+homepage = "https://github.com/hashicorp/hcl"
 
 [distribution]
 registry = "golang"

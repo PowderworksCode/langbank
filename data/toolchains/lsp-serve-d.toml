@@ -5,6 +5,7 @@ languages = ["d"]
 programs = ["serve-d"]
 root-markers = ["dub.json", "dub.sdl", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/Pure-D/serve-d"
 
 [distribution]
 registry = "github"

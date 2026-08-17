@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["makefile"]
 programs = ["checkmake"]
 categories = ["linter"]
+repository = "https://github.com/mrtazz/checkmake"
 
 [distribution]
 registry = "github"

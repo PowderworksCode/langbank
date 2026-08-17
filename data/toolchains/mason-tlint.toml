@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["blade", "php"]
 programs = ["tlint"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/tighten/tlint"
 
 [distribution]
 registry = "composer"

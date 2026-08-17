@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["warnalyzer"]
 categories = ["linter"]
+repository = "https://github.com/est31/warnalyzer"

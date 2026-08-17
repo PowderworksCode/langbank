@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["sql"]
 programs = ["squawk"]
 categories = ["linter"]
+homepage = "https://squawkhq.com"
+repository = "https://github.com/sbdchd/squawk"
 
 [distribution]
 registry = "github"

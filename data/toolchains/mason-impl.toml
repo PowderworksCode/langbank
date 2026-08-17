@@ -3,6 +3,7 @@ display-name = "impl"
 kind = "linter"
 languages = ["go"]
 programs = ["impl"]
+homepage = "https://github.com/josharian/impl"
 
 [distribution]
 registry = "golang"

@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["cmake"]
 programs = ["gersemi"]
 categories = ["formatter"]
+homepage = "https://github.com/BlankSpruce/gersemi"
 
 [distribution]
 registry = "pypi"

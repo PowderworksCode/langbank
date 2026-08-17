@@ -5,6 +5,7 @@ languages = ["html", "javascript"]
 programs = ["lwc-language-server"]
 root-markers = ["sfdx-project.json"]
 categories = ["language-server"]
+homepage = "https://github.com/forcedotcom/lightning-language-server/"
 
 [distribution]
 registry = "npm"

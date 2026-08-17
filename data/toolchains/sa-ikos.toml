@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["ikos"]
 categories = ["linter"]
+repository = "https://github.com/nasa-sw-vnv/ikos"

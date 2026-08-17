@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["vhdl"]
 programs = ["rust_hdl"]
 categories = ["language-server"]
+repository = "https://github.com/vhdl-ls/rust_hdl"
 
 [distribution]
 registry = "github"

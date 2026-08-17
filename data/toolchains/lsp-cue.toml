@@ -5,6 +5,7 @@ languages = ["cue"]
 programs = ["cue"]
 root-markers = ["cue.mod", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/cue-lang/cue"
 
 [distribution]
 registry = "golang"

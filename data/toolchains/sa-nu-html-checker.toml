@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["css", "html"]
 programs = ["nu html checker"]
 categories = ["linter"]
+homepage = "https://validator.github.io/validator/"
+repository = "https://github.com/validator/validator"

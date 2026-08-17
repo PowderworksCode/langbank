@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["sith-language-server"]
 categories = ["language-server"]
+repository = "https://github.com/LaBatata101/sith-language-server"
 
 [distribution]
 registry = "github"

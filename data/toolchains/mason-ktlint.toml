@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["kotlin"]
 programs = ["ktlint"]
 categories = ["formatter", "linter"]
+homepage = "https://ktlint.github.io"
+repository = "https://github.com/shyiko/ktlint"
 
 [distribution]
 registry = "github"

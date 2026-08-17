@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["cmake"]
 programs = ["cmakelang"]
 categories = ["formatter", "linter"]
+homepage = "https://pypi.org/project/cmakelang/"
 
 [distribution]
 registry = "pypi"

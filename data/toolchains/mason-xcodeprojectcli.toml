@@ -4,6 +4,7 @@ kind = "runtime"
 languages = ["swift"]
 programs = ["xcodeprojectcli"]
 categories = ["runtime"]
+repository = "https://github.com/wojciech-kulik/XcodeProjectCLI"
 
 [distribution]
 registry = "github"

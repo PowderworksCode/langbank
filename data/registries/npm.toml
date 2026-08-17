@@ -2,6 +2,7 @@ id = "npm"
 display-name = "Node NPM packages"
 default-repository = "https://registry.npmjs.org/"
 uses-repository = true
+homepage = "https://www.npmjs.com"
 
 [namespace]
 requirement = "optional"

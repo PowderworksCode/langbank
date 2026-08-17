@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["salt"]
 programs = ["salt-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/dcermak/salt-lsp"
 
 [distribution]
 registry = "pypi"

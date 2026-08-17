@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["oxlint"]
 categories = ["language-server", "linter"]
+homepage = "https://github.com/oxc-project/oxc"
 
 [distribution]
 registry = "npm"

@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["yaml"]
 programs = ["kubescape"]
 categories = ["linter", "runtime"]
+homepage = "https://kubescape.io/"
+repository = "https://github.com/kubescape/kubescape"
 
 [distribution]
 registry = "github"

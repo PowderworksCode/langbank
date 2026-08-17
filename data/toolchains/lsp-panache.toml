@@ -5,6 +5,8 @@ languages = ["markdown", "rmarkdown"]
 programs = ["panache"]
 root-markers = [".panache.toml", "panache.toml", "_quarto.yml", "_bookdown.yml", ".git"]
 categories = ["language-server", "formatter", "linter"]
+homepage = "https://panache.bz"
+repository = "https://github.com/jolars/panache"
 
 [distribution]
 registry = "github"

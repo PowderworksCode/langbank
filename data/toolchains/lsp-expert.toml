@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["elixir"]
 programs = ["expert"]
 categories = ["language-server"]
+repository = "https://github.com/elixir-lang/expert"
 
 [distribution]
 registry = "github"

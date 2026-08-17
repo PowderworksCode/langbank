@@ -5,6 +5,7 @@ languages = ["hcl"]
 programs = ["terragrunt-ls"]
 root-markers = ["terragrunt.hcl", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/gruntwork-io/terragrunt-ls"
 
 [distribution]
 registry = "github"

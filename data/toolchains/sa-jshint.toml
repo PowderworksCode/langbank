@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["jshint"]
 categories = ["linter"]
+homepage = "https://jshint.com/about"
+repository = "https://github.com/jshint/jshint"

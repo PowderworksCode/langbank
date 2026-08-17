@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["xml"]
 programs = ["xmlformatter"]
 categories = ["formatter"]
+homepage = "https://github.com/pamoller/xmlformatter"
 
 [distribution]
 registry = "pypi"

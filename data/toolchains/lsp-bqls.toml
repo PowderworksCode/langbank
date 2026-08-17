@@ -5,6 +5,7 @@ languages = ["sql"]
 programs = ["bqls"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/kitagry/bqls"
 
 [distribution]
 registry = "github"

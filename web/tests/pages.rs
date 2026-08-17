@@ -176,6 +176,53 @@ fn the_front_page_leads_with_what_is_known_rather_than_with_prose() {
 }
 
 #[test]
+fn every_thing_langbank_carries_has_a_page() {
+    // The point of the routes: `/toolchains/bun` is an address, not an anchor
+    // into a table of a thousand rows.
+    for entry in langbank::toolchains() {
+        assert!(pages::toolchain(entry.id).is_some(), "{}", entry.id);
+    }
+    for entry in langbank::ecosystem_profiles() {
+        assert!(pages::ecosystem(entry.id).is_some(), "{}", entry.id);
+    }
+    for entry in langbank::package_registries() {
+        assert!(pages::registry(entry.id).is_some(), "{}", entry.id);
+    }
+    for entry in langbank::tool_profiles() {
+        assert!(pages::tool(entry.id).is_some(), "{}", entry.id);
+    }
+    assert!(pages::toolchain("not-a-toolchain").is_none());
+}
+
+#[test]
+fn a_page_shows_the_links_its_entry_carries() {
+    let bun = pages::ecosystem("bun").expect("bun");
+    assert!(bun.contains("https://bun.sh"), "no website");
+    assert!(bun.contains("https://github.com/oven-sh/bun"), "no source");
+
+    // The rule: a homepage that is the repository is not recorded twice, so a
+    // project whose site is its README shows one link rather than the same URL
+    // under two labels.
+    let entry = langbank::toolchains()
+        .iter()
+        .find(|entry| entry.origin.repository.is_some() && entry.origin.homepage.is_none())
+        .expect("some tool has only its code");
+    let page = pages::toolchain(entry.id).expect("page");
+    let repository = entry.origin.repository.unwrap_or_default();
+    assert_eq!(
+        page.matches(repository).count(),
+        1,
+        "{} lists its repository more than once",
+        entry.id
+    );
+    assert!(
+        !page.contains(">website<"),
+        "{} claims a website it has not got",
+        entry.id
+    );
+}
+
+#[test]
 fn the_index_shows_how_much_is_known_about_each_language() {
     let html = pages::languages();
     // Eight cells per language, filled ones marked.
@@ -200,6 +247,21 @@ fn coverage_agrees_with_what_the_tool_reports() {
             html.contains(&format!("<td class=\"num\">{have}</td>")),
             "coverage page omits {} = {have}",
             facet.name()
+        );
+    }
+}
+
+#[test]
+fn a_thing_with_no_links_says_so_rather_than_showing_an_empty_line() {
+    let bare = langbank::toolchains()
+        .iter()
+        .find(|entry| entry.origin.is_unknown());
+    if let Some(entry) = bare {
+        let page = pages::toolchain(entry.id).expect("page");
+        assert!(
+            page.contains("No website or source recorded"),
+            "{} renders its absence as nothing at all",
+            entry.id
         );
     }
 }

@@ -4,6 +4,8 @@ kind = "language-server"
 languages = ["slang"]
 programs = ["slang"]
 categories = ["language-server", "compiler"]
+homepage = "https://shader-slang.com/"
+repository = "https://github.com/shader-slang/slang"
 
 [distribution]
 registry = "github"

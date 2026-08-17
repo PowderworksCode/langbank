@@ -5,6 +5,7 @@ languages = ["motoko"]
 programs = ["motoko-lsp"]
 root-markers = ["dfx.json", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/dfinity/vscode-motoko"
 
 [distribution]
 registry = "openvsx"

@@ -2,6 +2,8 @@ id = "bazel"
 display-name = "Bazel modules"
 default-repository = "https://bcr.bazel.build"
 uses-repository = true
+homepage = "https://registry.bazel.build"
+repository = "https://github.com/bazelbuild/bazel-central-registry"
 
 [namespace]
 requirement = "prohibited"

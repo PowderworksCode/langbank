@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["go-critic"]
 categories = ["linter"]
+repository = "https://github.com/go-critic/go-critic"

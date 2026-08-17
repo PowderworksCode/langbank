@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["html"]
 programs = ["grunt-bootlint"]
 categories = ["linter"]
+repository = "https://github.com/twbs/grunt-bootlint"

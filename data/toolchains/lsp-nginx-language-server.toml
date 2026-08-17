@@ -5,6 +5,7 @@ languages = ["nginx"]
 programs = ["nginx-language-server"]
 root-markers = ["nginx.conf", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/pappasam/nginx-language-server"
 
 [distribution]
 registry = "pypi"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["shell"]
 programs = ["sh"]
 categories = ["linter"]
+homepage = "https://pkg.go.dev/mvdan.cc/sh/v3"
+repository = "https://github.com/mvdan/sh"

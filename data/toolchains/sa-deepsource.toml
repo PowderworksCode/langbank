@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go", "javascript", "python", "ruby", "sql"]
 programs = ["deepsource"]
 categories = ["linter"]
+homepage = "https://deepsource.com"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpdependencyanalysis"]
 categories = ["linter"]
+homepage = "https://mamuz.github.io/PhpDependencyAnalysis"
+repository = "https://github.com/mamuz/PhpDependencyAnalysis"

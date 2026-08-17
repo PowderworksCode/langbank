@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpca"]
 categories = ["linter"]
+repository = "https://github.com/wapmorgan/PhpCodeAnalyzer"

@@ -5,6 +5,7 @@ languages = ["move"]
 programs = ["move-analyzer"]
 root-markers = ["Move.toml"]
 categories = ["language-server"]
+homepage = "https://github.com/move-language/move"
 
 [distribution]
 registry = "cargo"

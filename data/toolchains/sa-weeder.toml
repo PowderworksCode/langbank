@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["haskell"]
 programs = ["weeder"]
 categories = ["linter"]
+repository = "https://github.com/ocharles/weeder"

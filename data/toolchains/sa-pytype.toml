@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["pytype"]
 categories = ["linter"]
+homepage = "https://google.github.io/pytype"
+repository = "https://github.com/google/pytype"

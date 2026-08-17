@@ -4,6 +4,8 @@ kind = "language-server"
 languages = ["dhall"]
 programs = ["dhall-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/dhall-lang/dhall-haskell/tree/master/dhall-lsp-server"
+repository = "https://github.com/dhall-lang/dhall-haskell"
 
 [distribution]
 registry = "github"

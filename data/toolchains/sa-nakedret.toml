@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["nakedret"]
 categories = ["linter"]
+repository = "https://github.com/alexkohler/nakedret"

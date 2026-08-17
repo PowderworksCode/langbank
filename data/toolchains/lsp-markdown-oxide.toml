@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["markdown-oxide"]
 root-markers = [".git", ".obsidian", ".moxide.toml"]
 categories = ["language-server"]
+repository = "https://github.com/feel-ix-343/markdown-oxide"
 
 [distribution]
 registry = "github"

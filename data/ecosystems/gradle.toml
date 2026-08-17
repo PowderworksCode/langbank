@@ -7,3 +7,5 @@ manifest = "build.gradle"
 alternate-manifests = ["build.gradle.kts"]
 lockfiles = ["gradle.lockfile"]
 manifest-selection = "default"
+homepage = "https://gradle.org"
+repository = "https://github.com/gradle/gradle"

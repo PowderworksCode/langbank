@@ -6,3 +6,5 @@ implied-languages = ["c", "cpp"]
 manifest = "vcpkg.json"
 alternate-manifests = ["vcpkg-configuration.json"]
 manifest-selection = "default"
+homepage = "https://vcpkg.io"
+repository = "https://github.com/microsoft/vcpkg"

@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyproject-flake8"]
 categories = ["linter"]
+homepage = "https://github.com/csachs/pyproject-flake8"
 
 [distribution]
 registry = "pypi"

@@ -5,6 +5,7 @@ languages = ["erlang"]
 programs = ["elp"]
 root-markers = ["rebar.config", "erlang.mk", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/WhatsApp/erlang-language-platform"
 
 [distribution]
 registry = "github"

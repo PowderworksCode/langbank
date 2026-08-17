@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-semver-checks"]
 categories = ["linter"]
+homepage = "https://crates.io/crates/cargo-semver-checks"
+repository = "https://github.com/obi1kenobi/cargo-semver-checks"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["dodgy"]
 categories = ["linter"]
+repository = "https://github.com/landscapeio/dodgy"

@@ -6,3 +6,5 @@ implied-languages = ["julia"]
 manifest = "Project.toml"
 lockfiles = ["Manifest.toml"]
 manifest-selection = "default"
+homepage = "https://pkgdocs.julialang.org"
+repository = "https://github.com/JuliaLang/Pkg.jl"

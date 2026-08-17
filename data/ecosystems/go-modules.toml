@@ -6,3 +6,5 @@ implied-languages = ["go"]
 manifest = "go.mod"
 alternate-manifests = ["go.work"]
 manifest-selection = "default"
+homepage = "https://go.dev/ref/mod"
+repository = "https://github.com/golang/go"

@@ -2,6 +2,8 @@ id = "pypi"
 display-name = "PyPI"
 default-repository = "https://pypi.org"
 uses-repository = true
+homepage = "https://pypi.org"
+repository = "https://github.com/pypi/warehouse"
 
 [namespace]
 requirement = "prohibited"

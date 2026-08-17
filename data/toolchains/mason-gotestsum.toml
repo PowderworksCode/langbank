@@ -3,6 +3,7 @@ display-name = "gotestsum"
 kind = "linter"
 languages = ["go"]
 programs = ["gotestsum"]
+homepage = "https://github.com/gotestyourself/gotestsum"
 
 [distribution]
 registry = "golang"

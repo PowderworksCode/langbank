@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["plsql"]
 programs = ["zpa"]
 categories = ["linter"]
+homepage = "https://zpa.felipebz.com"
+repository = "https://github.com/felipebz/zpa"

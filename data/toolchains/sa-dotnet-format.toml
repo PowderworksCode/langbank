@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c-sharp"]
 programs = ["dotnet-format"]
 categories = ["linter"]
+repository = "https://github.com/dotnet/format"

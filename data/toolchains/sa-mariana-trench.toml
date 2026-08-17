@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java"]
 programs = ["mariana trench"]
 categories = ["linter"]
+homepage = "https://mariana-tren.ch/"
+repository = "https://github.com/facebook/mariana-trench"

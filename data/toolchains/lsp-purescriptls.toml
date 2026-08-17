@@ -5,6 +5,7 @@ languages = ["purescript"]
 programs = ["purescript-language-server"]
 root-markers = ["bower.json", "flake.nix", "psc-package.json", "shell.nix", "spago.dhall", "spago.yaml"]
 categories = ["language-server"]
+homepage = "https://github.com/nwolverson/purescript-language-server"
 
 [distribution]
 registry = "npm"

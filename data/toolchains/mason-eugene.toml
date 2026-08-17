@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["sql"]
 programs = ["eugene"]
 categories = ["linter"]
+repository = "https://github.com/kaaveland/eugene"
 
 [distribution]
 registry = "github"

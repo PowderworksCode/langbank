@@ -5,6 +5,7 @@ languages = ["java"]
 programs = ["java-language-server"]
 root-markers = ["build.gradle", "build.gradle.kts", "pom.xml", ".git"]
 categories = ["language-server", "debugger"]
+repository = "https://github.com/georgewfraser/java-language-server"
 
 [distribution]
 registry = "github"

@@ -5,6 +5,7 @@ languages = ["clarity"]
 programs = ["clarinet"]
 root-markers = ["Clarinet.toml"]
 categories = ["language-server", "runtime"]
+repository = "https://github.com/hirosystems/clarinet"
 
 [distribution]
 registry = "github"

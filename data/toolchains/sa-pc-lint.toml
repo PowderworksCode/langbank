@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["pc-lint"]
 categories = ["linter"]
+homepage = "https://pclintplus.com/"

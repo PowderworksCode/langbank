@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["churn-php"]
 categories = ["linter"]
+repository = "https://github.com/bmitch/churn-php"

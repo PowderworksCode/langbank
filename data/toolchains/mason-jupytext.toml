@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["julia", "markdown", "python", "r"]
 programs = ["jupytext"]
 categories = ["formatter"]
+homepage = "https://jupytext.readthedocs.io"
 
 [distribution]
 registry = "pypi"

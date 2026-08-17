@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["meson"]
 programs = ["mesonlsp"]
 categories = ["language-server"]
+repository = "https://github.com/JCWasmx86/mesonlsp"
 
 [distribution]
 registry = "github"

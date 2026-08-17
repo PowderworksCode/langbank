@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java", "json", "kotlin", "typescript", "xml", "yaml"]
 programs = ["jqassistant"]
 categories = ["linter"]
+homepage = "https://jqassistant.org/"
+repository = "https://github.com/jqassistant/jqassistant"

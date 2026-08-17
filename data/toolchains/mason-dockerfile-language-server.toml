@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["dockerfile"]
 programs = ["dockerfile-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/rcjsuen/dockerfile-language-server-nodejs"
 
 [distribution]
 registry = "npm"

@@ -5,6 +5,8 @@ languages = ["solidity"]
 programs = ["solidity-ls"]
 root-markers = [".git", "package.json"]
 categories = ["language-server"]
+repository = "https://github.com/ethereum/solidity"
+homepage = "https://github.com/qiuxiang/solidity-ls"
 
 [distribution]
 registry = "npm"

@@ -1,6 +1,8 @@
 id = "swift"
 display-name = "Swift packages"
 uses-repository = true
+homepage = "https://swiftpackageindex.com"
+repository = "https://github.com/SwiftPackageIndex/SwiftPackageIndex-Server"
 
 [namespace]
 requirement = "required"

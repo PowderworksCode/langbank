@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyroma"]
 categories = ["linter"]
+repository = "https://github.com/regebro/pyroma"

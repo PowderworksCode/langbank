@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["php"]
 programs = ["php-debug-adapter"]
 categories = ["debugger"]
+repository = "https://github.com/xdebug/vscode-php-debug"
 
 [distribution]
 registry = "github"

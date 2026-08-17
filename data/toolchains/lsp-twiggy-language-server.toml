@@ -5,6 +5,7 @@ languages = ["twig"]
 programs = ["twiggy-language-server"]
 root-markers = ["composer.json", ".git"]
 categories = ["language-server", "linter"]
+homepage = "https://github.com/moetelo/twiggy"
 
 [distribution]
 registry = "npm"

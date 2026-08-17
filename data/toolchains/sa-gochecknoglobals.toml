@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["gochecknoglobals"]
 categories = ["linter"]
+repository = "https://github.com/leighmcculloch/gochecknoglobals"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["html", "python"]
 programs = ["django-template-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/fourdigits/django-template-lsp"
 
 [distribution]
 registry = "pypi"

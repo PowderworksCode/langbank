@@ -4,6 +4,8 @@ kind = "language-server"
 languages = ["r"]
 programs = ["r-languageserver"]
 categories = ["language-server"]
+homepage = "https://github.com/REditorSupport/languageserver"
+repository = "https://github.com/mason-org/r-languageserver"
 
 [distribution]
 registry = "github"

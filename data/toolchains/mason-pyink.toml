@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["python"]
 programs = ["pyink"]
 categories = ["formatter"]
+homepage = "https://pypi.org/project/pyink/"
 
 [distribution]
 registry = "pypi"

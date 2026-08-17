@@ -5,6 +5,7 @@ languages = ["ruby"]
 programs = ["solargraph"]
 root-markers = ["Gemfile", ".git"]
 categories = ["language-server"]
+homepage = "https://solargraph.org"
 
 [distribution]
 registry = "gem"

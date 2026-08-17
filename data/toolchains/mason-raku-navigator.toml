@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["raku"]
 programs = ["raku-navigator"]
 categories = ["language-server"]
+repository = "https://github.com/bscan/RakuNavigator"
 
 [distribution]
 registry = "github"

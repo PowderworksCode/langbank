@@ -5,6 +5,7 @@ languages = ["yaml"]
 programs = ["hydra-lsp"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/Retsediv/hydra-lsp"
 
 [distribution]
 registry = "pypi"

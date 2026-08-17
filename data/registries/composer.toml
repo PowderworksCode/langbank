@@ -2,6 +2,8 @@ id = "composer"
 display-name = "Composer"
 default-repository = "https://packagist.org"
 uses-repository = true
+homepage = "https://packagist.org"
+repository = "https://github.com/composer/packagist"
 
 [namespace]
 requirement = "required"

@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["haml"]
 programs = ["haml-lint"]
 categories = ["linter"]
+homepage = "https://github.com/sds/haml-lint"
 
 [distribution]
 registry = "gem"

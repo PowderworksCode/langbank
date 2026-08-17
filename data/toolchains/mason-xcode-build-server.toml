@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["swift"]
 programs = ["xcode-build-server"]
 categories = ["language-server"]
+repository = "https://github.com/SolaWing/xcode-build-server"
 
 [distribution]
 registry = "github"

@@ -3,6 +3,9 @@ display-name = "GCC"
 kind = "compiler"
 languages = ["c", "cpp"]
 programs = ["gcc", "g++"]
+homepage = "https://gcc.gnu.org/onlinedocs/gcc/Static-Analyzer-Options.html"
+repository = "https://github.com/gcc-mirror/gcc"
+categories = ["linter"]
 
 [version]
 arguments = ["--version"]
@@ -16,4 +19,3 @@ pattern = '(\d+\.\d+\.\d+)$'
 format = "json"
 arguments = ["-fdiagnostics-format=json"]
 stream = "stderr"
-categories = ["linter"]

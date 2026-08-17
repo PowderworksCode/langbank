@@ -3,6 +3,7 @@ display-name = "iferr"
 kind = "linter"
 languages = ["go"]
 programs = ["iferr"]
+homepage = "https://github.com/koron/iferr"
 
 [distribution]
 registry = "golang"

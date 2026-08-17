@@ -5,6 +5,7 @@ languages = ["marko"]
 programs = ["marko-language-server"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/marko-js/language-server"
 
 [distribution]
 registry = "npm"

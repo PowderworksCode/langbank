@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["markdown"]
 programs = ["remark-cli"]
 categories = ["formatter"]
+homepage = "https://remark.js.org/"
 
 [distribution]
 registry = "npm"

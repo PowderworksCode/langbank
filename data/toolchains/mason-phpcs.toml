@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpcs"]
 categories = ["linter"]
+repository = "https://github.com/PHPCSStandards/PHP_CodeSniffer"
 
 [distribution]
 registry = "github"

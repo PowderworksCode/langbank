@@ -7,6 +7,8 @@ manifest = "package.json"
 lockfiles = ["yarn.lock"]
 gitignore-patterns = ["node_modules/"]
 manifest-selection = "lockfile"
+homepage = "https://yarnpkg.com"
+repository = "https://github.com/yarnpkg/berry"
 
 [dependency-pins]
 syntax = "exact-semver"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["html"]
 programs = ["axe-core"]
 categories = ["linter"]
+homepage = "https://www.deque.com/axe/"
+repository = "https://github.com/dequelabs/axe-core"

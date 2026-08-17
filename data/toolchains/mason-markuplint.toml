@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["html"]
 programs = ["markuplint"]
 categories = ["linter"]
+homepage = "https://markuplint.dev"
 
 [distribution]
 registry = "npm"

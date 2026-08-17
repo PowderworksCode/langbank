@@ -1,6 +1,7 @@
 id = "swid"
 display-name = "Software Identification (SWID) Tag"
 uses-repository = false
+homepage = "https://csrc.nist.gov/projects/software-identification-swid"
 
 [namespace]
 requirement = "optional"

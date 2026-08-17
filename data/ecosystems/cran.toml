@@ -5,3 +5,4 @@ roles = ["package-manager"]
 implied-languages = ["r"]
 manifest = "DESCRIPTION"
 manifest-selection = "default"
+homepage = "https://cran.r-project.org"

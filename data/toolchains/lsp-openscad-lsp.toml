@@ -5,6 +5,7 @@ languages = ["openscad"]
 programs = ["openscad-lsp"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/Leathong/openscad-LSP"
 
 [distribution]
 registry = "cargo"

@@ -2,6 +2,8 @@ id = "conan"
 display-name = "Conan C/C++ packages"
 default-repository = "https://center.conan.io"
 uses-repository = true
+homepage = "https://conan.io"
+repository = "https://github.com/conan-io/conan"
 
 [namespace]
 requirement = "optional"

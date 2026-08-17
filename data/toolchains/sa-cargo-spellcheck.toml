@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-spellcheck"]
 categories = ["linter"]
+repository = "https://github.com/drahnr/cargo-spellcheck"

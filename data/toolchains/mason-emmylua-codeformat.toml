@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["lua"]
 programs = ["emmylua-codeformat"]
 categories = ["formatter"]
+repository = "https://github.com/CppCXY/EmmyLuaCodeStyle"
 
 [distribution]
 registry = "github"

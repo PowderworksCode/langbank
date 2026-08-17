@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["html", "ruby"]
 programs = ["erb-lint"]
 categories = ["linter"]
+homepage = "https://github.com/Shopify/erb-lint"
 
 [distribution]
 registry = "gem"

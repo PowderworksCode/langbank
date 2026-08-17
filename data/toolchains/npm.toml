@@ -3,6 +3,8 @@ display-name = "npm"
 kind = "package-manager"
 languages = ["javascript", "typescript"]
 programs = ["npm"]
+homepage = "https://www.npmjs.com"
+repository = "https://github.com/npm/cli"
 
 [version]
 arguments = ["--version"]

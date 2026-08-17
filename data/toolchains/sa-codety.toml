@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["cpp", "go", "java", "javascript", "json", "kotlin", "plsql", "python", "scala", "swift", "typescript"]
 programs = ["codety"]
 categories = ["linter"]
+homepage = "https://www.codety.io"
+repository = "https://github.com/codetyio/codety-scanner"

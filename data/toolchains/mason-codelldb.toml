@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["c", "cpp", "rust", "zig"]
 programs = ["codelldb"]
 categories = ["debugger"]
+repository = "https://github.com/vadimcn/vscode-lldb"
 
 [distribution]
 registry = "github"

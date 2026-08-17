@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["shell"]
 programs = ["bashate"]
 categories = ["linter"]
+repository = "https://github.com/openstack/bashate"

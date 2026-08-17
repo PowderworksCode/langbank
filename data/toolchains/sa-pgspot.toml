@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["sql"]
 programs = ["pgspot"]
 categories = ["linter"]
+repository = "https://github.com/timescale/pgspot"

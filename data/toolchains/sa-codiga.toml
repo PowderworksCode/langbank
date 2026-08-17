@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["apex", "c", "cpp", "dockerfile", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "scala", "typescript"]
 programs = ["codiga"]
 categories = ["linter"]
+homepage = "https://www.codiga.io"

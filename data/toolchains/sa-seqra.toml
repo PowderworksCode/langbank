@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java", "kotlin", "yaml"]
 programs = ["seqra"]
 categories = ["linter"]
+homepage = "https://seqra.dev"
+repository = "https://github.com/seqra/seqra"

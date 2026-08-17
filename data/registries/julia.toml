@@ -2,6 +2,8 @@ id = "julia"
 display-name = "Julia Package"
 default-repository = "https://github.com/JuliaRegistries/General"
 uses-repository = true
+homepage = "https://juliahub.com"
+repository = "https://github.com/JuliaRegistries/General"
 
 [namespace]
 requirement = "prohibited"

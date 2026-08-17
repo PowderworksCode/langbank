@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["assembly"]
 programs = ["asm-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/bergercookie/asm-lsp"
 
 [distribution]
 registry = "cargo"

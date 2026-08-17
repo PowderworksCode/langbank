@@ -5,6 +5,7 @@ languages = ["toml"]
 programs = ["tombi"]
 root-markers = ["tombi.toml", "pyproject.toml", ".git"]
 categories = ["formatter", "linter", "language-server"]
+repository = "https://github.com/tombi-toml/tombi"
 
 [distribution]
 registry = "github"

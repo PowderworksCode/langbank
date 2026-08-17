@@ -1,6 +1,8 @@
 id = "golang"
 display-name = "Go package"
 uses-repository = true
+homepage = "https://pkg.go.dev"
+repository = "https://github.com/golang/pkgsite"
 
 [namespace]
 requirement = "required"

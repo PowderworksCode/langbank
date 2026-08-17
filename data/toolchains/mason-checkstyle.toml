@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["java"]
 programs = ["checkstyle"]
 categories = ["linter"]
+homepage = "https://checkstyle.org"
+repository = "https://github.com/checkstyle/checkstyle"
 
 [distribution]
 registry = "github"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["saikuro"]
 categories = ["linter"]
+homepage = "https://metricfu.github.io/Saikuro"
+repository = "https://github.com/metricfu/Saikuro"

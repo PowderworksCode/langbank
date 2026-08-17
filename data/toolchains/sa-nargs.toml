@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["nargs"]
 categories = ["linter"]
+repository = "https://github.com/alexkohler/nargs"

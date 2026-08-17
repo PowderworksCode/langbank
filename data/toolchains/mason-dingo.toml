@@ -4,6 +4,7 @@ kind = "compiler"
 languages = ["go"]
 programs = ["dingo"]
 categories = ["compiler", "formatter", "linter"]
+homepage = "https://github.com/MadAppGang/dingo"
 
 [distribution]
 registry = "golang"

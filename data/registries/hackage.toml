@@ -2,6 +2,8 @@ id = "hackage"
 display-name = "Haskell package"
 default-repository = "https://hackage.haskell.org"
 uses-repository = true
+homepage = "https://hackage.haskell.org"
+repository = "https://github.com/haskell/hackage-server"
 
 [namespace]
 requirement = "prohibited"

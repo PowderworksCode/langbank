@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["bowler"]
 categories = ["linter"]
+homepage = "https://pybowler.io/"
+repository = "https://github.com/facebookincubator/bowler"

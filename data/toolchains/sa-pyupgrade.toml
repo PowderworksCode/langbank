@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyupgrade"]
 categories = ["linter"]
+homepage = "https://pypi.org/project/pyupgrade-docs/"
+repository = "https://github.com/asottile/pyupgrade"

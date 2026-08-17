@@ -5,6 +5,8 @@ languages = ["python"]
 programs = ["pyright-langserver"]
 root-markers = ["pyrightconfig.json", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
 categories = ["linter"]
+repository = "https://github.com/Microsoft/pyright"
+homepage = "https://github.com/microsoft/pyright"
 
 [distribution]
 registry = "npm"

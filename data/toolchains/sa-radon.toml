@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["radon"]
 categories = ["linter"]
+homepage = "https://radon.readthedocs.io/en/latest"
+repository = "https://github.com/rubik/radon"

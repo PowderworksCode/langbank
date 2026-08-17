@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["sandimeter"]
 categories = ["linter"]
+homepage = "https://rubygems.org/gems/sandi_meter"
+repository = "https://github.com/makaroni4/sandi_meter"

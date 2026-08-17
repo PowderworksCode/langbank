@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["sql"]
 programs = ["holistic"]
 categories = ["linter"]
+homepage = "https://holistic.dev/"

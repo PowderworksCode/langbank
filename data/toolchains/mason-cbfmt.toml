@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["markdown"]
 programs = ["cbfmt"]
 categories = ["formatter"]
+repository = "https://github.com/lukas-reineke/cbfmt"
 
 [distribution]
 registry = "github"

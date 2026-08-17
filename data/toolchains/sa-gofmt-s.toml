@@ -4,3 +4,5 @@ kind = "formatter"
 languages = ["go"]
 programs = ["gofmt -s"]
 categories = ["formatter", "linter"]
+homepage = "https://golang.org/cmd/gofmt"
+repository = "https://github.com/golang/go/tree/master/src/cmd/gofmt"

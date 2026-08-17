@@ -1,6 +1,8 @@
 id = "alpm"
 display-name = "Arch Linux package"
 uses-repository = true
+homepage = "https://wiki.archlinux.org/title/Pacman"
+repository = "https://gitlab.archlinux.org/pacman/pacman"
 
 [namespace]
 requirement = "required"

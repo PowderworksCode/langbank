@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["mondrian"]
 categories = ["linter"]
+homepage = "https://trismegiste.github.io/Mondrian"
+repository = "https://github.com/Trismegiste/Mondrian"

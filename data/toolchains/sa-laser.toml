@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["laser"]
 categories = ["linter"]
+repository = "https://github.com/michaeledgar/laser"

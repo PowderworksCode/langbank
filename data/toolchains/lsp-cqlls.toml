@@ -5,6 +5,7 @@ languages = ["cql"]
 programs = ["cqlls"]
 root-markers = [".cqlls", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/Akzestia/cqlls"
 
 [distribution]
 registry = "cargo"

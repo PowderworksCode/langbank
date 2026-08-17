@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["python"]
 programs = ["docformatter"]
 categories = ["formatter"]
+homepage = "https://pypi.org/project/docformatter/"
 
 [distribution]
 registry = "pypi"

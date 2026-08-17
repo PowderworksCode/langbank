@@ -2,6 +2,8 @@ id = "astro"
 programs = ["astro"]
 languages = ["javascript", "typescript"]
 ci-workload = "light"
+homepage = "https://astro.build"
+repository = "https://github.com/withastro/astro"
 
 [[commands]]
 arguments = ["check"]

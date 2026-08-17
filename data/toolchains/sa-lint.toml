@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["dart"]
 programs = ["lint"]
 categories = ["linter"]
+repository = "https://github.com/passsy/dart-lint"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c-sharp", "go", "java", "javascript", "php", "python", "ruby", "rust"]
 programs = ["threatmapper"]
 categories = ["linter"]
+repository = "https://github.com/deepfence/ThreatMapper"

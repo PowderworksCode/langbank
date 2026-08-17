@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["ezno"]
 categories = ["linter"]
+homepage = "https://kaleidawave.github.io/posts/introducing-ezno/"
+repository = "https://github.com/kaleidawave/ezno"

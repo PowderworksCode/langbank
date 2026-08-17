@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["deptrac"]
 categories = ["linter"]
+repository = "https://github.com/sensiolabs-de/deptrac"

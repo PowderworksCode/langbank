@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["markdown"]
 programs = ["markdownlint"]
 categories = ["linter", "formatter"]
+repository = "https://github.com/DavidAnson/markdownlint"
+homepage = "https://github.com/igorshubovych/markdownlint-cli"
 
 [distribution]
 registry = "npm"

@@ -3,6 +3,7 @@ display-name = "json-to-struct"
 kind = "linter"
 languages = ["go"]
 programs = ["json-to-struct"]
+homepage = "https://github.com/tmc/json-to-struct"
 
 [distribution]
 registry = "golang"

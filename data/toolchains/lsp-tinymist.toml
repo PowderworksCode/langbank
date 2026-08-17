@@ -5,6 +5,7 @@ languages = ["typst"]
 programs = ["tinymist"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/Myriad-Dreamin/tinymist"
 
 [distribution]
 registry = "github"

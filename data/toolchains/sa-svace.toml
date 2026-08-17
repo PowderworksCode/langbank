@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "java"]
 programs = ["svace"]
 categories = ["linter"]
+homepage = "https://www.ispras.ru/en/technologies/svace/"

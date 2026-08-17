@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["sql"]
 programs = ["sleek"]
 categories = ["formatter"]
+repository = "https://github.com/nrempel/sleek"
 
 [distribution]
 registry = "github"

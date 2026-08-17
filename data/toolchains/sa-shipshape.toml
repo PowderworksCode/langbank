@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["shipshape"]
 categories = ["linter"]
+repository = "https://github.com/google/shipshape"

@@ -5,6 +5,8 @@ languages = ["toml"]
 programs = ["taplo"]
 root-markers = [".taplo.toml", "taplo.toml", ".git"]
 categories = ["language-server", "formatter"]
+homepage = "https://taplo.tamasfe.dev/"
+repository = "https://github.com/tamasfe/taplo"
 
 [distribution]
 registry = "github"

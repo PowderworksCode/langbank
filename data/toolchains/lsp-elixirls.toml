@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["elixir"]
 programs = ["elixir-ls"]
 categories = ["language-server", "debugger"]
+repository = "https://github.com/elixir-lsp/elixir-ls"
 
 [distribution]
 registry = "github"

@@ -40,6 +40,24 @@ pub fn identify_query(query: &Query) -> String {
     pages::identify::render(query)
 }
 
+/// One page per thing, so `/toolchains/bun` and `/registries/npm` are
+/// addresses rather than anchors into a table of a thousand rows.
+pub fn toolchain(id: &str) -> Option<String> {
+    pages::entities::toolchain(id)
+}
+
+pub fn ecosystem(id: &str) -> Option<String> {
+    pages::entities::ecosystem(id)
+}
+
+pub fn registry(id: &str) -> Option<String> {
+    pages::entities::registry(id)
+}
+
+pub fn tool(id: &str) -> Option<String> {
+    pages::entities::tool(id)
+}
+
 pub fn ecosystems() -> String {
     pages::tables::ecosystems()
 }

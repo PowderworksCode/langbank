@@ -2,6 +2,8 @@ id = "cargo"
 programs = ["cargo"]
 languages = ["rust"]
 ci-workload = "heavy"
+homepage = "https://doc.rust-lang.org/cargo"
+repository = "https://github.com/rust-lang/cargo"
 
 [[commands]]
 arguments = ["test"]

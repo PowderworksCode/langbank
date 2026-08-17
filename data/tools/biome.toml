@@ -2,6 +2,8 @@ id = "biome"
 programs = ["biome"]
 languages = ["javascript", "typescript"]
 ci-workload = "light"
+homepage = "https://biomejs.dev"
+repository = "https://github.com/biomejs/biome"
 
 [[commands]]
 arguments = ["check"]

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["unconvert"]
 categories = ["linter"]
+repository = "https://github.com/mdempsky/unconvert"

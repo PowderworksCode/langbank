@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["earthly"]
 programs = ["earthlyls"]
 categories = ["language-server"]
+repository = "https://github.com/glehmann/earthlyls"
 
 [distribution]
 registry = "github"

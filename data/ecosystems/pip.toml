@@ -6,3 +6,5 @@ implied-languages = ["python"]
 manifest = "requirements.txt"
 alternate-manifests = ["setup.py", "setup.cfg"]
 manifest-selection = "default"
+homepage = "https://pip.pypa.io"
+repository = "https://github.com/pypa/pip"

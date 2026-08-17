@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["markdown"]
 programs = ["mdformat"]
 categories = ["formatter"]
+homepage = "https://mdformat.rtfd.io"
+repository = "https://github.com/executablebooks/mdformat"
 
 [distribution]
 registry = "pypi"

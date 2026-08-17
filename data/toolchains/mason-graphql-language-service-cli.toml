@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["graphql"]
 programs = ["graphql-language-service-cli"]
 categories = ["language-server"]
+homepage = "https://www.npmjs.com/package/graphql-language-service-cli"
 
 [distribution]
 registry = "npm"

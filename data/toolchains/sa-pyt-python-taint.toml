@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyt - python taint"]
 categories = ["linter"]
+repository = "https://github.com/python-security/pyt"

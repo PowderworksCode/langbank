@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["markdown"]
 programs = ["mdsf"]
 categories = ["formatter"]
+repository = "https://github.com/hougesen/mdsf"
+homepage = "https://github.com/hougesen/mdsf"
 
 [distribution]
 registry = "cargo"

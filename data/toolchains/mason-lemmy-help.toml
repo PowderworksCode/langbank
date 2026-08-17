@@ -3,6 +3,7 @@ display-name = "lemmy-help"
 kind = "linter"
 languages = ["lua"]
 programs = ["lemmy-help"]
+repository = "https://github.com/numToStr/lemmy-help"
 
 [distribution]
 registry = "github"

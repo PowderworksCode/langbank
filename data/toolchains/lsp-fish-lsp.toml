@@ -5,6 +5,7 @@ languages = ["fish"]
 programs = ["fish-lsp"]
 root-markers = ["config.fish", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/ndonfris/fish-lsp"
 
 [distribution]
 registry = "npm"

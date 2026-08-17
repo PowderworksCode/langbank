@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["sql"]
 programs = ["sqlcheck"]
 categories = ["linter"]
+repository = "https://github.com/jarulraj/sqlcheck"

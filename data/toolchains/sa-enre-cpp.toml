@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["enre-cpp"]
 categories = ["linter"]
+repository = "https://github.com/xjtu-enre/ENRE-cpp"

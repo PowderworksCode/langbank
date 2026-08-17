@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "groovy", "java", "javascript", "kotlin", "lua", "perl", "php", "plsql", "powershell", "python", "r", "ruby", "rust", "scala", "shell", "sql", "swift", "typescript", "vue"]
 programs = ["sigrid"]
 categories = ["linter"]
+homepage = "https://www.softwareimprovementgroup.com/solutions/sigrid-software-assurance-platform/"

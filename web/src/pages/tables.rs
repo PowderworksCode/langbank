@@ -39,13 +39,13 @@ pub fn ecosystems() -> String {
     let rows = html! {
         @for ecosystem in &all {
             tr id=(ecosystem.id) {
-                td { (ecosystem.display_name) }
+                td { (link(&format!("/ecosystems/{}", ecosystem.id), ecosystem.display_name)) }
                 td { (languages_of(ecosystem.implied_languages)) }
                 td { (or_dash(ecosystem.manifest.map(code))) }
                 td { (codes(ecosystem.lockfiles)) }
                 td {
                     (or_dash(ecosystem.registry.map(|r|
-                        link(&format!("/registries#{}", r.id), r.display_name))))
+                        link(&format!("/registries/{}", r.id), r.display_name))))
                 }
             }
         }
@@ -68,7 +68,7 @@ pub fn toolchains() -> String {
     let rows = html! {
         @for toolchain in &all {
             tr id=(toolchain.id) {
-                td { (toolchain.display_name) }
+                td { (link(&format!("/toolchains/{}", toolchain.id), toolchain.display_name)) }
                 td { (format!("{:?}", toolchain.kind).to_lowercase()) }
                 td { (languages_of(toolchain.languages)) }
                 td { (codes(toolchain.programs)) }
@@ -114,7 +114,7 @@ pub fn registries() -> String {
         @for registry in &all {
             tr id=(registry.id) {
                 td { (code(&format!("pkg:{}", registry.id))) }
-                td { (registry.display_name) }
+                td { (link(&format!("/registries/{}", registry.id), registry.display_name)) }
                 td { (spelling(&registry.namespace)) }
                 td { (spelling(&registry.name)) }
                 td { (or_dash(registry.default_repository.map(code))) }
@@ -141,7 +141,7 @@ pub fn tools() -> String {
     let rows = html! {
         @for tool in &all {
             tr id=(tool.id) {
-                td { (code(tool.id)) }
+                td { (link(&format!("/tools/{}", tool.id), tool.id)) }
                 td { (codes(tool.programs)) }
                 td { (languages_of(tool.languages)) }
                 td { (codes(tool.configuration_files)) }

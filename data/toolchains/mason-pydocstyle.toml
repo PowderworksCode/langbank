@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["python"]
 programs = ["pydocstyle"]
 categories = ["linter"]
+homepage = "http://www.pydocstyle.org"
+repository = "https://github.com/PyCQA/pydocstyle"
 
 [distribution]
 registry = "pypi"

@@ -2,6 +2,8 @@ id = "brew"
 display-name = "Homebrew"
 default-repository = "https://formulae.brew.sh/"
 uses-repository = true
+homepage = "https://brew.sh"
+repository = "https://github.com/Homebrew/brew"
 
 [namespace]
 requirement = "optional"

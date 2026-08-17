@@ -5,6 +5,7 @@ languages = ["thrift"]
 programs = ["thriftls"]
 root-markers = [".thrift"]
 categories = ["language-server"]
+repository = "https://github.com/joyme123/thrift-ls"
 
 [distribution]
 registry = "github"

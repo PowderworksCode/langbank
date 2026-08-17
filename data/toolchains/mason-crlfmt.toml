@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["go"]
 programs = ["crlfmt"]
 categories = ["formatter"]
+homepage = "https://github.com/cockroachdb/crlfmt"
 
 [distribution]
 registry = "golang"

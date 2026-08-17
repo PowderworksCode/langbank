@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["zizmor"]
 categories = ["linter"]
+homepage = "https://github.com/zizmorcore/zizmor"
 
 [distribution]
 registry = "pypi"

@@ -4,6 +4,8 @@ kind = "runtime"
 languages = ["starlark"]
 programs = ["tilt"]
 categories = ["runtime", "language-server"]
+homepage = "https://tilt.dev/"
+repository = "https://github.com/tilt-dev/tilt"
 
 [distribution]
 registry = "github"

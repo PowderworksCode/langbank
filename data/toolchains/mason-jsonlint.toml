@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["json"]
 programs = ["jsonlint"]
 categories = ["linter"]
+homepage = "https://jsonlint.com/"
+repository = "https://github.com/zaach/jsonlint"
 
 [distribution]
 registry = "npm"

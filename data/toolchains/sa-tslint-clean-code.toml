@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["tslint-clean-code"]
 categories = ["linter"]
+homepage = "https://www.npmjs.com/package/tslint-clean-code"
+repository = "https://github.com/Glavin001/tslint-clean-code"

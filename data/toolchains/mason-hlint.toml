@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["haskell"]
 programs = ["hlint"]
 categories = ["linter"]
+repository = "https://github.com/ndmitchell/hlint"
 
 [distribution]
 registry = "github"

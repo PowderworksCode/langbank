@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["astro"]
 programs = ["astro-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/withastro/language-tools"
 
 [distribution]
 registry = "npm"

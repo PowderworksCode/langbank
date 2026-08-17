@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["vim-script"]
 programs = ["vint"]
 categories = ["linter"]
+repository = "https://github.com/Kuniwak/vint"

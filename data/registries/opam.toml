@@ -2,6 +2,8 @@ id = "opam"
 display-name = "Opam package"
 default-repository = "https://opam.ocaml.org"
 uses-repository = true
+homepage = "https://opam.ocaml.org"
+repository = "https://github.com/ocaml/opam"
 
 [namespace]
 requirement = "prohibited"

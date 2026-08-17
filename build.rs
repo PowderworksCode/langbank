@@ -245,6 +245,23 @@ fn camel(value: &str) -> String {
 /// unreadable `data/gaps/` compiled to zero recorded absences, which is the
 /// exact "language-free world and no error" this file's header refuses to
 /// produce. A build that cannot see its data must not finish.
+/// `origin` for a generated entry: `homepage` only when it is somewhere other
+/// than the repository, which is the rule `crate::Origin` documents.
+fn origin(table: &Value) -> String {
+    let field = |key: &str| {
+        table
+            .get(key)
+            .and_then(Value::as_str)
+            .map(|value| format!("Some({value:?})"))
+            .unwrap_or_else(|| "None".to_string())
+    };
+    format!(
+        "crate::Origin {{ homepage: {}, repository: {} }}",
+        field("homepage"),
+        field("repository")
+    )
+}
+
 fn toml_files(directory: &Path) -> Vec<PathBuf> {
     let entries = std::fs::read_dir(directory)
         .unwrap_or_else(|error| panic!("read {}: {error}", directory.display()));
@@ -316,6 +333,7 @@ fn ecosystems(out: &mut String, directory: &Path) {
             out,
             "    pub mod {module} {{\n\
              \x20       pub static PROFILE: crate::EcosystemProfile = crate::EcosystemProfile {{\n\
+             \x20           origin: {origin},\n\
              \x20           id: {id:?},\n\
              \x20           display_name: {display:?},\n\
              \x20           roles: &[{roles}],\n\
@@ -332,6 +350,7 @@ fn ecosystems(out: &mut String, directory: &Path) {
              \x20       crate::registry::submit! {{ crate::EcosystemRegistration(&PROFILE) }}\n\
              {traversal}\
              \x20   }}",
+            origin = origin(&eco),
             module = ident(id),
             display = eco
                 .get("display-name")
@@ -528,6 +547,7 @@ fn tools(out: &mut String, directory: &Path) {
         writeln!(
             out,
             "    pub static {name}: crate::ToolProfile = crate::ToolProfile {{\n\
+             \x20       origin: {origin},\n\
              \x20       id: {id:?},\n\
              \x20       programs: {programs},\n\
              \x20       languages: &[{languages}],\n\
@@ -538,6 +558,7 @@ fn tools(out: &mut String, directory: &Path) {
              \x20       test_retry: {retry},\n\
              \x20   }};\n\
              \x20   crate::registry::submit! {{ crate::ToolRegistration(&{name}) }}",
+            origin = origin(&tool),
             name = screaming(id),
             programs = strs(tool.get("programs")),
             languages = languages.join(", "),
@@ -589,6 +610,7 @@ fn registries(out: &mut String, directory: &Path) {
         writeln!(
             out,
             "    pub static {name}: crate::PackageRegistry = crate::PackageRegistry {{\n\
+             \x20       origin: {origin},\n\
              \x20       id: {id:?},\n\
              \x20       display_name: {display:?},\n\
              \x20       default_repository: {repository},\n\
@@ -598,6 +620,7 @@ fn registries(out: &mut String, directory: &Path) {
              \x20       version: {version},\n\
              \x20   }};\n\
              \x20   crate::registry::submit! {{ crate::PackageRegistryRegistration(&{name}) }}",
+            origin = origin(&entry),
             name = screaming(id),
             display = entry
                 .get("display-name")
@@ -684,6 +707,7 @@ fn toolchains(out: &mut String, directory: &Path) {
         writeln!(
             out,
             "    pub static {name}: crate::Toolchain = crate::Toolchain {{\n\
+             \x20       origin: {origin},\n\
              \x20       id: {id:?},\n\
              \x20       display_name: {display:?},\n\
              \x20       kind: crate::ToolchainKind::{kind},\n\
@@ -696,6 +720,7 @@ fn toolchains(out: &mut String, directory: &Path) {
              \x20       root_markers: {markers},\n\
              \x20   }};\n\
              \x20   crate::registry::submit! {{ crate::ToolchainRegistration(&{name}) }}",
+            origin = origin(&entry),
             name = screaming(id),
             display = entry
                 .get("display-name")

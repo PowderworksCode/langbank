@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "lua"]
 programs = ["tscancode"]
 categories = ["linter"]
+repository = "https://github.com/Tencent/TscanCode"

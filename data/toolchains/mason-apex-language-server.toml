@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["apex"]
 programs = ["apex-language-server"]
 categories = ["language-server"]
+repository = "https://github.com/forcedotcom/salesforcedx-vscode"
 
 [distribution]
 registry = "github"

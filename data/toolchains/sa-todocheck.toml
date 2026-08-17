@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "groovy", "java", "javascript", "php", "python", "r", "rust", "scala", "shell", "swift", "typescript"]
 programs = ["todocheck"]
 categories = ["linter"]
+repository = "https://github.com/preslavmihaylov/todocheck"

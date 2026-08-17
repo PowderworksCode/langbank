@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cobol", "coldfusion", "cpp", "java", "javascript", "perl", "php", "plsql", "tsql", "vbscript"]
 programs = ["hcl appscan source"]
 categories = ["linter"]
+homepage = "https://www.hcltechsw.com/products/appscan"

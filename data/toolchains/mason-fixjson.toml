@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["json"]
 programs = ["fixjson"]
 categories = ["formatter"]
+homepage = "https://github.com/rhysd/fixjson"
 
 [distribution]
 registry = "npm"

@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["go"]
 programs = ["staticcheck"]
 categories = ["linter"]
+homepage = "https://staticcheck.io"
+repository = "https://github.com/dominikh/go-tools"
 
 [distribution]
 registry = "golang"

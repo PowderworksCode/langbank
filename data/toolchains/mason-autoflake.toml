@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["python"]
 programs = ["autoflake"]
 categories = ["formatter"]
+repository = "https://github.com/PyCQA/autoflake"
+homepage = "https://pypi.org/project/autoflake/"
 
 [distribution]
 registry = "pypi"

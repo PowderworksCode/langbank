@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go", "java", "javascript", "php", "python", "ruby", "typescript"]
 programs = ["snyk code"]
 categories = ["linter"]
+homepage = "https://snyk.io"

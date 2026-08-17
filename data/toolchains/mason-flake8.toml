@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["python"]
 programs = ["flake8"]
 categories = ["linter"]
+homepage = "https://github.com/PyCQA/flake8"
 
 [distribution]
 registry = "pypi"

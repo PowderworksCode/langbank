@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["twig"]
 programs = ["twigcs"]
 categories = ["linter"]
+repository = "https://github.com/friendsoftwig/twigcs"
 
 [distribution]
 registry = "github"

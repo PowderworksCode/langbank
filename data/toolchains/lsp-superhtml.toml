@@ -5,6 +5,7 @@ languages = ["html"]
 programs = ["superhtml"]
 root-markers = [".git"]
 categories = ["language-server", "formatter"]
+repository = "https://github.com/kristoff-it/superhtml"
 
 [distribution]
 registry = "github"

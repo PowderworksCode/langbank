@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "fortran", "java", "javascript", "php", "python", "scala", "typescript"]
 programs = ["coverity"]
 categories = ["linter"]
+homepage = ">-"

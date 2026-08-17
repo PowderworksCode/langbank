@@ -5,6 +5,8 @@ languages = ["shell"]
 programs = ["shuck"]
 root-markers = [".shuck.toml", ".git"]
 categories = ["language-server", "linter", "formatter"]
+homepage = "https://ewhauser.github.io/shuck/"
+repository = "https://github.com/ewhauser/shuck"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["haskell"]
 programs = ["haskell-language-server"]
 categories = ["language-server"]
+homepage = "https://haskell-language-server.readthedocs.io/en/latest/"
 
 [distribution]
 registry = "generic"

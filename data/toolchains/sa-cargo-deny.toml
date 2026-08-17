@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-deny"]
 categories = ["linter"]
+homepage = "https://embarkstudios.github.io/cargo-deny"
+repository = "https://github.com/EmbarkStudios/cargo-deny"

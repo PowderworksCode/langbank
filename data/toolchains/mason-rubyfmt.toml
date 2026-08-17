@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["ruby"]
 programs = ["rubyfmt"]
 categories = ["formatter"]
+repository = "https://github.com/fables-tales/rubyfmt"
 
 [distribution]
 registry = "github"

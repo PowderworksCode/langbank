@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["shell"]
 programs = ["shellcheck"]
 categories = ["linter"]
+homepage = "https://www.shellcheck.net"
+repository = "https://github.com/koalaman/shellcheck"
 
 [distribution]
 registry = "github"

@@ -2,6 +2,7 @@ id = "chrome-extension"
 display-name = "Chrome Browser Extensions"
 default-repository = "https://chromewebstore.google.com/"
 uses-repository = true
+homepage = "https://chromewebstore.google.com"
 
 [namespace]
 requirement = "prohibited"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["tsgo"]
 categories = ["language-server"]
+homepage = "https://github.com/microsoft/typescript-go"
 
 [distribution]
 registry = "npm"

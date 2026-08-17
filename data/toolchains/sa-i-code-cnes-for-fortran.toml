@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["fortran"]
 programs = ["i-code cnes for fortran"]
 categories = ["linter"]
+repository = "https://github.com/lequal/i-CodeCNES"

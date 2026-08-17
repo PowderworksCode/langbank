@@ -109,6 +109,9 @@ pub struct Toolchain {
     /// `compile_commands.json` and ts_ls wants a lockfile; unioning those by
     /// language yields a pile in which `Cargo.toml` is outvoted by the config
     /// files of every generic formatter that happens to list Rust.
+    /// Where the project lives and where its code is. `homepage` is set
+    /// only when it is somewhere other than the repository.
+    pub origin: crate::Origin,
     pub root_markers: &'static [&'static str],
 }
 

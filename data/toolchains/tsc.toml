@@ -3,12 +3,13 @@ display-name = "TypeScript compiler"
 kind = "type-checker"
 languages = ["typescript"]
 programs = ["tsc"]
+homepage = "https://www.typescriptlang.org/"
+categories = ["compiler", "language-server"]
 
 [version]
 arguments = ["--version"]
 stream = "stdout"
 pattern = '^Version (\d+\.\d+\.\d+)'
-categories = ["compiler", "language-server"]
 
 [distribution]
 registry = "npm"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["xcode"]
 categories = ["linter"]
+homepage = "https://developer.apple.com/xcode"

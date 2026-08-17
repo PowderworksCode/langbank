@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["wap"]
 categories = ["linter"]
+homepage = "https://securityonline.info/owasp-wap-web-application-protection-project"
+repository = "https://awap.sourceforge.io"

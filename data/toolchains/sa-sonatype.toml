@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "clojure", "coffeescript", "cpp", "go", "groovy", "java", "javascript", "kotlin", "php", "python", "r", "ruby", "rust", "scala", "swift"]
 programs = ["sonatype"]
 categories = ["linter"]
+repository = "https://www.sonatype.com"

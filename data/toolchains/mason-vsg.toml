@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["vhdl"]
 programs = ["vsg"]
 categories = ["formatter", "linter"]
+homepage = "https://pypi.org/project/vsg/"
 
 [distribution]
 registry = "pypi"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["typescript eslint"]
 categories = ["linter"]
+repository = "https://github.com/typescript-eslint/typescript-eslint"

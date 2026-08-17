@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["http"]
 programs = ["kulala-fmt"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/mistweaverco/kulala-fmt"
 
 [distribution]
 registry = "npm"

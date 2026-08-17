@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["html", "ruby"]
 programs = ["erb-formatter"]
 categories = ["formatter"]
+homepage = "https://github.com/nebulab/erb-formatter"
 
 [distribution]
 registry = "gem"

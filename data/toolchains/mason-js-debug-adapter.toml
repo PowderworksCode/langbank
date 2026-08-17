@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["javascript", "typescript"]
 programs = ["js-debug-adapter"]
 categories = ["debugger"]
+repository = "https://github.com/microsoft/vscode-js-debug"
 
 [distribution]
 registry = "github"

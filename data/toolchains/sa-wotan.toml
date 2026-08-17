@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["wotan"]
 categories = ["linter"]
+repository = "https://github.com/fimbullinter/wotan"

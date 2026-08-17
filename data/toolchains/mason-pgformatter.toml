@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["sql"]
 programs = ["pgformatter"]
 categories = ["formatter"]
+homepage = "http://sqlformat.darold.net"
+repository = "https://github.com/darold/pgformatter"
 
 [distribution]
 registry = "github"

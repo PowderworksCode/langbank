@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["verilog"]
 programs = ["icarus verilog"]
 categories = ["linter"]
+homepage = "https://github.com/steveicarus/iverilog"
+repository = "http://iverilog.icarus.com/"

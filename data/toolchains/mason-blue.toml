@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["python"]
 programs = ["blue"]
 categories = ["formatter"]
+homepage = "https://blue.readthedocs.io/en/latest/"
 
 [distribution]
 registry = "pypi"

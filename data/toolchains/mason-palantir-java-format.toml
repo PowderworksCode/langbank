@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["java"]
 programs = ["palantir-java-format"]
 categories = ["formatter"]
+homepage = "https://github.com/palantir/palantir-java-format"
 
 [distribution]
 registry = "generic"

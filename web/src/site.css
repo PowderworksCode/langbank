@@ -121,3 +121,11 @@ button:hover { opacity: .9 }
 .facets td.wide { width: 40%; min-width: 5rem }
 .facets td.dim, .dim { color: var(--dim) }
 .grid.marked li { display: flex; align-items: baseline; gap: 0 }
+
+/* The website/source links under a title. Two at most, and usually one:
+   `Origin` records a homepage only when it is not the repository. */
+.links { margin: -.2rem 0 1.2rem; display: flex; gap: .5rem; flex-wrap: wrap }
+.links .ext { font-size: .85rem; text-decoration: none; border: 1px solid var(--line);
+              border-radius: 4px; padding: .15rem .6rem; background: var(--card) }
+.links .ext:hover { border-color: var(--accent) }
+.links .ext::after { content: " \2197"; opacity: .5; font-size: .85em }

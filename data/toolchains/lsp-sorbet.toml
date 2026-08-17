@@ -5,6 +5,8 @@ languages = ["ruby"]
 programs = ["srb"]
 root-markers = ["Gemfile", ".git"]
 categories = ["language-server"]
+homepage = "https://sorbet.org"
+repository = "https://github.com/sorbet/sorbet"
 
 [distribution]
 registry = "gem"

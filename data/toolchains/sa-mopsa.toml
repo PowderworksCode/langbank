@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["c", "python"]
 programs = ["mopsa"]
 categories = ["linter"]
+homepage = "https://mopsa.lip6.fr"
+repository = "https://gitlab.com/mopsa/mopsa-analyzer"

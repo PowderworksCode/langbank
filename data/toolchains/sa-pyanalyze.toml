@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyanalyze"]
 categories = ["linter"]
+homepage = "https://pyanalyze.readthedocs.io/en/latest/"
+repository = "https://github.com/quora/pyanalyze"

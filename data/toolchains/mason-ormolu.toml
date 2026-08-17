@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["haskell"]
 programs = ["ormolu"]
 categories = ["formatter"]
+homepage = "https://hackage.haskell.org/package/ormolu"
+repository = "https://github.com/tweag/ormolu"
 
 [distribution]
 registry = "github"

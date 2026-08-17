@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["nginx"]
 programs = ["nginx-config-formatter"]
 categories = ["formatter"]
+homepage = "https://github.com/slomkowski/nginx-config-formatter"
 
 [distribution]
 registry = "pypi"

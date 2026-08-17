@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["c-sharp"]
 programs = ["csharpier"]
 categories = ["formatter"]
+homepage = "https://csharpier.com"
 
 [distribution]
 registry = "nuget"

@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["gdscript"]
 programs = ["gdtoolkit"]
 categories = ["linter", "formatter"]
+homepage = "https://github.com/Scony/godot-gdscript-toolkit"
 
 [distribution]
 registry = "pypi"

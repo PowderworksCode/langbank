@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpdocumentor"]
 categories = ["linter"]
+homepage = "https://www.phpdoc.org"
+repository = "https://github.com/phpDocumentor/phpDocumentor"

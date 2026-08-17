@@ -1,6 +1,8 @@
 id = "git"
 display-name = "Git"
 uses-repository = true
+homepage = "https://git-scm.com"
+repository = "https://github.com/git/git"
 
 [namespace]
 requirement = "required"

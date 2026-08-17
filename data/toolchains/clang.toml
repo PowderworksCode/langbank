@@ -6,6 +6,8 @@ languages = ["c", "cpp", "objective-c"]
 # packaged builds land as `clang-20`. A consumer that probes only `clang` will
 # conclude a machine has no C compiler when it has two.
 programs = ["clang", "clang-21", "clang-20", "clang-19"]
+homepage = "https://clang.llvm.org"
+repository = "https://github.com/llvm/llvm-project"
 
 [version]
 arguments = ["--version"]

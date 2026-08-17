@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["go"]
 programs = ["gofumpt"]
 categories = ["formatter"]
+repository = "https://github.com/mvdan/gofumpt"
+homepage = "https://pkg.go.dev/mvdan.cc/gofumpt"
 
 [distribution]
 registry = "golang"

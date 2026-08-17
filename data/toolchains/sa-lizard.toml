@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "lua", "php", "python", "ruby", "rust", "scala", "swift", "typescript"]
 programs = ["lizard"]
 categories = ["linter"]
+repository = "https://github.com/terryyin/lizard"

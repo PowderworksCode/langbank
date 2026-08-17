@@ -1,6 +1,7 @@
 id = "huggingface"
 display-name = "HuggingFace models"
 uses-repository = true
+homepage = "https://huggingface.co"
 
 [namespace]
 requirement = "required"

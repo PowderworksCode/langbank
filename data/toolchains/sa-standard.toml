@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["standard"]
 categories = ["linter"]
+homepage = "http://standardjs.com"
+repository = "https://github.com/standard/standard"

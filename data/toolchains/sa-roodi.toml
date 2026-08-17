@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["roodi"]
 categories = ["linter"]
+repository = "https://github.com/roodi/roodi"

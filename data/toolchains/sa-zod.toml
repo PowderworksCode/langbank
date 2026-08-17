@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["zod"]
 categories = ["linter"]
+homepage = "https://zod.dev"
+repository = "https://github.com/colinhacks/zod"

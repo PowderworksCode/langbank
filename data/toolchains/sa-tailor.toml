@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["swift"]
 programs = ["tailor"]
 categories = ["linter"]
+homepage = "https://sleekbyte.github.io/tailor"
+repository = "https://github.com/sleekbyte/tailor"

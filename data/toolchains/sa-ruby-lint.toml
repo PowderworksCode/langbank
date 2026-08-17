@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["ruby-lint"]
 categories = ["linter"]
+repository = "https://gitlab.com/yorickpeterse/ruby-lint"

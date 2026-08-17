@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java", "javascript"]
 programs = ["wala"]
 categories = ["linter"]
+repository = "https://github.com/wala/WALA"

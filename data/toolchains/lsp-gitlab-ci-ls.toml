@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["gitlab-ci-ls"]
 categories = ["language-server"]
+homepage = "https://github.com/alesbrelih/gitlab-ci-ls"
 
 [distribution]
 registry = "cargo"

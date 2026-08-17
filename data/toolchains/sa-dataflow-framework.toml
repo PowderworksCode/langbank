@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java"]
 programs = ["dataflow framework"]
 categories = ["linter"]
+repository = "https://github.com/typetools/checker-framework"

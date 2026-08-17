@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
 programs = ["prettierd"]
 categories = ["formatter"]
+homepage = "https://github.com/fsouza/prettierd"
 
 [distribution]
 registry = "npm"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["starlark"]
 programs = ["bzl"]
 categories = ["language-server", "debugger"]
+homepage = "https://bzl.io/"
 
 [distribution]
 registry = "generic"

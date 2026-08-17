@@ -5,3 +5,5 @@ languages = ["javascript"]
 programs = ["flow"]
 root-markers = [".flowconfig"]
 categories = ["linter"]
+homepage = "https://flow.org"
+repository = "https://github.com/facebook/flow"

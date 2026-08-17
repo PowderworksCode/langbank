@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cpplint"]
 categories = ["linter"]
+repository = "https://github.com/cpplint/cpplint"
+homepage = "https://pypi.org/project/cpplint/"
 
 [distribution]
 registry = "pypi"

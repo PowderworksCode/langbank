@@ -5,6 +5,8 @@ languages = ["fortran"]
 programs = ["fortitude"]
 root-markers = ["fpm.toml", "fortitude.toml", ".fortitude.toml", ".git"]
 categories = ["linter"]
+homepage = "https://fortitude.readthedocs.io"
+repository = "https://github.com/PlasmaFAIR/fortitude"
 
 [distribution]
 registry = "github"

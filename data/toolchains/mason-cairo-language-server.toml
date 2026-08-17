@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["cairo"]
 programs = ["cairo-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/starkware-libs/cairo"
 
 [distribution]
 registry = "cargo"

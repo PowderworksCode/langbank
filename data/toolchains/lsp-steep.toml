@@ -5,6 +5,8 @@ languages = ["html-erb", "ruby"]
 programs = ["steep"]
 root-markers = ["Steepfile", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/soutaro/steep"
+homepage = "https://github.com/soutaro/steep"
 
 [distribution]
 registry = "gem"

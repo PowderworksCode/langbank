@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["go"]
 programs = ["osv-scanner"]
 categories = ["linter"]
+homepage = "https://osv.dev/"
+repository = "https://github.com/google/osv-scanner"

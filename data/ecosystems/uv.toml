@@ -6,3 +6,5 @@ implied-languages = ["python"]
 manifest = "pyproject.toml"
 lockfiles = ["uv.lock"]
 manifest-selection = "lockfile"
+homepage = "https://docs.astral.sh/uv"
+repository = "https://github.com/astral-sh/uv"

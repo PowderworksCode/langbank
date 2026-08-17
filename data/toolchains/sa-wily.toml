@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["wily"]
 categories = ["linter"]
+repository = "https://github.com/tonybaloney/wily"
