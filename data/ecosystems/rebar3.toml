@@ -1,0 +1,10 @@
+id = "rebar3"
+registry = "hex"
+display-name = "Rebar3"
+roles = ["package-manager", "build-system"]
+implied-languages = ["erlang"]
+manifest = "rebar.config"
+lockfiles = ["rebar.lock"]
+manifest-selection = "default"
+homepage = "https://rebar3.org"
+repository = "https://github.com/erlang/rebar3"

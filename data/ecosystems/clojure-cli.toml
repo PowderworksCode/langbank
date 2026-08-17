@@ -1,0 +1,9 @@
+id = "clojure-cli"
+registry = "maven"
+display-name = "Clojure CLI"
+roles = ["package-manager", "build-system"]
+implied-languages = ["clojure"]
+manifest = "deps.edn"
+manifest-selection = "default"
+homepage = "https://clojure.org/guides/deps_and_cli"
+repository = "https://github.com/clojure/brew-install"
