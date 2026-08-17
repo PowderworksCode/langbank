@@ -3,6 +3,8 @@ display-name = "Node.js"
 kind = "runtime"
 languages = ["javascript", "typescript"]
 programs = ["node"]
+homepage = "https://nodejs.org"
+repository = "https://github.com/nodejs/node"
 
 [version]
 arguments = ["--version"]

@@ -3,6 +3,8 @@ display-name = "Bun"
 kind = "runtime"
 languages = ["javascript", "typescript"]
 programs = ["bun"]
+homepage = "https://bun.sh"
+repository = "https://github.com/oven-sh/bun"
 
 [version]
 arguments = ["--version"]

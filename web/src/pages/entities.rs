@@ -170,9 +170,21 @@ pub fn registry(id: &str) -> Option<String> {
 
 pub fn tool(id: &str) -> Option<String> {
     let entry = langbank::tool_profile(id)?;
+    // A profile covering several programs is a category, not a project:
+    // `javascript-formatter` is prettier and dprint, and a single homepage
+    // would be a claim about one of them. Saying so is different from
+    // reporting a gap.
+    let is_category = entry.programs.len() > 1;
     let body = html! {
         h1 { (entry.id) }
-        (origin(&entry.origin))
+        @if is_category && entry.origin.is_unknown() {
+            p.dim.links {
+                "A category rather than one project — it covers "
+                (entry.programs.len()) " programs, which have their own homes."
+            }
+        } @else {
+            (origin(&entry.origin))
+        }
         dl {
             (row("programs", some(!entry.programs.is_empty(), codes(entry.programs))))
             (row("languages", some(!entry.languages.is_empty(), language_links(entry.languages))))

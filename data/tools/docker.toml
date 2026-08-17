@@ -2,6 +2,8 @@ id = "docker"
 programs = ["docker"]
 languages = []
 ci-workload = "heavy"
+homepage = "https://www.docker.com"
+repository = "https://github.com/moby/moby"
 
 [[commands]]
 arguments = ["build"]

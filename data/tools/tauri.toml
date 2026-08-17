@@ -2,6 +2,8 @@ id = "tauri"
 programs = ["tauri"]
 languages = ["rust", "typescript"]
 ci-workload = "heavy"
+homepage = "https://tauri.app"
+repository = "https://github.com/tauri-apps/tauri"
 
 [[commands]]
 arguments = ["build"]

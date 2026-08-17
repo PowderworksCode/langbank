@@ -3,6 +3,8 @@ display-name = "rustc"
 kind = "compiler"
 languages = ["rust"]
 programs = ["rustc"]
+homepage = "https://www.rust-lang.org"
+repository = "https://github.com/rust-lang/rust"
 
 [version]
 arguments = ["--version"]

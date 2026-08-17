@@ -3,6 +3,8 @@ display-name = "Go"
 kind = "compiler"
 languages = ["go"]
 programs = ["go"]
+homepage = "https://go.dev"
+repository = "https://github.com/golang/go"
 
 [version]
 arguments = ["version"]

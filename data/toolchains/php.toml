@@ -3,6 +3,8 @@ display-name = "PHP"
 kind = "runtime"
 languages = ["php"]
 programs = ["php"]
+homepage = "https://www.php.net"
+repository = "https://github.com/php/php-src"
 
 [version]
 arguments = ["--version"]

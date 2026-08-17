@@ -4,6 +4,8 @@ kind = "runtime"
 languages = ["python"]
 # `python` is Python 2 on older systems and absent on many modern ones.
 programs = ["python3", "python"]
+homepage = "https://www.python.org"
+repository = "https://github.com/python/cpython"
 
 [version]
 arguments = ["--version"]

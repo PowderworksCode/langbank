@@ -2,6 +2,7 @@ id = "rustfmt"
 programs = ["rustfmt"]
 languages = ["rust"]
 ci-workload = "light"
+repository = "https://github.com/rust-lang/rustfmt"
 
 [[commands]]
 arguments = []

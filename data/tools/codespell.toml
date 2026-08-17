@@ -2,6 +2,7 @@ id = "codespell"
 programs = ["codespell"]
 languages = []
 ci-workload = "light"
+repository = "https://github.com/codespell-project/codespell"
 
 [[commands]]
 arguments = []

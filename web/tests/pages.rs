@@ -172,6 +172,10 @@ fn the_front_page_leads_with_what_is_known_rather_than_with_prose() {
     assert!(
         html.contains(&one.to_string()),
         "home omits the 1-of-8 count"
+    );
+}
+
+#[test]
 fn every_thing_langbank_carries_has_a_page() {
     // The point of the routes: `/toolchains/bun` is an address, not an anchor
     // into a table of a thousand rows.
@@ -243,6 +247,11 @@ fn coverage_agrees_with_what_the_tool_reports() {
             html.contains(&format!("<td class=\"num\">{have}</td>")),
             "coverage page omits {} = {have}",
             facet.name()
+        );
+    }
+}
+
+#[test]
 fn a_thing_with_no_links_says_so_rather_than_showing_an_empty_line() {
     let bare = langbank::toolchains()
         .iter()

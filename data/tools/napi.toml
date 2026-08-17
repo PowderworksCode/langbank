@@ -2,6 +2,8 @@ id = "napi"
 programs = ["napi"]
 languages = ["javascript", "typescript"]
 ci-workload = "heavy"
+homepage = "https://napi.rs"
+repository = "https://github.com/napi-rs/napi-rs"
 
 [[commands]]
 arguments = ["build"]

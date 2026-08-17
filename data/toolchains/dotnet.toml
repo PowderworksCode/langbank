@@ -3,6 +3,8 @@ display-name = ".NET SDK"
 kind = "build-system"
 languages = ["c-sharp", "f-sharp", "visual-basic-net"]
 programs = ["dotnet"]
+homepage = "https://dotnet.microsoft.com"
+repository = "https://github.com/dotnet/sdk"
 
 [version]
 arguments = ["--version"]

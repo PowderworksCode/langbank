@@ -3,6 +3,8 @@ display-name = "Zig"
 kind = "compiler"
 languages = ["zig"]
 programs = ["zig"]
+homepage = "https://ziglang.org"
+repository = "https://github.com/ziglang/zig"
 
 [version]
 arguments = ["version"]

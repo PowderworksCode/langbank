@@ -3,6 +3,8 @@ display-name = "Cargo"
 kind = "build-system"
 languages = ["rust"]
 programs = ["cargo"]
+homepage = "https://doc.rust-lang.org/cargo"
+repository = "https://github.com/rust-lang/cargo"
 
 [version]
 arguments = ["--version"]
