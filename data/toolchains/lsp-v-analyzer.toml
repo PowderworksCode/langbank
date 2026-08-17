@@ -5,6 +5,7 @@ languages = ["v"]
 programs = ["v-analyzer"]
 root-markers = ["v.mod", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/vlang/v-analyzer"
 
 [distribution]
 registry = "github"

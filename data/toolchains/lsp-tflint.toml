@@ -5,6 +5,7 @@ languages = ["hcl"]
 programs = ["tflint"]
 root-markers = [".terraform", ".git", ".tflint.hcl"]
 categories = ["language-server", "linter"]
+repository = "https://github.com/terraform-linters/tflint"
 
 [distribution]
 registry = "github"

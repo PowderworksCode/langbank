@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["nix"]
 programs = ["nixpkgs-fmt"]
 categories = ["formatter"]
+homepage = "https://github.com/nix-community/nixpkgs-fmt"
 
 [distribution]
 registry = "cargo"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["abap"]
 programs = ["abaplint"]
 categories = ["linter"]
+homepage = "https://abaplint.org"
+repository = "https://github.com/abaplint/abaplint"

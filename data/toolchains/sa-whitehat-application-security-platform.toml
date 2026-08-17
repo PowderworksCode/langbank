@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["html", "java", "javascript", "php", "typescript"]
 programs = ["whitehat application security platform"]
 categories = ["linter"]
+homepage = "https://source.whitehatsec.com/help/sentinel/sast-service-detail.html"

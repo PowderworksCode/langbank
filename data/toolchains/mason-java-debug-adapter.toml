@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["java"]
 programs = ["java-debug-adapter"]
 categories = ["debugger"]
+homepage = "https://github.com/microsoft/java-debug"
 
 [distribution]
 registry = "openvsx"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java"]
 programs = ["checker framework"]
 categories = ["linter"]
+homepage = "https://checkerframework.org"
+repository = "https://github.com/typetools/checker-framework"

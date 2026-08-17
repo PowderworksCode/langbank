@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["querly"]
 categories = ["linter"]
+repository = "https://github.com/soutaro/querly"

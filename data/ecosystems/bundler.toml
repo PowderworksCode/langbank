@@ -6,3 +6,5 @@ implied-languages = ["ruby"]
 manifest = "Gemfile"
 alternate-manifests = ["gems.rb"]
 manifest-selection = "default"
+homepage = "https://bundler.io"
+repository = "https://github.com/rubygems/rubygems"

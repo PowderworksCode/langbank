@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["sourcery"]
 categories = ["language-server"]
+homepage = "https://docs.sourcery.ai/"
 
 [distribution]
 registry = "pypi"

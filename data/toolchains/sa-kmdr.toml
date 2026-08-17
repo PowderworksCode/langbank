@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["shell"]
 programs = ["kmdr"]
 categories = ["linter"]
+repository = "https://github.com/ediardo/kmdr-cli"

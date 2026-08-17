@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-show-asm"]
 categories = ["linter"]
+repository = "https://github.com/pacak/cargo-show-asm"

@@ -2,6 +2,8 @@ id = "nuget"
 display-name = "NuGet"
 default-repository = "https://www.nuget.org"
 uses-repository = true
+homepage = "https://www.nuget.org"
+repository = "https://github.com/NuGet/NuGetGallery"
 
 [namespace]
 requirement = "prohibited"

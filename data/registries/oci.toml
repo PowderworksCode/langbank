@@ -1,6 +1,8 @@
 id = "oci"
 display-name = "OCI image"
 uses-repository = true
+homepage = "https://opencontainers.org"
+repository = "https://github.com/opencontainers/distribution-spec"
 
 [namespace]
 requirement = "prohibited"

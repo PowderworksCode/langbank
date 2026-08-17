@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["typst"]
 programs = ["typstyle"]
 categories = ["formatter"]
+repository = "https://github.com/Enter-tainer/typstyle"
 
 [distribution]
 registry = "github"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "c-sharp", "cpp", "java", "javascript", "python"]
 programs = ["relint"]
 categories = ["linter"]
+repository = "https://github.com/codingjoe/relint"

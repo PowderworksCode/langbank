@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["vue"]
 programs = ["vetur"]
 categories = ["linter", "formatter"]
+homepage = "https://marketplace.visualstudio.com/items?itemName=octref.vetur"
+repository = "https://github.com/vuejs/vetur"

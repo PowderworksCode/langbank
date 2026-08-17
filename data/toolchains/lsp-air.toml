@@ -5,6 +5,8 @@ languages = ["r"]
 programs = ["air"]
 root-markers = ["air.toml", ".air.toml", ".git"]
 categories = ["formatter", "language-server"]
+homepage = "https://posit-dev.github.io/air/"
+repository = "https://github.com/posit-dev/air"
 
 [distribution]
 registry = "github"

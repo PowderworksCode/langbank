@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["c-sharp", "f-sharp"]
 programs = ["sharpdbg"]
 categories = ["debugger"]
+homepage = "https://github.com/MattParkerDev/sharpdbg"
 
 [distribution]
 registry = "nuget"

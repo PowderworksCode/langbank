@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["ocaml"]
 programs = ["ocamlearlybird"]
 categories = ["debugger"]
+homepage = "https://github.com/hackwaly/ocamlearlybird"
 
 [distribution]
 registry = "opam"

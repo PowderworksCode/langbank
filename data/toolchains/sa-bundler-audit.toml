@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["bundler-audit"]
 categories = ["linter"]
+repository = "https://github.com/rubysec/bundler-audit"

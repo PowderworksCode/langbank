@@ -25,6 +25,7 @@ mod gap;
 mod ids;
 mod knowledge;
 mod language;
+mod origin;
 mod package_registry;
 mod tool;
 mod toolchain;
@@ -71,6 +72,7 @@ pub use languages::rust::PROFILE as RUST_LANGUAGE;
 pub use languages::scss::PROFILE as SCSS_LANGUAGE;
 pub use languages::shell::PROFILE as SHELL_LANGUAGE;
 pub use languages::typescript::PROFILE as TYPESCRIPT_LANGUAGE;
+pub use origin::{Origin, same_place};
 pub use package_registry::{
     IdentityComponent, PackageRegistry, PackageRegistryRegistration, Requirement,
     package_registries, package_registry,

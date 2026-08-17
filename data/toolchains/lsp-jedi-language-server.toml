@@ -5,6 +5,7 @@ languages = ["python"]
 programs = ["jedi-language-server"]
 root-markers = ["pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/pappasam/jedi-language-server"
 
 [distribution]
 registry = "pypi"

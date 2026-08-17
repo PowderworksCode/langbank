@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["php-speller"]
 categories = ["linter"]
+repository = "https://github.com/mekras/php-speller"

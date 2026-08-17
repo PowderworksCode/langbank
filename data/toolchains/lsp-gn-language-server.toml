@@ -5,6 +5,7 @@ languages = ["gn"]
 programs = ["gn-language-server"]
 root-markers = [".gn", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/google/gn-language-server"
 
 [distribution]
 registry = "github"

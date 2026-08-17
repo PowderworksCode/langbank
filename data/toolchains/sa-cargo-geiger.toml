@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-geiger"]
 categories = ["linter"]
+repository = "https://github.com/geiger-rs/cargo-geiger"

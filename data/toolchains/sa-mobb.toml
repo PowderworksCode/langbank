@@ -4,3 +4,4 @@ kind = "formatter"
 languages = ["java", "javascript", "typescript"]
 programs = ["mobb"]
 categories = ["formatter", "linter"]
+homepage = "https://mobb.ai"

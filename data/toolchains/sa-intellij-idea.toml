@@ -4,3 +4,4 @@ kind = "formatter"
 languages = ["java"]
 programs = ["intellij idea"]
 categories = ["formatter"]
+homepage = "https://www.jetbrains.com/idea"

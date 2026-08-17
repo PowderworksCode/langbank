@@ -4,3 +4,5 @@ roles = ["package-manager"]
 implied-languages = ["elm"]
 manifest = "elm.json"
 manifest-selection = "default"
+homepage = "https://elm-lang.org"
+repository = "https://github.com/elm/compiler"

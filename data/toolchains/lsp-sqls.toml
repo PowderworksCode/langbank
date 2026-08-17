@@ -5,6 +5,7 @@ languages = ["sql"]
 programs = ["sqls"]
 root-markers = ["config.yml"]
 categories = ["language-server"]
+homepage = "https://github.com/sqls-server/sqls"
 
 [distribution]
 registry = "golang"

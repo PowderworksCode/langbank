@@ -5,6 +5,7 @@ languages = ["nix"]
 programs = ["nil"]
 root-markers = ["flake.nix", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/oxalica/nil"
 
 [distribution]
 registry = "cargo"

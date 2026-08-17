@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["makefile"]
 programs = ["mbake"]
 categories = ["formatter", "linter"]
+homepage = "https://pypi.org/project/mbake/"
+repository = "https://github.com/EbodShojaei/bake"
 
 [distribution]
 registry = "pypi"

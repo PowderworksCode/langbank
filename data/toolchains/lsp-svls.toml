@@ -5,6 +5,8 @@ languages = ["systemverilog", "verilog"]
 programs = ["svls"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/dalance/svls"
+homepage = "https://github.com/dalance/svls"
 
 [distribution]
 registry = "cargo"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java"]
 programs = ["violations lib"]
 categories = ["linter"]
+repository = "https://github.com/tomasbjerre/violations-lib"

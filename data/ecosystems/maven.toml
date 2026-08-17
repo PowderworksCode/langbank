@@ -5,3 +5,5 @@ roles = ["package-manager", "build-system"]
 implied-languages = ["java"]
 manifest = "pom.xml"
 manifest-selection = "default"
+homepage = "https://maven.apache.org"
+repository = "https://github.com/apache/maven"

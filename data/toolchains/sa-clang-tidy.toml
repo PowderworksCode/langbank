@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["clang-tidy"]
 categories = ["linter"]
+repository = "https://clang.llvm.org/extra/clang-tidy"

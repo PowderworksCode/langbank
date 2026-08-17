@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["f-sharp"]
 programs = ["fsautocomplete"]
 categories = ["language-server"]
+homepage = "https://github.com/fsharp/FsAutoComplete"
 
 [distribution]
 registry = "nuget"

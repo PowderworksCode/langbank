@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["ocaml"]
 programs = ["ocamlformat"]
 categories = ["formatter"]
+homepage = "https://github.com/ocaml-ppx/ocamlformat"
 
 [distribution]
 registry = "opam"

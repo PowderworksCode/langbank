@@ -6,3 +6,5 @@ implied-languages = ["objective-c", "swift"]
 manifest = "Podfile"
 lockfiles = ["Podfile.lock"]
 manifest-selection = "default"
+homepage = "https://cocoapods.org"
+repository = "https://github.com/CocoaPods/CocoaPods"

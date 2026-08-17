@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["abap", "apex", "c", "cobol", "cpp", "dart", "go", "groovy", "html", "java", "javascript", "kotlin", "pascal", "perl", "php", "plsql", "python", "ruby", "rust", "scala", "swift", "vbscript", "xml"]
 programs = ["derscanner"]
 categories = ["linter"]
+homepage = "https://derscanner.com/"

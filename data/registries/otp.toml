@@ -1,6 +1,7 @@
 id = "otp"
 display-name = "BEAM/OTP Application"
 uses-repository = false
+homepage = "https://hex.pm"
 
 [namespace]
 requirement = "prohibited"

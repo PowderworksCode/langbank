@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["mutt-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/neomutt/mutt-language-server"
 
 [distribution]
 registry = "pypi"

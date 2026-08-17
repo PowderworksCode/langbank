@@ -5,3 +5,5 @@ roles = ["package-manager"]
 implied-languages = ["elixir"]
 manifest = "mix.exs"
 manifest-selection = "default"
+homepage = "https://hex.pm"
+repository = "https://github.com/hexpm/hex"

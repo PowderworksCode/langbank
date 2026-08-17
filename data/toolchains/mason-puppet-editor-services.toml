@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["puppet"]
 programs = ["puppet-editor-services"]
 categories = ["language-server", "debugger"]
+repository = "https://github.com/puppetlabs/puppet-editor-services"
 
 [distribution]
 registry = "github"

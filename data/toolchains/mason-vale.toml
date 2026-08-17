@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["markdown", "tex", "text"]
 programs = ["vale"]
 categories = ["linter"]
+homepage = "https://vale.sh/"
+repository = "https://github.com/errata-ai/vale"
 
 [distribution]
 registry = "github"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["rector"]
 categories = ["linter"]
+homepage = "https://getrector.org"
+repository = "https://github.com/rectorphp/rector"

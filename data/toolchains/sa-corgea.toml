@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "php", "python", "ruby", "typescript"]
 programs = ["corgea"]
 categories = ["linter"]
+homepage = "https://corgea.com/"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["astrée"]
 categories = ["linter"]
+homepage = "https://www.absint.com/astree/index.htm"

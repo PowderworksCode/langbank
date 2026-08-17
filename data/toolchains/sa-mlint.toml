@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["matlab"]
 programs = ["mlint"]
 categories = ["linter"]
+homepage = "https://www.mathworks.com/help/matlab/ref/mlint.html"

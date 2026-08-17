@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["cargo-expand"]
 categories = ["linter"]
+repository = "https://github.com/dtolnay/cargo-expand"

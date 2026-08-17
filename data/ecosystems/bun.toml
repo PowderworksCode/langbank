@@ -7,6 +7,8 @@ manifest = "package.json"
 lockfiles = ["bun.lock", "bun.lockb"]
 gitignore-patterns = ["node_modules/"]
 manifest-selection = "lockfile"
+homepage = "https://bun.sh"
+repository = "https://github.com/oven-sh/bun"
 
 [dependency-pins]
 syntax = "exact-semver"

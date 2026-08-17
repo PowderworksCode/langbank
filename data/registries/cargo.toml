@@ -2,6 +2,8 @@ id = "cargo"
 display-name = "Cargo"
 default-repository = "https://crates.io/"
 uses-repository = true
+homepage = "https://crates.io"
+repository = "https://github.com/rust-lang/crates.io"
 
 [namespace]
 requirement = "prohibited"

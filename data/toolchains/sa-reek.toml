@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["reek"]
 categories = ["linter"]
+repository = "https://github.com/troessner/reek"

@@ -5,6 +5,8 @@ languages = ["qml"]
 programs = ["qmlls"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://doc-snapshots.qt.io/qt6-dev/qtqml-tooling-qmlls.html"
+repository = "https://github.com/TheQtCompanyRnD/qmlls-workflow"
 
 [distribution]
 registry = "github"

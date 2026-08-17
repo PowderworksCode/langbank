@@ -5,6 +5,7 @@ languages = ["solidity"]
 programs = ["nomicfoundation-solidity-language-server"]
 root-markers = ["hardhat.config.js", "hardhat.config.ts", "foundry.toml", "remappings.txt", "truffle.js", "truffle-config.js", "ape-config.yaml", ".git", "package.json"]
 categories = ["language-server"]
+homepage = "https://github.com/NomicFoundation/hardhat-vscode"
 
 [distribution]
 registry = "npm"

@@ -7,3 +7,5 @@ manifest = "conanfile.txt"
 lockfiles = ["conan.lock"]
 alternate-manifests = ["conanfile.py"]
 manifest-selection = "default"
+homepage = "https://conan.io"
+repository = "https://github.com/conan-io/conan"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["haskell"]
 programs = ["stan"]
 categories = ["linter"]
+homepage = "https://kowainik.github.io/projects/stan"
+repository = "https://github.com/kowainik/stan"

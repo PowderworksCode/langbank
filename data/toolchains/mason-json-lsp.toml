@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["json"]
 programs = ["json-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/microsoft/vscode-json-languageservice"
 
 [distribution]
 registry = "npm"

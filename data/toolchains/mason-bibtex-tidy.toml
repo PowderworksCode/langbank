@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["tex"]
 programs = ["bibtex-tidy"]
 categories = ["formatter"]
+homepage = "https://github.com/FlamingTempura/bibtex-tidy"
 
 [distribution]
 registry = "npm"

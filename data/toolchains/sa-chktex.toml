@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["tex"]
 programs = ["chktex"]
 categories = ["linter"]
+homepage = "http://www.nongnu.org/chktex"
+repository = "http://git.savannah.nongnu.org/cgit/chktex.git"

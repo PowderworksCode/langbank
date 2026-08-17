@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["brakeman"]
 categories = ["linter"]
+homepage = "https://brakemanscanner.org"
+repository = "https://github.com/presidentbeef/brakeman"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["erlang"]
 programs = ["primitive erlang security tool (pest)"]
 categories = ["linter"]
+repository = "https://github.com/okeuday/pest"

@@ -2,6 +2,7 @@ id = "docker"
 display-name = "Docker image"
 default-repository = "https://hub.docker.com"
 uses-repository = true
+homepage = "https://hub.docker.com"
 
 [namespace]
 requirement = "optional"

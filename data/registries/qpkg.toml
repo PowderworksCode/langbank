@@ -1,6 +1,7 @@
 id = "qpkg"
 display-name = "QNX package"
 uses-repository = true
+homepage = "https://www.qnap.com"
 
 [namespace]
 requirement = "required"

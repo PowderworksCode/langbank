@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["escomplex"]
 categories = ["linter"]
+repository = "https://github.com/jared-stilwell/escomplex"

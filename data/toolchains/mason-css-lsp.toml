@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["css", "less", "scss"]
 programs = ["css-lsp"]
 categories = ["language-server"]
+homepage = "https://github.com/microsoft/vscode-css-languageservice"
 
 [distribution]
 registry = "npm"

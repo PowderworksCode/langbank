@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["rust"]
 programs = ["clippy"]
 categories = ["linter"]
+homepage = "https://rust-lang.github.io/rust-clippy"
+repository = "https://github.com/rust-lang/rust-clippy"

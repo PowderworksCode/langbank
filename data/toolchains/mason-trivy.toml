@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["c", "c-sharp", "cpp", "dart", "dockerfile", "elixir", "go", "hcl", "java", "javascript", "php", "python", "ruby", "rust", "typescript"]
 programs = ["trivy"]
 categories = ["linter"]
+repository = "https://github.com/aquasecurity/trivy"
 
 [distribution]
 registry = "github"

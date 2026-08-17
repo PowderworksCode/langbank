@@ -5,6 +5,7 @@ languages = ["python"]
 programs = ["pyre"]
 root-markers = [".pyre_configuration"]
 categories = ["language-server", "linter"]
+homepage = "https://pypi.org/project/pyre-check/"
 
 [distribution]
 registry = "pypi"

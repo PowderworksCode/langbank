@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["odin"]
 programs = ["ols"]
 categories = ["language-server", "formatter"]
+repository = "https://github.com/DanielGavin/ols"
 
 [distribution]
 registry = "github"

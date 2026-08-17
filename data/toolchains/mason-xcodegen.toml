@@ -4,6 +4,7 @@ kind = "runtime"
 languages = ["swift"]
 programs = ["xcodegen"]
 categories = ["runtime"]
+repository = "https://github.com/yonaskolb/XcodeGen"
 
 [distribution]
 registry = "github"

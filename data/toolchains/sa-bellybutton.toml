@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["bellybutton"]
 categories = ["linter"]
+repository = "https://github.com/hchasestevens/bellybutton"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["nim"]
 programs = ["nimlsp"]
 categories = ["language-server"]
+repository = "https://github.com/PMunch/nimlsp"
 
 [distribution]
 registry = "github"

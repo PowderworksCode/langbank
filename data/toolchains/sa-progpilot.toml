@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["progpilot"]
 categories = ["linter"]
+repository = "https://github.com/designsecurity/progpilot"

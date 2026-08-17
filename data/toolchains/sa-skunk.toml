@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["skunk"]
 categories = ["linter"]
+repository = "https://github.com/fastruby/skunk"

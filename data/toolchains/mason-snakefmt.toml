@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["snakemake"]
 programs = ["snakefmt"]
 categories = ["formatter"]
+homepage = "https://github.com/snakemake/snakefmt"
 
 [distribution]
 registry = "pypi"

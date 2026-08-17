@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["php"]
 programs = ["phpcbf"]
 categories = ["formatter"]
+repository = "https://github.com/PHPCSStandards/PHP_CodeSniffer"
 
 [distribution]
 registry = "github"

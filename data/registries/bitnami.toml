@@ -2,6 +2,8 @@ id = "bitnami"
 display-name = "Bitnami"
 default-repository = "https://downloads.bitnami.com/files/stacksmith"
 uses-repository = true
+homepage = "https://bitnami.com"
+repository = "https://github.com/bitnami/containers"
 
 [namespace]
 requirement = "prohibited"

@@ -5,6 +5,7 @@ languages = ["mcfunction"]
 programs = ["spyglassmc-language-server"]
 root-markers = ["pack.mcmeta"]
 categories = ["language-server"]
+homepage = "https://github.com/SpyglassMC/Spyglass/tree/main/packages/language-server"
 
 [distribution]
 registry = "npm"

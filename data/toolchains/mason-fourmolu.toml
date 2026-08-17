@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["haskell"]
 programs = ["fourmolu"]
 categories = ["formatter"]
+homepage = "https://hackage.haskell.org/package/fourmolu"
+repository = "https://github.com/fourmolu/fourmolu"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["handlebars", "javascript", "typescript"]
 programs = ["glint"]
 categories = ["language-server", "linter"]
+homepage = "https://typed-ember.gitbook.io/glint/"
 
 [distribution]
 registry = "npm"

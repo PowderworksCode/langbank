@@ -5,6 +5,7 @@ languages = ["typespec"]
 programs = ["tsp-server"]
 root-markers = ["tspconfig.yaml", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/microsoft/typespec"
 
 [distribution]
 registry = "npm"

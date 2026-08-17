@@ -5,6 +5,7 @@ languages = ["shell"]
 programs = ["bash-language-server"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/bash-lsp/bash-language-server"
 
 [distribution]
 registry = "npm"

@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["lua"]
 programs = ["local-lua-debugger-vscode"]
 categories = ["debugger"]
+homepage = "https://github.com/tomblind/local-lua-debugger-vscode"
 
 [distribution]
 registry = "openvsx"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["varcheck"]
 categories = ["linter"]
+repository = "https://gitlab.com/opennota/check"

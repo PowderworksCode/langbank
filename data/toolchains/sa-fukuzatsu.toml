@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["fukuzatsu"]
 categories = ["linter"]
+repository = "https://github.com/CoralineAda/fukuzatsu"

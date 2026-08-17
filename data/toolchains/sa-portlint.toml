@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["make"]
 programs = ["portlint"]
 categories = ["linter"]
+repository = ">-"

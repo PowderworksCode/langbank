@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["clojure"]
 programs = ["zprint-clj"]
 categories = ["formatter"]
+homepage = "https://github.com/clj-commons/zprint-clj"
 
 [distribution]
 registry = "npm"

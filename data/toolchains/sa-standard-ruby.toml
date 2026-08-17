@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["standard ruby"]
 categories = ["linter"]
+repository = "https://github.com/testdouble/standard"

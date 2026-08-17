@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["haskell"]
 programs = ["haskell-debug-adapter"]
 categories = ["debugger"]
+homepage = "https://github.com/phoityne/haskell-debug-adapter"
 
 [distribution]
 registry = "generic"

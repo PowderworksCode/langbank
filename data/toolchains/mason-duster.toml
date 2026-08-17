@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["blade", "php"]
 programs = ["duster"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/tighten/duster"
 
 [distribution]
 registry = "composer"

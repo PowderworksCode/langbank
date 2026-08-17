@@ -5,6 +5,8 @@ languages = ["ruby"]
 programs = ["rubocop"]
 root-markers = ["Gemfile", ".git"]
 categories = ["formatter", "linter", "language-server"]
+homepage = "https://docs.rubocop.org/rubocop"
+repository = "https://github.com/rubocop-hq/rubocop"
 
 [distribution]
 registry = "gem"

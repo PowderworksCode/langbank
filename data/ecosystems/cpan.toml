@@ -7,3 +7,4 @@ manifest = "cpanfile"
 lockfiles = ["cpanfile.snapshot"]
 alternate-manifests = ["Makefile.PL", "Build.PL"]
 manifest-selection = "default"
+homepage = "https://www.cpan.org"

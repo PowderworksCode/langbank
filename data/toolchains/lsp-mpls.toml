@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["mpls"]
 root-markers = [".marksman.toml", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/mhersson/mpls"
 
 [distribution]
 registry = "github"

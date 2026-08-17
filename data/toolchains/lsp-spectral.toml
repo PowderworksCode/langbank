@@ -5,6 +5,8 @@ languages = ["json", "yaml"]
 programs = ["spectral-language-server"]
 root-markers = [".spectral.yaml", ".spectral.yml", ".spectral.json", ".spectral.js"]
 categories = ["language-server"]
+homepage = "https://stoplight.io/open-source/spectral"
+repository = "https://github.com/stoplightio/spectral"
 
 [distribution]
 registry = "github"

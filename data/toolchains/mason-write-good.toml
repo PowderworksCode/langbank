@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["markdown"]
 programs = ["write-good"]
 categories = ["linter"]
+homepage = "https://github.com/btford/write-good"
 
 [distribution]
 registry = "npm"

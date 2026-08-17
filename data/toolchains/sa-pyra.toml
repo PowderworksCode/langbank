@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyra"]
 categories = ["linter"]
+repository = "https://github.com/spangea/Pyra"

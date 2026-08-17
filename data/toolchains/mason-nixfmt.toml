@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["nix"]
 programs = ["nixfmt"]
 categories = ["formatter"]
+repository = "https://github.com/NixOS/nixfmt"
 
 [distribution]
 registry = "github"

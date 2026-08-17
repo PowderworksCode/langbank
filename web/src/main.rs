@@ -15,11 +15,38 @@ use axum::{
 };
 use langbank_web as site;
 
-async fn language(Path(id): Path<String>) -> impl IntoResponse {
-    match site::language(&id) {
+/// Every entity type answers the same way: the page, or a 404 that names what
+/// was asked for.
+fn found(id: &str, page: Option<String>) -> (StatusCode, Html<String>) {
+    match page {
         Some(html) => (StatusCode::OK, Html(html)),
-        None => (StatusCode::NOT_FOUND, Html(site::not_found(&id))),
+        None => (StatusCode::NOT_FOUND, Html(site::not_found(id))),
     }
+}
+
+async fn language(Path(id): Path<String>) -> impl IntoResponse {
+    let page = site::language(&id);
+    found(&id, page)
+}
+
+async fn toolchain(Path(id): Path<String>) -> impl IntoResponse {
+    let page = site::toolchain(&id);
+    found(&id, page)
+}
+
+async fn ecosystem(Path(id): Path<String>) -> impl IntoResponse {
+    let page = site::ecosystem(&id);
+    found(&id, page)
+}
+
+async fn registry(Path(id): Path<String>) -> impl IntoResponse {
+    let page = site::registry(&id);
+    found(&id, page)
+}
+
+async fn tool(Path(id): Path<String>) -> impl IntoResponse {
+    let page = site::tool(&id);
+    found(&id, page)
 }
 
 /// GET carries the example links, which are short and worth sharing.
@@ -68,9 +95,13 @@ async fn main() {
         .route("/coverage", get(|| async { Html(site::coverage()) }))
         .route("/languages/{id}", get(language))
         .route("/ecosystems", get(|| async { Html(site::ecosystems()) }))
+        .route("/ecosystems/{id}", get(ecosystem))
         .route("/toolchains", get(|| async { Html(site::toolchains()) }))
+        .route("/toolchains/{id}", get(toolchain))
         .route("/registries", get(|| async { Html(site::registries()) }))
+        .route("/registries/{id}", get(registry))
         .route("/tools", get(|| async { Html(site::tools()) }))
+        .route("/tools/{id}", get(tool))
         .route("/gaps", get(|| async { Html(site::gaps()) }))
         .route(site::stylesheet_path(), get(stylesheet))
         .route("/identify", get(identify).post(identify_posted))

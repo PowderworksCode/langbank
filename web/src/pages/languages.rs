@@ -149,13 +149,13 @@ pub fn detail(id: &str) -> Option<String> {
             (row("toolchains", some(!toolchains.is_empty(), html! {
                 @for (index, toolchain) in toolchains.iter().enumerate() {
                     @if index > 0 { ", " }
-                    (link(&format!("/toolchains#{}", toolchain.id), toolchain.display_name))
+                    (link(&format!("/toolchains/{}", toolchain.id), toolchain.display_name))
                 }
             })))
             (row("ecosystems", some(!ecosystems.is_empty(), html! {
                 @for (index, ecosystem) in ecosystems.iter().enumerate() {
                     @if index > 0 { ", " }
-                    (link(&format!("/ecosystems#{}", ecosystem.id), ecosystem.display_name))
+                    (link(&format!("/ecosystems/{}", ecosystem.id), ecosystem.display_name))
                 }
             })))
             (row("shares", some(!contested.is_empty(), html! {

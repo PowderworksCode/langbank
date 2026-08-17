@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["exakat"]
 categories = ["linter"]
+homepage = "https://www.exakat.io"
+repository = "https://github.com/exakat/exakat"

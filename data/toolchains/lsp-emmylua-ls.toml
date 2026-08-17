@@ -4,6 +4,8 @@ kind = "language-server"
 languages = ["lua"]
 programs = ["emmylua_ls"]
 categories = ["language-server"]
+homepage = "https://github.com/CppCXY/emmylua-analyzer-rust/tree/main/crates/emmylua_ls"
+repository = "https://github.com/CppCXY/emmylua-analyzer-rust"
 
 [distribution]
 registry = "github"

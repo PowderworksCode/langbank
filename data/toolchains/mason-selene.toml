@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["lua", "luau"]
 programs = ["selene"]
 categories = ["linter"]
+homepage = "https://kampfkarren.github.io/selene/"
+repository = "https://github.com/Kampfkarren/selene"
 
 [distribution]
 registry = "github"

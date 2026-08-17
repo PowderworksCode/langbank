@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["dockerfile"]
 programs = ["dockle"]
 categories = ["linter"]
+repository = "https://github.com/goodwithtech/dockle"

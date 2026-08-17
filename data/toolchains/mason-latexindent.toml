@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["tex"]
 programs = ["latexindent"]
 categories = ["formatter"]
+repository = "https://github.com/cmhughes/latexindent.pl"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["go"]
 programs = ["nilaway"]
 categories = ["linter"]
+homepage = "https://github.com/uber-go/nilaway"
 
 [distribution]
 registry = "golang"

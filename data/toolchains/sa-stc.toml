@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["stc"]
 categories = ["linter"]
+homepage = "https://stc.dudy.dev"
+repository = "https://github.com/dudykr/stc"

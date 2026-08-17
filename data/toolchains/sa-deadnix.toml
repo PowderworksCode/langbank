@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["nix"]
 programs = ["deadnix"]
 categories = ["linter"]
+repository = "https://github.com/astro/deadnix"

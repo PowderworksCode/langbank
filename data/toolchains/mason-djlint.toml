@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["go", "handlebars", "jinja", "mustache", "nunjucks", "twig"]
 programs = ["djlint"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/Riverside-Healthcare/djLint"
 
 [distribution]
 registry = "pypi"

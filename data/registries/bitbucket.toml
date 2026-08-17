@@ -2,6 +2,7 @@ id = "bitbucket"
 display-name = "Bitbucket"
 default-repository = "https://bitbucket.org"
 uses-repository = true
+homepage = "https://bitbucket.org"
 
 [namespace]
 requirement = "required"

@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["ts-standard"]
 categories = ["linter", "formatter"]
+homepage = "https://github.com/standard/ts-standard"
 
 [distribution]
 registry = "npm"

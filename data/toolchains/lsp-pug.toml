@@ -5,6 +5,7 @@ languages = ["pug"]
 programs = ["pug-lsp"]
 root-markers = ["package.json"]
 categories = ["language-server"]
+repository = "https://github.com/opa-oz/pug-lsp"
 
 [distribution]
 registry = "github"

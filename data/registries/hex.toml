@@ -2,6 +2,8 @@ id = "hex"
 display-name = "Hex"
 default-repository = "https://repo.hex.pm"
 uses-repository = true
+homepage = "https://hex.pm"
+repository = "https://github.com/hexpm/hexpm"
 
 [namespace]
 requirement = "optional"

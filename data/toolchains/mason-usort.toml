@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["python"]
 programs = ["usort"]
 categories = ["formatter"]
+homepage = "https://usort.readthedocs.io/"
 
 [distribution]
 registry = "pypi"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["ada"]
 programs = ["ada-language-server"]
 categories = ["language-server"]
+repository = "https://github.com/AdaCore/ada_language_server"
 
 [distribution]
 registry = "github"

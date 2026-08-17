@@ -5,6 +5,7 @@ languages = ["opencl"]
 programs = ["opencl-language-server"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/Galarius/opencl-language-server"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["javascript", "typescript"]
 programs = ["firefox-debug-adapter"]
 categories = ["debugger"]
+repository = "https://github.com/firefox-devtools/vscode-firefox-debug"
 
 [distribution]
 registry = "github"

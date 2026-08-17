@@ -5,6 +5,7 @@ languages = ["aiken"]
 programs = ["aiken"]
 root-markers = ["aiken.toml", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/aiken-lang/aiken"
 
 [distribution]
 registry = "github"

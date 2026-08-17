@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["composer-dependency-analyser"]
 categories = ["linter"]
+repository = "https://github.com/shipmonk-rnd/composer-dependency-analyser"

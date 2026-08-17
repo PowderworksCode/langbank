@@ -12,6 +12,9 @@ manifest-selection = "default"
 
 # Directories the build system generates. Both names are generic enough to want
 # a marker, on the same reasoning `cargo.toml` gives for `target`.
+homepage = "https://ziglang.org"
+repository = "https://github.com/ziglang/zig"
+
 [[traversal]]
 name = ".zig-cache"
 markers = ["build.zig"]

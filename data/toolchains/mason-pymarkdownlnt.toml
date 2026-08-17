@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["markdown"]
 programs = ["pymarkdownlnt"]
 categories = ["linter"]
+homepage = "https://pypi.org/project/pymarkdownlnt/"
 
 [distribution]
 registry = "pypi"

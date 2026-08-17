@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["zk"]
 root-markers = [".zk"]
 categories = ["language-server"]
+repository = "https://github.com/zk-org/zk"
 
 [distribution]
 registry = "github"

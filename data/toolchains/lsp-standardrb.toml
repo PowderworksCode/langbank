@@ -5,6 +5,7 @@ languages = ["ruby"]
 programs = ["standardrb"]
 root-markers = ["Gemfile", ".git"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/testdouble/standard/"
 
 [distribution]
 registry = "gem"

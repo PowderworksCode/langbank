@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["gokart"]
 categories = ["linter"]
+repository = "https://github.com/praetorian-inc/gokart"

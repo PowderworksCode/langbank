@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["rev-dep"]
 categories = ["linter"]
+repository = "https://github.com/jayu/rev-dep"

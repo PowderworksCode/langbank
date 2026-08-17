@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["dotenv", "hcl"]
 programs = ["gitguardian ggshield"]
 categories = ["linter"]
+homepage = "https://www.gitguardian.com/ggshield"
+repository = "https://github.com/gitguardian/ggshield"

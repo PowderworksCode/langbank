@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["kotlin"]
 programs = ["diktat"]
 categories = ["linter", "formatter"]
+homepage = "https://diktat.saveourtool.com"
+repository = "https://github.com/saveourtool/diktat"

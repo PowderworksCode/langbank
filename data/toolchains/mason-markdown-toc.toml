@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["markdown"]
 programs = ["markdown-toc"]
 categories = ["formatter"]
+homepage = "https://github.com/jonschlinkert/markdown-toc"
 
 [distribution]
 registry = "npm"

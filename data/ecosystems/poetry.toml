@@ -6,3 +6,5 @@ implied-languages = ["python"]
 manifest = "pyproject.toml"
 lockfiles = ["poetry.lock"]
 manifest-selection = "default"
+homepage = "https://python-poetry.org"
+repository = "https://github.com/python-poetry/poetry"

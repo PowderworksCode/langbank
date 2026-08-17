@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["brighterscript"]
 programs = ["bslint"]
 categories = ["linter"]
+homepage = "https://github.com/rokucommunity/bslint"
 
 [distribution]
 registry = "npm"

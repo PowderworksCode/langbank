@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["clojure"]
 programs = ["clj-kondo"]
 categories = ["linter"]
+repository = "https://github.com/borkdude/clj-kondo"
 
 [distribution]
 registry = "github"

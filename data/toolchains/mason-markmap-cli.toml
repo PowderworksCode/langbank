@@ -3,6 +3,7 @@ display-name = "markmap-cli"
 kind = "linter"
 languages = ["markdown"]
 programs = ["markmap-cli"]
+homepage = "https://github.com/markmap/markmap"
 
 [distribution]
 registry = "npm"

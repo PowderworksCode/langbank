@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["scan-build"]
 categories = ["linter"]
+repository = "https://clang-analyzer.llvm.org/scan-build.html"

@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["fortran"]
 programs = ["fprettify"]
 categories = ["formatter"]
+homepage = "https://pypi.python.org/pypi/fprettify"
+repository = "https://github.com/pseewald/fprettify"
 
 [distribution]
 registry = "pypi"

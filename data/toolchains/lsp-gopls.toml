@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["go"]
 programs = ["gopls"]
 categories = ["language-server"]
+homepage = "https://pkg.go.dev/golang.org/x/tools/gopls"
 
 [distribution]
 registry = "golang"

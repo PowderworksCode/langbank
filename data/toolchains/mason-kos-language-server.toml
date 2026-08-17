@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["kerboscript"]
 programs = ["kos-language-server"]
 categories = ["language-server", "linter", "formatter"]
+homepage = "https://github.com/jonnyboyC/kos-language-server"
 
 [distribution]
 registry = "npm"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["elm"]
 programs = ["elm-review"]
 categories = ["linter"]
+homepage = "https://package.elm-lang.org/packages/jfmengels/elm-review/latest"
+repository = "https://github.com/jfmengels/elm-review"

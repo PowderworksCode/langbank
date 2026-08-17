@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["powershell"]
 programs = ["powershell-editor-services"]
 categories = ["language-server"]
+repository = "https://github.com/PowerShell/PowerShellEditorServices"
 
 [distribution]
 registry = "github"

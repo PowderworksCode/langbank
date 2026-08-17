@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["matlab"]
 programs = ["miss_hit"]
 categories = ["formatter", "linter"]
+homepage = "https://misshit.org/"
+repository = "https://github.com/florianschanda/miss_hit"
 
 [distribution]
 registry = "pypi"

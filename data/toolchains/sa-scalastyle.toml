@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["scala"]
 programs = ["scalastyle"]
 categories = ["linter"]
+homepage = "http://www.scalastyle.org"
+repository = "https://github.com/scalastyle/scalastyle"

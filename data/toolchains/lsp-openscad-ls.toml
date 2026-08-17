@@ -5,6 +5,7 @@ languages = ["openscad"]
 programs = ["openscad-language-server"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/dzhu/openscad-language-server"
 
 [distribution]
 registry = "cargo"

@@ -5,6 +5,7 @@ languages = ["fortran"]
 programs = ["fortls"]
 root-markers = [".fortls", ".fortlsrc", ".fortls.json", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/gnikit/fortls"
 
 [distribution]
 registry = "pypi"

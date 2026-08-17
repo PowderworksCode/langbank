@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript", "sql", "typescript"]
 programs = ["safeql"]
 categories = ["linter"]
+homepage = "https://safeql.dev"
+repository = "https://github.com/ts-safeql/safeql"

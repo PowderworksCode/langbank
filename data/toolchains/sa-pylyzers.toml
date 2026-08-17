@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["pylyzers"]
 categories = ["linter"]
+homepage = "https://mtshiba.github.io/pylyzer/"
+repository = "https://github.com/mtshiba/pylyzer"

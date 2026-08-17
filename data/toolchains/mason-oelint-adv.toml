@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["bitbake"]
 programs = ["oelint-adv"]
 categories = ["linter"]
+homepage = "https://github.com/priv-kweihmann/oelint-adv"
 
 [distribution]
 registry = "pypi"

@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["antlers"]
 programs = ["antlers-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/Stillat/vscode-antlers-language-server"
 
 [distribution]
 registry = "npm"

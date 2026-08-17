@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["julia"]
 programs = ["staticlint"]
 categories = ["linter"]
+repository = "https://github.com/julia-vscode/StaticLint.jl"

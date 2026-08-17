@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["ineffassign"]
 categories = ["linter"]
+repository = "https://github.com/gordonklaus/ineffassign"

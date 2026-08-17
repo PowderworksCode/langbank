@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["php"]
 programs = ["parallel-lint"]
 categories = ["linter"]
+repository = "https://github.com/php-parallel-lint/PHP-Parallel-Lint"

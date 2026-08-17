@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["rust"]
 programs = ["bacon"]
 categories = ["linter"]
+homepage = "https://github.com/Canop/bacon"
 
 [distribution]
 registry = "cargo"

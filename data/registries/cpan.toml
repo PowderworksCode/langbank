@@ -2,6 +2,8 @@ id = "cpan"
 display-name = "CPAN"
 default-repository = "https://www.cpan.org/"
 uses-repository = true
+homepage = "https://metacpan.org"
+repository = "https://github.com/metacpan/metacpan-web"
 
 [namespace]
 requirement = "optional"

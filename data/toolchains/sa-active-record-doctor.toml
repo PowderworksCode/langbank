@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["active record doctor"]
 categories = ["linter"]
+repository = "https://github.com/gregnavis/active_record_doctor"

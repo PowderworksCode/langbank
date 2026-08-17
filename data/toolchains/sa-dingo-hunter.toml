@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["dingo-hunter"]
 categories = ["linter"]
+repository = "https://github.com/nickng/dingo-hunter"

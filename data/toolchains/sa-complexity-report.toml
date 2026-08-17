@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["complexity-report"]
 categories = ["linter"]
+repository = "https://github.com/escomplex/complexity-report"

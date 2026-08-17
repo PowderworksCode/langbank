@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["jslint"]
 categories = ["linter"]
+repository = "https://github.com/douglascrockford/JSLint"

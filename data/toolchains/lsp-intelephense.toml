@@ -5,6 +5,7 @@ languages = ["php"]
 programs = ["intelephense"]
 root-markers = [".git", "composer.json"]
 categories = ["language-server"]
+homepage = "https://intelephense.com"
 
 [distribution]
 registry = "npm"

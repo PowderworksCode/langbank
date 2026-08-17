@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["rust"]
 programs = ["tangleguard"]
 categories = ["linter"]
+homepage = "https://tangleguard.com/"
+repository = "https://github.com/TangleGuard"

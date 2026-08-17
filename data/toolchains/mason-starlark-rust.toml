@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["starlark"]
 programs = ["starlark-rust"]
 categories = ["language-server"]
+homepage = "https://github.com/facebook/starlark-rust/"
 
 [distribution]
 registry = "cargo"

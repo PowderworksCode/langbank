@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["cql"]
 programs = ["cql-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/cqframework/cql-language-server"
 
 [distribution]
 registry = "generic"

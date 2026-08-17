@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["kdl"]
 programs = ["kdlfmt"]
 categories = ["formatter"]
+repository = "https://github.com/hougesen/kdlfmt"
 
 [distribution]
 registry = "github"

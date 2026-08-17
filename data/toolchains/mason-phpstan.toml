@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpstan"]
 categories = ["linter"]
+homepage = "https://phpstan.org"
+repository = "https://github.com/phpstan/phpstan"
 
 [distribution]
 registry = "github"

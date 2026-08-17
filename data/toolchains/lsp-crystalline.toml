@@ -5,6 +5,7 @@ languages = ["crystal"]
 programs = ["crystalline"]
 root-markers = ["shard.yml", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/elbywan/crystalline"
 
 [distribution]
 registry = "github"

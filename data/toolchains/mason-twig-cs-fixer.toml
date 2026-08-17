@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["twig"]
 programs = ["twig-cs-fixer"]
 categories = ["formatter"]
+homepage = "https://github.com/VincentLanglet/Twig-CS-Fixer"
 
 [distribution]
 registry = "composer"

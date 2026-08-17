@@ -2,6 +2,7 @@ id = "cran"
 display-name = "CRAN"
 default-repository = "https://cran.r-project.org"
 uses-repository = true
+homepage = "https://cran.r-project.org"
 
 [namespace]
 requirement = "prohibited"

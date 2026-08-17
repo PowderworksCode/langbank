@@ -92,6 +92,9 @@ pub struct EcosystemProfile {
     /// `package.json`, and `build.zig` identifies a Zig project whose
     /// `build.zig.zon` is optional and frequently absent — Bun has no manifest
     /// and is still the largest Zig codebase there is.
+    /// Where the project lives and where its code is. `homepage` is set
+    /// only when it is somewhere other than the repository.
+    pub origin: crate::Origin,
     pub selector_files: &'static [&'static str],
     /// Other filenames that are *also* this ecosystem's manifest. Not a
     /// disambiguator — `build.gradle.kts` does not decide ownership, it is

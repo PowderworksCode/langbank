@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["go"]
 programs = ["go/ast"]
 categories = ["linter"]
+homepage = "https://golang.org/pkg/go/ast"
+repository = "https://github.com/golang/go/tree/master/src/go/ast"

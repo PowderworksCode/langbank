@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["css", "javascript", "less", "vue"]
 programs = ["cqc"]
 categories = ["linter"]
+repository = "https://github.com/xcatliu/cqc"

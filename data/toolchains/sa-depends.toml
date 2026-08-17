@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["depends"]
 categories = ["linter"]
+repository = "https://github.com/multilang-depends/depends"

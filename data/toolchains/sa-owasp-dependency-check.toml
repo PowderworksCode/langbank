@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java"]
 programs = ["owasp dependency check"]
 categories = ["linter"]
+homepage = "https://owasp.org/www-project-dependency-check"
+repository = "https://github.com/jeremylong/DependencyCheck"

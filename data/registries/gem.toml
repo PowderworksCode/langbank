@@ -2,6 +2,8 @@ id = "gem"
 display-name = "RubyGems"
 default-repository = "https://rubygems.org"
 uses-repository = true
+homepage = "https://rubygems.org"
+repository = "https://github.com/rubygems/rubygems.org"
 
 [namespace]
 requirement = "prohibited"

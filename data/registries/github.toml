@@ -2,6 +2,7 @@ id = "github"
 display-name = "GitHub"
 default-repository = "https://github.com"
 uses-repository = true
+homepage = "https://github.com"
 
 [namespace]
 requirement = "required"

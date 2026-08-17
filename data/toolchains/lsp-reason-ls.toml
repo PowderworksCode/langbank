@@ -5,6 +5,7 @@ languages = ["reason"]
 programs = ["reason-language-server"]
 root-markers = ["bsconfig.json", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/jaredly/reason-language-server"
 
 [distribution]
 registry = "github"

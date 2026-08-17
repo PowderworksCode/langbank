@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["lua"]
 programs = ["luacheck"]
 categories = ["linter"]
+repository = "https://github.com/lunarmodules/luacheck"
+homepage = "https://github.com/lunarmodules/luacheck"
 
 [distribution]
 registry = "luarocks"

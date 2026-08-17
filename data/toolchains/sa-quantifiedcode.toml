@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["quantifiedcode"]
 categories = ["linter"]
+repository = "https://github.com/quantifiedcode/quantifiedcode"

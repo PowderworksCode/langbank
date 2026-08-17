@@ -3,6 +3,7 @@ display-name = "ripper-tags"
 kind = "linter"
 languages = ["ruby"]
 programs = ["ripper-tags"]
+homepage = "https://github.com/tmm1/ripper-tags"
 
 [distribution]
 registry = "gem"

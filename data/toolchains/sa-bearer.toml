@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "go", "html", "java", "javascript", "json", "ruby", "typescript", "yaml"]
 programs = ["bearer"]
 categories = ["linter"]
+repository = "https://github.com/bearer/bearer"

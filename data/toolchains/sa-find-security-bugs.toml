@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["groovy", "java", "kotlin", "scala"]
 programs = ["find security bugs"]
 categories = ["linter"]
+homepage = "https://find-sec-bugs.github.io"
+repository = "https://github.com/find-sec-bugs/find-sec-bugs"

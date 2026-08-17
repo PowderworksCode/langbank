@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["prosemd-lsp"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/kitten/prosemd-lsp"
 
 [distribution]
 registry = "github"

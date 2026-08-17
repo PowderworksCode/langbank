@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["interfacer"]
 categories = ["linter"]
+repository = "https://github.com/mvdan/interfacer"

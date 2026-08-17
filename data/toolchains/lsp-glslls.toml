@@ -5,6 +5,7 @@ languages = ["glsl"]
 programs = ["glslls"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/svenstaro/glsl-language-server"
 
 [distribution]
 registry = "github"

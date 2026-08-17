@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["c", "c-sharp", "cpp", "css", "dockerfile", "go", "hcl", "html", "java", "javascript", "php", "python", "text", "typescript", "xml", "yaml"]
 programs = ["sonarlint-language-server"]
 categories = ["linter"]
+repository = "https://github.com/SonarSource/sonarlint-vscode"
 
 [distribution]
 registry = "github"

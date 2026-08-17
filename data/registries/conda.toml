@@ -2,6 +2,8 @@ id = "conda"
 display-name = "Conda"
 default-repository = "https://repo.anaconda.com"
 uses-repository = true
+homepage = "https://anaconda.org"
+repository = "https://github.com/conda/conda"
 
 [namespace]
 requirement = "prohibited"

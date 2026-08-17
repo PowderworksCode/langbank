@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["typescript"]
 programs = ["typescript call graph"]
 categories = ["linter"]
+repository = "https://github.com/whyboris/TypeScript-Call-Graph"

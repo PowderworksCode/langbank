@@ -5,6 +5,8 @@ languages = ["svg", "xml", "xslt"]
 programs = ["lemminx"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/eclipse/lemminx"
+repository = "https://github.com/redhat-developer/vscode-xml"
 
 [distribution]
 registry = "github"

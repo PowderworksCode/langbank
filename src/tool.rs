@@ -125,6 +125,9 @@ pub struct ToolProfile {
     pub commands: &'static [CommandPattern],
     pub configuration_files: &'static [&'static str],
     pub package_json_keys: &'static [&'static str],
+    /// Where the project lives and where its code is. `homepage` is set
+    /// only when it is somewhere other than the repository.
+    pub origin: crate::Origin,
     pub ci_workload: CiWorkload,
     pub test_retry: Option<TestRetryProfile>,
 }

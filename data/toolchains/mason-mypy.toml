@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["python"]
 programs = ["mypy"]
 categories = ["linter"]
+homepage = "http://www.mypy-lang.org"
+repository = "https://github.com/python/mypy"
 
 [distribution]
 registry = "pypi"

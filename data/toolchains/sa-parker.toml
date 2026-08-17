@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["css"]
 programs = ["parker"]
 categories = ["linter"]
+repository = "https://github.com/katiefenn/parker"

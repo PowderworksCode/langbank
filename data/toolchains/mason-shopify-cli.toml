@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["liquid"]
 programs = ["shopify-cli"]
 categories = ["language-server", "linter"]
+homepage = "https://shopify.dev/docs/api/shopify-cli"
 
 [distribution]
 registry = "npm"

@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["html"]
 programs = ["htmlhint"]
 categories = ["linter"]
+homepage = "https://htmlhint.com"
+repository = "https://github.com/yaniswang/HTMLHint"
 
 [distribution]
 registry = "npm"

@@ -5,3 +5,5 @@ roles = ["package-manager", "build-system"]
 implied-languages = ["scala"]
 manifest = "build.sbt"
 manifest-selection = "default"
+homepage = "https://www.scala-sbt.org"
+repository = "https://github.com/sbt/sbt"

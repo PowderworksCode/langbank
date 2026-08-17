@@ -3,6 +3,7 @@ display-name = "pinact"
 kind = "linter"
 languages = ["yaml"]
 programs = ["pinact"]
+repository = "https://github.com/suzuki-shunsuke/pinact"
 
 [distribution]
 registry = "github"

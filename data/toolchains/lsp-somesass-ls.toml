@@ -5,6 +5,7 @@ languages = ["sass", "scss"]
 programs = ["some-sass-language-server"]
 root-markers = [".git", ".package.json"]
 categories = ["language-server"]
+homepage = "https://github.com/wkillerud/some-sass/tree/main/packages/language-server"
 
 [distribution]
 registry = "npm"

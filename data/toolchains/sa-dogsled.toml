@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["dogsled"]
 categories = ["linter"]
+repository = "https://github.com/alexkohler/dogsled"

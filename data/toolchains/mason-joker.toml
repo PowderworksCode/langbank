@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["clojure"]
 programs = ["joker"]
 categories = ["formatter", "linter"]
+repository = "https://github.com/candid82/joker"
 
 [distribution]
 registry = "github"

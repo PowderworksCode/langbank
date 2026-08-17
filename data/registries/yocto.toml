@@ -1,6 +1,8 @@
 id = "yocto"
 display-name = "Yocto Project"
 uses-repository = true
+homepage = "https://www.yoctoproject.org"
+repository = "https://git.yoctoproject.org/poky"
 
 [namespace]
 requirement = "optional"

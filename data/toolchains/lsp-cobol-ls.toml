@@ -5,6 +5,7 @@ languages = ["cobol"]
 programs = ["cobol-language-support"]
 root-markers = [".git"]
 categories = ["language-server"]
+repository = "https://github.com/eclipse-che4z/che-che4z-lsp-for-cobol"
 
 [distribution]
 registry = "github"

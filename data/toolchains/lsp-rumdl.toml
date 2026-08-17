@@ -5,6 +5,7 @@ languages = ["markdown"]
 programs = ["rumdl"]
 root-markers = [".git"]
 categories = ["linter", "formatter", "language-server"]
+repository = "https://github.com/rvben/rumdl"
 
 [distribution]
 registry = "github"

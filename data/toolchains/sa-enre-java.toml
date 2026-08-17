@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java"]
 programs = ["enre-java"]
 categories = ["linter"]
+repository = "https://github.com/xjtu-enre/ENRE-java"

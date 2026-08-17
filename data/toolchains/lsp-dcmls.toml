@@ -5,6 +5,8 @@ languages = ["dart"]
 programs = ["dcm"]
 root-markers = ["pubspec.yaml"]
 categories = ["language-server", "formatter", "linter"]
+homepage = "https://dcm.dev/"
+repository = "https://github.com/CQLabs/homebrew-dcm"
 
 [distribution]
 registry = "github"

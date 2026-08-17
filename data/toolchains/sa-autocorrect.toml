@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["css", "go", "html", "javascript", "json", "markdown", "python", "ruby", "rust", "scala", "shell", "typescript", "vue", "xml", "yaml"]
 programs = ["autocorrect"]
 categories = ["linter", "formatter"]
+homepage = "https://huacnlee.github.io/autocorrect"
+repository = "https://github.com/huacnlee/autocorrect"

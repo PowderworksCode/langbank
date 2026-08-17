@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ruby"]
 programs = ["databaseconsistency"]
 categories = ["linter"]
+repository = "https://github.com/djezzzl/database_consistency"

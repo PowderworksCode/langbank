@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["tcl"]
 programs = ["nagelfar"]
 categories = ["linter"]
+homepage = "https://sourceforge.net/projects/nagelfar"
+repository = "https://sourceforge.net/p/nagelfar/code/ci/master/tree"

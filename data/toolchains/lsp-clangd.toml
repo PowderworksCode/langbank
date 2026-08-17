@@ -5,6 +5,8 @@ languages = ["c", "cpp", "cuda", "objective-c", "objective-cpp"]
 programs = ["clangd"]
 root-markers = [".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git"]
 categories = ["language-server"]
+homepage = "https://clangd.llvm.org"
+repository = "https://github.com/clangd/clangd"
 
 [distribution]
 registry = "github"

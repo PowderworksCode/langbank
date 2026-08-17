@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["groovy", "java", "json", "kotlin", "python", "sql", "xml", "yaml"]
 programs = ["openrewrite"]
 categories = ["linter", "formatter"]
+homepage = "https://docs.openrewrite.org/"
+repository = "https://github.com/openrewrite/rewrite"

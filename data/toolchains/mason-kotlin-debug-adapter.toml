@@ -4,6 +4,7 @@ kind = "debugger"
 languages = ["kotlin"]
 programs = ["kotlin-debug-adapter"]
 categories = ["debugger"]
+repository = "https://github.com/fwcd/kotlin-debug-adapter"
 
 [distribution]
 registry = "github"

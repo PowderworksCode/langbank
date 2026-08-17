@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["markdown"]
 programs = ["alex"]
 categories = ["linter"]
+homepage = "https://github.com/get-alex/alex"
 
 [distribution]
 registry = "npm"

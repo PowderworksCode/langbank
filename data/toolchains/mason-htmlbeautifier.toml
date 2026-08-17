@@ -4,6 +4,8 @@ kind = "formatter"
 languages = ["html", "ruby"]
 programs = ["htmlbeautifier"]
 categories = ["formatter"]
+repository = "https://github.com/threedaymonk/htmlbeautifier"
+homepage = "https://github.com/threedaymonk/htmlbeautifier"
 
 [distribution]
 registry = "gem"

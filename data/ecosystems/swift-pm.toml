@@ -5,3 +5,5 @@ roles = ["package-manager", "build-system"]
 implied-languages = ["swift"]
 manifest = "Package.swift"
 manifest-selection = "default"
+homepage = "https://www.swift.org/documentation/package-manager"
+repository = "https://github.com/swiftlang/swift-package-manager"

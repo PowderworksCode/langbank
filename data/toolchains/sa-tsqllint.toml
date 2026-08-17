@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["sql"]
 programs = ["tsqllint"]
 categories = ["linter"]
+repository = "https://github.com/tsqllint/tsqllint"

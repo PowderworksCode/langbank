@@ -2,6 +2,8 @@ id = "pub"
 display-name = "Pub"
 default-repository = "https://pub.dartlang.org"
 uses-repository = true
+homepage = "https://pub.dev"
+repository = "https://github.com/dart-lang/pub-dev"
 
 [namespace]
 requirement = "prohibited"

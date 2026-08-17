@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["perl"]
 programs = ["zarn"]
 categories = ["linter"]
+repository = "https://github.com/htrgouvea/zarn"

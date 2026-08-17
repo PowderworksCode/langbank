@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go"]
 programs = ["dupl"]
 categories = ["linter"]
+repository = "https://github.com/mibk/dupl"

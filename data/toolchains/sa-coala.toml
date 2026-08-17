@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "css", "java", "javascript"]
 programs = ["coala"]
 categories = ["linter"]
+repository = "https://github.com/coala/coala"

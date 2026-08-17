@@ -5,6 +5,7 @@ languages = ["go"]
 programs = ["golangci-lint-langserver"]
 root-markers = [".golangci.yml", ".golangci.yaml", ".golangci.toml", ".golangci.json", "go.work", "go.mod", ".git"]
 categories = ["language-server"]
+homepage = "https://github.com/nametake/golangci-lint-langserver"
 
 [distribution]
 registry = "golang"

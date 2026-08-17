@@ -5,6 +5,7 @@ languages = ["teal"]
 programs = ["teal-language-server"]
 root-markers = ["tlconfig.lua"]
 categories = ["language-server"]
+homepage = "https://github.com/teal-language/teal-language-server"
 
 [distribution]
 registry = "luarocks"

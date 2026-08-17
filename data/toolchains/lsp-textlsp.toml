@@ -5,6 +5,7 @@ languages = ["org", "tex", "text"]
 programs = ["textlsp"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/hangyav/textLSP"
 
 [distribution]
 registry = "pypi"

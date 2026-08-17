@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["html"]
 programs = ["gulp-bootlint"]
 categories = ["linter"]
+repository = "https://github.com/tschortsch/gulp-bootlint"

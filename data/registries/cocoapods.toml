@@ -2,6 +2,8 @@ id = "cocoapods"
 display-name = "CocoaPods"
 default-repository = "https://cdn.cocoapods.org/"
 uses-repository = true
+homepage = "https://cocoapods.org"
+repository = "https://github.com/CocoaPods/CocoaPods"
 
 [namespace]
 requirement = "prohibited"

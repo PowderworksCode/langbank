@@ -5,6 +5,8 @@ languages = ["php"]
 programs = ["psalm"]
 root-markers = ["psalm.xml", "psalm.xml.dist"]
 categories = ["language-server"]
+homepage = "https://psalm.dev"
+repository = "https://github.com/vimeo/psalm"
 
 [distribution]
 registry = "composer"

@@ -5,3 +5,5 @@ roles = ["build-system"]
 manifest = "WORKSPACE"
 alternate-manifests = ["WORKSPACE.bazel", "MODULE.bazel"]
 manifest-selection = "default"
+homepage = "https://bazel.build"
+repository = "https://github.com/bazelbuild/bazel"

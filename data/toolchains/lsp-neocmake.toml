@@ -5,6 +5,7 @@ languages = ["cmake"]
 programs = ["neocmakelsp"]
 root-markers = [".neocmake.toml", ".git", "build", "cmake"]
 categories = ["language-server"]
+repository = "https://github.com/neocmakelsp/neocmakelsp"
 
 [distribution]
 registry = "github"

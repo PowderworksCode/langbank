@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["php"]
 programs = ["phpmetrics"]
 categories = ["linter"]
+homepage = "http://www.phpmetrics.org"
+repository = "https://github.com/phpmetrics/PhpMetrics"

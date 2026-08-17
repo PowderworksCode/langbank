@@ -82,6 +82,7 @@ struct Package {
     languages: Vec<String>,
     categories: Vec<String>,
     purl: Option<String>,
+    homepage: Option<String>,
 }
 
 fn upstream_packages() -> Result<Vec<Package>> {
@@ -96,6 +97,7 @@ fn upstream_packages() -> Result<Vec<Package>> {
             languages: block(&text, "languages"),
             categories: block(&text, "categories"),
             purl: field(&text, "id"),
+            homepage: field(&text, "homepage"),
         });
     }
     out.sort_by(|a, b| a.name.cmp(&b.name));
@@ -212,6 +214,46 @@ struct Entry {
     kinds: Vec<String>,
     registry: Option<String>,
     package: Option<String>,
+    homepage: Option<String>,
+    repository: Option<String>,
+}
+
+/// A `pkg:github/owner/name` purl names a repository; nothing else here does.
+/// A crates.io or npm package has a registry page, which is where it is
+/// distributed rather than where its code is, so it is not a repository.
+fn repository_of(registry: Option<&str>, package: Option<&str>) -> Option<String> {
+    match (registry, package) {
+        (Some("github"), Some(package)) => Some(format!("https://github.com/{package}")),
+        _ => None,
+    }
+}
+
+/// The lines a merge would append: only what the file does not already carry.
+fn additions(entry: &Entry, text: &str) -> Vec<String> {
+    let mut lines = Vec::new();
+    if !entry.kinds.is_empty() && !text.contains("categories") {
+        lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+    }
+    if let Some(homepage) = &entry.homepage
+        && !text.contains("homepage")
+    {
+        lines.push(format!("homepage = {}", local::toml_string(homepage)));
+    }
+    if let Some(repository) = &entry.repository
+        && !text.contains("repository")
+    {
+        lines.push(format!("repository = {}", local::toml_string(repository)));
+    }
+    if let (Some(registry), Some(package)) = (&entry.registry, &entry.package)
+        && !text.contains("[distribution]")
+    {
+        lines.push(format!(
+            "\n[distribution]\nregistry = {}",
+            local::toml_string(registry)
+        ));
+        lines.push(format!("package = {}", local::toml_string(package)));
+    }
+    lines
 }
 
 pub fn run(verb: &str) -> Result<Outcome> {
@@ -244,12 +286,22 @@ pub fn run(verb: &str) -> Result<Outcome> {
             .filter_map(|c| category.get(c.as_str()).map(|k| k.to_string()))
             .collect();
         let (registry, name) = purl_parts(package.purl.as_deref());
+        let repository = repository_of(registry.as_deref(), name.as_deref());
+        // As in static-analysis: a homepage that is the repository under
+        // another spelling is not a second fact. See `langbank::Origin`.
+        let homepage = package.homepage.clone().filter(|home| {
+            repository
+                .as_deref()
+                .is_none_or(|repo| !langbank::same_place(home, repo))
+        });
         let entry = Entry {
             name: package.name.clone(),
             mapped: mapped.into_iter().collect(),
             kinds,
             registry,
             package: name,
+            homepage,
+            repository,
         };
         match carried.programs.get(&package.name) {
             Some(existing) => {
@@ -260,11 +312,7 @@ pub fn run(verb: &str) -> Result<Outcome> {
                 // with no purl gets no distribution block, so counting it as
                 // pending would leave the check permanently red — and a check
                 // that cannot go green teaches everyone to ignore it.
-                let wants_distribution = entry.registry.is_some()
-                    && entry.package.is_some()
-                    && !text.contains("[distribution]");
-                let wants_categories = !entry.kinds.is_empty() && !text.contains("categories");
-                if wants_distribution || wants_categories {
+                if !additions(&entry, text).is_empty() {
                     merges.push((existing.clone(), entry));
                 }
             }
@@ -281,7 +329,7 @@ pub fn run(verb: &str) -> Result<Outcome> {
 
     if verb == "check" {
         println!(
-            "{} mason packages; {} would add distribution to a known tool, {} are new, \
+            "{} mason packages; {} would gain links or distribution, {} are new, \
              {skipped} skipped for unmapped languages",
             packages.len(),
             merges.len(),
@@ -308,28 +356,15 @@ pub fn run(verb: &str) -> Result<Outcome> {
         let Some((path, text)) = carried.toolchains.get(id) else {
             continue;
         };
-        let mut lines = Vec::new();
-        // Append only what is absent. `create` has to be safe to run twice —
-        // the first version appended unconditionally and produced files with
-        // `categories` written twice, which TOML rejects.
-        if !entry.kinds.is_empty() && !text.contains("categories") {
-            lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+        let lines = additions(entry, text);
+        if lines.is_empty() {
+            continue;
         }
-        if let (Some(registry), Some(package)) = (&entry.registry, &entry.package)
-            && !text.contains("[distribution]")
-        {
-            lines.push(format!(
-                "\n[distribution]\nregistry = {}",
-                local::toml_string(registry)
-            ));
-            lines.push(format!("package = {}", local::toml_string(package)));
-        }
-        if !lines.is_empty() {
-            let mut text =
-                std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
-            text.push_str(&(lines.join("\n") + "\n"));
-            std::fs::write(path, text).map_err(|e| format!("{}: {e}", path.display()))?;
-        }
+        let text = std::fs::read_to_string(path).map_err(|e| format!("{}: {e}", path.display()))?;
+        // Root keys go before the first [table] header, not at the end of the
+        // file — see `local::append_root`.
+        std::fs::write(path, local::append_root(&text, &lines))
+            .map_err(|e| format!("{}: {e}", path.display()))?;
     }
 
     for entry in &creates {
@@ -346,6 +381,12 @@ pub fn run(verb: &str) -> Result<Outcome> {
         ];
         if !entry.kinds.is_empty() {
             lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+        }
+        if let Some(homepage) = &entry.homepage {
+            lines.push(format!("homepage = {}", local::toml_string(homepage)));
+        }
+        if let Some(repository) = &entry.repository {
+            lines.push(format!("repository = {}", local::toml_string(repository)));
         }
         if let (Some(registry), Some(package)) = (&entry.registry, &entry.package) {
             lines.push(format!(

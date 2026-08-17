@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["html", "javascript", "typescript", "vue"]
 programs = ["rustywind"]
 categories = ["formatter"]
+homepage = "https://github.com/avencera/rustywind"
 
 [distribution]
 registry = "npm"

@@ -6,3 +6,5 @@ implied-languages = ["php"]
 manifest = "composer.json"
 lockfiles = ["composer.lock"]
 manifest-selection = "default"
+homepage = "https://getcomposer.org"
+repository = "https://github.com/composer/composer"

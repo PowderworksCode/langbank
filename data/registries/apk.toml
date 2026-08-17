@@ -1,6 +1,8 @@
 id = "apk"
 display-name = "APK-based packages"
 uses-repository = true
+homepage = "https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper"
+repository = "https://gitlab.alpinelinux.org/alpine/apk-tools"
 
 [namespace]
 requirement = "required"

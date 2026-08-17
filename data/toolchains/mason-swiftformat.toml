@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["swift"]
 programs = ["swiftformat"]
 categories = ["formatter"]
+repository = "https://github.com/nicklockwood/SwiftFormat"
 
 [distribution]
 registry = "github"

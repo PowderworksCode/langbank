@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["yaml"]
 programs = ["gh-actions-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/actions/languageservices"
 
 [distribution]
 registry = "npm"

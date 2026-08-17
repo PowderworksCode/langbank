@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["go"]
 programs = ["golangci-lint"]
 categories = ["linter"]
+homepage = "https://golangci-lint.run"
+repository = "https://github.com/golangci/golangci-lint"
 
 [distribution]
 registry = "github"

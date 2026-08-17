@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["java", "javascript", "php", "plsql", "tsql"]
 programs = ["pt.pm"]
 categories = ["linter"]
+repository = "https://github.com/PositiveTechnologies/PT.PM"

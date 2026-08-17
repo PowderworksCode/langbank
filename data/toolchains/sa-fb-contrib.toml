@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java"]
 programs = ["fb-contrib"]
 categories = ["linter"]
+homepage = "http://fb-contrib.sourceforge.net"
+repository = "https://github.com/mebigfatguy/fb-contrib"

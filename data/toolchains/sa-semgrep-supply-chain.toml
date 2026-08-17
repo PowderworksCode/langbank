@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["go", "java", "javascript", "python", "ruby", "typescript"]
 programs = ["semgrep supply chain"]
 categories = ["linter"]
+homepage = "https://semgrep.dev/products/semgrep-supply-chain"

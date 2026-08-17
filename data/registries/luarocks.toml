@@ -1,6 +1,8 @@
 id = "luarocks"
 display-name = "LuaRocks"
 uses-repository = true
+homepage = "https://luarocks.org"
+repository = "https://github.com/luarocks/luarocks"
 
 [namespace]
 requirement = "optional"

@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["php"]
 programs = ["easy-coding-standard"]
 categories = ["formatter", "linter"]
+homepage = "https://github.com/easy-coding-standard/easy-coding-standard"
 
 [distribution]
 registry = "composer"

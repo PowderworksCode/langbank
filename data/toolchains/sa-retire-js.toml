@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["retire.js"]
 categories = ["linter"]
+homepage = "https://retirejs.github.io/retire.js"
+repository = "https://github.com/RetireJS/retire.js"

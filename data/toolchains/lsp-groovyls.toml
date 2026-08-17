@@ -5,6 +5,7 @@ languages = ["groovy"]
 programs = ["groovy-language-server"]
 root-markers = ["Jenkinsfile", ".git"]
 categories = ["language-server"]
+repository = "https://github.com/GroovyLanguageServer/groovy-language-server"
 
 [distribution]
 registry = "github"

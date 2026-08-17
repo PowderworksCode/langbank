@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["ocaml"]
 programs = ["verifast"]
 categories = ["linter"]
+repository = "https://github.com/verifast/verifast"

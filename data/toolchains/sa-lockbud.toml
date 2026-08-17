@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["rust"]
 programs = ["lockbud"]
 categories = ["linter"]
+repository = "https://github.com/BurtonQin/lockbud"

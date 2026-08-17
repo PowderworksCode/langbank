@@ -8,6 +8,8 @@ lockfiles = ["pnpm-lock.yaml"]
 selector-files = ["pnpm-workspace.yaml"]
 gitignore-patterns = ["node_modules/"]
 manifest-selection = "lockfile"
+homepage = "https://pnpm.io"
+repository = "https://github.com/pnpm/pnpm"
 
 [dependency-pins]
 syntax = "exact-semver"

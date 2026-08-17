@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["erlang"]
 programs = ["dialyzer"]
 categories = ["linter"]
+homepage = "https://www.erlang.org/doc/man/dialyzer.html"
+repository = "https://github.com/erlang/otp/tree/master/lib/dialyzer"

@@ -1,6 +1,7 @@
 id = "deb"
 display-name = "Debian package"
 uses-repository = true
+homepage = "https://www.debian.org/distrib/packages"
 
 [namespace]
 requirement = "required"

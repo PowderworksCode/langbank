@@ -5,6 +5,7 @@ languages = ["sql"]
 programs = ["sqruff"]
 root-markers = [".sqruff", ".git"]
 categories = ["formatter", "linter"]
+repository = "https://github.com/quarylabs/sqruff"
 
 [distribution]
 registry = "github"

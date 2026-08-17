@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["java"]
 programs = ["google-java-format"]
 categories = ["formatter"]
+repository = "https://github.com/google/google-java-format"
 
 [distribution]
 registry = "github"

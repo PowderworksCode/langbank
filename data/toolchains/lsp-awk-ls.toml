@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["awk"]
 programs = ["awk-language-server"]
 categories = ["language-server"]
+homepage = "https://github.com/Beaglefoot/awk-language-server"
 
 [distribution]
 registry = "npm"

@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["java", "kotlin"]
 programs = ["archunit"]
 categories = ["linter"]
+homepage = "https://www.archunit.org"
+repository = "https://github.com/TNG/ArchUnit"

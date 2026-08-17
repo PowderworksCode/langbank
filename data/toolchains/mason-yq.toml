@@ -3,6 +3,8 @@ display-name = "yq"
 kind = "linter"
 languages = ["yaml"]
 programs = ["yq"]
+homepage = "https://mikefarah.gitbook.io/yq/"
+repository = "https://github.com/mikefarah/yq"
 
 [distribution]
 registry = "github"

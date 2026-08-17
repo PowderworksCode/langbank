@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["mccabe"]
 categories = ["linter"]
+homepage = "https://pypi.org/project/mccabe"
+repository = "https://github.com/PyCQA/mccabe"

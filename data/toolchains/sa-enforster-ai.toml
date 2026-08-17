@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "php", "python", "typescript"]
 programs = ["enforster ai"]
 categories = ["linter"]
+homepage = "https://enforster.ai/"

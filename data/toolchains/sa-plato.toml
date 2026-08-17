@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["plato"]
 categories = ["linter"]
+repository = "https://github.com/es-analysis/plato"

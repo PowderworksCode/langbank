@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["c3"]
 programs = ["c3-lsp"]
 categories = ["language-server"]
+repository = "https://github.com/pherrymason/c3-lsp"
 
 [distribution]
 registry = "github"

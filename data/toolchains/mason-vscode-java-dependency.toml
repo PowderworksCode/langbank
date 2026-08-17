@@ -4,6 +4,7 @@ kind = "runtime"
 languages = ["java"]
 programs = ["vscode-java-dependency"]
 categories = ["runtime"]
+homepage = "https://github.com/Microsoft/vscode-java-dependency"
 
 [distribution]
 registry = "openvsx"

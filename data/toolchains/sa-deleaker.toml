@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "c-sharp", "cpp"]
 programs = ["deleaker"]
 categories = ["linter"]
+homepage = "https://www.deleaker.com/"

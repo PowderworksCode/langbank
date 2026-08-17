@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["javascript"]
 programs = ["aether"]
 categories = ["linter"]
+homepage = "http://aetherjs.com"
+repository = "https://github.com/codecombat/aether"

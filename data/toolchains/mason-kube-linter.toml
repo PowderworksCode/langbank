@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["yaml"]
 programs = ["kube-linter"]
 categories = ["linter"]
+homepage = "https://docs.kubelinter.io"
+repository = "https://github.com/stackrox/kube-linter"
 
 [distribution]
 registry = "github"

@@ -4,6 +4,7 @@ kind = "formatter"
 languages = ["yaml"]
 programs = ["yamlfix"]
 categories = ["formatter"]
+homepage = "https://github.com/lyz-code/yamlfix"
 
 [distribution]
 registry = "pypi"

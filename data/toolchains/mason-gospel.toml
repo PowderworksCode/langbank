@@ -4,6 +4,7 @@ kind = "linter"
 languages = ["go"]
 programs = ["gospel"]
 categories = ["linter"]
+homepage = "https://github.com/kortschak/gospel"
 
 [distribution]
 registry = "golang"

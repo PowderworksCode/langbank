@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["lua"]
 programs = ["lua-language-server"]
 categories = ["language-server"]
+repository = "https://github.com/LuaLS/lua-language-server"
 
 [distribution]
 registry = "github"

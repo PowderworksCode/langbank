@@ -4,3 +4,4 @@ kind = "formatter"
 languages = ["python"]
 programs = ["ciocheck"]
 categories = ["formatter"]
+repository = "https://github.com/ContinuumIO/ciocheck"

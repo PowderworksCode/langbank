@@ -4,6 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["python-lsp-server"]
 categories = ["language-server"]
+homepage = "https://github.com/python-lsp/python-lsp-server"
 
 [distribution]
 registry = "pypi"

@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["apex", "c", "cpp", "go", "groovy", "html", "java", "javascript", "perl", "php", "python", "ruby", "scala", "swift", "vbscript"]
 programs = ["checkmarx cxsast"]
 categories = ["linter"]
+homepage = "https://www.checkmarx.com/products/static-application-security-testing"

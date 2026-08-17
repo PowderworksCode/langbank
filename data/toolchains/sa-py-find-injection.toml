@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["py-find-injection"]
 categories = ["linter"]
+repository = "https://github.com/uber/py-find-injection"

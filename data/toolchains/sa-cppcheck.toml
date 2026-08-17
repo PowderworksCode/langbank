@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cppcheck"]
 categories = ["linter"]
+homepage = "https://cppcheck.sourceforge.io"
+repository = "https://github.com/danmar/cppcheck"

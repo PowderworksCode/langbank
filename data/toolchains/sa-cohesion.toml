@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["python"]
 programs = ["cohesion"]
 categories = ["linter"]
+repository = "https://github.com/mschwager/cohesion"

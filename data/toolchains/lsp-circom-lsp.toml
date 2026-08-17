@@ -5,6 +5,7 @@ languages = ["circom"]
 programs = ["circom-lsp"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/rubydusa/circom-lsp"
 
 [distribution]
 registry = "cargo"

@@ -5,6 +5,7 @@ languages = ["systemverilog", "verilog"]
 programs = ["slang-server"]
 root-markers = [".git", ".slang"]
 categories = ["language-server"]
+repository = "https://github.com/hudson-trading/slang-server"
 
 [distribution]
 registry = "github"

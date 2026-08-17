@@ -6,3 +6,5 @@ implied-languages = ["c-sharp", "f-sharp", "visual-basic-net"]
 manifest = "packages.config"
 alternate-manifests = ["Directory.Packages.props"]
 manifest-selection = "default"
+homepage = "https://www.nuget.org"
+repository = "https://github.com/NuGet/NuGet.Client"

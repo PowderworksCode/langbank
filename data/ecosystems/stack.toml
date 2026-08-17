@@ -6,3 +6,5 @@ implied-languages = ["haskell"]
 manifest = "stack.yaml"
 lockfiles = ["stack.yaml.lock"]
 manifest-selection = "default"
+homepage = "https://docs.haskellstack.org"
+repository = "https://github.com/commercialhaskell/stack"

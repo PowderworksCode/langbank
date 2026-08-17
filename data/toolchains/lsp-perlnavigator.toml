@@ -5,6 +5,7 @@ languages = ["perl"]
 programs = ["perlnavigator"]
 root-markers = [".git"]
 categories = ["language-server"]
+homepage = "https://github.com/bscan/PerlNavigator"
 
 [distribution]
 registry = "npm"

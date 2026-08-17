@@ -4,3 +4,5 @@ kind = "linter"
 languages = ["python"]
 programs = ["griffe"]
 categories = ["linter"]
+homepage = "https://mkdocstrings.github.io/griffe/"
+repository = "https://github.com/mkdocstrings/griffe"

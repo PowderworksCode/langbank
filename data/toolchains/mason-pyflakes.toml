@@ -4,6 +4,8 @@ kind = "linter"
 languages = ["python"]
 programs = ["pyflakes"]
 categories = ["linter"]
+homepage = "https://pypi.org/project/pyflakes"
+repository = "https://github.com/pyflakes/pyflakes"
 
 [distribution]
 registry = "pypi"

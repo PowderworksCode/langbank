@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["c", "cpp", "java"]
 programs = ["codesonar from grammatech"]
 categories = ["linter"]
+homepage = "https://codesecure.com/our-products/codesonar/"

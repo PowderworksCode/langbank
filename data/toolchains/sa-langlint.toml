@@ -4,3 +4,4 @@ kind = "linter"
 languages = ["cpp", "go", "java", "javascript", "json", "markdown", "python", "rust", "typescript", "yaml"]
 programs = ["langlint"]
 categories = ["linter"]
+repository = "https://github.com/HzaCode/Langlint"

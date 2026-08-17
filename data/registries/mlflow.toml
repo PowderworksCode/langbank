@@ -1,6 +1,8 @@
 id = "mlflow"
 display-name = "MLflow"
 uses-repository = true
+homepage = "https://mlflow.org"
+repository = "https://github.com/mlflow/mlflow"
 
 [namespace]
 requirement = "prohibited"

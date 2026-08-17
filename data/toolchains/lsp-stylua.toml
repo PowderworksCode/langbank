@@ -5,6 +5,7 @@ languages = ["lua"]
 programs = ["stylua"]
 root-markers = [".stylua.toml", "stylua.toml", ".editorconfig"]
 categories = ["formatter", "language-server"]
+repository = "https://github.com/johnnymorganz/stylua"
 
 [distribution]
 registry = "github"

@@ -6,3 +6,5 @@ implied-languages = ["python"]
 manifest = "environment.yml"
 alternate-manifests = ["environment.yaml"]
 manifest-selection = "default"
+homepage = "https://docs.conda.io"
+repository = "https://github.com/conda/conda"
