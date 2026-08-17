@@ -1,4 +1,5 @@
 id = "clean"
 display-name = "Clean"
 role = "programming"
+comments = "cairo"
 extensions = ["dcl", "icl"]

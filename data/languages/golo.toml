@@ -1,4 +1,5 @@
 id = "golo"
 display-name = "Golo"
 role = "programming"
+comments = "dockerfile"
 extensions = ["golo"]

@@ -1,5 +1,6 @@
 id = "cmake"
 display-name = "CMake"
 role = "programming"
+comments = "dockerfile"
 extensions = ["cmake", "cmake.in"]
 filenames = ["CMakeLists.txt"]

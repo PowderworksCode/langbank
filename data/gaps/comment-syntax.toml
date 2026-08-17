@@ -1,4 +1,7 @@
-# Comment syntax tokei and scc disagree about. Neither is taken.
+# Comment syntax tokei and scc disagree about, so neither of them is taken.
+# The disagreement is usually about block forms; a language here may still
+# carry a line comment that another corroborated source settled — read its
+# own entry for what langbank actually holds.
 facet = "comment-syntax"
 
 [[gap]]
@@ -15,11 +18,6 @@ note = "tokei: line ['//'], 2 block forms; scc: line ['//'], 3 block forms"
 subject = "c3"
 reason = "sources-disagree"
 note = "tokei: line ['//'], 1 block forms; scc: line ['//'], 2 block forms"
-
-[[gap]]
-subject = "cmake"
-reason = "sources-disagree"
-note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
 
 [[gap]]
 subject = "d"
@@ -40,11 +38,6 @@ note = "tokei: line ['!', '#!'], 1 block forms; scc: line ['!'], 9 block forms"
 subject = "fennel"
 reason = "sources-disagree"
 note = "tokei: line [';', ';;'], 0 block forms; scc: line [';'], 0 block forms"
-
-[[gap]]
-subject = "graphql"
-reason = "sources-disagree"
-note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
 
 [[gap]]
 subject = "hcl"
@@ -100,8 +93,3 @@ note = "tokei: line ['//'], 1 block forms; scc: line ['//', '///'], 1 block form
 subject = "templ"
 reason = "sources-disagree"
 note = "tokei: line ['//'], 2 block forms; scc: line ['//'], 1 block forms"
-
-[[gap]]
-subject = "vhdl"
-reason = "sources-disagree"
-note = "tokei: line ['--'], 1 block forms; scc: line ['--'], 0 block forms"

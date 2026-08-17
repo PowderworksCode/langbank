@@ -1,4 +1,5 @@
 id = "zephir"
 display-name = "Zephir"
 role = "programming"
+comments = "cairo"
 extensions = ["zep"]

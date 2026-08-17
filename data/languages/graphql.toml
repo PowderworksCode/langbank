@@ -1,4 +1,5 @@
 id = "graphql"
 display-name = "GraphQL"
 role = "data"
+comments = "dockerfile"
 extensions = ["gql", "graphql", "graphqls"]

@@ -1,4 +1,5 @@
 id = "fortran"
 display-name = "Fortran"
 role = "programming"
+comments = "fortran"
 extensions = ["f", "f77", "for", "fpp"]

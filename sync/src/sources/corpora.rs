@@ -398,7 +398,11 @@ pub fn run(verb: &str) -> Result<Outcome> {
         std::fs::write(
             "data/gaps/comment-syntax.toml",
             format!(
-                "# Comment syntax tokei and scc disagree about. Neither is taken.\nfacet = \"comment-syntax\"\n{rows}"
+                "# Comment syntax tokei and scc disagree about, so neither of them is taken.\n\
+             # The disagreement is usually about block forms; a language here may still\n\
+             # carry a line comment that another corroborated source settled — read its\n\
+             # own entry for what langbank actually holds.\n\
+             facet = \"comment-syntax\"\n{rows}"
             ),
         )
         .map_err(|e| format!("data/gaps/comment-syntax.toml: {e}"))?;
