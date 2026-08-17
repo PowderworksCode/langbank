@@ -1,5 +1,4 @@
 use std::collections::BTreeSet;
-use std::path::Path;
 use std::sync::LazyLock;
 
 use crate::{DependencySource, EcosystemId, LanguageProfile, language_profiles};
@@ -14,9 +13,22 @@ pub enum EcosystemRole {
     Toolchain,
 }
 
+/// Which ecosystem a shared manifest belongs to when nothing else decides.
+///
+/// Four package managers read `package.json` and two read `pyproject.toml`, so
+/// the manifest alone cannot name one. Exactly one of the sharers is the
+/// `Default` — the answer for a directory with the manifest and no lockfile —
+/// and the rest are `Lockfile`, meaning they are claimed only when their own
+/// lockfile is there. `REGISTERED` asserts the "exactly one" at build time.
+///
+/// npm is the default for `package.json` and poetry for `pyproject.toml`. Those
+/// are judgements about convention rather than facts about the files, which is
+/// why they are stated rather than inferred.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ManifestSelection {
+    /// Claimed by its manifest alone, and the fallback when that is shared.
     Default,
+    /// Claimed only when one of its own lockfiles is present.
     Lockfile,
 }
 
@@ -101,6 +113,9 @@ pub struct EcosystemProfile {
     /// simply the other way to spell `build.gradle`.
     pub alternate_manifests: &'static [&'static str],
     pub gitignore_patterns: &'static [&'static str],
+    /// Whether this ecosystem is claimed by its manifest alone. See
+    /// `ManifestSelection`; the registry requires exactly one `Default` per
+    /// manifest.
     pub manifest_selection: ManifestSelection,
     pub dependency_pins: Option<DependencyPinPolicy>,
     /// The registry this manager's packages are named in. npm, pnpm, yarn and
@@ -118,12 +133,6 @@ impl EcosystemProfile {
 
     pub fn has_role(&self, role: EcosystemRole) -> bool {
         self.roles.contains(&role)
-    }
-
-    pub fn lockfile_present(&self, directory: &Path) -> bool {
-        self.lockfiles
-            .iter()
-            .any(|lockfile| directory.join(lockfile).is_file())
     }
 
     pub fn lockfile_description(&self) -> String {
