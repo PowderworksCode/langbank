@@ -3,5 +3,4 @@ display-name = "CSScomb"
 kind = "formatter"
 languages = ["css"]
 programs = ["csscomb"]
-categories = ["formatter"]
 repository = "https://github.com/csscomb/csscomb.js"

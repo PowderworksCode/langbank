@@ -3,6 +3,5 @@ display-name = "PMD"
 kind = "linter"
 languages = ["apex", "java", "javascript", "plsql", "scala", "xml"]
 programs = ["pmd"]
-categories = ["linter"]
 homepage = "https://pmd.github.io"
 repository = "https://github.com/pmd/pmd"

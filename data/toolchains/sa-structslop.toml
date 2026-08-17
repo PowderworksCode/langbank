@@ -3,5 +3,5 @@ display-name = "structslop"
 kind = "linter"
 languages = ["go"]
 programs = ["structslop"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 repository = "https://github.com/orijtech/structslop"

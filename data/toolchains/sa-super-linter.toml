@@ -3,5 +3,4 @@ display-name = "Super-Linter"
 kind = "linter"
 languages = ["coffeescript", "go", "javascript", "json", "markdown", "perl", "python", "ruby", "shell", "typescript", "xml", "yaml"]
 programs = ["super-linter"]
-categories = ["linter"]
 repository = "https://github.com/github/super-linter"

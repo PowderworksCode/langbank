@@ -3,6 +3,5 @@ display-name = "abapOpenChecks"
 kind = "linter"
 languages = ["abap"]
 programs = ["abapopenchecks"]
-categories = ["linter"]
 homepage = "https://docs.abapopenchecks.org"
 repository = "https://github.com/larshp/abapOpenChecks"

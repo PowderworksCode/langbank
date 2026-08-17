@@ -3,6 +3,5 @@ display-name = "CogniCrypt"
 kind = "linter"
 languages = ["java"]
 programs = ["cognicrypt"]
-categories = ["linter"]
 homepage = "https://www.eclipse.org/cognicrypt"
 repository = "https://github.com/eclipse-cognicrypt/CogniCrypt"

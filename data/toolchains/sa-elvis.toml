@@ -3,5 +3,4 @@ display-name = "elvis"
 kind = "linter"
 languages = ["erlang"]
 programs = ["elvis"]
-categories = ["linter"]
 repository = "https://github.com/inaka/elvis"

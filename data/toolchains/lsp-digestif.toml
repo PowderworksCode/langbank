@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["tex"]
 programs = ["digestif"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/astoff/digestif"
 
 [distribution]

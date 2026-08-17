@@ -3,7 +3,6 @@ display-name = "gradle-language-server"
 kind = "language-server"
 languages = ["gradle"]
 programs = ["gradle-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/microsoft/vscode-gradle"
 
 [distribution]

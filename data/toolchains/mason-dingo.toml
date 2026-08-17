@@ -3,7 +3,7 @@ display-name = "dingo"
 kind = "compiler"
 languages = ["go"]
 programs = ["dingo"]
-categories = ["compiler", "formatter", "linter"]
+categories = ["formatter", "linter"]
 homepage = "https://github.com/MadAppGang/dingo"
 
 [distribution]

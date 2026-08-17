@@ -3,7 +3,7 @@ display-name = "npm-groovy-lint"
 kind = "linter"
 languages = ["groovy"]
 programs = ["npm-groovy-lint"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 homepage = "https://github.com/nvuillam/npm-groovy-lint"
 
 [distribution]

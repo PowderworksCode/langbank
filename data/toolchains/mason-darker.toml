@@ -3,7 +3,6 @@ display-name = "darker"
 kind = "formatter"
 languages = ["python"]
 programs = ["darker"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/darker/"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "Infer"
 kind = "linter"
 languages = ["c", "cpp", "java"]
 programs = ["infer"]
-categories = ["linter"]
 homepage = "https://fbinfer.com"
 repository = "https://github.com/facebook/infer"

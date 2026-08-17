@@ -3,5 +3,4 @@ display-name = "PHP Semantic Versioning Checker"
 kind = "linter"
 languages = ["php"]
 programs = ["php semantic versioning checker"]
-categories = ["linter"]
 repository = "https://github.com/tomzx/php-semver-checker"

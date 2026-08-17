@@ -3,6 +3,5 @@ display-name = "CScout"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cscout"]
-categories = ["linter"]
 homepage = "https://www.spinellis.gr/cscout"
 repository = "https://github.com/dspinellis/cscout"

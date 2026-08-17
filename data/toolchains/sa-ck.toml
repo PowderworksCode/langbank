@@ -3,5 +3,4 @@ display-name = "ck"
 kind = "linter"
 languages = ["java"]
 programs = ["ck"]
-categories = ["linter"]
 repository = "https://github.com/mauricioaniche/ck"

@@ -3,7 +3,6 @@ display-name = "delve"
 kind = "debugger"
 languages = ["go"]
 programs = ["delve"]
-categories = ["debugger"]
 homepage = "https://github.com/go-delve/delve"
 
 [distribution]

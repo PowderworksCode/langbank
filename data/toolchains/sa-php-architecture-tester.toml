@@ -3,5 +3,4 @@ display-name = "PHP Architecture Tester"
 kind = "linter"
 languages = ["php"]
 programs = ["php architecture tester"]
-categories = ["linter"]
 repository = "https://github.com/carlosas/phpat"

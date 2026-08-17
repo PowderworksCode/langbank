@@ -3,5 +3,4 @@ display-name = "tclchecker"
 kind = "linter"
 languages = ["tcl"]
 programs = ["tclchecker"]
-categories = ["linter"]
 repository = "https://github.com/ActiveState/tdk/blob/master/docs/3.0/TDK_3.0_Checker.txt"

@@ -218,6 +218,27 @@ struct Entry {
     repository: Option<String>,
 }
 
+impl Entry {
+    /// The same, judged against an existing entry's `kind` when there is one.
+    ///
+    /// A merge writes into a file that already has a kind, and that is the kind
+    /// the new categories must not repeat. Judging against mason's own primary
+    /// instead wrote `categories = ["language-server"]` onto `lsp-solidity`,
+    /// whose kind is `language-server`: mason's `solidity` package is
+    /// `[Compiler, LSP]`, so "not the primary" meant something different at
+    /// each end.
+    fn others_besides(&self, kind: Option<&str>) -> Vec<String> {
+        let primary = kind
+            .or_else(|| self.kinds.first().map(String::as_str))
+            .unwrap_or("linter");
+        self.kinds
+            .iter()
+            .filter(|other| other.as_str() != primary)
+            .cloned()
+            .collect()
+    }
+}
+
 /// A `pkg:github/owner/name` purl names a repository; nothing else here does.
 /// A crates.io or npm package has a registry page, which is where it is
 /// distributed rather than where its code is, so it is not a repository.
@@ -231,8 +252,10 @@ fn repository_of(registry: Option<&str>, package: Option<&str>) -> Option<String
 /// The lines a merge would append: only what the file does not already carry.
 fn additions(entry: &Entry, text: &str) -> Vec<String> {
     let mut lines = Vec::new();
-    if !entry.kinds.is_empty() && !text.contains("categories") {
-        lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+    // Only what the tool does besides its kind — see `Toolchain::categories`.
+    let others = entry.others_besides(local::scalar(text, "kind").as_deref());
+    if !others.is_empty() && !text.contains("categories") {
+        lines.push(format!("categories = {}", local::toml_array(&others)));
     }
     if let Some(homepage) = &entry.homepage
         && !text.contains("homepage")
@@ -256,9 +279,24 @@ fn additions(entry: &Entry, text: &str) -> Vec<String> {
     lines
 }
 
+/// Entries whose upstream match is recorded as ambiguous.
+///
+/// Removing a wrong merge by hand is worthless if the next `create` puts it
+/// back, so the gap is consulted rather than being a note for a reader.
+/// `lsp-solidity` is the case: mason's `solidity` is the ethereum compiler and
+/// langbank's entry is a language server that shares its display name.
+fn disputed() -> Vec<&'static str> {
+    langbank::gaps()
+        .iter()
+        .filter(|gap| gap.facet == "toolchain-identity")
+        .map(|gap| gap.subject)
+        .collect()
+}
+
 pub fn run(verb: &str) -> Result<Outcome> {
     let packages = upstream_packages()?;
     let carried = langbank()?;
+    let disputed = disputed();
     let category: BTreeMap<&str, &str> = CATEGORY.iter().copied().collect();
     let mut registries = BTreeSet::new();
     for path in local::files("data/registries")? {
@@ -305,6 +343,9 @@ pub fn run(verb: &str) -> Result<Outcome> {
         };
         match carried.programs.get(&package.name) {
             Some(existing) => {
+                if disputed.contains(&existing.as_str()) {
+                    continue;
+                }
                 let Some((_, text)) = carried.toolchains.get(existing) else {
                     continue;
                 };
@@ -379,8 +420,9 @@ pub fn run(verb: &str) -> Result<Outcome> {
                 local::toml_array(std::slice::from_ref(&entry.name))
             ),
         ];
-        if !entry.kinds.is_empty() {
-            lines.push(format!("categories = {}", local::toml_array(&entry.kinds)));
+        let others = entry.others_besides(None);
+        if !others.is_empty() {
+            lines.push(format!("categories = {}", local::toml_array(&others)));
         }
         if let Some(homepage) = &entry.homepage {
             lines.push(format!("homepage = {}", local::toml_string(homepage)));

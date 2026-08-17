@@ -3,5 +3,4 @@ display-name = "PHP-Parser"
 kind = "linter"
 languages = ["php"]
 programs = ["php-parser"]
-categories = ["linter"]
 repository = "https://github.com/nikic/PHP-Parser"

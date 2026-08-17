@@ -3,5 +3,4 @@ display-name = "OpenStaticAnalyzer"
 kind = "linter"
 languages = ["c", "cpp", "java", "javascript", "python"]
 programs = ["openstaticanalyzer"]
-categories = ["linter"]
 homepage = "https://github.com/sed-inf-u-szeged/OpenStaticAnalyzer"

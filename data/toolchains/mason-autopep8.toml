@@ -3,7 +3,6 @@ display-name = "autopep8"
 kind = "formatter"
 languages = ["python"]
 programs = ["autopep8"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/autopep8/"
 repository = "https://github.com/hhatto/autopep8"
 

@@ -3,7 +3,6 @@ display-name = "gci"
 kind = "formatter"
 languages = ["go"]
 programs = ["gci"]
-categories = ["formatter"]
 homepage = "https://pkg.go.dev/github.com/daixiang0/gci"
 
 [distribution]

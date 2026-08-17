@@ -3,6 +3,5 @@ display-name = "keploy"
 kind = "linter"
 languages = ["go", "java", "javascript", "python", "rust"]
 programs = ["keploy"]
-categories = ["linter"]
 homepage = "https://keploy.io/"
 repository = "https://github.com/keploy/"

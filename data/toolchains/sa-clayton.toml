@@ -3,5 +3,4 @@ display-name = "Clayton"
 kind = "linter"
 languages = ["apex"]
 programs = ["clayton"]
-categories = ["linter"]
 homepage = "https://www.getclayton.com/"

@@ -3,7 +3,6 @@ display-name = "brighterscript-formatter"
 kind = "formatter"
 languages = ["brighterscript"]
 programs = ["brighterscript-formatter"]
-categories = ["formatter"]
 homepage = "https://github.com/rokucommunity/brighterscript-formatter"
 
 [distribution]

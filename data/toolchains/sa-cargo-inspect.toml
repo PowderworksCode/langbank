@@ -3,5 +3,4 @@ display-name = "cargo-inspect"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo-inspect"]
-categories = ["linter"]
 repository = "https://github.com/mre/cargo-inspect"

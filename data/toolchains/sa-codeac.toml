@@ -3,5 +3,4 @@ display-name = "Codeac"
 kind = "linter"
 languages = ["go", "java", "javascript", "php", "python", "ruby", "typescript"]
 programs = ["codeac"]
-categories = ["linter"]
 homepage = "https://www.codeac.io/?ref=awesome-static-analysis"

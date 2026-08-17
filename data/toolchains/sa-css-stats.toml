@@ -3,6 +3,5 @@ display-name = "CSS Stats"
 kind = "linter"
 languages = ["css"]
 programs = ["css stats"]
-categories = ["linter"]
 homepage = "https://cssstats.com"
 repository = "https://github.com/cssstats/cssstats"

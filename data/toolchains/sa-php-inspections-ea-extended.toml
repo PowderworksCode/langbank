@@ -3,6 +3,5 @@ display-name = "Php Inspections (EA Extended)"
 kind = "linter"
 languages = ["php"]
 programs = ["php inspections (ea extended)"]
-categories = ["linter"]
 homepage = "https://plugins.jetbrains.com/plugin/7622-php-inspections-ea-extended-"
 repository = "https://github.com/kalessil/phpinspectionsea"

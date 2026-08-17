@@ -3,6 +3,5 @@ display-name = "Verilator"
 kind = "linter"
 languages = ["verilog"]
 programs = ["verilator"]
-categories = ["linter"]
 homepage = "https://www.veripool.org/verilator"
 repository = "https://github.com/verilator/verilator"

@@ -3,5 +3,4 @@ display-name = "PhpDeprecationDetector"
 kind = "linter"
 languages = ["php"]
 programs = ["phpdeprecationdetector"]
-categories = ["linter"]
 repository = "https://github.com/wapmorgan/PhpDeprecationDetector"

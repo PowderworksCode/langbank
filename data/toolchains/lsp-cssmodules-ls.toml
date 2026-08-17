@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["cssmodules-language-server"]
 root-markers = ["package.json"]
-categories = ["language-server"]
 homepage = "https://github.com/antonk52/cssmodules-language-server"
 
 [distribution]

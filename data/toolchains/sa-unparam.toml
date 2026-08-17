@@ -3,5 +3,4 @@ display-name = "unparam"
 kind = "linter"
 languages = ["go"]
 programs = ["unparam"]
-categories = ["linter"]
 repository = "https://github.com/mvdan/unparam"

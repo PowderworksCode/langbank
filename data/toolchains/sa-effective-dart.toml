@@ -3,6 +3,5 @@ display-name = "effective_dart"
 kind = "linter"
 languages = ["dart"]
 programs = ["effective_dart"]
-categories = ["linter"]
 homepage = "https://pub.dev/packages/effective_dart"
 repository = "https://github.com/tenhobi/effective_dart"

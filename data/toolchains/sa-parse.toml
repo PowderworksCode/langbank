@@ -3,5 +3,4 @@ display-name = "Parse"
 kind = "linter"
 languages = ["php"]
 programs = ["parse"]
-categories = ["linter"]
 repository = "https://github.com/psecio/parse"

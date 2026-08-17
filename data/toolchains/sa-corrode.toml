@@ -3,5 +3,4 @@ display-name = "Corrode"
 kind = "linter"
 languages = ["c", "cpp", "rust"]
 programs = ["corrode"]
-categories = ["linter"]
 repository = "https://github.com/jameysharp/corrode"

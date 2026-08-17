@@ -3,7 +3,6 @@ display-name = "eslint_d"
 kind = "linter"
 languages = ["javascript", "typescript"]
 programs = ["eslint_d"]
-categories = ["linter"]
 homepage = "https://github.com/mantoni/eslint_d.js/"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "Soot"
 kind = "linter"
 languages = ["java"]
 programs = ["soot"]
-categories = ["linter"]
 homepage = "https://soot-oss.github.io/soot"
 repository = "https://github.com/soot-oss/soot"

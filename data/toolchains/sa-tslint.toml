@@ -3,6 +3,5 @@ display-name = "tslint"
 kind = "linter"
 languages = ["typescript"]
 programs = ["tslint"]
-categories = ["linter"]
 homepage = "https://palantir.github.io/tslint/"
 repository = "https://github.com/palantir/tslint"

@@ -3,5 +3,4 @@ display-name = "ShiftLeft Scan"
 kind = "linter"
 languages = ["apex", "go", "groovy", "java", "json", "kotlin", "php", "plsql", "python", "ruby", "rust", "scala", "shell", "yaml"]
 programs = ["shiftleft scan"]
-categories = ["linter"]
 repository = "https://github.com/ShiftLeftSecurity/sast-scan"

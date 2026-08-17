@@ -3,7 +3,6 @@ display-name = "blackd-client"
 kind = "formatter"
 languages = ["python"]
 programs = ["blackd-client"]
-categories = ["formatter"]
 repository = "https://github.com/disrupted/blackd-client"
 
 [distribution]

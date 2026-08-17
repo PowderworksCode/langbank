@@ -3,5 +3,4 @@ display-name = "Rudra"
 kind = "linter"
 languages = ["rust"]
 programs = ["rudra"]
-categories = ["linter"]
 repository = "https://github.com/sslab-gatech/Rudra"

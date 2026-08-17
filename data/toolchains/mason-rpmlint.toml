@@ -3,7 +3,6 @@ display-name = "rpmlint"
 kind = "linter"
 languages = ["python"]
 programs = ["rpmlint"]
-categories = ["linter"]
 homepage = "https://pypi.org/project/rpmlint/"
 
 [distribution]

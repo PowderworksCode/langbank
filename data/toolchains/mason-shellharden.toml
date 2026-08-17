@@ -3,7 +3,7 @@ display-name = "shellharden"
 kind = "formatter"
 languages = ["shell"]
 programs = ["shellharden"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 repository = "https://github.com/anordal/shellharden"
 homepage = "https://github.com/anordal/shellharden"
 

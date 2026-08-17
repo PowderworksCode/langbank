@@ -3,6 +3,5 @@ display-name = "deal"
 kind = "linter"
 languages = ["python"]
 programs = ["deal"]
-categories = ["linter"]
 homepage = "https://deal.readthedocs.io/"
 repository = "https://github.com/life4/deal"

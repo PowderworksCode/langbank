@@ -3,7 +3,6 @@ display-name = "prettypst"
 kind = "formatter"
 languages = ["typst"]
 programs = ["prettypst"]
-categories = ["formatter"]
 homepage = "https://github.com/antonWetzel/prettypst"
 
 [distribution]

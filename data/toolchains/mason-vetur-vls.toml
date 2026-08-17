@@ -3,7 +3,6 @@ display-name = "vetur-vls"
 kind = "language-server"
 languages = ["vue"]
 programs = ["vetur-vls"]
-categories = ["language-server"]
 homepage = "https://github.com/vuejs/vetur"
 
 [distribution]

@@ -3,7 +3,7 @@ display-name = "biome"
 kind = "language-server"
 languages = ["javascript", "json", "typescript"]
 programs = ["biome"]
-categories = ["language-server", "linter", "formatter"]
+categories = ["linter", "formatter"]
 homepage = "https://biomejs.dev"
 repository = "https://github.com/biomejs/biome"
 

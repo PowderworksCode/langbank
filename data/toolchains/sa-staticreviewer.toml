@@ -3,5 +3,4 @@ display-name = "StaticReviewer"
 kind = "linter"
 languages = ["abap", "actionscript", "apex", "c", "clojure", "cobol", "cpp", "go", "groovy", "java", "javascript", "json", "kotlin", "lua", "php", "plsql", "powershell", "python", "r", "rust", "scala", "shell", "sql", "swift", "tsql", "typescript", "vba", "xml"]
 programs = ["staticreviewer"]
-categories = ["linter"]
 homepage = ">-"

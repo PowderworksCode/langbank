@@ -3,7 +3,6 @@ display-name = "checkmake"
 kind = "linter"
 languages = ["makefile"]
 programs = ["checkmake"]
-categories = ["linter"]
 repository = "https://github.com/mrtazz/checkmake"
 
 [distribution]

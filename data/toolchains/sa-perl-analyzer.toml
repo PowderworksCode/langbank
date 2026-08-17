@@ -3,6 +3,5 @@ display-name = "Perl::Analyzer"
 kind = "linter"
 languages = ["perl"]
 programs = ["perl::analyzer"]
-categories = ["linter"]
 homepage = "https://technix.github.io/Perl-Analyzer/"
 repository = "https://github.com/technix/Perl-Analyzer"

@@ -3,6 +3,5 @@ display-name = "Liquid Haskell"
 kind = "linter"
 languages = ["haskell"]
 programs = ["liquid haskell"]
-categories = ["linter"]
 homepage = "https://ucsd-progsys.github.io/liquidhaskell-blog/"
 repository = "https://github.com/ucsd-progsys/liquidhaskell"

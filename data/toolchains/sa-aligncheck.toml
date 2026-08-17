@@ -3,5 +3,4 @@ display-name = "aligncheck"
 kind = "linter"
 languages = ["go"]
 programs = ["aligncheck"]
-categories = ["linter"]
 repository = "https://gitlab.com/opennota/check"

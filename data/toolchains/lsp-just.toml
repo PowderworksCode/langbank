@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["just"]
 programs = ["just-lsp"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/terror/just-lsp/releases"
 repository = "https://github.com/terror/just-lsp"
 

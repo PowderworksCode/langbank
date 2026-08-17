@@ -3,6 +3,5 @@ display-name = "Esprima"
 kind = "linter"
 languages = ["javascript"]
 programs = ["esprima"]
-categories = ["linter"]
 homepage = "https://esprima.org"
 repository = "https://github.com/jquery/esprima"

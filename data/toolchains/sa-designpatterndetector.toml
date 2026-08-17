@@ -3,5 +3,4 @@ display-name = "DesignPatternDetector"
 kind = "linter"
 languages = ["php"]
 programs = ["designpatterndetector"]
-categories = ["linter"]
 repository = "https://github.com/Halleck45/DesignPatternDetector"

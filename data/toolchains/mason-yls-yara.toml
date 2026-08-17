@@ -3,7 +3,6 @@ display-name = "yls-yara"
 kind = "language-server"
 languages = ["yara"]
 programs = ["yls-yara"]
-categories = ["language-server"]
 homepage = "https://avast.github.io/yls/"
 
 [distribution]

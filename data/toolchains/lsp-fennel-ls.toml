@@ -3,7 +3,6 @@ display-name = "fennel_ls"
 kind = "language-server"
 languages = ["fennel"]
 programs = ["fennel-ls"]
-categories = ["language-server"]
 homepage = "https://git.sr.ht/~xerool/fennel-ls"
 
 [distribution]

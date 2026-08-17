@@ -3,6 +3,5 @@ display-name = "pyre-check"
 kind = "linter"
 languages = ["python"]
 programs = ["pyre-check"]
-categories = ["linter"]
 homepage = "https://pyre-check.org"
 repository = "https://github.com/facebook/pyre-check"

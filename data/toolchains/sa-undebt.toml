@@ -3,5 +3,4 @@ display-name = "Undebt"
 kind = "linter"
 languages = ["c", "cpp", "java", "php"]
 programs = ["undebt"]
-categories = ["linter"]
 repository = "https://github.com/Yelp/undebt"

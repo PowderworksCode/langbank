@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["cypher"]
 programs = ["cypher-language-server"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/neo4j/cypher-language-support"
 
 [distribution]

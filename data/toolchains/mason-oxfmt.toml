@@ -3,7 +3,6 @@ display-name = "oxfmt"
 kind = "formatter"
 languages = ["css", "graphql", "html", "javascript", "json", "less", "markdown", "scss", "typescript", "vue", "yaml"]
 programs = ["oxfmt"]
-categories = ["formatter"]
 homepage = "https://oxc.rs/docs/guide/usage/formatter"
 
 [distribution]

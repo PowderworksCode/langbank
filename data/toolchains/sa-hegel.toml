@@ -3,6 +3,5 @@ display-name = "hegel"
 kind = "linter"
 languages = ["javascript"]
 programs = ["hegel"]
-categories = ["linter"]
 homepage = "https://hegel.js.org"
 repository = "https://github.com/JSMonk/hegel"

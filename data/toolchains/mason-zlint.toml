@@ -3,7 +3,6 @@ display-name = "zlint"
 kind = "linter"
 languages = ["zig"]
 programs = ["zlint"]
-categories = ["linter"]
 homepage = "https://donisaac.github.io/zlint/"
 repository = "https://github.com/DonIsaac/zlint"
 

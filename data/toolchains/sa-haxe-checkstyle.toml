@@ -3,6 +3,5 @@ display-name = "Haxe Checkstyle"
 kind = "linter"
 languages = ["haxe"]
 programs = ["haxe checkstyle"]
-categories = ["linter"]
 homepage = "https://haxecheckstyle.github.io/docs/haxe-checkstyle/home.html"
 repository = "https://github.com/HaxeCheckstyle/haxe-checkstyle"

@@ -3,7 +3,6 @@ display-name = "vulture"
 kind = "linter"
 languages = ["python"]
 programs = ["vulture"]
-categories = ["linter"]
 repository = "https://github.com/jendrikseipp/vulture"
 homepage = "https://github.com/jendrikseipp/vulture"
 

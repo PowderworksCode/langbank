@@ -3,7 +3,6 @@ display-name = "wc-language-server"
 kind = "language-server"
 languages = ["html", "javascript", "typescript"]
 programs = ["wc-language-server"]
-categories = ["language-server"]
 repository = "https://github.com/wc-toolkit/wc-language-server"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "Reflection"
 kind = "linter"
 languages = ["php"]
 programs = ["reflection"]
-categories = ["linter"]
 repository = "https://github.com/phpDocumentor/Reflection"

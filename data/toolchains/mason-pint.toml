@@ -3,7 +3,6 @@ display-name = "pint"
 kind = "formatter"
 languages = ["php"]
 programs = ["pint"]
-categories = ["formatter"]
 homepage = "https://laravel.com/docs/pint"
 
 [distribution]

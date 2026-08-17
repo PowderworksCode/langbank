@@ -3,5 +3,4 @@ display-name = "CMetrics"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["cmetrics"]
-categories = ["linter"]
 repository = "https://github.com/MetricsGrimoire/CMetrics"

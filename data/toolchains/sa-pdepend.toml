@@ -3,6 +3,5 @@ display-name = "pdepend"
 kind = "linter"
 languages = ["php"]
 programs = ["pdepend"]
-categories = ["linter"]
 homepage = "https://pdepend.org"
 repository = "https://github.com/pdepend/pdepend"

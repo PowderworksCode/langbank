@@ -3,5 +3,4 @@ display-name = "rubycritic"
 kind = "linter"
 languages = ["ruby"]
 programs = ["rubycritic"]
-categories = ["linter"]
 repository = "https://github.com/whitesmith/rubycritic"

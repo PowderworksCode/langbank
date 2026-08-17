@@ -3,7 +3,6 @@ display-name = "nim_langserver"
 kind = "language-server"
 languages = ["nim"]
 programs = ["nimlangserver"]
-categories = ["language-server"]
 repository = "https://github.com/nim-lang/langserver"
 
 [distribution]

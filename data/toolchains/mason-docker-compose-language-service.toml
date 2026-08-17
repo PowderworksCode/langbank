@@ -3,7 +3,6 @@ display-name = "docker-compose-language-service"
 kind = "language-server"
 languages = ["dockerfile"]
 programs = ["docker-compose-language-service"]
-categories = ["language-server"]
 homepage = "https://github.com/microsoft/compose-language-service"
 
 [distribution]

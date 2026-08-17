@@ -3,9 +3,9 @@ display-name = "sqlfluff"
 kind = "linter"
 languages = ["sql"]
 programs = ["sqlfluff"]
-categories = ["linter"]
 homepage = "https://www.sqlfluff.com/"
 repository = "https://github.com/sqlfluff/sqlfluff"
+categories = ["formatter"]
 
 [distribution]
 registry = "pypi"

@@ -3,6 +3,5 @@ display-name = "CSSLint"
 kind = "linter"
 languages = ["css"]
 programs = ["csslint"]
-categories = ["linter"]
 homepage = "http://csslint.net"
 repository = "https://github.com/CSSLint/csslint"

@@ -3,7 +3,6 @@ display-name = "pretty-php"
 kind = "formatter"
 languages = ["php"]
 programs = ["pretty-php"]
-categories = ["formatter"]
 repository = "https://github.com/lkrms/pretty-php"
 
 [distribution]

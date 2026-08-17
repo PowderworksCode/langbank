@@ -3,5 +3,4 @@ display-name = "lualint"
 kind = "linter"
 languages = ["lua"]
 programs = ["lualint"]
-categories = ["linter"]
 repository = "https://github.com/philips/lualint"

@@ -3,5 +3,4 @@ display-name = "GrumPHP"
 kind = "linter"
 languages = ["php"]
 programs = ["grumphp"]
-categories = ["linter"]
 repository = "https://github.com/phpro/grumphp"

@@ -3,6 +3,5 @@ display-name = "xenon"
 kind = "linter"
 languages = ["python"]
 programs = ["xenon"]
-categories = ["linter"]
 homepage = "https://xenon.readthedocs.io"
 repository = "https://github.com/rubik/xenon"

@@ -3,5 +3,4 @@ display-name = "bodyclose"
 kind = "linter"
 languages = ["go"]
 programs = ["bodyclose"]
-categories = ["linter"]
 repository = "https://github.com/timakin/bodyclose"

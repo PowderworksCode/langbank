@@ -3,7 +3,6 @@ display-name = "actionlint"
 kind = "linter"
 languages = ["yaml"]
 programs = ["actionlint"]
-categories = ["linter"]
 repository = "https://github.com/rhysd/actionlint"
 
 [distribution]

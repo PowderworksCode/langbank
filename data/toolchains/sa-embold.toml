@@ -3,5 +3,4 @@ display-name = "Embold"
 kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "kotlin", "python", "typescript"]
 programs = ["embold"]
-categories = ["linter"]
 homepage = "https://embold.io"

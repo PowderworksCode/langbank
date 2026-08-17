@@ -3,7 +3,7 @@ display-name = "solang-llvm"
 kind = "language-server"
 languages = ["solidity"]
 programs = ["solang-llvm"]
-categories = ["language-server", "compiler"]
+categories = ["compiler"]
 repository = "https://github.com/hyperledger/solang-llvm"
 
 [distribution]

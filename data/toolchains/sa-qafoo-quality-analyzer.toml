@@ -3,5 +3,4 @@ display-name = "Qafoo Quality Analyzer"
 kind = "linter"
 languages = ["php"]
 programs = ["qafoo quality analyzer"]
-categories = ["linter"]
 repository = "https://github.com/Qafoo/QualityAnalyzer"

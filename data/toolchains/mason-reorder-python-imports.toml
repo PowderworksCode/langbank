@@ -3,7 +3,6 @@ display-name = "reorder-python-imports"
 kind = "formatter"
 languages = ["python"]
 programs = ["reorder-python-imports"]
-categories = ["formatter"]
 homepage = "https://github.com/asottile/reorder_python_imports"
 
 [distribution]

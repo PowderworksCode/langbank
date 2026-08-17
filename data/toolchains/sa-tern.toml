@@ -3,6 +3,5 @@ display-name = "tern"
 kind = "linter"
 languages = ["javascript"]
 programs = ["tern"]
-categories = ["linter"]
 homepage = "https://ternjs.net"
 repository = "https://github.com/ternjs/tern"

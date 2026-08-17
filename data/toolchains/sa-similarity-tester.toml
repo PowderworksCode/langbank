@@ -3,5 +3,4 @@ display-name = "Similarity Tester"
 kind = "linter"
 languages = ["c", "cpp", "java", "pascal"]
 programs = ["similarity tester"]
-categories = ["linter"]
 homepage = "https://dickgrune.com/Programs/similarity_tester/"

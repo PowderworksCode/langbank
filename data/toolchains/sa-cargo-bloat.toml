@@ -3,5 +3,4 @@ display-name = "cargo-bloat"
 kind = "linter"
 languages = ["rust"]
 programs = ["cargo-bloat"]
-categories = ["linter"]
 repository = "https://github.com/RazrFalcon/cargo-bloat"

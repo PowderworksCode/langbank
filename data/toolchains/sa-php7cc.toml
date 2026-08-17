@@ -3,5 +3,4 @@ display-name = "php7cc"
 kind = "linter"
 languages = ["php"]
 programs = ["php7cc"]
-categories = ["linter"]
 repository = "https://github.com/sstalle/php7cc"

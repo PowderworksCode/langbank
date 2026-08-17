@@ -3,7 +3,6 @@ display-name = "elm-format"
 kind = "formatter"
 languages = ["elm"]
 programs = ["elm-format"]
-categories = ["formatter"]
 homepage = "https://github.com/avh4/elm-format"
 
 [distribution]

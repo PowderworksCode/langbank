@@ -3,7 +3,7 @@ display-name = "oxlint"
 kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["oxlint"]
-categories = ["language-server", "linter"]
+categories = ["linter"]
 homepage = "https://github.com/oxc-project/oxc"
 
 [distribution]

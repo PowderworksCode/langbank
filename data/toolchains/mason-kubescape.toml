@@ -3,7 +3,7 @@ display-name = "kubescape"
 kind = "linter"
 languages = ["yaml"]
 programs = ["kubescape"]
-categories = ["linter", "runtime"]
+categories = ["runtime"]
 homepage = "https://kubescape.io/"
 repository = "https://github.com/kubescape/kubescape"
 

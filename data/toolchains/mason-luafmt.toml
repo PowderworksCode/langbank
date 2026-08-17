@@ -3,7 +3,6 @@ display-name = "luafmt"
 kind = "formatter"
 languages = ["lua"]
 programs = ["luafmt"]
-categories = ["formatter"]
 homepage = "https://github.com/EmmyLuaLs/emmylua-analyzer-rust/tree/main/crates/emmylua_formatter"
 repository = "https://github.com/EmmyLuaLs/emmylua-analyzer-rust"
 

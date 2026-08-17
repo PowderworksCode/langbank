@@ -3,5 +3,4 @@ display-name = "Better Code Hub"
 kind = "linter"
 languages = ["cpp", "go", "groovy", "java", "javascript", "kotlin", "perl", "php", "python", "ruby", "scala", "shell", "swift", "typescript"]
 programs = ["better code hub"]
-categories = ["linter"]
 homepage = "https://bettercodehub.com"

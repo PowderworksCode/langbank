@@ -3,5 +3,4 @@ display-name = "credo"
 kind = "linter"
 languages = ["elixir"]
 programs = ["credo"]
-categories = ["linter"]
 repository = "https://github.com/rrrene/credo"

@@ -3,7 +3,7 @@ display-name = "terraform"
 kind = "formatter"
 languages = ["hcl"]
 programs = ["terraform"]
-categories = ["formatter", "linter", "runtime"]
+categories = ["linter", "runtime"]
 homepage = "https://www.terraform.io/"
 
 [distribution]

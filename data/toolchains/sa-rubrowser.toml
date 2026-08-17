@@ -3,5 +3,4 @@ display-name = "Rubrowser"
 kind = "linter"
 languages = ["ruby"]
 programs = ["rubrowser"]
-categories = ["linter"]
 repository = "https://github.com/blazeeboy/rubrowser"

@@ -3,5 +3,4 @@ display-name = "phploc"
 kind = "linter"
 languages = ["php"]
 programs = ["phploc"]
-categories = ["linter"]
 repository = "https://github.com/sebastianbergmann/phploc"

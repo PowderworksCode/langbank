@@ -3,6 +3,5 @@ display-name = "PostCSS"
 kind = "linter"
 languages = ["css"]
 programs = ["postcss"]
-categories = ["linter"]
 homepage = "https://postcss.org"
 repository = "https://github.com/postcss/postcss"

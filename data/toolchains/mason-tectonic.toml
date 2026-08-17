@@ -3,7 +3,6 @@ display-name = "tectonic"
 kind = "compiler"
 languages = ["tex"]
 programs = ["tectonic"]
-categories = ["compiler"]
 homepage = "https://tectonic-typesetting.github.io"
 repository = "https://github.com/tectonic-typesetting/tectonic"
 

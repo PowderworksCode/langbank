@@ -3,7 +3,6 @@ display-name = "gdscript-formatter"
 kind = "formatter"
 languages = ["gdscript"]
 programs = ["gdscript-formatter"]
-categories = ["formatter"]
 homepage = "https://www.gdquest.com/library/gdscript_formatter"
 repository = "https://github.com/GDQuest/GDScript-formatter"
 

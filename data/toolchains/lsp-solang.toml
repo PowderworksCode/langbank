@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["solidity"]
 programs = ["solang"]
 root-markers = [".git"]
-categories = ["language-server", "compiler"]
+categories = ["compiler"]
 homepage = "https://solang.readthedocs.io/en/latest/"
 repository = "https://github.com/hyperledger-labs/solang"
 

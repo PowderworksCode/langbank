@@ -3,7 +3,6 @@ display-name = "sqlfmt"
 kind = "formatter"
 languages = ["sql"]
 programs = ["sqlfmt"]
-categories = ["formatter"]
 homepage = "https://sqlfmt.com/"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "pyproject-fmt"
 kind = "formatter"
 languages = ["python", "toml"]
 programs = ["pyproject-fmt"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/pyproject-fmt/"
 
 [distribution]

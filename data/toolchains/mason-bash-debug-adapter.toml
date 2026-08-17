@@ -3,7 +3,6 @@ display-name = "bash-debug-adapter"
 kind = "debugger"
 languages = ["shell"]
 programs = ["bash-debug-adapter"]
-categories = ["debugger"]
 repository = "https://github.com/rogalmic/vscode-bash-debug"
 
 [distribution]

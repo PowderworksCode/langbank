@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["star"]
 programs = ["starlark"]
 root-markers = [".git"]
-categories = ["language-server"]
 
 [distribution]
 registry = "cargo"

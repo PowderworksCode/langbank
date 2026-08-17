@@ -3,7 +3,6 @@ display-name = "flakeheaven"
 kind = "linter"
 languages = ["python"]
 programs = ["flakeheaven"]
-categories = ["linter"]
 homepage = "https://github.com/flakeheaven/flakeheaven"
 
 [distribution]

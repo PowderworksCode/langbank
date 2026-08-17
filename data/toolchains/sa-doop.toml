@@ -3,6 +3,5 @@ display-name = "Doop"
 kind = "linter"
 languages = ["java"]
 programs = ["doop"]
-categories = ["linter"]
 homepage = "https://plast-lab.github.io/doop-pldi15-tutorial/"
 repository = "https://github.com/plast-lab/doop"

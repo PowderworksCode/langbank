@@ -3,6 +3,5 @@ display-name = "ESBMC"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["esbmc"]
-categories = ["linter"]
 homepage = "http://esbmc.org"
 repository = "https://github.com/esbmc/esbmc"

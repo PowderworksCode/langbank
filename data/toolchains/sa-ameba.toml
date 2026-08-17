@@ -3,6 +3,5 @@ display-name = "ameba"
 kind = "linter"
 languages = ["crystal"]
 programs = ["ameba"]
-categories = ["linter"]
 homepage = "https://crystal-ameba.github.io"
 repository = "https://github.com/crystal-ameba/ameba"

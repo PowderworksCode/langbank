@@ -3,7 +3,6 @@ display-name = "eslint-lsp"
 kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["eslint-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/Microsoft/vscode-eslint"
 
 [distribution]

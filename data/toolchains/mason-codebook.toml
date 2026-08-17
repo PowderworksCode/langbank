@@ -3,7 +3,6 @@ display-name = "codebook"
 kind = "language-server"
 languages = ["c", "css", "go", "haskell", "html", "java", "javascript", "lua", "markdown", "php", "python", "ruby", "rust", "toml", "typescript"]
 programs = ["codebook"]
-categories = ["language-server"]
 repository = "https://github.com/blopker/codebook"
 
 [distribution]

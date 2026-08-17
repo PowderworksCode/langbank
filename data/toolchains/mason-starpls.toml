@@ -3,7 +3,6 @@ display-name = "starpls"
 kind = "language-server"
 languages = ["starlark"]
 programs = ["starpls"]
-categories = ["language-server"]
 repository = "https://github.com/withered-magic/starpls"
 
 [distribution]

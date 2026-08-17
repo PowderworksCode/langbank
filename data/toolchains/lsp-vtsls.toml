@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["javascript", "typescript"]
 programs = ["vtsls"]
 root-markers = ["package-lock.json", "yarn.lock", "pnpm-lock.yaml", "bun.lockb", "bun.lock"]
-categories = ["language-server"]
 homepage = "https://github.com/yioneko/vtsls"
 
 [distribution]

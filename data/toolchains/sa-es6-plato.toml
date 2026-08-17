@@ -3,5 +3,4 @@ display-name = "es6-plato"
 kind = "linter"
 languages = ["javascript"]
 programs = ["es6-plato"]
-categories = ["linter"]
 repository = "https://github.com/the-simian/es6-plato"

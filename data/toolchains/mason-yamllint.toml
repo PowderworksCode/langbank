@@ -3,7 +3,6 @@ display-name = "yamllint"
 kind = "linter"
 languages = ["yaml"]
 programs = ["yamllint"]
-categories = ["linter"]
 homepage = "https://yamllint.readthedocs.io"
 repository = "https://github.com/adrienverge/yamllint"
 

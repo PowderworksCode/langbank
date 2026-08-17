@@ -3,7 +3,6 @@ display-name = "pyment"
 kind = "formatter"
 languages = ["python"]
 programs = ["pyment"]
-categories = ["formatter"]
 homepage = "https://pypi.org/project/pyment/"
 
 [distribution]

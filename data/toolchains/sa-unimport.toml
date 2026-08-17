@@ -3,6 +3,6 @@ display-name = "unimport"
 kind = "formatter"
 languages = ["python"]
 programs = ["unimport"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://unimport.hakancelik.dev"
 repository = "https://github.com/hakancelikdev/unimport"

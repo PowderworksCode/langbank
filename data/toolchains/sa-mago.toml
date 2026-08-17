@@ -3,6 +3,6 @@ display-name = "mago"
 kind = "linter"
 languages = ["php"]
 programs = ["mago"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 homepage = "https://mago.carthage.software"
 repository = "https://github.com/carthage-software/mago"

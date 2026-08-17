@@ -3,7 +3,6 @@ display-name = "erlang-debugger"
 kind = "debugger"
 languages = ["erlang"]
 programs = ["erlang-debugger"]
-categories = ["debugger"]
 homepage = "https://erlang-ls.github.io/"
 repository = "https://github.com/erlang-ls/els_dap"
 

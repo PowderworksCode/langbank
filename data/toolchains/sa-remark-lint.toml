@@ -3,6 +3,5 @@ display-name = "remark-lint"
 kind = "linter"
 languages = ["markdown"]
 programs = ["remark-lint"]
-categories = ["linter"]
 homepage = "https://remark.js.org"
 repository = "https://github.com/remarkjs/remark-lint"

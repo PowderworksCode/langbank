@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["flux"]
 programs = ["flux-lsp"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/influxdata/flux-lsp"
 
 [distribution]

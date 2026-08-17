@@ -3,5 +3,4 @@ display-name = "vscode-verilog-hdl-support"
 kind = "linter"
 languages = ["verilog"]
 programs = ["vscode-verilog-hdl-support"]
-categories = ["linter"]
 repository = "https://github.com/mshr-h/vscode-verilog-hdl-support"

@@ -3,5 +3,4 @@ display-name = "Bootlint"
 kind = "linter"
 languages = ["html"]
 programs = ["bootlint"]
-categories = ["linter"]
 repository = "https://github.com/twbs/bootlint"

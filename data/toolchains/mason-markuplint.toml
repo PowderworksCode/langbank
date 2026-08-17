@@ -3,7 +3,6 @@ display-name = "markuplint"
 kind = "linter"
 languages = ["html"]
 programs = ["markuplint"]
-categories = ["linter"]
 homepage = "https://markuplint.dev"
 
 [distribution]

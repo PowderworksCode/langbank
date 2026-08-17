@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["vue"]
 programs = ["vue-language-server"]
 root-markers = ["package.json"]
-categories = ["language-server"]
 homepage = "https://github.com/vuejs/language-tools"
 
 [distribution]

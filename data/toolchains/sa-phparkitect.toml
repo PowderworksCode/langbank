@@ -3,5 +3,4 @@ display-name = "PHPArkitect"
 kind = "linter"
 languages = ["php"]
 programs = ["phparkitect"]
-categories = ["linter"]
 repository = "https://github.com/phparkitect/arkitect"

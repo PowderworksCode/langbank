@@ -3,7 +3,6 @@ display-name = "detekt"
 kind = "linter"
 languages = ["kotlin"]
 programs = ["detekt"]
-categories = ["linter"]
 homepage = "https://detekt.github.io/detekt"
 repository = "https://github.com/detekt/detekt"
 

@@ -3,5 +3,4 @@ display-name = "sqlint"
 kind = "linter"
 languages = ["sql"]
 programs = ["sqlint"]
-categories = ["linter"]
 repository = "https://github.com/purcell/sqlint"

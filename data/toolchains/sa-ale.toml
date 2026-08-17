@@ -3,5 +3,4 @@ display-name = "ale"
 kind = "linter"
 languages = ["javascript", "python"]
 programs = ["ale"]
-categories = ["linter"]
 repository = "https://github.com/w0rp/ale"

@@ -3,6 +3,5 @@ display-name = "steady"
 kind = "linter"
 languages = ["java"]
 programs = ["steady"]
-categories = ["linter"]
 homepage = "https://eclipse.github.io/steady/"
 repository = "https://github.com/eclipse/steady"

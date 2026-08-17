@@ -3,5 +3,4 @@ display-name = "ERB::Formatter"
 kind = "formatter"
 languages = ["html", "ruby"]
 programs = ["erb::formatter"]
-categories = ["formatter"]
 repository = "https://github.com/nebulab/erb-formatter"

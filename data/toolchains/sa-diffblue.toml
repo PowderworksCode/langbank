@@ -3,5 +3,4 @@ display-name = "Diffblue"
 kind = "linter"
 languages = ["java"]
 programs = ["diffblue"]
-categories = ["linter"]
 homepage = "https://www.diffblue.com/"

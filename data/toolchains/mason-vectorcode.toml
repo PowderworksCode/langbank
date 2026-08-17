@@ -3,7 +3,6 @@ display-name = "vectorcode"
 kind = "language-server"
 languages = ["python"]
 programs = ["vectorcode"]
-categories = ["language-server"]
 homepage = "https://github.com/Davidyz/VectorCode"
 
 [distribution]

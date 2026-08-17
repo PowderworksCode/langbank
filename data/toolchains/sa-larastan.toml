@@ -3,5 +3,4 @@ display-name = "larastan"
 kind = "linter"
 languages = ["php"]
 programs = ["larastan"]
-categories = ["linter"]
 repository = "https://github.com/larastan/larastan"

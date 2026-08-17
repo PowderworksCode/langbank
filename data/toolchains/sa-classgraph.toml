@@ -3,5 +3,4 @@ display-name = "ClassGraph"
 kind = "linter"
 languages = ["groovy", "java", "kotlin"]
 programs = ["classgraph"]
-categories = ["linter"]
 repository = "https://github.com/classgraph/classgraph"

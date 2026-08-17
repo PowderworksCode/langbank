@@ -3,7 +3,7 @@ display-name = "miss_hit"
 kind = "formatter"
 languages = ["matlab"]
 programs = ["miss_hit"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://misshit.org/"
 repository = "https://github.com/florianschanda/miss_hit"
 

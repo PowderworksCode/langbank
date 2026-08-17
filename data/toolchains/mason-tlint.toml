@@ -3,7 +3,7 @@ display-name = "tlint"
 kind = "formatter"
 languages = ["blade", "php"]
 programs = ["tlint"]
-categories = ["formatter", "linter"]
+categories = ["linter"]
 homepage = "https://github.com/tighten/tlint"
 
 [distribution]

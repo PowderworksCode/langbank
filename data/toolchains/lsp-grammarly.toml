@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["markdown"]
 programs = ["grammarly-languageserver"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/znck/grammarly"
 
 [distribution]

@@ -3,6 +3,5 @@ display-name = "PHPQA"
 kind = "linter"
 languages = ["php"]
 programs = ["phpqa"]
-categories = ["linter"]
 homepage = "https://edgedesigncz.github.io/phpqa"
 repository = "https://github.com/EdgedesignCZ/phpqa"

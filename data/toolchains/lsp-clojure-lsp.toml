@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["clojure", "edn"]
 programs = ["clojure-lsp"]
 root-markers = ["project.clj", "deps.edn", "build.boot", "shadow-cljs.edn", ".git", "bb.edn"]
-categories = ["language-server"]
 homepage = "https://clojure-lsp.io"
 repository = "https://github.com/clojure-lsp/clojure-lsp"
 

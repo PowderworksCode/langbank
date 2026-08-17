@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["rescript"]
 programs = ["rescript-language-server"]
 root-markers = ["bsconfig.json", "rescript.json", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/rescript-lang/rescript-vscode/tree/master/server"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "rnix"
 kind = "language-server"
 languages = ["nix"]
 programs = ["rnix-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/nix-community/rnix-lsp"
 
 [distribution]

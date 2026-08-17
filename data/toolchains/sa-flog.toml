@@ -3,6 +3,5 @@ display-name = "flog"
 kind = "linter"
 languages = ["ruby"]
 programs = ["flog"]
-categories = ["linter"]
 homepage = "https://ruby.sadi.st/Flog.html"
 repository = "https://github.com/seattlerb/flog"

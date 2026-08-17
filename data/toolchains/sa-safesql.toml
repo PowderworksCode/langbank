@@ -3,5 +3,4 @@ display-name = "safesql"
 kind = "linter"
 languages = ["go"]
 programs = ["safesql"]
-categories = ["linter"]
 repository = "https://github.com/stripe/safesql"

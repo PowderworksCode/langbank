@@ -3,7 +3,6 @@ display-name = "ruby-lsp"
 kind = "language-server"
 languages = ["ruby"]
 programs = ["ruby-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/Shopify/ruby-lsp"
 
 [distribution]

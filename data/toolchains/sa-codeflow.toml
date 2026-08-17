@@ -3,5 +3,4 @@ display-name = "CodeFlow"
 kind = "linter"
 languages = ["css", "java", "javascript", "php", "python", "ruby", "typescript"]
 programs = ["codeflow"]
-categories = ["linter"]
 homepage = "https://www.getcodeflow.com"

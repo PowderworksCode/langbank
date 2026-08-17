@@ -3,5 +3,4 @@ display-name = "gawk --lint"
 kind = "linter"
 languages = ["awk"]
 programs = ["gawk --lint"]
-categories = ["linter"]
 repository = "https://www.gnu.org/software/gawk/manual/html_node/Options.html"

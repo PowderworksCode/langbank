@@ -3,6 +3,5 @@ display-name = "ckjm"
 kind = "linter"
 languages = ["java"]
 programs = ["ckjm"]
-categories = ["linter"]
 homepage = "http://www.spinellis.gr/sw/ckjm"
 repository = "https://github.com/dspinellis/ckjm"

@@ -3,7 +3,6 @@ display-name = "hadolint"
 kind = "linter"
 languages = ["dockerfile"]
 programs = ["hadolint"]
-categories = ["linter"]
 repository = "https://github.com/hadolint/hadolint"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "brittany"
 kind = "formatter"
 languages = ["haskell"]
 programs = ["brittany"]
-categories = ["formatter"]
 repository = "https://github.com/lspitzner/brittany"

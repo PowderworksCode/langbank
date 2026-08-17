@@ -3,5 +3,4 @@ display-name = "Synopsys"
 kind = "linter"
 languages = ["c", "cpp", "fortran", "java", "javascript", "php", "python", "ruby", "swift"]
 programs = ["synopsys"]
-categories = ["linter"]
 homepage = ">-"

@@ -3,7 +3,6 @@ display-name = "dart-debug-adapter"
 kind = "debugger"
 languages = ["dart"]
 programs = ["dart-debug-adapter"]
-categories = ["debugger"]
 repository = "https://github.com/Dart-Code/Dart-Code"
 
 [distribution]

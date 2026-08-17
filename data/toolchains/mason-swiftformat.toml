@@ -3,7 +3,6 @@ display-name = "swiftformat"
 kind = "formatter"
 languages = ["swift"]
 programs = ["swiftformat"]
-categories = ["formatter"]
 repository = "https://github.com/nicklockwood/SwiftFormat"
 
 [distribution]

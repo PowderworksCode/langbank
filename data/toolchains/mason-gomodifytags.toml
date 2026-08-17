@@ -3,7 +3,6 @@ display-name = "gomodifytags"
 kind = "formatter"
 languages = ["go"]
 programs = ["gomodifytags"]
-categories = ["formatter"]
 homepage = "https://github.com/fatih/gomodifytags"
 
 [distribution]

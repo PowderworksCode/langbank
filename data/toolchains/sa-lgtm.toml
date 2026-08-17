@@ -3,5 +3,4 @@ display-name = "LGTM"
 kind = "linter"
 languages = ["c", "cpp", "go", "java", "javascript", "python", "typescript"]
 programs = ["lgtm"]
-categories = ["linter"]
 homepage = "https://lgtm.com/"

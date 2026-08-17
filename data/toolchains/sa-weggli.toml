@@ -3,5 +3,4 @@ display-name = "weggli"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["weggli"]
-categories = ["linter"]
 repository = "https://github.com/googleprojectzero/weggli"

@@ -3,7 +3,7 @@ display-name = "slang"
 kind = "language-server"
 languages = ["slang"]
 programs = ["slang"]
-categories = ["language-server", "compiler"]
+categories = ["compiler"]
 homepage = "https://shader-slang.com/"
 repository = "https://github.com/shader-slang/slang"
 

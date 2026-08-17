@@ -3,5 +3,4 @@ display-name = "ENRE-py"
 kind = "linter"
 languages = ["python"]
 programs = ["enre-py"]
-categories = ["linter"]
 repository = "https://github.com/xjtu-enre/ENRE-py"

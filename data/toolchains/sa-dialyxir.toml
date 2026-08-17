@@ -3,5 +3,4 @@ display-name = "dialyxir"
 kind = "linter"
 languages = ["elixir"]
 programs = ["dialyxir"]
-categories = ["linter"]
 repository = "https://github.com/jeremyjh/dialyxir"

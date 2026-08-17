@@ -3,6 +3,5 @@ display-name = "WartRemover"
 kind = "linter"
 languages = ["scala"]
 programs = ["wartremover"]
-categories = ["linter"]
 homepage = "https://www.wartremover.org"
 repository = "https://github.com/puffnfresh/wartremover"

@@ -3,7 +3,6 @@ display-name = "html-lsp"
 kind = "language-server"
 languages = ["html"]
 programs = ["html-lsp"]
-categories = ["language-server"]
 homepage = "https://github.com/microsoft/vscode-html-languageservice"
 
 [distribution]

@@ -4,7 +4,7 @@ kind = "language-server"
 languages = ["python"]
 programs = ["pyrefly"]
 root-markers = ["pyrefly.toml", "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", "Pipfile", ".git"]
-categories = ["linter", "language-server"]
+categories = ["linter"]
 homepage = "https://pyrefly.org/"
 repository = "https://github.com/facebook/pyrefly"
 

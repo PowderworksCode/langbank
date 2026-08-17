@@ -3,5 +3,4 @@ display-name = "xo"
 kind = "linter"
 languages = ["javascript"]
 programs = ["xo"]
-categories = ["linter"]
 repository = "https://github.com/xojs/xo"

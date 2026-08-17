@@ -3,7 +3,6 @@ display-name = "vscode-java-decompiler"
 kind = "debugger"
 languages = ["java"]
 programs = ["vscode-java-decompiler"]
-categories = ["debugger"]
 repository = "https://github.com/dgileadi/vscode-java-decompiler"
 
 [distribution]

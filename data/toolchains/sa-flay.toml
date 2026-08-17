@@ -3,6 +3,5 @@ display-name = "flay"
 kind = "linter"
 languages = ["ruby"]
 programs = ["flay"]
-categories = ["linter"]
 homepage = "https://ruby.sadi.st/Flay.html"
 repository = "https://github.com/seattlerb/flay"

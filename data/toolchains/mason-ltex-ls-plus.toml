@@ -3,7 +3,6 @@ display-name = "ltex-ls-plus"
 kind = "language-server"
 languages = ["markdown", "restructuredtext", "tex", "text"]
 programs = ["ltex-ls-plus"]
-categories = ["language-server"]
 homepage = "https://ltex-plus.github.io/ltex-plus/"
 repository = "https://github.com/ltex-plus/ltex-ls-plus"
 

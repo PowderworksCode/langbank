@@ -3,6 +3,5 @@ display-name = "HTML-Validate"
 kind = "linter"
 languages = ["html", "vue"]
 programs = ["html-validate"]
-categories = ["linter"]
 homepage = "https://html-validate.org/"
 repository = "https://gitlab.com/html-validate/html-validate"

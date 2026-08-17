@@ -3,6 +3,5 @@ display-name = "gosec (gas)"
 kind = "linter"
 languages = ["go"]
 programs = ["gosec (gas)"]
-categories = ["linter"]
 homepage = "https://securego.io"
 repository = "https://github.com/securego/gosec"

@@ -3,7 +3,7 @@ display-name = "gdtoolkit"
 kind = "linter"
 languages = ["gdscript"]
 programs = ["gdtoolkit"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 homepage = "https://github.com/Scony/godot-gdscript-toolkit"
 
 [distribution]

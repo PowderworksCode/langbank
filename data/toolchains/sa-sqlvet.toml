@@ -3,5 +3,4 @@ display-name = "sqlvet"
 kind = "linter"
 languages = ["go", "sql"]
 programs = ["sqlvet"]
-categories = ["linter"]
 repository = "https://github.com/houqp/sqlvet"

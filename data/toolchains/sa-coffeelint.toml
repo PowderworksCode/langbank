@@ -3,6 +3,5 @@ display-name = "coffeelint"
 kind = "linter"
 languages = ["coffeescript"]
 programs = ["coffeelint"]
-categories = ["linter"]
 homepage = "https://coffeelint.github.io/"
 repository = "https://github.com/clutchski/coffeelint"

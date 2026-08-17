@@ -3,7 +3,6 @@ display-name = "yamlfmt"
 kind = "formatter"
 languages = ["yaml"]
 programs = ["yamlfmt"]
-categories = ["formatter"]
 repository = "https://github.com/google/yamlfmt"
 
 [distribution]

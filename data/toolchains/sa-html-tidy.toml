@@ -3,6 +3,5 @@ display-name = "HTML Tidy"
 kind = "linter"
 languages = ["html"]
 programs = ["html tidy"]
-categories = ["linter"]
 homepage = "http://www.html-tidy.org"
 repository = "https://github.com/htacg/tidy-html5"

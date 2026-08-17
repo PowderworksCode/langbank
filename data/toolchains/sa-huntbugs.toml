@@ -3,5 +3,4 @@ display-name = "HuntBugs"
 kind = "linter"
 languages = ["java"]
 programs = ["huntbugs"]
-categories = ["linter"]
 repository = "https://github.com/amaembo/huntbugs"

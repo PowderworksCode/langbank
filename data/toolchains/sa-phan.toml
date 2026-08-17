@@ -3,6 +3,5 @@ display-name = "phan"
 kind = "linter"
 languages = ["php"]
 programs = ["phan"]
-categories = ["linter"]
 homepage = "https://github.com/phan/phan/wiki"
 repository = "https://github.com/etsy/phan"

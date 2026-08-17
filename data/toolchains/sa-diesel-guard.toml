@@ -3,5 +3,4 @@ display-name = "diesel-guard"
 kind = "linter"
 languages = ["rust", "sql"]
 programs = ["diesel-guard"]
-categories = ["linter"]
 repository = "https://github.com/ayarotsky/diesel-guard"

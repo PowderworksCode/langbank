@@ -3,5 +3,4 @@ display-name = "Tuli"
 kind = "linter"
 languages = ["php"]
 programs = ["tuli"]
-categories = ["linter"]
 repository = "https://github.com/ircmaxell/Tuli"

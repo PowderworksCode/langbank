@@ -3,6 +3,5 @@ display-name = "Frama-C"
 kind = "linter"
 languages = ["c"]
 programs = ["frama-c"]
-categories = ["linter"]
 homepage = "https://www.frama-c.com"
 repository = "https://www.frama-c.com/html/get-frama-c.html"

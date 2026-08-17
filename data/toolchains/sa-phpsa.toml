@@ -3,5 +3,4 @@ display-name = "phpsa"
 kind = "linter"
 languages = ["php"]
 programs = ["phpsa"]
-categories = ["linter"]
 repository = "https://github.com/ovr/phpsa"

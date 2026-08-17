@@ -3,7 +3,7 @@ display-name = "standardjs"
 kind = "linter"
 languages = ["javascript"]
 programs = ["standardjs"]
-categories = ["linter", "formatter"]
+categories = ["formatter"]
 homepage = "https://standardjs.com"
 
 [distribution]

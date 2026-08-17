@@ -3,5 +3,4 @@ display-name = "php7mar"
 kind = "linter"
 languages = ["php"]
 programs = ["php7mar"]
-categories = ["linter"]
 repository = "https://github.com/Alexia/php7mar"

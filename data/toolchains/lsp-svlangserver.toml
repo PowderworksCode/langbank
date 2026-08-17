@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["systemverilog", "verilog"]
 programs = ["svlangserver"]
 root-markers = [".svlangserver", ".git"]
-categories = ["language-server"]
 homepage = "https://github.com/imc-trading/svlangserver"
 
 [distribution]

@@ -3,5 +3,4 @@ display-name = "JET"
 kind = "linter"
 languages = ["julia"]
 programs = ["jet"]
-categories = ["linter"]
 repository = "https://github.com/aviatesk/JET.jl"

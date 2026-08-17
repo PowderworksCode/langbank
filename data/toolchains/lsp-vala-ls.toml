@@ -3,7 +3,6 @@ display-name = "vala_ls"
 kind = "language-server"
 languages = ["genie", "vala"]
 programs = ["vala-language-server"]
-categories = ["language-server"]
 repository = "https://github.com/vala-lang/vala-language-server"
 
 [distribution]

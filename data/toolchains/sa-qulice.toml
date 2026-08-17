@@ -3,6 +3,5 @@ display-name = "qulice"
 kind = "linter"
 languages = ["java"]
 programs = ["qulice"]
-categories = ["linter"]
 homepage = "https://www.qulice.com"
 repository = "https://github.com/teamed/qulice"

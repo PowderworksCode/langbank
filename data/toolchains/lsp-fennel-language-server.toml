@@ -4,7 +4,6 @@ kind = "language-server"
 languages = ["fennel"]
 programs = ["fennel-language-server"]
 root-markers = [".git"]
-categories = ["language-server"]
 homepage = "https://github.com/rydesun/fennel-language-server"
 
 [distribution]

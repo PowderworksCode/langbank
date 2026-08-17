@@ -3,7 +3,6 @@ display-name = "phpmd"
 kind = "linter"
 languages = ["php"]
 programs = ["phpmd"]
-categories = ["linter"]
 homepage = "https://phpmd.org"
 repository = "https://github.com/phpmd/phpmd"
 

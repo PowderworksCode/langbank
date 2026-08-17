@@ -3,5 +3,4 @@ display-name = "verible-linter-action"
 kind = "linter"
 languages = ["verilog"]
 programs = ["verible-linter-action"]
-categories = ["linter"]
 repository = "https://github.com/chipsalliance/verible-linter-action"

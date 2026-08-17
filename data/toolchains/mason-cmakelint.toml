@@ -3,7 +3,6 @@ display-name = "cmakelint"
 kind = "linter"
 languages = ["cmake"]
 programs = ["cmakelint"]
-categories = ["linter"]
 homepage = "https://github.com/cmake-lint/cmake-lint"
 
 [distribution]

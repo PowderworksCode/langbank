@@ -3,5 +3,4 @@ display-name = "Traceroute"
 kind = "linter"
 languages = ["ruby"]
 programs = ["traceroute"]
-categories = ["linter"]
 repository = "https://github.com/amatsuda/traceroute"

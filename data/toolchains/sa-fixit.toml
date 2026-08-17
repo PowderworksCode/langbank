@@ -3,6 +3,5 @@ display-name = "fixit"
 kind = "linter"
 languages = ["python"]
 programs = ["fixit"]
-categories = ["linter"]
 homepage = "https://pypi.org/project/fixit"
 repository = "https://github.com/Instagram/Fixit"

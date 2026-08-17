@@ -3,6 +3,5 @@ display-name = "Dart Code Metrics"
 kind = "linter"
 languages = ["dart"]
 programs = ["dart code metrics"]
-categories = ["linter"]
 homepage = "https://pub.dev/packages/dart_code_metrics"
 repository = "https://github.com/dart-code-checker/dart-code-metrics"

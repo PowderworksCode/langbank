@@ -3,7 +3,6 @@ display-name = "bandit"
 kind = "linter"
 languages = ["python"]
 programs = ["bandit"]
-categories = ["linter"]
 homepage = "https://bandit.readthedocs.io/en/latest"
 repository = "https://github.com/PyCQA/bandit"
 

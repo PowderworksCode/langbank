@@ -3,5 +3,4 @@ display-name = "gherkin-lint"
 kind = "linter"
 languages = ["gherkin"]
 programs = ["gherkin-lint"]
-categories = ["linter"]
 repository = "https://github.com/vsiakka/gherkin-lint"

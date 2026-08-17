@@ -3,6 +3,5 @@ display-name = "elm-analyse"
 kind = "linter"
 languages = ["elm"]
 programs = ["elm-analyse"]
-categories = ["linter"]
 homepage = "https://stil4m.github.io/elm-analyse"
 repository = "https://github.com/stil4m/elm-analyse"

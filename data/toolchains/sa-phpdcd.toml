@@ -3,5 +3,4 @@ display-name = "phpdcd"
 kind = "linter"
 languages = ["php"]
 programs = ["phpdcd"]
-categories = ["linter"]
 repository = "https://github.com/sebastianbergmann/phpdcd"

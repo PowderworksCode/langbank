@@ -3,5 +3,4 @@ display-name = "RefactorFirst"
 kind = "linter"
 languages = ["java"]
 programs = ["refactorfirst"]
-categories = ["linter"]
 repository = "https://github.com/jimbethancourt/RefactorFirst"

@@ -3,5 +3,4 @@ display-name = "maligned"
 kind = "linter"
 languages = ["go"]
 programs = ["maligned"]
-categories = ["linter"]
 repository = "https://github.com/mdempsky/maligned"

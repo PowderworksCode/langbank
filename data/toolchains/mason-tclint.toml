@@ -3,7 +3,7 @@ display-name = "tclint"
 kind = "linter"
 languages = ["tcl"]
 programs = ["tclint"]
-categories = ["linter", "formatter", "language-server"]
+categories = ["formatter", "language-server"]
 homepage = "https://github.com/nmoroze/tclint"
 
 [distribution]

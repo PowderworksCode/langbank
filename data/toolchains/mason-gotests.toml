@@ -3,7 +3,6 @@ display-name = "gotests"
 kind = "formatter"
 languages = ["go"]
 programs = ["gotests"]
-categories = ["formatter"]
 homepage = "https://github.com/cweill/gotests"
 
 [distribution]

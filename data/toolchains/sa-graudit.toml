@@ -3,6 +3,5 @@ display-name = "graudit"
 kind = "linter"
 languages = ["c", "cpp", "java", "perl", "php", "python", "ruby"]
 programs = ["graudit"]
-categories = ["linter"]
 homepage = "http://www.justanotherhacker.com"
 repository = "https://github.com/wireghoul/graudit"

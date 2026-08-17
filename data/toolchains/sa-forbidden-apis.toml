@@ -3,5 +3,4 @@ display-name = "forbidden-apis"
 kind = "linter"
 languages = ["java"]
 programs = ["forbidden-apis"]
-categories = ["linter"]
 repository = "https://github.com/policeman-tools/forbidden-apis"

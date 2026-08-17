@@ -3,6 +3,5 @@ display-name = "PHP Refactoring Browser"
 kind = "linter"
 languages = ["php"]
 programs = ["php refactoring browser"]
-categories = ["linter"]
 homepage = "https://qafoolabs.github.io/php-refactoring-browser"
 repository = "https://github.com/QafooLabs/php-refactoring-browser"

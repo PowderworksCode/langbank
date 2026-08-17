@@ -3,7 +3,6 @@ display-name = "solhint"
 kind = "linter"
 languages = ["solidity"]
 programs = ["solhint"]
-categories = ["linter"]
 homepage = "https://protofire.github.io/solhint/"
 
 [distribution]

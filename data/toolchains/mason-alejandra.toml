@@ -3,7 +3,6 @@ display-name = "alejandra"
 kind = "formatter"
 languages = ["nix"]
 programs = ["alejandra"]
-categories = ["formatter"]
 homepage = "https://github.com/kamadorueda/alejandra"
 
 [distribution]

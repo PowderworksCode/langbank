@@ -3,7 +3,6 @@ display-name = "turtle-language-server"
 kind = "language-server"
 languages = ["turtle"]
 programs = ["turtle-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/stardog-union/stardog-language-servers"
 
 [distribution]

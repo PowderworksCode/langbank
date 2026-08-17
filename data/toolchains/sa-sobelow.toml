@@ -3,5 +3,4 @@ display-name = "sobelow"
 kind = "linter"
 languages = ["elixir"]
 programs = ["sobelow"]
-categories = ["linter"]
 repository = "https://github.com/nccgroup/sobelow"

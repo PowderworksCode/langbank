@@ -3,7 +3,6 @@ display-name = "php-cs-fixer"
 kind = "formatter"
 languages = ["php"]
 programs = ["php-cs-fixer"]
-categories = ["formatter"]
 repository = "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer"
 
 [distribution]

@@ -3,7 +3,6 @@ display-name = "yapf"
 kind = "formatter"
 languages = ["python"]
 programs = ["yapf"]
-categories = ["formatter"]
 repository = "https://github.com/google/yapf"
 homepage = "https://pypi.org/project/yapf/"
 

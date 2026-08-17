@@ -3,7 +3,6 @@ display-name = "swiftlint"
 kind = "linter"
 languages = ["swift"]
 programs = ["swiftlint"]
-categories = ["linter"]
 homepage = "https://realm.github.io/SwiftLint"
 repository = "https://github.com/realm/SwiftLint"
 

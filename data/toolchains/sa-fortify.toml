@@ -3,5 +3,4 @@ display-name = "Fortify"
 kind = "linter"
 languages = ["abap", "actionscript", "apex", "c", "cobol", "coldfusion", "cpp", "html", "java", "javascript", "php", "plsql", "python", "ruby", "scala", "swift", "tsql", "vbscript", "xml"]
 programs = ["fortify"]
-categories = ["linter"]
 homepage = "https://www.microfocus.com/en-us/cyberres/application-security/static-code-analyzer"

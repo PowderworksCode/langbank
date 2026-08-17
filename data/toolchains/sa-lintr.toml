@@ -3,5 +3,4 @@ display-name = "lintr"
 kind = "linter"
 languages = ["r"]
 programs = ["lintr"]
-categories = ["linter"]
 repository = "https://github.com/jimhester/lintr"

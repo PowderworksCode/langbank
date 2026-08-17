@@ -3,7 +3,6 @@ display-name = "refurb"
 kind = "linter"
 languages = ["python"]
 programs = ["refurb"]
-categories = ["linter"]
 repository = "https://github.com/dosisod/refurb"
 homepage = "https://github.com/dosisod/refurb"
 

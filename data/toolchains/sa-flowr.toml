@@ -3,5 +3,4 @@ display-name = "flowR"
 kind = "linter"
 languages = ["r"]
 programs = ["flowr"]
-categories = ["linter"]
 repository = "https://github.com/flowr-analysis/flowr"

@@ -3,6 +3,5 @@ display-name = "Error Prone"
 kind = "linter"
 languages = ["java"]
 programs = ["error prone"]
-categories = ["linter"]
 homepage = "https://errorprone.info"
 repository = "https://github.com/google/error-prone"

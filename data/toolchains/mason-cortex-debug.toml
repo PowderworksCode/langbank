@@ -3,7 +3,6 @@ display-name = "cortex-debug"
 kind = "debugger"
 languages = ["c", "cpp", "rust"]
 programs = ["cortex-debug"]
-categories = ["debugger"]
 homepage = "https://github.com/Marus/cortex-debug"
 
 [distribution]

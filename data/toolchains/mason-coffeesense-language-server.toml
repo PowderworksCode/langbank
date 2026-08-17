@@ -3,7 +3,6 @@ display-name = "coffeesense-language-server"
 kind = "language-server"
 languages = ["coffeescript"]
 programs = ["coffeesense-language-server"]
-categories = ["language-server"]
 homepage = "https://github.com/phil294/coffeesense"
 
 [distribution]

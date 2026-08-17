@@ -3,7 +3,6 @@ display-name = "netcoredbg"
 kind = "debugger"
 languages = ["c-sharp", "f-sharp"]
 programs = ["netcoredbg"]
-categories = ["debugger"]
 repository = "https://github.com/Samsung/netcoredbg"
 
 [distribution]

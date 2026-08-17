@@ -3,6 +3,5 @@ display-name = "buf"
 kind = "linter"
 languages = ["protocol-buffer"]
 programs = ["buf"]
-categories = ["linter"]
 homepage = "https://buf.build"
 repository = "https://github.com/bufbuild/buf"

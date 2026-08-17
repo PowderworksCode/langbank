@@ -3,7 +3,6 @@ display-name = "harper-ls"
 kind = "language-server"
 languages = ["c", "c-sharp", "cpp", "go", "java", "javascript", "lua", "markdown", "python", "ruby", "rust", "tex", "toml", "typescript"]
 programs = ["harper-ls"]
-categories = ["language-server"]
 repository = "https://github.com/elijah-potter/harper"
 
 [distribution]

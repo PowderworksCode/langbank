@@ -3,5 +3,4 @@ display-name = "quality"
 kind = "linter"
 languages = ["ruby"]
 programs = ["quality"]
-categories = ["linter"]
 repository = "https://github.com/apiology/quality"

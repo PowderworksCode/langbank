@@ -69,7 +69,12 @@ pub fn toolchains() -> String {
         @for toolchain in &all {
             tr id=(toolchain.id) {
                 td { (link(&format!("/toolchains/{}", toolchain.id), toolchain.display_name)) }
-                td { (format!("{:?}", toolchain.kind).to_lowercase()) }
+                td {
+                    @for (index, role) in toolchain.roles().enumerate() {
+                        @if index > 0 { ", " }
+                        (format!("{role:?}").to_lowercase())
+                    }
+                }
                 td { (languages_of(toolchain.languages)) }
                 td { (codes(toolchain.programs)) }
                 td {

@@ -3,6 +3,5 @@ display-name = "KLEE"
 kind = "linter"
 languages = ["c", "cpp"]
 programs = ["klee"]
-categories = ["linter"]
 homepage = "http://klee.github.io/"
 repository = "https://github.com/klee/klee"

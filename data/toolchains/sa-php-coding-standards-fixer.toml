@@ -3,6 +3,5 @@ display-name = "PHP Coding Standards Fixer"
 kind = "linter"
 languages = ["php"]
 programs = ["php coding standards fixer"]
-categories = ["linter"]
 homepage = "https://cs.symfony.com"
 repository = "https://github.com/FriendsOfPHP/PHP-CS-Fixer"
