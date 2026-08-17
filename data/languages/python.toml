@@ -7,3 +7,20 @@ primary-extensions = ["rpy"]
 shebangs = ["py", "pypy", "pypy3", "python", "python2", "python3", "uv"]
 facets = ["structured-code"]
 comments = "python"
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "tests"
+test-suffixes = ["_test"]
+
+[[conventions.inline-test]]
+starts-with = ["import pytest"]
+indicator = "pytest import"
+
+[[conventions.inline-test]]
+starts-with = ["import unittest", "from unittest"]
+indicator = "unittest import"
+
+[[conventions.inline-test]]
+starts-with = ["def test_"]
+indicator = "def test_"

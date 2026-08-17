@@ -6,3 +6,12 @@ primary-extensions = ["ex"]
 comments = "awk"
 filenames = ["mix.lock"]
 shebangs = ["elixir"]
+
+[conventions.test-layout]
+source-roots = ["lib"]
+test-root = "test"
+test-suffixes = ["_test"]
+
+[[conventions.inline-test]]
+starts-with = ["use ExUnit.Case"]
+indicator = "ExUnit.Case"

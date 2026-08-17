@@ -4,3 +4,12 @@ role = "programming"
 extensions = ["jav", "java", "jsh"]
 facets = ["structured-code"]
 comments = "c"
+
+[conventions.test-layout]
+source-roots = ["src/main/java"]
+test-root = "src/test/java"
+test-suffixes = ["Test", "Tests"]
+
+[[conventions.inline-test]]
+starts-with = ["@Test"]
+indicator = "@Test"

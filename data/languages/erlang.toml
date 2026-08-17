@@ -5,3 +5,8 @@ extensions = ["app", "app.src", "erl", "es", "escript", "hrl", "xrl", "yrl"]
 comments = "erlang"
 filenames = ["Emakefile", "rebar.config", "rebar.config.lock", "rebar.lock"]
 shebangs = ["escript"]
+
+[conventions.test-layout]
+source-roots = ["src"]
+test-root = "test"
+test-suffixes = ["_SUITE", "_tests"]
