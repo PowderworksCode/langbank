@@ -60,18 +60,48 @@ jobs:
           FLY_API_TOKEN: ${{ secrets.FLY_PREVIEW_TOKEN }}
         run: flyctl deploy --config fly.toml --dockerfile Dockerfile --local-only
 
-      # A 200 is not enough: a binary serving an empty registry would return one.
-      # The health endpoint reports the counts, so assert they are non-zero.
+      # The app's own address is the authority on whether the deploy worked.
+      # The custom domain is a separate matter: until DNS points at Fly and a
+      # certificate is issued, langbank.dev cannot answer, and that is not a
+      # broken deploy — see docs/deploy.md.
+      #
+      # Every curl here is bounded. Without --max-time, a hostname with no DNS
+      # record blocks on TCP connect for 135 seconds, so a 30-iteration loop
+      # written to take 150 seconds took 70 minutes and hit the job timeout
+      # instead. Three deploys burned half an hour each that way, all of them
+      # after the app was already live.
       - name: Smoke test
         run: |
           for i in $(seq 1 30); do
-            if curl -fsS https://langbank.dev/health -o /tmp/health; then
+            if curl -fsS --max-time 10 https://langbank.fly.dev/health -o /tmp/health; then
               cat /tmp/health; echo
               if jq -e '.ok == true and .languages > 0 and .toolchains > 0' /tmp/health >/dev/null; then
-                echo "langbank.dev is up with a populated registry"; exit 0
+                echo "the app is up with a populated registry"
+                healthy=1
+                break
               fi
               echo "  up, but the registry looks empty"
             fi
             sleep 5
           done
-          echo "::error::langbank.dev did not come up healthy"; exit 1
+          if [ "${healthy:-0}" != 1 ]; then
+            echo "::error::the app did not come up healthy at langbank.fly.dev"
+            exit 1
+          fi
+
+      # Reported, not gated. A domain that resolves and then serves the wrong
+      # thing is a real failure; one that does not resolve yet is just work the
+      # account owner has not done.
+      - name: Custom domain
+        run: |
+          if ! getent hosts langbank.dev >/dev/null 2>&1; then
+            echo "::notice::langbank.dev has no DNS record yet — see docs/fly-setup.sh steps 6-7"
+            exit 0
+          fi
+          if curl -fsS --max-time 15 https://langbank.dev/health -o /tmp/custom; then
+            jq -e '.ok == true' /tmp/custom >/dev/null \
+              && echo "langbank.dev is serving the app" \
+              || { echo "::error::langbank.dev answered but not with langbank"; exit 1; }
+          else
+            echo "::warning::langbank.dev resolves but did not answer — the certificate may still be issuing"
+          fi
