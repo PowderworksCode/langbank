@@ -67,3 +67,35 @@ fn no_entry_hides_a_root_key_inside_a_table() {
     }
     assert!(offences.is_empty(), "{}", offences.join("\n"));
 }
+
+#[test]
+fn the_leaf_touches_no_filesystem() {
+    // The README says so in its second paragraph, and one function did anyway:
+    // `EcosystemProfile::lockfile_present` stat'd a directory. Nothing called
+    // it, so nothing failed — the claim was just quietly untrue. Walking a
+    // directory is `langbank-detect`'s job.
+    let mut offences = Vec::new();
+    for entry in std::fs::read_dir("src").expect("read src") {
+        let path = entry.expect("entry").path();
+        if path.extension().is_none_or(|extension| extension != "rs") {
+            continue;
+        }
+        let text = std::fs::read_to_string(&path).expect("read source");
+        for (number, line) in text.lines().enumerate() {
+            let code = line.split("//").next().unwrap_or(line);
+            for probe in [
+                "is_file()",
+                "is_dir()",
+                "read_dir(",
+                "File::open",
+                "fs::read",
+                "fs::write",
+            ] {
+                if code.contains(probe) {
+                    offences.push(format!("{}:{}: {probe}", path.display(), number + 1));
+                }
+            }
+        }
+    }
+    assert!(offences.is_empty(), "{}", offences.join("\n"));
+}

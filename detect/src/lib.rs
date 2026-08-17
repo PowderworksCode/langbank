@@ -9,6 +9,8 @@
 //! must not, so a consumer that only wants to know what a `.rs` file is pays
 //! nothing for the machinery that reads one.
 
+pub mod project;
+
 use std::sync::OnceLock;
 
 use langbank::{
