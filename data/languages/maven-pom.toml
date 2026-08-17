@@ -2,3 +2,4 @@ id = "maven-pom"
 display-name = "Maven POM"
 role = "data"
 filenames = ["pom.xml"]
+groups-under = "xml"

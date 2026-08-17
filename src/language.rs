@@ -45,6 +45,17 @@ pub struct LanguageProfile {
     pub config_files: &'static [&'static str],
     pub package_dependencies: &'static [&'static str],
     pub supersedes: &'static [&'static LanguageProfile],
+    /// The language this one is counted under, as linguist groups it.
+    ///
+    /// BibTeX groups under TeX, an APKBUILD under Shell, Bison under Yacc.
+    /// This is linguist's statistical rollup and not a claim about language
+    /// design: it says a consumer totalling bytes by language may want to add
+    /// this one to that one, which is the question linguist invented it to
+    /// answer.
+    ///
+    /// Distinct from `supersedes`, which says one language replaced another.
+    /// TypeScript supersedes JavaScript and is grouped under nothing.
+    pub groups_under: Option<&'static LanguageProfile>,
     /// Tokens this language wins when several claim them. Detection declines
     /// to answer a contested token unless exactly one claimant says this.
     pub primary_extensions: &'static [&'static str],
@@ -58,6 +69,19 @@ impl LanguageProfile {
     pub fn accepts_source(&self, path: &Path) -> bool {
         extension(path)
             .is_some_and(|extension| self.source_extensions.contains(&extension.as_str()))
+    }
+
+    /// Every language counted under this one, directly.
+    pub fn dialects(&self) -> Vec<&'static LanguageProfile> {
+        crate::language_profiles()
+            .iter()
+            .filter(|other| {
+                other
+                    .groups_under
+                    .is_some_and(|parent| std::ptr::eq(parent, self))
+            })
+            .copied()
+            .collect()
     }
 
     pub fn supersedes(&self, other: &LanguageProfile) -> bool {

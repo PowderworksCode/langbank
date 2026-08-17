@@ -3,3 +3,4 @@ display-name = "OpenCL"
 role = "programming"
 extensions = ["cl", "ocl", "opencl"]
 comments = "opencl"
+groups-under = "c"

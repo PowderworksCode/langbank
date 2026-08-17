@@ -2,3 +2,4 @@ id = "desktop"
 display-name = "desktop"
 role = "data"
 extensions = ["desktop", "desktop.in"]
+groups-under = "ini"

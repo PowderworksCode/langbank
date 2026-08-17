@@ -2,3 +2,4 @@ id = "gentoo-eclass"
 display-name = "Gentoo Eclass"
 role = "programming"
 extensions = ["eclass"]
+groups-under = "shell"

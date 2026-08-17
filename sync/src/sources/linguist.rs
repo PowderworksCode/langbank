@@ -58,11 +58,15 @@ struct Entry {
     filenames: Vec<String>,
     #[serde(default)]
     interpreters: Vec<String>,
+    #[serde(default)]
+    group: Option<String>,
 }
 
 struct Language {
     display: String,
     role: &'static str,
+    /// linguist's statistical rollup — see `LanguageProfile::groups_under`.
+    group: Option<String>,
     extensions: Vec<String>,
     filenames: Vec<String>,
     shebangs: Vec<String>,
@@ -94,6 +98,7 @@ fn upstream_languages(raw: &str) -> Result<BTreeMap<String, Language>> {
             Language {
                 display: name,
                 role,
+                group: entry.group.as_deref().map(slug),
                 extensions: extensions.into_iter().collect(),
                 filenames: entry
                     .filenames
@@ -114,6 +119,7 @@ fn upstream_languages(raw: &str) -> Result<BTreeMap<String, Language>> {
 }
 
 struct Carried {
+    group: Option<String>,
     extensions: BTreeSet<String>,
     filenames: BTreeSet<String>,
     shebangs: BTreeSet<String>,
@@ -130,6 +136,7 @@ fn local_languages() -> Result<BTreeMap<String, Carried>> {
         out.insert(
             id,
             Carried {
+                group: local::scalar(&text, "groups-under"),
                 extensions: local::array(&text, "extensions").into_iter().collect(),
                 filenames: local::array(&text, "filenames").into_iter().collect(),
                 shebangs: local::array(&text, "shebangs").into_iter().collect(),
@@ -142,22 +149,41 @@ fn local_languages() -> Result<BTreeMap<String, Carried>> {
 /// The token kinds missing for one language: `("extensions", ["rs", "rlib"])`.
 type Holes = Vec<(&'static str, Vec<String>)>;
 
+/// Everything linguist knows that langbank does not: whole languages, the
+/// groupings of languages it already has, and the tokens missing from those.
+struct Gaps {
+    languages: Vec<String>,
+    groups: Vec<(String, String)>,
+    tokens: BTreeMap<String, Holes>,
+}
+
 /// What is in `upstream` and not in `local`, per language and per token kind.
-fn gaps(
-    upstream: &BTreeMap<String, Language>,
-    local: &BTreeMap<String, Carried>,
-) -> (Vec<String>, BTreeMap<String, Holes>) {
+fn gaps(upstream: &BTreeMap<String, Language>, local: &BTreeMap<String, Carried>) -> Gaps {
     let missing_languages: Vec<String> = upstream
         .keys()
         .filter(|id| !local.contains_key(*id))
         .cloned()
         .collect();
 
+    let mut missing_groups = Vec::new();
     let mut missing_tokens = BTreeMap::new();
     for (id, entry) in upstream {
         let Some(carried) = local.get(id) else {
             continue;
         };
+        // A grouping is a fact about an entry that already exists, so it is
+        // filled in rather than only reported. There is no hand-written value
+        // to overwrite: langbank has never carried this field.
+        // `group != id` because two linguist entries can slug to the same
+        // langbank id — Cairo and Cairo Zero both become `cairo` — and a
+        // language grouped under itself is a cycle, not a fact.
+        if let Some(group) = &entry.group
+            && carried.group.is_none()
+            && group != id
+            && local.contains_key(group)
+        {
+            missing_groups.push((id.clone(), group.clone()));
+        }
         let mut holes = Vec::new();
         for (kind, theirs, ours) in [
             ("extensions", &entry.extensions, &carried.extensions),
@@ -177,7 +203,11 @@ fn gaps(
             missing_tokens.insert(id.clone(), holes);
         }
     }
-    (missing_languages, missing_tokens)
+    Gaps {
+        languages: missing_languages,
+        groups: missing_groups,
+        tokens: missing_tokens,
+    }
 }
 
 /// sha2 0.11 returns an `Array` that does not implement `LowerHex`, and the
@@ -193,6 +223,9 @@ fn write_language(id: &str, entry: &Language) -> Result<()> {
         format!("display-name = {}", local::toml_string(&entry.display)),
         format!("role = {}", local::toml_string(entry.role)),
     ];
+    if let Some(group) = &entry.group {
+        lines.push(format!("groups-under = {}", local::toml_string(group)));
+    }
     for (key, values) in [
         ("extensions", &entry.extensions),
         ("filenames", &entry.filenames),
@@ -216,7 +249,11 @@ pub fn run(verb: &str) -> Result<Outcome> {
 
     let upstream = upstream_languages(&raw)?;
     let local = local_languages()?;
-    let (missing_languages, missing_tokens) = gaps(&upstream, &local);
+    let Gaps {
+        languages: missing_languages,
+        groups: missing_groups,
+        tokens: missing_tokens,
+    } = gaps(&upstream, &local);
     let short: String = revision.chars().take(12).collect();
 
     if verb == "create" {
@@ -238,9 +275,21 @@ pub fn run(verb: &str) -> Result<Outcome> {
             ),
         )
         .map_err(|e| format!("{PIN}: {e}"))?;
+        for (id, group) in &missing_groups {
+            let Some(carried) = local.get(id) else {
+                continue;
+            };
+            let path = format!("data/languages/{id}.toml");
+            let text = std::fs::read_to_string(&path).map_err(|e| format!("{path}: {e}"))?;
+            let _ = carried;
+            let line = format!("groups-under = {}", local::toml_string(group));
+            std::fs::write(&path, local::append_root(&text, &[line]))
+                .map_err(|e| format!("{path}: {e}"))?;
+        }
         println!(
-            "created {} language files from linguist@{short}",
-            missing_languages.len()
+            "created {} language files from linguist@{short}, grouped {} existing ones",
+            missing_languages.len(),
+            missing_groups.len()
         );
         if !missing_tokens.is_empty() {
             println!(
@@ -256,7 +305,16 @@ pub fn run(verb: &str) -> Result<Outcome> {
         upstream.len(),
         local.len()
     );
-    if missing_languages.is_empty() && missing_tokens.is_empty() {
+    if !missing_groups.is_empty() {
+        println!(
+            "\n{} languages linguist groups under another that langbank does not:",
+            missing_groups.len()
+        );
+        for (id, group) in missing_groups.iter().take(20) {
+            println!("  {id} -> {group}");
+        }
+    }
+    if missing_languages.is_empty() && missing_tokens.is_empty() && missing_groups.is_empty() {
         println!("coverage complete: langbank knows every language and token linguist does");
         return Ok(Outcome::Complete);
     }

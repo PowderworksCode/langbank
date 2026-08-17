@@ -2,3 +2,4 @@ id = "html-ecr"
 display-name = "HTML+ECR"
 role = "markup"
 extensions = ["ecr"]
+groups-under = "html"

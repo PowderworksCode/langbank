@@ -2,3 +2,4 @@ id = "cairo-zero"
 display-name = "Cairo Zero"
 role = "programming"
 extensions = ["cairo"]
+groups-under = "cairo"

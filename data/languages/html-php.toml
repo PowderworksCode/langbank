@@ -2,3 +2,4 @@ id = "html-php"
 display-name = "HTML+PHP"
 role = "markup"
 extensions = ["phtml"]
+groups-under = "html"

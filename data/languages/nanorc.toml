@@ -3,3 +3,4 @@ display-name = "nanorc"
 role = "data"
 extensions = ["nanorc"]
 filenames = [".nanorc", "nanorc"]
+groups-under = "ini"

@@ -2,3 +2,4 @@ id = "gradle-kotlin-dsl"
 display-name = "Gradle Kotlin DSL"
 role = "data"
 extensions = ["gradle.kts"]
+groups-under = "gradle"

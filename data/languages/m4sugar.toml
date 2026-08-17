@@ -3,3 +3,4 @@ display-name = "M4Sugar"
 role = "programming"
 extensions = ["m4"]
 filenames = ["configure.ac"]
+groups-under = "m4"

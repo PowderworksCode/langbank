@@ -3,3 +3,4 @@ display-name = "Cylc"
 role = "data"
 extensions = ["cylc"]
 filenames = ["suite.rc"]
+groups-under = "ini"

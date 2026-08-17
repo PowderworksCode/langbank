@@ -2,3 +2,4 @@ id = "npm-config"
 display-name = "NPM Config"
 role = "data"
 filenames = [".npmrc"]
+groups-under = "ini"

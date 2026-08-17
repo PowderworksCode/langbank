@@ -2,3 +2,4 @@ id = "literate-coffeescript"
 display-name = "Literate CoffeeScript"
 role = "programming"
 extensions = ["coffee.md", "litcoffee"]
+groups-under = "coffeescript"

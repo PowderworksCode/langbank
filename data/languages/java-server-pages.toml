@@ -2,3 +2,4 @@ id = "java-server-pages"
 display-name = "Java Server Pages"
 role = "programming"
 extensions = ["jsp", "tag"]
+groups-under = "java"

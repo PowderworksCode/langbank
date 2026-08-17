@@ -2,3 +2,4 @@ id = "alpine-abuild"
 display-name = "Alpine Abuild"
 role = "programming"
 filenames = ["APKBUILD"]
+groups-under = "shell"

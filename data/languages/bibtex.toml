@@ -2,3 +2,4 @@ id = "bibtex"
 display-name = "BibTeX"
 role = "markup"
 extensions = ["bib", "bibtex"]
+groups-under = "tex"

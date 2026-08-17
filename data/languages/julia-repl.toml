@@ -1,3 +1,4 @@
 id = "julia-repl"
 display-name = "Julia REPL"
 role = "programming"
+groups-under = "julia"

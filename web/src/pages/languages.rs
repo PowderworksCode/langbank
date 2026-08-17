@@ -123,6 +123,16 @@ pub fn detail(id: &str) -> Option<String> {
                     span.tag title=(facet.description) { (facet.id) }
                 }
             })))
+            (row("counted under", language.groups_under.map(|parent| html! {
+                (link(&format!("/languages/{}", parent.id), parent.display_name))
+                " " span.dim { "— linguist groups this one's bytes there" }
+            })))
+            (row("counts", some(!language.dialects().is_empty(), html! {
+                @for (index, dialect) in language.dialects().iter().enumerate() {
+                    @if index > 0 { ", " }
+                    (link(&format!("/languages/{}", dialect.id), dialect.display_name))
+                }
+            })))
             (row("supersedes", some(!language.supersedes.is_empty(), html! {
                 @for (index, other) in language.supersedes.iter().enumerate() {
                     @if index > 0 { ", " }

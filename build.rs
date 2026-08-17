@@ -922,6 +922,13 @@ fn main() {
                         .map(|facet| format!("&super::super::facets::{}", screaming(facet)))
                         .collect()
                 });
+        let groups_under = profile
+            .get("groups-under")
+            .and_then(Value::as_str)
+            .map_or_else(
+                || "None".to_string(),
+                |other| format!("Some(&super::{}::PROFILE)", ident(other)),
+            );
         let supersedes = profile
             .get("supersedes")
             .and_then(Value::as_array)
@@ -959,6 +966,7 @@ fn main() {
              \x20           config_files: {config},\n\
              \x20           package_dependencies: {deps},\n\
              \x20           supersedes: &[{supersedes}],\n\
+             \x20           groups_under: {groups_under},\n\
              \x20           primary_extensions: {primary},\n\
              \x20       }};\n\
              \x20       crate::registry::submit! {{ crate::LanguageRegistration(&PROFILE) }}\n\
@@ -986,6 +994,7 @@ fn main() {
             config = strs(profile.get("config-files")),
             deps = strs(profile.get("package-dependencies")),
             supersedes = supersedes.join(", "),
+            groups_under = groups_under,
             primary = strs(profile.get("primary-extensions")),
         )
         .expect("write profile");

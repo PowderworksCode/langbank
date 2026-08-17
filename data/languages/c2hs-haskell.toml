@@ -2,3 +2,4 @@ id = "c2hs-haskell"
 display-name = "C2hs Haskell"
 role = "programming"
 extensions = ["chs"]
+groups-under = "haskell"

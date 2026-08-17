@@ -2,3 +2,4 @@ id = "muf"
 display-name = "MUF"
 role = "programming"
 extensions = ["m", "muf"]
+groups-under = "forth"

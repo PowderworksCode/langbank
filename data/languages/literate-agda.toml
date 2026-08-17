@@ -2,3 +2,4 @@ id = "literate-agda"
 display-name = "Literate Agda"
 role = "programming"
 extensions = ["lagda"]
+groups-under = "agda"

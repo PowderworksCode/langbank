@@ -2,3 +2,4 @@ id = "fortran-free-form"
 display-name = "Fortran Free Form"
 role = "programming"
 extensions = ["f03", "f08", "f90", "f95"]
+groups-under = "fortran"

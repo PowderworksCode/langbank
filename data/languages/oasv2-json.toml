@@ -2,3 +2,4 @@ id = "oasv2-json"
 display-name = "OASv2-json"
 role = "data"
 extensions = ["json"]
+groups-under = "openapi-specification-v2"

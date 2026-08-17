@@ -2,3 +2,4 @@ id = "cameligo"
 display-name = "CameLIGO"
 role = "programming"
 extensions = ["mligo"]
+groups-under = "ligolang"

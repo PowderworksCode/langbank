@@ -4,3 +4,4 @@ role = "programming"
 extensions = ["fish"]
 comments = "awk"
 shebangs = ["fish"]
+groups-under = "shell"

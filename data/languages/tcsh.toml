@@ -3,3 +3,4 @@ display-name = "Tcsh"
 role = "programming"
 extensions = ["csh", "tcsh"]
 shebangs = ["csh", "tcsh"]
+groups-under = "shell"

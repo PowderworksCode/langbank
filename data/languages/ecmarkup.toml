@@ -2,3 +2,4 @@ id = "ecmarkup"
 display-name = "Ecmarkup"
 role = "markup"
 extensions = ["html"]
+groups-under = "html"

@@ -2,3 +2,4 @@ id = "jison"
 display-name = "Jison"
 role = "programming"
 extensions = ["jison"]
+groups-under = "yacc"
