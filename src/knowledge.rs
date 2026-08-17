@@ -141,6 +141,41 @@ pub fn coverage() -> [usize; 8] {
     totals
 }
 
+/// Coverage split by role: `(role, languages with that role, per-facet counts)`.
+///
+/// The plain total is misleading and was quietly setting the wrong target. It
+/// reports `ecosystem: 25 have, 802 lack`, which reads as 802 languages waiting
+/// to be filled in — but JSON has no package manager and CSV has no compiler,
+/// and no amount of absorbing will give them one. 270 of the 827 are data,
+/// markup, documentation, stylesheet or build languages.
+///
+/// This does not claim a facet is *inapplicable* to a given language, because
+/// that would be a judgement dressed as a fact. It shows the denominator
+/// instead and lets a reader see that `0 of 181 data languages have a compiler`
+/// is a description of data formats rather than a backlog.
+pub fn coverage_by_role() -> Vec<(crate::LanguageRole, usize, [usize; 8])> {
+    let mut rows: Vec<(crate::LanguageRole, usize, [usize; 8])> = Vec::new();
+    for profile in crate::language_profiles() {
+        let knowledge = Knowledge::of(profile);
+        let row = match rows.iter_mut().find(|(role, _, _)| *role == profile.role) {
+            Some(row) => row,
+            None => {
+                rows.push((profile.role, 0, [0; 8]));
+                rows.last_mut()
+                    .unwrap_or_else(|| unreachable!("just pushed"))
+            }
+        };
+        row.1 += 1;
+        for (slot, facet) in row.2.iter_mut().zip(Facet::ALL) {
+            if knowledge.has(facet) {
+                *slot += 1;
+            }
+        }
+    }
+    rows.sort_by_key(|(role, count, _)| (std::cmp::Reverse(*count), format!("{role:?}")));
+    rows
+}
+
 /// How many languages know exactly `n` facets, for `n` in `0..=8`.
 ///
 /// The distribution is the interesting number rather than the average: most
