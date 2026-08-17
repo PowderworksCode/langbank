@@ -1,0 +1,9 @@
+id = "leiningen"
+registry = "maven"
+display-name = "Leiningen"
+roles = ["package-manager", "build-system"]
+implied-languages = ["clojure"]
+manifest = "project.clj"
+manifest-selection = "default"
+homepage = "https://leiningen.org"
+repository = "https://github.com/technomancy/leiningen"

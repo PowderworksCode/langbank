@@ -1,0 +1,24 @@
+# Languages whose package manager langbank does not model as an ecosystem, and
+# why. These were looked at rather than skipped: an ecosystem here needs a
+# manifest with a fixed filename, because that is what a walker matches on.
+facet = "ecosystem"
+
+[[gap]]
+subject = "lua"
+reason = "excluded"
+note = "LuaRocks names its manifest after the package and version — `luafilesystem-1.8.0-1.rockspec` — so there is no filename to match. The registry is carried as `pkg:luarocks`; the ecosystem is not."
+
+[[gap]]
+subject = "ocaml"
+reason = "excluded"
+note = "opam names its manifest after the package, `<name>.opam`, and dune-project describes a build rather than a dependency set. The registry is carried as `pkg:opam`."
+
+[[gap]]
+subject = "nim"
+reason = "excluded"
+note = "nimble names its manifest after the package, `<name>.nimble`. Nothing fixed to match on."
+
+[[gap]]
+subject = "racket"
+reason = "excluded"
+note = "raco reads `info.rkt`, which is also the module metadata for a collection that publishes nothing. Matching it would call every Racket collection a package."

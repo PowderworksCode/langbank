@@ -1,0 +1,10 @@
+id = "dub"
+display-name = "DUB"
+roles = ["package-manager", "build-system"]
+implied-languages = ["d"]
+manifest = "dub.json"
+alternate-manifests = ["dub.sdl"]
+lockfiles = ["dub.selections.json"]
+manifest-selection = "default"
+homepage = "https://dub.pm"
+repository = "https://github.com/dlang/dub"

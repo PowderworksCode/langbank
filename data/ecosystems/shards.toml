@@ -1,0 +1,8 @@
+id = "shards"
+display-name = "Shards"
+roles = ["package-manager"]
+implied-languages = ["crystal"]
+manifest = "shard.yml"
+lockfiles = ["shard.lock"]
+manifest-selection = "default"
+repository = "https://github.com/crystal-lang/shards"

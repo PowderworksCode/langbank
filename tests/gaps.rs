@@ -100,3 +100,25 @@ fn an_alternate_manifest_is_not_a_disambiguator() {
     assert_eq!(zig.selector_files, &["build.zig"]);
     assert!(zig.alternate_manifests.is_empty());
 }
+
+#[test]
+fn a_researched_absence_is_not_filed_as_unexamined() {
+    // `NotModelled` means nobody looked. `NotApplicable` means somebody did and
+    // there is nothing there. Collapsing the two throws away the research: a
+    // reader deciding what to work on needs to know which gaps are worth
+    // opening.
+    let researched: Vec<&Gap> = gaps()
+        .iter()
+        .filter(|gap| matches!(gap.reason, GapReason::NotApplicable | GapReason::Excluded))
+        .copied()
+        .collect();
+    for gap in &researched {
+        assert!(
+            gap.note.len() > 40,
+            "{}/{} is recorded as researched with a note too short to be one: {:?}",
+            gap.subject,
+            gap.facet,
+            gap.note
+        );
+    }
+}

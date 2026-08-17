@@ -125,3 +125,22 @@ fn exactly_one_ecosystem_per_manifest_is_the_default() {
         assert_eq!(found.ecosystem.id, *defaults[0], "{manifest}");
     }
 }
+
+#[test]
+fn the_researched_ecosystems_can_be_found() {
+    // Five ecosystems added by research rather than absorption. Each was chosen
+    // because it has a manifest with a fixed filename — which is the whole
+    // requirement, so it is the thing to check.
+    for (files, expected) in [
+        (vec!["dub.json"], "dub"),
+        (vec!["dub.sdl"], "dub"),
+        (vec!["shard.yml", "shard.lock"], "shards"),
+        (vec!["rebar.config", "rebar.lock"], "rebar3"),
+        (vec!["project.clj"], "leiningen"),
+        (vec!["deps.edn"], "clojure-cli"),
+    ] {
+        let found = identify_project(&listing(&files))
+            .unwrap_or_else(|| panic!("{files:?} should name an ecosystem"));
+        assert_eq!(found.ecosystem.id, expected, "{files:?}");
+    }
+}

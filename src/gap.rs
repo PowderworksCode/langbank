@@ -30,6 +30,14 @@ pub enum GapReason {
     Excluded,
     /// Nobody has modelled it. The ordinary state of most of the registry.
     NotModelled,
+    /// Looked for and not there. CSV has no compiler and JSON has no package
+    /// manager, and those are answers rather than holes.
+    ///
+    /// Distinct from `NotModelled`, which means nobody has checked. Recording
+    /// the difference is the point: a reader who wants to fill a gap needs to
+    /// know which ones are worth opening, and a consumer asking "does this
+    /// language have an ecosystem" deserves "no" rather than silence.
+    NotApplicable,
 }
 
 /// One thing langbank cannot answer, and why.
