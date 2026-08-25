@@ -15,6 +15,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: rustup show                      # honours rust-toolchain.toml
+      # Every CI run contributes this build to the public compile-time census
+      # at <https://cratebank.io/>. It builds what the steps below would have
+      # built anyway, measured, so what is added here is mostly the measuring.
+      #
+      # `strict` because this is the build. A measurement that quietly did not
+      # happen would mean nothing built the project either, and a green check
+      # would be saying so about work that never ran.
+      - uses: PowderworksCode/cratebank/action@v0.1.1
+        with:
+          args: --workspace
+          org-id: powderworks
+          strict: "true"
+
       - run: cargo fmt --check
       # --workspace, because without it clippy and the tests see only the root
       # package. `langbank-detect` and `langbank-sync` merged with their tests
