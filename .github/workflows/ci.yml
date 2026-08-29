@@ -10,19 +10,48 @@ on:
   pull_request:
 
 jobs:
-  rust:
+  # What a pull request touched decides whether the compiler has to run. On a
+  # push there is no base to compare against, so everything counts as changed
+  # and main is gated on the whole file exactly as before.
+  changes:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 5
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - run: rustup show                      # honours rust-toolchain.toml
-      - run: cargo fmt --check
-      # --workspace, because without it clippy and the tests see only the root
-      # package. `langbank-detect` and `langbank-sync` merged with their tests
-      # never once run in CI, which is how a workspace member quietly stops
-      # being checked: nothing fails, it just goes unexamined.
-      - run: cargo clippy --workspace --all-targets -- -D warnings
-      - run: cargo test --workspace
+        with:
+          fetch-depth: 0
+      - id: filter
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -z "$BASE" ]; then
+            echo "code=true" >> "$GITHUB_OUTPUT"
+            echo "not a pull request; everything runs"
+            exit 0
+          fi
+          # Named as what cannot reach the compiler rather than what can, so a
+          # new kind of file is treated as code until someone says otherwise.
+          # data/ is on the code side deliberately: build.rs generates the
+          # tables from it, so a TOML edit there is a source change.
+          if git diff --name-only "$BASE"...HEAD \
+              | grep -qvE '^(README|AGENTS)\.md$|^docs/'; then
+            echo "code=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "code=false" >> "$GITHUB_OUTPUT"
+            echo "only prose changed; the compiler is not run"
+          fi
+
+  # The checks that cost seconds and hold whatever the pull request touched.
+  # Split out of `rust` so they keep running on a documentation-only change:
+  # straitjacket reads prose as well as source, and gating it on a Rust diff
+  # would let exactly the findings it exists to catch through unexamined.
+  hygiene:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       # drift.yml runs only on main and on a schedule, so a workflow calling a
       # script deleted on a branch stays green through review and fails after
@@ -58,6 +87,9 @@ jobs:
       # HTTP and the site runs axum — that is what the other workspace members
       # are for. Checked rather than assumed, because the easiest way to lose
       # this property is one convenient `cargo add` in the wrong directory.
+      #
+      # `--no-deps` reads the manifests and resolves nothing, so this belongs
+      # with the cheap checks rather than behind a build.
       - name: The leaf stays a leaf
         run: |
           allowed='inventory serde serde_json toml'
@@ -71,3 +103,19 @@ jobs:
           done
           echo "langbank depends only on: $(echo $actual)"
           echo "(serde derives the data types, toml is build-only, serde_json is dev-only)"
+
+  rust:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: changes
+    if: needs.changes.outputs.code == 'true'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: rustup show                      # honours rust-toolchain.toml
+      - run: cargo fmt --check
+      # --workspace, because without it clippy and the tests see only the root
+      # package. `langbank-detect` and `langbank-sync` merged with their tests
+      # never once run in CI, which is how a workspace member quietly stops
+      # being checked: nothing fails, it just goes unexamined.
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
