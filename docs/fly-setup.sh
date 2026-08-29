@@ -21,6 +21,8 @@ if ! command -v flyctl >/dev/null; then
   curl -L https://fly.io/install.sh | sh
   export FLYCTL_INSTALL="${FLYCTL_INSTALL:-$HOME/.fly}"
   export PATH="$FLYCTL_INSTALL/bin:$PATH"
+  # $PATH must stay literal: this line is text for the user's shell profile.
+  # shellcheck disable=SC2016
   echo 'add to your shell profile: export PATH="$HOME/.fly/bin:$PATH"'
 fi
 flyctl version
@@ -68,4 +70,4 @@ flyctl certs check langbank.dev --app "$APP"
 
 step "8. done — verify"
 curl -fsS https://langbank.dev/health; echo
-echo "if that 404s or hangs, the cert is still issuing; `flyctl certs check` says which."
+echo "if that 404s or hangs, the cert is still issuing; \`flyctl certs check\` says which."

@@ -1,0 +1,4 @@
+# data/ carries language/ecosystem/toolchain identifiers (extensions, program names, shebangs) that look like typos but are real values; "statics" is the Rust term used throughout the prose.
+[codespell]
+skip = ./data,*.lock,package-lock.json,*.svg,*.woff2,*.min.js,target,node_modules,.git,dist,out,vendor
+ignore-words-list = statics,edn,als,ect,wast,ameba,embold,synopsys,infact,defint,ags,udo,tese,ned,te,mata,crate

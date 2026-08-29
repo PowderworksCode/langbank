@@ -13,7 +13,7 @@ jobs:
   rust:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - run: rustup show                      # honours rust-toolchain.toml
       - run: cargo fmt --check
       # --workspace, because without it clippy and the tests see only the root
@@ -48,7 +48,7 @@ jobs:
       #
       # Which findings are excused, and why, is in straitjacket.toml.
       - name: Straitjacket
-        uses: PowderworksCode/straitjacket@v0.1.1
+        uses: PowderworksCode/straitjacket@f49d6239ff36e514f4faaba7bbe61f27a50efcca # v0.1.1
         with:
           version: v0.1.1
 
