@@ -1,9 +1,9 @@
 //! What langbank knows about a language, and what it does not.
 //!
 //! This lives in the leaf rather than in a tool because two things ask it —
-//! `langbank-sync coverage` and the language pages on langbank.dev — and a
-//! registry whose own coverage report disagrees with its website has a worse
-//! problem than a thin facet.
+//! `langbank-sync coverage` and the facet coverage the documentation site
+//! renders from the exported manifest — and a registry whose own coverage
+//! report disagrees with its website has a worse problem than a thin facet.
 //!
 //! It answers only from what is carried. A language with no comment syntax
 //! might have none anybody has recorded, or none at all; the distinction is a

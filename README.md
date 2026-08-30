@@ -8,8 +8,10 @@ Everything here is a registry over static data plus the few functions needed to
 look something up. Nothing here walks a filesystem, spawns a process, or parses
 a source file.
 
-**[langbank.dev](https://langbank.dev)** browses all of it, and runs the content
-rules against a file you paste.
+**[langbank.dev](https://langbank.dev)** publishes it: the build renders every
+registry below from the manifest this crate exports, so the site and the tables
+cannot disagree. The site lives in `site/` — see
+[docs/website.md](docs/website.md).
 
 ## The workspace
 
@@ -22,7 +24,6 @@ is a separate member, and CI fails if the leaf gains a dependency.
 | `langbank` | the data, as `&'static` tables compiled from `data/**/*.toml` |
 | `langbank-detect` | runs the rules the leaf only describes, and reports which one fired |
 | `langbank-sync` | `check` and `create` against each upstream; what keeps the data honest |
-| `langbank-web` | langbank.dev — see [docs/deploy.md](docs/deploy.md) |
 
 ## Development
 
@@ -36,9 +37,10 @@ convenient `cargo add` in the wrong directory.
 scripts/dev.sh
 ```
 
-Deploying the site is a separate matter: `scripts/fly-setup.sh` does the
-one-time account setup, and [docs/deploy.md](docs/deploy.md) says what each step
-is for.
+A data change regenerates the site's manifest: `scripts/data-manifest.sh`
+rewrites `site/content/langbank.json` from the crate, and `docs.yml` fails when
+the committed copy is stale. [docs/website.md](docs/website.md) says how the
+site builds and what serves it.
 
 ## Attribution
 

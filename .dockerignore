@@ -1,9 +1,0 @@
-# The build compiles from source inside the image; a host target/ directory is
-# gigabytes of the wrong architecture's artifacts and would defeat the layer
-# cache by changing on every local build.
-target/
-.git/
-.github/
-tools/
-docs/
-*.md
