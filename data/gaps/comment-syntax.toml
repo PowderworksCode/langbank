@@ -65,11 +65,6 @@ reason = "sources-disagree"
 note = "tokei: line ['#'], 0 block forms; scc: line ['#'], 1 block forms"
 
 [[gap]]
-subject = "racket"
-reason = "sources-disagree"
-note = "tokei: line [';'], 1 block forms; scc: line [';'], 1 block forms"
-
-[[gap]]
 subject = "raku"
 reason = "sources-disagree"
 note = "tokei: line ['#'], 4 block forms; scc: line ['#'], 5 block forms"
