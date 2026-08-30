@@ -71,4 +71,5 @@ decision.
   languages: ecosystems, toolchains, package registries, tools.
 - [Reference](/reference/) — every registry, rendered from the data itself.
 - [How the data stays honest](/guides/keeping-data-honest/) — what `sync`
-  checks against upstream, and why gaps are recorded instead of filled.
+  checks against upstream, and why langbank records gaps instead of filling
+  them.

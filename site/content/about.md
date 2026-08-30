@@ -5,8 +5,8 @@ order: 2
 ---
 
 Langbank is the vocabulary the rest of the fleet speaks: which languages
-exist, what files they claim, what builds them, and how package identity is
-spelled in each registry — as data, in a crate that depends on nothing.
+exist, what files they claim, what builds them, and how each registry spells
+package identity — as data, in a crate that depends on nothing.
 
 It sits at the bottom deliberately. Entl names languages while walking a tree,
 treebank names them when it publishes a grammar, and propbank names them when
@@ -22,9 +22,9 @@ began as facts checked against permissively licensed upstream projects, each
 credited on the [sources page](/project/sources/), and langbank deliberately
 carries no data from copyleft-licensed projects.
 
-Langbank is built by [The Powderworks Agentic Coding
-Consortium](https://powderworks.dev), and maintained by
-[Zack](https://github.com/zmaril). The code is MIT-licensed and lives on
+[The Powderworks Agentic Coding Consortium](https://powderworks.dev) builds
+langbank, and [Zack](https://github.com/zmaril) maintains it. The code is
+MIT-licensed and lives on
 [GitHub](https://github.com/PowderworksCode/langbank), where the full commit
 history is public.
 

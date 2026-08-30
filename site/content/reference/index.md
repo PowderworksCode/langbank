@@ -4,8 +4,8 @@ description: Every registry langbank carries, rendered from the data itself.
 order: 5
 ---
 
-Dry, complete, and current by construction: every table below is rendered at
-build time from [the manifest](/langbank.json) the crate exports, and CI fails
+Dry, complete, and current by construction: the build renders every table
+below from [the manifest](/langbank.json) the crate exports, and CI fails
 when that manifest no longer matches the binary. Come here to look something
 up — the [tutorial](/getting-started/) and [guides](/guides/) are for
 learning.
@@ -24,4 +24,5 @@ learning.
   spelled, per purl type.
 - [Tool profiles](/reference/tools/) — Programs a repository invokes and the
   files that configure them.
-- [Gaps](/reference/gaps/) — What langbank was asked and declined to answer.
+- [Gaps](/reference/gaps/) — The questions langbank declined to answer, and
+  the reason it declined each one.

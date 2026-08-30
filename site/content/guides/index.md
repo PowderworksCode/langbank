@@ -11,5 +11,6 @@ basics from the [tutorial](/getting-started/).
   and the content rules that settle a contested extension.
 - [Look things up](/guides/looking-things-up/) — The registries beyond
   languages: ecosystems, toolchains, package registries, tools.
-- [Keep the data honest](/guides/keeping-data-honest/) — What gets checked
-  against upstream, and why an absence is recorded rather than filled.
+- [Keep the data honest](/guides/keeping-data-honest/) — What the sync tools
+  check against upstream, and why langbank records an absence rather than
+  filling it.

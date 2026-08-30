@@ -8,7 +8,7 @@ order: 1
 network stack, a regex engine or an archive reader. Everything that needs
 those is a separate member, and CI fails if the leaf gains a dependency.
 
-| crate | what it is |
+| crate | its job |
 |---|---|
 | `langbank` | the data, as `&'static` tables compiled from `data/**/*.toml` |
 | `langbank-detect` | runs the content rules the leaf only describes, and reports which one fired |

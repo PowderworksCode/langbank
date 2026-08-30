@@ -1,6 +1,6 @@
 ---
 title: Sources
-description: Which upstreams contributed facts, which were refused, and the licence stance that decides.
+description: Which upstreams contributed facts, which langbank refused, and the licence stance that decides.
 order: 1
 ---
 
@@ -44,15 +44,15 @@ Verified licences, not assumed ones:
 | [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis) | MIT | linters and formatters per language |
 | [dependabot/dependabot-core](https://github.com/dependabot/dependabot-core) | MIT | package ecosystems, manifests, lockfiles |
 
-Upstreams are checked against, not deferred to: langbank owns every fact it
-carries, `langbank-sync` re-runs the checks on a schedule, and a difference is
-a report to act on rather than an automatic import.
+Langbank checks against upstreams rather than deferring to them: it owns
+every fact it carries, `langbank-sync` re-runs the checks on a schedule, and a
+difference is a report to act on rather than an automatic import.
 
 ## Agreement counts only when the sources are independent
 
-go-enry is skipped because it is a port of linguist — it carries no
-independent facts. tokei and scc were suspected of sharing ancestry and turned
-out not to: on the languages both carry — 187 of them — they agree on 77% of
+go-enry stays out because it ports linguist and so carries no independent
+facts. tokei and scc looked like they might share ancestry and turned out not
+to: on the languages both carry — 187 of them — they agree on 77% of
 extension sets, 93% of line comments and 89% of block comments. Two corpora agreeing on
 99.9% of anything would be one corpus wearing two hats; these are far enough
 apart to be two, so their agreement is evidence — and the slice they disagree

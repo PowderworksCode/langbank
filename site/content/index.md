@@ -2,7 +2,7 @@
 
 Langbank is language, ecosystem and toolchain data: what a language is, how to
 recognise it, what conventions it carries, which ecosystem publishes it, and
-what its tooling can be asked. Everything is a registry over static data plus
+what its tooling answers. Everything is a registry over static data plus
 the few functions needed to look something up — nothing here walks a
 filesystem, spawns a process, or parses a source file.
 
