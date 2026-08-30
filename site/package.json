@@ -1,0 +1,26 @@
+{
+  "name": "langbank-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "render": "bun tools/render-data.ts",
+    "build": "bun tools/render-data.ts && cp content/langbank.json public/langbank.json && rm -rf out && powderworks-docs build content --out out --site langbank --static public",
+    "social": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank",
+    "social:check": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank --check",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome format .",
+    "test": "bun tools/render-data.ts && bun test"
+  },
+  "dependencies": {
+    "@powderworks/docs": "0.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.11",
+    "@types/bun": "1.4.0",
+    "typescript": "5.9.3",
+    "wrangler": "4.127.0"
+  }
+}

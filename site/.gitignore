@@ -1,0 +1,15 @@
+node_modules/
+out/
+.wrangler/
+.DS_Store
+# Rendered from content/langbank.json at build time; the manifest is the
+# committed copy and these cannot drift from it.
+content/reference/facets.md
+content/reference/languages.md
+content/reference/ecosystems.md
+content/reference/toolchains.md
+content/reference/package-registries.md
+content/reference/tools.md
+content/reference/gaps.md
+# Copied from content/ at build time so the site serves the manifest itself.
+public/langbank.json

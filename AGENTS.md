@@ -26,5 +26,8 @@ here needs a type from one of them, the type is in the wrong place.
 - A build script that cannot read its data panics on purpose. An empty registry
   that compiles is worse than a build failure, because a consumer sees a
   language-free world and no error.
+- **A data change regenerates the site manifest.** `site/content/langbank.json`
+  is what the documentation site renders; `scripts/data-manifest.sh` rewrites
+  it from the crate, and `docs.yml` fails when the committed copy is stale.
 - `cargo fmt`, `cargo clippy --all-targets` and `cargo test` are all expected to
   be clean before a commit.
