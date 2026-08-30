@@ -34,9 +34,12 @@ jobs:
           # Named as what cannot reach the compiler rather than what can, so a
           # new kind of file is treated as code until someone says otherwise.
           # data/ is on the code side deliberately: build.rs generates the
-          # tables from it, so a TOML edit there is a source change.
+          # tables from it, so a TOML edit there is a source change. site/ is
+          # on the prose side: the site job grades it here and docs.yml diffs
+          # its manifest against the binary, neither of which needs the
+          # workspace built.
           if git diff --name-only "$BASE"...HEAD \
-              | grep -qvE '^(README|AGENTS)\.md$|^docs/'; then
+              | grep -qvE '^(README|AGENTS)\.md$|^docs/|^site/'; then
             echo "code=true" >> "$GITHUB_OUTPUT"
           else
             echo "code=false" >> "$GITHUB_OUTPUT"
@@ -119,3 +122,26 @@ jobs:
       # being checked: nothing fails, it just goes unexamined.
       - run: cargo clippy --workspace --all-targets -- -D warnings
       - run: cargo test --workspace
+
+  # The site is a Bun package with its own type layer, linter and tests, so it
+  # is graded the way the workspace is rather than only at deploy time. Named
+  # steps rather than a loop: ordnung reads a workflow's steps to know which
+  # tasks a language actually runs, and a loop tells it nothing.
+  site:
+    name: site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          bun-version: "1.4.0"
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun run lint
+      - run: bun run format
+      - run: bun run build
+      - run: bun run test

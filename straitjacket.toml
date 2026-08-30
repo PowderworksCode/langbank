@@ -16,4 +16,8 @@ theme-files = ["web/src/site.css"]
 # long as linguist's ruleset is. Splitting it would mean either splitting the
 # generator's output along a boundary linguist does not have, or hand-editing a
 # file whose header says it is generated. Neither is an improvement.
-file-size-exclude = ["data/heuristics.toml"]
+#
+# `site/content/langbank.json` is the whole dataset printed by
+# `scripts/data-manifest.sh`, committed so CI can diff it against the binary;
+# it is exactly as long as the registries are.
+file-size-exclude = ["data/heuristics.toml", "site/content/langbank.json"]

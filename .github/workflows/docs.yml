@@ -1,0 +1,51 @@
+name: docs
+
+# The documentation is checked against the crate, not maintained beside it.
+#
+# This is a workflow of its own rather than a job in `ci.yml`, because `ci.yml`
+# skips pull requests that only touch prose — and a prose-only pull request is
+# exactly when the documentation can drift away from the data.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  data:
+    name: data
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2.9.2
+      # The manifest is exported from the compiled tables, so a data change
+      # that forgets to regenerate it fails here rather than reaching the
+      # website with last month's registries.
+      - name: The exported data manifest is current
+        run: scripts/data-manifest.sh --check
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+        with:
+          # Pinned: `latest` is a different Bun on different days, and a docs
+          # gate that fails because a runner picked up a new release is a gate
+          # nobody can act on.
+          bun-version: "1.4.0"
+      - run: bun install --frozen-lockfile
+        working-directory: site
+      # Renders the reference pages from the manifest and checks the site
+      # against it: the counts are coherent, every cross-reference resolves,
+      # and no hand-written page quotes a number that expires.
+      - run: bun run test
+        working-directory: site
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v6.0.0
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pillow
+      # The card a link shows is committed, because nothing should have to draw
+      # an image to serve a page. Committed means it can go stale, so this
+      # compares what it was drawn from against what the config says now.
+      - name: The social card still matches the config
+        run: bun run social:check
+        working-directory: site

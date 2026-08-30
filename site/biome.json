@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": ["./biome.base.json"],
+  "overrides": [
+    {
+      "includes": ["content/langbank.json"],
+      "formatter": { "enabled": false }
+    }
+  ]
+}
