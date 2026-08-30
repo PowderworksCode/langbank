@@ -33,9 +33,8 @@ cargo test --workspace
 ```
 
 `Cargo.lock` is committed — a recent decision (`build: commit the lockfile the
-workspace ships binaries from`), because this workspace ships binaries
-(`langbank-web`, `langbank-sync`) where a reproducible resolve matters. Keep it
-in the commit.
+workspace ships binaries from`), because this workspace ships a binary
+(`langbank-sync`) where a reproducible resolve matters. Keep it in the commit.
 
 Beyond the three commands, CI runs three gates that are worth knowing about
 before they surprise you:
@@ -147,21 +146,22 @@ actually calling `regex::Regex::new` on them rather than guessing — which caug
 cases the earlier Python guesser missed, such as an unescaped `{` that Ruby
 reads as a literal and Rust rejects as a malformed quantifier.
 
-`web/src/lib.rs` keeps every page as a pure function with no I/O, so pages can be
-rendered in tests without binding a port; `main.rs` holds the routes. Its
-`port_from` treats a set-but-unparsable `PORT` as a hard error rather than
-falling back to 8080, so a misconfigured Fly deploy fails loudly instead of
-timing out its health check with nothing in the logs.
+## The website
 
-## Deployment
+langbank.dev is `site/`: markdown built by `@powderworks/docs` into plain files
+and served as static assets. Its reference pages are rendered at build time
+from `site/content/langbank.json`, which `scripts/data-manifest.sh` exports
+from the compiled tables and `docs.yml` diffs against the binary — so a data
+change that does not regenerate the manifest fails CI rather than shipping a
+stale table. Run the script and commit the result whenever `data/` changes.
 
-langbank.dev runs on Fly from `web/`. `fly.toml` is production (app `langbank`,
-always-on); `fly.preview.toml` is the per-PR app (idles to zero). The `Dockerfile`
-is `cargo-chef`-based and builds only `-p langbank-web` into a
-`debian:bookworm-slim` image. `/health` reports registry counts rather than a
-bare `ok`, and the deploy smoke test asserts those counts are non-zero — a
-deploy that boots with an empty registry is the failure that check exists for.
-`docs/deploy.md` and `docs/fly-setup.sh` have the rest.
+There was an axum server here, `langbank-web`, deployed to Fly with a preview
+app per pull request. It is gone: every page it served was a pure function of
+tables fixed at compile time, so keeping a machine, a Dockerfile and a deploy
+token around to compute them on demand bought nothing a build step does not.
+`docs/website.md` says what went, what the static site does not carry (the
+per-entity pages, and `/identify`, which is the real loss), and which commit to
+read the server from.
 
 ## Also in docs/
 
