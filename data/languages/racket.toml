@@ -2,4 +2,5 @@ id = "racket"
 display-name = "Racket"
 role = "programming"
 extensions = ["rkt", "rktd", "rktl", "scrbl"]
+comments = "scheme"
 shebangs = ["racket"]
