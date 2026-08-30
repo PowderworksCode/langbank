@@ -10,7 +10,7 @@
 #   * `fly certs` needs the app to exist, so the first deploy comes before DNS.
 set -euo pipefail
 
-ORG="${FLY_ORG:-personal}"        # override: FLY_ORG=powderworks ./fly-setup.sh
+ORG="${FLY_ORG:-personal}"        # override: FLY_ORG=powderworks scripts/fly-setup.sh
 APP=langbank
 REPO=PowderworksCode/langbank
 

@@ -95,7 +95,7 @@ jobs:
       - name: Custom domain
         run: |
           if ! getent hosts langbank.dev >/dev/null 2>&1; then
-            echo "::notice::langbank.dev has no DNS record yet — see docs/fly-setup.sh steps 6-7"
+            echo "::notice::langbank.dev has no DNS record yet — see scripts/fly-setup.sh steps 6-7"
             exit 0
           fi
           if curl -fsS --max-time 15 https://langbank.dev/health -o /tmp/custom; then

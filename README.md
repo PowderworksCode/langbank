@@ -24,6 +24,22 @@ is a separate member, and CI fails if the leaf gains a dependency.
 | `langbank-sync` | `check` and `create` against each upstream; what keeps the data honest |
 | `langbank-web` | langbank.dev — see [docs/deploy.md](docs/deploy.md) |
 
+## Development
+
+`scripts/dev.sh` points git at the committed hooks, builds the workspace — which
+is also what compiles `data/**/*.toml` into the `&'static` tables, so a
+malformed data file surfaces there — and runs the rest of the gate, including
+the leaf-dependency check, because the easiest way to lose that property is one
+convenient `cargo add` in the wrong directory.
+
+```sh
+scripts/dev.sh
+```
+
+Deploying the site is a separate matter: `scripts/fly-setup.sh` does the
+one-time account setup, and [docs/deploy.md](docs/deploy.md) says what each step
+is for.
+
 ## Attribution
 
 Langbank's language data is its own, and some of it began as facts checked
