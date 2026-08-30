@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "render": "bun tools/render-data.ts",
-    "build": "bun tools/render-data.ts && cp content/langbank.json public/langbank.json && rm -rf out && powderworks-docs build content --out out --site langbank --static public --site-url https://langbank.dev --wordmark langbank --wordmark-font '\"Gentium Plus\"' --wordmark-woff2 /gentium-plus-latin.woff2 --wordmark 'The Powderworks Agentic Coding Consortium' --wordmark-font '\"IM Fell English SC\"' --wordmark-woff2 /im-fell-english-sc-latin.woff2 --wordmark Powderworks --wordmark-font '\"IM Fell English SC\"' --wordmark-woff2 /im-fell-english-sc-latin.woff2",
-    "social": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank --url langbank.dev --font https://raw.githubusercontent.com/google/fonts/main/ofl/gentiumplus/GentiumPlus-Regular.ttf",
-    "social:check": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank --url langbank.dev --font https://raw.githubusercontent.com/google/fonts/main/ofl/gentiumplus/GentiumPlus-Regular.ttf --check",
+    "build": "bun tools/render-data.ts && cp content/langbank.json public/langbank.json && rm -rf out && powderworks-docs build content --out out --site langbank --static public --site-url https://langbank.dev --description 'A sprawling collection of facts about programming languages and ecosystems.' --wordmark langbank --wordmark-font '\"Gentium Plus\"' --wordmark-woff2 /gentium-plus-latin.woff2 --wordmark 'The Powderworks Agentic Coding Consortium' --wordmark-font '\"IM Fell English SC\"' --wordmark-woff2 /im-fell-english-sc-latin.woff2 --wordmark Powderworks --wordmark-font '\"IM Fell English SC\"' --wordmark-woff2 /im-fell-english-sc-latin.woff2",
+    "social": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank --url langbank.dev --tagline 'A sprawling collection of facts about programming languages and ecosystems.' --font https://raw.githubusercontent.com/google/fonts/main/ofl/gentiumplus/GentiumPlus-Regular.ttf",
+    "social:check": "python3 node_modules/@powderworks/docs/tools/social-card.py --site langbank --url langbank.dev --tagline 'A sprawling collection of facts about programming languages and ecosystems.' --font https://raw.githubusercontent.com/google/fonts/main/ofl/gentiumplus/GentiumPlus-Regular.ttf --check",
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "typecheck": "tsc --noEmit",
