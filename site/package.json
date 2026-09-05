@@ -15,12 +15,12 @@
     "test": "bun tools/render-data.ts && bun test"
   },
   "dependencies": {
-    "@powderworks/docs": "0.3.1"
+    "@powderworks/docs": "0.4.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.11",
     "@types/bun": "1.4.0",
     "typescript": "5.9.3",
-    "wrangler": "4.127.0"
+    "wrangler": "4.128.0"
   }
 }
